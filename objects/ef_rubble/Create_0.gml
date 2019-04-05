@@ -1,0 +1,3 @@
+hitgroundaction=choose("linger","disappear")
+
+

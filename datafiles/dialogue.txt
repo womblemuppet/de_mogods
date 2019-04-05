@@ -1,0 +1,10 @@
+NAME:bob
+hello how are you
+looky here
+nice to meet you, too!
+END
+NAME:jim
+hi yo yo
+yo hi hi
+yippee doo dah
+END

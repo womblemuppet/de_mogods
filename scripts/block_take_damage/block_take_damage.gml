@@ -1,0 +1,164 @@
+if object_index==ice_block
+    exit
+if object_index==gunpowder
+{
+    /*if part==0
+    {
+        spawn_gunpowder_block(x,y,1)
+        spawn_gunpowder_block(x+20,y,2)
+        spawn_gunpowder_block(x,y+20,3)  
+        spawn_gunpowder_block(x+20,y+20,4)
+    }*/
+    instance_destroy()
+    exit
+}
+
+
+if protection>0
+{
+    protection-=1
+    exit
+}
+
+if object_index==instrument
+{
+    instrument_die_event()   
+    exit
+}
+
+switch other.type
+{
+    case "hit":
+    var a,dir;
+    dir=other.dir
+    //show_message("other.direction= "+string(dir))
+    
+    var noblocks;
+    noblocks=40/aizen.BLOCK_DESTRUCTION_FIDELITY
+    
+    for (i=0; i<40; i+=noblocks)
+    {
+        for (ii=0; ii<40; ii+=noblocks)
+        {
+            a=instance_create(x+i,y+ii,ef_rubble)
+            a.sprite_index=sprite_index
+            a.image_xscale=0.4
+            a.image_yscale=0.4
+            a.image_angle=random(360)
+            a.dir=dir+25-random(50)
+            //show_message(a.dir)  
+            a.spd=choose(other.spd,other.spd,1,2)
+            a.alarm[0]=2
+        };
+    
+    };
+    
+    
+    break;
+    case "gilded":
+    effect_create_above(ef_firework,x,y,2,c_olive)
+    break;
+    case "disintegrated":
+    effect_create_above(ef_firework,x,y,2,c_blue)
+    break;
+    case "pushed":
+    
+    var a,dir;
+    dir=other.dir
+        
+    var noblocks;
+    noblocks=40/aizen.BLOCK_DESTRUCTION_FIDELITY
+    
+    for (i=0; i<40; i+=noblocks)
+    {
+        for (ii=0; ii<40; ii+=noblocks)
+        {
+            a=instance_create(x+i,y+ii,ef_rubble)
+            a.sprite_index=sprite_index
+            a.image_xscale=0.4
+            a.image_yscale=0.4
+            a.image_angle=random(5)
+            a.dir=dir+5-random(10)
+            a.spd=other.spd
+            a.alarm[0]=1
+        };
+    
+    };
+    
+    
+    break;
+    case "ritual":
+        
+    var noblocks;
+    noblocks=10
+        
+    for (i=0; i<40; i+=noblocks)
+    {
+        for (ii=0; ii<40; ii+=noblocks)
+        {
+            a=instance_create(x+i,y+ii,ef_rubble)
+            a.sprite_index=sprite_index
+            a.image_xscale=0.25
+            a.image_yscale=0.25
+            a.image_angle=random(360)
+            a.dir=85+random(10)
+            a.spd=4
+            a.alarm[0]=6
+        };
+    
+    };
+    break;
+    case "funnel":
+    
+    var noblocks;
+    noblocks=20
+        
+    for (i=0; i<40; i+=noblocks)
+    {
+        for (ii=0; ii<40; ii+=noblocks)
+        {
+            a=instance_create(x+i,y+ii,ef_rubble)
+            a.sprite_index=sprite_index
+            a.image_xscale=0.5
+            a.image_yscale=0.5
+            a.image_angle=0
+            a.dir=85+random(10)
+            a.spd=choose(12,14)
+            a.speed=2
+            a.direction=90
+            a.speed=3
+            a.alarm[0]=4
+        };
+    
+    };
+    
+    break;
+    default:
+    show_error("gender fluid rubble. other.id = "+string(other.id)+ "my id="+string(id),true)
+}
+
+
+/*
+if part==0
+{
+    spawn_block(x,y,1)
+    spawn_block(x+20,y,2)
+    spawn_block(x,y+20,3)  
+    spawn_block(x+20,y+20,4)
+}
+*/
+
+with icespike
+{
+    if  !place_meeting(x,y-10,block)
+    {
+        icicle_fall_code(0)
+    }
+}  //[finaledit]????what am I talking about =>optimise, could put in setup sprites script or something
+
+with aizen
+    bloodmoon_recalc_call=true
+
+instance_destroy()
+
+

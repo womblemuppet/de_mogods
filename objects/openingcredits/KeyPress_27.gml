@@ -1,0 +1,3 @@
+//[finaledit]
+game_end()
+

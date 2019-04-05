@@ -1,0 +1,30 @@
+{
+    "id": "e31e32c6-4d7b-43f9-b500-50334aec061a",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "e31e32c6-4d7b-43f9-b500-50334aec061a",
+    "children": [
+        "7918896e-af0d-4ca3-9aef-cd34504bf641",
+        "c2c782bf-82b2-4751-a907-441009b7a26e",
+        "ec659093-13a2-4054-919d-c2e3ab5242c6",
+        "0cb41793-4277-4dbd-9d84-f19353ec914b",
+        "f5c62a5b-07f7-4bbc-abb8-ba11b341c03a",
+        "bc2a6acf-8c37-4b5a-accc-31ed5bd24c5c",
+        "efcdc254-245e-4395-ac1f-f2a0733468f4",
+        "d163e2af-45be-4ee5-8440-c98a80e15ec8",
+        "f2f425ce-9c72-41b2-a121-d05cd92e9fe1",
+        "7808e22c-e662-451d-a740-6b916d04e5cf",
+        "41899f83-e2b0-4270-bd2b-8e1e6864e234",
+        "1ef0f589-3d81-443e-8b42-426e181efe3c",
+        "fb80fcdc-d4af-495b-a762-f48b9880071b",
+        "db2819ac-5eb0-43e5-b882-605de8bc36b6",
+        "81197839-4550-43df-85bf-3a78390c12f9",
+        "762bd31f-5df8-40ad-b627-7a7aac22348a",
+        "d4689ab2-15ea-443a-99bf-3f025b57b1fb",
+        "1c28f636-01f0-4f8b-a06a-b07d010e49bc"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "lava",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

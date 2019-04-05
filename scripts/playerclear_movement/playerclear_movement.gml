@@ -1,0 +1,10 @@
+moveD=-1
+timer=-1
+basex=x
+basey=y
+moveQ=-1 
+//cantcancel=false
+moveq=-1
+sprite_index=person_staffL
+dashingnumber=0
+dashD=-1
