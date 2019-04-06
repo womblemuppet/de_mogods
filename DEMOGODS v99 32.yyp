@@ -3935,6 +3935,14 @@
             }
         },
         {
+            "Key": "986f95e0-9f3f-4926-a232-027f8e7c830c",
+            "Value": {
+                "id": "6da56815-ec76-4f1a-9924-c9f8c11997f4",
+                "resourcePath": "notes\\note3.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "99132488-eaed-4164-8995-d7b7daa531a5",
             "Value": {
                 "id": "8a16c000-d8ef-4172-aef7-4a4b65285834",

@@ -252,25 +252,30 @@ lore_data=ds_list_create()
 ds_list_add(lore_data,"butts butts butts butts butts butts butts")
 ds_list_add(lore_data,"lolololololololololololololololololol")
 
+
 lore_character_select_bio_0=ds_list_create()
 lore_character_select_bio_1=ds_list_create()
 lore_character_select_bio_2=ds_list_create()
 lore_character_select_bio_3=ds_list_create()
 lore_character_select_bio_4=ds_list_create()
 lore_character_select_bio_5=ds_list_create()
+lore_character_select_bio_array=[lore_character_select_bio_0,lore_character_select_bio_1,lore_character_select_bio_2,lore_character_select_bio_3,lore_character_select_bio_4,lore_character_select_bio_5];
 
+
+var lore_text_line_width;
+lore_text_line_width=450
 lore_character_select_name[0]="untitled"
-string_split_lines_add_to_list("this guy is kinda strong and likes punching things. ",60,lore_character_select_bio_0)
+string_split_lines_add_to_list("this guy is kinda strong and likes punching things.",lore_text_line_width,lore_character_select_bio_array[0])
 lore_character_select_name[1]="Veteran"
-string_split_lines_add_to_list("look at this dude he's got a robot arm and he likes setting traps all around the place pretty cool",60,lore_character_select_bio_1)
+string_split_lines_add_to_list("look at this dude he's got a robot arm and he likes setting traps all around the place pretty cool",lore_text_line_width,lore_character_select_bio_array[1])
 lore_character_select_name[2]="Sunslinger"
-string_split_lines_add_to_list("this guy is not just a guy - he can shoot pure sun beams out of his fingers.",60,lore_character_select_bio_2)
+string_split_lines_add_to_list("this guy is not just a guy - he can shoot pure sun beams out of his fingers.",lore_text_line_width,lore_character_select_bio_array[2])
 lore_character_select_name[3]="Bait"
-string_split_lines_add_to_list("long ago he lost a fight against a shark and now he's wearing a shark kickass",60,lore_character_select_bio_3)
+string_split_lines_add_to_list("long ago he lost a fight against a shark and now he's wearing a shark kickass",lore_text_line_width,lore_character_select_bio_array[3])
 lore_character_select_name[4]="Bert"
-string_split_lines_add_to_list("  ",60,lore_character_select_bio_4)
+string_split_lines_add_to_list("  ",lore_text_line_width,lore_character_select_bio_array[4])
 lore_character_select_name[5]="jermy"
-string_split_lines_add_to_list("  ",60,lore_character_select_bio_5)
+string_split_lines_add_to_list("  ",lore_text_line_width,lore_character_select_bio_array[5])
 
 
 

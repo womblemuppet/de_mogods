@@ -46,7 +46,8 @@ else if hothands==3
 if hothands!=0
     draw_sprite_ext(hhspr,hothandimageindex,x,y-22,1,1,0,aizen.hothandspaydaycolour,1)
 
-
+if aizen.debug_show_hitboxes
+	draw_sprite(mask_index,0,x,y)
 
 /*
 draw_set_font(font_buglist)
