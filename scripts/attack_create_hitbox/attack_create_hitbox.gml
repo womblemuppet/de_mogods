@@ -30,8 +30,8 @@ a.my_vknockback=argument10
 
 if image_xscale=-1
 {
-    a.direction=180
-    a.image_xscale=-1       
+	a.direction=180
+	a.image_xscale=-1       
 }
 
 
