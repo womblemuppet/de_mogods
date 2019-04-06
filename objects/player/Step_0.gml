@@ -1637,11 +1637,18 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 			b=attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
 			b.creator=creator
 			b.target=creator	
+			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
 		}
 
 		if !right
+		{
 			a.image_xscale=-1
-	
+			a.GAP=-30
+		}
+		else
+			a.GAP=30
+
+		
 		var a;
 		a=effect_aniend(vet_groundpunch_shockwave,0.8,-1)
 		if !right

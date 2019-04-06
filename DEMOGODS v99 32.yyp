@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "18c61d88-bdc0-4500-8d42-65850eee9c3b",
+            "Value": {
+                "id": "3e279ae3-fb7f-4d08-85cf-d367f6921a48",
+                "resourcePath": "sprites\\crab_select_icon_gray\\crab_select_icon_gray.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "18c8e589-b813-4be0-b5de-bd7b4421d164",
             "Value": {
                 "id": "76a1c38f-733e-4977-b7c3-005fa1b0bc65",
