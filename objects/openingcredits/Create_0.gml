@@ -1,7 +1,7 @@
 //text="DEMOGODS V78 (title not locked in)# #This is a WIP project#Please do not distribute/share#We welcome any and all feedback, criticism, ideas#Please play in fullscreen# #Thank you for playing!"
 textpos=0
 NUMBEROFLINES=7
-mode=0
+mode=0  ///mode 0 is typing, mode 1 is when text stops changing (freeze before next room)
 text[NUMBEROFLINES]="zzzzzzzzzzzzzz"
 text[0]="DEMOGODS V99.6"
 text[1]=""

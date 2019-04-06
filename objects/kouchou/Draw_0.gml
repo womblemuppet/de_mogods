@@ -181,11 +181,11 @@ if ready[i]==-1 && i==nextopenslot
 {
 	draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
 	var t;
-	t="press [space]# to add keyboard player#press [start] on controller# to join"
+	t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
 	if numberofkeyboardsinuse==1
-	t="press [enter]# to add keyboard player#press [start] on controller# to join"
+	t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
 	if numberofkeyboardsinuse>1
-	t="press [start]# on controller to join"
+	t="press [start]\n on controller to join"
 	draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i],t)                
 
 }

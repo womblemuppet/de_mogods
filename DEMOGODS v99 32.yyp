@@ -4543,6 +4543,14 @@
             }
         },
         {
+            "Key": "affa4410-70e5-402a-9ad4-4af460962f23",
+            "Value": {
+                "id": "c138d2a7-3083-434a-8e04-dc78fdf7d5ed",
+                "resourcePath": "objects\\groundpunch_shockwave\\groundpunch_shockwave.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b00a5a3b-7aaf-4039-9041-112df59dd213",
             "Value": {
                 "id": "e57633e7-4004-446f-83c9-136b35ee049d",

@@ -409,14 +409,14 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 
 hothandimageindex+=0.25//*hothands
 if hothandimageindex>HOTHANDIMAGENUMBER
-    hothandimageindex=0
+	hothandimageindex=0
 
     
        
 if groundcheck      ///[finaledit] combine this check with one below?
-    ltt=LOONEYTUNE_TIME
+	ltt=LOONEYTUNE_TIME
 else if ltt>-2
-    ltt-=1
+	ltt-=1
     
 
 
@@ -427,13 +427,13 @@ else if ltt>-2
 
 if !groundcheck && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
 {  
-    if vspd<0
-        vspd+=GRAVITY/watery
-    else
-    {
-        if vspd<VSPEED_FROM_GRAVITY_DOWN_MAX
-            vspd+=GRAVITY_DOWN/watery
-    }
+	if vspd<0
+		vspd+=GRAVITY/watery
+	else
+	{
+		if vspd<VSPEED_FROM_GRAVITY_DOWN_MAX
+			vspd+=GRAVITY_DOWN/watery
+	}
 }
 if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
 {
@@ -1625,102 +1625,116 @@ if uniques_aapunch_lockdown==2 && image_index>9
 
 if image_index>3  && uniques_forwardpunch_lockdown==1                         ///SHOOT FORWARDPUNCH 
 {
-    if uniques_forwardpunch_has_made_hitbox==false
-    {
-        attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
-        var a;
-        a=effect_aniend(vet_groundpunch_shockwave,0.8,-1)
-        if !right
-            a.image_xscale=-1
-    }
+	if uniques_forwardpunch_has_made_hitbox==false
+	{
+		var a;
+		a=instance_create(x,y,groundpunch_shockwave)
+		a.creator=self.id
+		a.target=self.id
+		with a
+		{
+			var b
+			b=attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
+			b.creator=creator
+			b.target=creator	
+		}
+
+		if !right
+			a.image_xscale=-1
+	
+		var a;
+		a=effect_aniend(vet_groundpunch_shockwave,0.8,-1)
+		if !right
+			a.image_xscale=-1
+	}
     
-    uniques_forwardpunch_lockdown=2
-    uniques_forwardpunch_has_made_hitbox=true    
+	uniques_forwardpunch_lockdown=2
+	uniques_forwardpunch_has_made_hitbox=true    
     
 }
 if image_index>4 && uniques_combatroll_lockdown==1  ///SLINGER COMBAT ROLL
 { 
-    uniques_combatroll_lockdown=2
-    uniques_combatroll_has_made_hitbox=true
-    attack_create_hitbox(20,1,true,true,true,"combatrollattack",slinger_combatroll_hitbox,0.25,99,4,2)
-    if groundcheck
-    {
-        hspd=hspd/4
-    }
+	uniques_combatroll_lockdown=2
+	uniques_combatroll_has_made_hitbox=true
+	attack_create_hitbox(20,1,true,true,true,"combatrollattack",slinger_combatroll_hitbox,0.25,99,4,2)
+	if groundcheck
+	{
+		hspd=hspd/4
+	}
 }
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {
-    if uniques_sunblast_has_made_hitbox==false
-    {
-        var b;
-        b=attack_create_hitbox(30,1,false,true,true,"sunblast",sunbolt_sprite,1,99,7,4)
-        with b
-        {
-            x=round(x/40)*40
-            instance_change(sunblast,false)
-        }
+	if uniques_sunblast_has_made_hitbox==false
+	{
+	var b;
+	b=attack_create_hitbox(30,1,false,true,true,"sunblast",sunbolt_sprite,1,99,7,4)
+	with b
+	{
+		x=round(x/40)*40
+		instance_change(sunblast,false)
+	}
 
-        b.right=right
-        b.length=1
-        var c,MAX_LENGTH;
-        MAX_LENGTH=30
-        c=1
-        if b.right==false
-            c=-1
+	b.right=right
+	b.length=1
+	var c,MAX_LENGTH;
+	MAX_LENGTH=30
+	c=1
+	if b.right==false
+		c=-1
         
-        with b
-        {
-            if right
-            {
-                repeat(MAX_LENGTH)
-                {
-                    if !place_meeting(x+(40*length),y,block)
-                        length+=1
-                }
-            }
-            else
-            {
-                repeat(MAX_LENGTH)
-                {
-                    if !place_meeting(x-(40*length),y,block)
-                        length+=1
-                }            
-            }
-        }
-        //show_message(a.length)
-        var d;
-        d=create_terrain_cutter(eightysqcircle,"disintegrated",-1,7)      
+	with b
+	{
+		if right
+		{
+			repeat(MAX_LENGTH)
+			{
+				if !place_meeting(x+(40*length),y,block)
+					length+=1
+			}
+		}
+	else
+		{
+		repeat(MAX_LENGTH)
+			{
+				if !place_meeting(x-(40*length),y,block)
+					length+=1
+			}            
+		}
+	}
+	//show_message(a.length)
+	var d;
+	d=create_terrain_cutter(eightysqcircle,"disintegrated",-1,7)      
          
-        //b = hitbox id, d = terrain cutter id
-        if b.right==false
-        {
-            b.image_xscale=-(b.length)
-            d.x-=b.length*40
-        }
-        else
-        {
-            b.image_xscale=b.length
-            d.x+=b.length*40
-        }
+	//b = hitbox id, d = terrain cutter id
+	if b.right==false
+	{
+		b.image_xscale=-(b.length)
+		d.x-=b.length*40
+	}
+	else
+	{
+		b.image_xscale=b.length
+		d.x+=b.length*40
+	}
         
 
 
-    }
-    uniques_sunblast_lockdown=2
-    uniques_sunblast_has_made_hitbox=true
+	}
+	uniques_sunblast_lockdown=2
+	uniques_sunblast_has_made_hitbox=true
 }
 
 if uniques_sharkattack_lockdown==1 && image_index>5
 {
 
 
-    if uniques_sharkattack_has_made_hitbox==false 
-    {
-        attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,3,3)
-    } 
+if uniques_sharkattack_has_made_hitbox==false 
+{
+	attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,3,3)
+} 
     
-    uniques_sharkattack_has_made_hitbox=true
-    uniques_sharkattack_lockdown=2
+uniques_sharkattack_has_made_hitbox=true
+uniques_sharkattack_lockdown=2
             
 }
 
@@ -1729,94 +1743,94 @@ if uniques_sharkattack_lockdown==1 && image_index>5
 
 //LIMIT VSPD
 if vspd>10 && cangroundpound!=2 && airgrab_mode!=4
-    vspd=10
+	vspd=10
 //VERTICAL MOVEMENT
 if vspd>0
 {
-    for (i=0; i<vspd; i+=1)
-    {
-        if !place_meeting(x,y+1,block) && (chained_debuff_counter<1 || (y-chained_debuff_y_pos<BAITCHAIN_CHAIN_RANGE)) ///don't replace this with groundcheck you dumbo
-            y+=1
-        else
-            break;
-    };
+	for (i=0; i<vspd; i+=1)
+	{
+		if !place_meeting(x,y+1,block) && (chained_debuff_counter<1 || (y-chained_debuff_y_pos<BAITCHAIN_CHAIN_RANGE)) ///don't replace this with groundcheck you dumbo
+			y+=1
+		else
+			break;
+	};
 }
 else if vspd<0
 {
-    if (dash_angel_top_collision_safety>0 && y<DASH_ANGEL_TOP_COLLISION_MAXY)
-    {
-        vspd=0
-    }
+	if (dash_angel_top_collision_safety>0 && y<DASH_ANGEL_TOP_COLLISION_MAXY)
+	{
+		vspd=0
+	}
     
-    for (i=0; i<-vspd; i+=1)
-    {
-        if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
-            y-=1
-        else
-            break;
-    };
+	for (i=0; i<-vspd; i+=1)
+	{
+	if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
+		 y-=1
+	else
+		break;
+	};
 }
 
 if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 {
-    var bounced;
-    bounced=false   ///set to true after bounce effect so you don't bounce left and right at same time
+	var bounced;
+	bounced=false   ///set to true after bounce effect so you don't bounce left and right at same time
     
-    if hspd>0
-    {
-        if canbounce_counter>0
-        {
-            bounced=true
-            if canbounce_counter>MAX_CANBOUNCE_COUNTER
-                canbounce_counter=MAX_CANBOUNCE_COUNTER
-            hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
-            //show_message("bounce, go left! hspd is:"+string(hspd))
-        }
-        for (i=0; i<hspd; i+=1)
-        {
-            if !place_meeting(x+1,y,block)
-                x+=1
-            else
-                break;
-        };
-        if bounced==true
-        {
-            if place_meeting(x-1,y,block)
-                x-=1
-        }
-    }
-    if hspd<0
-    {
-        if canbounce_counter>0 && bounced==false
-        {
-            bounced=true
-            if canbounce_counter>MAX_CANBOUNCE_COUNTER
-                canbounce_counter=MAX_CANBOUNCE_COUNTER
-            hspd=clamp(BOUNCE_MIN_VELOCITY,-hspd,BOUNCE_MAX_VELOCITY)
-            //show_message("bounce, go right! hspd is:"+string(hspd))
+	if hspd>0
+	{
+		if canbounce_counter>0
+		{
+		        bounced=true
+		        if canbounce_counter>MAX_CANBOUNCE_COUNTER
+		        canbounce_counter=MAX_CANBOUNCE_COUNTER
+		        hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
+		        //show_message("bounce, go left! hspd is:"+string(hspd))
+		}
+		for (i=0; i<hspd; i+=1)
+		{
+		        if !place_meeting(x+1,y,block)
+		        x+=1
+		        else
+		        break;
+		};
+		if bounced==true
+		{
+			        if place_meeting(x-1,y,block)
+			        x-=1
+		}
+	}
+	if hspd<0
+	{
+		if canbounce_counter>0 && bounced==false
+		{
+			bounced=true
+			if canbounce_counter>MAX_CANBOUNCE_COUNTER
+				canbounce_counter=MAX_CANBOUNCE_COUNTER
+			hspd=clamp(BOUNCE_MIN_VELOCITY,-hspd,BOUNCE_MAX_VELOCITY)
+			//show_message("bounce, go right! hspd is:"+string(hspd))
     
-        }
-        for (i=0; i<-hspd; i+=1)
-        {
-            if !place_meeting(x-1,y,block)
-                x-=1
-            else
-                break;
-        };
-        if bounced==true
-        {
-            if place_meeting(x+1,y,block)
-                x+=1
-        }
-    }
-    if bounced==false
-        hspd=0  
+		}
+		for (i=0; i<-hspd; i+=1)
+		{
+			if !place_meeting(x-1,y,block)
+			x-=1
+			else
+			break;
+		};
+		if bounced==true
+		{
+			if place_meeting(x+1,y,block)
+			x+=1
+		}
+	}
+	if bounced==false
+		hspd=0  
     
-    if impact_debuff_counter>0
-    {
-        impact_debuff_counter=0
-        create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for rightward direction
-    }
+	if impact_debuff_counter>0
+	{
+		impact_debuff_counter=0
+		create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for rightward direction
+	}
 }
 else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 {
@@ -1935,8 +1949,3 @@ if y<-10
     if dash_angel_top_collision_safety<1
         playerdie()
 }
-
-
-
-/* */
-/*  */
