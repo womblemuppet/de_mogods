@@ -43,64 +43,64 @@ var readgrab;
 //////////////////////////////////////////////////////////////////////////////////////////// LOAD OPTIONS
 if file_exists("options.txt")
 {
-    OPT=file_text_open_read("options.txt")
-    readgrab=file_text_read_string(OPT)
-    setmenu_fullscreen=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
-    if setmenu_fullscreen==0
-        setmenu_fullscreen=false
-    else
-        setmenu_fullscreen=true    
+	OPT=file_text_open_read("options.txt")
+	readgrab=file_text_read_string(OPT)
+	setmenu_fullscreen=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	if setmenu_fullscreen==0
+		setmenu_fullscreen=false
+	else
+		setmenu_fullscreen=true    
 
-    file_text_readln(OPT)
-    readgrab=file_text_read_string(OPT)
+	file_text_readln(OPT)
+	readgrab=file_text_read_string(OPT)
     
-    setmenu_graphics_fid=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))    
+	setmenu_graphics_fid=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))    
        
-    file_text_readln(OPT)  
-    readgrab=file_text_read_string(OPT)    
+	file_text_readln(OPT)  
+	readgrab=file_text_read_string(OPT)    
       
-    setmenu_eff_volume=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))       
+	setmenu_eff_volume=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))       
     
-    file_text_readln(OPT) 
-    readgrab=file_text_read_string(OPT)    
+	file_text_readln(OPT) 
+	readgrab=file_text_read_string(OPT)    
     
-    setmenu_bgm_volume=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))     
+	setmenu_bgm_volume=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))     
       
-    file_text_readln(OPT)  
-    readgrab=file_text_read_string(OPT)    
+	file_text_readln(OPT)  
+	readgrab=file_text_read_string(OPT)    
              
-    setmenu_show_fps=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))      
+	setmenu_show_fps=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))      
     
-    if setmenu_show_fps==0
-        setmenu_show_fps=false
-    else
-        setmenu_show_fps=true    
+	if setmenu_show_fps==0
+		setmenu_show_fps=false
+	else
+		setmenu_show_fps=true    
         
-    file_text_close(OPT)
+	file_text_close(OPT)
 }
 else //////////////////////////////////////////////////////////////////////////////////////////// CREATE OPTIONS FILE
 {
-    //show_message("cant find options file creating options file")
-    var OPT;
-    OPT=file_text_open_write("options.txt")
-    if OPT==-1
-        show_error("options file can not be created",true)
-    file_text_write_string(OPT,"fullscreen=0")
-    file_text_writeln(OPT)
-    file_text_write_string(OPT,"graphics_fid=1")
-    file_text_writeln(OPT)
-    file_text_write_string(OPT,"eff_volume=0")
-    file_text_writeln(OPT)
-    file_text_write_string(OPT,"bgm_volume=0")
-    file_text_writeln(OPT)
-    file_text_write_string(OPT,"show_fps=1")  
-    file_text_close(OPT)    
+	//show_message("cant find options file creating options file")
+	var OPT;
+	OPT=file_text_open_write("options.txt")
+	if OPT==-1
+		show_error("options file can not be created",true)
+	file_text_write_string(OPT,"fullscreen=0")
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"graphics_fid=1")
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"eff_volume=0")
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"bgm_volume=0")
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"show_fps=1")  
+	file_text_close(OPT)    
     
-    setmenu_fullscreen=true
-    setmenu_graphics_fid=1   //0,1
-    setmenu_eff_volume=0
-    setmenu_bgm_volume=0
-    setmenu_show_fps=true
+	setmenu_fullscreen=true
+	setmenu_graphics_fid=1   //0,1
+	setmenu_eff_volume=0
+	setmenu_bgm_volume=0
+	setmenu_show_fps=true
 }
 
 window_set_fullscreen(setmenu_fullscreen)
@@ -134,7 +134,7 @@ startinggame=0
 ready[3]=-1    /// -1 controller not plugged in 0 = character select    1 = options   2   = locked in
 for (i=0; i<4; i+=1)
 {
-    ready[i]=-1
+	ready[i]=-1
 };
 
 
@@ -145,7 +145,7 @@ nextopenslot=0
 controllerin[12]=-1   ///when controller joins, saves the player slot in this.
 for (i=0; i<12; i+=1)
 {
-    controllerin[i]=-1
+	controllerin[i]=-1
 };
 
 numberofkeyboardsinuse=0
@@ -165,27 +165,27 @@ keyboard2_down_button=ord("K")
 keybinding_map_array[MAX_PLAYER_COUNT]=undefined
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-    keybinding_map_array[MAX_PLAYER_COUNT]=undefined
+	keybinding_map_array[MAX_PLAYER_COUNT]=undefined
 };
 
 
 readymenuselect[MAX_PLAYER_COUNT]=0    /// 0=control 1=handicap
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-    readymenuselect[i]=0
+	readymenuselect[i]=0
 };
 
 
 control_setup[MAX_PLAYER_COUNT]=0   // 0 = kb full  1 = kbnarrow(1) 2 = kbnarrow(2)  3 = controller default
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-    control_setup[i]=0
+	control_setup[i]=0
 };
 
 palette[MAX_PLAYER_COUNT]=0
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-    palette[i]=0
+	palette[i]=0
 };
 
 
@@ -208,6 +208,8 @@ char_selectbox_subspr=0
 CHAR_SELECTBOX_SUBSPR_LIMIT=2
 character_portraits_subspr=0
 CHARACTER_PORTRAITS_SUBSPR_LIMIT=10
+menu_crab_subspr=0
+MENU_CRAB_SUBSPR_LIMIT=7
 
 //////////////////////////////////////////////////////////////////  CHARACTER LARGE BACKGROUNDS (QUADRANTS)
 kouchou_set_charpor()

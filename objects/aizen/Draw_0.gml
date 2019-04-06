@@ -1,16 +1,16 @@
    
 if debug     ////debug information drawing
 {
-    draw_set_font(font_debug)
-    draw_text(kouchou.room_left_border_x+150,50,string_hash_to_newline("travelled: "+string(travelled)))
-    draw_text(kouchou.room_left_border_x+150,80,string_hash_to_newline("peacetime: "+string(peacetime)))
+	draw_set_font(font_debug)
+	draw_text(kouchou.room_left_border_x+150,50,string_hash_to_newline("travelled: "+string(travelled)))
+	draw_text(kouchou.room_left_border_x+150,80,string_hash_to_newline("peacetime: "+string(peacetime)))
 }
 
 
 if kouchou.map=="firetrial" || kouchou.map=="icetrial"
 {
-    draw_set_font(font_score)
-    draw_text(60,60,string_hash_to_newline(string(scoer)))
+	draw_set_font(font_score)
+	draw_text(60,60,string_hash_to_newline(string(scoer)))
 }
 
 
@@ -23,19 +23,19 @@ var draw;
 draw=false
 
 for (i=0; i<instance_number(player); i+=1)
-{
-    if instance_find(player,i).y<50
-    {
-        draw=true
-        break;
-    }
+	{
+	if instance_find(player,i).y<50
+	{
+		draw=true
+		break;
+	}
 };
 if draw
 {
-    for (i=kouchou.room_left_border_x; i<kouchou.room_right_border_x; i+=50)
-    {
-        draw_sprite(bound_warning_sprite,warning_subimage,i,0)
-    };
+	for (i=kouchou.room_left_border_x; i<kouchou.room_right_border_x; i+=50)
+	{
+		draw_sprite(bound_warning_sprite,warning_subimage,i,0)
+	};
 }
 
 
@@ -141,29 +141,29 @@ draw_sprite(stackframe_sprite,stackframe_subimage,kouchou.room_right_border_x+17
 //////////////////////////////////////////////////////////////////////////////       draw stack masks
 for (i=0; i<ds_list_size(STACK); i+=1)
 {
-    draw_sprite_ext(ds_list_find_value(STACK_ORB_SPRITES,ds_list_find_value(STACK,i)),0,xx+2,yy+210+ds_list_size(STACK)+i*150,3.75,3.75,0,c_white,1)
+	draw_sprite_ext(ds_list_find_value(STACK_ORB_SPRITES,ds_list_find_value(STACK,i)),0,xx+2,yy+210+ds_list_size(STACK)+i*150,3.75,3.75,0,c_white,1)
 };
 if last_stack_sprite!=-1
 {
-    draw_sprite_ext(last_stack_sprite,image_index,xx,yy+ds_list_size(STACK)+40,2,2,0,c_white,1)
-    draw_sprite_ext(active_effect_line,0,xx,yy-50,1,1.75,0,c_white,1)    
+	draw_sprite_ext(last_stack_sprite,image_index,xx,yy+ds_list_size(STACK)+40,2,2,0,c_white,1)
+	draw_sprite_ext(active_effect_line,0,xx,yy-50,1,1.75,0,c_white,1)    
 }
 
 if kouchou.setmenu_show_fps
 {
-    if fps_real>80
-    {
-        draw_set_color(c_white)    
-        draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real/80)*80)+" fps"))
-    }
-    else
-    {
-        draw_set_color(c_red)
-        draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real))+" fps"))
-    }
+	if fps_real>80
+	{
+		draw_set_color(c_white)    
+		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real/80)*80)+" fps"))
+	}
+	else
+	{
+		draw_set_color(c_red)
+		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real))+" fps"))
+	}
     
-    if debug
-        draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y+35,string_hash_to_newline(string(round(instance_count/25)*25)+"("+string(instance_number(block))+")"))
+	if debug
+		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y+35,string_hash_to_newline(string(round(instance_count/25)*25)+"("+string(instance_number(block))+")"))
 }   
 
 

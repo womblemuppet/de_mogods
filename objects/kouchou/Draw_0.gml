@@ -16,9 +16,15 @@ if room==menu
 	for (i=0; i<MENUSELECTMAX; i+=1)
 	{
 		draw_set_colour(c_black)
-		if menuselect==i
+		if menuselect==i     ////draw selected menu item settings
+		{
 			draw_set_colour(c_white)  ///c_white
-		if i==0
+			var crabxoffset;
+			crabxoffset=40+string_width(main_menu_texts[i])/2
+			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2-crabxoffset,room_height-375+50*i)
+			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2+crabxoffset,room_height-375+50*i)
+		}
+		if i==0                          ///// else draw non-selected menu item settings
 			draw_set_colour(c_silver)
 		draw_text(room_width/2,room_height-375+50*i,main_menu_texts[i])
 		draw_set_colour(c_black)
@@ -29,42 +35,42 @@ if room==menu
 if room==loremenu
 {
 
-    //draw_set_alpha(1)
-    var lorelistx,lorelisty,lorelistinterval;    
-    lorelistx=97
-    lorelisty=640
-    lorelistinterval=40
+	//draw_set_alpha(1)
+	var lorelistx,lorelisty,lorelistinterval;    
+	lorelistx=97
+	lorelisty=640
+	lorelistinterval=40
     
-    draw_set_colour(c_gray)    //lore list box    
-    draw_rectangle(lorelistx,lorelisty,lorelistx+200,lorelisty+330,false) 
+	draw_set_colour(c_gray)    //lore list box    
+	draw_rectangle(lorelistx,lorelisty,lorelistx+200,lorelisty+330,false) 
     
-    draw_set_colour(c_black)   ///back button
-    draw_set_font(font_coins)
-    draw_set_valign(fa_left)
-    if lorebackselect==true
-        draw_set_colour(c_white)
-    draw_text(lorelistx-90,lorelisty+290,"back")
+	draw_set_colour(c_black)   ///back button
+	draw_set_font(font_coins)
+	draw_set_valign(fa_left)
+	if lorebackselect==true
+	draw_set_colour(c_white)
+	draw_text(lorelistx-90,lorelisty+290,"back")
     
     
-    var loreboxx,loreboxy;
-    loreboxx=310
-    loreboxy=370
+	var loreboxx,loreboxy;
+	loreboxx=310
+	loreboxy=370
     
-    for (i=0; i<LORELISTNUMBER; i+=1)
-    {
-        if lorescroll+i<ds_list_size(lore_list)
-        {
-            draw_set_font(font_coins)
-            draw_set_colour(c_black)
-            if loreselect==lorescroll+i && lorebackselect==false
-                draw_set_colour(c_white)
-            draw_text(10+lorelistx,5+lorelisty+lorelistinterval*i,ds_list_find_value(lore_list,lorescroll+i))
-        }
-    }; 
-    draw_set_colour(c_white)
-    draw_rectangle(loreboxx,loreboxy,loreboxx+825,loreboxy+600,false)     
-    draw_set_colour(c_black)
-    draw_text(loreboxx+20,loreboxy+20,ds_list_find_value(lore_data,loreselect))
+	for (i=0; i<LORELISTNUMBER; i+=1)
+	{
+		if lorescroll+i<ds_list_size(lore_list)
+		{
+			draw_set_font(font_coins)
+			draw_set_colour(c_black)
+			if loreselect==lorescroll+i && lorebackselect==false
+				draw_set_colour(c_white)
+			draw_text(10+lorelistx,5+lorelisty+lorelistinterval*i,ds_list_find_value(lore_list,lorescroll+i))
+		}
+	}; 
+	draw_set_colour(c_white)
+	draw_rectangle(loreboxx,loreboxy,loreboxx+825,loreboxy+600,false)     
+	draw_set_colour(c_black)
+	draw_text(loreboxx+20,loreboxy+20,ds_list_find_value(lore_data,loreselect))
 
 }
 
@@ -82,7 +88,8 @@ if room==settings
     xx=150    //settings title x
     yy=300
     vgap=55
-    xx2=850   ///settings setting x
+    xx2=850   ///settings setting x,,
+    
     
     var t;
     t=""
