@@ -967,181 +967,167 @@ if checkkey_pushed(heavybutton) && !groundcheck && player_may_attack()       ///
 
 if checkkey_pushed(dashbutton)               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
 {
-    var exception;
-    exception=false
+	var exception;
+	exception=false
     
-    if checkkey(upbutton)
-    {
-        if !checkkey(downbutton)
-        {
-            if player_may_attack()
-            {                                                           //////////////////////////////////////////////////////////////////////////////////////  
-                if groundcheck && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
-                {
-                    exception=true
-                    vspd=0
-                    dash_angel_jump=1
-                    hspd=0
-                    dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
-                    sprite_index=sprites[30]    ///groundpound freeze sprite
-                    if supers>0
-                        sprite_index=sprites[31]   ///groundpound freeze super sprite
-                    image_speed=0.4
-                    image_index=0
-                }
-            } 
-        }
-    }
-    if !exception && player_may_attack() && checkkey(downbutton) && !groundcheck && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
-    {///                                                                                                                                                    groundpound         
-        var dropcrabok;
-        dropcrabok=true
-        switch attacks[? "gp"]
-        {                   
-            case 0: ////standard gp
-            exception=true                                                                                                                                     
-            vspd=0
-            cangroundpound=1
-            hspd=0
-            if supers==0
-                sprite_index=sprites[5]
-            else
-                sprite_index=sprites[7]
-            image_speed=0.4
-            image_index=0
-            alarm[2]=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
-            break;
-            case -1:
-            dropcrabok=false
-            break;
-            default:
-            show_error("boop beep, unknown gp attack id",true)
-        }
-        if holding_a_crab && dropcrabok
-        {
-            player_drop_crab()
-        }
-    }        
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-    if !exception && !checkkey(downbutton) && dashcd<1 && player_may_attack()                       ///                    DASH EVENT 
-    {
-        if cripple_debuff_counter<1
-        {
-            if holding_a_crab
-            {
-                player_drop_crab()
-            }
-            var player_dashed;
-            player_dashed=false
+	if checkkey(upbutton)
+	{
+	if !checkkey(downbutton)
+	{
+		if player_may_attack()
+		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
+			if groundcheck && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
+			{
+				exception=true
+				vspd=0
+				dash_angel_jump=1
+				hspd=0
+				dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
+				sprite_index=sprites[30]    ///groundpound freeze sprite
+				if supers>0
+				sprite_index=sprites[31]   ///groundpound freeze super sprite
+				image_speed=0.4
+				image_index=0
+			}
+		} 
+	}
+	}
+	if !exception && player_may_attack() && checkkey(downbutton) && !groundcheck && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
+	{///                                                                                                                                                    groundpound         
+		var dropcrabok;
+		dropcrabok=true
+		switch attacks[? "gp"]
+		{                   
+			case 0: ////standard gp
+			exception=true                                                                                                                                     
+			vspd=0
+			cangroundpound=1
+			hspd=0
+			if supers==0
+			sprite_index=sprites[5]
+			else
+			sprite_index=sprites[7]
+			image_speed=0.4
+			image_index=0
+			alarm[2]=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
+			break;
+			case -1:
+			dropcrabok=false
+			break;
+			default:
+			show_error("boop beep, unknown gp attack id",true)
+		}
+		if holding_a_crab && dropcrabok
+		{
+			player_drop_crab()
+		}
+	}        
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+	if !exception && !checkkey(downbutton) && dashcd<1 && player_may_attack()                       ///                    DASH EVENT 
+	{
+		if cripple_debuff_counter<1
+		{
+			if holding_a_crab
+			{
+				player_drop_crab()
+			}
+			var player_dashed;
+			player_dashed=false
             
-            switch attacks[? "dash"]    ///specific dash stuff
-            { 
-                case 1:   ///nobunt dash
-                
-                if dash_attacks_allowed_counter<1
-                    dash_attacks_allowed_counter=12
-                    
-                var a;                                          ////////////////   dash hitbox
-                a=attack_create_dash_hitbox(false,0,0,0,"nobuntdash",dasheroo,0.2,true,15)      ///care that attack name for nobuntdash and dash don't affect anything as there is a seperate variable (first arg)
-                a.x=round(x/4)*4
-                a.y=round(y/4)*4
-                if !right
-                    a.direction=180
-                player_dashed=true
-                
-               
-                break;     
-                case 2:   ///slinger nobunt dash
+			switch attacks[? "dash"]    ///specific dash stuff
+			{ 
+				case 1:   /// NOTHING (was once veteran dash but has now been removed)
+				/*nandemonai*/
+				break;     
+		
+		
+				case 2:   ///slinger nobunt dash
 
-                if dash_attacks_allowed_counter<1
-                    dash_attacks_allowed_counter=12
+				if dash_attacks_allowed_counter<1
+					 dash_attacks_allowed_counter=12
                     
-                var a;                                          ////////////////   dash hitbox
-                a=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.2,true,15)   
-                a.x=round(x/4)*4
-                a.y=round(y/4)*4
-                if !right
-                    a.direction=180
-                player_dashed=true
+				var a;                                          ////////////////   create slinger dash hitbox
+				a=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.2,false,15)   
+				if !right
+					a.direction=180
+				player_dashed=true
 
                 
-                break;                          
-                case 0:   ///bunt dash
+				break;                          
+				case 0:   ///bunt dash
                 
-                if dash_attacks_allowed_counter<1
-                    dash_attacks_allowed_counter=20                    
+				if dash_attacks_allowed_counter<1
+				        dash_attacks_allowed_counter=20                    
                     
-                var a;                                          ////////////////   dash hitbox
-                a=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,15)
-                a.x=round(x/4)*4
-                a.y=round(y/4)*4
-                if !right
-                    a.direction=180
-                player_dashed=true
-                break;
+				var a;                                          ////////////////   dash hitbox
+				a=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,15)
+				if !right
+					.direction=180
+				player_dashed=true
+				break;
 
-                case -1:
-                /*nandemonai*/  break;
-                default:
-                show_error("booop, unknown dash attack called",true)
-            }
+				case -1:
+				/*nandemonai*/  break;
+				default:
+				show_error("booop, unknown dash attack called",true)
+			}
             
-            if player_dashed    ///generic dash stuff
-            {
+			if player_dashed    ///generic dash stuff
+				{
 
                     
-                sprite_index=sprites[15]                     ///////////////////   dash  sprite
-                if supers>0
-                    sprite_index=sprites[16]
-                image_index=0
-                image_speed=0.25
+				sprite_index=sprites[15]                     ///////////////////   dash  sprite
+				if supers>0
+					sprite_index=sprites[16]
+				image_index=0
+				image_speed=0.25
                 
                 
-                if right                                       //////////////////    dash movement
-                    hspd=dashamount
-                else
-                    hspd=-dashamount
+				if right                                       //////////////////    dash movement
+					hspd=dashamount
+				else
+					hspd=-dashamount
                        
 
-                if !groundcheck           ////////dashing in air
-                {
-                    vspd=-3
-                    hspd-=3
-                    alarm[5]=2              ////hspd gets slowed 2 steps later    
-                    if right
-                        a.image_angle=45   ///a still refers to trail effect
-                    else
-                        a.image_angle=315
-                }
+				if !groundcheck           ////////dashing in air
+				{
+					vspd=-3
+					hspd-=3
+					alarm[5]=2              ////hspd gets slowed 2 steps later    
+					if right
+						a.image_angle=45   ///a still refers to trail effect
+					else
+						a.image_angle=315
+				}
                 
-                dashcd=DASH_COOLDOWN_TIME    ///dash cooldown time (also DASH LOCKDOWN TIME, THOUGH THERE IS A FORGIVE MECHANIC IF IT HITS WALL)     
+				dashcd=DASH_COOLDOWN_TIME    ///dash cooldown time (also DASH LOCKDOWN TIME, THOUGH THERE IS A FORGIVE MECHANIC IF IT HITS WALL)     
                 
                                 
-                a=effect_aniend(dash_no_ULT,0.2,1)               //////////////   dash trail effect
-                if supers>0
-                {
-                    if P==0 || P==2
-                        a.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
-                    if P==1 || P==3
-                        a.sprite_index=p2_dash_ULT
-                }
-                if !right
-                    a.image_xscale=-1                
+				a=effect_aniend(dash_no_ULT,0.2,1)               //////////////   dash trail effect
+				if supers>0
+				{
+					if P==0 || P==2
+						.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
+					if P==1 || P==3
+						a.sprite_index=p2_dash_ULT
+				}
+				if !right
+					a.image_xscale=-1            
                 
-                if uniques_parachute==1
-                    uniques_parachute=2   //dash cancels parachute
+				if uniques_parachute==1
+					uniques_parachute=2   //dash cancels parachute
                 
-                if sidezap==true                              ////////////////////     kanehameha
-                {
-                    sidezap=false
-                    var a;
-                    a=instance_create(x,y,magicbolt)
-                    create_terrain_cutter(magicbolt, "gilded", right*180, -1)
-                    a.creator=self.id/////////////////////////////////////////////    
-                }
-            }
-        }
-    }
+				if sidezap==true                              ////////////////////     kanehameha
+				{
+					sidezap=false
+					var a;
+					a=instance_create(x,y,magicbolt)
+					create_terrain_cutter(magicbolt, "gilded", right*180, -1)
+					a.creator=self.id/////////////////////////////////////////////    
+				}
+			}
+		}
+	}
 }
 
 
@@ -1628,18 +1614,10 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 	if uniques_forwardpunch_has_made_hitbox==false
 	{
 		var a;
-		a=instance_create(x,y,groundpunch_shockwave)
+		a=instance_create(x,y,groundpunch_shockwave)       ///create object that will make chain of shockwave hitboxes
 		a.creator=self.id
 		a.target=self.id
-		with a
-		{
-			var b
-			b=attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
-			b.creator=creator
-			b.target=creator	
-			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
-		}
-
+		
 		if !right
 		{
 			a.image_xscale=-1
@@ -1647,6 +1625,17 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 		}
 		else
 			a.GAP=30
+
+		with a                                                                       ////create the first shockwave hitbox here (changes here should also change groundpunch_shockwave alarm[0]
+		{
+			var b
+			b=attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
+			b.creator=creator
+			b.target=creator
+			b.image_xscale=image_xscale
+			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
+		}
+
 
 		
 		var a;

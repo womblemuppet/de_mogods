@@ -3087,6 +3087,14 @@
             }
         },
         {
+            "Key": "785e3efb-f69f-4223-875f-7881b20e9b32",
+            "Value": {
+                "id": "c0b852c0-b9f1-4954-ac3c-55c87950fa78",
+                "resourcePath": "sprites\\Slinger_charge\\Slinger_charge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "78966579-0383-40f8-b18c-d7d49b600b85",
             "Value": {
                 "id": "fae6fbe1-2bd9-4b82-bb92-1f069b51ca12",
@@ -5316,14 +5324,6 @@
                 "id": "4d573d2f-58ef-460d-a54b-f7b4e385f25c",
                 "resourcePath": "scripts\\multiplayer_menu_right_button\\multiplayer_menu_right_button.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "cbde5eec-f7ba-4c3b-9abd-0166c51db0dc",
-            "Value": {
-                "id": "c9d13e38-cf90-489f-98df-1213510d0e82",
-                "resourcePath": "sprites\\Slinger_3H_charge\\Slinger_3H_charge.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -24,4 +24,8 @@ if image_xscale=-1
 a.dir=a.direction   ///for block_take_damage script
 a.spd=6                    ///for block_take_damage script
 
+a.x=round(x/4)*4
+a.y=round(y/4)*4
+
+
 return a

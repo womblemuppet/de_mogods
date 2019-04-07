@@ -24,7 +24,7 @@ switch (character)
     ds_map_add(attacks, "heavy attack", 0);
     //ooga windup punch
     ds_map_add(attacks, "dash", 0);
-    //ooga standard dash
+    //standard bunt dash
     ds_map_add(attacks, "airdash", 0);
     //ooga standard airdash
     ds_map_add(attacks, "gp", 0);
@@ -56,8 +56,8 @@ switch (character)
     //veteran uppercut (standard but chains to veteran specials)
     ds_map_add(attacks, "heavy attack", 1);
     //veteran anti air punch
-    ds_map_add(attacks, "dash", 1);
-    //nobunt (noattacks) dash
+    ds_map_add(attacks, "dash", 0);
+    //standard bunt dash
     ds_map_add(attacks, "airdash", 0);
     //ooga standard airdash
     ds_map_add(attacks, "gp", 0);
@@ -124,7 +124,7 @@ switch (character)
     ds_map_add(attacks, "heavy attack", 3);
     //bait sharkattack heavy attack
     ds_map_add(attacks, "dash", 0);
-    //ooga standard dash
+    //standard bunt dash
     ds_map_add(attacks, "airdash", 0);
     //ooga standard airdash
     ds_map_add(attacks, "gp", 0);
