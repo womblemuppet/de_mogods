@@ -6,14 +6,14 @@
 
 if canbounce_counter>0
 {
-    if place_meeting(x,y+vspd,block)      /////    bounce upward
-    {
-        if canbounce_counter>MAX_CANBOUNCE_COUNTER
-            canbounce_counter=MAX_CANBOUNCE_COUNTER
-        vspd=clamp(-BOUNCE_MIN_VELOCITY,-abs(vspd),-BOUNCE_MAX_VELOCITY)
-        if !place_meeting(x,y-1,block)
-            y-=1
-    }
+	if place_meeting(x,y+vspd,block)      /////    bounce upward
+	{
+		if canbounce_counter>MAX_CANBOUNCE_COUNTER
+			canbounce_counter=MAX_CANBOUNCE_COUNTER
+		vspd=clamp(-BOUNCE_MIN_VELOCITY,-abs(vspd),-BOUNCE_MAX_VELOCITY)
+		if !place_meeting(x,y-1,block)
+			y-=1
+	}
 }
 
 
@@ -23,53 +23,53 @@ id_of_groundpounded_instrument_if_exists=noone
 
 if place_meeting(x,y+1,block)
 {
-    groundcheck=true
-    if instance_exists(turret_block)
-    {
-        if place_meeting(x,y+1,turret_block)
-        {   
-            var me,mycol;
-            me=self.id
-            mycol=sentinel_colour
-            if me!=instance_place(x,y+1,turret_block).owner
-            {
-                with instance_place(x,y+1,turret_block)
-                {
-                    owner=me
-                    alarm[0]=TAKEOVERTIME
-                    sprite_index=block_turret
-                    image_blend=mycol                
-                    alarm[1]=UPGRADETIME
-                }
-                with sentinel
-                {
-                    effect_create_above(ef_firework,x,y,0,c_red)
-                    instance_destroy()
-                }
-            }
-        }
-    }
-    if instance_exists(weaksand)
-    {
-        if place_meeting(x,y+1,weaksand)
-        {
-            with instance_place(x,y+1,weaksand)
-            {
-                if dying==false
-                {
-                    dying=true
-                    sprite_index=weaksand_sprite_die
-                    image_speed=0.1
-                    image_index=0
-                }
-            }
-        }
-    }
-    if instance_exists(instrument)
-    {
-        if place_meeting(x,y+1,instrument)
-            id_of_groundpounded_instrument_if_exists=instance_place(x,y+1,instrument)
-    }
+	groundcheck=true
+	if instance_exists(turret_block)
+	{
+		if place_meeting(x,y+1,turret_block)
+		{   
+			var me,mycol;
+			me=self.id
+			mycol=sentinel_colour
+			if me!=instance_place(x,y+1,turret_block).owner
+			{
+				with instance_place(x,y+1,turret_block)
+				{
+					owner=me
+					alarm[0]=TAKEOVERTIME
+					sprite_index=block_turret
+					image_blend=mycol                
+					alarm[1]=UPGRADETIME
+				}
+				with sentinel
+				{
+					effect_create_above(ef_firework,x,y,0,c_red)
+					instance_destroy()
+				}
+			}
+		}
+	}
+	if instance_exists(weaksand)
+	{
+		if place_meeting(x,y+1,weaksand)
+		{
+			with instance_place(x,y+1,weaksand)
+			{
+				if dying==false
+				{
+					dying=true
+					sprite_index=weaksand_sprite_die
+					image_speed=0.1
+					image_index=0
+				}
+			}
+		}
+	}
+	if instance_exists(instrument)
+	{
+		if place_meeting(x,y+1,instrument)
+			id_of_groundpounded_instrument_if_exists=instance_place(x,y+1,instrument)
+	}
 }
 else
     groundcheck=false   
@@ -79,11 +79,11 @@ watery=1
 wateryjump=1
 if instance_exists(wave)
 {
-    if y>wave.y+30
-    {
-        watery=2   ///gravity divided by this number underwater
-        wateryjump=0.75 ///jump timesed by this number underwater
-    }
+	if y>wave.y+30
+	{
+		watery=2   ///gravity divided by this number underwater
+		wateryjump=0.75 ///jump timesed by this number underwater
+	}
 }      
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -93,32 +93,32 @@ if instance_exists(wave)
 
 if supers>0 && random(1)>0.6      ///////////super effect
 {
-    var a;
-    a=instance_create(x,y,ef_stunspiral)
-    a.sprite_index=supersparkle_sprite
-    a.targ=self.id
-    a.depth=-2
-    a.offsetx=0
-    a.offsety=0
-    a.image_speed=0.25
-    a.image_xscale=1.25
-    a.image_yscale=1.25
+	var a;
+	a=instance_create(x,y,ef_stunspiral)
+	a.sprite_index=supersparkle_sprite
+	a.targ=self.id
+	a.depth=-2
+	a.offsetx=0
+	a.offsety=0
+	a.image_speed=0.25
+	a.image_xscale=1.25
+	a.image_yscale=1.25
 }
 if sidezap && random(1)>0.8        /////////////kanehameha effect
 {
-    var a;
-    a=effect_aniend(flameofsidezap,0.25,-1)
-    a.x+=6-random(12)
-    a.vspeed=choose(0,-1,-2)
-    a.image_alpha=0.8
-    if a.vspeed==-2
-        a.image_alpha=0.5
+	var a;
+	a=effect_aniend(flameofsidezap,0.25,-1)
+	a.x+=6-random(12)
+	a.vspeed=choose(0,-1,-2)
+	a.image_alpha=0.8
+	if a.vspeed==-2
+		a.image_alpha=0.5
 }
 
 if cursed==true && random(1)>0.6
 {
-    with effect_aniend(imdyinginside,0.4,-1)
-        vspeed=-2
+	with effect_aniend(imdyinginside,0.4,-1)
+		vspeed=-2
 }
 
 
@@ -128,188 +128,188 @@ if cursed==true && random(1)>0.6
     
 if dashcd>0
 {
-    dashcd-=1
-    if dashcd==0
-        dash_wallbreak_forgive=false
+	dashcd-=1
+	if dashcd==0
+		dash_wallbreak_forgive=false
 }
 if STUNNED>0
 {
-    STUNNED-=1       
+	STUNNED-=1
 }
 if STUNNED2>0
 {
-    STUNNED2-=1
-    if STUNNED2==0
-    {
-        if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
-        {
-            sprite_index=sprites[25]
-            if supers>0
-                sprite_index=sprites[26]    
-        }
-        else
-        {
-            sprite_index=sprites[0]
-            if supers>0
-                sprite_index=sprites[9]
-        }
-    }
+	STUNNED2-=1
+	if STUNNED2==0
+	{
+		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
+		{
+			sprite_index=sprites[25]
+			if supers>0
+			sprite_index=sprites[26]    
+		}
+		else
+		{
+			sprite_index=sprites[0]
+			if supers>0
+			sprite_index=sprites[9]
+		}
+	}
 }
 else                                                   ////////////health blending
 {
-    //////HP   [finaledit]
-    if H==3
-    {
-        image_blend=c_white
-    }
-    if H==2
-    {    
-        image_blend=make_colour_rgb(183, 245, 115)
-        if P>2
-            image_blend=make_colour_rgb(183, 245, 215)
-    }
-    if H==1
-    {
-        image_blend=make_colour_rgb(229, 172, 0)
-        if P>2
-            image_blend=make_colour_rgb(229, 172, 100)
-    }
+	//////HP   [finaledit]
+	if H==3
+	{
+		image_blend=c_white
+	}
+	if H==2
+	{    
+		image_blend=make_colour_rgb(183, 245, 115)
+		if P>2
+			image_blend=make_colour_rgb(183, 245, 215)
+	}
+	if H==1
+	{
+		image_blend=make_colour_rgb(229, 172, 0)
+		if P>2
+			image_blend=make_colour_rgb(229, 172, 100)
+	}
 }
 
 if push_other_attacks_timer>0
-    push_other_attacks_timer-=1   
+	push_other_attacks_timer-=1   
 
 if doublejumptimer>0
-    doublejumptimer-=1
+	doublejumptimer-=1
 if dash_attacks_allowed_counter>0
 {
-    //effect_create_above(ef_firework,x,y-20,0,c_red)
-    dash_attacks_allowed_counter-=1
+	//effect_create_above(ef_firework,x,y-20,0,c_red)
+	dash_attacks_allowed_counter-=1
 }
 
 if recoil_sprite_counter>0                                           //recoil sprite end check
 {
-    recoil_sprite_counter-=1
+	recoil_sprite_counter-=1
     
     
     
-    if recoil_sprite_counter==0
-    {
-        var pass;
-        pass=false
-        for (i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
-        {
-            if sprites[sprites_below_recoil_priority[| i]]==sprite_index
-            {
-                pass=true
-                break;
-            }
-        };
-        if pass
-        {  
-            player_set_idle()
-        }
-    }
+	if recoil_sprite_counter==0
+	{
+		var pass;
+		pass=false
+		for (i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
+		{
+			if sprites[sprites_below_recoil_priority[| i]]==sprite_index
+			{
+				pass=true
+				break;
+			}
+		};
+		if pass
+		{  
+			player_set_idle()
+		}
+	}
 }    
 if cripple_debuff_counter>0
 {
-    cripple_debuff_counter-=1
-    if (cripple_debuff_counter mod 10) == 0
-        effect_aniend(cripple_debuff_effect,1.5,-3)
+	cripple_debuff_counter-=1
+	if (cripple_debuff_counter mod 10) == 0
+		effect_aniend(cripple_debuff_effect,1.5,-3)
 }
 if impact_debuff_counter>0
 {
-    impact_debuff_counter-=1
-    effect_aniend(impact_debuff_effect,0.25,0)
+	impact_debuff_counter-=1
+	effect_aniend(impact_debuff_effect,0.25,0)
 }
 
 if fpunch_lockdown==1
 {
-       fpunch_charge+=1
+	fpunch_charge+=1
 }
 if fpunch_cd_counter>0
 {
-    fpunch_cd_counter-=1
+	fpunch_cd_counter-=1
 }
 if uniques_aapunch_cd_counter>0
 {
-    uniques_aapunch_cd_counter-=1
+	uniques_aapunch_cd_counter-=1
 }
 if uniques_vet_chain_counter>0
 {
-    uniques_vet_chain_counter-=1
+	uniques_vet_chain_counter-=1
 }
 if uniques_sunblast_cd_counter>0
 {
-    uniques_sunblast_cd_counter-=1
+	uniques_sunblast_cd_counter-=1
 }
 if uniques_mine_cooldown_counter>0
 {
-    uniques_mine_cooldown_counter-=1
+	uniques_mine_cooldown_counter-=1
 }
 if mild_slowed_counter>0
 {
-    mild_slowed_counter-=1
-    if slowed_show_trail
-        effect_aniend(slow_debuff_effect,0.25,-3)    
+	mild_slowed_counter-=1
+	if slowed_show_trail
+		effect_aniend(slow_debuff_effect,0.25,-3)    
 }
 if fuckoff_slowed_counter>0
 {
-    fuckoff_slowed_counter-=1
-    if slowed_show_trail
-        effect_aniend(mightyannoying_slow_debuff_effect,0.25,-3)    
+	fuckoff_slowed_counter-=1
+	if slowed_show_trail
+		effect_aniend(mightyannoying_slow_debuff_effect,0.25,-3)    
 }
 if canbounce_counter>0
 {
-    canbounce_counter-=1
-    effect_aniend(bounce_debuff_effect,0.25,-3)
+	canbounce_counter-=1
+	effect_aniend(bounce_debuff_effect,0.25,-3)
 }
 
 if dash_angel_jump_counter>0 
 {
-    dash_angel_jump_counter-=1       
-    if dash_angel_jump_counter==0 && dash_angel_jump==1
-    {               /////ANGEL JUMP FINISH CHARGE EVENT
-        if !place_meeting(x,y-1,block)
-            y-=1
+	dash_angel_jump_counter-=1       
+	if dash_angel_jump_counter==0 && dash_angel_jump==1
+	{               /////ANGEL JUMP FINISH CHARGE EVENT
+	if !place_meeting(x,y-1,block)
+		y-=1
             
-        sprite_index=sprites[28]
-        if supers>0
-            sprite_index=sprites[29]
-        image_index=0
-        image_speed=0.2
-        dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
-        vspd=-DASH_ANGEL_JUMP_AMOUNT
-        dash_angel_jump=2
+	sprite_index=sprites[28]
+	if supers>0
+		sprite_index=sprites[29]
+	image_index=0
+	image_speed=0.2
+	dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
+	vspd=-DASH_ANGEL_JUMP_AMOUNT
+	dash_angel_jump=2
         
-        ///allow parachute  after angel jump
-        uniques_parachute=0
-        doublejump=2
+	///allow parachute  after angel jump
+	uniques_parachute=0
+	doublejump=2
          
-          attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false,300)
-    }
+		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false,300)
+	}
 }
 if dash_angel_top_collision_safety>0
 {
-    dash_angel_top_collision_safety-=1
+	dash_angel_top_collision_safety-=1
 }
 if uniques_parachute_minimum_time_counter>0
 {
-    uniques_parachute_minimum_time_counter-=1
+	uniques_parachute_minimum_time_counter-=1
 }
 
 if chained_debuff_counter>0
 {
-    chained_debuff_counter-=1
-    if chained_debuff_counter==0
-    {
-        with chain_effect_id_to_delete
-            instance_destroy()
-        chain_effect_id_to_delete=noone
-        hspd=0
-        vspd=0
-        effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
-    }
+	chained_debuff_counter-=1
+	if chained_debuff_counter==0
+	{
+	with chain_effect_id_to_delete
+		instance_destroy()
+	chain_effect_id_to_delete=noone
+	hspd=0
+	vspd=0
+	effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
+	}
 }
 
 
@@ -318,91 +318,91 @@ if chained_debuff_counter>0
 ///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB
 if airgrab_mode==2 && airgrab_decidedir_time>0
 {
-    if instance_exists(airgrab_target) && airgrab_target!=-1
-    {
-        var tx,ty,steps_to_try_move;
-        steps_to_try_move=8
-        if right
-            tx=x+12
-        else
-            tx=x-12
-        ty=y-5
+	if instance_exists(airgrab_target) && airgrab_target!=-1
+	{
+		var tx,ty,steps_to_try_move;
+		steps_to_try_move=8
+		if right
+			tx=x+12
+		else
+			tx=x-12
+		ty=y-5
         
-        with airgrab_target
-        {
-            repeat(steps_to_try_move)
-            {
-                if x>tx
-                {
-                    if !place_meeting(x-1,y,block)
-                        x-=1
-                    else
-                        break;
-                }
-                else if x<tx
-                {
-                    if !place_meeting(x+1,y,block)
-                        x+=1
-                    else
-                        break;
-                }
-                if y>ty
-                {
-                    if !place_meeting(x,y-1,block)
-                        y-=1
-                    else
-                        break;
-                }
-                else if y<ty
-                {
-                    if !place_meeting(x,y+1,block)
-                        y+=1
-                    else
-                        break;
-                }
-            }    
-        }
-    }
+		with airgrab_target
+		{
+			repeat(steps_to_try_move)
+			{
+				if x>tx
+				{
+					if !place_meeting(x-1,y,block)
+					x-=1
+					else
+					break;
+				}
+				else if x<tx
+				{
+					if !place_meeting(x+1,y,block)
+					x+=1
+					else
+					break;
+				}
+				if y>ty
+				{
+					if !place_meeting(x,y-1,block)
+					y-=1
+					else
+					break;
+				}
+				else if y<ty
+				{
+					if !place_meeting(x,y+1,block)
+					y+=1
+					else
+					break;
+				}
+			}    
+		}
+	}
     
-    airgrab_decidedir_time-=1
-    if airgrab_decidedir_time==1
-    {
-        switch attacks[? "air grab effect"]   
-        {
-            case 0:
-            if instance_exists(airgrab_target) && airgrab_target!=-1
-            {
+	airgrab_decidedir_time-=1
+	if airgrab_decidedir_time==1
+	{
+		switch attacks[? "air grab effect"]   
+		{
+			case 0:
+			if instance_exists(airgrab_target) && airgrab_target!=-1
+			{
                 
-                var dir;
-                dir=right
-                var at;
-                at=AIRGRAB_STUN_TIME;            
+				var dir;
+				dir=right
+				var at;
+				at=AIRGRAB_STUN_TIME;            
                 
-                with airgrab_target
-                {
-                    canbounce_counter=at
-                    STUNNED2=at
-                    airgrab_mode=3
-                    if dir==true
-                        hspd=7.5
-                    else
-                        hspd=-7.5
-                    vspd=18
+				with airgrab_target
+				{
+					canbounce_counter=at
+					STUNNED2=at
+					airgrab_mode=3
+					if dir==true
+					hspd=7.5
+					else
+					hspd=-7.5
+					vspd=18
                     
-                    hothands+=1                         //// ONE HH DAMAGE
-                    player_hothands_check()
-                }
-                hothands=0                              //// RESETS THROWERS HH
-                
-            }
-            airgrab_mode=3      
-            vspd=-1                                                                 break;            
-            case -1:
-            /*nandemonai*/                                                          break;
-            default:
-            show_error("bopopopo, unknown air throw effect attack id",true)                
-        }
-    }
+					hothands+=1                         //// ONE HH DAMAGE
+					player_hothands_check()
+				}
+				hothands=0                              //// RESETS THROWERS HH                
+			}
+			
+			airgrab_mode=3      
+			vspd=-1                                                                 break;            
+			case -1:
+			/*nandemonai*/                                                          break;
+			default:
+			show_error("bopopopo, unknown air throw effect attack id",true)                
+		}
+	}
 }
 
 
@@ -1073,9 +1073,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			}
             
 			if player_dashed    ///generic dash stuff
-				{
-
-                    
+			{
 				sprite_index=sprites[15]                     ///////////////////   dash  sprite
 				if supers>0
 					sprite_index=sprites[16]
@@ -1083,10 +1081,10 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				image_speed=0.25
                 
                 
-				if right                                       //////////////////    dash movement
-					hspd=dashamount
+				if right                                       //////////////////    dash initial movement
+					hspd=ground_dashamount
 				else
-					hspd=-dashamount
+					hspd=-ground_dashamount
                        
 
 				if !groundcheck           ////////dashing in air
@@ -1107,7 +1105,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				if supers>0
 				{
 					if P==0 || P==2
-						.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
+						a.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
 					if P==1 || P==3
 						a.sprite_index=p2_dash_ULT
 				}

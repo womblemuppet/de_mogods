@@ -3,7 +3,6 @@ vspd=0
 groundcheck=false
 JUMPSPEED=6.75 
 BIGJUMPSPEED=7.25 
-SUPERJUMPSPEED=7 
 HOR_RUNSPEED=5
 HOR_DASHSPEED=4
 hor_running_counter=0  //4 = pressed r  8+ = holding r  -4 = pressed l  -8< = holding l
@@ -31,7 +30,7 @@ orb_count_meter=0   ///meter, charged on landing hits
 supers=0  ///number of super charges
 dashcd=0  /// dash cooldown counter
 DASH_COOLDOWN_TIME=32 //originally 70, cooldown between dashes
-dashamount=12.5  ///hspd set to this amount
+ground_dashamount=12.5  ///hspd set to this amount
 DASH_LOCKDOWN_TIME=20 ///time you can't move after dashing
 dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping the dash lockdown
 dash_angel_jump=0 //// upward dash     0 can 1 freeze 2 in animation 3 used.
@@ -88,7 +87,6 @@ BOUNCE_MAX_VELOCITY=6
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)
-timing_jump_enabled=false
 dash_attacks_allowed_counter=0
 uniques_super_ooga_gp_enabled=false
 uniques_mines_enabled=false
