@@ -9,7 +9,7 @@ if argument0>0
     {
         for (i=0; i<argument0; i+=1)
         {
-            if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x && place_meeting(x+1,y+1,block)
+            if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x-20 && place_meeting(x+1,y+1,block)
                 x+=1
             else
                 break;
@@ -19,7 +19,7 @@ if argument0>0
     {
         for (i=0; i<argument0; i+=1)
         {
-            if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x && place_meeting(x-1,y+1,block)
+            if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x+20 && place_meeting(x-1,y+1,block)
                 x-=1
             else
                 break;
@@ -32,7 +32,7 @@ else
     {
         for (i=0; i<-argument0; i+=1)
         {
-            if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x && place_meeting(x-1,y+1,block)
+            if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x+20 && place_meeting(x-1,y+1,block)
                 x-=1        
             else
                 break;
@@ -42,7 +42,7 @@ else
     {
         for (i=0; i<-argument0; i+=1)
         {
-            if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x && place_meeting(x+1,y+1,block)
+            if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x-20 && place_meeting(x+1,y+1,block)
                 x+=1
             else
                 break;

@@ -106,7 +106,7 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 		}
 		if travelled>mountainlevel && !instance_exists(mountains_backdrop) 
 		{
-			instance_create(0,room_height,mountains_backdrop)
+			instance_create(kouchou.room_left_border_x,room_height,mountains_backdrop)
 		} 
 
 		travelled_tick_biome_threshold_check()

@@ -8,7 +8,7 @@
         "61fcd62b-f02e-4bd1-b2af-15614620bdb4"
     ],
     "filterType": "GMObject",
-    "folderName": "obsolete",
+    "folderName": "obsolete (will be deleted)",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

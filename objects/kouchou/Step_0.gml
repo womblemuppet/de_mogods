@@ -17,43 +17,43 @@ if keyboard_check_pressed(vk_space)
 {
 	if room==menu
 	{
-	switch menuselect
-	{
-	case 0:
-	room=preoverworld           break;
-	case 1:
-	competitive_mode=true   
-	map="multiplayer"
-	MAX_PLAYER_COUNT=2
+		switch menuselect
+		{
+		case 0:
+		room=preoverworld           break;
+		case 1:
+		competitive_mode=true   
+		map="multiplayer"
+		MAX_PLAYER_COUNT=2
                 
-	kouchou_set_charpor()
+		kouchou_set_charpor()
 
                 
-	room=multiplayermenu    break;
-	case 2:
-	competitive_mode=false
-	map="multiplayer"
-	MAX_PLAYER_COUNT=4
+		room=multiplayermenu    break;
+		case 2:
+		competitive_mode=false
+		map="multiplayer"
+		MAX_PLAYER_COUNT=4
                 
-	kouchou_set_charpor()
+		kouchou_set_charpor()
                 
-	room=multiplayermenu    break;
-	case 3:
-		room=loremenu           break;
-	case 4:
-		room=settings           break;
-	case 5:
-		game_end()              break;
-	default:
-	show_error("unknown menuselect destination",true) break;
-	}
+		room=multiplayermenu    break;
+		case 3:
+			room=loremenu           break;
+		case 4:
+			room=settings           break;
+		case 5:
+			game_end()              break;
+		default:
+		show_error("unknown menuselect destination",true) break;
+		}
 	}
 	if room==loremenu
 	{
-	if lorebackselect==true
-	{
-		 room=menu
-	}
+		if lorebackselect==true
+		{
+			 room=menu
+		}
 	}
 }
 

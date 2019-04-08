@@ -24,8 +24,8 @@ starbucks baristas in nishinasuno lol
 starbucksmode=false   //[finaledit]
 
 
-rw=1200    ///playable game area
-rh=900   
+rw=1200           ///playable game area
+rh=900
 room_border_width=240 ///per side ofc   [finaledit] can be local
 room_left_border_x=room_border_width
 room_right_border_x=rw+room_border_width
@@ -211,7 +211,7 @@ CHARACTER_PORTRAITS_SUBSPR_LIMIT=10
 menu_crab_subspr=0
 MENU_CRAB_SUBSPR_LIMIT=7
 
-//////////////////////////////////////////////////////////////////  CHARACTER LARGE BACKGROUNDS (QUADRANTS)
+// CHARACTER LARGE BACKGROUNDS (QUADRANTS)
 kouchou_set_charpor()
 
 

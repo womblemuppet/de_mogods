@@ -177,100 +177,99 @@ if competitive_mode
 
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {    
-/// if not competitive, draw coloured player backgrounds (temp)
-if !competitive_mode
-	draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
+	/// if not competitive, draw coloured player backgrounds (temp)
+	if !competitive_mode
+		draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
         
         
-//player join slot prompts
-draw_set_colour(c_dkgray) 
-if ready[i]==-1 && i==nextopenslot
-{
-	draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
-	var t;
-	t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
-	if numberofkeyboardsinuse==1
-	t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
-	if numberofkeyboardsinuse>1
-	t="press [start]\n on controller to join"
-	draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i],t)                
-
-}
+	//player join slot prompts
+	draw_set_colour(c_silver) 
+	if ready[i]==-1 && i==nextopenslot
+	{
+		draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+200,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
+		var t;
+		t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
+		if numberofkeyboardsinuse==1
+			t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
+		if numberofkeyboardsinuse>1
+			t="press [start]\n on controller to join"
+		draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+50,t)
+	}
         
-var flip,flipextra_x;     ///flips character select portrait for p1 and p3
-flip=-1
-flipextra_x=600
-if i mod 2 == 1
-{
-	flip=1
-	flipextra_x=0   
-}
+	var flip,flipextra_x;     ///flips character select portrait for p1 and p3
+	flip=-1
+	flipextra_x=600
+	if i mod 2 == 1
+	{
+		flip=1
+		flipextra_x=0   
+	}
             
-if ready[i]!=-1
-{
-	//draw character portrait
-	if ready[i]!=2
-	draw_sprite_ext(character_portraits_array[selectchar[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
-	else
-	draw_sprite_ext(character_portraits_array[selectchar[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+	if ready[i]!=-1
+	{
+		//draw character portrait
+		if ready[i]!=2
+			draw_sprite_ext(character_portraits_array[selectchar[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+		else
+			draw_sprite_ext(character_portraits_array[selectchar[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
 				
-	//draw options frame
-	if ready[i]==0 || ready[i]==1
-		draw_sprite_ext(menu_player_options_frame,0,menu_player_options_x[i],menu_player_options_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
-}
-if ready[i]==0     /// selecting character, draw lore
-{
-            
-		for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selectchar[i]]); ++ii) 
-		{
-			draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*15),ds_list_find_value(lore_character_select_bio_array[selectchar[i]],ii)   )
-		}
+		//draw options frame
+		if ready[i]==0 || ready[i]==1
+			draw_sprite_ext(menu_player_options_frame,0,menu_player_options_x[i],menu_player_options_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
+	}
+	if ready[i]==0     /// selecting character, draw lore
+	{
+	
+			for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selectchar[i]]); ++ii) 
+			{
+				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*15),ds_list_find_value(lore_character_select_bio_array[selectchar[i]],ii)   )
+			}
 			
-	//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selectchar[i]]) [continue] lore_character_select_bio_0
-}
-else if ready[i]==1                                                                   ////// player options setup 
-{
-	var normalcol,hovercol;
-	normalcol=c_silver
-	hovercol=c_white
-	draw_set_colour(normalcol)
+		//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selectchar[i]]) [continue] lore_character_select_bio_0
+	}
+	else if ready[i]==1                                                                   ////// player options setup 
+	{
+		var normalcol,hovercol;
+		normalcol=c_silver
+		hovercol=c_white
+		draw_set_colour(normalcol)
             
-	if readymenuselect[i]==0
-		draw_set_colour(hovercol)
-	draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+100,"control scheme -")
-	var t;
-	if control_setup[i]==0
-		t="keyboard full"
-	else if control_setup[i]==1
-		t="keyboard narrow 1"
-	else if control_setup[i]==2
-		t="keyboard narrow 2"
-	else if control_setup[i]==3
-		t="controller default"
-	else if control_setup[i]==4
-		t="controller custom 1"
+		if readymenuselect[i]==0
+			draw_set_colour(hovercol)
+		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+100,"control scheme -")
+		var t;
+		if control_setup[i]==0
+			t="keyboard full"
+		else if control_setup[i]==1
+			t="keyboard narrow 1"
+		else if control_setup[i]==2
+			t="keyboard narrow 2"
+		else if control_setup[i]==3
+			t="controller default"
+		else if control_setup[i]==4
+			t="controller custom 1"
 
-	draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+100,t)
+		draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+100,t)
             
             
-	draw_set_colour(normalcol)
-	if readymenuselect[i]==1
-		draw_set_colour(hovercol)
-	draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"hp")
-	if playerhandicap[i]==1
-		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"+")
-	else if playerhandicap[i]==2
-		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"++")
+		draw_set_colour(normalcol)
+		if readymenuselect[i]==1
+			draw_set_colour(hovercol)
+		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"hp")
+		if playerhandicap[i]==1
+			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"+")
+		else if playerhandicap[i]==2
+			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"++")
                 
-	draw_set_colour(normalcol)
-	if readymenuselect[i]==2
-		draw_set_colour(hovercol)
+		draw_set_colour(normalcol)
+		if readymenuselect[i]==2
+			draw_set_colour(hovercol)
             
-	draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
-	draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
+		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
+		draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
             
 	}
-	};
+};
     
 	if !competitive_mode
 	draw_sprite(mock_character_grid_background,0,midx,midy)

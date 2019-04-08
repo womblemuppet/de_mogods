@@ -72,7 +72,10 @@ if place_meeting(x,y+1,block)
 	}
 }
 else
-    groundcheck=false   
+{
+	groundcheck=false   
+	dash_has_lifted_off_ground=true
+}
 
 var watery,wateryjump;
 watery=1
@@ -84,7 +87,7 @@ if instance_exists(wave)
 		watery=2   ///gravity divided by this number underwater
 		wateryjump=0.75 ///jump timesed by this number underwater
 	}
-}      
+} 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*  emmiters  */
@@ -437,112 +440,113 @@ if !groundcheck && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 &&
 }
 if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
 {
-    airgrab_mode=0
+	airgrab_mode=0
     
-    if  cangroundpound==2   ////groundpound effect
-    {
-        effect_aniend(groundpoundeffect,0.4,-2)
-        if supers>0 && uniques_super_ooga_gp_enabled==true 
-            player_super()
-        if id_of_groundpounded_instrument_if_exists!=noone
-        {
-            with id_of_groundpounded_instrument_if_exists
-            {
-                if protection<1
-                {
-                    block_take_damage()
-                }            
-            }
-        }
-    }
+	if  cangroundpound==2   ////groundpound effect
+	{
+		effect_aniend(groundpoundeffect,0.4,-2)
+		if supers>0 && uniques_super_ooga_gp_enabled==true 
+			player_super()
+		if id_of_groundpounded_instrument_if_exists!=noone
+		{
+			with id_of_groundpounded_instrument_if_exists
+			{
+				if protection<1
+				{
+					block_take_damage()
+				}
+			}
+		}
+	}
 
-    if jumped                            ///////////after landing from a jump , slow the player for a bit
-    {
-        mild_slowed_counter=16
-        if cangroundpound!=0  
-        {
-            mild_slowed_counter=0
-            fuckoff_slowed_counter=16
-        }
-        //effect_create_above(ef_firework,x,y,2,c_blue)   
-    }
-    cangroundpound=0      
-    dash_angel_jump=0
-    jumped=false
-    instance_create(x,y,jump_vibration)  
-    vspd=0   
-    doublejump=0    
+	if jumped                            ///////////after landing from a jump , slow the player for a bit
+	{
+		mild_slowed_counter=16
+		if cangroundpound!=0  
+		{
+		        mild_slowed_counter=0
+		        fuckoff_slowed_counter=10
+		}
+		//effect_create_above(ef_firework,x,y,2,c_blue)   
+	}
+	cangroundpound=0      
+	dash_angel_jump=0
+	jumped=false
+	instance_create(x,y,jump_vibration)  
+	vspd=0   
+	doublejump=0    
 
     
-    if uniques_parachute>0
-    {
-        uniques_parachute=0 
-        if sprite_index==sprites[64] || sprite_index==sprites[65]
-        {
-            sprite_index=sprites[4]  //fall sprite
-            if supers>0
-                sprite_index=sprites[12] //fall super sprite       
-        }
-    }
+	if uniques_parachute>0
+	{
+		uniques_parachute=0 
+		if sprite_index==sprites[64] || sprite_index==sprites[65]
+		{
+			sprite_index=sprites[4]  //fall sprite
+			if supers>0
+			sprite_index=sprites[12] //fall super sprite       
+		}
+	}
     
     
-    if sprite_index==sprites[4]   ///fall sprite
-    {
-        sprite_index=sprites[0]   ///idle sprite
-        if recoil_sprite_counter>0
-        {
-            sprite_index=sprites[25]
-        }
-    }
-    if sprite_index==sprites[12]  ///fall super sprite
-    {
-        sprite_index=sprites[9]   ///idle super sprite
-        if recoil_sprite_counter>0
-        {
-            sprite_index=sprites[26]
-        }
-    }  
+	if sprite_index==sprites[4]   ///fall sprite
+	{
+		sprite_index=sprites[0]   ///idle sprite
+		if recoil_sprite_counter>0
+		{
+			sprite_index=sprites[25]
+		}
+	}
+	
+	if sprite_index==sprites[12]  ///fall super sprite
+	{
+		sprite_index=sprites[9]   ///idle super sprite
+		if recoil_sprite_counter>0
+		{
+			sprite_index=sprites[26]
+		}
+	}  
 }
 
 if vspd<0
 {
-    if place_meeting(x,y-1,block) /// vertical block collision above
-    {
-        vspd=0   
-    }
+	if place_meeting(x,y-1,block) /// vertical block collision above
+	{
+		vspd=0   
+	}
 }
 
 
 //V   idle sprite    V
 if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck
 {
-    var pass;
-    pass=false
-    for (i=0; i<ds_list_size(sprites_below_idle_priority); i+=1)
-    {
-        if sprites[sprites_below_idle_priority[| i]]==sprite_index
-        {
-            pass=true
-            break;
-        }
-    };
+	var pass;
+	pass=false
+	for (i=0; i<ds_list_size(sprites_below_idle_priority); i+=1)
+	{
+		if sprites[sprites_below_idle_priority[| i]]==sprite_index
+		{
+			pass=true
+			break;
+		}
+	};
         
-    if pass
-    {
-        if recoil_sprite_counter>0
-        {
-            sprite_index=sprites[25]
-            if supers>0
-                sprite_index=sprites[26]
-        }
-        else
-        {
-            sprite_index=sprites[0]
-            if supers>0
-                sprite_index=sprites[9]
-        }
-        image_speed=0.2
-    }
+	if pass
+	{
+		if recoil_sprite_counter>0
+		{
+			sprite_index=sprites[25]
+			if supers>0
+			sprite_index=sprites[26]
+		}
+		else
+		{
+			sprite_index=sprites[0]
+			if supers>0
+			sprite_index=sprites[9]
+		}
+		image_speed=0.2
+	}
 }
 
 
@@ -553,45 +557,45 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck
 
 if checkkey(lightbutton) && checkkey(heavybutton)                                               /////// pocket event
 {
-    pocket_light_heavy_held_counter+=1
-    if pocket_light_heavy_held_counter>3
-    {
-        if pocket_orb==-1
-        {
-           var a;
-           a=adjacent_to_instrument()
-            if a>0
-            {
-                if a.protection<1
-                {
-                    effect_create_above(ef_firework,x,y,2,c_green)
-                    pocket_light_heavy_held_counter=-1000
-                    pocket_orb=a.type
-                    aizen.playerpocketorb[P]=a.sprite_index
-                    with a
-                    {
-                        dontmakeorb=true
-                        instrument_die_event()               
-                    }
-                }
-            }
-        }
+	pocket_light_heavy_held_counter+=1
+	if pocket_light_heavy_held_counter>3
+	{
+		if pocket_orb==-1
+		{
+			var a;
+			a=adjacent_to_instrument()
+			if a>0
+			{
+				if a.protection<1
+				{
+					effect_create_above(ef_firework,x,y,2,c_green)
+					pocket_light_heavy_held_counter=-1000
+					pocket_orb=a.type
+					aizen.playerpocketorb[P]=a.sprite_index
+					with a
+					{
+						dontmakeorb=true
+						instrument_die_event()               
+					}
+				}
+			}
+		}
         
-        else if aizen.mode==0
-        {
-            effect_create_above(ef_firework,x,y,2,c_red)
-            stack_add_orb(pocket_orb,true)
-            pocket_orb=-1 //contiune
-            aizen.playerpocketorb[P]=-1
-        }
-    }
+		else if aizen.mode==0
+		{
+			effect_create_above(ef_firework,x,y,2,c_red)
+			stack_add_orb(pocket_orb,true)
+			pocket_orb=-1 //contiune
+			aizen.playerpocketorb[P]=-1
+		}
+	}
 
 }
 
 
 if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(leftbutton) || checkkey(rightbutton) || checkkey(upbutton) //////pocket keys release event
 {
-    pocket_light_heavy_held_counter=0
+	pocket_light_heavy_held_counter=0
 }
 
 
@@ -601,368 +605,367 @@ if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(
 
 if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack / push
 {
-    var exception;
-    exception=false
+	var exception;
+	exception=false
     
     
-    if holding_a_crab     ////throw crab
-    {
-        exception=true
-        player_throw_crab()
-    }  
+	if holding_a_crab     ////throw crab
+	{
+		exception=true
+		player_throw_crab()
+	}  
 
     
     ///pick up crab
-    if !exception && holding_a_crab==false
-    {
-        if distance_to_object(instance_nearest(x,y,crab))<30
-        {
-            exception=true
-            effect_create_above(ef_firework,x,y-50,1,c_gray)
-            var b;
-            b=instance_nearest(x,y,crab)
-            if b.owner==-1
-            { ////tame crab
-                b.owner=self.id
-                holding_a_crab=true
-                crab_being_held=b
+	if !exception && holding_a_crab==false
+	{
+		if distance_to_object(instance_nearest(x,y,crab))<30
+		{
+			exception=true
+			effect_create_above(ef_firework,x,y-50,1,c_gray)
+			var b;
+			b=instance_nearest(x,y,crab)
+			if b.owner==-1
+			{ ////tame crab
+			b.owner=self.id
+			holding_a_crab=true
+			crab_being_held=b
 
-            }
-        }
-    }
+		        }
+		}
+	}
     
-    if !exception && uniques_veteran_ultstock>0        ////vet    ult stock mortar  
-    {
-        exception=true
-        uniques_veteran_ultstock-=1
-        uniques_veteran_mortarammo+=1
-        if uniques_veteran_ultstock==0
-            effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
-        else
-            effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
-        var a;
-        a=effect_aniend(vet_ult_indicator_3,1.5,-2)
-        a.direction=choose(45,135)
-        a.speed=4
-        a.gravity=0.2
+	if !exception && uniques_veteran_ultstock>0        ////vet    ult stock mortar  
+	{
+		exception=true
+		uniques_veteran_ultstock-=1
+		uniques_veteran_mortarammo+=1
+		if uniques_veteran_ultstock==0
+			effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
+		else
+			effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
+		var a;
+		a=effect_aniend(vet_ult_indicator_3,1.5,-2)
+		a.direction=choose(45,135)
+		a.speed=4
+		a.gravity=0.2
             
-    }
-    if !exception && uniques_veteran_mortarammo>0     /////////vet  ult shoot mortar
-    {
-        exception=true
-        uniques_veteran_mortarammo-=1
-        var a;
-        a=instance_create(x,y,mortar)
-        a.creator=self.id
-    }
+	}
+	if !exception && uniques_veteran_mortarammo>0     /////////vet  ult shoot mortar
+	{
+		exception=true
+		uniques_veteran_mortarammo-=1
+		var a;
+		a=instance_create(x,y,mortar)
+		a.creator=self.id
+	}
     
-    if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
-    {
-        exception=true
-        uniques_forwardpunch_has_made_hitbox=false
-        uniques_forwardpunch_lockdown=1
-        uniques_forwardpunch_feet_counter=0
-        uniques_vet_chain_counter=-1
+	if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
+	{
+		exception=true
+		uniques_forwardpunch_has_made_hitbox=false
+		uniques_forwardpunch_lockdown=1
+		uniques_forwardpunch_feet_counter=0
+		uniques_vet_chain_counter=-1
         
-        image_speed=0.2
-        sprite_index=sprites[62]
-        if supers>0
-            sprite_index=sprites[63]
-        image_index=0
+		image_speed=0.2
+		sprite_index=sprites[62]
+		if supers>0
+			sprite_index=sprites[63]
+		image_index=0
 
         
     }
-    if !exception && dashcd>0 && uniques_attack_during_dash==true && uniques_combatroll_lockdown==0    ////slinger dash roll attack
-    {
-        exception=true
-        sprite_index=sprites[73]
-        image_speed=0.2
-        image_index=0
-        uniques_combatroll_lockdown=1
-        if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
-            hspd*=1.8
-        else
-            hspd*=1.3
-        alarm[5]=2
+	if !exception && dashcd>0 && uniques_attack_during_dash==true && uniques_combatroll_lockdown==0    ////slinger dash roll attack
+	{
+		exception=true
+		sprite_index=sprites[73]
+		image_speed=0.2
+		image_index=0
+		uniques_combatroll_lockdown=1
+		if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
+			hspd*=1.8
+		else
+			hspd*=1.3
+		alarm[5]=2
         
-    }
+	}
     
     
-    if !exception && canpush
-    {   
-        var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attackname;
-        spawn_normal_uc_hitbox=false
-        la_attackname="uppercut"
+	if !exception && canpush
+	{   
+		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attackname;
+		spawn_normal_uc_hitbox=false
+		la_attackname="uppercut"
         
-        switch attacks[? "light attack"]
-        {
-            case 0:  //ooga
-            spawn_normal_uc_hitbox=true
-            uc_hitbox_shape=bammeroo break;
+		switch attacks[? "light attack"]
+		{
+			case 0:  //ooga
+			spawn_normal_uc_hitbox=true
+			uc_hitbox_shape=bammeroo break;
             
-            case 1:    ///veteran light attack (chains) 
-            la_attackname="veteranuppercut"
-            uniques_vet_chain_counter=UNIQUES_VET_CHAIN_COUNTER_TIME
-            spawn_normal_uc_hitbox=true
-            uc_hitbox_shape=bammeroo break;
+			case 1:    ///veteran light attack (chains) 
+			la_attackname="veteranuppercut"
+			uniques_vet_chain_counter=UNIQUES_VET_CHAIN_COUNTER_TIME
+			spawn_normal_uc_hitbox=true
+			uc_hitbox_shape=bammeroo break;
             
-            case 2:   ///slinger held jump light attack
-            la_attackname="slingeruppercut"
-            spawn_normal_uc_hitbox=true
-            uc_hitbox_shape=bammeroo break;
+			case 2:   ///slinger held jump light attack
+			la_attackname="slingeruppercut"
+			spawn_normal_uc_hitbox=true
+			uc_hitbox_shape=bammeroo break;
             
-            case 3:    ////bait chainer attack
-            la_attackname="baitchain"
-            spawn_normal_uc_hitbox=true
-            uc_hitbox_shape=bammeroo break;
+			case 3:    ////bait chainer attack
+			la_attackname="baitchain"
+			spawn_normal_uc_hitbox=true
+			uc_hitbox_shape=bammeroo break;
             
-            case -1:            
-            /*nandemonai*/        break;
+			case -1:            
+			/*nandemonai*/        break;
             
-            default:
-            show_error("boop , unknown light attack called",true)
-        }
+			default:
+			show_error("boop , unknown light attack called",true)
+		}
         
-        if spawn_normal_uc_hitbox
-        {
-            canpush=false
-            push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
-            alarm[1]=PUSH_COOLDOWN   
-            sprite_index=sprites[17]
-            if supers>0
-                sprite_index=sprites[18]
-            image_index=0
-            image_speed=0.2
+		if spawn_normal_uc_hitbox
+		{
+			canpush=false
+			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
+			alarm[1]=PUSH_COOLDOWN   
+			sprite_index=sprites[17]
+			if supers>0
+			sprite_index=sprites[18]
+			image_index=0
+			image_speed=0.2
             
-            attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7,4)
-        }
-
-    }
+			attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7,4)
+		}
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// heavy attack
 if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 && groundcheck   && pocket_light_heavy_held_counter<1  ///heavy attack button press
 {
-    var exception;
-    exception=false
+	var exception;
+	exception=false
     
-    if holding_a_crab    ////throw crab
-    { 
-        exception=true
-        player_throw_crab()
-    }
+	if holding_a_crab    ////throw crab
+	{ 
+	exception=true
+	player_throw_crab()
+	}
     
-    if !exception && uniques_vet_chain_counter>0      ///vet       LA => HA    upfoward dash
-    {
-        exception=true
-        uniques_vet_chain_counter=-1
-        uniques_upforwarddash_lockdown=1
-        image_speed=0.2
-        sprite_index=sprites[66]
-        if supers>0
-            sprite_index=sprites[67]
-        image_index=0        
+	if !exception && uniques_vet_chain_counter>0      ///vet       LA => HA    upfoward dash
+	{
+		exception=true
+		uniques_vet_chain_counter=-1
+		uniques_upforwarddash_lockdown=1
+		image_speed=0.2
+		sprite_index=sprites[66]
+		if supers>0
+			sprite_index=sprites[67]
+		image_index=0        
 
-        attack_create_dash_hitbox(true,60,7,5,"upforawrddash",vet_upfowarddash_hitbox,0.25,true,0)
+		attack_create_dash_hitbox(true,60,7,5,"upforawrddash",vet_upfowarddash_hitbox,0.25,true,0)
         
-        vspd=-6
-        if right
-            hspd=8
-        else
-            hspd=-8
-        alarm[5]=2        ////slowdown alarm
+		vspd=-6
+		if right
+			hspd=8
+		else
+			hspd=-8
+		alarm[5]=2        ////slowdown alarm
         
-    }
+	}
     
-    if !exception && uniques_veteran_ultstock>0      ///////vet    ult stockup clusters
-    {
-        exception=true
-        uniques_veteran_ultstock-=1
-        uniques_veteran_clusterammo+=1
-        if uniques_veteran_ultstock==0
-            effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
-        else
-            effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
-        var a;
-        a=effect_aniend(vet_ult_indicator_3,1.5,-2)
-        a.direction=choose(45,135)
-        a.speed=5
-        a.gravity=0.1
-    }
-    if !exception && uniques_veteran_clusterammo>0     /////////vet  ult throw cluster
-    {
-        exception=true
-        uniques_veteran_clusterammo-=1
-        var a;
-        a=instance_create(x,y,clusternet)
-        a.creator=self.id
-    }
+	if !exception && uniques_veteran_ultstock>0      ///////vet    ult stockup clusters
+	{
+		exception=true
+		uniques_veteran_ultstock-=1
+		uniques_veteran_clusterammo+=1
+		if uniques_veteran_ultstock==0
+			effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
+		else
+			effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
+		var a;
+		a=effect_aniend(vet_ult_indicator_3,1.5,-2)
+		a.direction=choose(45,135)
+		a.speed=5
+		a.gravity=0.1
+	}
+	if !exception && uniques_veteran_clusterammo>0     /////////vet  ult throw cluster
+	{
+		exception=true
+		uniques_veteran_clusterammo-=1
+		var a;
+		a=instance_create(x,y,clusternet)
+		a.creator=self.id
+	}
     
-    if !exception
-    {
-        switch attacks[? "heavy attack"]
-        {
-            case 0:    ////ooga default heavy attack
-            image_speed=0.4
-            sprite_index=sprites[21]
-            if supers>0
-                sprite_index=sprites[22]
-            image_index=0
-            fpunch_lockdown=1
-            fpunch_cd_counter=FPUNCH_COOLDOWN
-            fpunch_feet_counter=0
-            fpunch_has_made_hitbox=false
-            break;
+	if !exception
+	{
+		switch attacks[? "heavy attack"]
+		{
+			case 0:    ////ooga default heavy attack
+			image_speed=0.4
+			sprite_index=sprites[21]
+			if supers>0
+				sprite_index=sprites[22]
+			image_index=0
+			fpunch_lockdown=1
+			fpunch_cd_counter=FPUNCH_COOLDOWN
+			fpunch_feet_counter=0
+			fpunch_has_made_hitbox=false
+			break;
             
             
-            case 1:    //// veteran aa punch
-            image_speed=0.4
-            sprite_index=sprites[60]
-            if supers>0
-                sprite_index=sprites[61]
-            image_index=0
-            unqiues_aapunch_cd_counter=uniques_aapunch_COOLDOWN
-            uniques_aapunch_lockdown=1
-            break;
+			case 1:    //// veteran aa punch
+			image_speed=0.4
+			sprite_index=sprites[60]
+			if supers>0
+				sprite_index=sprites[61]
+			image_index=0
+			uniques_aapunch_cd_counter=uniques_aapunch_COOLDOWN
+			uniques_aapunch_lockdown=1
+			break;
                
-            case 2:  ////slinger sunblast
-            image_index=0
-            image_speed=0.25
-            sprite_index=sprites[70]
-            if supers>0
-                sprite_index=sprites[71]
-            uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
-            uniques_sunblast_lockdown=1
-            uniques_sunblast_has_made_hitbox=false
+			case 2:  ////slinger sunblast
+			image_index=0
+			image_speed=0.25
+			sprite_index=sprites[70]
+			if supers>0
+				sprite_index=sprites[71]
+			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
+			uniques_sunblast_lockdown=1
+			uniques_sunblast_has_made_hitbox=false
             
-            break;
+			break;
             
-            case 3:    ////bait shark attack heavy punch
-            image_speed=0.4
-            sprite_index=sprites[80]
-            if supers>0
-                sprite_index=sprites[81]
-            image_index=0
-            uniques_sharkattack_lockdown=1 
-            uniques_sharkattack_cd_counter=UNIQUES_SHARKATTACK_COOLDOWN
-            uniques_sharkattack_feet_counter=0
-            uniques_sharkattack_has_made_hitbox=false
-            break;
+			case 3:    ////bait shark attack heavy punch
+			image_speed=0.4
+			sprite_index=sprites[80]
+			if supers>0
+				sprite_index=sprites[81]
+			image_index=0
+			uniques_sharkattack_lockdown=1 
+			uniques_sharkattack_cd_counter=UNIQUES_SHARKATTACK_COOLDOWN
+			uniques_sharkattack_feet_counter=0
+			uniques_sharkattack_has_made_hitbox=false
+			break;
                         
-            case -1:
-            /*nandemonai*/     break;
-            default:
-            show_error("boop , unknown heavy attack called",true)
-        }
-    }
+			case -1:
+			/*nandemonai*/     break;
+			default:
+			show_error("boop , unknown heavy attack called",true)
+		}
+	}
 }
 if attacks[? "heavy attack"]==0     ///ooga heavy attack button release    [finaledit] way to optimise maybe
 {
-    if fpunch_lockdown==1 && (   (!checkkey(heavybutton) && fpunch_charge>FPUNCH_CHARGE_MIN ) || fpunch_charge>FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
-    {
-        image_speed=0.175
-        image_index=4
-        fpunch_charge=0
-        fpunch_lockdown=2
-    }
+	if fpunch_lockdown==1 && (   (!checkkey(heavybutton) && fpunch_charge>FPUNCH_CHARGE_MIN ) || fpunch_charge>FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
+	{
+		image_speed=0.175
+		image_index=4
+		fpunch_charge=0
+		fpunch_lockdown=2
+	}
 }
 
 if checkkey_pushed(lightbutton) && !groundcheck && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {
 
 
-    var exception;
-    exception=false
+	var exception;
+	exception=false
     
-    if holding_a_crab==true
-    {
-        exception=true
-        player_throw_crab()
-    }
+	if holding_a_crab==true
+	{
+		exception=true
+		player_throw_crab()
+	}
     
-    if !exception
-    {
-        switch attacks[? "air light attack"]
-        {
-            case 0:
-            airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
+	if !exception
+	{
+		switch attacks[? "air light attack"]
+		{
+			case 0:
+			airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 
             
-            var xx,yy;
-            xx=lengthdir_x(AIRGRAB_RANGE,octdir)
-            yy=lengthdir_y(AIRGRAB_RANGE,octdir)
-            var a;
-            a=instance_create(x+xx,y+yy+15,airgrab)
-            a.creator=self.id
+			var xx,yy;
+			xx=lengthdir_x(AIRGRAB_RANGE,octdir)
+			yy=lengthdir_y(AIRGRAB_RANGE,octdir)
+			var a;
+			a=instance_create(x+xx,y+yy+15,airgrab)
+			a.creator=self.id
             
-            sprite_index=sprites[23]
-            if supers>0
-                sprite_index=sprites[24]
-            image_speed=0.4                                   break;
-            case -1:
-            /*nandemonai*/ break;
-            default:
-            show_error("boop , unknown air light attack called",true)
-        }
-    }
+			sprite_index=sprites[23]
+			if supers>0
+				sprite_index=sprites[24]
+			image_speed=0.4                                   break;
+			case -1:
+			/*nandemonai*/ break;
+			default:
+			show_error("boop , unknown air light attack called",true)
+		}
+	}
     
 }
 
 if checkkey_pushed(heavybutton) && !groundcheck && player_may_attack()       ///    air heavy attack
 {
-    var exception;
-    exception=false
+	var exception;
+	exception=false
     
-    if holding_a_crab==true
-    {
-        exception=true
-        player_throw_crab()
-    }
+	if holding_a_crab==true
+	{
+		exception=true
+		player_throw_crab()
+	}
     
-    if !exception
-    {
-        switch attacks[? "air heavy attack"]
-        {
-            case 0:  ///veteran mine throw
-            if mines_ammo>0
-            {
-                mines_ammo-=1
-                vspd=0
-                aim_octilinear()   ///changes octdir variable.
-                var a;
-                a=instance_create(x,y-10,mine)
-                a.creator=self.id
-                a.direction=octdir
-                with a
-                {
-                    if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315
-                    {
-                        if direction>90
-                            hspd=-6
-                        else
-                            hspd=6
+	if !exception
+	{
+		switch attacks[? "air heavy attack"]
+		{
+			case 0:  ///veteran mine throw
+			if mines_ammo>0
+			{
+				mines_ammo-=1
+				vspd=0
+				aim_octilinear()   ///changes octdir variable.
+				var a;
+				a=instance_create(x,y-10,mine)
+				a.creator=self.id
+				a.direction=octdir
+			        with a
+				{
+					if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315
+					{
+						if direction>90
+						        hspd=-6
+						else
+						        hspd=6
                             
-                        vspd=-5
-                    }
-                    else if direction==90
-                    {
-                        hspd=0
-                        vspd=-7
-                    }
-                    else if direction==270
-                    {
-                        hspd=0
-                        vspd=8
-                    }
+						vspd=-5
+					}
+					else if direction==90
+					{
+						hspd=0
+						vspd=-7
+					}
+					else if direction==270
+					{
+						hspd=0
+						vspd=8
+					}
  
-            }
+				}
                 
-                uniques_mine_cooldown_counter=50
+			        uniques_mine_cooldown_counter=50
 
-            }
-            break;
-        }
-    }
+		        }
+		        break;
+		}
+	}
 }
 
 if checkkey_pushed(dashbutton)               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
@@ -972,25 +975,25 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
     
 	if checkkey(upbutton)
 	{
-	if !checkkey(downbutton)
-	{
-		if player_may_attack()
-		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-			if groundcheck && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
-			{
-				exception=true
-				vspd=0
-				dash_angel_jump=1
-				hspd=0
-				dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
-				sprite_index=sprites[30]    ///groundpound freeze sprite
-				if supers>0
-				sprite_index=sprites[31]   ///groundpound freeze super sprite
-				image_speed=0.4
-				image_index=0
-			}
-		} 
-	}
+		if !checkkey(downbutton)
+		{
+			if player_may_attack()
+			{                                                           //////////////////////////////////////////////////////////////////////////////////////  
+				if groundcheck && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
+				{
+					exception=true
+					vspd=0
+					dash_angel_jump=1
+					hspd=0
+					dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
+					sprite_index=sprites[30]    ///groundpound freeze sprite
+					if supers>0
+					sprite_index=sprites[31]   ///groundpound freeze super sprite
+					image_speed=0.4
+					image_index=0
+				}
+			} 
+		}
 	}
 	if !exception && player_may_attack() && checkkey(downbutton) && !groundcheck && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound         
@@ -1021,9 +1024,9 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		{
 			player_drop_crab()
 		}
-	}        
+	}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-	if !exception && !checkkey(downbutton) && dashcd<1 && player_may_attack()                       ///                    DASH EVENT 
+	if !exception && !checkkey(downbutton) && dashcd<1 && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
 	{
 		if cripple_debuff_counter<1
 		{
@@ -1036,7 +1039,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
             
 			switch attacks[? "dash"]    ///specific dash stuff
 			{ 
-				case 1:   /// NOTHING (was once veteran dash but has now been removed)
+				case 1:   /// (was once veteran dash but has now been removed)
 				/*nandemonai*/
 				break;     
 		
@@ -1044,26 +1047,26 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				case 2:   ///slinger nobunt dash
 
 				if dash_attacks_allowed_counter<1
-					 dash_attacks_allowed_counter=12
+					dash_attacks_allowed_counter=12
                     
-				var a;                                          ////////////////   create slinger dash hitbox
-				a=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.2,false,15)   
+				dash_current_hitbox_object=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.33,false,15)
 				if !right
-					a.direction=180
+					dash_current_hitbox_object.direction=180
 				player_dashed=true
-
+				ground_dash_speed=10.5
                 
 				break;                          
 				case 0:   ///bunt dash
                 
 				if dash_attacks_allowed_counter<1
-				        dash_attacks_allowed_counter=20                    
+					dash_attacks_allowed_counter=20
                     
-				var a;                                          ////////////////   dash hitbox
-				a=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,15)
+				dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,15)
 				if !right
-					.direction=180
+					dash_current_hitbox_object.direction=180
 				player_dashed=true
+				ground_dash_speed=10.5
+				
 				break;
 
 				case -1:
@@ -1082,25 +1085,27 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
                 
                 
 				if right                                       //////////////////    dash initial movement
-					hspd=ground_dashamount
+					hspd=ground_dash_speed
 				else
-					hspd=-ground_dashamount
-                       
-
-				if !groundcheck           ////////dashing in air
+					hspd=-ground_dash_speed
+				
+				if groundcheck
 				{
-					vspd=-3
-					hspd-=3
-					alarm[5]=2              ////hspd gets slowed 2 steps later    
-					if right
-						a.image_angle=45   ///a still refers to trail effect
-					else
-						a.image_angle=315
+					dash_has_lifted_off_ground=false
+					dash_current_hitbox_object.image_speed=0.05    ///means dash hitbox won't timeout (but will die when whacked or dash end)
 				}
+				else
+					dash_has_lifted_off_ground=true
+
+				ground_dash_counter=0
+
                 
 				dashcd=DASH_COOLDOWN_TIME    ///dash cooldown time (also DASH LOCKDOWN TIME, THOUGH THERE IS A FORGIVE MECHANIC IF IT HITS WALL)     
-                
-                                
+				dash_button_currently_held=true
+                                show_debug_message("dash_button_currently_held set to true")
+				
+				
+				var a;
 				a=effect_aniend(dash_no_ULT,0.2,1)               //////////////   dash trail effect
 				if supers>0
 				{
@@ -1110,7 +1115,23 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 						a.sprite_index=p2_dash_ULT
 				}
 				if !right
-					a.image_xscale=-1            
+					a.image_xscale=-1
+
+
+				if !groundcheck           ////////dashing in air
+				{
+					vspd=-AIR_DASH_VSPEED
+					if right
+						hspd=AIR_DASH_SPEED
+					else
+						hspd=-AIR_DASH_SPEED
+						
+					alarm[5]=5              ////hspd gets slowed 2 steps later    
+					if right
+						a.image_angle=45   ///a still refers to trail effect
+					else
+						a.image_angle=315
+				}
                 
 				if uniques_parachute==1
 					uniques_parachute=2   //dash cancels parachute
@@ -1121,89 +1142,120 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					var a;
 					a=instance_create(x,y,magicbolt)
 					create_terrain_cutter(magicbolt, "gilded", right*180, -1)
-					a.creator=self.id/////////////////////////////////////////////    
+					a.creator=self.id
 				}
 			}
 		}
 	}
 }
+////hold dash button event
+if checkkey(dashbutton)
+{
+	if dash_button_currently_held==true && dash_has_lifted_off_ground==false    ////continues momentum of ground dash
+	{
+		if image_index>3
+			image_index=1
+			
+		if right
+			hspd=ground_dash_speed
+		else
+			hspd=-ground_dash_speed
+		ground_dash_counter+=1
+		//show_debug_message(string(ground_dash_counter))
+		//effect_create_above(ef_firework,x,y,0,c_aqua)
+	}
+}
+//////end ground dash
+if dash_button_currently_held 
+{
+	if (checkkey_released(dashbutton) || (ground_dash_counter>GROUND_DASH_MAX))  && dash_has_lifted_off_ground==false
+	{
+		if dash_current_hitbox_object!=noone
+		{
+			if instance_exists(dash_current_hitbox_object)
+			{
+				dash_current_hitbox_object.image_speed=0.3
+			}
+		}
+		dash_current_hitbox_object=noone
+		ground_dash_counter=0
+		dash_button_currently_held=false
+		//show_debug_message("dash_button_currently_held set to false")
+		hspd=(hspd/3)*2
+		//effect_create_above(ef_firework,x,y,1,c_red)
+	}
+}
 
 
 
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////               MINES
-
- 
-/////// place mine ability    
+/////////////////////////////////////////////////////////////////////////////////// placable abilities
 if checkkey(downbutton)
 {
-    switch attacks[? "special hold down"] 
-    {
-        case 0:     ////veteran 
-        if uniques_mines_enabled  && groundcheck
-        {
-            down_button_held+=1
+	switch attacks[? "special hold down"] 
+	{
+		case 0:     ////veteran 
+		if uniques_mines_enabled  && groundcheck
+		{
+			down_button_held+=1
             
-            if mines_ammo>0 && down_button_held>20 && uniques_mine_cooldown_counter<1
-            {
-                mines_ammo-=1
-                var a;
-                a=instance_create(x,y-10,mine)
-                a.creator=self.id
-                down_button_held=-2000
-                uniques_mine_cooldown_counter=50
-            }
-        } 
-        break;
+			if mines_ammo>0 && down_button_held>20 && uniques_mine_cooldown_counter<1
+			{
+				mines_ammo-=1
+				var a;
+				a=instance_create(x,y-10,mine)
+				a.creator=self.id
+				down_button_held=-2000
+				uniques_mine_cooldown_counter=50
+			}
+		} 
+		break;
         
         
         
-        case 1:   //bait teleport
-        if uniques_teleport_enabled==true
-        {
-            down_button_held+=1  
+		case 1:   //bait teleport
+		if uniques_teleport_enabled==true
+		{
+			down_button_held+=1  
             
-            if down_button_held>20
-            {
-                if uniques_teleport==0                           ////create teleport if there isn't one
-                {
-                    down_button_held=-2000
-                    uniques_teleport=1
-                    uniques_my_teleport_id=instance_create(x,y-10,teleport)
-                    uniques_my_teleport_id.creator=self.id
-                    effect_create_above(ef_firework,x,y,2,c_red)
-                }
-                else if uniques_teleport==1
-                {
-                    if !instance_exists(uniques_my_teleport_id)  //DESTROY TELEPORT
-                    {   ///if teleport got destroyed, reset variables and lead to teleport place instead
-                        uniques_teleport=0
-                        uniques_my_teleport_id=-4
-                        down_button_held=19
-                    }
-                    else   //TELEPORT
-                    {   //////////////////////////////////////////if teleport is still intact, teleport to it and destroy teleporter
-                        if !place_meeting(uniques_my_teleport_id.x,uniques_my_teleport_id.y,block)    
-                        {
-                            x=uniques_my_teleport_id.x
-                            y=uniques_my_teleport_id.y
-                            effect_create_above(ef_firework,x,y,2,c_aqua)
-                        }
-                        with uniques_my_teleport_id
-                            instance_destroy()
-                        uniques_my_teleport_id=-4
-                        down_button_held=-2000
-                        uniques_teleport=0
-                    }
-                }
-            }
+			if down_button_held>20
+			{
+				if uniques_teleport==0                           ////create teleport if there isn't one
+				{
+					down_button_held=-2000
+					uniques_teleport=1
+					uniques_my_teleport_id=instance_create(x,y-10,teleport)
+					uniques_my_teleport_id.creator=self.id
+					effect_create_above(ef_firework,x,y,2,c_red)
+				}
+				else if uniques_teleport==1
+				{
+					if !instance_exists(uniques_my_teleport_id)  //DESTROY TELEPORT
+					{   ///if teleport got destroyed, reset variables and lead to teleport place instead
+						uniques_teleport=0
+						uniques_my_teleport_id=-4
+						down_button_held=19
+					}
+					else   //TELEPORT
+					{   //////////////////////////////////////////if teleport is still intact, teleport to it and destroy teleporter
+						if !place_meeting(uniques_my_teleport_id.x,uniques_my_teleport_id.y,block)    
+						{
+							x=uniques_my_teleport_id.x
+							y=uniques_my_teleport_id.y
+							effect_create_above(ef_firework,x,y,2,c_aqua)
+						}
+						with uniques_my_teleport_id
+						        instance_destroy()
+						uniques_my_teleport_id=-4
+						down_button_held=-2000
+						uniques_teleport=0
+					}
+				}
+			}
 
-        }
+		}
         
-        break;
-    }
+		break;
+	}
 }
 
 
@@ -1220,227 +1272,216 @@ if checkkey_released(downbutton)
 
 if ((cangroundpound==2 || cangroundpound=3) && STUNNED2<1 && player_not_locked_down()) || airgrab_decidedir_time>0   ///update direction during groundpound or groundpound bounce
 {
-    if checkkey(leftbutton) 
-    {
-        image_xscale=-1
-        right=false
-    }
-    if checkkey(rightbutton) 
-    {
-        image_xscale=1
-        right=true
-    }
+	if checkkey(leftbutton) 
+	{
+		image_xscale=-1
+		right=false
+	}
+	if checkkey(rightbutton) 
+	{
+		image_xscale=1
+		right=true
+	}
 }
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
 if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4
 {                                                                                /// move LEFT
 ////###remember to change for right code too if changing this!!!!! ###////////////////////////////////
-    if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
-    {
-        var slow_ratio;
-        slow_ratio=1
-        if mild_slowed_counter>0
-            slow_ratio=MILD_SLOW_PERCENTAGE
-        if fuckoff_slowed_counter>0
-            slow_ratio=FUCKOFF_SLOW_PERCENTAGE
+	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
+	{
+		var slow_ratio;
+		slow_ratio=1
+		if mild_slowed_counter>0
+			slow_ratio=MILD_SLOW_PERCENTAGE
+		if fuckoff_slowed_counter>0
+			slow_ratio=FUCKOFF_SLOW_PERCENTAGE
             
             
-        if hor_running_counter>0
-            hor_running_counter=-HOR_DASH_THRESHOLD-1
-        hor_running_counter-=1
+		if hor_running_counter>0
+			hor_running_counter=-HOR_SHUFFLE_THRESHOLD-1
+		hor_running_counter-=1
         
-        if groundcheck
-        {
-            if  hor_running_counter==-HOR_DASH_THRESHOLD
-                hspd=-HOR_DASHSPEED*slow_ratio
-            if  hor_running_counter<-HOR_RUNNING_THRESHOLD
-                hspd=-HOR_RUNSPEED*slow_ratio
-        }
-        else
-        {
-            if hspd>-HOR_AIR_MINSPEED
-                hspd=-HOR_AIR_MINSPEED
-            if hspd>-HOR_AIR_MAXSPEED
-                hspd-=HOR_AIR_ACCEL*slow_ratio
-        }
-    } 
-    //checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
-    if STUNNED2<1  && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
-    {
-        image_xscale=-1
-        right=false
-    }
-    if STUNNED2<1 && player_not_locked_down()
-    {
-        var pass;
-        pass=false
-        for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
-        {
-            if sprites[sprites_below_run_priority[| i]]==sprite_index
-            {
-                pass=true
-                break;
-            }
-        };
+		if groundcheck
+		{
+			if  hor_running_counter==-HOR_SHUFFLE_THRESHOLD
+			hspd=-HOR_SHUFFLESPEED*slow_ratio
+			if  hor_running_counter<-HOR_RUNNING_THRESHOLD
+			hspd=-HOR_RUNSPEED*slow_ratio
+		}
+		else
+		{
+			if hspd>-HOR_AIR_MINSPEED
+			hspd=-HOR_AIR_MINSPEED
+			if hspd>-HOR_AIR_MAXSPEED
+			hspd-=HOR_AIR_ACCEL*slow_ratio
+		}
+	} 
+		//checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
+	if STUNNED2<1  && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
+	{
+		image_xscale=-1
+		right=false
+	}
+	
+	if STUNNED2<1 && player_not_locked_down()
+	{
+		var pass;
+		pass=false
+		for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
+		{
+			if sprites[sprites_below_run_priority[| i]]==sprite_index
+			{
+			pass=true
+			break;
+			}
+		};
         
-        if pass
-        {
-            sprite_index=sprites[1]   ///run sprite
-            if supers>0
-                sprite_index=sprites[8]
-            image_speed=0.12
-        }
-    }
+		if pass
+		{
+			sprite_index=sprites[1]   ///run sprite
+			if supers>0
+			sprite_index=sprites[8]
+			image_speed=0.12
+		}
+	}
 }
 if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true ) && airgrab_mode!=2 && airgrab_mode!=4     
 {                                                                               /// move RIGHT
-    if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
-    {
-        var slow_ratio;
-        slow_ratio=1
-        if mild_slowed_counter>0
-            slow_ratio=MILD_SLOW_PERCENTAGE
-        if fuckoff_slowed_counter>0
-            slow_ratio=FUCKOFF_SLOW_PERCENTAGE
+	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
+	{
+		var slow_ratio;
+		slow_ratio=1
+		if mild_slowed_counter>0
+			slow_ratio=MILD_SLOW_PERCENTAGE
+		if fuckoff_slowed_counter>0
+			slow_ratio=FUCKOFF_SLOW_PERCENTAGE
             
-        if hor_running_counter<0
-            hor_running_counter=HOR_DASH_THRESHOLD+1
-        hor_running_counter+=1
+		if hor_running_counter<0
+			hor_running_counter=HOR_SHUFFLE_THRESHOLD+1
+		hor_running_counter+=1
         
-        if groundcheck
-        {
-            if  hor_running_counter==HOR_DASH_THRESHOLD
-                hspd=HOR_DASHSPEED*slow_ratio
-            if  hor_running_counter>HOR_RUNNING_THRESHOLD
-                hspd=HOR_RUNSPEED*slow_ratio
-        }
-        else
-        {
-            if hspd<HOR_AIR_MINSPEED
-                hspd=HOR_AIR_MINSPEED
-            if hspd<HOR_AIR_MAXSPEED
-                hspd+=HOR_AIR_ACCEL*slow_ratio
-        }
-    }
-    if STUNNED2<1 && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
-    {
-        image_xscale=1
-        right=true
-    }
-    if STUNNED2<1 && player_not_locked_down()
-    {    
-        var pass;
-        pass=false
-        for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
-        {
-            if sprites[sprites_below_run_priority[| i]]==sprite_index
-            {
-                pass=true
-                break;
-            }
-        };
+		if groundcheck
+		{
+			if  hor_running_counter==HOR_SHUFFLE_THRESHOLD
+				hspd=HOR_SHUFFLESPEED*slow_ratio
+			if  hor_running_counter>HOR_RUNNING_THRESHOLD
+				hspd=HOR_RUNSPEED*slow_ratio
+		}
+		else
+		{
+			if hspd<HOR_AIR_MINSPEED
+				hspd=HOR_AIR_MINSPEED
+			if hspd<HOR_AIR_MAXSPEED
+				hspd+=HOR_AIR_ACCEL*slow_ratio
+		}
+	}
+		if STUNNED2<1 && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
+		{
+			image_xscale=1
+			right=true
+		}
+	if STUNNED2<1 && player_not_locked_down()
+	{    
+		var pass;
+		pass=false
+		for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
+		{
+			if sprites[sprites_below_run_priority[| i]]==sprite_index
+			{
+			pass=true
+			break;
+			}
+		};
         
-        if pass
-        {
-            sprite_index=sprites[1]    ///run sprite
-            if supers>0
-                sprite_index=sprites[8]
-            image_speed=0.12
-        }
-    } 
+		if pass
+		{
+			sprite_index=sprites[1]    ///run sprite
+			if supers>0
+				sprite_index=sprites[8]
+			image_speed=0.12
+		}
+	} 
 }
 if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0 //&& hspd<0.1 && hspd>-0.1 //(checkkey_released(leftbutton) && !right) || (checkkey_released(rightbutton) && right)
 {
-    hor_running_counter=0
+	hor_running_counter=0
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                     /* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
 {
-    var hasjumpedsodosprites;
-    hasjumpedsodosprites=false  
+	var hasjumpedsodosprites;
+	hasjumpedsodosprites=false  
     
-    if checkkey_pushed(upbutton)
-    {
-        var exception;
-        exception=false
+	if checkkey_pushed(upbutton)
+	{
+		var exception;
+		exception=false
 
+		if !exception
+		{
+			if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
+			{   
+				if (groundcheck || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
+				{////single or double jump
+					jumped=true  
+					alarm[3]=GROUNDPOUND_UNAVAILABLE_TIME      ///ground pound unavailable time (after jump)
+					cangroundpound=-1
         
-        
-        if !exception
-        {
-            if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
-            {   
-                if (groundcheck || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
-                {////single or double jump
-                    jumped=true  
-                    alarm[3]=GROUNDPOUND_UNAVAILABLE_TIME      ///ground pound unavailable time (after jump)
-                    cangroundpound=-1
-        
-                    if doublejump==0
-                    {
-                        doublejumptimer=DOUBLEJUMPTIME
-                        vspd=-JUMPSPEED*wateryjump
-                    }
-                    if doublejump==1     ///double jump
-                    {
-                        effect_aniend(whooshbigjump,0.2,-2)
-                        vspd=-BIGJUMPSPEED*wateryjump 
-                    }
-                   hasjumpedsodosprites=true         
-                }
+					if doublejump==0
+					{
+					doublejumptimer=DOUBLEJUMPTIME
+					vspd=-JUMPSPEED*wateryjump
+					}
+					if doublejump==1     ///double jump
+					{
+					effect_aniend(whooshbigjump,0.2,-2)
+					vspd=-DOUBLEJUMPSPEED*wateryjump 
+					}
+					hasjumpedsodosprites=true         
+				}
                 
-                doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
-            }
-            ///////////VETERAN PARACHUTE
-            if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && hasjumpedsodosprites==false
-            {
-                uniques_parachute=1
-                uniques_parachute_minimum_time_counter=UNIQUES_PARACHUTE_MINIMUM_TIME
-                doublejump=3
-                vspd=vspd/1.5
-                hasjumpedsodosprites=true 
-            }
-            
-            /*if  doublejump==2 && vspd<3.5 && vspd>-3.5  && timing_jump_enabled      ///////// triple jump - timing check    (TRIPLE JUMP IS DISABLED [finaledit] )
-            {
-                //dashallowed=true   ///false if you want to disable dash after triple jump
-                doublejump=3
-                hasjumpedsodosprites=true
-                vspd=-SUPERJUMPSPEED*wateryjump
-                effect_aniend(whooshbigjump,0.2,-2)
-                effect_create_above(ef_firework,x,y,c_blue,0)
-            }*/
-        }
-    }
+				doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
+			}
+			///////////VETERAN PARACHUTE
+			if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && hasjumpedsodosprites==false
+			{
+				uniques_parachute=1
+				uniques_parachute_minimum_time_counter=UNIQUES_PARACHUTE_MINIMUM_TIME
+				doublejump=3
+				vspd=vspd/1.5
+				hasjumpedsodosprites=true 
+			}
+		}
+	}
     
-    if hasjumpedsodosprites==true   ///do sprites at end (just to be clean and avoid double checks I think)
-    {
-        sprite_index=sprites[2]    ///jump windup sprite
-        if supers>0
-            sprite_index=sprites[10]
-        image_speed=0.3
-        image_index=0
-    }
+	if hasjumpedsodosprites==true   ///do sprites at end (just to be clean and avoid double checks I think)
+	{
+		sprite_index=sprites[2]    ///jump windup sprite
+		if supers>0
+			sprite_index=sprites[10]
+		image_speed=0.3
+		image_index=0
+	}
 }
 if uniques_parachute==1     ////parachute floating effect
 {
-    if vspd>UNIQUES_PARACHUTE_FALL_SPEED
-        vspd=UNIQUES_PARACHUTE_FALL_SPEED
-    if sprite_index==sprites[4]  ///fall sprite
-        sprite_index=sprites[64] ///parachute sprite
-    if sprite_index==sprites[12] ///fall super sprite
-        sprite_index=sprites[65] ///parachute super sprite
-    if !checkkey(upbutton)        ////release parachute
-    {
-        uniques_parachute=2
-        if sprite_index==sprites[64] || sprite_index==sprites[65]
-        {
-            sprite_index=sprites[4]  //fall sprite
-            if supers>0
-                sprite_index=sprites[12] //fall super sprite       
-        }        
-    }
+	if vspd>UNIQUES_PARACHUTE_FALL_SPEED
+		vspd=UNIQUES_PARACHUTE_FALL_SPEED
+	if sprite_index==sprites[4]  ///fall sprite
+		sprite_index=sprites[64] ///parachute sprite
+	if sprite_index==sprites[12] ///fall super sprite
+		sprite_index=sprites[65] ///parachute super sprite
+	if !checkkey(upbutton)        ////release parachute
+	{
+		uniques_parachute=2
+		if sprite_index==sprites[64] || sprite_index==sprites[65]
+		{
+			sprite_index=sprites[4]  //fall sprite
+			if supers>0
+				sprite_index=sprites[12] //fall super sprite       
+		}        
+	}
 }
 player_falldown_sprite_check()
 
@@ -1453,23 +1494,23 @@ player_falldown_sprite_check()
 
 if hspd>0
 {
-    for (i=0; i<hspd; i+=1)
-    {
-        if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x && (chained_debuff_counter<1 || (x-chained_debuff_x_pos<BAITCHAIN_CHAIN_RANGE))
-            x+=1
-        else
-            break;
-    };
+	for (i=0; i<hspd; i+=1)
+	{
+		if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x-20 && (chained_debuff_counter<1 || (x-chained_debuff_x_pos<BAITCHAIN_CHAIN_RANGE))
+			x+=1
+		else
+			break;
+	};
 }
 else if hspd<0
 {
-    for (i=0; i<-hspd; i+=1)
-    {
-        if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x && (chained_debuff_counter<1 || (chained_debuff_x_pos-x<BAITCHAIN_CHAIN_RANGE))
-            x-=1
-        else
-            break;
-    };
+	for (i=0; i<-hspd; i+=1)
+	{
+		if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x+20 && (chained_debuff_counter<1 || (chained_debuff_x_pos-x<BAITCHAIN_CHAIN_RANGE))
+			x-=1
+		else
+			break;
+	};
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
@@ -1479,128 +1520,128 @@ else if hspd<0
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FPUNCH
 if fpunch_lockdown==1    //loops animation while charging 
 {
-    if image_index>3.9
-        image_index=1
+	if image_index>3.9
+		image_index=1
 }
 else if fpunch_lockdown==2 
 {
-    if image_index>5
-    {
-        if fpunch_has_made_hitbox==false
-        {            
-            attack_create_hitbox(30,1,true,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
-        }
+	if image_index>5
+	{
+		if fpunch_has_made_hitbox==false
+		{            
+			attack_create_hitbox(30,1,true,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
+		}
         
-        fpunch_has_made_hitbox=true
-        fpunch_lockdown=3
+		fpunch_has_made_hitbox=true
+		fpunch_lockdown=3
         
-    }
+	}
 
-    if fpunch_feet_counter==2
-    {
-        if round(image_index)>4
-            fpunch_feet_counter=3
-    }
+	if fpunch_feet_counter==2
+	{
+		if round(image_index)>4
+			fpunch_feet_counter=3
+	}
 }
 
 
 ///////FPUNCH FEET STEPS
 if fpunch_feet_counter!=-1 && groundcheck
 {
-    if fpunch_feet_counter==0 || fpunch_feet_counter==1
-    {       
-        var b;
-        if fpunch_feet_counter==0
-            b=-9
-        else
-            b=-11
+	if fpunch_feet_counter==0 || fpunch_feet_counter==1
+	{       
+		var b;
+		if fpunch_feet_counter==0
+			b=-9
+		else
+			b=-11
             
-        fpunch_feet_counter+=1
+		fpunch_feet_counter+=1
     
-        punch_step_in(b)
-    }
-    if fpunch_feet_counter==3 || fpunch_feet_counter==4
-    {
-        var b;
-        if fpunch_feet_counter==3
-        {
-            b=24 //28 cooler but annoying for gp combo
-            fpunch_feet_counter+=1
-        }
-        else
-        {
-            b=12 //18 cooler but annoying for gp combo
-            fpunch_feet_counter=-1   
-        }
+		punch_step_in(b)
+	}
+	if fpunch_feet_counter==3 || fpunch_feet_counter==4
+	{
+		var b;
+		if fpunch_feet_counter==3
+		{
+			b=24 //28 cooler but annoying for gp combo
+			fpunch_feet_counter+=1
+		}
+		else
+		{
+			b=12 //18 cooler but annoying for gp combo
+			fpunch_feet_counter=-1   
+		}
 
-        punch_step_in(b)
-    }
+		punch_step_in(b)
+	}
 }
 
 ///////// FORWARDPUNCH FEET STEPS
 if uniques_forwardpunch_feet_counter!=-1 && groundcheck   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 {
-    if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
-    {
-      if uniques_forwardpunch_feet_counter==0
-        {
-            b=22
-            uniques_forwardpunch_feet_counter+=1
-        }
-        else
-        {
-            b=16
-            uniques_forwardpunch_feet_counter=-1   
-        }
+	if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
+	{
+		if uniques_forwardpunch_feet_counter==0
+		{
+			b=22
+			uniques_forwardpunch_feet_counter+=1
+		}
+		else
+		{
+			b=16
+			uniques_forwardpunch_feet_counter=-1   
+		}
     
-        punch_step_in(b)
-    }
+		punch_step_in(b)
+	}
 }
 
 ///////// SHARKATTACK PUNCH FEET STEPS
 if uniques_sharkattack_feet_counter!=-1 && groundcheck   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 {
-    if uniques_sharkattack_feet_counter==0 || uniques_sharkattack_feet_counter==1
-    {
-      if uniques_sharkattack_feet_counter==0
-        {
-            b=24
-            uniques_sharkattack_feet_counter+=1
-        }
-        else
-        {
-            b=16
-            uniques_sharkattack_feet_counter=-1   
-        }
+	if uniques_sharkattack_feet_counter==0 || uniques_sharkattack_feet_counter==1
+	{
+		if uniques_sharkattack_feet_counter==0
+		{
+			b=24
+			uniques_sharkattack_feet_counter+=1
+		}
+		else
+		{
+			b=16
+			uniques_sharkattack_feet_counter=-1   
+		}
     
-        punch_step_in(b)
-    }
+		punch_step_in(b)
+	}
 }
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////SHOOT AAPUNCH
 if uniques_aapunch_lockdown==1 && image_index>5
 {
-    if uniques_aapunch_has_made_hitbox==false 
-    {
-        attack_create_hitbox(25,1,true,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
-    } 
+	if uniques_aapunch_has_made_hitbox==false 
+	{
+		attack_create_hitbox(25,1,true,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
+	} 
     
-    uniques_aapunch_has_made_hitbox=true
-    uniques_aapunch_lockdown=2
+	uniques_aapunch_has_made_hitbox=true
+	uniques_aapunch_lockdown=2
     
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////SHOOT AAPUNCH HITTBOX 2
 if uniques_aapunch_lockdown==2 && image_index>9
 {
-    if uniques_aapunch_has_made_hitbox2==false 
-    {
-        attack_create_hitbox(25,1,true,true,true,"upwardpunch2",vet_upwardpunch_hitbox2,1,99,5,2)
-    } 
+	if uniques_aapunch_has_made_hitbox2==false 
+	{
+		attack_create_hitbox(25,1,true,true,true,"upwardpunch2",vet_upwardpunch_hitbox2,1,99,5,2)
+	} 
     
-    uniques_aapunch_has_made_hitbox=true
-    uniques_aapunch_lockdown=3
+	uniques_aapunch_has_made_hitbox=true
+	uniques_aapunch_lockdown=3
     
 
 }
@@ -1774,23 +1815,23 @@ if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 	{
 		if canbounce_counter>0
 		{
-		        bounced=true
-		        if canbounce_counter>MAX_CANBOUNCE_COUNTER
-		        canbounce_counter=MAX_CANBOUNCE_COUNTER
-		        hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
-		        //show_message("bounce, go left! hspd is:"+string(hspd))
+			bounced=true
+			if canbounce_counter>MAX_CANBOUNCE_COUNTER
+				canbounce_counter=MAX_CANBOUNCE_COUNTER
+			hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
+			//show_message("bounce, go left! hspd is:"+string(hspd))
 		}
 		for (i=0; i<hspd; i+=1)
 		{
-		        if !place_meeting(x+1,y,block)
-		        x+=1
-		        else
-		        break;
+			if !place_meeting(x+1,y,block)
+				x+=1
+			else
+				break;
 		};
 		if bounced==true
 		{
-			        if place_meeting(x-1,y,block)
-			        x-=1
+			if place_meeting(x-1,y,block)
+				x-=1
 		}
 	}
 	if hspd<0
@@ -1828,64 +1869,64 @@ if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 }
 else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 {
-    var bounced;
-    bounced=false
+	var bounced;
+	bounced=false
     
-    if hspd>0
-    {
-        if canbounce_counter>0 && bounced==false
-        {
-            bounced=true
-            if canbounce_counter>MAX_CANBOUNCE_COUNTER
-                canbounce_counter=MAX_CANBOUNCE_COUNTER
-            hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
-            //show_message("bounce, go left! hspd is:"+string(hspd))
-        }
-        for (i=0; i<hspd; i+=1)
-        {
-            if !place_meeting(x+1,y,block)
-                x+=1
-            else
-                break;
-        };
-        if bounced==true
-        {
-            if place_meeting(x-1,y,block)
-                x-=1
-        }
-    }
-    if hspd<0
-    {
-        if canbounce_counter>0 && bounced==false
-        {
-            bounced=true
-            if canbounce_counter>MAX_CANBOUNCE_COUNTER
-                canbounce_counter=MAX_CANBOUNCE_COUNTER
-            hspd=clamp(BOUNCE_MIN_VELOCITY,-hspd,BOUNCE_MAX_VELOCITY)
-            //show_message("bounce, go right! hspd is:"+string(hspd))
+	if hspd>0
+	{
+		if canbounce_counter>0 && bounced==false
+		{
+			bounced=true
+			if canbounce_counter>MAX_CANBOUNCE_COUNTER
+				canbounce_counter=MAX_CANBOUNCE_COUNTER
+			hspd=clamp(-BOUNCE_MIN_VELOCITY,-hspd,-BOUNCE_MAX_VELOCITY)
+			//show_message("bounce, go left! hspd is:"+string(hspd))
+		}
+		for (i=0; i<hspd; i+=1)
+		{
+			if !place_meeting(x+1,y,block)
+				x+=1
+			else
+				break;
+		};
+		if bounced==true
+		{
+			if place_meeting(x-1,y,block)
+				x-=1
+		}
+	}
+	if hspd<0
+	{
+		if canbounce_counter>0 && bounced==false
+		{
+		        bounced=true
+			if canbounce_counter>MAX_CANBOUNCE_COUNTER
+				canbounce_counter=MAX_CANBOUNCE_COUNTER
+			hspd=clamp(BOUNCE_MIN_VELOCITY,-hspd,BOUNCE_MAX_VELOCITY)
+			//show_message("bounce, go right! hspd is:"+string(hspd))
     
-        }
-        for (i=0; i<-hspd; i+=1)
-        {
-            if !place_meeting(x-1,y,block)
-                x-=1
-            else
-                break;
-        };
-        if bounced==true
-        {
-            if place_meeting(x+1,y,block)
-                x+=1
-        }
-    }
-    if bounced==false
-        hspd=0 
+		}
+		for (i=0; i<-hspd; i+=1)
+		{
+			if !place_meeting(x-1,y,block)
+				x-=1
+			else
+				break;
+		};
+		if bounced==true
+		{
+			if place_meeting(x+1,y,block)
+				x+=1
+		}
+	}
+	if bounced==false
+		hspd=0 
         
-    if impact_debuff_counter>0
-    {
-        impact_debuff_counter=0 
-        create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for leftward direction
-    } 
+	if impact_debuff_counter>0
+	{
+		impact_debuff_counter=0 
+		create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for leftward direction
+	} 
 }
 
 
@@ -1894,52 +1935,52 @@ else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 ///////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL FRICTION AND HSPD LIMIT
 if canbounce_counter<1   ///disable horizontal friction if bouncing
 {
-    if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
-    { 
-        var fir;
-        fir=FRICTION
-        if !groundcheck
-            fir=AIR_FRICTION
-        if !player_not_locked_down()
-        {
-            fir/=3
-        }
-        if hspd>0
-        {
-            hspd-=fir
-            if hspd<0    ///sets to 0 instead of going negative
-                hpsd=0
-        }
-        if hspd<0 
-        {
-            hspd+=fir
-            if hspd>0    ///sets to 0 instead of going negative
-                hspd=0
-        }    
-    }
-    else                                                ///                                     else limit hspd if running 
-    {
-        var fir;
-        fir=FRICTION
-        if hspd>RUNNING_HSPD_MAX
-        {
-            hspd-=fir
-            if hspd<0    ///sets to 0 instead of going negative
-                hpsd=0
-        }
-        if hspd<-RUNNING_HSPD_MAX
-        {
-            hspd+=fir
-            if hspd>0    ///sets to 0 instead of going negative
-                hspd=0
-        }
-    }
+	if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
+	{ 
+		var fir;
+		fir=FRICTION
+		if !groundcheck
+			fir=AIR_FRICTION
+		if !player_not_locked_down()
+		{
+			fir/=3
+		}
+		if hspd>0
+		{
+			hspd-=fir
+			if hspd<0    ///sets to 0 instead of going negative
+			hpsd=0
+		}
+		if hspd<0 
+		{
+			hspd+=fir
+			if hspd>0    ///sets to 0 instead of going negative
+			hspd=0
+		}    
+	}
+	else                                                ///                                     else limit hspd if running 
+	{
+		var fir;
+		fir=FRICTION
+		if hspd>RUNNING_HSPD_MAX
+		{
+			hspd-=fir
+			if hspd<0    ///sets to 0 instead of going negative
+				hpsd=0
+		}
+		if hspd<-RUNNING_HSPD_MAX
+		{
+			hspd+=fir
+			if hspd>0    ///sets to 0 instead of going negative
+				hspd=0
+		}
+	}
 }
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////// TOP SCREEN DEATH
 if y<-10
 {
-    if dash_angel_top_collision_safety<1
-        playerdie()
+	if dash_angel_top_collision_safety<1
+		playerdie()
 }
