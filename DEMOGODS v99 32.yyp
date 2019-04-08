@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "204d6501-427e-42d2-be7c-a856d48188b2",
+            "Value": {
+                "id": "b4be8142-7828-4e19-a473-d990aeb6f27d",
+                "resourcePath": "sprites\\dash_dirt_particle\\dash_dirt_particle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2096af27-55e3-4235-91c5-4d2506e6e162",
             "Value": {
                 "id": "388223e7-aee6-4a4c-ba3e-61046ac08da5",

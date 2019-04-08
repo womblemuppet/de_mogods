@@ -1161,6 +1161,12 @@ if checkkey(dashbutton)
 		else
 			hspd=-ground_dash_speed
 		ground_dash_counter+=1
+		var a;
+		a=effect_aniend(dash_dirt_particle,0.5+random(0.3),-2)
+		a.y+=random(3)
+		if !right
+			a.image_xscale=-1
+		
 		//show_debug_message(string(ground_dash_counter))
 		//effect_create_above(ef_firework,x,y,0,c_aqua)
 	}
