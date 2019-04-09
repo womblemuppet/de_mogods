@@ -196,7 +196,8 @@ switch character
     case "bait" :
     {
             supersparkle_sprite=P1_saiyanaura 
-            sentinel_colour=c_purple    
+            sentinel_colour=c_purple  
+	    sprites[82]=Bait_3H_place_teleport
             sprites[80]=Bait_3H_heavypunch
             sprites[81]=Bait_3H_heavypunch   ///super version (to be changed)
             sprites[28]=Bait_3H_rocketjump

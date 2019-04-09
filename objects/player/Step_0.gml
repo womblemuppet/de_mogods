@@ -685,10 +685,10 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 		image_speed=0.2
 		image_index=0
 		uniques_combatroll_lockdown=1
-		/*if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
+		if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
 			hspd*=1.8
 		else
-			hspd*=1.3*/
+			hspd*=1.3
 		alarm[5]=2
         
 	}
@@ -697,15 +697,18 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
     
 	if !exception && canpush
 	{   
-		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attackname;
+		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attackname,extrahkb;
 		spawn_normal_uc_hitbox=false
-		la_attackname="uppercut"
+		la_attackname="error"
+		extrahkb=0
         
 		switch attacks[? "light attack"]
 		{
 			case 0:  //ooga
+			la_attackname="oogauppercut"
 			spawn_normal_uc_hitbox=true
-			uc_hitbox_shape=bammeroo break;
+			uc_hitbox_shape=bammeroo 
+			extrahkb=3 break;
             
 			case 1:    ///veteran light attack (chains) 
 			la_attackname="veteranuppercut"
@@ -732,16 +735,18 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
         
 		if spawn_normal_uc_hitbox
 		{
+			if la_attackname=="error"
+				show_error("invalid attack name recieved",true)
 			canpush=false
 			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
 			alarm[1]=PUSH_COOLDOWN   
 			sprite_index=sprites[17]
 			if supers>0
-			sprite_index=sprites[18]
+				sprite_index=sprites[18]
 			image_index=0
 			image_speed=0.2
             
-			attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7,4)
+			attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7+extrahkb,4)
 		}
 	}
 }
@@ -1198,7 +1203,7 @@ if dash_button_currently_held
 
 
 /////////////////////////////////////////////////////////////////////////////////// placable abilities
-if checkkey(downbutton)
+if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
 {
 	switch attacks[? "special hold down"] 
 	{
@@ -1224,11 +1229,18 @@ if checkkey(downbutton)
 		case 1:   //bait teleport
 		if uniques_teleport_enabled==true
 		{
+			if down_button_held==0
+			{
+				image_index=0
+				image_speed=0.2
+				sprite_index=sprites[82]
+			}
 			down_button_held+=1  
-            
+			
+			
 			if down_button_held>20
 			{
-				if uniques_teleport==0                           ////create teleport if there isn't one
+				if uniques_teleport==0                                                                                           ////create teleport if there isn't one
 				{
 					down_button_held=-2000
 					uniques_teleport=1
@@ -1236,7 +1248,7 @@ if checkkey(downbutton)
 					uniques_my_teleport_id.creator=self.id
 					effect_create_above(ef_firework,x,y,2,c_red)
 				}
-				else if uniques_teleport==1
+				else if uniques_teleport==1                                                                                    ///else  use teleport
 				{
 					if !instance_exists(uniques_my_teleport_id)  //DESTROY TELEPORT
 					{   ///if teleport got destroyed, reset variables and lead to teleport place instead
@@ -1253,7 +1265,7 @@ if checkkey(downbutton)
 							effect_create_above(ef_firework,x,y,2,c_aqua)
 						}
 						with uniques_my_teleport_id
-						        instance_destroy()
+							instance_destroy()
 						uniques_my_teleport_id=-4
 						down_button_held=-2000
 						uniques_teleport=0
@@ -1271,11 +1283,8 @@ if checkkey(downbutton)
 ////// down button hold counter reset (for abilities like place mine)
 if checkkey_released(downbutton)
 {
-    down_button_held=0
+	down_button_held=0
 }
-
-
-
 
 
 
@@ -1614,12 +1623,12 @@ if uniques_sharkattack_feet_counter!=-1 && groundcheck   // -1  = not in use 0 =
 	{
 		if uniques_sharkattack_feet_counter==0
 		{
-			b=24
+			b=14
 			uniques_sharkattack_feet_counter+=1
 		}
 		else
 		{
-			b=16
+			b=8
 			uniques_sharkattack_feet_counter=-1   
 		}
     
@@ -1764,7 +1773,7 @@ if uniques_sharkattack_lockdown==1 && image_index>5
 
 if uniques_sharkattack_has_made_hitbox==false 
 {
-	attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,3,3)
+	attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
 } 
     
 uniques_sharkattack_has_made_hitbox=true

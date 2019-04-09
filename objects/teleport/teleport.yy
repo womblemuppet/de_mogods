@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "teleport",
     "eventList": [
-        
+        {
+            "id": "744a0486-c0b3-4b79-88ca-37e0f3d88483",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c7af5b38-1c0b-41a0-ab67-99f0dc2f70e7"
+        },
+        {
+            "id": "55be685c-99fc-4190-9c6e-c031f9f85de3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "c7af5b38-1c0b-41a0-ab67-99f0dc2f70e7"
+        }
     ],
     "maskSpriteId": "cc63383d-bb40-4693-86b3-5e88d2ff0870",
     "overriddenProperties": null,

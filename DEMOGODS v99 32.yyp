@@ -1551,6 +1551,14 @@
             }
         },
         {
+            "Key": "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc",
+            "Value": {
+                "id": "7929b2df-703c-4421-a670-47237a94150d",
+                "resourcePath": "sprites\\bait_sharkattack_hit_effect\\bait_sharkattack_hit_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4037ce6e-9f42-40c5-b927-468db4bd59dd",
             "Value": {
                 "id": "65c4644b-cba4-43ba-aa54-9f7384c16832",
@@ -2571,6 +2579,14 @@
             "Value": {
                 "id": "a8e98993-26bd-44d2-9e1c-5d9f3f7f229f",
                 "resourcePath": "sprites\\avatar_walk_down\\avatar_walk_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "63201aa8-950d-48f7-874b-c60f201f4820",
+            "Value": {
+                "id": "79f2014e-759d-488e-8411-c80dec01340d",
+                "resourcePath": "sprites\\Bait_3H_place_teleport\\Bait_3H_place_teleport.yy",
                 "resourceType": "GMSprite"
             }
         },

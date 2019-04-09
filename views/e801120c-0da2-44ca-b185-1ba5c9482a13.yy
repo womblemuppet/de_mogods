@@ -16,12 +16,14 @@
         "e62455eb-bd0b-4d16-9261-2dfbb8d5dce7",
         "46cc7d63-ebc8-463a-b9a4-4f47f900d5ff",
         "52799e92-aaa5-424e-9f8e-72deb4ee5ab4",
+        "63201aa8-950d-48f7-874b-c60f201f4820",
         "cbfa3cc6-fdca-42e5-950c-d2c0267c0129",
         "aa13c4b4-3ba8-4f72-b1b8-35686db879bb",
         "249c5271-907d-4757-8eb5-beffa15f3131",
         "bbd92417-6da0-4162-85b1-c8e973e227be",
         "828b609a-1929-4e84-af62-aaae14152b74",
-        "5d5fddb1-adf2-4b71-a011-8d0e1f83a265"
+        "5d5fddb1-adf2-4b71-a011-8d0e1f83a265",
+        "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc"
     ],
     "filterType": "GMSprite",
     "folderName": "Bait",
