@@ -39,7 +39,6 @@ else if sprite_index==sprites[6]  ///super activate
 else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash or push
 {
     player_set_idle()
-    uniques_combatroll_lockdown=0
 }
 else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///angel jump
 {
@@ -90,14 +89,6 @@ else if sprite_index==sprites[70] || sprite_index==sprites[71]  ///slinger sunbl
     {
         uniques_sunblast_lockdown=0
         player_set_idle()   
-    }
-}
-else if sprite_index==sprites[73] || sprite_index=sprites[74]   ///slinger combat roll
-{
-    if uniques_combatroll_lockdown==2
-    {
-        uniques_combatroll_lockdown=0
-        player_set_idle()
     }
 }
 else if sprite_index==sprites[80] || sprite_index==sprites[81]  ///bait shark attack heavy attack

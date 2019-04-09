@@ -676,6 +676,8 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 
         
     }
+    
+    /*
 	if !exception && dashcd>0 && uniques_attack_during_dash==true && uniques_combatroll_lockdown==0    ////slinger dash roll attack
 	{
 		exception=true
@@ -683,13 +685,14 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 		image_speed=0.2
 		image_index=0
 		uniques_combatroll_lockdown=1
-		if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
+		/*if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
 			hspd*=1.8
 		else
-			hspd*=1.3
+			hspd*=1.3*/
 		alarm[5]=2
         
 	}
+	*/
     
     
 	if !exception && canpush
@@ -1692,16 +1695,6 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 	uniques_forwardpunch_lockdown=2
 	uniques_forwardpunch_has_made_hitbox=true    
     
-}
-if image_index>4 && uniques_combatroll_lockdown==1  ///SLINGER COMBAT ROLL
-{ 
-	uniques_combatroll_lockdown=2
-	uniques_combatroll_has_made_hitbox=true
-	attack_create_hitbox(20,1,true,true,true,"combatrollattack",slinger_combatroll_hitbox,0.25,99,4,2)
-	if groundcheck
-	{
-		hspd=hspd/4
-	}
 }
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {

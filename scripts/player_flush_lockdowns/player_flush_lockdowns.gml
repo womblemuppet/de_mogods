@@ -11,7 +11,6 @@ uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_upforwarddash_lockdown=0
 uniques_sunblast_lockdown=0
-uniques_combatroll_lockdown=0
 airgrab_mode=0
 cangroundpound=0
 dash_angel_jump=0

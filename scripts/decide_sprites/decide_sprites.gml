@@ -159,8 +159,6 @@ switch character
         {
             supersparkle_sprite=P1_saiyanaura 
             sentinel_colour=c_purple    
-            sprites[73]=Slinger_3H_combatroll
-            sprites[72]=Slinger_3H_combatroll 
             sprites[71]=Slinger_3H_sunbolt
             sprites[70]=Slinger_3H_sunbolt 
             sprites[28]=Slinger_3H_rocketjump
@@ -176,8 +174,8 @@ switch character
             sprites[19]=Slinger_3H_dizzy
             sprites[18]=Vet_3H_uppercut   ///super version
             sprites[17]=Vet_3H_uppercut
-            sprites[16]=Slinger_3H_dash    ////super version (to be changed) 
-            sprites[15]=Slinger_3H_dash
+            sprites[16]=Slinger_3H_charge    ////super version (to be changed) 
+            sprites[15]=Slinger_3H_charge
             sprites[14]=goldboi
             sprites[13]=P1_corpse
             sprites[0]=Slinger_3H_idle

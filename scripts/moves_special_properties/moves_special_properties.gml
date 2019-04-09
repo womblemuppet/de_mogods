@@ -32,20 +32,6 @@ switch argument0
             }
         }
     }  break;
-    case "combatrollattack"  :
-    {
-        other.creator.canbounce_counter=40
-        other.creator.vspd=-5
-        with other.creator
-        {
-            if !place_meeting(x,y-1,block)
-                y-=1
-        }
-        if other.direction==0
-            other.creator.hspd=-7
-        else
-            other.creator.hspd=7
-    }   break;
     case "slingerjumpresetdash" :
     {
         if !groundcheck

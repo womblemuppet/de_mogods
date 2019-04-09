@@ -1479,14 +1479,6 @@
             }
         },
         {
-            "Key": "3dde87cc-e16d-4c94-8212-d16b83846757",
-            "Value": {
-                "id": "d108ab53-8a7d-481e-bd4f-7e161502e05f",
-                "resourcePath": "sprites\\Slinger_3H_dash\\Slinger_3H_dash.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3de09114-fb8c-4c24-9200-547e7e7340d5",
             "Value": {
                 "id": "432335b0-3e10-4b0e-93c5-9b5e75908279",
@@ -3098,7 +3090,7 @@
             "Key": "785e3efb-f69f-4223-875f-7881b20e9b32",
             "Value": {
                 "id": "c0b852c0-b9f1-4954-ac3c-55c87950fa78",
-                "resourcePath": "sprites\\Slinger_charge\\Slinger_charge.yy",
+                "resourcePath": "sprites\\Slinger_3H_charge\\Slinger_3H_charge.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3139,14 +3131,6 @@
             "Value": {
                 "id": "d5837675-47f4-47cf-974e-5e4fe75316ad",
                 "resourcePath": "sprites\\jellyfish_sprite\\jellyfish_sprite.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7938140c-e33f-453b-a6a8-bafccd428170",
-            "Value": {
-                "id": "7367083e-020c-4d84-8cb7-2f16a44b2a37",
-                "resourcePath": "sprites\\Slinger_3H_combatroll\\Slinger_3H_combatroll.yy",
                 "resourceType": "GMSprite"
             }
         },

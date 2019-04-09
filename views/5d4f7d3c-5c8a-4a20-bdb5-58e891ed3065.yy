@@ -5,8 +5,7 @@
     "name": "5d4f7d3c-5c8a-4a20-bdb5-58e891ed3065",
     "children": [
         "e89ab7dd-54c9-45dd-8731-8ee6b415eea4",
-        "3dde87cc-e16d-4c94-8212-d16b83846757",
-        "7938140c-e33f-453b-a6a8-bafccd428170",
+        "785e3efb-f69f-4223-875f-7881b20e9b32",
         "b4a80fae-97ec-48e6-b11c-37a431e001d9",
         "29a87a06-4b37-4120-9591-3bafceb2ebc4",
         "5e9f98f2-a8b9-423e-ae53-fe37dc036ca5",
@@ -19,8 +18,7 @@
         "8e5ebd41-bd64-47df-9533-6f20090818b8",
         "5bcd5731-5ef0-48f7-aa0e-213e88d33dc8",
         "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
-        "dae7e265-fbe2-4c58-a633-ca09608cc2ab",
-        "785e3efb-f69f-4223-875f-7881b20e9b32"
+        "dae7e265-fbe2-4c58-a633-ca09608cc2ab"
     ],
     "filterType": "GMSprite",
     "folderName": "Slinger",

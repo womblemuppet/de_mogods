@@ -56,9 +56,7 @@ PUSH_COOLDOWN=40  ///uppercut cooldown timer (archaic as well...)
 cangroundpound=0   /// -1 jump delay 0 can 1 freeze 2 down 3 bounced
 GROUNDPOUND_UNAVAILABLE_TIME=5 ///9   //prevents groundpound after jumping for this long
 MILD_SLOW_PERCENTAGE=0.5     ///speed timesed by this number
-FUCKOFF_SLOW_PERCENTAGE=0.2
-
-
+FUCKOFF_SLOW_PERCENTAGE=0.2 ///speed timesed by this number
 
 LOONEYTUNE_TIME=4 ///after jumping off ledge
 ltt=0 //looneytune time counter
@@ -69,12 +67,11 @@ STUNNED=0   //not constant
 STUNNED2=0  ///not constant     [finaledit] replace with lowercase versions
 immune=false
 sidezap=false
-scale=1.45
 hothands=0
 hothandimageindex=0
 HOTHANDIMAGENUMBER=10 //update when changing hothands counter sprite
 holding_a_crab=false
-crab_being_held=-1
+crab_being_held=-1   ///id of throwable critter  being held
 down_button_held=0
 cripple_debuff_counter=0
 impact_debuff_counter=0
@@ -97,7 +94,6 @@ uniques_super_ooga_gp_enabled=false
 uniques_mines_enabled=false
 uniques_mine_cooldown_counter=0
 uniques_gpcombo_cripples_enabled=false
-uniques_attack_during_dash=false
 uniques_teleport_enabled=false
 uniques_teleport=-1   ///-1 not enabled    0 = placeable 1 = placed 
 uniques_my_teleport_id=-4
@@ -146,10 +142,6 @@ mines_ammo=0
 uniques_veteran_mortarammo=0
 uniques_veteran_clusterammo=0
 uniques_veteran_ultstock=0
-
-//SLINGER COMBAT ROLL
-uniques_combatroll_lockdown=0
-uniques_combatroll_has_made_hitbox=false
 
 //SLINGER SUNBLAST
 uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery

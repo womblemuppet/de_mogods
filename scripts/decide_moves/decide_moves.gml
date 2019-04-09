@@ -111,7 +111,6 @@ switch (character)
 	ds_map_add(attacks, "air grab effect", 0);
 	//ooga standard grab effect   
     
-	uniques_attack_during_dash=true 
 	uniques_airdash_resets_jump=true
 	break;
 

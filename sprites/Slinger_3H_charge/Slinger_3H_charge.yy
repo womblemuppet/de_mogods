@@ -2,7 +2,7 @@
     "id": "785e3efb-f69f-4223-875f-7881b20e9b32",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Slinger_charge",
+    "name": "Slinger_3H_charge",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -124,6 +124,28 @@
                     "LayerId": "389c62bb-eef1-4a1d-996d-b9349243580d"
                 }
             ]
+        },
+        {
+            "id": "74da08b3-ea66-4faa-980b-46ace512cb59",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "785e3efb-f69f-4223-875f-7881b20e9b32",
+            "compositeImage": {
+                "id": "92a02f5f-f4ea-4ed6-acfb-3861180ab5b1",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "74da08b3-ea66-4faa-980b-46ace512cb59",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "ce651656-b696-4b13-b2af-fa0952c47204",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "74da08b3-ea66-4faa-980b-46ace512cb59",
+                    "LayerId": "389c62bb-eef1-4a1d-996d-b9349243580d"
+                }
+            ]
         }
     ],
     "gridX": 0,
@@ -144,8 +166,8 @@
     ],
     "origin": 9,
     "originLocked": false,
-    "playbackSpeed": 15,
-    "playbackSpeedType": 0,
+    "playbackSpeed": 1,
+    "playbackSpeedType": 1,
     "premultiplyAlpha": false,
     "sepmasks": false,
     "swatchColours": null,
