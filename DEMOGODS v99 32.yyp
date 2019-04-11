@@ -3463,6 +3463,14 @@
             }
         },
         {
+            "Key": "864ebc55-a33a-433b-9bb5-17418233c395",
+            "Value": {
+                "id": "84cee449-d6e8-4d54-8058-7f1e092c4323",
+                "resourcePath": "sprites\\Bait_3H_use_teleport\\Bait_3H_use_teleport.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8739afc2-d79e-4275-bfca-94a1e972f144",
             "Value": {
                 "id": "cb73dda9-91e4-4ca9-b2ea-5d86c98318e3",

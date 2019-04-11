@@ -1,18 +1,7 @@
-//spr_baitchain_link
-/*
-var d; //total drop distance from ystart 
-d=((ystart+ytarg)/2)+chain_drop_dist
-
-for (i=0; i<sagging_point; i+=1)
-{
-    ly[i]=logn(1.5,i+1)
-};
-
-*/
 if instance_exists(target)
 {
-    tx=target.x
-    ty=target.y
+	tx=target.x
+	ty=target.y
 }
 
 //draw_set_colour(c_red)

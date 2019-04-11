@@ -1,8 +1,6 @@
-/// @description /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*  ground collision  */
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
+///////////////////////////////////////////////
+/*step event///////////////////////////////////
+*//////////////////////////////////////////////
 
 if canbounce_counter>0
 {
@@ -318,10 +316,10 @@ if chained_debuff_counter>0
 
 
 
-///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB
+///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB THROW EVENT
 if airgrab_mode==2 && airgrab_decidedir_time>0
 {
-	if instance_exists(airgrab_target) && airgrab_target!=-1
+	if instance_exists(airgrab_target) && airgrab_target!=-1    /// position grabbed target infront of character
 	{
 		var tx,ty,steps_to_try_move;
 		steps_to_try_move=8
@@ -368,7 +366,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 	}
     
 	airgrab_decidedir_time-=1
-	if airgrab_decidedir_time==1
+	if airgrab_decidedir_time==1    ////airgrab throw event and damage
 	{
 		switch attacks[? "air grab effect"]   
 		{
@@ -849,7 +847,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			break;
             
 			case 3:    ////bait shark attack heavy punch
-			image_speed=0.4
+			image_speed=0.25
 			sprite_index=sprites[80]
 			if supers>0
 				sprite_index=sprites[81]
@@ -898,7 +896,7 @@ if checkkey_pushed(lightbutton) && !groundcheck && player_may_attack()//////////
 			case 0:
 			airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 
-            
+			aim_octilinear()
 			var xx,yy;
 			xx=lengthdir_x(AIRGRAB_RANGE,octdir)
 			yy=lengthdir_y(AIRGRAB_RANGE,octdir)
@@ -949,9 +947,9 @@ if checkkey_pushed(heavybutton) && !groundcheck && player_may_attack()       ///
 					if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315
 					{
 						if direction>90
-						        hspd=-6
+							hspd=-6
 						else
-						        hspd=6
+							hspd=6
                             
 						vspd=-5
 					}
@@ -996,7 +994,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
 					sprite_index=sprites[30]    ///groundpound freeze sprite
 					if supers>0
-					sprite_index=sprites[31]   ///groundpound freeze super sprite
+						sprite_index=sprites[31]   ///groundpound freeze super sprite
 					image_speed=0.4
 					image_index=0
 				}
@@ -1234,6 +1232,8 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 				image_index=0
 				image_speed=0.2
 				sprite_index=sprites[82]
+				if uniques_teleport==1
+					sprite_index=sprites[83]
 			}
 			down_button_held+=1  
 			
@@ -1284,6 +1284,10 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 if checkkey_released(downbutton)
 {
 	down_button_held=0
+	if sprite_index==sprites[82] || sprite_index=sprites[83]
+	{
+		player_set_idle()
+	}
 }
 
 
@@ -1767,17 +1771,17 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 	uniques_sunblast_has_made_hitbox=true
 }
 
-if uniques_sharkattack_lockdown==1 && image_index>5
+if uniques_sharkattack_lockdown==1 && image_index>3
 {
 
 
-if uniques_sharkattack_has_made_hitbox==false 
-{
-	attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
-} 
+	if uniques_sharkattack_has_made_hitbox==false 
+	{
+		attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
+	} 
     
-uniques_sharkattack_has_made_hitbox=true
-uniques_sharkattack_lockdown=2
+	uniques_sharkattack_has_made_hitbox=true
+	uniques_sharkattack_lockdown=2
             
 }
 

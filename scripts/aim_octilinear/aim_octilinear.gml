@@ -9,31 +9,28 @@ octdir=-1
 
 if checkkey(leftbutton)
 {
-    octdir=180
-    if checkkey(upbutton)
-        octdir=135
-    if checkkey(downbutton)
-        octdir=225
+	octdir=180
+	if checkkey(upbutton)
+		octdir=135
+	else if checkkey(downbutton)
+		octdir=225
 }
-if checkkey(rightbutton)
+else if checkkey(rightbutton)
 {
-    octdir=0
-    if checkkey(upbutton)
-        octdir=45
-    if checkkey(downbutton)
-        octdir=315
+	octdir=0
+	if checkkey(upbutton)
+		octdir=45
+	else if checkkey(downbutton)
+		octdir=315
 }
-if octdir==-1
+else	if checkkey(upbutton)
+	octdir=90
+else if checkkey(downbutton)
+	octdir=270
+else
 {
-    if checkkey(upbutton)
-        octdir=90
-    if checkkey(downbutton)
-        octdir=270
-}
-if octdir==-1
-{
-    if right==true
-        octdir=0
-    else
-        octdir=180
+	if right==true
+		octdir=0
+	else
+		octdir=180
 }

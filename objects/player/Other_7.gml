@@ -14,8 +14,8 @@ else if sprite_index==sprites[10]    ///jump super
 }
 else if sprite_index==sprites[23]  ///airgrab
 {
-    sprite_index=sprites[3]   ////air
-    image_speed=0.1
+	sprite_index=sprites[3]   ////air
+	image_speed=0.1
 }
 else if sprite_index==sprites[24]    ///airgrab super
 {
@@ -44,12 +44,16 @@ else if sprite_index==sprites[82]  ///bait teleport place
 {
 	player_set_idle()
 }
+else if sprite_index==sprites[83]  ///bait teleport use
+{
+	player_set_idle()
+}
 else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///angel jump
 {
 	if dash_angel_jump==2
 	{
-	player_set_idle()
-	dash_angel_jump=3
+		player_set_idle()
+		dash_angel_jump=3
 	}
 }
 else if sprite_index==sprites[21] || sprite_index==sprites[22]  ///falc punch

@@ -9,9 +9,9 @@ switch argument0
 		{
 			with effect_aniend(spr_gp_combo_uppercut,0.2,-2)
 			{
-			vspeed=-8
-			hspeed=-2+random(4)
-			gravity=0.2
+				vspeed=-8
+				hspeed=-2+random(4)
+				gravity=0.2
 			}
 		}
 	}  
@@ -59,7 +59,7 @@ switch argument0
 	{
 		if chained_debuff_counter>0
 		{
-			if  chain_effect_id_to_delete!=noone
+			if  chain_effect_id_to_delete!=noone && instance_exists(chain_effect_id_to_delete)
 			{
 				with chain_effect_id_to_delete
 					instance_destroy()
@@ -73,11 +73,17 @@ switch argument0
 		var me;
 		me=self.id
 		chain_effect_id_to_delete=instance_create(x,y,ef_chain)
-		with chain_effect_id_to_delete
+		chain_effect_id_to_delete.target=-1
+		chain_effect_id_to_delete.tx=x
+		chain_effect_id_to_delete.ty=y
+		if instance_exists(me)
 		{
-			target=me
-			tx=me.x
-			ty=me.y
+			with chain_effect_id_to_delete
+			{
+				target=me
+				tx=me.x
+				ty=me.y
+			}
 		}
 	} break;
 	case "sharkattack":
@@ -86,8 +92,14 @@ switch argument0
 		{
 			if chained_debuff_counter<100     ///prolongs chain timer a tad
 				chained_debuff_counter=100
+			var chaindir;
+			chaindir=other.direction
 			with effect_aniend(bait_sharkattack_hit_effect,0.3,-1)
+			{
 				y-=40
+				direction=chaindir
+				speed=3
+			}
 			var dx;
 			dx=80
 			if other.direction==180
@@ -99,7 +111,6 @@ switch argument0
 					x+=dx
 			}
 			
-
 		}
 	}break;
 }

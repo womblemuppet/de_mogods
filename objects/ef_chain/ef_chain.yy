@@ -5,16 +5,6 @@
     "name": "ef_chain",
     "eventList": [
         {
-            "id": "2957a1f5-0a8f-4b53-99cf-030b7aee68b9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "de74963f-c140-4a3b-b980-dc5afe72b62f"
-        },
-        {
             "id": "fb6f6437-79a9-4580-8e8b-3b74af6491e0",
             "modelName": "GMEvent",
             "mvc": "1.0",
