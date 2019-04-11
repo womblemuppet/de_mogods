@@ -2183,6 +2183,14 @@
             }
         },
         {
+            "Key": "57c85d18-f346-4965-90dd-d162cddc08eb",
+            "Value": {
+                "id": "51e0798c-e092-4db5-8ab9-00970b96957c",
+                "resourcePath": "sprites\\Vet_3H_run1\\Vet_3H_run1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "586a8db1-d90c-420f-99c9-443ebcf00c5e",
             "Value": {
                 "id": "ec0d4abe-04b9-4bc1-93ab-491dde29a739",

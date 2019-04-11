@@ -43,10 +43,36 @@ else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash or push
 else if sprite_index==sprites[82]  ///bait teleport place
 {
 	player_set_idle()
+	if uniques_teleport==0 		////create teleport if there isn't one
+	{
+		uniques_teleport=1
+		uniques_my_teleport_id=instance_create(x,y-10,teleport)
+		uniques_my_teleport_id.creator=self.id
+		effect_create_above(ef_firework,x,y,2,c_red)
+	}	
 }
 else if sprite_index==sprites[83]  ///bait teleport use
 {
 	player_set_idle()
+
+	if uniques_teleport==1                                                                                    ///else  use teleport
+	{
+		if instance_exists(uniques_my_teleport_id)  // TELEPORT
+		{   //////////////////////////////////////////if teleport is still intact, teleport to it and destroy teleporter
+			if !place_meeting(uniques_my_teleport_id.x,uniques_my_teleport_id.y,block)    
+			{
+				x=uniques_my_teleport_id.x
+				y=uniques_my_teleport_id.y
+				effect_create_above(ef_firework,x,y,2,c_aqua)
+			}
+			with uniques_my_teleport_id
+				instance_destroy()
+			uniques_my_teleport_id=-4
+			down_button_held=-2000
+			uniques_teleport=0
+		}
+	}	
+	
 }
 else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///angel jump
 {

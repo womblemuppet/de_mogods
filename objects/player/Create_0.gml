@@ -72,7 +72,6 @@ hothandimageindex=0      ///hothands indicator image index
 HOTHANDIMAGENUMBER=10 //update when changing hothands counter sprite
 holding_a_crab=false
 crab_being_held=-1   ///id of throwable critter  being held
-down_button_held=0
 cripple_debuff_counter=0   ///debuff stopping dashes and jumping
 impact_debuff_counter=0   ///debuff making you destroy terrain when hit
 chained_debuff_counter=0    ///debuff when etting hit by bait chaining attack

@@ -1208,15 +1208,12 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 		case 0:     ////veteran 
 		if uniques_mines_enabled  && groundcheck
 		{
-			down_button_held+=1
-            
 			if mines_ammo>0 && down_button_held>20 && uniques_mine_cooldown_counter<1
 			{
 				mines_ammo-=1
 				var a;
 				a=instance_create(x,y-10,mine)
 				a.creator=self.id
-				down_button_held=-2000
 				uniques_mine_cooldown_counter=50
 			}
 		} 
@@ -1225,55 +1222,22 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
         
         
 		case 1:   //bait teleport
-		if uniques_teleport_enabled==true
+		if uniques_teleport_enabled==1
 		{
-			if down_button_held==0
-			{
-				image_index=0
+				if sprite_index!=sprites[82] && sprite_index!=sprites[83]
+					image_index=0
 				image_speed=0.2
 				sprite_index=sprites[82]
 				if uniques_teleport==1
 					sprite_index=sprites[83]
-			}
-			down_button_held+=1  
-			
-			
-			if down_button_held>20
-			{
-				if uniques_teleport==0                                                                                           ////create teleport if there isn't one
-				{
-					down_button_held=-2000
-					uniques_teleport=1
-					uniques_my_teleport_id=instance_create(x,y-10,teleport)
-					uniques_my_teleport_id.creator=self.id
-					effect_create_above(ef_firework,x,y,2,c_red)
+				if !instance_exists(uniques_my_teleport_id)
+				{   ///if teleport got destroyed, reset variables and instead try to place teleport next step (down_button_held set to one before placement)
+					uniques_teleport=0
+					uniques_my_teleport_id=-4
+					sprite_index=sprites[82]
 				}
-				else if uniques_teleport==1                                                                                    ///else  use teleport
-				{
-					if !instance_exists(uniques_my_teleport_id)  //DESTROY TELEPORT
-					{   ///if teleport got destroyed, reset variables and lead to teleport place instead
-						uniques_teleport=0
-						uniques_my_teleport_id=-4
-						down_button_held=19
-					}
-					else   //TELEPORT
-					{   //////////////////////////////////////////if teleport is still intact, teleport to it and destroy teleporter
-						if !place_meeting(uniques_my_teleport_id.x,uniques_my_teleport_id.y,block)    
-						{
-							x=uniques_my_teleport_id.x
-							y=uniques_my_teleport_id.y
-							effect_create_above(ef_firework,x,y,2,c_aqua)
-						}
-						with uniques_my_teleport_id
-							instance_destroy()
-						uniques_my_teleport_id=-4
-						down_button_held=-2000
-						uniques_teleport=0
-					}
-				}
-			}
-
 		}
+
         
 		break;
 	}
@@ -1283,7 +1247,6 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 ////// down button hold counter reset (for abilities like place mine)
 if checkkey_released(downbutton)
 {
-	down_button_held=0
 	if sprite_index==sprites[82] || sprite_index=sprites[83]
 	{
 		player_set_idle()
