@@ -112,6 +112,7 @@ switch character
 		{
 			supersparkle_sprite=P1_saiyanaura 
 			sentinel_colour=c_purple     
+			sprites[32]=Vet_3H_place_mine
 			sprites[27]=groundpoundeffect
 			sprites[28]=Vet_3H_rocketjump
 			sprites[29]=Vet_3H_rocketjump   ///super version (to be changed)

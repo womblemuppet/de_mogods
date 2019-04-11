@@ -244,10 +244,6 @@ if uniques_sunblast_cd_counter>0
 {
 	uniques_sunblast_cd_counter-=1
 }
-if uniques_mine_cooldown_counter>0
-{
-	uniques_mine_cooldown_counter-=1
-}
 if mild_slowed_counter>0
 {
 	mild_slowed_counter-=1
@@ -966,8 +962,6 @@ if checkkey_pushed(heavybutton) && !groundcheck && player_may_attack()       ///
  
 				}
                 
-			        uniques_mine_cooldown_counter=50
-
 		        }
 		        break;
 		}
@@ -1208,13 +1202,12 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 		case 0:     ////veteran 
 		if uniques_mines_enabled  && groundcheck
 		{
-			if mines_ammo>0 && down_button_held>20 && uniques_mine_cooldown_counter<1
+			if mines_ammo>0                ///start place mine animation
 			{
-				mines_ammo-=1
-				var a;
-				a=instance_create(x,y-10,mine)
-				a.creator=self.id
-				uniques_mine_cooldown_counter=50
+				if sprite_index!=sprites[32]
+					image_index=0
+				image_speed=0.2
+				sprite_index=sprites[32]
 			}
 		} 
 		break;
@@ -1222,7 +1215,7 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
         
         
 		case 1:   //bait teleport
-		if uniques_teleport_enabled==1
+		if uniques_teleport_enabled==1      ////start place/use teleport animation
 		{
 				if sprite_index!=sprites[82] && sprite_index!=sprites[83]
 					image_index=0
@@ -1231,7 +1224,7 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 				if uniques_teleport==1
 					sprite_index=sprites[83]
 				if !instance_exists(uniques_my_teleport_id)
-				{   ///if teleport got destroyed, reset variables and instead try to place teleport next step (down_button_held set to one before placement)
+				{   ///if teleport got destroyed, reset variables and instead try to place teleport next step
 					uniques_teleport=0
 					uniques_my_teleport_id=-4
 					sprite_index=sprites[82]

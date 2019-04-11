@@ -91,7 +91,6 @@ running_startup_frames=0   ///number of startup frames in running animation (eg 
 dash_attacks_allowed_counter=0
 uniques_super_ooga_gp_enabled=false
 uniques_mines_enabled=false
-uniques_mine_cooldown_counter=0
 uniques_gpcombo_cripples_enabled=false
 uniques_teleport_enabled=false
 uniques_teleport=-1   ///-1 not enabled    0 = placeable 1 = placed 
