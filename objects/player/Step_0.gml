@@ -164,7 +164,7 @@ else                                                   ////////////health blendi
 		image_blend=c_white
 	}
 	if H==2
-	{    
+	{
 		image_blend=make_colour_rgb(183, 245, 115)
 		if P>2
 			image_blend=make_colour_rgb(183, 245, 215)
@@ -211,7 +211,7 @@ if recoil_sprite_counter>0                                           //recoil sp
 			player_set_idle()
 		}
 	}
-}    
+}
 if cripple_debuff_counter>0
 {
 	cripple_debuff_counter-=1
@@ -248,7 +248,7 @@ if mild_slowed_counter>0
 {
 	mild_slowed_counter-=1
 	if slowed_show_trail
-		effect_aniend(slow_debuff_effect,0.25,-3)    
+		effect_aniend(slow_debuff_effect,0.25,-3)
 }
 if fuckoff_slowed_counter>0
 {
@@ -332,32 +332,32 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 				if x>tx
 				{
 					if !place_meeting(x-1,y,block)
-					x-=1
+						x-=1
 					else
 					break;
 				}
 				else if x<tx
 				{
 					if !place_meeting(x+1,y,block)
-					x+=1
+						x+=1
 					else
 					break;
 				}
 				if y>ty
 				{
 					if !place_meeting(x,y-1,block)
-					y-=1
+						y-=1
 					else
 					break;
 				}
 				else if y<ty
 				{
 					if !place_meeting(x,y+1,block)
-					y+=1
+						y+=1
 					else
 					break;
 				}
-			}    
+			}
 		}
 	}
     
@@ -366,38 +366,38 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 	{
 		switch attacks[? "air grab effect"]   
 		{
-			case 0:
-			if instance_exists(airgrab_target) && airgrab_target!=-1
+			case 0:   ///standard airgrab
+			if instance_exists(airgrab_target) && airgrab_target!=-1   ///if airgrab target exists, apply throw
 			{
                 
-				var dir;
-				dir=right
+				var throwside;   ///whether throwing left or right, to be passed to airgrab target
+				throwside=right
 				var at;
-				at=AIRGRAB_STUN_TIME;            
+				at=AIRGRAB_STUN_TIME;
                 
 				with airgrab_target
 				{
 					canbounce_counter=at
 					STUNNED2=at
 					airgrab_mode=3
-					if dir==true
-					hspd=7.5
+					if throwside==true
+						hspd=7.5
 					else
-					hspd=-7.5
+						hspd=-7.5
 					vspd=18
                     
 					hothands+=1                         //// ONE HH DAMAGE
 					player_hothands_check()
 				}
-				hothands=0                              //// RESETS THROWERS HH                
+				hothands=0                              //// RESETS THROWERS HH
 			}
 			
-			airgrab_mode=3      
-			vspd=-1                                                                 break;            
+			airgrab_mode=3
+			vspd=-1                                                                 break;
 			case -1:
 			/*nandemonai*/                                                          break;
 			default:
-			show_error("bopopopo, unknown air throw effect attack id",true)                
+			show_error("bopopopo, unknown air throw effect attack id",true)
 		}
 	}
 }
@@ -621,11 +621,10 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 			b=instance_nearest(x,y,crab)
 			if b.owner==-1
 			{ ////tame crab
-			b.owner=self.id
-			holding_a_crab=true
-			crab_being_held=b
-
-		        }
+				b.owner=self.id
+				holding_a_crab=true
+				crab_being_held=b
+			}
 		}
 	}
     
@@ -753,8 +752,8 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
     
 	if holding_a_crab    ////throw crab
 	{ 
-	exception=true
-	player_throw_crab()
+		exception=true
+		player_throw_crab()
 	}
     
 	if !exception && uniques_vet_chain_counter>0      ///vet       LA => HA    upfoward dash

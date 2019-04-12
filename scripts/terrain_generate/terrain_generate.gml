@@ -506,14 +506,14 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			}
 			if random(1)>0.999                                                          /////critter      
 			{
-			var critter_type,critter_species;
-			critter_type=choose("ground")//,"flying"
-			if critter_type=="ground"
-				critter_species=choose("worm")//,snake etc)
-			var a;
-			a=instance_create(i*40,argument0,critter)
-			with a
-				critter_setup("worm")
+				var critter_type,critter_species;
+				critter_type=choose("ground")//,"flying"
+				if critter_type=="ground"
+					critter_species=choose("worm")//,snake etc)
+				var a;
+				a=instance_create(i*40,argument0,critter)
+				with a
+					critter_setup("worm")
 			}
 			if random(1)>0.999                                                          /////throwable critters      
 			{
