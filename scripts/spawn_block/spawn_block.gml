@@ -10,7 +10,6 @@
  
 var a;
 a=instance_create(argument0,argument1,block)   //if change this change room spawn blocks
-ds_list_add(aizen.blockstosprite,a)
 a.part=argument2
 a.visible=true
 a.protection=0
@@ -40,4 +39,5 @@ if aizen.biome=="forest" && argument2==0    ///create vines
 	if random(1)>0.9
 		instance_create(argument0+10+random(20),argument1+41,ef_vine)
 }
+
 return a

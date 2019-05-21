@@ -14,6 +14,11 @@ if kouchou.map=="firetrial" || kouchou.map=="icetrial"
 }
 
 
+if fossil_surface_redraw_needed
+	redraw_fossil_surface() 
+
+if surface_exists(aizen.fossil_surface)
+    draw_blocks_and_fossils()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////draw bounds warning line
@@ -169,3 +174,4 @@ if kouchou.setmenu_show_fps
 
 
 
+ 

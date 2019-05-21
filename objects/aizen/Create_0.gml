@@ -5,9 +5,11 @@ global.fft=1   ///testing variable for flood orb parents
 
 
 
+surface_redraw_counter=0   ///counter for SURFACE_REDRAW_EVERY
 SURFACE_REDRAW_EVERY=400  ///surface will be redrawn every x travelled
 fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_EVERY)   ///fossil surface  (has extra height past the viewable height as a buffer)
-surface_redraw_counter=0   ///counter for SURFACE_REDRAW_EVERY
+fossil_surface_redraw_needed=false
+
 
 STACK=ds_list_create() //not a stack. but, the stack. hence the caps. oh well.
 STACK_SHITCALL_NUMBER=3  /// [finaledit] probably can delete this variable
@@ -20,12 +22,96 @@ bloodmoon_recalc_call=false
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()
 
+
+candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
+SUPER_METER_AMOUNT=12    ///meter is full after this many attacks
+healthcap=5   ///max health value
+bedrockcounter=0   ///counts to 40, then terrain generation script is called
+biome="summit"  
+biome_length=1460  //1260
+biome_length_accumulative=0   
+
+//biomelevels   1960,3160,4860,99999   
+
+CREATIONDELAY=2400   //// complicated shit don't touch if you can help it
+
+biome_schedule=ds_list_create()    ///list for which biome comes next
+
+ds_list_add(biome_schedule,choose("forest","sand"))
+ds_list_add(biome_schedule,"cave")
+
+
+
+/////////////
+
+
+
+bedrock=1080
+travelled=0      ////total distance in pixels that the screen has scrolled down
+mode=0          //// normal, about to shitcall, or shitcalling
+
+/***************************************************
+  0=normal
+  1=space just pushed (shit about to happen)
+  2=shit happening
+****************************************************/
+peacetime=0
+
+image_speed=0.15
+shitcalltickercd=5
+
+screenshake_amount=4
+screenshake_ammo=8
+screenshake_D=0 /// -1, 0 1
+screenshake_speed=5
+
+vscreenshake_amount=4
+vscreenshake_ammo=8
+vscreenshake_D=0 /// -1, 0 1
+vscreenshake_speed=5
+
+warning_subimage=0  //ticks in step event
+hothandspaydaycolour=c_white
+
+hudfloatingmasks_subimage=0
+HUDFLOATINGMASKS_IMAGE_NUMBER=22
+
+stackframe_sprite=arcade_cabinet_maskbar_inactive
+stackframe_subimage=0
+stackframe_image_number=0
+
+lastplayerx=0
+scoer=0
+
+pausescreen_doubletap_counter=0
+
+pausescreen_requester=-4
+
+BLOCK_DESTRUCTION_FIDELITY=5
+
+//[future] variable that adds to round cd timer when player takes dmg or after large amount of meteors
+
+/*
+IMGSPEED_AMBIENT //slowish, should be able to see frame by frame
+//potentially have as a global frame (ratio) counter to sync everything? is that possible
+IMGSPEED_IMPORTANT // different ratio to ambient
+IMGSPEED_SPARKY   //double of important
+
+
+
+/* */
+/*  */
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   GUI   /////////
 METER_BACKGROUND_COLOUR=make_colour_rgb(17,255,61)
 METER_COLOUR=make_colour_rgb(237,255,216)
 
 
-/// biome sprite lists
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////            biome sprite lists          ////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 BLOCK_SPRITE_SUMMIT_FULL=ds_list_create()
 BLOCK_SPRITE_TEMPLE_FULL=ds_list_create()
 BLOCK_SPRITE_SAND_FULL=ds_list_create()
@@ -246,28 +332,6 @@ ds_map_add(chunkery_id_of_prop_list,"","")
 
 
 
-candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-SUPER_METER_AMOUNT=12    ///meter is full after this many attacks
-healthcap=5   ///max health value
-bedrockcounter=0   ///counts to 40, then terrain generation script is called
-biome="summit"  
-biome_length=1460  //1260
-biome_length_accumulative=0   
-
-//biomelevels   1960,3160,4860,99999   
-
-CREATIONDELAY=2400   //// complicated shit don't touch if you can help it
-
-biome_schedule=ds_list_create()    ///list for which biome comes next
-
-ds_list_add(biome_schedule,choose("forest","sand"))
-ds_list_add(biome_schedule,"cave")
-
 ///[finaledit] some of these might be obsolete
 lightingcolourmap=ds_map_create()
 lightingalphamap=ds_map_create()
@@ -346,62 +410,3 @@ platform_endya=4
 platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-6)      ///defines a potential single blob (doesn't get created if ya =-1)
 platform_singleblob_endxi=platform_singleblob_startxi+irandom(5)
 platform_singleblob_ya=choose(-1,-1,-1,-1,1,2,3,4,5)
-
-/////////////
-
-
-
-bedrock=1080
-travelled=0
-mode=0 
-/***************************************************
-  0=normal
-  1=space just pushed (shit about to happen)
-  2=shit happening
-****************************************************/
-peacetime=0
-
-image_speed=0.15
-shitcalltickercd=5
-
-screenshake_amount=4
-screenshake_ammo=8
-screenshake_D=0 /// -1, 0 1
-screenshake_speed=5
-
-vscreenshake_amount=4
-vscreenshake_ammo=8
-vscreenshake_D=0 /// -1, 0 1
-vscreenshake_speed=5
-
-warning_subimage=0  //ticks in step event
-hothandspaydaycolour=c_white
-
-hudfloatingmasks_subimage=0
-HUDFLOATINGMASKS_IMAGE_NUMBER=22
-
-stackframe_sprite=arcade_cabinet_maskbar_inactive
-stackframe_subimage=0
-stackframe_image_number=0
-
-lastplayerx=0
-scoer=0
-
-pausescreen_doubletap_counter=0
-
-pausescreen_requester=-4
-
-BLOCK_DESTRUCTION_FIDELITY=5
-
-//[future] variable that adds to round cd timer when player takes dmg or after large amount of meteors
-
-/*
-IMGSPEED_AMBIENT //slowish, should be able to see frame by frame
-//potentially have as a global frame (ratio) counter to sync everything? is that possible
-IMGSPEED_IMPORTANT // different ratio to ambient
-IMGSPEED_SPARKY   //double of important
-
-
-
-/* */
-/*  */

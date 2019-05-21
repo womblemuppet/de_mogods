@@ -2,7 +2,7 @@
 /*step event///////////////////////////////////
 *//////////////////////////////////////////////
 
-if canbounce_counter>0
+if canbounce_counter>0   //if bounce enabled, and will hit block below or above, reverse vspd
 {
 	if place_meeting(x,y+vspd,block)      /////    bounce upward
 	{
@@ -25,7 +25,7 @@ if place_meeting(x,y+1,block)
 	if instance_exists(turret_block)
 	{
 		if place_meeting(x,y+1,turret_block)
-		{   
+		{
 			var me,mycol;
 			me=self.id
 			mycol=sentinel_colour
@@ -36,7 +36,7 @@ if place_meeting(x,y+1,block)
 					owner=me
 					alarm[0]=TAKEOVERTIME
 					sprite_index=block_turret
-					image_blend=mycol                
+					image_blend=mycol
 					alarm[1]=UPGRADETIME
 				}
 				with sentinel
@@ -71,7 +71,7 @@ if place_meeting(x,y+1,block)
 }
 else
 {
-	groundcheck=false   
+	groundcheck=false
 	dash_has_lifted_off_ground=true
 }
 
@@ -146,7 +146,7 @@ if STUNNED2>0
 		{
 			sprite_index=sprites[25]
 			if supers>0
-			sprite_index=sprites[26]    
+			sprite_index=sprites[26]
 		}
 		else
 		{
@@ -178,7 +178,7 @@ else                                                   ////////////health blendi
 }
 
 if push_other_attacks_timer>0
-	push_other_attacks_timer-=1   
+	push_other_attacks_timer-=1
 
 if doublejumptimer>0
 	doublejumptimer-=1
@@ -264,24 +264,24 @@ if canbounce_counter>0
 
 if dash_angel_jump_counter>0 
 {
-	dash_angel_jump_counter-=1       
+	dash_angel_jump_counter-=1
 	if dash_angel_jump_counter==0 && dash_angel_jump==1
 	{               /////ANGEL JUMP FINISH CHARGE EVENT
-	if !place_meeting(x,y-1,block)
-		y-=1
+		if !place_meeting(x,y-1,block)
+			y-=1
             
-	sprite_index=sprites[28]
-	if supers>0
-		sprite_index=sprites[29]
-	image_index=0
-	image_speed=0.2
-	dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
-	vspd=-DASH_ANGEL_JUMP_AMOUNT
-	dash_angel_jump=2
+		sprite_index=sprites[28]
+		if supers>0
+			sprite_index=sprites[29]
+		image_index=0
+		image_speed=0.2
+		dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
+		vspd=-DASH_ANGEL_JUMP_AMOUNT
+		dash_angel_jump=2
         
-	///allow parachute  after angel jump
-	uniques_parachute=0
-	doublejump=2
+		///allow parachute  after angel jump
+		uniques_parachute=0
+		doublejump=2
          
 		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false,300)
 	}
@@ -300,15 +300,17 @@ if chained_debuff_counter>0
 	chained_debuff_counter-=1
 	if chained_debuff_counter==0
 	{
-	with chain_effect_id_to_delete
-		instance_destroy()
-	chain_effect_id_to_delete=noone
-	hspd=0
-	vspd=0
-	effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
+		with chain_effect_id_to_delete
+			instance_destroy()
+		chain_effect_id_to_delete=noone
+		hspd=0
+		vspd=0
+		effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
 	}
 }
 
+if iframes>0
+	iframes-=1
 
 
 
@@ -364,7 +366,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 	airgrab_decidedir_time-=1
 	if airgrab_decidedir_time==1    ////airgrab throw event and damage
 	{
-		switch attacks[? "air grab effect"]   
+		switch attacks[? "air grab effect"]
 		{
 			case 0:   ///standard airgrab
 			if instance_exists(airgrab_target) && airgrab_target!=-1   ///if airgrab target exists, apply throw
@@ -435,12 +437,48 @@ if !groundcheck && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 &&
 if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
 {
 	airgrab_mode=0
-    
-	if  cangroundpound==2   ////groundpound effect
+	
+	if uniques_whirlwind_active
+	{
+		iframes=1
+		//attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,gain meter on hit,attack name,sprite,image speed,active steps,hkb,vkb)
+		attack_create_hitbox(30,1,true,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
+		
+		if right
+			hspd=UNIQUES_WHIRLWIND_SPEED
+		else
+			hspd=-UNIQUES_WHIRLWIND_SPEED
+	}
+		
+
+
+	if  cangroundpound==2   ////GROUNDPOUND EFFECT EVENT
 	{
 		effect_aniend(groundpoundeffect,0.4,-2)
-		if supers>0 && uniques_super_ooga_gp_enabled==true 
+		
+		var exception;
+		exception=false
+		if supers>0 && uniques_super_ooga_gp_enabled==true   ///ooga ult
+		{
+			exception=true
 			player_super()
+		}
+		
+		if !exception
+		{
+			switch attacks[? "gpeffect"]
+			{
+				case 0:
+				//nandemonai
+				break;
+				case 1:   ////bait whirlwind
+				image_index=0
+				image_speed=0.4
+				sprite_index=sprites[84]
+				uniques_whirlwind_active=true
+			}
+		}		
+		////collide gp with instrument below it
 		if id_of_groundpounded_instrument_if_exists!=noone
 		{
 			with id_of_groundpounded_instrument_if_exists
@@ -458,19 +496,19 @@ if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block 
 		mild_slowed_counter=16
 		if cangroundpound!=0  
 		{
-		        mild_slowed_counter=0
-		        fuckoff_slowed_counter=10
+			mild_slowed_counter=0
+			fuckoff_slowed_counter=10
 		}
-		//effect_create_above(ef_firework,x,y,2,c_blue)   
+		//effect_create_above(ef_firework,x,y,2,c_blue)
 	}
-	cangroundpound=0      
+	cangroundpound=0
 	dash_angel_jump=0
 	jumped=false
-	instance_create(x,y,jump_vibration)  
-	vspd=0   
-	doublejump=0    
+	instance_create(x,y,jump_vibration)
+	vspd=0
+	doublejump=0
 
-    
+	//////vet parachute turn off
 	if uniques_parachute>0
 	{
 		uniques_parachute=0 
@@ -478,11 +516,11 @@ if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block 
 		{
 			sprite_index=sprites[4]  //fall sprite
 			if supers>0
-			sprite_index=sprites[12] //fall super sprite       
+				sprite_index=sprites[12] //fall super sprite
 		}
 	}
     
-    
+	////////////////////////////////////////////////if falling and not recoiling, set sprite back to idle
 	if sprite_index==sprites[4]   ///fall sprite
 	{
 		sprite_index=sprites[0]   ///idle sprite
@@ -499,14 +537,14 @@ if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block 
 		{
 			sprite_index=sprites[26]
 		}
-	}  
+	}
 }
 
 if vspd<0
 {
 	if place_meeting(x,y-1,block) /// vertical block collision above
 	{
-		vspd=0   
+		vspd=0
 	}
 }
 
@@ -531,13 +569,13 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck
 		{
 			sprite_index=sprites[25]
 			if supers>0
-			sprite_index=sprites[26]
+				sprite_index=sprites[26]
 		}
 		else
 		{
 			sprite_index=sprites[0]
 			if supers>0
-			sprite_index=sprites[9]
+				sprite_index=sprites[9]
 		}
 		image_speed=0.2
 	}
@@ -569,7 +607,7 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 					with a
 					{
 						dontmakeorb=true
-						instrument_die_event()               
+						instrument_die_event()
 					}
 				}
 			}
@@ -995,9 +1033,9 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		}
 	}
 	if !exception && player_may_attack() && checkkey(downbutton) && !groundcheck && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
-	{///                                                                                                                                                    groundpound         
+	{///                                                                                                                                                    groundpound
 		var dropcrabok;
-		dropcrabok=true
+		dropcrabok=true    ///if player can't gp then this stops crab being dropped
 		switch attacks[? "gp"]
 		{                   
 			case 0: ////standard gp
@@ -1006,9 +1044,9 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			cangroundpound=1
 			hspd=0
 			if supers==0
-			sprite_index=sprites[5]
+				sprite_index=sprites[5]
 			else
-			sprite_index=sprites[7]
+				sprite_index=sprites[7]
 			image_speed=0.4
 			image_index=0
 			alarm[2]=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
@@ -1216,18 +1254,21 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 		case 1:   //bait teleport
 		if uniques_teleport_enabled==1      ////start place/use teleport animation
 		{
-				if sprite_index!=sprites[82] && sprite_index!=sprites[83]
-					image_index=0
+			if sprite_index!=sprites[82] && sprite_index!=sprites[83]
+			{
 				image_speed=0.2
+				image_index=0
 				sprite_index=sprites[82]
 				if uniques_teleport==1
 					sprite_index=sprites[83]
-				if !instance_exists(uniques_my_teleport_id)
-				{   ///if teleport got destroyed, reset variables and instead try to place teleport next step
-					uniques_teleport=0
-					uniques_my_teleport_id=-4
-					sprite_index=sprites[82]
-				}
+			}
+
+			/*if !instance_exists(uniques_my_teleport_id)
+			{   ///if teleport got destroyed, reset variables and instead try to place teleport next step
+				uniques_teleport=0
+				uniques_my_teleport_id=-4
+				sprite_index=sprites[82]
+			}*/
 		}
 
         
@@ -1261,7 +1302,7 @@ if ((cangroundpound==2 || cangroundpound=3) && STUNNED2<1 && player_not_locked_d
 	}
 }
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
-if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4
+if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
 {                                                                                /// move LEFT
 ////###remember to change for right code too if changing this!!!!! ###////////////////////////////////
 	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
@@ -1288,9 +1329,9 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 		else
 		{
 			if hspd>-HOR_AIR_MINSPEED
-			hspd=-HOR_AIR_MINSPEED
+				hspd=-HOR_AIR_MINSPEED
 			if hspd>-HOR_AIR_MAXSPEED
-			hspd-=HOR_AIR_ACCEL*slow_ratio
+				hspd-=HOR_AIR_ACCEL*slow_ratio
 		}
 	} 
 		//checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
@@ -1308,8 +1349,8 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 		{
 			if sprites[sprites_below_run_priority[| i]]==sprite_index
 			{
-			pass=true
-			break;
+				pass=true
+				break;
 			}
 		};
         
@@ -1317,12 +1358,12 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 		{
 			sprite_index=sprites[1]   ///run sprite
 			if supers>0
-			sprite_index=sprites[8]
+				sprite_index=sprites[8]
 			image_speed=0.12
 		}
 	}
 }
-if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true ) && airgrab_mode!=2 && airgrab_mode!=4     
+if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true ) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
 {                                                                               /// move RIGHT
 	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
 	{
@@ -1358,15 +1399,15 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 			right=true
 		}
 	if STUNNED2<1 && player_not_locked_down()
-	{    
+	{
 		var pass;
 		pass=false
 		for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
 		{
 			if sprites[sprites_below_run_priority[| i]]==sprite_index
 			{
-			pass=true
-			break;
+				pass=true
+				break;
 			}
 		};
         
@@ -1488,6 +1529,14 @@ else if hspd<0
 		else
 			break;
 	};
+}
+if uniques_whirlwind_active    ////[finaledit] checking every step, probably can be optimized
+{
+	if (   x - (kouchou.room_left_border_x+20) <2 ) ||  (   (kouchou.room_right_border_x-20) - x   )<2
+	{
+		uniques_whirlwind_active=false
+		player_flush_lockdowns()
+	}
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
@@ -1773,6 +1822,8 @@ else if vspd<0
 	};
 }
 
+
+//[finaledit] make a single block for left and right....... why...
 if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 {
 	var bounced;
@@ -1815,30 +1866,35 @@ if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 		for (i=0; i<-hspd; i+=1)
 		{
 			if !place_meeting(x-1,y,block)
-			x-=1
+				x-=1
 			else
 			break;
 		};
 		if bounced==true
 		{
 			if place_meeting(x+1,y,block)
-			x+=1
+				x+=1
 		}
 	}
 	if bounced==false
-		hspd=0  
+		hspd=0
     
 	if impact_debuff_counter>0
 	{
 		impact_debuff_counter=0
 		create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for rightward direction
 	}
+	if uniques_whirlwind_active==true
+	{
+		uniques_whirlwind_active=false
+		get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT,true)
+	}
 }
 else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 {
 	var bounced;
 	bounced=false
-    
+
 	if hspd>0
 	{
 		if canbounce_counter>0 && bounced==false
@@ -1866,12 +1922,11 @@ else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 	{
 		if canbounce_counter>0 && bounced==false
 		{
-		        bounced=true
+			bounced=true
 			if canbounce_counter>MAX_CANBOUNCE_COUNTER
 				canbounce_counter=MAX_CANBOUNCE_COUNTER
 			hspd=clamp(BOUNCE_MIN_VELOCITY,-hspd,BOUNCE_MAX_VELOCITY)
 			//show_message("bounce, go right! hspd is:"+string(hspd))
-    
 		}
 		for (i=0; i<-hspd; i+=1)
 		{
@@ -1893,7 +1948,13 @@ else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
 	{
 		impact_debuff_counter=0 
 		create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for leftward direction
-	} 
+	}
+	
+	if uniques_whirlwind_active==true
+	{
+		uniques_whirlwind_active=false
+		get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT,true)
+	}
 }
 
 

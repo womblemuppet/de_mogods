@@ -63,7 +63,7 @@ ltt=0 //looneytune time counter
 octdir=-1     ///output of 8 way aim script
 jumped=false  //after jump set to true so when landing can give superjump (but not when falling)
 image_speed=0.2
-STUNNED=0   //not constant
+STUNNED=0   //not constant 
 STUNNED2=0  ///not constant     [finaledit] replace with lowercase versions
 immune=false      ///inability to take further damage while flickering
 sidezap=false
@@ -85,6 +85,7 @@ pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///BOUNCE EFFECT
 BOUNCE_MIN_VELOCITY=1
 BOUNCE_MAX_VELOCITY=6
+iframes=0
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)
@@ -153,6 +154,11 @@ uniques_airdash_resets_jump=false
 //BAIT CHAIN
 BAITCHAIN_CHAIN_RANGE=75
 
+//BAIT WHIRLWIND
+uniques_whirlwind_active=false
+UNIQUES_WHIRLWIND_SPEED=5
+UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT=30
+
 //BAIT SHARK ATTACK PUNCH
 uniques_sharkattack_lockdown=0
 uniques_sharkattack_has_made_hitbox=false
@@ -170,10 +176,10 @@ MAX_CANBOUNCE_COUNTER=20
 AIRGRAB_STUN_TIME=65
 
 
-sprites_below_run_priority=ds_list_create()
+sprites_below_run_priority=ds_list_create()   ///sprites on these lists can get replaced by run,idle and recoil sprites in events
 sprites_below_idle_priority=ds_list_create()
 sprites_below_recoil_priority=ds_list_create()
-FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25
+FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this swap from jumped sprite to falling sprite
 
 
 lastdamagetype=""

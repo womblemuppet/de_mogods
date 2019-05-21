@@ -8,13 +8,7 @@
 if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 {
 	//show_message(bedrockcounter)
-    
-	for (i=0;i<ds_list_size(blockstosprite_prevlayer);i++)     ///transfers ids of all blocks in previous layer to current respriting list
-	{
-		ds_list_add(blockstosprite,ds_list_find_value(blockstosprite_prevlayer,0))
-		ds_list_delete(blockstosprite_prevlayer,0)
-	};
-    
+
 	terrainammo-=1  //move one layer on in current terrain chunk
 	//show_message(terraintype+"    ammo="+string(terrainammo))
 	if terrainammo<1   /// new terrain type
@@ -42,18 +36,22 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		{
 			case "solidline":
 			break;
+			
 			case "dots":
 			break;
+			
 			case "pits":  
 			ds_list_clear(pitlist)
 			repeat(5)
-			ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/40)*40)
+				ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/40)*40)
 			//terrainammo=choose(3,3,8)            
 			break;
+			
 			case "reverserectangle":
 			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/1.5)/40)*40
 			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/1.5)/40)*40
-			break;    
+			break;   
+			
 			case "rectanglebumpy":    ///both rectangle and rectangle bumpy      
 			case "rectangle":
 			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/2)/40)*40
@@ -62,6 +60,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(1,2,3,4,5,6,7)
 			break;    
+			
 			case "singleplatformbumpy":        ///both single-platform and single-platform bumpy
 			case "singleplatform":
 			platform_startya=choose(1,2)
@@ -70,24 +69,24 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(3,4,5,6,7,8,9)
 			break;
+			
 			case "lplatformbumpy":
 			case "lplatform":
 			lplatform_on_right=choose(true,false)
 			if lplatform_on_right
-			lplatform_xi=floor(kouchou.rw/40)-4-irandom(25)
+				lplatform_xi=floor(kouchou.rw/40)-4-irandom(25)
 			else
-			lplatform_xi=4+irandom(25)
+				lplatform_xi=4+irandom(25)
 			platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-15)
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
-			platform_singleblob_ya=choose(3,4,5,6,7)            
-                            
+			platform_singleblob_ya=choose(3,4,5,6,7)
 			break;
-
             
 			case "pyramid":
 			//terrainammo=choose(10,12,14,16)
 			terrain_pyramid_plateau_y=terrainammo-choose(3,4,5)
 			break;
+			
 			case "doublewaves":         ///both waves and double waves
 			case "waves":              
 			for (i=0; i<6; i+=1)
@@ -129,15 +128,16 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 
 			terrain_blob_line1y=choose(7,8,9)   ///based on terrainammo
 			terrain_blob_line2y=choose(0,1,2)
-			break;     
+			break;  
+			
 			case "sidesteps":
 			steps_on_right=choose(true,false)
 			if steps_on_right==true
 				sidesteps_start_i=4+irandom(4)
 			else
 				sidesteps_start_i=kouchou.rw/40-1-irandom(4)
-
 			break;
+			
 			case "chamberspillar":
 			chambers_y[0]=choose(0,1,2)
 			chambers_y[1]=choose(4,5,6)
@@ -167,22 +167,22 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			break;
             
 			default: 
-			show_error("i dont know this terrain type what is this",true)
+				show_error("i dont know this terrain type what is this",true)
 		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////biomeswitch event will overwrite all of the above switch 
-		if biomeswitch   ///[finaledit] check if used...
-		{
-			terraintype="biomegap"
-			terrainammo=4
-			biomeswitch=false
-			//create torches 
-			/*a=instance_create(40,argument0-40,torch)    
-			a.sprite_index=torch_sprite
-			a=instance_create(1160,argument0-40,torch)
-			a.sprite_index=torchBLOO*/
-			//call_block_setup()
+	if biomeswitch   ///[finaledit] check if used...
+	{
+		terraintype="biomegap"
+		terrainammo=4
+		biomeswitch=false
+		//create torches 
+		/*a=instance_create(40,argument0-40,torch)    
+		a.sprite_index=torch_sprite
+		a=instance_create(1160,argument0-40,torch)
+		a.sprite_index=torchBLOO*/
+		//call_block_setup()
 	}
 
 	//////determine based on terraintype characteristics whether or not to spawn a block for each square left to right of the current layer
@@ -218,7 +218,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
                 
 			case "pits":
 			for (ii=0; ii<ds_list_size(pitlist); ii+=1)
-				{
+			{
 				if i*40==ds_list_find_value(pitlist,ii)
 					makeok=false
 				if terrainammo==1 /// connect pits at bottom
@@ -356,7 +356,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			}
 			if terrainammo mod 3 ==0
 				makeok=true
-            
+
 			break;
             
 			case "chamberspillar":
@@ -475,36 +475,36 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			a.image_xscale*=choose(1,-1)
 			switch biome
 			{
-			case "summit":
-			        image_index=choose(0,1,2)
-			        image_angle=random(360) break;
-			case "sand":
-			        image_index=choose(3) break;
-			case "cave":
-			        image_index=choose(4) break;
+				case "summit":
+					image_index=choose(0,1,2)
+					image_angle=random(360) break;
+				case "sand":
+					image_index=choose(3) break;
+				case "cave":
+					 image_index=choose(4) break;
 			}
 		}
         
         
-        
+		////spawn extras (props, critters, throwable critters
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////props,critters,crabs won't spawn on startingflat
 		if terraintype!="startingflat"
 		{
-			if random(1)>0.999                                                           /////prop
+			if random(1)>0.999                                                           /////props
 			{
-			var p_type,p_type_die;
-			switch biome
-			{
-			        case "summit":       ///decide the type of prop here
-			        default:
-			        p_type=prop_sprite_statue_1
-			        p_type_die=prop_sprite_statue_1_die
-			        break;
-			}
-			prop_create(kouchou.room_left_border_x+i*40,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
+				var p_type,p_type_die;
+				switch biome
+				{
+					case "summit":       ///decide the type of prop here
+					default:
+					p_type=prop_sprite_statue_1
+					p_type_die=prop_sprite_statue_1_die
+					break;
+				}
+				prop_create(kouchou.room_left_border_x+i*40,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
     
 			}
-			if random(1)>0.999                                                          /////critter      
+			if random(1)>0.999                                                          /////critter
 			{
 				var critter_type,critter_species;
 				critter_type=choose("ground")//,"flying"
@@ -515,7 +515,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				with a
 					critter_setup("worm")
 			}
-			if random(1)>0.999                                                          /////throwable critters      
+			if random(1)>0.999                                                          /////throwable critters
 			{
 				var a;
 				a=instance_create(kouchou.room_left_border_x+i*40,argument0,crab)
@@ -527,6 +527,4 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
         
         
 	};
-
-
 }

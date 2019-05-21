@@ -20,8 +20,8 @@ if stackframe_subimage>stackframe_image_number
 {
 	stackframe_subimage=0    
 }
-var drawagain;
-drawagain=false
+
+fossil_surface_redraw_needed=false
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   trial modes score ticker
@@ -56,7 +56,7 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 	with scrolls     ///scroll objects down with the 'view'
 	{
 		y-=scrollspeed
-		if object_index==player
+		if object_index==player     ///if recently done or doing a rocket jump, prevent going off the top of the screen
 		{
 			if dash_angel_top_collision_safety>0
 			{
@@ -89,10 +89,16 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 	surface_redraw_counter+=scrollspeed
 	if surface_redraw_counter>SURFACE_REDRAW_EVERY
 	{
-		drawagain=true
+		fossil_surface_redraw_needed=true
 		surface_redraw_counter-=SURFACE_REDRAW_EVERY
 	}
+
+
 	travelled+=scrollspeed             ///add to travelled, total distance travelled downward
+	
+
+
+
 	if kouchou.map=="multiplayer"          //////////// biome background stuff for multiplayer map 
 	{
 		with mountains_backdrop
@@ -111,11 +117,13 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 
 		travelled_tick_biome_threshold_check()
 	}
+	
+	
 	terrain_generate(CREATIONDELAY)
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   set all sprites for necessary blcoks
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   set all sprites for necessary blocks
 if !ds_list_empty(blockstosprite)
 {
 	for (i=0; i<ds_list_size(blockstosprite); i+=1)
@@ -127,14 +135,14 @@ if !ds_list_empty(blockstosprite)
 	};
     
 	ds_list_clear(blockstosprite)
-	drawagain=true
+	fossil_surface_redraw_needed=true
 }
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   remake surface if it gets destroyed
 if !surface_exists(fossil_surface)
-	drawagain=true
+	fossil_surface_redraw_needed=true
     
-if drawagain
-	redraw_fossil_surface()
+
     
     
 for (i=0; i<kouchou.playersin; i+=1)   ////[finaledit] using playersin might cause slot problems

@@ -17,8 +17,8 @@ with block
     if divisible==true
     {
         var xx,yy;
-        xx=x-__view_get( e__VW.XView, 0 )
-        yy=y-__view_get( e__VW.YView, 0 )
+        xx=x-camera_get_view_x(aizen.main_cam)
+        yy=y-camera_get_view_y(aizen.main_cam)
         if part==0
         {
             draw_sprite_ext(I[0],image_index,xx,yy,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
@@ -31,13 +31,12 @@ with block
             draw_sprite_ext(sprite_index,image_index,xx,yy,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
         }
     }
-
 }
 with ef_fossil
 {
     var xx,yy;
-    xx=x-__view_get( e__VW.XView, 0 )
-    yy=y-__view_get( e__VW.YView, 0 )
+    xx=x-camera_get_view_x(aizen.main_cam)
+    yy=y-camera_get_view_y(aizen.main_cam)
     draw_sprite_ext(sprite_index,image_index,xx,yy,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
 

@@ -23,7 +23,7 @@ switch character
 		if palette==0
 		{
 		supersparkle_sprite=P1_saiyanaura 
-		sentinel_colour=c_purple    
+		sentinel_colour=c_purple
 
             
 			if H==3 || H==4 || H==5
@@ -194,10 +194,11 @@ switch character
 			sprites[12]=Slinger_3H_fall      //super version     
 		}
 	} break;
-	case "bait" :
+	case "bait":
 	{
 		supersparkle_sprite=P1_saiyanaura 
-		sentinel_colour=c_purple  
+		sentinel_colour=c_purple
+		sprites[84]=Bait_3H_spin
 		sprites[83]=Bait_3H_use_teleport
 		sprites[82]=Bait_3H_place_teleport
 		sprites[80]=Bait_3H_heavypunch

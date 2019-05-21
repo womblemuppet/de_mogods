@@ -4,57 +4,58 @@ if room==gameroom
 {
 	//audio_stop_sound(menoos)
 	//audio_play_sound(playmoos,0,true)
+	
+	
+	///////////////////////////////////////VIEWS AND CAMERAS////////////////////////////////////////////////////////////////////////////////////////
+	
+	for (var i = 0; i < 5; ++i) 
+	{
+	    view_visible[i]=true
+		view_enabled[i]=true
+	}
+	
+	view_set_xport(0,kouchou.room_left_border_x)
+	view_set_yport(0,kouchou.room_top_border_y)
+	view_set_wport(0,kouchou.rw)
+	view_set_hport(0,kouchou.rh)
+	main_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_top_border_y,kouchou.rw,kouchou.rh)
+	view_set_camera(0,main_cam)
+	camera_set_view_pos(main_cam,kouchou.room_left_border_x,kouchou.room_top_border_y)
+	
     
-	__view_set( e__VW.XView, 0, kouchou.room_left_border_x )
-	__view_set( e__VW.YView, 0, kouchou.room_top_border_y )
-    
-	__view_set( e__VW.WView, 0, kouchou.rw )
-	__view_set( e__VW.HView, 0, kouchou.rh )
-	__view_set( e__VW.WPort, 0, kouchou.rw )
-	__view_set( e__VW.HPort, 0, kouchou.rh )
-    
-	__view_set( e__VW.WView, 1, kouchou.room_left_border_x )
-	__view_set( e__VW.WPort, 1, kouchou.room_left_border_x )
-	__view_set( e__VW.HView, 1, room_height )
-	__view_set( e__VW.HPort, 1, room_height )
-    
-	__view_set( e__VW.XView, 2, kouchou.room_right_border_x )
-	__view_set( e__VW.WView, 2, kouchou.room_right_full-kouchou.room_right_border_x )
-	__view_set( e__VW.HView, 2, room_height )
-	__view_set( e__VW.WPort, 2, kouchou.room_right_full-kouchou.room_right_border_x )
-	__view_set( e__VW.HPort, 2, room_height )
-    
-	__view_set( e__VW.XPort, 0, kouchou.room_left_border_x )
-	__view_set( e__VW.YPort, 0, kouchou.room_top_border_y )
-    
-	__view_set( e__VW.XPort, 2, kouchou.room_right_border_x )
+	view_set_wport(1,kouchou.room_left_border_x)
+	view_set_hport(1,room_height)	
+	lefthud_cam=camera_create_view(0,0,kouchou.room_left_border_x,room_height)
+	view_set_camera(1,lefthud_cam)
+	
+	
+	view_set_xport(2,kouchou.room_right_border_x)
+	view_set_wport(2,kouchou.room_right_full-kouchou.room_right_border_x)
+	view_set_hport(2,room_height)	
+	righthud_cam=camera_create_view(kouchou.room_right_border_x,0,kouchou.room_right_full-kouchou.room_right_border_x,room_height)
+	view_set_camera(2,righthud_cam)
+	
+	
+	view_set_xport(3,kouchou.room_left_border_x)
+	view_set_wport(3,kouchou.rw)
+	view_set_hport(3,kouchou.room_top_border_y)	
+	tophud_cam=camera_create_view(kouchou.room_left_border_x,0,kouchou.rw,kouchou.room_top_border_y)
+	view_set_camera(3,tophud_cam)
+	
+	
+	view_set_xport(4,kouchou.room_left_border_x)
+	view_set_wport(4,kouchou.rw)
+	view_set_yport(4,kouchou.room_bottom_border_y)
+	view_set_hport(4,room_height-kouchou.room_bottom_border_y)	
+	bottomhud_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_bottom_border_y,kouchou.rw,room_height-kouchou.room_bottom_border_y)
+	view_set_camera(4,bottomhud_cam)
 
-	__view_set( e__VW.XView, 3, kouchou.room_left_border_x )
-	__view_set( e__VW.XPort, 3, kouchou.room_left_border_x )
-	__view_set( e__VW.WView, 3, kouchou.rw )
-	__view_set( e__VW.WPort, 3, kouchou.rw )
-	__view_set( e__VW.HView, 3, kouchou.room_top_border_y )
-	__view_set( e__VW.HPort, 3, kouchou.room_top_border_y )
-    
-	__view_set( e__VW.XView, 4, kouchou.room_left_border_x )
-	__view_set( e__VW.XPort, 4, kouchou.room_left_border_x )
-	__view_set( e__VW.WView, 4, kouchou.rw )
-	__view_set( e__VW.WPort, 4, kouchou.rw )
-	__view_set( e__VW.YView, 4, kouchou.room_bottom_border_y )
-	__view_set( e__VW.YPort, 4, kouchou.room_bottom_border_y )
-	__view_set( e__VW.HView, 4, room_height-kouchou.room_bottom_border_y )
-	__view_set( e__VW.HPort, 4, room_height-kouchou.room_bottom_border_y )
-
-	__view_set( e__VW.Visible, 0, true )
-	__view_set( e__VW.Visible, 1, true )
-	__view_set( e__VW.Visible, 2, true )
-	__view_set( e__VW.Visible, 3, true )
-	__view_set( e__VW.Visible, 4, true )
     
 	blockstosprite=ds_list_create()    ///list of blocks to have sprite connecting script applied in aizen step event (optimized by doing all at once only once)
-	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need to sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed
+	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed
 
-    
+	//////////////////////////////////////HUD VARIABLES - incase players stop existing hud will draw from these values instead of grabbing from player instance
+
 	player_meter[kouchou.MAX_PLAYER_COUNT]=0
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
@@ -99,9 +100,10 @@ if room==gameroom
     
     
 	/***************************************************
-	convert selectchar[] code into character string and store it in array
+	convert selectchar[] (player select selected character ID number) into character strings
 	***************************************************/    
    
+	tempcharstrings[kouchou.MAX_PLAYER_COUNT]=""
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		switch kouchou.selectchar[i]
@@ -135,9 +137,12 @@ if room==gameroom
 	playerspawnheight=200
 	instance_create(0,0,sky)
 	instance_create(0,0,lighting)
-	instance_create(0,0,block_drawer)
+
     
-	spawn_positions[kouchou.MAX_PLAYER_COUNT]=0
+	
+	///////////////////////////////////////////////////////////////////// SPAWN LOCATIONS //////////////////////////////////////////////
+	
+	spawn_positions_x[kouchou.MAX_PLAYER_COUNT]=0
 	if kouchou.playersin==0 || kouchou.playersin==1
 	{
 		show_error("error - players in game less than 2",true)
@@ -162,6 +167,11 @@ if room==gameroom
 	}
 	if spawn_positions_x[0]==undefined
 		show_error("spawn positions undefined",true)
+		
+		
+	////////////////////////////////////////////////////// SPAWNS	
+		
+		
 	var a;
     
 	for (i=0; i<kouchou.playersin; i+=1)
@@ -209,10 +219,6 @@ if room==gameroom
     
 	if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches and protection blocks
 	{
-		/*a=instance_create(40,groundlevel-80,torch)     create torches  
-		a.sprite_index=torch_sprite
-		a=instance_create(1160,groundlevel-80,torch)
-		a.sprite_index=torchBLOO*/
         
 		var prot;
 		        prot=0  // [finaledit] obsolete?
@@ -251,7 +257,7 @@ if room==gameroom
     
 	biomeswitch=false   ///(I think) true when cutting gap between biomes
 
-	for (iii=17; iii<61; iii+=1)   //row by row
+	for (iii=17; iii<61; iii+=1)   //row by row  
 	{
 		biomeswitch=false
 		travelled+=40            
@@ -263,7 +269,18 @@ if room==gameroom
 	//create fossil surface for first time
 	redraw_fossil_surface()
     
-    
+    //create combined sprites for blocks for first time
+	/*number_of_times_create_new_block_sprites_called=0
+	with block
+	{
+		if y<kouchou.rh+aizen.CREATE_NEW_BLOCK_SPRITES_EVERY+100 ///100 is buffer just in case
+		{
+			ds_list_add(aizen.blocks_to_create_new_sprite_from_surface,self.id)
+		}
+	}
+	create_new_block_sprites()*/
+	
+	
 	if kouchou.map=="multiplayer"
 	{
 		alarm[0]=300    //orbs
@@ -283,7 +300,3 @@ if room==gameroom
 
 }
 
-
-
-/* */
-/*  */

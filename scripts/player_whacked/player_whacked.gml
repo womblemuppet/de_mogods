@@ -5,6 +5,7 @@
 3 whether to reset or not
 4 whether to gain meter or not
 */
+
 STUNNED=argument0
                  ///////////get stunned
 

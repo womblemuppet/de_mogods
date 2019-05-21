@@ -2943,14 +2943,6 @@
             }
         },
         {
-            "Key": "71cef92e-82a5-4f16-a160-b19ae928f106",
-            "Value": {
-                "id": "83b1fe67-0829-4692-8c3b-8253dbdf956d",
-                "resourcePath": "scripts\\@draw_set_blend_mode_ext\\draw_set_blend_mode_ext.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "71f10d9c-db1c-4627-803c-e2f3692cb222",
             "Value": {
                 "id": "a60d9579-6388-47b0-8079-1b5c8e656daa",
@@ -3975,6 +3967,14 @@
             }
         },
         {
+            "Key": "98502f26-fe3f-44c9-aead-f31cb6c7c3a0",
+            "Value": {
+                "id": "6709d19a-1eca-4469-b0fc-f1c26a7a54a5",
+                "resourcePath": "sprites\\Bait_3H_spin\\Bait_3H_spin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "986f95e0-9f3f-4926-a232-027f8e7c830c",
             "Value": {
                 "id": "6da56815-ec76-4f1a-9924-c9f8c11997f4",
@@ -4463,6 +4463,14 @@
             }
         },
         {
+            "Key": "ab3dfb44-28be-4175-81ca-fcc20892dcb2",
+            "Value": {
+                "id": "b1da0a74-c042-4247-8a7a-d3f5b9358880",
+                "resourcePath": "sprites\\spr_whirlwind_hitbox\\spr_whirlwind_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ab460b3f-d880-474c-8b93-e0c40ab5b911",
             "Value": {
                 "id": "203b7af6-c20e-4810-a004-7e4505db5e73",
@@ -4860,14 +4868,6 @@
                 "id": "1fe68356-32a9-452b-adb9-2e109c2d408f",
                 "resourcePath": "sprites\\meltingblockbubbles\\meltingblockbubbles.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "b9ad4dd2-c3e7-4eb9-a521-7db3bb85420b",
-            "Value": {
-                "id": "0d3d80e8-bd4d-4600-9fb7-125b603926bc",
-                "resourcePath": "views\\b9ad4dd2-c3e7-4eb9-a521-7db3bb85420b.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -5911,14 +5911,6 @@
             }
         },
         {
-            "Key": "df5e1f35-e33a-416d-b41c-6281dd2272e6",
-            "Value": {
-                "id": "32fb39e3-104f-4def-82c9-87a93f18a620",
-                "resourcePath": "objects\\block_drawer\\block_drawer.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "df89fa67-5582-4497-a345-8c46bc1c2a23",
             "Value": {
                 "id": "64f403bb-425c-452c-8b41-f6df6179c506",
@@ -6455,14 +6447,6 @@
             }
         },
         {
-            "Key": "f50f8c84-bfda-4caa-95e8-b7eb2cd10a8a",
-            "Value": {
-                "id": "cb208d05-2c3b-41fd-8adf-0c1602db7424",
-                "resourcePath": "scripts\\@draw_set_blend_mode\\draw_set_blend_mode.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f5c62a5b-07f7-4bbc-abb8-ba11b341c03a",
             "Value": {
                 "id": "8fc7b4ed-4128-4f77-a62b-abd61a9c598c",
@@ -6751,7 +6735,6 @@
         "0c52ca6b-34c8-443f-9f33-18916703fc30",
         "93513e38-e6bb-4f7c-bc2f-16dd5a8a6923",
         "39c08622-a7ec-41bf-9c38-e63ccc38c3d0",
-        "78a15054-91a9-4900-a31e-3dc1cac28da0",
         "7a50cadb-657c-4f28-8f67-31d58a19d0c7",
         "68bb8401-c82c-4fdb-8250-257d20b76714",
         "0161eb11-116c-4e07-bbb5-05d89a9c6fb0",
@@ -6778,15 +6761,14 @@
         "0af909a9-439b-496d-86df-b98998dc919e",
         "4146b1d2-6974-4c17-8af4-e08c47f11aaf",
         "0d6d09e9-9534-4c47-b1b5-9459457ecd4a",
-        "5902740d-15b5-42f2-9a40-2b269957be10",
-        "f50f8c84-bfda-4caa-95e8-b7eb2cd10a8a",
-        "71cef92e-82a5-4f16-a160-b19ae928f106",
-        "6a297808-eab2-47ef-b2df-fa77bd655484",
-        "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
         "debd4ce9-633b-4bd2-ae12-35a00e62845c",
         "098671bf-e159-4f49-92a5-f5b12557e2e6",
         "29beeb26-9b14-4dd6-ad37-8fdca832a28b",
         "3fe3bd6c-8754-49eb-9d0e-cda69f4c387b",
+        "5902740d-15b5-42f2-9a40-2b269957be10",
+        "78a15054-91a9-4900-a31e-3dc1cac28da0",
+        "6a297808-eab2-47ef-b2df-fa77bd655484",
+        "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
         "dbf4b51b-f443-4495-9b75-0bd0302c16b2",
         "2127dd53-8c61-443d-abca-358437011297"
     ],

@@ -1,3 +1,5 @@
+show_error("depreciated compatibility script called __view_set",true)
+
 var __prop = argument0;
 var __index = argument1;
 var __val = argument2;

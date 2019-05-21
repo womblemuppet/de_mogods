@@ -7,7 +7,7 @@ if other.attackname=="forwardpunch"
 			hspd=-3
 		vspd=-10
 		if !place_meeting(x,y-1,block)
-		        y-=1
+			y-=1
 	}
 }
 

@@ -1,3 +1,5 @@
+show_error("depreciated compatibility script called __init_view",true)
+
 enum e__VW
 {
 	XView,

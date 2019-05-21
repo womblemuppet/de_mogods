@@ -1,8 +1,7 @@
-if crab_being_held!=-1
+if crab_being_held!=-1 && crab_being_held!=noone && crab_being_held!=undefined //error paranoia.
 {
     if instance_exists(crab_being_held)
     {
-
         var a;
         a=instance_create(x,y,crabjectile)
         a.creator=self.id

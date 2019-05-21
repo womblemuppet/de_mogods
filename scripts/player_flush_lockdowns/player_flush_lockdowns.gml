@@ -17,6 +17,8 @@ dash_angel_jump=0
 uniques_parachute=0
 dash_angel_jump=0
 dash_angel_jump_counter=0
+uniques_whirlwind_active=false
+
 player_set_idle()
 
 

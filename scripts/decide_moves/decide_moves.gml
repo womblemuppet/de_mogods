@@ -6,13 +6,15 @@ heavy attack
 dash
 airdash
 gp
+gp effect
 air light attack
 air heavy attack
 ult get trigger
-air throw effect
+special hold down (placeable)
 special1
 special2
 special3
+air throw effect
 
 ****************************************************/
 switch (character)
@@ -29,6 +31,8 @@ switch (character)
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
 	//ooga standard gp
+	ds_map_add(attacks, "gpeffect", 0);
+	//no gp effect
 	ds_map_add(attacks, "air light attack", 0);
 	//ooga airgrab
 	ds_map_add(attacks, "air heavy attack", -1);
@@ -62,6 +66,8 @@ switch (character)
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
 	//ooga standard gp
+	ds_map_add(attacks, "gpeffect", 0);
+	//no gp effect
 	ds_map_add(attacks, "air light attack", 0);
 	//ooga airgrab
 	ds_map_add(attacks, "air heavy attack", 0);  
@@ -82,7 +88,7 @@ switch (character)
 	mines_ammo=2   ///starting mines
     
     
-	break;    
+	break;
     
 	case "slinger":
     
@@ -96,6 +102,8 @@ switch (character)
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
 	//ooga standard gp
+	ds_map_add(attacks, "gpeffect", 0);
+	//no gp effect
 	ds_map_add(attacks, "air light attack", -1);
 	//no airgrab
 	ds_map_add(attacks, "air heavy attack", -1);
@@ -127,6 +135,8 @@ switch (character)
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
 	//ooga standard gp
+	ds_map_add(attacks, "gpeffect", 1);
+	//bait whirlwind
 	ds_map_add(attacks, "air light attack", 0);
 	//ooga airgrab
 	ds_map_add(attacks, "air heavy attack", -1);

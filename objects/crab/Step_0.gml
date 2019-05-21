@@ -6,7 +6,7 @@ if owner==-1
 }
 else
 {
-    if instance_exists(owner)
+    if instance_exists(owner)   //[finaledit] optimize
     {
         x=owner.x
         y=owner.y-15

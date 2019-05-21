@@ -5,22 +5,22 @@ yy=y
 D=choose(0,180,270)
 repeat(length)
 {
-    //disgusting
-    if D==0
-        D=choose(D,D,D,D,D,270,270)
-    else if D==180
-        D=choose(D,D,D,D,D,270,270)
-    else if D==270
-        D=choose(D,D,D,D,D,D,0,0,180,180)
+	//disgusting
+	if D==0
+		D=choose(D,D,D,D,D,270,270)
+	else if D==180
+		D=choose(D,D,D,D,D,270,270)
+	else if D==270
+		D=choose(D,D,D,D,D,D,0,0,180,180)
         
     
-    if D==0
-        xx+=40
-    else if D==180
-        xx-=40
-    else if D==270
-        yy+=40
-    ds_list_add(aizen.blockstosprite_prevlayer,spawn_gunpowder_block(xx,yy,0))   
+	if D==0
+		xx+=40
+	else if D==180
+		xx-=40
+	else if D==270
+		yy+=40
+	ds_list_add(aizen.blockstosprite_prevlayer,spawn_gunpowder_block(xx,yy,0))   
     
 }
 instance_destroy()

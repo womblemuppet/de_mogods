@@ -38,20 +38,26 @@ switch argument0
 	}
 	case "slingerjumpresetdash" :
 	{
-		if !groundcheck
+		if instance_exists(other.creator)
 		{
-			other.creator.doublejump=1
-			other.creator.doublejumptimer=DOUBLEJUMPTIME*3
-			effect_aniend(spr_slinger_reset_jump,0.1,-2)
+			if !groundcheck
+			{
+				other.creator.doublejump=1
+				other.creator.doublejumptimer=DOUBLEJUMPTIME*3
+				effect_aniend(spr_slinger_reset_jump,0.1,-2)
+			}
 		}
 	} break;
 	case "slingeruppercut" :
 	{
-		with other.creator
+		if instance_exists(other.creator)
 		{
-			if checkkey(lightbutton)
+			with other.creator
 			{
-			effect_create_above(ef_firework,x,y,c_green,2)
+				if checkkey(lightbutton)
+				{
+				effect_create_above(ef_firework,x,y,c_green,2)
+				}
 			}
 		}
 	}   break;
@@ -113,4 +119,15 @@ switch argument0
 			
 		}
 	}break;
+	case "whirlwind" :
+	{
+		if instance_exists(other.creator)
+		{
+			with other.creator
+			{
+				uniques_whirlwind_active=false
+				player_flush_lockdowns()
+			}
+		}
+	} break;
 }
