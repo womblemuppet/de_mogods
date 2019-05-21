@@ -268,17 +268,9 @@ if room==gameroom
     
 	//create fossil surface for first time
 	redraw_fossil_surface()
-    
-    //create combined sprites for blocks for first time
-	/*number_of_times_create_new_block_sprites_called=0
-	with block
-	{
-		if y<kouchou.rh+aizen.CREATE_NEW_BLOCK_SPRITES_EVERY+100 ///100 is buffer just in case
-		{
-			ds_list_add(aizen.blocks_to_create_new_sprite_from_surface,self.id)
-		}
-	}
-	create_new_block_sprites()*/
+
+	//fill list of blocks that will be drawn in draw event
+	update_blocks_to_draw_list()
 	
 	
 	if kouchou.map=="multiplayer"

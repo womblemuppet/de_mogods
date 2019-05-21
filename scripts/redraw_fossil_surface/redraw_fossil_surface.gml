@@ -1,6 +1,6 @@
 /// @description //////////////// [finaledit] could optimize by not recreating surface and just clearing it based on an argument
 /////////////////// [finaledit] reminder to use surface_free when killing aizen
-
+/*
 if surface_exists(fossil_surface)
     surface_free(fossil_surface)
 
@@ -41,3 +41,4 @@ with ef_fossil
 }
 
 surface_reset_target()
+*/

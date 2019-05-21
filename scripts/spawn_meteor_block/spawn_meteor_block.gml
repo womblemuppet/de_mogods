@@ -6,7 +6,6 @@
 var a;
 a=instance_create(argument0,argument1,meteor_block)   //if change this change room spawn blocks
 a.protection=0
-a.part=1
 a.sprite_index=block_meteor
 a.variant=choose(5,17)
 a.divisible=false

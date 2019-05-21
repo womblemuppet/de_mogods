@@ -29,12 +29,12 @@ with block
     if nxx<maxx && nyy<maxy
     {
         ds_grid_set(aizen.temp_block_grid,floor(nxx),floor(nyy),id)
-        if part==0
-        {
+        //if part==0
+        //{
             ds_grid_set(aizen.temp_block_grid,floor(nxx)+1,floor(nyy),-1)
             ds_grid_set(aizen.temp_block_grid,floor(nxx),floor(nyy)+1,-1)
             ds_grid_set(aizen.temp_block_grid,floor(nxx)+1,floor(nyy)+1,-1)
-        }
+        //}
     }
 }
 
@@ -87,7 +87,7 @@ while yy<maxy
     {
         for (i=0; i<ds_list_size(aizen.temp_volc_spawn_possibles_list); i+=1)
         {
-            if aizen.temp_volc_spawn_possibles_list[| i].part!=0
+			//if aizen.temp_volc_spawn_possibles_list[| i].part!=0
                 ds_list_delete(aizen.temp_volc_spawn_possibles_list,i)
         };
         

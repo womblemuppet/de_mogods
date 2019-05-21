@@ -16,18 +16,11 @@ for (i=0; i<ds_list_size(blocklist); i+=1)
 {
     with ds_list_find_value(blocklist,i)
     {
-        if part==0
-        {
             instance_create(x,y+40,icespike)
             //instance_create(x+10,y+40,icespike)
             instance_create(x+20,y+40,icespike)
             //instance_create(x+30,y+40,icespike)                        
-        }
-        else
-        {
-            instance_create(x,y+20,icespike)
-            //instance_create(x+20,y+20,icespike)                       
-        }
+
     }
 };
 ds_list_destroy(blocklist)

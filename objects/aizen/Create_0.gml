@@ -2,8 +2,8 @@ room=gameroom
 
 global.fft=1   ///testing variable for flood orb parents
 
-
-
+to_draw=ds_list_create()
+will_update_blocks_to_draw_list=false
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_EVERY
 SURFACE_REDRAW_EVERY=400  ///surface will be redrawn every x travelled

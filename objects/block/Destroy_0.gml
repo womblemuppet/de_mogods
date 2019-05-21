@@ -9,3 +9,5 @@ with block
 	}
 }
 
+with aizen
+	will_update_blocks_to_draw_list=true

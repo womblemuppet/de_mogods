@@ -92,8 +92,9 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 		fossil_surface_redraw_needed=true
 		surface_redraw_counter-=SURFACE_REDRAW_EVERY
 	}
-
-
+	will_update_blocks_to_draw_list=true
+	
+	
 	travelled+=scrollspeed             ///add to travelled, total distance travelled downward
 	
 
@@ -142,7 +143,16 @@ if !ds_list_empty(blockstosprite)
 if !surface_exists(fossil_surface)
 	fossil_surface_redraw_needed=true
     
-
+	
+	
+	
+	
+	
+if will_update_blocks_to_draw_list==true
+{
+	update_blocks_to_draw_list()
+	will_update_blocks_to_draw_list=false
+}
     
     
 for (i=0; i<kouchou.playersin; i+=1)   ////[finaledit] using playersin might cause slot problems

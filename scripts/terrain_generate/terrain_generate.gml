@@ -525,6 +525,5 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		}
         
         
-        
 	};
 }

@@ -17,8 +17,7 @@ if kouchou.map=="firetrial" || kouchou.map=="icetrial"
 if fossil_surface_redraw_needed
 	redraw_fossil_surface() 
 
-if surface_exists(aizen.fossil_surface)
-    draw_blocks_and_fossils()
+draw_blocks_and_fossils()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////draw bounds warning line
@@ -159,7 +158,7 @@ if kouchou.setmenu_show_fps
 	if fps_real>80
 	{
 		draw_set_color(c_white)    
-		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real/80)*80)+" fps"))
+		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real/10)*10)+" fps"))
 	}
 	else
 	{
