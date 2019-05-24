@@ -146,7 +146,10 @@ if !surface_exists(fossil_surface)
 	
 	
 	
-	
+if call_a_block_has_been_destroyed
+{
+	a_block_has_been_destroyed()	
+}
 	
 if will_update_blocks_to_draw_list==true
 {

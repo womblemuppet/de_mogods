@@ -1,13 +1,20 @@
 var xx,yy;
 xx=x
 yy=y
-with block
+for (var i = 0; i > aizen.to_draw_size; i++)
 {
-	if distance_to_point(xx,yy)<65
+	with aizen.to_draw[| i]
 	{
-		ds_list_add(aizen.blockstosprite,self.id)
+		if distance_to_point(xx,yy)<65
+		{
+			ds_list_add(aizen.blockstosprite,self.id)
+		}
 	}
 }
 
 with aizen
+{
 	will_update_blocks_to_draw_list=true
+	call_a_block_has_been_destroyed=true
+}
+	

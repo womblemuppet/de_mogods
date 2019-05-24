@@ -26,8 +26,8 @@ draw_blocks_and_fossils()
 var draw;
 draw=false
 
-for (i=0; i<instance_number(player); i+=1)
-	{
+for (i=0; i<instance_number(player); i+=1)  //[finaledit] optimize
+{
 	if instance_find(player,i).y<50
 	{
 		draw=true

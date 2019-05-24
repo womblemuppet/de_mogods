@@ -2,8 +2,11 @@ room=gameroom
 
 global.fft=1   ///testing variable for flood orb parents
 
-to_draw=ds_list_create()
+to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
+to_draw_size=0
 will_update_blocks_to_draw_list=false
+
+call_a_block_has_been_destroyed=false
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_EVERY
 SURFACE_REDRAW_EVERY=400  ///surface will be redrawn every x travelled

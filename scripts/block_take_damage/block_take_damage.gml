@@ -2,13 +2,6 @@ if object_index==ice_block
     exit
 if object_index==gunpowder
 {
-    /*if part==0
-    {
-        spawn_gunpowder_block(x,y,1)
-        spawn_gunpowder_block(x+20,y,2)
-        spawn_gunpowder_block(x,y+20,3)  
-        spawn_gunpowder_block(x+20,y+20,4)
-    }*/
     instance_destroy()
     exit
 }
@@ -136,15 +129,6 @@ switch other.type
 }
 
 
-/*
-if part==0
-{
-    spawn_block(x,y,1)
-    spawn_block(x+20,y,2)
-    spawn_block(x,y+20,3)  
-    spawn_block(x+20,y+20,4)
-}
-*/
 
 with icespike
 {

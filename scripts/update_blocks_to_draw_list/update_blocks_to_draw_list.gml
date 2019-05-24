@@ -1,3 +1,7 @@
+/*
+  also aizen.to_draw is used as a list of all blocks on screen.
+*/
+
 ds_list_clear(to_draw)
 
 
@@ -16,3 +20,5 @@ with block
 	if y<kouchou.rh+40 ///40 is buffer
 		ds_list_add(aizen.to_draw,id)	
 }
+
+to_draw_size=ds_list_size(to_draw)
