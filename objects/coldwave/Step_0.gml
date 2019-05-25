@@ -14,12 +14,9 @@ if travelled>20
         {
             if y>yy && y<yy+20
             {
-                if part!=0
-                {
-                    a=effect_aniend(tempsnow40,0.1,-4)
-                    with a
-                        image_index=irandom(5)
-                }
+                a=effect_aniend(tempsnow40,0.1,-4)
+                with a
+                    image_index=irandom(5)
             }
         }
     }

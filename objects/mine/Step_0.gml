@@ -74,10 +74,19 @@ if triggered   /// >:O
 	life-=1
 	if life<1
 	{
-		var b;
+		var b,hitboxspr;
+		hitboxspr=mine_sprite_explosion
+		if !bigexplosion
+			effect(mine_sprite_explosion,0.2,-1)
+		else
+		{
+			effect(mine_groundpunch_combo_shockwave,0.2,-1)
+			hitboxspr=mine_groundpunch_combo_shockwave_hitbox
+		}
+		
 		b=attack_create_hitbox(60,1,false,true,true,"mineexplosion",mine_sprite_explosion,0.2,99,0,2)
 		b.creator=self.creator
-		effect(mine_sprite_explosion,0.2,-1)
+
 		instance_destroy()
 	}
 }

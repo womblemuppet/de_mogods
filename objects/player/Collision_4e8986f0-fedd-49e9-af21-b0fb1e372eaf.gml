@@ -1,4 +1,4 @@
-if instance_exists(wave)
+if instance_exists(wave)  //[finaledit] is this a thing?
 {
     if y>wave.y
         exit

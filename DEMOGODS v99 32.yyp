@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "1ca4c01b-f403-4c29-9df5-92db6ee9a4f0",
+            "Value": {
+                "id": "61f8ccbd-b6f5-4d82-8797-d4cb11102a80",
+                "resourcePath": "sprites\\mine_groundpunch_combo_shockwave\\mine_groundpunch_combo_shockwave.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cff3442-1b5b-4ae2-af3f-e5dbeaeb8ea7",
             "Value": {
                 "id": "d2cceb2f-1fbe-470b-86f0-8ecb832268af",
@@ -1084,6 +1092,14 @@
                 "id": "08353b20-3af9-4ca2-a2a4-aa7ca9915b57",
                 "resourcePath": "scripts\\find_a_diggable_block\\find_a_diggable_block.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "273d7eff-e9bb-4ca5-888e-ad70ad03b82b",
+            "Value": {
+                "id": "b4475cf4-85b1-4751-a55c-616fca844a76",
+                "resourcePath": "sprites\\mine_groundpunch_combo_shockwave_hitbox\\mine_groundpunch_combo_shockwave_hitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
