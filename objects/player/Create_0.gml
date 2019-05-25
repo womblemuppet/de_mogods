@@ -85,7 +85,10 @@ pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///BOUNCE EFFECT
 BOUNCE_MIN_VELOCITY=1
 BOUNCE_MAX_VELOCITY=6
-iframes=0
+iframes=0 //cant be hit while this is >0 I think
+FRAME_SPEED_NORMAL=0.2
+FRAME_SPEED_FAST=0.4
+FRAME_SPEED_SLOW=0.1
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)

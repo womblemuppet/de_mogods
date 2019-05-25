@@ -1,7 +1,7 @@
 if sprite_index==sprites[2]  ///jump
 {
 	sprite_index=sprites[3]   ////air
-	image_speed=0.1
+	image_speed=FRAME_SPEED_SLOW
 }
 else if sprite_index==sprites[1] || sprite_index==sprites[8]
 {
@@ -10,26 +10,26 @@ else if sprite_index==sprites[1] || sprite_index==sprites[8]
 else if sprite_index==sprites[10]    ///jump super
 {
 	sprite_index=sprites[11]    ///air super
-	image_speed=0.1
+	image_speed=FRAME_SPEED_SLOW
 }
 else if sprite_index==sprites[23]  ///airgrab
 {
 	sprite_index=sprites[3]   ////air
-	image_speed=0.1
+	image_speed=FRAME_SPEED_SLOW
 }
 else if sprite_index==sprites[24]    ///airgrab super
 {
 	sprite_index=sprites[11]    ///air super
-	 image_speed=0.1
+	 image_speed=FRAME_SPEED_SLOW
 }
 else if sprite_index==sprites[5] || sprite_index==sprites[7]  ///gp fall or gp fall super
 {
-	image_speed=0.5    ///loop last frames of gp animation
+	image_speed=FRAME_SPEED_FAST    ///loop last frames of gp animation
 	image_index=image_number-2
 }
 else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///angel charge or angel charge super
 {
-	image_speed=0.5    ///loop last frames of angel charge animation
+	image_speed=FRAME_SPEED_FAST    ///loop last frames of angel charge animation
 	image_index=image_number-2
 }
 else if sprite_index==sprites[6]  ///super activate

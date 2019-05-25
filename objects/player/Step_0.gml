@@ -274,7 +274,7 @@ if dash_angel_jump_counter>0
 		if supers>0
 			sprite_index=sprites[29]
 		image_index=0
-		image_speed=0.2
+		image_speed=FRAME_SPEED_NORMAL
 		dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
 		vspd=-DASH_ANGEL_JUMP_AMOUNT
 		dash_angel_jump=2
@@ -473,7 +473,7 @@ if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block 
 				break;
 				case 1:   ////bait whirlwind
 				image_index=0
-				image_speed=0.4
+				image_speed=FRAME_SPEED_FAST
 				sprite_index=sprites[84]
 				uniques_whirlwind_active=true
 			}
@@ -577,7 +577,7 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck
 			if supers>0
 				sprite_index=sprites[9]
 		}
-		image_speed=0.2
+		image_speed=FRAME_SPEED_NORMAL
 	}
 }
 
@@ -699,7 +699,7 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 		uniques_forwardpunch_feet_counter=0
 		uniques_vet_chain_counter=-1
         
-		image_speed=0.2
+		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=sprites[62]
 		if supers>0
 			sprite_index=sprites[63]
@@ -775,7 +775,7 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 			if supers>0
 				sprite_index=sprites[18]
 			image_index=0
-			image_speed=0.2
+			image_speed=FRAME_SPEED_NORMAL
             
 			attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7+extrahkb,4)
 		}
@@ -799,7 +799,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		exception=true
 		uniques_vet_chain_counter=-1
 		uniques_upforwarddash_lockdown=1
-		image_speed=0.2
+		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=sprites[66]
 		if supers>0
 			sprite_index=sprites[67]
@@ -845,7 +845,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		switch attacks[? "heavy attack"]
 		{
 			case 0:    ////ooga default heavy attack
-			image_speed=0.4
+			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[21]
 			if supers>0
 				sprite_index=sprites[22]
@@ -858,7 +858,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
             
             
 			case 1:    //// veteran aa punch
-			image_speed=0.4
+			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[60]
 			if supers>0
 				sprite_index=sprites[61]
@@ -869,7 +869,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
                
 			case 2:  ////slinger sunblast
 			image_index=0
-			image_speed=0.25
+			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[70]
 			if supers>0
 				sprite_index=sprites[71]
@@ -880,7 +880,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			break;
             
 			case 3:    ////bait shark attack heavy punch
-			image_speed=0.25
+			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[80]
 			if supers>0
 				sprite_index=sprites[81]
@@ -902,7 +902,7 @@ if attacks[? "heavy attack"]==0     ///ooga heavy attack button release    [fina
 {
 	if fpunch_lockdown==1 && (   (!checkkey(heavybutton) && fpunch_charge>FPUNCH_CHARGE_MIN ) || fpunch_charge>FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
-		image_speed=0.175
+		image_speed=FRAME_SPEED_NORMAL
 		image_index=4
 		fpunch_charge=0
 		fpunch_lockdown=2
@@ -940,7 +940,7 @@ if checkkey_pushed(lightbutton) && !groundcheck && player_may_attack()//////////
 			sprite_index=sprites[23]
 			if supers>0
 				sprite_index=sprites[24]
-			image_speed=0.4                                   break;
+			image_speed=FRAME_SPEED_FAST                                   break;
 			case -1:
 			/*nandemonai*/ break;
 			default:
@@ -1026,7 +1026,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					sprite_index=sprites[30]    ///groundpound freeze sprite
 					if supers>0
 						sprite_index=sprites[31]   ///groundpound freeze super sprite
-					image_speed=0.4
+					image_speed=FRAME_SPEED_FAST
 					image_index=0
 				}
 			} 
@@ -1047,7 +1047,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				sprite_index=sprites[5]
 			else
 				sprite_index=sprites[7]
-			image_speed=0.4
+			image_speed=FRAME_SPEED_FAST
 			image_index=0
 			alarm[2]=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
 			break;
@@ -1118,7 +1118,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				if supers>0
 					sprite_index=sprites[16]
 				image_index=0
-				image_speed=0.25
+				image_speed=FRAME_SPEED_NORMAL
                 
                 
 				if right                                       //////////////////    dash initial movement
@@ -1217,7 +1217,7 @@ if dash_button_currently_held
 		{
 			if instance_exists(dash_current_hitbox_object)
 			{
-				dash_current_hitbox_object.image_speed=0.3
+				dash_current_hitbox_object.image_speed=0.3   ///kills it
 			}
 		}
 		dash_current_hitbox_object=noone
@@ -1243,7 +1243,7 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 			{
 				if sprite_index!=sprites[32]
 					image_index=0
-				image_speed=0.2
+				image_speed=FRAME_SPEED_NORMAL
 				sprite_index=sprites[32]
 			}
 		} 
@@ -1256,7 +1256,7 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 		{
 			if sprite_index!=sprites[82] && sprite_index!=sprites[83]
 			{
-				image_speed=0.2
+				image_speed=FRAME_SPEED_NORMAL
 				image_index=0
 				sprite_index=sprites[82]
 				if uniques_teleport==1
@@ -1359,7 +1359,7 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 			sprite_index=sprites[1]   ///run sprite
 			if supers>0
 				sprite_index=sprites[8]
-			image_speed=0.12
+			image_speed=FRAME_SPEED_SLOW
 		}
 	}
 }
@@ -1416,7 +1416,7 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 			sprite_index=sprites[1]    ///run sprite
 			if supers>0
 				sprite_index=sprites[8]
-			image_speed=0.12
+			image_speed=FRAME_SPEED_SLOW
 		}
 	} 
 }
@@ -1478,7 +1478,7 @@ if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 
 		sprite_index=sprites[2]    ///jump windup sprite
 		if supers>0
 			sprite_index=sprites[10]
-		image_speed=0.3
+		image_speed=FRAME_SPEED_FAST
 		image_index=0
 	}
 }
