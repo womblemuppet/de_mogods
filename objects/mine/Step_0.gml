@@ -1,6 +1,6 @@
 if !place_meeting(x,y+1,block)
 {
-	vspd+=0.3   ///gravity
+	vspd+=0.5   ///gravity
 }
 if place_meeting(x,y-1,block)
 {
@@ -26,8 +26,8 @@ if place_meeting(x,y+1,block)
 		hspd=0
 }
 
-if vspd>12
-	vspd=12
+if vspd>7
+	vspd=7
 if vspd<-18
 	vspd=-18
     

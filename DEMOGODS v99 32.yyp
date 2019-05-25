@@ -3258,7 +3258,7 @@
             "Key": "7c68d9f4-8040-4062-ad8a-eab1a1bfa393",
             "Value": {
                 "id": "07803a45-2b48-4eb3-95a1-86d2c2cbacd8",
-                "resourcePath": "sprites\\tempsnow20\\tempsnow20.yy",
+                "resourcePath": "sprites\\tempsnow40\\tempsnow40.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5699,6 +5699,14 @@
             "Value": {
                 "id": "89893590-3fae-46e8-9632-148e35383b4c",
                 "resourcePath": "sprites\\Ooga_pal1_ults_1\\Ooga_pal1_ults_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d692275b-fd45-46fb-8845-0de36e0a6fdf",
+            "Value": {
+                "id": "bd1c8246-61b6-4143-af8b-6af2cc29a17d",
+                "resourcePath": "sprites\\ooga_ultimate_groundpound_hitbox\\ooga_ultimate_groundpound_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },

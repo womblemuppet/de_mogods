@@ -8,7 +8,6 @@
 var a;
 a=instance_create(argument0,argument1,instrument)   //if change this change room spawn blocks
 a.protection=0
-a.part=1
 a.variant=0
 a.divisible=false
 a.type=choose(0,0,0,1,1,2,2,4,5)

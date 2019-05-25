@@ -34,7 +34,7 @@ with block
             ds_grid_set(aizen.temp_block_grid,floor(nxx)+1,floor(nyy),-1)
             ds_grid_set(aizen.temp_block_grid,floor(nxx),floor(nyy)+1,-1)
             ds_grid_set(aizen.temp_block_grid,floor(nxx)+1,floor(nyy)+1,-1)
-        //}
+
     }
 }
 

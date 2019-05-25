@@ -16,28 +16,8 @@ if travelled>20
             {
                 if part!=0
                 {
-                    a=effect_aniend(tempsnow20,0.1,-4)
+                    a=effect_aniend(tempsnow40,0.1,-4)
                     with a
-                        image_index=irandom(5)
-                }
-                else
-                {
-                    var a,b,c,d;
-                    d=effect_aniend(tempsnow20,0.1,-4)
-                    a=effect_aniend(tempsnow20,0.1,-4)
-                    a.x+=20
-                    b=effect_aniend(tempsnow20,0.1,-4)
-                    b.y+=20
-                    c=effect_aniend(tempsnow20,0.1,-4)
-                    c.x+=20
-                    c.y+=20
-                    with a
-                        image_index=irandom(5)
-                    with b
-                        image_index=irandom(5)
-                    with c
-                        image_index=irandom(5)
-                    with d
                         image_index=irandom(5)
                 }
             }
