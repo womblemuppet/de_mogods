@@ -523,7 +523,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 					critter_throwable_setup(choose("crab","goat"))
 			}
 		}
-        
-        
+          
 	};
+	
+	//ds_list_copy(blockstosprite,blockstosprite_prevlayer)   ///after adding all blocks to 
 }

@@ -21,7 +21,7 @@ sprite_list=aizen.chunkery_sprite_list[? blockchunktype]
 if object_index==gunpowder
 	sprite_list=aizen.BLOCK_SPRITE_GUNNY_FULL
 
-var left,right,up,down;
+//var left,right,up,down;
 left=false
 right=false
 up=false
