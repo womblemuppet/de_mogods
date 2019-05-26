@@ -19,59 +19,52 @@ if canbounce_counter>0   //if bounce enabled, and will hit block below or above,
 var id_of_groundpounded_instrument_if_exists
 id_of_groundpounded_instrument_if_exists=noone
 
-if place_meeting(x,y+1,block)
+
+groundcheck=instance_place(x,y+1,block)  ///[finaledit] 
+if groundcheck!=noone
 {
-	groundcheck=true
-	if instance_exists(turret_block)
+	if groundcheck.object_index==turret_block
 	{
-		if place_meeting(x,y+1,turret_block)
+		var me,mycol;
+		me=self.id
+		mycol=sentinel_colour
+		if me!=instance_place(x,y+1,turret_block).owner
 		{
-			var me,mycol;
-			me=self.id
-			mycol=sentinel_colour
-			if me!=instance_place(x,y+1,turret_block).owner
+			with instance_place(x,y+1,turret_block)
 			{
-				with instance_place(x,y+1,turret_block)
-				{
-					owner=me
-					alarm[0]=TAKEOVERTIME
-					sprite_index=block_turret
-					image_blend=mycol
-					alarm[1]=UPGRADETIME
-				}
-				with sentinel
-				{
-					effect_create_above(ef_firework,x,y,0,c_red)
-					instance_destroy()
-				}
+				owner=me
+				alarm[0]=TAKEOVERTIME
+				sprite_index=block_turret
+				image_blend=mycol
+				alarm[1]=UPGRADETIME
+			}
+			with sentinel
+			{
+				effect_create_above(ef_firework,x,y,0,c_red)
+				instance_destroy()
 			}
 		}
 	}
-	if instance_exists(weaksand)
+	else if groundcheck.object_index==weaksand
 	{
-		if place_meeting(x,y+1,weaksand)
+		with instance_place(x,y+1,weaksand)
 		{
-			with instance_place(x,y+1,weaksand)
+			if dying==false
 			{
-				if dying==false
-				{
-					dying=true
-					sprite_index=weaksand_sprite_die
-					image_speed=0.1
-					image_index=0
-				}
+				dying=true
+				sprite_index=weaksand_sprite_die
+				image_speed=0.1
+				image_index=0
 			}
 		}
 	}
-	if instance_exists(instrument)
+	else if groundcheck.object_index==instrument
 	{
-		if place_meeting(x,y+1,instrument)
-			id_of_groundpounded_instrument_if_exists=instance_place(x,y+1,instrument)
+		id_of_groundpounded_instrument_if_exists=instance_place(x,y+1,instrument)
 	}
 }
-else
+else ///( if groundcheck==noone)
 {
-	groundcheck=false
 	dash_has_lifted_off_ground=true
 }
 
@@ -412,7 +405,7 @@ if hothandimageindex>HOTHANDIMAGENUMBER
 
     
        
-if groundcheck      ///[finaledit] combine this check with one below?
+if groundcheck!=noone      ///[finaledit] combine this check with one below?
 	ltt=LOONEYTUNE_TIME
 else if ltt>-2
 	ltt-=1
@@ -424,7 +417,7 @@ else if ltt>-2
 /*  gravity && landing/ceiling collision    +    idle sprite setting  */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-if !groundcheck && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
+if groundcheck==noone && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
 {  
 	if vspd<0
 		vspd+=GRAVITY/watery
@@ -434,7 +427,7 @@ if !groundcheck && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 &&
 			vspd+=GRAVITY_DOWN/watery
 	}
 }
-if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
+if groundcheck!=noone && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
 {
 	airgrab_mode=0
 	
@@ -504,7 +497,8 @@ if groundcheck && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block 
 	cangroundpound=0
 	dash_angel_jump=0
 	jumped=false
-	instance_create(x,y,jump_vibration)
+	if groundcheck!=groundcheck_prev
+		instance_create(x,y,jump_vibration)
 	vspd=0
 	doublejump=0
 
@@ -550,7 +544,7 @@ if vspd<0
 
 
 //V   idle sprite    V
-if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck
+if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 {
 	var pass;
 	pass=false
@@ -635,7 +629,7 @@ if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(
 
 
 
-if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack / push
+if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack / push
 {
 	var exception;
 	exception=false
@@ -783,7 +777,7 @@ if checkkey_pushed(lightbutton) && groundcheck && player_may_attack() && pocket_
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// heavy attack
-if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 && groundcheck   && pocket_light_heavy_held_counter<1  ///heavy attack button press
+if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
 {
 	var exception;
 	exception=false
@@ -909,7 +903,7 @@ if attacks[? "heavy attack"]==0     ///ooga heavy attack button release    [fina
 	}
 }
 
-if checkkey_pushed(lightbutton) && !groundcheck && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
+if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {
 
 
@@ -950,7 +944,7 @@ if checkkey_pushed(lightbutton) && !groundcheck && player_may_attack()//////////
     
 }
 
-if checkkey_pushed(heavybutton) && !groundcheck && player_may_attack()       ///    air heavy attack
+if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()       ///    air heavy attack
 {
 	var exception;
 	exception=false
@@ -1016,7 +1010,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		{
 			if player_may_attack()
 			{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-				if groundcheck && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
+				if groundcheck!=noone && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
 				{
 					exception=true
 					vspd=0
@@ -1032,7 +1026,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			} 
 		}
 	}
-	if !exception && player_may_attack() && checkkey(downbutton) && !groundcheck && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
+	if !exception && player_may_attack() && checkkey(downbutton) && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound
 		var dropcrabok;
 		dropcrabok=true    ///if player can't gp then this stops crab being dropped
@@ -1126,7 +1120,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				else
 					hspd=-ground_dash_speed
 				
-				if groundcheck
+				if groundcheck!=noone
 				{
 					dash_has_lifted_off_ground=false
 					dash_current_hitbox_object.image_speed=0.05    ///means dash hitbox won't timeout (but will die when whacked or dash end)
@@ -1155,7 +1149,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					a.image_xscale=-1
 
 
-				if !groundcheck           ////////dashing in air
+				if groundcheck==noone           ////////dashing in air
 				{
 					vspd=-AIR_DASH_VSPEED
 					if right
@@ -1237,7 +1231,7 @@ if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !chec
 	switch attacks[? "special hold down"] 
 	{
 		case 0:     ////veteran 
-		if uniques_mines_enabled  && groundcheck
+		if uniques_mines_enabled  && groundcheck!=noone
 		{
 			if mines_ammo>0                ///start place mine animation
 			{
@@ -1319,7 +1313,7 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 			hor_running_counter=-HOR_SHUFFLE_THRESHOLD-1
 		hor_running_counter-=1
         
-		if groundcheck
+		if groundcheck!=noone
 		{
 			if  hor_running_counter==-HOR_SHUFFLE_THRESHOLD
 			hspd=-HOR_SHUFFLESPEED*slow_ratio
@@ -1378,7 +1372,7 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 			hor_running_counter=HOR_SHUFFLE_THRESHOLD+1
 		hor_running_counter+=1
         
-		if groundcheck
+		if groundcheck!=noone
 		{
 			if  hor_running_counter==HOR_SHUFFLE_THRESHOLD
 				hspd=HOR_SHUFFLESPEED*slow_ratio
@@ -1440,7 +1434,7 @@ if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 
 		{
 			if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
 			{   
-				if (groundcheck || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
+				if (groundcheck!=noone || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
 				{////single or double jump
 					jumped=true  
 					alarm[3]=GROUNDPOUND_UNAVAILABLE_TIME      ///ground pound unavailable time (after jump)
@@ -1572,7 +1566,7 @@ else if fpunch_lockdown==2
 
 
 ///////FPUNCH FEET STEPS
-if fpunch_feet_counter!=-1 && groundcheck
+if fpunch_feet_counter!=-1 && groundcheck!=noone
 {
 	if fpunch_feet_counter==0 || fpunch_feet_counter==1
 	{       
@@ -1605,7 +1599,7 @@ if fpunch_feet_counter!=-1 && groundcheck
 }
 
 ///////// FORWARDPUNCH FEET STEPS
-if uniques_forwardpunch_feet_counter!=-1 && groundcheck   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
+if uniques_forwardpunch_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 {
 	if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
 	{
@@ -1625,7 +1619,7 @@ if uniques_forwardpunch_feet_counter!=-1 && groundcheck   // -1  = not in use 0 
 }
 
 ///////// SHARKATTACK PUNCH FEET STEPS
-if uniques_sharkattack_feet_counter!=-1 && groundcheck   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
+if uniques_sharkattack_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 {
 	if uniques_sharkattack_feet_counter==0 || uniques_sharkattack_feet_counter==1
 	{
@@ -1967,7 +1961,7 @@ if canbounce_counter<1   ///disable horizontal friction if bouncing
 	{ 
 		var fir;
 		fir=FRICTION
-		if !groundcheck
+		if groundcheck==noone
 			fir=AIR_FRICTION
 		if !player_not_locked_down()
 		{
@@ -2012,3 +2006,7 @@ if y<-10
 	if dash_angel_top_collision_safety<1
 		playerdie()
 }
+
+
+////end step stuff
+groundcheck_prev=groundcheck

@@ -14,7 +14,7 @@ pushee=self.id
 
 if other.bunts==true
 {
-    if !groundcheck  //get hit twice as much if they're in the air
+    if groundcheck==noone  //get hit twice as much if they're in the air
     {
         airmulti=1.75
         airvmulti=1.35

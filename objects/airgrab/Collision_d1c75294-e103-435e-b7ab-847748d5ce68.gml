@@ -1,6 +1,6 @@
 if other!=creator 
 {   
-    if !other.groundcheck
+    if other.groundcheck==noone
     {
         var grabbed;
         grabbed=other
