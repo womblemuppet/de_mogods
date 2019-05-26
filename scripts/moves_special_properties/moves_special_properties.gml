@@ -40,7 +40,7 @@ switch argument0
 	{
 		if instance_exists(other.creator)
 		{
-			if !groundcheck
+			if groundcheck==noone
 			{
 				other.creator.doublejump=1
 				other.creator.doublejumptimer=DOUBLEJUMPTIME*3

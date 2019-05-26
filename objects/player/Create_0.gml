@@ -1,6 +1,7 @@
 hspd=0
 vspd=0
-groundcheck=false
+groundcheck=noone
+groundcheck_prev=noone
 JUMPSPEED=6.75 
 DOUBLEJUMPSPEED=7.5
 doublejump=0        ///what jum-p the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
