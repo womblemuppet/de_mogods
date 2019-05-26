@@ -56,14 +56,7 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 	with scrolls     ///scroll objects down with the 'view'
 	{
 		y-=scrollspeed
-		if object_index==player     ///if recently done or doing a rocket jump, prevent going off the top of the screen
-		{
-			if dash_angel_top_collision_safety>0
-			{
-				if !place_meeting(x,y+scrollspeed,block)
-					y+=scrollspeed
-			}
-		} 
+
 	} 
 	with block       ///kill blocks outside the map
 	{
@@ -72,6 +65,12 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 	}
 	with player      ///kill players above the top boundary
 	{
+		if dash_angel_top_collision_safety>0
+		{
+			if !place_meeting(x,y+scrollspeed,block)
+				y+=scrollspeed
+		}
+
 		if y<-10
 			playerdie()
 	}
@@ -149,6 +148,7 @@ if !surface_exists(fossil_surface)
 if call_a_block_has_been_destroyed
 {
 	a_block_has_been_destroyed()	
+	call_a_block_has_been_destroyed=false
 }
 	
 if will_update_blocks_to_draw_list==true

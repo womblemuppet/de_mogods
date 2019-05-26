@@ -445,13 +445,13 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			switch typeofblock
 			{
 				case 0:
-					ds_list_add(blockstosprite_prevlayer,spawn_block(kouchou.room_left_border_x+i*40,argument0,0))   break;
+					ds_list_add(blockstosprite,spawn_block(kouchou.room_left_border_x+i*40,argument0,0))   break;
 				case 1:
 					spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 2:
 					spawn_weaksand_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 3:
-					ds_list_add(blockstosprite_prevlayer,spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0))       ///gunnysnake itself doesn't make a block so this makes one for the initial position
+					ds_list_add(blockstosprite,spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0))       ///gunnysnake itself doesn't make a block so this makes one for the initial position
 					instance_create(kouchou.room_left_border_x+i*40,argument0,gunnysnake) break;
 				case 4:
 					spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
