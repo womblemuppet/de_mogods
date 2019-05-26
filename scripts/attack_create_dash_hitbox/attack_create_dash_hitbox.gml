@@ -1,5 +1,5 @@
 /***************************************************
-  attack_create_dash_hitbox(bunts,stun amount,horizontal kb, vertical kb,attack name,sprite index,image speed,stops dasher on contact,a.digammo)
+  attack_create_dash_hitbox(bunts,stun amount,horizontal kb, vertical kb,attack name,sprite index,image speed,stops dasher on contact)
 ****************************************************/
 var a;
 a=instance_create(x,y,dashattack)
@@ -14,7 +14,7 @@ a.attackname=argument4
 a.sprite_index=argument5
 a.image_speed=argument6
 a.stops_dasher_on_contact=argument7
-a.digammo=argument8
+
 
 if image_xscale=-1
 {

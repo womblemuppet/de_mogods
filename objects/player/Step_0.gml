@@ -283,7 +283,7 @@ if dash_angel_jump_counter>0
 		uniques_parachute=0
 		doublejump=2
          
-		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false,300)
+		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false)
 	}
 }
 if dash_angel_top_collision_safety>0
@@ -805,7 +805,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			sprite_index=sprites[67]
 		image_index=0        
 
-		attack_create_dash_hitbox(true,60,7,5,"upforawrddash",vet_upfowarddash_hitbox,0.25,true,0)
+		attack_create_dash_hitbox(true,60,7,5,"upforawrddash",vet_upfowarddash_hitbox,0.25,true)
         
 		vspd=-6
 		if right
@@ -1086,7 +1086,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				if dash_attacks_allowed_counter<1
 					dash_attacks_allowed_counter=12
                     
-				dash_current_hitbox_object=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.33,false,15)
+				dash_current_hitbox_object=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.33,false)
 				if !right
 					dash_current_hitbox_object.direction=180
 				player_dashed=true
@@ -1098,11 +1098,11 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				if dash_attacks_allowed_counter<1
 					dash_attacks_allowed_counter=20
                     
-				dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,15)
+				dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true)
 				if !right
 					dash_current_hitbox_object.direction=180
 				player_dashed=true
-				ground_dash_speed=10.5
+				ground_dash_speed=9.5  
 				
 				break;
 
