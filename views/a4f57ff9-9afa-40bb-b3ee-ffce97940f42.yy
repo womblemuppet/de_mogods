@@ -9,7 +9,7 @@
         "78cff2fe-a5e0-4c0d-beb7-6aa2c8065102"
     ],
     "filterType": "GMSprite",
-    "folderName": "class sprites",
+    "folderName": "orb caller icons",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
