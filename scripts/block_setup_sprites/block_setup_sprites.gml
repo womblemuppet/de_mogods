@@ -27,13 +27,13 @@ right=false
 up=false
 down=false
 
-if position_meeting(x+20,y,block)
+if position_meeting(x+40,y,block)
     right=true    
-if position_meeting(x,y-20,block)
+if position_meeting(x,y-40,block)
     up=true
-if position_meeting(x-20,y,block)
+if position_meeting(x-40,y,block)
     left=true
-if position_meeting(x,y+20,block)
+if position_meeting(x,y+40,block)
     down=true   
     
 if (left && right)

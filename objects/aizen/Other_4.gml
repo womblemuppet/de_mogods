@@ -245,6 +245,7 @@ if room==gameroom
 
 		with block
 		{
+			ds_list_add(aizen.blockstosprite,self.id)
 			if protection>0
 				image_blend=c_silver
 		}

@@ -7,16 +7,13 @@ will_update_blocks_to_draw_list=true
 
 var xx,yy;
 
-destroy_proximity_coods_x=ds_list_create()
-destroy_proximity_coods_y=ds_list_create()
-
-
-for (var i=0; i > ds_list_size(destroy_proximity_coods_x); i++)
+show_debug_message(string(ds_list_size(destroy_proximity_coods_x))+" is length of dpcx")
+for (i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 {
 	xx=destroy_proximity_coods_x[| i]	
 	yy=destroy_proximity_coods_y[| i]	
 	
-	for (var ii = 0; ii > aizen.to_draw_size; ii++)
+	for  (ii = 0; ii < aizen.to_draw_size; ii++)
 	{
 		with aizen.to_draw[| ii]
 		{
@@ -29,7 +26,6 @@ for (var i=0; i > ds_list_size(destroy_proximity_coods_x); i++)
 	
 	
 }
-
 
 ds_list_clear(destroy_proximity_coods_x)
 ds_list_clear(destroy_proximity_coods_y)

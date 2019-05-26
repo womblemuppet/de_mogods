@@ -139,7 +139,10 @@ with icespike
 }  //[finaledit]????what am I talking about =>optimise, could put in setup sprites script or something
 
 with aizen
+{
 	bloodmoon_recalc_call=true
+	
+}
 
 instance_destroy()
 
