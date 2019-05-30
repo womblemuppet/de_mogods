@@ -255,18 +255,22 @@ if room==gameroom
         
 	with player
 		sprite_index=sprites[0]
-    
-	biomeswitch=false   ///(I think) true when cutting gap between biomes
+		
 
-	for (iii=17; iii<61; iii+=1)   //row by row  
+	biomeswitch=false   ///(I think) true when cutting gap between biomes
+	player_baseline_prev=880
+	player_baseline=880
+
+	for (iii=17; iii<27; iii+=1)   //row by row  
 	{
 		biomeswitch=false
 		travelled+=40            
 		bedrockcounter=41
 		travelled_tick_biome_threshold_check()
 		terrain_generate(iii*40)
-	};
-    
+	}
+	
+    bedrockcounter=0
 	//create fossil surface for first time
 	redraw_fossil_surface()
 

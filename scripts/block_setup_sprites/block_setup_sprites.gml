@@ -1,4 +1,4 @@
-
+/*
 //exclude blocks that don't split
 if object_index==ice_block
     exit
@@ -14,6 +14,7 @@ if object_index==turret_block
     exit
 if object_index==instrument
     exit
+	*/
 
 sprite_list=aizen.chunkery_sprite_list[? blockchunktype]
 

@@ -7,7 +7,13 @@
  ***************************************************/
 if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 {
-	//show_message(bedrockcounter)
+	bedrockcounter-=40    ///reset bedrockcounter
+	will_update_blocks_to_draw_list=true
+
+	number_of_tergenned_lines++
+
+
+	//show_debug_message("terrain gen at "+string(player_baseline+CREATIONDELAY)+"baseline:"+string(player_baseline)+"   "+string(bedrockcounter)+" is bedrockcounter")
 
 	terrainammo-=1  //move one layer on in current terrain chunk
 	//show_message(terraintype+"    ammo="+string(terrainammo))
@@ -190,7 +196,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	var gapammo,makeok;
 	gapammo=0
 	makeok=true
-	bedrockcounter-=40    ///reset bedrockcounter
+
+	
 	for (i=0; i<kouchou.rw/40; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
@@ -427,7 +434,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			typeofblock=0   ///normal
             
             
-			if biome!="summit" && terrain_special_block_ok() && random(1)>0.9
+			if biome!="summit" && terrain_special_block_ok() && random(1)>0.9   ////[finaledit] horrible way of doing chance
 			{
 				typeofblock=1      ////payday
 			}
@@ -439,8 +446,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				typeofblock=4   ///pineapple
 			if random(1)>0.995 && terrain_special_block_ok()
 				typeofblock=5   ///sentinel    
-			if terrain_special_block_ok() && random(1)>0.9975
-				typeofblock=6      ////meteor block       
+     
             
 			switch typeofblock
 			{
@@ -457,8 +463,6 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 					spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 5:
 					spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case 6:
-					spawn_meteor_block(kouchou.room_left_border_x+i*40,argument0) break;
 				default:
 					show_error("unhandled typeofblock case",true)
 			}
@@ -504,27 +508,32 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				prop_create(kouchou.room_left_border_x+i*40,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
     
 			}
-			if random(1)>0.999                                                          /////critter
+			if !makeok
 			{
-				var critter_type,critter_species;
-				critter_type=choose("ground")//,"flying"
-				if critter_type=="ground"
-					critter_species=choose("worm")//,snake etc)
-				var a;
-				a=instance_create(i*40,argument0,critter)
-				with a
-					critter_setup("worm")
-			}
-			if random(1)>0.999                                                          /////throwable critters
-			{
-				var a;
-				a=instance_create(kouchou.room_left_border_x+i*40,argument0,crab)
-				with a
-					critter_throwable_setup(choose("crab","goat"))
+				if random(1)>0.995                                                          /////critter
+				{
+					var critter_type,critter_species;
+					critter_type=choose("ground")//,"flying"
+					if critter_type=="ground"
+						critter_species=choose("worm")//,snake etc)
+					var a;
+					a=instance_create(kouchou.room_left_border_x+i*40,5+argument0,critter)
+					with a
+						critter_setup("worm")
+				}
+				if random(1)>0.995                                                          /////throwable critters
+				{
+					var a;
+					a=instance_create(kouchou.room_left_border_x+i*40,argument0,crab)
+					with a
+						critter_throwable_setup(choose("crab","goat"))
+				}
 			}
 		}
           
 	};
 	
+
+
 	//ds_list_copy(blockstosprite,blockstosprite_prevlayer)   ///after adding all blocks to 
 }
