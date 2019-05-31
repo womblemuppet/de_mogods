@@ -49,14 +49,24 @@ for (i=0; i<instance_number(player); i+=1)
 	if instance_find(player,i).y>lowest
 		lowest=instance_find(player,i).y
 };
+	
+if lowest>player_baseline
+	player_baseline=lowest
+	
+var player_baseline_difference
+player_baseline_difference=player_baseline-player_baseline_prev
+
+
+player_baseline_prev=player_baseline
+
+
 if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
-{
+{	//////////////////////////////////////// CAMERA SCROLL
 	var scrollspeed;
 	scrollspeed=4
 	with scrolls     ///scroll objects down with the 'view'
 	{
 		y-=scrollspeed
-
 	} 
 	with block       ///kill blocks outside the map
 	{
@@ -81,22 +91,12 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 		if falling && y<40
 			y+=scrollspeed   //negates scroll up if falling, hopefully keeping icicles at top of screen
 	}
-    
-	bloodmoon_recalc_call=true
-    
-	bedrockcounter+=scrollspeed        ///add to bedrockcounter, ticker for creating new blocks
-	surface_redraw_counter+=scrollspeed
-	if surface_redraw_counter>SURFACE_REDRAW_EVERY
-	{
-		fossil_surface_redraw_needed=true
-		surface_redraw_counter-=SURFACE_REDRAW_EVERY
-	}
-	will_update_blocks_to_draw_list=true
 	
-	
-	travelled+=scrollspeed             ///add to travelled, total distance travelled downward
-	
-
+		
+	travelled+=scrollspeed             ///add to travelled, total distance scrolled downward
+	player_baseline-=scrollspeed	
+	player_baseline_prev-=scrollspeed   ///player_baseline_difference should be relative
+	//total_baseline_movement-=scrollspeed
 
 
 	if kouchou.map=="multiplayer"          //////////// biome background stuff for multiplayer map 
@@ -118,8 +118,25 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 		travelled_tick_biome_threshold_check()
 	}
 	
+    
+	bloodmoon_recalc_call=true
+}
+
+
+{
+	bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
+	total_baseline_movement+=player_baseline_difference
+	if player_baseline_difference!=0
+		show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
 	
-	terrain_generate(CREATIONDELAY)
+	surface_redraw_counter+=player_baseline_difference
+	if surface_redraw_counter>SURFACE_REDRAW_EVERY
+	{
+		fossil_surface_redraw_needed=true
+		surface_redraw_counter-=SURFACE_REDRAW_EVERY
+	}
+
+	terrain_generate(player_baseline+CREATIONDELAY-bedrockcounter)
 }
 
 

@@ -32,16 +32,18 @@ temp_volc_spawn_possibles_list=ds_list_create()
 candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
 SUPER_METER_AMOUNT=12    ///meter is full after this many attacks
 healthcap=5   ///max health value
-bedrockcounter=0   ///counts to 40, then terrain generation script is called
+bedrockcounter=0   ///counts to 40, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
 biome_length=1460  //1260
 biome_length_accumulative=0   
 
-//biomelevels   1960,3160,4860,99999   
+ 
 
-CREATIONDELAY=2400   //// complicated shit don't touch if you can help it
-
+CREATIONDELAY=200	//// complicated shit don't touch if you can help it 
 biome_schedule=ds_list_create()    ///list for which biome comes next
+number_of_tergenned_lines=0
+total_baseline_movement=0
+
 
 ds_list_add(biome_schedule,choose("forest","sand"))
 ds_list_add(biome_schedule,"cave")
@@ -52,7 +54,7 @@ ds_list_add(biome_schedule,"cave")
 
 
 
-bedrock=1080
+
 travelled=0      ////total distance in pixels that the screen has scrolled down
 mode=0          //// normal, about to shitcall, or shitcalling
 
@@ -64,7 +66,6 @@ mode=0          //// normal, about to shitcall, or shitcalling
 peacetime=0
 
 image_speed=0.15
-shitcalltickercd=5
 
 screenshake_amount=4
 screenshake_ammo=8
