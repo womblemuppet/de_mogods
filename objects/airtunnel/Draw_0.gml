@@ -13,3 +13,4 @@ draw_triangle(xx2,y-SPLITDISTANCE,xx2,y-HEIGHT,xx2+GIRTH,y-HEIGHT,false)
 if aizen.debug
     draw_self()
 
+draw_set_alpha(1)

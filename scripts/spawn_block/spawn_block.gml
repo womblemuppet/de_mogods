@@ -25,7 +25,7 @@ with a
 {
 	block_setup_sprites()
 }
-//a.sprite_index=sprite_index
+
 
 
 

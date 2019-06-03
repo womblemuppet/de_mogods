@@ -1,16 +1,17 @@
 
 //[finaledit]
-show_message(id)
+show_message(string(id)+" "+sprite_get_name(sprite_index))
+
 if position_meeting(x+40,y,block) 
-    //show_message("should be right")
-	//if position_meeting(x+20,y,block) 
-    //show_message("21 passes")
-	//if position_meeting(x+22,y,block) 
-    //show_message("22 passes")
-	//if position_meeting(x+30,y,block) 
-    //show_message("30 passes")
-	//if position_meeting(x+40,y,block) 
-    //show_message("40 passes")
+    show_message("should be right")
+//if position_meeting(x+20,y,block) 
+//show_message("21 passes")
+//if position_meeting(x+22,y,block) 
+//show_message("22 passes")
+//if position_meeting(x+30,y,block) 
+//show_message("30 passes")
+//if position_meeting(x+40,y,block) 
+//show_message("40 passes")
 show_message("right="+string(right))
 
 if position_meeting(x,y-40,block) 

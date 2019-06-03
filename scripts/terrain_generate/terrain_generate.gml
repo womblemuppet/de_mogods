@@ -7,8 +7,14 @@
  ***************************************************/
 if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 {
+
 	bedrockcounter-=40    ///reset bedrockcounter
-	will_update_blocks_to_draw_list=true
+
+	for (var i = 0; i < ds_list_size(blockstosprite_prevlayer); i++) 
+	{
+		ds_list_add(blockstosprite,blockstosprite_prevlayer[| i])
+	}
+	ds_list_clear(blockstosprite_prevlayer)
 
 	number_of_tergenned_lines++
 
@@ -198,7 +204,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	makeok=true
 
 	
-	for (i=0; i<kouchou.rw/40; i+=1)   ///create blocks by horizontal line
+	for (i=0; i<=kouchou.rw/40; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
 		if position_meeting(kouchou.room_left_border_x+i*40,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
@@ -451,7 +457,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			switch typeofblock
 			{
 				case 0:
-					ds_list_add(blockstosprite,spawn_block(kouchou.room_left_border_x+i*40,argument0,0))   break;
+					ds_list_add(blockstosprite_prevlayer,spawn_block(kouchou.room_left_border_x+i*40,argument0,0))   break;
 				case 1:
 					spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 2:
@@ -535,5 +541,4 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	
 
 
-	//ds_list_copy(blockstosprite,blockstosprite_prevlayer)   ///after adding all blocks to 
 }

@@ -92,7 +92,7 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 			y+=scrollspeed   //negates scroll up if falling, hopefully keeping icicles at top of screen
 	}
 	
-		
+	will_update_blocks_to_draw_list=true	
 	travelled+=scrollspeed             ///add to travelled, total distance scrolled downward
 	player_baseline-=scrollspeed	
 	player_baseline_prev-=scrollspeed   ///player_baseline_difference should be relative
@@ -177,7 +177,12 @@ if will_update_blocks_to_draw_list==true
     
 for (i=0; i<kouchou.playersin; i+=1)   ////[finaledit] using playersin might cause slot problems
 {
-	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
+	
+	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] should have a better system.
+	if gamepad
+		padnumber=ds_map_find_value(kouchou.keybinding_map_array[i],"padnumber")
+		
+		
 	/////////////////////////////////////////////////////////////////////////////////////////////////////PAUSE SCREEN REQUEST
 	if checkkey_released(ds_map_find_value(kouchou.keybinding_map_array[i],"startbutton"))
 	{
