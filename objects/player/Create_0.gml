@@ -28,7 +28,7 @@ FRICTION=0.6
 AIR_FRICTION=0.2
 RUNNING_HSPD_MAX=7
 orb_count_meter=0   ///meter, charged on landing hits
-supers=0  ///number of super charges
+super_mode=false
 dashcd=0  /// dash cooldown counter
 dash_current_hitbox_object=noone
 dash_has_lifted_off_ground=false
@@ -94,7 +94,6 @@ FRAME_SPEED_SLOW=0.1
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)
 dash_attacks_allowed_counter=0
-uniques_super_ooga_gp_enabled=false
 uniques_mines_enabled=false
 uniques_gpcombo_cripples_enabled=false
 uniques_teleport_enabled=false
@@ -110,6 +109,10 @@ FPUNCH_CHARGE_MAX=50
 FPUNCH_CHARGE_MIN=10
 fpunch_feet_counter=-1   /// -1 = not in use 0= please start 1/2 steps back 3= please start 4/5 steps forward (4 resets to -1)
 fpunch_has_made_hitbox=false
+
+//OOGA ULT
+uniques_super_ooga_gp_enabled=false
+unique_ooga_gp_charges=0
 
 
 //VETERAN ANTI AIR PUNCH

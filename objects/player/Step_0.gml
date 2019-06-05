@@ -85,7 +85,7 @@ if instance_exists(wave)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if supers>0 && random(1)>0.6      ///////////super effect
+if super_mode && random(1)>0.6      ///////////super effect
 {
 	var a;
 	a=instance_create(x,y,ef_stunspiral)
@@ -138,14 +138,14 @@ if STUNNED2>0
 		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
 			sprite_index=sprites[25]
-			if supers>0
-			sprite_index=sprites[26]
+			if super_mode
+				sprite_index=sprites[26]
 		}
 		else
 		{
 			sprite_index=sprites[0]
-			if supers>0
-			sprite_index=sprites[9]
+			if super_mode
+				sprite_index=sprites[9]
 		}
 	}
 }
@@ -264,7 +264,7 @@ if dash_angel_jump_counter>0
 			y-=1
             
 		sprite_index=sprites[28]
-		if supers>0
+		if super_mode
 			sprite_index=sprites[29]
 		image_index=0
 		image_speed=FRAME_SPEED_NORMAL
@@ -451,10 +451,10 @@ if groundcheck!=noone && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical
 		
 		var exception;
 		exception=false
-		if supers>0 && uniques_super_ooga_gp_enabled==true   ///ooga ult
+		if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true    ///////////////////////////ooga super gp
 		{
 			exception=true
-			player_super()
+			attack_ooga_ultimate()
 		}
 		
 		if !exception
@@ -509,7 +509,7 @@ if groundcheck!=noone && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical
 		if sprite_index==sprites[64] || sprite_index==sprites[65]
 		{
 			sprite_index=sprites[4]  //fall sprite
-			if supers>0
+			if super_mode
 				sprite_index=sprites[12] //fall super sprite
 		}
 	}
@@ -562,13 +562,13 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 		if recoil_sprite_counter>0
 		{
 			sprite_index=sprites[25]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[26]
 		}
 		else
 		{
 			sprite_index=sprites[0]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[9]
 		}
 		image_speed=FRAME_SPEED_NORMAL
@@ -695,7 +695,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
         
 		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=sprites[62]
-		if supers>0
+		if super_mode
 			sprite_index=sprites[63]
 		image_index=0
 
@@ -766,7 +766,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
 			alarm[1]=PUSH_COOLDOWN   
 			sprite_index=sprites[17]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[18]
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
@@ -795,7 +795,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		uniques_upforwarddash_lockdown=1
 		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=sprites[66]
-		if supers>0
+		if super_mode
 			sprite_index=sprites[67]
 		image_index=0        
 
@@ -841,7 +841,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			case 0:    ////ooga default heavy attack
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[21]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[22]
 			image_index=0
 			fpunch_lockdown=1
@@ -854,7 +854,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			case 1:    //// veteran aa punch
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[60]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[61]
 			image_index=0
 			uniques_aapunch_cd_counter=uniques_aapunch_COOLDOWN
@@ -865,7 +865,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[70]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[71]
 			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
 			uniques_sunblast_lockdown=1
@@ -876,7 +876,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			case 3:    ////bait shark attack heavy punch
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[80]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[81]
 			image_index=0
 			uniques_sharkattack_lockdown=1 
@@ -932,7 +932,7 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 			a.creator=self.id
             
 			sprite_index=sprites[23]
-			if supers>0
+			if super_mode
 				sprite_index=sprites[24]
 			image_speed=FRAME_SPEED_FAST                                   break;
 			case -1:
@@ -1018,7 +1018,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					hspd=0
 					dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
 					sprite_index=sprites[30]    ///groundpound freeze sprite
-					if supers>0
+					if super_mode
 						sprite_index=sprites[31]   ///groundpound freeze super sprite
 					image_speed=FRAME_SPEED_FAST
 					image_index=0
@@ -1037,9 +1037,8 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			vspd=0
 			cangroundpound=1
 			hspd=0
-			if supers==0
-				sprite_index=sprites[5]
-			else
+			sprite_index=sprites[5]
+			if super_mode
 				sprite_index=sprites[7]
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
@@ -1109,7 +1108,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			if player_dashed    ///generic dash stuff
 			{
 				sprite_index=sprites[15]                     ///////////////////   dash  sprite
-				if supers>0
+				if super_mode
 					sprite_index=sprites[16]
 				image_index=0
 				image_speed=FRAME_SPEED_NORMAL
@@ -1138,7 +1137,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				
 				var a;
 				a=effect_aniend(dash_no_ULT,0.2,1)               //////////////   dash trail effect
-				if supers>0
+				if super_mode
 				{
 					if P==0 || P==2
 						a.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
@@ -1351,7 +1350,7 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 		if pass
 		{
 			sprite_index=sprites[1]   ///run sprite
-			if supers>0
+			if super_mode
 				sprite_index=sprites[8]
 			image_speed=FRAME_SPEED_SLOW
 		}
@@ -1408,7 +1407,7 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 		if pass
 		{
 			sprite_index=sprites[1]    ///run sprite
-			if supers>0
+			if super_mode
 				sprite_index=sprites[8]
 			image_speed=FRAME_SPEED_SLOW
 		}
@@ -1470,7 +1469,7 @@ if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 
 	if hasjumpedsodosprites==true   ///do sprites at end (just to be clean and avoid double checks I think)
 	{
 		sprite_index=sprites[2]    ///jump windup sprite
-		if supers>0
+		if super_mode
 			sprite_index=sprites[10]
 		image_speed=FRAME_SPEED_FAST
 		image_index=0
@@ -1490,7 +1489,7 @@ if uniques_parachute==1     ////parachute floating effect
 		if sprite_index==sprites[64] || sprite_index==sprites[65]
 		{
 			sprite_index=sprites[4]  //fall sprite
-			if supers>0
+			if super_mode
 				sprite_index=sprites[12] //fall super sprite       
 		}        
 	}

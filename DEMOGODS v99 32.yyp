@@ -2775,14 +2775,6 @@
             }
         },
         {
-            "Key": "687a16df-f0db-43b5-b4be-f0a397ee5110",
-            "Value": {
-                "id": "6ce10c08-5160-42b8-8ce7-2cb2f539f847",
-                "resourcePath": "scripts\\player_super\\player_super.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6885b66a-a356-4876-8875-1d02ecce68cc",
             "Value": {
                 "id": "bd5e2c40-fbab-4eec-bcbb-45888cb53d59",
@@ -3412,6 +3404,14 @@
                 "id": "04a34cbd-8fd4-4ef2-80df-8fa470c9a416",
                 "resourcePath": "sprites\\bait_sharkattack_htibox\\bait_sharkattack_htibox.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
+            "Value": {
+                "id": "4ac42c23-9797-4627-ba75-57957bbfb130",
+                "resourcePath": "scripts\\attack_ooga_ultimate\\attack_ooga_ultimate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6740,7 +6740,6 @@
         "316e7352-3c38-4fd7-a968-eb7749188c97",
         "13fdfdf2-32de-4baf-9965-9a507374c341",
         "e554999d-3404-43ec-adcb-5e026400b6c7",
-        "687a16df-f0db-43b5-b4be-f0a397ee5110",
         "7c78568f-09b8-4ed9-a475-4db91c97d187",
         "8c9bed88-4c7a-41c7-bc6b-6aca093f9e04",
         "e96b130e-e567-44e2-8518-b227898ce887",
@@ -6760,6 +6759,7 @@
         "8f2497f9-ad09-4416-b04a-7931992aa8fb",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "61ee04b1-d091-4125-bec3-0a16c24a8357",
+        "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

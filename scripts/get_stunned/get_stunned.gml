@@ -8,7 +8,7 @@ player_flush_lockdowns()
 if argument1
 {
 	sprite_index=sprites[19]
-	if supers>0
+	if super_mode
 		sprite_index=sprites[20]
 	image_speed=0.08
 	var a;

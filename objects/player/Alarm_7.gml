@@ -4,7 +4,8 @@ aizen.playerulttimeindex[P]+=1
 
 if aizen.playerulttimeindex[P]>18 ///ran out of ult time
 {
-    supers=0
+    unique_ooga_gp_charges=0
+	super_mode=false
     aizen.playersupercount[P]=0
     aizen.playerulttimeindex[P]=0
 }

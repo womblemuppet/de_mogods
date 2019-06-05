@@ -17,7 +17,8 @@
         "6c702e2a-2603-4e19-8c09-8b1902866d44",
         "8f2497f9-ad09-4416-b04a-7931992aa8fb",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
-        "61ee04b1-d091-4125-bec3-0a16c24a8357"
+        "61ee04b1-d091-4125-bec3-0a16c24a8357",
+        "82967fe2-a899-4eb5-a9f5-7dd42146d74e"
     ],
     "filterType": "GMScript",
     "folderName": "attacks",

@@ -204,7 +204,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	makeok=true
 
 	
-	for (i=0; i<=kouchou.rw/40; i+=1)   ///create blocks by horizontal line
+	for (i=0; i<kouchou.rw/40; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
 		if position_meeting(kouchou.room_left_border_x+i*40,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
@@ -339,7 +339,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				makeok=false
 			var waveno;
 				waveno=floor(   (i*40)/(kouchou.rw/6))
-			if terrainammo>=terrain_wave_ha[waveno]
+			if terrainammo>=terrain_wave_ha[waveno]   ///errored here with 0 as waveno?
 				makeok=false
 			if terrainammo<=terrain_wave_ylim
 				makeok=true                 break;                

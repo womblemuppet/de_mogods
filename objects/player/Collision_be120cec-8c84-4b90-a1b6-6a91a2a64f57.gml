@@ -1,4 +1,4 @@
-if other.ready==true && other.dying==false && supers<1
+if other.ready==true && other.dying==false && !super_mode
 {
     ////////////////////////////////////////////////////////////////////////////////// ADD TO PLAYERS SUPERCOUNT
     orb_count_meter+=1

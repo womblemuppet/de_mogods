@@ -14,7 +14,7 @@ if pass
 {  
 	image_index=0
 	sprite_index=sprites[25]
-	if supers>0
+	if super_mode
 		sprite_index=sprites[26]    
 }
 

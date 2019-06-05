@@ -1,7 +1,7 @@
 if cangroundpound==2
 {
-    if supers>0
-        player_super()
+    if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true 
+        attack_ooga_ultimate()
     cangroundpound=3
     var d;
     d=other.id
