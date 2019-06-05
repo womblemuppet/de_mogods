@@ -1,8 +1,15 @@
 if owner==-1 
 {
-    if y<aizen.CREATIONDELAY-1500
-        grav(16)
-        //[finaledit] if y>10000 instance_die
+		if y<aizen.player_baseline+aizen.CREATIONDELAY
+			grav(8)
+        //[finaledit] 
+		if y<-30 || y>3000
+		{
+			show_debug_message("crab blerped off bottom of room")
+		    instance_destroy()
+		}
+
+
 }
 else
 {

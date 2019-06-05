@@ -10,7 +10,7 @@ for (var i = 0; i < to_draw_size; i++)
 }
 //show_debug_message(i)
 
-with ef_fossil
-{
-	draw_sprite(sprite_index,image_index,x,y)
-}
+//with ef_fossil
+//{
+//	draw_sprite(sprite_index,image_index,x,y)
+//}
