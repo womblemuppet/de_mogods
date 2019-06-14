@@ -19,7 +19,7 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 	if ready[i]!=-1
 	{
 		players_in+=1
-		if control_setup[i]!=3
+		if control_setup[i]=="kb_left" || control_setup[i]=="kb_right" || control_setup[i]=="kb_full"
 		{
 			if number_of_keyboards_in_use==0
 			              kb1_player_slot=i

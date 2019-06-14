@@ -142,25 +142,25 @@ for (i=0; i<4; i+=1)
 
 players_in=0
 next_open_slot=0
-controller_player_id[12]=-1   ///when controller joins, saves the player slot in this.
+controller_player_slot[12]=-1   ///when controller joins, saves the player slot in this.
 for (i=0; i<12; i+=1)
 {
-	controller_player_id[i]=-1
+	controller_player_slot[i]=-1
 };
 
 number_of_keyboards_in_use=0
 kb1_player_slot=-1
 kb2_player_slot=-1
-keyboard1_start_button=vk_space
-keyboard1_left_button=ord("A")
-keyboard1_right_button=ord("D")
-keyboard1_up_button=ord("W")
-keyboard1_down_button=ord("S")
-keyboard2_start_button=vk_enter
-keyboard2_left_button=ord("J")
-keyboard2_right_button=ord("L")
-keyboard2_up_button=ord("I")
-keyboard2_down_button=ord("K")
+kb1_start_button=vk_space
+kb1_left_button=ord("A")
+kb1_right_button=ord("D")
+kb1_up_button=ord("W")
+kb1_down_button=ord("S")
+kb2_start_button=vk_enter
+kb2_left_button=ord("J")
+kb2_right_button=ord("L")
+kb2_up_button=ord("I")
+kb2_down_button=ord("K")
 
 keybinding_map_array[MAX_PLAYER_COUNT]=undefined
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)

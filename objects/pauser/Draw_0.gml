@@ -22,7 +22,7 @@ draw_set_font(font_pausemenu)
 draw_set_colour(c_black)
 draw_set_halign(fa_center)
 draw_text(x,yy+20,string_hash_to_newline(string("PAUSED")))
-draw_text(x,yy+150,string_hash_to_newline("Player "+string(pausescreen_requester+1)))
+draw_text(x,yy+150,string_hash_to_newline("Player "+string(pausescreen_requester_id+1)))
 var menucontrolpromptyoffset;
 menucontrolpromptyoffset=40  ///minus
 
@@ -41,7 +41,7 @@ else
 {
     draw_set_font(font_ingame_controls_prompt)
     draw_set_colour(c_white)
-    if ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester],"controlsetup")==0 || ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester],"controlsetup")==1    ///[finaledit] hardcoded, shouldn't be
+    if ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester_id],"controlsetup")==0 || ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester_id],"controlsetup")==1    ///[finaledit] hardcoded, shouldn't be
     {
         draw_text(xx+WIDTH-760,yy+HEIGHT-menucontrolpromptyoffset,string_hash_to_newline("V"))
         draw_text(xx+WIDTH-560,yy+HEIGHT-menucontrolpromptyoffset,string_hash_to_newline("B"))

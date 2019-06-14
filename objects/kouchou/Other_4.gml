@@ -27,10 +27,10 @@ if room==init
         
 	for (i=0; i<12; i+=1)
 	{
-		if kouchou.controller_player_id[i]!=-1
+		if kouchou.controller_player_slot[i]!=-1
 		{
-			tempcontrollerid[kouchou.controller_player_id[i]]=i
-			//show_message("setting tempcontrollerid "+string(kouchou.controller_player_id[i])+" to "+string(i))
+			tempcontrollerid[kouchou.controller_player_slot[i]]=i
+			//show_message("setting tempcontrollerid "+string(kouchou.controller_player_slot[i])+" to "+string(i))
 		}
 	};
 }
@@ -83,7 +83,7 @@ if room==init
 			ds_map_add(keybinding_map_array[i],"rightbutton",gp_padr)
 			ds_map_add(keybinding_map_array[i],"upbutton",gp_face1)
 			ds_map_add(keybinding_map_array[i],"downbutton",gp_padd)
-			ds_map_add(keybinding_map_array[i],"dashbutton",gp_face2)  //?
+			ds_map_add(keybinding_map_array[i],"dashbutton",gp_face2)
 			ds_map_add(keybinding_map_array[i],"lightbutton",gp_face3)
 			ds_map_add(keybinding_map_array[i],"heavybutton",gp_face4)
 			ds_map_add(keybinding_map_array[i],"startbutton",gp_start) break;              

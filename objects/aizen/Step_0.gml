@@ -174,10 +174,9 @@ if will_update_blocks_to_draw_list==true
 	will_update_blocks_to_draw_list=false
 }
     
-    
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// pause
 for (i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems
 {
-	
 	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] should have a better system.
 	if gamepad
 		padnumber=ds_map_find_value(kouchou.keybinding_map_array[i],"padnumber")
@@ -188,9 +187,9 @@ for (i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might c
 	{
 		if pausescreen_doubletap_counter<1
 		{
-			pausescreen_requester=i
+			pausescreen_requester_id=i
 			alarm[11]=2   ///delay
-			pausescreen_doubletap_counter=40
+			pausescreen_doubletap_counter=20
 		}
 	}
 };

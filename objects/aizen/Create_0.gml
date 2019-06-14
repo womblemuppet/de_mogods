@@ -92,7 +92,7 @@ scoer=0
 
 pausescreen_doubletap_counter=0
 
-pausescreen_requester=-4
+pausescreen_requester_id=-4
 
 BLOCK_DESTRUCTION_FIDELITY=5
 

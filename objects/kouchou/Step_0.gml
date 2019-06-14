@@ -27,7 +27,7 @@ if room==multiplayermenu
     
 	if number_of_keyboards_in_use==0
 	{  
-		if  (keyboard_check_pressed(keyboard1_start_button) || keyboard_check_pressed(keyboard2_start_button) )   //////// keyboard start button (first kb player)
+		if  (keyboard_check_pressed(kb1_start_button) || keyboard_check_pressed(kb2_start_button) )   //////// keyboard start button (first kb player)
 		{
 			set_next_open_slot()
 			if game_start_countdown<1
@@ -44,7 +44,7 @@ if room==multiplayermenu
 	}
 	else
 	{    
-		if keyboard_check_pressed(keyboard1_start_button)                                         ///start button P1 (options/lockin)
+		if keyboard_check_pressed(kb1_start_button)                                         ///start button P1 (options/lockin)
 		{
 			character_select_button_start(kb1_player_slot)
 		}
@@ -52,7 +52,7 @@ if room==multiplayermenu
 	
 	if number_of_keyboards_in_use==1 && keyboard_added_this_step==false
 	{  
-		if keyboard_check_pressed(keyboard2_start_button)
+		if keyboard_check_pressed(kb2_start_button)
 		{
 			if players_in<MAX_PLAYER_COUNT                                                                                           /// keyboard entry player 2
 			{
@@ -76,7 +76,7 @@ if room==multiplayermenu
 	}
 	else if number_of_keyboards_in_use>1
 	{
-		if keyboard_check_pressed(keyboard2_start_button)                                                                           ///start button P2 (options/lockin)
+		if keyboard_check_pressed(kb2_start_button)                                                                           ///start button P2 (options/lockin)
 		{
 			character_select_button_start(kb2_player_slot)
 		}    
@@ -93,10 +93,10 @@ if room==multiplayermenu
 	//////Add controller when start button pressed/////
 	for (i=0; i<12; i+=1)
 	{
-		if controller_player_id[i]==-1 && gamepad_is_connected(i) && gamepad_button_check_pressed(i,gp_start)
+		if controller_player_slot[i]==-1 && gamepad_is_connected(i) && gamepad_button_check_pressed(i,gp_start)
 		{
 			controller_added_this_step=true
-			controller_player_id[i]=next_open_slot
+			controller_player_slot[i]=next_open_slot
 			ready[next_open_slot]=0
 			control_setup[next_open_slot]="controller_default"
 			player_join_update_controller_variables()
@@ -109,11 +109,11 @@ if room==multiplayermenu
 	{      
 		for (iii=0; iii<12; iii+=1)
 		{
-			if controller_player_id[iii]>-1
+			if controller_player_slot[iii]>-1
 			{
 				if gamepad_button_check_pressed(iii,gp_start)                                                                           ///start button controllers (options/lockin)
 				{
-					character_select_button_start(  controller_player_id[iii]  )
+					character_select_button_start(  controller_player_slot[iii]  )
 				}
 			}
 		}
@@ -122,49 +122,82 @@ if room==multiplayermenu
 
         
         
-	//////select screen keyboard controls
+	//////select screen keyboard
 	if number_of_keyboards_in_use>0
 	{
-		if keyboard_check_pressed(keyboard1_left_button)
+		if keyboard_check_pressed(kb1_left_button)
 		{
 			character_select_button_left(kb1_player_slot)
 		}
-		if keyboard_check_pressed(keyboard1_right_button)
+		if keyboard_check_pressed(kb1_right_button)
 		{
 			character_select_button_right(kb1_player_slot)
 		}
-		if keyboard_check_pressed(keyboard1_up_button)
+		if keyboard_check_pressed(kb1_up_button)
 		{
 			character_select_button_up(kb1_player_slot)
 		}
-		if keyboard_check_pressed(keyboard1_down_button)
+		if keyboard_check_pressed(kb1_down_button)
 		{
 			character_select_button_down(kb1_player_slot)
 		}
-		if keyboard_check_pressed(keyboard1_start_button)
+		if keyboard_check_pressed(kb1_start_button)
 		{
 			character_select_button_start(kb1_player_slot)		
 		}
 	}
 	if number_of_keyboards_in_use>1
 	{
-		if keyboard_check_pressed(keyboard2_left_button)
+		if keyboard_check_pressed(kb2_left_button)
 		{
 			character_select_button_left(kb2_player_slot)
 		}
-		if keyboard_check_pressed(keyboard2_right_button)
+		if keyboard_check_pressed(kb2_right_button)
 		{
 			character_select_button_right(kb2_player_slot)
 		}
-		if keyboard_check_pressed(keyboard2_up_button)
+		if keyboard_check_pressed(kb2_up_button)
 		{
 			character_select_button_up(kb2_player_slot)
 		}
-		if keyboard_check_pressed(keyboard2_down_button)
+		if keyboard_check_pressed(kb2_down_button)
 		{
 			character_select_button_down(kb2_player_slot)
 		}
+		if keyboard_check_pressed(kb2_start_button)
+		{
+			character_select_button_start(kb2_player_slot)		
+		}
 	}
+	
+	//////select screen controllers	
+	for (i=0; i<12; i+=1)
+	{
+		if controller_player_slot[i]>-1 && gamepad_is_connected(i) 
+		{
+			if gamepad_button_check_pressed(i,gp_padl)
+			{
+				character_select_button_left(controller_player_slot[i])
+			}
+			if gamepad_button_check_pressed(i,gp_padr)
+			{
+				character_select_button_right(controller_player_slot[i])
+			}
+			if gamepad_button_check_pressed(i,gp_padu)
+			{
+				character_select_button_up(controller_player_slot[i])
+			}
+			if gamepad_button_check_pressed(i,gp_padd)
+			{
+				character_select_button_down(controller_player_slot[i])
+			}
+			if gamepad_button_check_pressed(i,gp_start)
+			{
+				character_select_button_start(controller_player_slot[i])		
+			}
+		}
+	}
+	
 }
 else if room==menu
 {
@@ -230,7 +263,7 @@ else if room==loremenu
 }
 else if room==settings 
 {
-	if keyboard_check(keyboard1_start_button)
+	if keyboard_check(kb1_start_button)
 	{
 		if setmenu_codetxt=="drinkmode"
 			drinkmode=true
