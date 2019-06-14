@@ -175,7 +175,7 @@ if will_update_blocks_to_draw_list==true
 }
     
     
-for (i=0; i<kouchou.playersin; i+=1)   ////[finaledit] using playersin might cause slot problems
+for (i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems
 {
 	
 	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] should have a better system.

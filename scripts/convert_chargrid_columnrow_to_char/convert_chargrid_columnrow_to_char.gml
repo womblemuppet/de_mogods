@@ -1,4 +1,4 @@
-cars2=argument1
+TESTING_PLACEHOLDER=argument1
 
 return argument0
 /*if argument0==0

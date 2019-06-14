@@ -1,19 +1,19 @@
 if ready[argument0]==0
 {
-    switch selectchar[argument0]
+    switch selected_character_id[argument0]
     {
         case 0:
-        selectchar[argument0]=1 break;
+        selected_character_id[argument0]=1 break;
         case 1:
-        selectchar[argument0]=2 break;
+        selected_character_id[argument0]=2 break;
         case 2:
-        selectchar[argument0]=3 break;
+        selected_character_id[argument0]=3 break;
         case 3:
-        selectchar[argument0]=4 break;
+        selected_character_id[argument0]=4 break;
         case 4:
-        selectchar[argument0]=5 break;
+        selected_character_id[argument0]=5 break;
         case 5:
-        selectchar[argument0]=0 break;            
+        selected_character_id[argument0]=0 break;            
     }
 }
 if ready[argument0]==1

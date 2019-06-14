@@ -93,20 +93,20 @@ if room==gameroom
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		player_draw_HUD[i]=false
-		if i<kouchou.playersin
+		if i<kouchou.players_in
 			player_draw_HUD[i]=true
 	};
 
     
     
 	/***************************************************
-	convert selectchar[] (player select selected character ID number) into character strings
+	convert selected_character_id[] (player select selected character ID number) into character strings
 	***************************************************/    
    
 	tempcharstrings[kouchou.MAX_PLAYER_COUNT]=""
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
-		switch kouchou.selectchar[i]
+		switch kouchou.selected_character_id[i]
 		{
 			case 0:
 			tempcharstrings[i]="ooga" break;
@@ -117,7 +117,7 @@ if room==gameroom
 			case 3:
 			tempcharstrings[i]="bait" break;
 			default:
-			show_error("unknown selectchar ID encountered during conversion to strings",true) break;
+			show_error("unknown selected_character_id ID encountered during conversion to strings",true) break;
 		}
 	};
     
@@ -143,22 +143,22 @@ if room==gameroom
 	///////////////////////////////////////////////////////////////////// SPAWN LOCATIONS //////////////////////////////////////////////
 	
 	spawn_positions_x[kouchou.MAX_PLAYER_COUNT]=0
-	if kouchou.playersin==0 || kouchou.playersin==1
+	if kouchou.players_in==0 || kouchou.players_in==1
 	{
 		show_error("error - players in game less than 2",true)
 	}
-	if kouchou.playersin==2
+	if kouchou.players_in==2
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920
 	}
-	if kouchou.playersin==3
+	if kouchou.players_in==3
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920
 		spawn_positions_x[2]=600
 	}
-	if kouchou.playersin==4
+	if kouchou.players_in==4
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920
@@ -174,7 +174,7 @@ if room==gameroom
 		
 	var a;
     
-	for (i=0; i<kouchou.playersin; i+=1)
+	for (i=0; i<kouchou.players_in; i+=1)
 	{
 		var ii;
 		ii=i

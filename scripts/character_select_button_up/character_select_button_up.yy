@@ -1,8 +1,8 @@
 {
-    "id": "d6dfbe71-b135-4c67-be28-9c61d1a5cceb",
+    "id": "5e18a68d-8769-494f-b35b-703427e4d778",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "find_first_slot",
+    "name": "character_select_button_up",
     "IsCompatibility": false,
     "IsDnD": false
 }

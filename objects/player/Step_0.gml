@@ -1132,7 +1132,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
                 
 				dashcd=DASH_COOLDOWN_TIME    ///dash cooldown time (also DASH LOCKDOWN TIME, THOUGH THERE IS A FORGIVE MECHANIC IF IT HITS WALL)     
 				dash_button_currently_held=true
-                                show_debug_message("dash_button_currently_held set to true")
+
 				
 				
 				var a;

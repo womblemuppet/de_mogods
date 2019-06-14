@@ -25,8 +25,8 @@ Font font_coins has been converted to font family Arial (Bold)
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_coins\font_coins.gms1.png
 Font font_debug has been converted to font family Ebrima (Regular)
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_debug\font_debug.gms1.png
-Font font_startinggame has been converted to font family Britannic Bold (Regular)
-GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_startinggame\font_startinggame.gms1.png
+Font font_game_start_countdown has been converted to font family Britannic Bold (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_game_start_countdown\font_game_start_countdown.gms1.png
 Font font_openingcredits has been converted to font family Eras Light ITC (Regular)
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_openingcredits\font_openingcredits.gms1.png
 Font font_openingcredits_big has been converted to font family Eras Light ITC (Regular)

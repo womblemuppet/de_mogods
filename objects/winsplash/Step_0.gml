@@ -6,7 +6,7 @@ if dying
         
     if !startcheck
     {
-        for (i=0; i<kouchou.playersin; i+=1)  
+        for (i=0; i<kouchou.players_in; i+=1)  
         {
             gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
             if gamepad==true

@@ -1,6 +1,6 @@
 with kouchou
 {
-    playersin=1
+    players_in=1
     map=argument0
     room=init
 }

@@ -1,4 +1,4 @@
-if startinggame>0
+if game_start_countdown>0
     exit
     
 if room==loremenu

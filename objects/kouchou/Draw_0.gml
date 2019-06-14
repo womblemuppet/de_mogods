@@ -184,14 +184,14 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
         
 	//player join slot prompts
 	draw_set_colour(c_silver) 
-	if ready[i]==-1 && i==nextopenslot
+	if ready[i]==-1 && i==next_open_slot
 	{
 		draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+200,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
 		var t;
 		t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
-		if numberofkeyboardsinuse==1
+		if number_of_keyboards_in_use==1
 			t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
-		if numberofkeyboardsinuse>1
+		if number_of_keyboards_in_use>1
 			t="press [start]\n on controller to join"
 		draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+50,t)
 	}
@@ -209,9 +209,9 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 	{
 		//draw character portrait
 		if ready[i]!=2
-			draw_sprite_ext(character_portraits_array[selectchar[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+			draw_sprite_ext(character_portraits_array[selected_character_id[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
 		else
-			draw_sprite_ext(character_portraits_array[selectchar[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+			draw_sprite_ext(character_portraits_array[selected_character_id[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
 				
 		//draw options frame
 		if ready[i]==0 || ready[i]==1
@@ -220,12 +220,12 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 	if ready[i]==0     /// selecting character, draw lore
 	{
 	
-			for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selectchar[i]]); ++ii) 
+			for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selected_character_id[i]]); ++ii) 
 			{
-				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*15),ds_list_find_value(lore_character_select_bio_array[selectchar[i]],ii)   )
+				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*15),ds_list_find_value(lore_character_select_bio_array[selected_character_id[i]],ii)   )
 			}
 			
-		//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selectchar[i]]) [continue] lore_character_select_bio_0
+		//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selected_character_id[i]]) [continue] lore_character_select_bio_0
 	}
 	else if ready[i]==1                                                                   ////// player options setup 
 	{
@@ -237,16 +237,17 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 		if readymenuselect[i]==0
 			draw_set_colour(hovercol)
 		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+100,"control scheme -")
+		
 		var t;
-		if control_setup[i]==0
+		if control_setup[i]=="kb_full"
 			t="keyboard full"
-		else if control_setup[i]==1
+		else if control_setup[i]=="kb_left"
 			t="keyboard narrow 1"
-		else if control_setup[i]==2
+		else if control_setup[i]=="kb_right"
 			t="keyboard narrow 2"
-		else if control_setup[i]==3
+		else if control_setup[i]=="controller_default"
 			t="controller default"
-		else if control_setup[i]==4
+		else if control_setup[i]=="controller_custom"
 			t="controller custom 1"
 
 		draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+100,t)
@@ -272,14 +273,14 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 };
     
 	if !competitive_mode
-	draw_sprite(mock_character_grid_background,0,midx,midy)
+		draw_sprite(mock_character_grid_background,0,midx,midy)
         
 	for (i=0; i<chargrid_numberofcolumns; i+=1)
 	{   
-	for (ii=0; ii<chargrid_numberofrows; ii+=1)
-	{
-		draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
-	};    
+		for (ii=0; ii<chargrid_numberofrows; ii+=1)
+		{
+			draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
+		}
 	}
     
 	/*draw_set_colour(c_white)
@@ -308,26 +309,23 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 
 	for (i=0; i<4; i+=1)
 	{
-	if ready[i]==0
-		draw_sprite(selectbox_sprites[i],char_selectbox_subspr+i,chargrid_x[convert_chargrid_char_to_column(selectchar[i])],chargrid_y[convert_chargrid_char_to_row(selectchar[i])])
+		if ready[i]==0
+			draw_sprite(selectbox_sprites[i],char_selectbox_subspr+i,chargrid_x[convert_chargrid_char_to_column(selected_character_id[i])],chargrid_y[convert_chargrid_char_to_row(selected_character_id[i])])
 	};
     
-    
-    
-    
 	///draw game start countdown
-	if startinggame>0
+	if game_start_countdown>0
 	{
 		draw_set_colour(c_white)
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_center)
 		draw_set_font(font_startinggame)
 		var t;
-		if startinggame>57
+		if game_start_countdown>57
 			t="3"
-		else if startinggame>39
+		else if game_start_countdown>39
 			 t="2"
-		else if startinggame>21
+		else if game_start_countdown>21
 			t="1"
 		else
 			t="start"

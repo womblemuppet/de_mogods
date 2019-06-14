@@ -127,7 +127,7 @@ playerhandicap[0]=0
 playerhandicap[1]=0
 playerhandicap[2]=0
 MAX_PLAYER_COUNT=4
-startinggame=0
+game_start_countdown=0
 
 
 
@@ -140,17 +140,17 @@ for (i=0; i<4; i+=1)
 
 
 
-playersin=0
-nextopenslot=0
-controllerin[12]=-1   ///when controller joins, saves the player slot in this.
+players_in=0
+next_open_slot=0
+controller_player_id[12]=-1   ///when controller joins, saves the player slot in this.
 for (i=0; i<12; i+=1)
 {
-	controllerin[i]=-1
+	controller_player_id[i]=-1
 };
 
-numberofkeyboardsinuse=0
-keyboardoneslot=-1
-keyboardtwoslot=-1
+number_of_keyboards_in_use=0
+kb1_player_slot=-1
+kb2_player_slot=-1
 keyboard1_start_button=vk_space
 keyboard1_left_button=ord("A")
 keyboard1_right_button=ord("D")
@@ -176,10 +176,10 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 };
 
 
-control_setup[MAX_PLAYER_COUNT]=0   // 0 = kb full  1 = kbnarrow(1) 2 = kbnarrow(2)  3 = controller default
+control_setup[MAX_PLAYER_COUNT]="kb_full"   // 0 = kb full  1 = kbnarrow(1) 2 = kbnarrow(2)  3 = controller default
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-	control_setup[i]=0
+	control_setup[i]="kb_full"
 };
 
 palette[MAX_PLAYER_COUNT]=0
@@ -228,10 +228,10 @@ character_portraits_array[3]=character_portraits_bait
 character_portraits_array[4]=character_portraits_bert
 character_portraits_array[5]=character_portraits_jermy
 
-selectchar[3]=-1
-selectchar[1]=-1
-selectchar[2]=-1
-selectchar[0]=-1
+selected_character_id[3]=-1
+selected_character_id[1]=-1
+selected_character_id[2]=-1
+selected_character_id[0]=-1
 selectbox_sprites[3]=character_selectboxP4
 selectbox_sprites[0]=character_selectboxP1
 selectbox_sprites[1]=character_selectboxP2
@@ -267,17 +267,17 @@ lore_character_select_bio_array=[lore_character_select_bio_0,lore_character_sele
 var lore_text_line_width;
 lore_text_line_width=450
 lore_character_select_name[0]="untitled"
-string_split_lines_add_to_list("this guy is kinda strong and likes punching things.",lore_text_line_width,lore_character_select_bio_array[0])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[0])
 lore_character_select_name[1]="Veteran"
-string_split_lines_add_to_list("look at this dude he's got a robot arm and he likes setting traps all around the place pretty cool",lore_text_line_width,lore_character_select_bio_array[1])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[1])
 lore_character_select_name[2]="Sunslinger"
-string_split_lines_add_to_list("this guy is not just a guy - he can shoot pure sun beams out of his fingers.",lore_text_line_width,lore_character_select_bio_array[2])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[2])
 lore_character_select_name[3]="Bait"
-string_split_lines_add_to_list("long ago he lost a fight against a shark and now he's wearing a shark kickass",lore_text_line_width,lore_character_select_bio_array[3])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[3])
 lore_character_select_name[4]="Bert"
-string_split_lines_add_to_list("  ",lore_text_line_width,lore_character_select_bio_array[4])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[4])
 lore_character_select_name[5]="jermy"
-string_split_lines_add_to_list("  ",lore_text_line_width,lore_character_select_bio_array[5])
+string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[5])
 
 
 

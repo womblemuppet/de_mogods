@@ -1,8 +1,8 @@
 {
-    "id": "16ea790d-cfed-49da-a91a-fcf51cdfa36d",
+    "id": "ebbed6f1-93ff-476a-bee0-2ad1ebe5fcf6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "multiplayer_menu_left_button",
+    "name": "character_select_button_start",
     "IsCompatibility": false,
     "IsDnD": false
 }

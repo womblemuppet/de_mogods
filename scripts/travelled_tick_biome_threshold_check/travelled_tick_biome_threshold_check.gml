@@ -17,11 +17,11 @@ if travelled>biome_length+biome_length_accumulative
     {
         if biome=="forest"
         {
-              backdrop_create(jangle,room_height+CREATIONDELAY-800,jangle,810,jangleend)  //ends best at 700
+              backdrop_create(jangle,room_height+200,jangle,810,jangleend)  //ends best at 700
         }
         if biome=="cave"
         {
-              backdrop_create(cave_start,room_height+CREATIONDELAY-800,cave_fill,10000,cave_end)
+              backdrop_create(cave_start,room_height+200,cave_fill,10000,cave_end)
         }
     }
 }
