@@ -1631,6 +1631,7 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 			b.creator=creator
 			b.target=creator
 			b.image_xscale=image_xscale
+			b.hit_collector=self.id
 			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
 		}
 
