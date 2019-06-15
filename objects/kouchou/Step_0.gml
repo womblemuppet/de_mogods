@@ -41,14 +41,7 @@ if room==multiplayermenu
 				}
 			}
 		}
-	}
-	//else
-	//{    
-	//	if keyboard_check_pressed(kb1_start_button)                                         ///start button P1 (options/lockin)
-	//	{
-	//		character_select_button_start(kb1_player_slot)
-	//	}
-	//}         
+	} 
 	
 	if number_of_keyboards_in_use==1
 	{  
@@ -74,15 +67,6 @@ if room==multiplayermenu
 			}
 		}
 	}
-	//else if number_of_keyboards_in_use>1
-	//{
-	//	if keyboard_check_pressed(kb2_start_button)                                                                           ///start button P2 (options/lockin)
-	//	{
-	//		character_select_button_start(kb2_player_slot)
-	//	}    
-	//}
-    
-
 	
 	
 	var controller_added_this_step;
@@ -102,26 +86,7 @@ if room==multiplayermenu
 			player_join_update_controller_variables()
 		}
 	}
-	
-	
-	
-	//if controller_added_this_step==false
-	//{      
-	//	for (iii=0; iii<12; iii+=1)
-	//	{
-	//		if controller_player_slot[iii]>-1
-	//		{
-	//			if gamepad_button_check_pressed(iii,gp_start)                                                                           ///start button controllers (options/lockin)
-	//			{
-	//				character_select_button_start(  controller_player_slot[iii]  )
-	//			}
-	//		}
-	//	}
-	//}
-    
-
-        
-        
+           
 	//////select screen keyboard
 	if number_of_keyboards_in_use>0 && !keyboard_added_this_step
 	{
@@ -251,9 +216,6 @@ else if room==menu
 				show_error("unknown menuselect destination",true) break;
 		}
 	}
-
-
-
 }
 else if room==loremenu
 {
@@ -289,7 +251,8 @@ else if room==settings
 }
 else if room==gameroom
 {
-	for(i =0 ; i < players_in-1;i++) //[finaledit] may cause problem using players_in
+	/////////ANALOGUE STICK EVENT TRACKER
+	for(i =0 ; i < players_in;i++) //[finaledit] may cause problem using players_in
 	{
 		if ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
 		{
