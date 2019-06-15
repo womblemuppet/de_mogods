@@ -122,8 +122,10 @@ switch character
 			sprites[25]=Vet_3H_recoiling
 			sprites[24]=Vet_3H_airgrab  ///super version (to be changed)
 			sprites[23]=Vet_3H_airgrab 
-			sprites[66]=Vet_3H_upforward_dash
-			sprites[67]=Vet_3H_upforward_dash
+			sprites[69]=Vet_3H_dig_h  ////super version (to be changed)
+			sprites[68]=Vet_3H_dig_h 
+			sprites[66]=Vet_3H_dig_channel   ///super version (to be changed)
+			sprites[67]=Vet_3H_dig_channel
 			sprites[65]=Vet_3H_fall_parachute  ///super version (to be changed)
 			sprites[64]=Vet_3H_fall_parachute
 			sprites[62]=Vet_3H_forwardpunch

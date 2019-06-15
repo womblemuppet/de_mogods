@@ -18,6 +18,16 @@ dash_angel_jump=0
 dash_angel_jump_counter=0
 uniques_whirlwind_active=false
 
+if uniques_vet_dig_enabled
+{
+	if uniques_vet_digging!=0
+	{
+		attack_vet_dig_cancel()
+		uniques_vet_digging=0
+	}
+	
+}
+
 player_set_idle()
 
 

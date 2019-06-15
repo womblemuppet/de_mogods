@@ -2751,6 +2751,14 @@
             }
         },
         {
+            "Key": "663699a3-8a4e-4769-a82c-0917d3a392f6",
+            "Value": {
+                "id": "cdc03ef7-78b1-46b2-a14b-060ecc09318c",
+                "resourcePath": "sprites\\Vet_3H_dig_h\\Vet_3H_dig_h.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "663a5faa-7c28-474c-a200-ba4d650241f8",
             "Value": {
                 "id": "c2b73e4f-33d2-494b-b488-62003d64694f",
@@ -5327,6 +5335,14 @@
             }
         },
         {
+            "Key": "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
+            "Value": {
+                "id": "10cc973f-6219-482a-acac-6599826f81d5",
+                "resourcePath": "scripts\\attack_vet_dig_cancel\\attack_vet_dig_cancel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ca052d1c-cd49-4715-99f2-46f79b521697",
             "Value": {
                 "id": "f3191343-b35b-4ce4-9016-80eb094adaaf",
@@ -5682,7 +5698,7 @@
             "Key": "d53eeaf3-eae8-4609-b385-1e7047aa1ac1",
             "Value": {
                 "id": "e8aad8c1-c500-42fc-a1ab-88fbee4191c6",
-                "resourcePath": "sprites\\Vet_3H_upforward_dash\\Vet_3H_upforward_dash.yy",
+                "resourcePath": "sprites\\Vet_3H_dig_channel\\Vet_3H_dig_channel.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6092,6 +6108,14 @@
                 "id": "d1076646-92a8-4a98-bfe2-05874dc54b4b",
                 "resourcePath": "sprites\\menu_competitive_groundback\\menu_competitive_groundback.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e57de6f1-e552-4005-9acd-a9a134675480",
+            "Value": {
+                "id": "3409ee6d-e008-4fc5-9d7d-fb7166d26209",
+                "resourcePath": "scripts\\player_not_digging\\player_not_digging.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6761,6 +6785,7 @@
         "e96b130e-e567-44e2-8518-b227898ce887",
         "16f91af5-117a-4539-9940-d122b45bc1f6",
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
+        "e57de6f1-e552-4005-9acd-a9a134675480",
         "078ae249-2430-4b2e-88fd-42be5294cab8",
         "558e254a-f29a-423d-8816-b45cadd7edbd",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
@@ -6776,6 +6801,7 @@
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "61ee04b1-d091-4125-bec3-0a16c24a8357",
         "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
+        "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

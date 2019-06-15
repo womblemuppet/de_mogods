@@ -7,14 +7,18 @@ a.creator=creator
 a.target=-1
 a.x+=GAP*n
 a.image_xscale=image_xscale
-a.image_blend=c_yellow
+a.hit_collector=self.id
+
+
+for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
+{
+	a.hit[i]=hit[i]
+}
 
 
 a=effect_aniend(vet_groundpunch_shockwave,0.8,-1)
 a.x+=GAP*n
 a.image_xscale=image_xscale
-
-//show_debug_message("shockwave"+string(n)+" x="+string(a.x)+" y="+string(a.y))
 
 if shockwaves<1
 	instance_destroy()

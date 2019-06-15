@@ -641,9 +641,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		player_throw_crab()
 	}  
 
-    
-    ///pick up crab
-	if !exception && holding_a_crab==false
+	if !exception && holding_a_crab==false     ///pick up crab
 	{
 		if distance_to_object(instance_nearest(x,y,crab))<30
 		{
@@ -659,9 +657,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			}
 		}
 	}
-    
-
-    
+	
 	if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
 	{
 		exception=true
@@ -675,9 +671,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		if super_mode
 			sprite_index=sprites[63]
 		image_index=0
-
-        
-    }
+	}
     
     /*
 	if !exception && dashcd>0 && uniques_attack_during_dash==true && uniques_combatroll_lockdown==0    ////slinger dash roll attack
@@ -1156,21 +1150,36 @@ if dash_button_currently_held
 
 
 /////////////////////////////////////////////////////////////////////////////////// placable abilities
-if checkkey(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
+if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
 {
 	switch attacks[? "special hold down"] 
 	{
 		case 0:     ////veteran 
-		if uniques_mines_enabled  && groundcheck!=noone
+		
+		var exception;
+		exception=false
+		
+		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
 		{
-			if mines_ammo>0                ///start place mine animation
+			exception=true
+			uniques_vet_digging=1
+			sprite_index=sprites[66]
+			if super_mode
+				sprite_index=sprites[67]
+		}
+		if !exception
+		{
+			if uniques_mines_enabled  && groundcheck!=noone
 			{
-				if sprite_index!=sprites[32]
-					image_index=0
-				image_speed=FRAME_SPEED_NORMAL
-				sprite_index=sprites[32]
-			}
-		} 
+				if mines_ammo>0                ///start place mine animation
+				{
+					if sprite_index!=sprites[32]
+						image_index=0
+					image_speed=FRAME_SPEED_NORMAL
+					sprite_index=sprites[32]
+				}
+			} 
+		}
 		break;
         
         
@@ -1219,7 +1228,7 @@ if ((cangroundpound==2 || cangroundpound=3) && STUNNED2<1 && player_not_locked_d
 		image_xscale=-1
 		right=false
 	}
-	if checkkey(rightbutton) 
+	if checkkey(rightbutton)     ///right > left
 	{
 		image_xscale=1
 		right=true
@@ -1739,16 +1748,16 @@ else if vspd<0
     
 	for (i=0; i<-vspd; i+=1)
 	{
-	if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
-		 y-=1
-	else
-		break;
+		if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
+			 y-=1
+		else
+			break;
 	};
 }
 
 
 //[finaledit] make a single block for left and right....... why...
-if place_meeting(x-hspd,y,block)   /// horizontal block collision left
+if place_meeting(x-hspd,y,block) && player_not_digging()  /// horizontal block collision left
 {
 	var bounced;
 	bounced=false   ///set to true after bounce effect so you don't bounce left and right at same time
@@ -1814,7 +1823,7 @@ if place_meeting(x-hspd,y,block)   /// horizontal block collision left
 		get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT,true)
 	}
 }
-else if place_meeting(x+hspd,y,block)   /// horizontal block collision right
+else if place_meeting(x+hspd,y,block)  && player_not_digging()  /// horizontal block collision right
 {
 	var bounced;
 	bounced=false
@@ -1929,6 +1938,35 @@ if canbounce_counter<1   ///disable horizontal friction if bouncing
 	}
 }
 
+
+if  uniques_vet_digging==2
+{
+	var SPD,stop;
+	SPD=5
+	stop=false
+	if right
+	{
+		if !place_meeting(x+SPD,y,block)
+			x+=SPD
+		else
+			stop=true
+	}
+	else
+	{
+		if !place_meeting(x-SPD,y,block)
+			x-=SPD
+		else
+			stop=true
+	}
+	
+	if stop
+	{
+		uniques_vet_digging=3
+		vspd=-10
+		
+	}
+	
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////// TOP SCREEN DEATH
 if y<-10

@@ -11,6 +11,11 @@ STUNNED=argument0
 
 
 other.hit[P]=true
+if other.hit_collector!=noone
+{
+	if instance_exists(other.hit_collector)
+		other.hit_collector.hit[P]=true
+}
 if !instance_exists(payday)            ////////add to hothands (if not payday)
 {
 	hothands+=argument1

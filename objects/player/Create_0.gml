@@ -131,12 +131,16 @@ uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 
-//VETERAN_PARACHUTE
+//VETERAN PARACHUTE
 uniques_parachute_enabled=false
 uniques_parachute=0   ///0 = can use 1 = in use 2 = used/can't use
 UNIQUES_PARACHUTE_FALL_SPEED=0.5
 uniques_parachute_minimum_time_counter=0
 UNIQUES_PARACHUTE_MINIMUM_TIME=30
+
+//VETERAN DIG
+uniques_vet_dig_enabled=false
+uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontally 3 = digging up 
 
 //VETERAN MINES
 mines_ammo=0
