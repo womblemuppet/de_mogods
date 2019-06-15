@@ -131,8 +131,8 @@ game_start_countdown=0
 
 
 
-ready[3]=-1    /// -1 controller not plugged in 0 = character select    1 = options   2   = locked in
-for (i=0; i<4; i+=1)
+ready[MAX_PLAYER_COUNT-1]=-1    /// -1 controller not plugged in 0 = character select    1 = options   2   = locked in
+for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	ready[i]=-1
 };
@@ -168,6 +168,23 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 	keybinding_map_array[MAX_PLAYER_COUNT]=undefined
 };
 
+DEADZONE_AMOUNT=0.3
+deadzone[MAX_PLAYER_COUNT-1]=DEADZONE_AMOUNT
+stick_pressed_r[MAX_PLAYER_COUNT-1]=0
+stick_pressed_u[MAX_PLAYER_COUNT-1]=0
+stick_pressed_l[MAX_PLAYER_COUNT-1]=0
+stick_pressed_d[MAX_PLAYER_COUNT-1]=0
+for (i = 0; i < MAX_PLAYER_COUNT;i++)
+{
+	deadzone[i]=DEADZONE_AMOUNT
+	stick_pressed_r[i]=0
+	stick_pressed_u[i]=0
+	stick_pressed_l[i]=0
+	stick_pressed_d[i]=0
+}
+
+
+
 
 readymenuselect[MAX_PLAYER_COUNT]=0    /// 0=control 1=handicap
 for (i=0; i<MAX_PLAYER_COUNT; i+=1)
@@ -188,7 +205,7 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 	palette[i]=0
 };
 
-
+competitive_mode=false
 menuselect=1
 MENUSELECTMAX=6
 main_menu_texts[MENUSELECTMAX]=""
@@ -199,7 +216,8 @@ main_menu_texts[3]="lore"
 main_menu_texts[4]="settings"
 main_menu_texts[5]="exit"
 
-competitive_mode=false
+
+
 menu_background_subspr=0
 MENU_BACKGROUND_SUBSPR_LIMIT=17
 menu_logo_subspr=0

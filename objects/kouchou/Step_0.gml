@@ -283,4 +283,82 @@ else if room==settings
 		}
 	}
 }
+else if room==gameroom
+{
+	for(i =0 ; i < players_in-1;i++) //[finaledit] may cause problem using players_in
+	{
+		if ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
+		{
+			var padnumber;
+			padnumber=ds_map_find_value(kouchou.keybinding_map_array[i],"padnumber")
+			h_axis=gamepad_axis_value(padnumber,gp_axislh)
+			v_axis=gamepad_axis_value(padnumber,gp_axislv)
+			show_debug_message("i = "+string(i)+ "  padnumber = "+string(padnumber))
+		
+			if stick_pressed_r[i]==3
+				stick_pressed_r[i]=0
+			if stick_pressed_u[i]==3
+				stick_pressed_u[i]=0
+			if stick_pressed_l[i]==3
+				stick_pressed_l[i]=0
+			if stick_pressed_d[i]==3
+				stick_pressed_d[i]=0
+		
 
+			if h_axis>deadzone[i]
+			{
+				if stick_pressed_l[i]==1 || stick_pressed_l[i]==2
+					stick_pressed_l[i]=3
+				if stick_pressed_r[i]==1
+					stick_pressed_r[i]=2
+				else
+					stick_pressed_r[i]=1
+			}
+			else if h_axis<-deadzone[i]
+			{
+				if stick_pressed_r[i]==1 || stick_pressed_r[i]==2
+					stick_pressed_r[i]=3
+				if stick_pressed_l[i]==1
+					stick_pressed_l[i]=2
+				else
+					stick_pressed_l[i]=1
+			}
+			if h_axis<=deadzone[i] && h_axis>=-deadzone[i]
+			{
+				if stick_pressed_l[i]==1 || stick_pressed_l[i]==2
+					stick_pressed_l[i]=3
+				if stick_pressed_r[i]==1 || stick_pressed_r[i]==2
+					stick_pressed_r[i]=3
+			}			
+			
+			
+		
+			if v_axis>deadzone[i]
+			{
+				if stick_pressed_u[i]==1 || stick_pressed_u[i]==2
+					stick_pressed_u[i]=3
+				if stick_pressed_d[i]==1
+					stick_pressed_d[i]=2
+				else
+					stick_pressed_d[i]=1
+			}		
+			else if v_axis<-deadzone[i]
+			{
+				if stick_pressed_d[i]==1 || stick_pressed_d[i]==2
+					stick_pressed_d[i]=3
+				if stick_pressed_u[i]==1
+					stick_pressed_u[i]=2
+				else
+					stick_pressed_u[i]=1
+			}
+			if v_axis<=deadzone[i] && v_axis>=-deadzone[i]
+			{
+				if stick_pressed_u[i]==1 || stick_pressed_u[i]==2
+					stick_pressed_u[i]=3
+				if stick_pressed_d[i]==1 || stick_pressed_d[i]==2
+					stick_pressed_d[i]=3
+			}
+		}
+		
+	}
+}

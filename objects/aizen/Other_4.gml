@@ -181,6 +181,13 @@ if room==gameroom
 		a=instance_create(spawn_positions_x[i],playerspawnheight,player)   //   -----------------SPAWN PLAYER-------------------
 		with a
 		{
+			P=ii
+			
+			character=aizen.tempcharstrings[P]
+			palette=kouchou.palette[P]
+			H=3
+			H+=kouchou.playerhandicap[P]
+			
 			if x<kouchou.room_x_halfway/2
 			{
 				right=true
@@ -191,11 +198,6 @@ if room==gameroom
 				image_xscale=-1
 			}
             
-			P=ii
-			character=aizen.tempcharstrings[P]
-			palette=kouchou.palette[P]
-			H=3
-			H+=kouchou.playerhandicap[P]
 			decide_sprites() //////////////////////////////////// character setup
 			decide_sprite_hierarchy_lists()
 			decide_moves()
@@ -270,7 +272,7 @@ if room==gameroom
 		terrain_generate(iii*40)
 	}
 	
-    bedrockcounter=0
+	bedrockcounter=0
 	//create fossil surface for first time
 	redraw_fossil_surface()
 
