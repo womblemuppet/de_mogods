@@ -42,17 +42,17 @@ if room==multiplayermenu
 			}
 		}
 	}
-	else
-	{    
-		if keyboard_check_pressed(kb1_start_button)                                         ///start button P1 (options/lockin)
-		{
-			character_select_button_start(kb1_player_slot)
-		}
-	}         
+	//else
+	//{    
+	//	if keyboard_check_pressed(kb1_start_button)                                         ///start button P1 (options/lockin)
+	//	{
+	//		character_select_button_start(kb1_player_slot)
+	//	}
+	//}         
 	
-	if number_of_keyboards_in_use==1 && keyboard_added_this_step==false
+	if number_of_keyboards_in_use==1
 	{  
-		if keyboard_check_pressed(kb2_start_button)
+		if keyboard_check_pressed(kb2_start_button)  && keyboard_added_this_step==false
 		{
 			if players_in<MAX_PLAYER_COUNT                                                                                           /// keyboard entry player 2
 			{
@@ -74,13 +74,13 @@ if room==multiplayermenu
 			}
 		}
 	}
-	else if number_of_keyboards_in_use>1
-	{
-		if keyboard_check_pressed(kb2_start_button)                                                                           ///start button P2 (options/lockin)
-		{
-			character_select_button_start(kb2_player_slot)
-		}    
-	}
+	//else if number_of_keyboards_in_use>1
+	//{
+	//	if keyboard_check_pressed(kb2_start_button)                                                                           ///start button P2 (options/lockin)
+	//	{
+	//		character_select_button_start(kb2_player_slot)
+	//	}    
+	//}
     
 
 	
@@ -105,25 +105,25 @@ if room==multiplayermenu
 	
 	
 	
-	if controller_added_this_step==false
-	{      
-		for (iii=0; iii<12; iii+=1)
-		{
-			if controller_player_slot[iii]>-1
-			{
-				if gamepad_button_check_pressed(iii,gp_start)                                                                           ///start button controllers (options/lockin)
-				{
-					character_select_button_start(  controller_player_slot[iii]  )
-				}
-			}
-		}
-	}
+	//if controller_added_this_step==false
+	//{      
+	//	for (iii=0; iii<12; iii+=1)
+	//	{
+	//		if controller_player_slot[iii]>-1
+	//		{
+	//			if gamepad_button_check_pressed(iii,gp_start)                                                                           ///start button controllers (options/lockin)
+	//			{
+	//				character_select_button_start(  controller_player_slot[iii]  )
+	//			}
+	//		}
+	//	}
+	//}
     
 
         
         
 	//////select screen keyboard
-	if number_of_keyboards_in_use>0
+	if number_of_keyboards_in_use>0 && !keyboard_added_this_step
 	{
 		if keyboard_check_pressed(kb1_left_button)
 		{
@@ -146,7 +146,7 @@ if room==multiplayermenu
 			character_select_button_start(kb1_player_slot)		
 		}
 	}
-	if number_of_keyboards_in_use>1
+	if number_of_keyboards_in_use>1  && !keyboard_added_this_step
 	{
 		if keyboard_check_pressed(kb2_left_button)
 		{
@@ -171,29 +171,33 @@ if room==multiplayermenu
 	}
 	
 	//////select screen controllers	
-	for (i=0; i<12; i+=1)
+	
+	if !controller_added_this_step
 	{
-		if controller_player_slot[i]>-1 && gamepad_is_connected(i) 
+		for (i=0; i<12; i+=1)
 		{
-			if gamepad_button_check_pressed(i,gp_padl)
+			if controller_player_slot[i]>-1 && gamepad_is_connected(i) 
 			{
-				character_select_button_left(controller_player_slot[i])
-			}
-			if gamepad_button_check_pressed(i,gp_padr)
-			{
-				character_select_button_right(controller_player_slot[i])
-			}
-			if gamepad_button_check_pressed(i,gp_padu)
-			{
-				character_select_button_up(controller_player_slot[i])
-			}
-			if gamepad_button_check_pressed(i,gp_padd)
-			{
-				character_select_button_down(controller_player_slot[i])
-			}
-			if gamepad_button_check_pressed(i,gp_start)
-			{
-				character_select_button_start(controller_player_slot[i])		
+				if gamepad_button_check_pressed(i,gp_padl)
+				{
+					character_select_button_left(controller_player_slot[i])
+				}
+				if gamepad_button_check_pressed(i,gp_padr)
+				{
+					character_select_button_right(controller_player_slot[i])
+				}
+				if gamepad_button_check_pressed(i,gp_padu)
+				{
+					character_select_button_up(controller_player_slot[i])
+				}
+				if gamepad_button_check_pressed(i,gp_padd)
+				{
+					character_select_button_down(controller_player_slot[i])
+				}
+				if gamepad_button_check_pressed(i,gp_start)
+				{
+					character_select_button_start(controller_player_slot[i])		
+				}
 			}
 		}
 	}

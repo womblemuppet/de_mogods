@@ -116,14 +116,6 @@ else if sprite_index=sprites[62] || sprite_index=sprites[63]    /// veteran chai
 		player_set_idle()  
 	}
 }
-else if sprite_index==sprites[66] || sprite_index==sprites[67]   ///veteran chain upforwarddash
-{
-	if uniques_upforwarddash_lockdown==1
-	{
-		uniques_upforwarddash_lockdown=0
-		player_set_idle()   
-	}
-}
 else if sprite_index==sprites[70] || sprite_index==sprites[71]  ///slinger sunblast
 {
 	if uniques_sunblast_lockdown==2

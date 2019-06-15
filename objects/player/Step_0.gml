@@ -660,30 +660,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		}
 	}
     
-	if !exception && uniques_veteran_ultstock>0        ////vet    ult stock mortar  
-	{
-		exception=true
-		uniques_veteran_ultstock-=1
-		uniques_veteran_mortarammo+=1
-		if uniques_veteran_ultstock==0
-			effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
-		else
-			effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
-		var a;
-		a=effect_aniend(vet_ult_indicator_3,1.5,-2)
-		a.direction=choose(45,135)
-		a.speed=4
-		a.gravity=0.2
-            
-	}
-	if !exception && uniques_veteran_mortarammo>0     /////////vet  ult shoot mortar
-	{
-		exception=true
-		uniques_veteran_mortarammo-=1
-		var a;
-		a=instance_create(x,y,mortar)
-		a.creator=self.id
-	}
+
     
 	if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
 	{
@@ -787,53 +764,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		exception=true
 		player_throw_crab()
 	}
-    
-	if !exception && uniques_vet_chain_counter>0      ///vet       LA => HA    upfoward dash
-	{
-		exception=true
-		uniques_vet_chain_counter=-1
-		uniques_upforwarddash_lockdown=1
-		image_speed=FRAME_SPEED_NORMAL
-		sprite_index=sprites[66]
-		if super_mode
-			sprite_index=sprites[67]
-		image_index=0        
-
-		attack_create_dash_hitbox(true,60,7,5,"upforawrddash",vet_upfowarddash_hitbox,0.25,true)
-        
-		vspd=-6
-		if right
-			hspd=8
-		else
-			hspd=-8
-		alarm[5]=2        ////slowdown alarm
-        
-	}
-    
-	if !exception && uniques_veteran_ultstock>0      ///////vet    ult stockup clusters
-	{
-		exception=true
-		uniques_veteran_ultstock-=1
-		uniques_veteran_clusterammo+=1
-		if uniques_veteran_ultstock==0
-			effect_aniend(vet_ult_stocked_indicator2,0.1,-2)
-		else
-			effect_aniend(vet_ult_stocked_indicator1,0.1,-2)
-		var a;
-		a=effect_aniend(vet_ult_indicator_3,1.5,-2)
-		a.direction=choose(45,135)
-		a.speed=5
-		a.gravity=0.1
-	}
-	if !exception && uniques_veteran_clusterammo>0     /////////vet  ult throw cluster
-	{
-		exception=true
-		uniques_veteran_clusterammo-=1
-		var a;
-		a=instance_create(x,y,clusternet)
-		a.creator=self.id
-	}
-    
+	
 	if !exception
 	{
 		switch attacks[? "heavy attack"]

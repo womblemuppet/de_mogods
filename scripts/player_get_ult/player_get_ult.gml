@@ -19,7 +19,7 @@ switch attacks[? "ult get trigger"]
     break;
 	
     case 1:
-		uniques_veteran_ultstock=3
+//vetult
     break;
 	
     default:

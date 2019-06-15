@@ -131,9 +131,6 @@ uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 
-//VETERAN UPFOWARD DASH
-uniques_upforwarddash_lockdown=0
-
 //VETERAN_PARACHUTE
 uniques_parachute_enabled=false
 uniques_parachute=0   ///0 = can use 1 = in use 2 = used/can't use
@@ -143,11 +140,6 @@ UNIQUES_PARACHUTE_MINIMUM_TIME=30
 
 //VETERAN MINES
 mines_ammo=0
-
-//VETERAN ULT
-uniques_veteran_mortarammo=0
-uniques_veteran_clusterammo=0
-uniques_veteran_ultstock=0
 
 //SLINGER SUNBLAST
 uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
