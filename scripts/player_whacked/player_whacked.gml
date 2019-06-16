@@ -22,9 +22,9 @@ if !instance_exists(payday)            ////////add to hothands (if not payday)
 	if argument2!=0     //whether to reset hh (melee/ranged)
 		other.creator.hothands=0
 }
-if dash_angel_jump==1   ///if hit during angel jump charge, get crippled
+if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 {
-	cripple_debuff_counter=DASH_ANGEL_JUMP_VUNERABLE_CRIPPLE_AMOUNT
+	cripple_debuff_counter=dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT
 }
 
 player_flinch()

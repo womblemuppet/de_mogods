@@ -255,11 +255,11 @@ if canbounce_counter>0
 	effect_aniend(bounce_debuff_effect,0.25,-3)
 }
 
-if dash_angel_jump_counter>0 
+if dash_rocket_jump_counter>0 
 {
-	dash_angel_jump_counter-=1
-	if dash_angel_jump_counter==0 && dash_angel_jump==1
-	{               /////ANGEL JUMP FINISH CHARGE EVENT
+	dash_rocket_jump_counter-=1
+	if dash_rocket_jump_counter==0 && dash_rocket_jump==1
+	{               /////ROCKET JUMP FINISH CHARGE EVENT
 		if !place_meeting(x,y-1,block)
 			y-=1
             
@@ -268,20 +268,20 @@ if dash_angel_jump_counter>0
 			sprite_index=sprites[29]
 		image_index=0
 		image_speed=FRAME_SPEED_NORMAL
-		dash_angel_top_collision_safety=DASH_ANGEL_TOP_COLLISION_SAFETY_AMOUNT
-		vspd=-DASH_ANGEL_JUMP_AMOUNT
-		dash_angel_jump=2
+		dash_rocket_top_collision_safety=DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT
+		vspd=-dash_rocket_jump_AMOUNT
+		dash_rocket_jump=2
         
-		///allow parachute  after angel jump
+		///allow parachute  after rocket jump
 		uniques_parachute=0
 		doublejump=2
          
 		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false)
 	}
 }
-if dash_angel_top_collision_safety>0
+if dash_rocket_top_collision_safety>0
 {
-	dash_angel_top_collision_safety-=1
+	dash_rocket_top_collision_safety-=1
 }
 if uniques_parachute_minimum_time_counter>0
 {
@@ -417,7 +417,7 @@ else if ltt>-2
 /*  gravity && landing/ceiling collision    +    idle sprite setting  */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-if groundcheck==noone && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
+if groundcheck==noone && cangroundpound!=1 && dash_rocket_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
 {  
 	if vspd<0
 		vspd+=GRAVITY/watery
@@ -427,7 +427,7 @@ if groundcheck==noone && cangroundpound!=1 && dash_angel_jump!=2 && airgrab_mode
 			vspd+=GRAVITY_DOWN/watery
 	}
 }
-if groundcheck!=noone && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
+if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
 {
 	airgrab_mode=0
 	
@@ -495,7 +495,7 @@ if groundcheck!=noone && (dash_angel_jump==3 || dash_angel_jump==0) /// vertical
 		//effect_create_above(ef_firework,x,y,2,c_blue)
 	}
 	cangroundpound=0
-	dash_angel_jump=0
+	dash_rocket_jump=0
 	jumped=false
 	if groundcheck!=groundcheck_prev
 		instance_create(x,y,jump_vibration)
@@ -935,13 +935,13 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		{
 			if player_may_attack()
 			{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-				if groundcheck!=noone && dash_angel_jump==0                                                        ////rocket jump (ANGEL JUMP EVENT)
+				if groundcheck!=noone && dash_rocket_jump==0                                                        ////rocket jump
 				{
 					exception=true
 					vspd=0
-					dash_angel_jump=1
+					dash_rocket_jump=1
 					hspd=0
-					dash_angel_jump_counter=DASH_ANGEL_JUMP_FREEZE_TIME
+					dash_rocket_jump_counter=dash_rocket_jump_FREEZE_TIME
 					sprite_index=sprites[30]    ///groundpound freeze sprite
 					if super_mode
 						sprite_index=sprites[31]   ///groundpound freeze super sprite
@@ -1149,25 +1149,25 @@ if dash_button_currently_held
 
 
 
-/////////////////////////////////////////////////////////////////////////////////// placable abilities
-if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
+/////////////////////////////////////////////////////////////////////////////////// downkey
+if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck !=noone
 {
 	switch attacks[? "special hold down"] 
 	{
 		case 0:     ////veteran 
-		
-		var exception;
-		exception=false
-		
+
 		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
 		{
-			exception=true
+			image_index=0
+			image_speed=FRAME_SPEED_NORMAL
 			uniques_vet_digging=1
+			y+=40
 			sprite_index=sprites[66]
 			if super_mode
 				sprite_index=sprites[67]
 		}
-		if !exception
+		
+		if uniques_vet_digging==0
 		{
 			if uniques_mines_enabled  && groundcheck!=noone
 			{
@@ -1221,7 +1221,7 @@ if checkkey_released(downbutton)
 
 
 
-if ((cangroundpound==2 || cangroundpound=3) && STUNNED2<1 && player_not_locked_down()) || airgrab_decidedir_time>0   ///update direction during groundpound or groundpound bounce
+if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab_decidedir_time>0   ///allow update direction during groundpound or groundpound bounce
 {
 	if checkkey(leftbutton) 
 	{
@@ -1267,8 +1267,8 @@ if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangr
 				hspd-=HOR_AIR_ACCEL*slow_ratio
 		}
 	} 
-		//checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
-	if STUNNED2<1  && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
+	//checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
+	if player_allow_direction_switch()
 	{
 		image_xscale=-1
 		right=false
@@ -1326,11 +1326,11 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 				hspd+=HOR_AIR_ACCEL*slow_ratio
 		}
 	}
-		if STUNNED2<1 && fpunch_lockdown!=2 && fpunch_lockdown!=3 && uniques_aapunch_lockdown==0
-		{
-			image_xscale=1
-			right=true
-		}
+	if player_allow_direction_switch()
+	{
+		image_xscale=1
+		right=true
+	}
 	if STUNNED2<1 && player_not_locked_down()
 	{
 		var pass;
@@ -1742,7 +1742,7 @@ if vspd>0
 }
 else if vspd<0
 {
-	if (dash_angel_top_collision_safety>0 && y<DASH_ANGEL_TOP_COLLISION_MAXY)
+	if (dash_rocket_top_collision_safety>0 && y<DASH_ROCKET_TOP_COLLISION_MAXY)
 	{
 		vspd=0
 	}
@@ -1947,14 +1947,14 @@ if  uniques_vet_digging==2
 	stop=false
 	if right
 	{
-		if !place_meeting(x+SPD,y,block)
+		if place_meeting(x+SPD,y,block) && x+SPD<kouchou.room_right_border_x
 			x+=SPD
 		else
 			stop=true
 	}
 	else
 	{
-		if !place_meeting(x-SPD,y,block)
+		if place_meeting(x-SPD,y,block)  && x-SPD>kouchou.room_left_border_x
 			x-=SPD
 		else
 			stop=true
@@ -1964,7 +1964,7 @@ if  uniques_vet_digging==2
 	{
 		uniques_vet_digging=3
 		vspd=-10
-		
+		effect_create_above(ef_firework,x,y,2,c_red)
 	}
 	
 }
@@ -1972,7 +1972,7 @@ if  uniques_vet_digging==2
 //////////////////////////////////////////////////////////////////////////////////////////////////////// TOP SCREEN DEATH
 if y<-10
 {
-	if dash_angel_top_collision_safety<1
+	if dash_rocket_top_collision_safety<1
 		playerdie()
 }
 

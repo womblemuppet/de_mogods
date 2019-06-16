@@ -86,6 +86,7 @@ switch (character)
 	uniques_parachute_enabled=true
 	uniques_mines_enabled=true
 	mines_ammo=2   ///starting mines
+	uniques_vet_dig_enabled=true
     
     
 	break;

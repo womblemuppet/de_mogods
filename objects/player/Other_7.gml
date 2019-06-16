@@ -27,9 +27,9 @@ else if sprite_index==sprites[5] || sprite_index==sprites[7]  ///gp fall or gp f
 	image_speed=FRAME_SPEED_FAST    ///loop last frames of gp animation
 	image_index=image_number-2
 }
-else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///angel charge or angel charge super
+else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket charge or rocket charge super
 {
-	image_speed=FRAME_SPEED_FAST    ///loop last frames of angel charge animation
+	image_speed=FRAME_SPEED_FAST    ///loop last frames of rocket charge animation
 	image_index=image_number-2
 }
 else if sprite_index==sprites[6]  ///super activate
@@ -47,6 +47,16 @@ else if sprite_index==sprites[32]   ///vet place mine
 	a=instance_create(x,y-10,mine)
 	a.creator=self.id
 	mines_ammo-=1
+}
+else if sprite_index==sprites[66] || sprite_index==sprites[67]  ///vet dig
+{
+	if uniques_vet_digging==1
+	{
+		uniques_vet_digging=2
+		sprite_index=sprites[68]
+		if super_mode
+			sprite_index=sprites[69]
+	}
 }
 else if sprite_index==sprites[82]  ///bait teleport place
 {
@@ -81,12 +91,12 @@ else if sprite_index==sprites[83]  ///bait teleport use
 	}	
 	
 }
-else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///angel jump
+else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump
 {
-	if dash_angel_jump==2
+	if dash_rocket_jump==2
 	{
 		player_set_idle()
-		dash_angel_jump=3
+		dash_rocket_jump=3
 	}
 }
 else if sprite_index==sprites[21] || sprite_index==sprites[22]  ///falc punch
