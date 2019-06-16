@@ -261,30 +261,6 @@ if canbounce_counter>0
 	effect_aniend(bounce_debuff_effect,0.25,-3)
 }
 
-if dash_rocket_jump_counter>0 
-{
-	dash_rocket_jump_counter-=1
-	if dash_rocket_jump_counter==0 && dash_rocket_jump==1
-	{               /////ROCKET JUMP FINISH CHARGE EVENT
-		if !place_meeting(x,y-1,block)
-			y-=1
-            
-		sprite_index=sprites[28]
-		if super_mode
-			sprite_index=sprites[29]
-		image_index=0
-		image_speed=FRAME_SPEED_NORMAL
-		dash_rocket_top_collision_safety=DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT
-		vspd=-dash_rocket_jump_AMOUNT
-		dash_rocket_jump=2
-        
-		///allow parachute  after rocket jump
-		uniques_parachute=0
-		doublejump=2
-         
-		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false)
-	}
-}
 if dash_rocket_top_collision_safety>0
 {
 	dash_rocket_top_collision_safety-=1
@@ -930,27 +906,23 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 	var exception;
 	exception=false
     
-	if checkkey(upbutton)
+	if checkkey(upbutton) && !checkkey(downbutton)
 	{
-		if !checkkey(downbutton)
-		{
-			if player_may_attack()
-			{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-				if groundcheck!=noone && dash_rocket_jump==0                                                        ////rocket jump
-				{
-					exception=true
-					vspd=0
-					dash_rocket_jump=1
-					hspd=0
-					dash_rocket_jump_counter=dash_rocket_jump_FREEZE_TIME
-					sprite_index=sprites[30]    ///groundpound freeze sprite
-					if super_mode
-						sprite_index=sprites[31]   ///groundpound freeze super sprite
-					image_speed=FRAME_SPEED_FAST
-					image_index=0
-				}
-			} 
-		}
+		if player_may_attack()
+		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
+			if groundcheck!=noone && dash_rocket_jump==0                                                        ////rocket jump
+			{
+				exception=true
+				vspd=0
+				dash_rocket_jump=1
+				hspd=0
+				sprite_index=sprites[30]    ///groundpound freeze sprite
+				if super_mode
+					sprite_index=sprites[31]   ///groundpound freeze super sprite
+				image_speed=FRAME_SPEED_FAST
+				image_index=0
+			}
+		} 
 	}
 	if !exception && player_may_attack() && checkkey(downbutton) && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound
@@ -1218,6 +1190,18 @@ if checkkey_released(downbutton)
 	}
 }
 
+//if checkkey_released(upbutton)
+//{ ////early release of rocket jump
+//	if dash_rocket_jump==1
+//	{
+//		if dash_rocket_jump_counter<DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD
+//			dash_rocket_jump_charge=1
+//		if dash_rocket_jump_counter<DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD
+//			dash_rocket_jump_charge=2
+//	}
+//}
+
+
 
 
 if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab_decidedir_time>0   ///allow update direction during groundpound or groundpound bounce
@@ -1352,7 +1336,7 @@ if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<
 		}
 	} 
 }
-if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0 //&& hspd<0.1 && hspd>-0.1 //(checkkey_released(leftbutton) && !right) || (checkkey_released(rightbutton) && right)
+if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
 {
 	hor_running_counter=0
 }
