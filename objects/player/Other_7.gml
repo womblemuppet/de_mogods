@@ -30,23 +30,9 @@ else if sprite_index==sprites[5] || sprite_index==sprites[7]  ///gp fall or gp f
 else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket charge or rocket charge super
 {
 	if dash_rocket_jump==1
-	{               /////ROCKET JUMP FINISH CHARGE EVENT
-		if !place_meeting(x,y-1,block)
-			y-=1
-            
-		sprite_index=sprites[28]
-		if super_mode
-			sprite_index=sprites[29]
-		image_index=0
-		image_speed=FRAME_SPEED_NORMAL
-		dash_rocket_top_collision_safety=DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT
-		vspd=-DASH_ROCKET_JUMP_AMOUNT
-		dash_rocket_jump=2
-        
-		uniques_parachute=0 ///allow parachute  after rocket jump
-		doublejump=2
-         
-		attack_create_dash_hitbox(true,45,5,2,"rocket punch",rjump_hitbox1,0.1,false)
+	{ 
+		dash_rocket_jump_charge=3
+		attack_rocket_jump()
 	}
 }
 else if sprite_index==sprites[6]  ///super activate

@@ -42,10 +42,10 @@ AIR_DASH_VSPEED=3.5    ///(minused when dashing in air)
 DASH_LOCKDOWN_TIME=20 ///time you can't move after dashing
 dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping the dash lockdown
 dash_rocket_jump=0 //// upward dash     0 can 1 freeze 2 in animation 3 used.
-DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD=30
-DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=15
 dash_rocket_jump_charge=0 ///0 for not charged, 1 ,2, 3 for different charge durations
-DASH_ROCKET_JUMP_AMOUNT=16    ////vspd minued this amount after freeze time
+DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD=5    ///when charging animation of rocket jump reaches these frames, charge goes up
+DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=11
+DASH_ROCKET_JUMP_AMOUNT_LEVELS=[0,8,10,14] ////vspd minued this amount depending on charge level
 dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump charge, get crippled for this amount
 dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
 DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT=175
@@ -119,7 +119,7 @@ unique_ooga_gp_charges=0
 //VETERAN ANTI AIR PUNCH
 uniques_aapunch_cd_counter=0
 uniques_aapunch_lockdown=0  //0 = nothing 1 = charging 2 = punching
-uniques_aapunch_COOLDOWN=50
+UNIQUES_AAPUNCH_COOLDOWN=50
 uniques_aapunch_has_made_hitbox=false
 uniques_aapunch_has_made_hitbox2=false
 
@@ -186,7 +186,7 @@ sprites_below_recoil_priority=ds_list_create()
 FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this swap from jumped sprite to falling sprite
 
 
-lastdamagetype=""
+lastdamagetype=""  ///last type of damage taken (string) for corpse
 
 attacks=ds_map_create()   //[finaledit] to be deleted on game end
 

@@ -1391,6 +1391,14 @@
             }
         },
         {
+            "Key": "353a867e-8cc9-4c04-843b-334f14b56d9c",
+            "Value": {
+                "id": "c90feb41-c93c-4fd1-bb49-54d8224ece0f",
+                "resourcePath": "scripts\\attack_rocket_jump\\attack_rocket_jump.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35f213fd-e2eb-447f-a134-2e56667c4391",
             "Value": {
                 "id": "33d237e8-6553-4ff0-8ff4-97ca5ca165bf",
@@ -6828,6 +6836,7 @@
         "61ee04b1-d091-4125-bec3-0a16c24a8357",
         "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
+        "353a867e-8cc9-4c04-843b-334f14b56d9c",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",
