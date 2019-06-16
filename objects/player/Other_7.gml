@@ -94,10 +94,11 @@ else if sprite_index==sprites[83]  ///bait teleport use
 	}	
 	
 }
-else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump
+else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump end
 {
 	if dash_rocket_jump==2
 	{
+		vspd/=1.5
 		player_set_idle()
 		dash_rocket_jump=3
 	}

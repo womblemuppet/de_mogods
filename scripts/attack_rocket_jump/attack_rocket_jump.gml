@@ -1,6 +1,6 @@
 if !place_meeting(x,y-1,block)
 	y-=1
-            
+           
 sprite_index=sprites[28]
 if super_mode
 	sprite_index=sprites[29]

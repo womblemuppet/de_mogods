@@ -44,7 +44,7 @@ dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping t
 dash_rocket_jump=0 //// upward dash     0 can 1 freeze 2 in animation 3 used.
 dash_rocket_jump_charge=0 ///0 for not charged, 1 ,2, 3 for different charge durations
 DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD=5    ///when charging animation of rocket jump reaches these frames, charge goes up
-DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=11
+DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=13
 DASH_ROCKET_JUMP_AMOUNT_LEVELS=[0,8,10,14] ////vspd minued this amount depending on charge level
 dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump charge, get crippled for this amount
 dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
@@ -89,6 +89,7 @@ BOUNCE_MAX_VELOCITY=6
 iframes=0 //cant be hit while this is >0 I think
 FRAME_SPEED_NORMAL=0.2
 FRAME_SPEED_FAST=0.4
+FRAME_SPEED_SUPERFAST=0.4
 FRAME_SPEED_SLOW=0.1
 image_speed=FRAME_SPEED_NORMAL
 
