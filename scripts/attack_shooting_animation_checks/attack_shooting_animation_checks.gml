@@ -116,7 +116,7 @@ if uniques_aapunch_lockdown==1 && image_index>5
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////SHOOT AAPUNCH HITTBOX 2
-if uniques_aapunch_lockdown==2 && image_index>9
+if uniques_aapunch_lockdown==2 && image_index>15
 {
 	if uniques_aapunch_has_made_hitbox2==false 
 	{
