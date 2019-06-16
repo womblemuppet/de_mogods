@@ -3927,6 +3927,14 @@
             }
         },
         {
+            "Key": "9477ed72-24e6-4d48-a77f-ab058f219ed3",
+            "Value": {
+                "id": "a200d344-769b-4dde-b830-f31a3105718e",
+                "resourcePath": "sprites\\eightysq_semicircle1\\eightysq_semicircle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94cc0682-bfe7-47ea-9ae2-2bd0030205bb",
             "Value": {
                 "id": "8347d3cc-3a4b-48f1-8085-41f84f327d7d",

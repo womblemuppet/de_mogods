@@ -1150,7 +1150,7 @@ if dash_button_currently_held
 
 
 
-/////////////////////////////////////////////////////////////////////////////////// downkey
+///////////////////////////////////////////// downkey while on ground (placeables etc)
 if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck !=noone
 {
 	switch attacks[? "special hold down"] 
@@ -1210,10 +1210,8 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 	}
 }
 
-
-////// down button hold counter reset (for abilities like place mine)
 if checkkey_released(downbutton)
-{
+{ ////// down button hold counter reset (for abilities like place mine)
 	if sprite_index==sprites[82] || sprite_index=sprites[83]
 	{
 		player_set_idle()
