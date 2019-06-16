@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "1b99099c-f82e-4e8d-962d-5a3b757f592f",
+            "Value": {
+                "id": "f05964e6-9da7-4e1e-ace1-10cdb90e0141",
+                "resourcePath": "scripts\\attack_shooting_animation_checks\\attack_shooting_animation_checks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1bf1d6a8-7d2b-459b-870d-900c5beb1eab",
             "Value": {
                 "id": "73913ae6-d5fa-4825-af5c-b65d5d0350b4",
@@ -6795,6 +6803,7 @@
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
+        "1b99099c-f82e-4e8d-962d-5a3b757f592f",
         "078ae249-2430-4b2e-88fd-42be5294cab8",
         "558e254a-f29a-423d-8816-b45cadd7edbd",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
