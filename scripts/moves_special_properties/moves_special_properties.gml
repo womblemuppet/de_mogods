@@ -1,5 +1,5 @@
 var attacker
-if !instance_exists(other.creator)
+if instance_exists(other.creator)
 	attacker=other.creator
 else
 	attacker=noone
