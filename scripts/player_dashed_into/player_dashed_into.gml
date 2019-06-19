@@ -18,7 +18,7 @@ if other.bunts==true
 	{
 		airmulti=1.75
 		airvmulti=1.35
-		stun_amount=argument0*1.5
+		stun_amount=round(argument0*1.5)
 	}
     
 	if other.direction==0
