@@ -46,6 +46,7 @@ dash_rocket_jump_charge=0 ///0 for not charged, 1 ,2, 3 for different charge dur
 DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD=5    ///when charging animation of rocket jump reaches these frames, charge goes up
 DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=13
 DASH_ROCKET_JUMP_AMOUNT_LEVELS=[0,8,10,14] ////vspd minued this amount depending on charge level
+DASH_ROCKET_JUMP_STUN_DURATION_LEVELS=[0,20,40,60] ////stun amount alsodepending on charge 
 dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump charge, get crippled for this amount
 dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
 DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT=175
@@ -190,5 +191,6 @@ FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this sw
 lastdamagetype=""  ///last type of damage taken (string) for corpse
 
 attacks=ds_map_create()   //[finaledit] to be deleted on game end
+
 
 

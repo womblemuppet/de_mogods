@@ -18,8 +18,8 @@ a.stops_dasher_on_contact=argument7
 
 if image_xscale=-1
 {
-    a.direction=180
-    a.image_xscale=-1       
+	    a.direction=180
+	    a.image_xscale=-1
 }
 a.dir=a.direction   ///for block_take_damage script
 a.spd=6                    ///for block_take_damage script
