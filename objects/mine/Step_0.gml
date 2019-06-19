@@ -87,16 +87,20 @@ if triggered   /// >:O
 		}
 		
 		b=attack_create_hitbox(60,1,false,true,true,"mineexplosion",hitboxspr,0.2,99,0,2)
-		b.creator=self.creator
+		b.creator=noone
 		b.image_xscale=bigexplosion_xscale
 
 		instance_destroy()
 	}
 }
+
+//////     set sprite   /////
 if vspd<0
 	sprite_index=mine_spinning_sprite
 else if vspd>0
 	sprite_index=mine_falling_sprite
+else if !ready
+	sprite_index=mine_sprite_priming
 else
 	sprite_index=mine_sprite
 

@@ -1,3 +1,10 @@
+var attacker
+if !instance_exists(other.creator)
+	attacker=other.creator
+else
+	attacker=noone
+
+
 switch argument0
 {
 	case "oogauppercut" :   ////ooga's
@@ -38,7 +45,7 @@ switch argument0
 	}
 	case "slingerjumpresetdash" :
 	{
-		if instance_exists(other.creator)
+		if attacker!=noone
 		{
 			if groundcheck==noone
 			{
@@ -50,7 +57,7 @@ switch argument0
 	} break;
 	case "slingeruppercut" :
 	{
-		if instance_exists(other.creator)
+		if attacker!=noone
 		{
 			with other.creator
 			{
@@ -121,7 +128,7 @@ switch argument0
 	}break;
 	case "whirlwind" :
 	{
-		if instance_exists(other.creator)
+		if attacker!=noone
 		{
 			with other.creator
 			{

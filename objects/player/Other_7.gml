@@ -48,7 +48,8 @@ else if sprite_index==sprites[32]   ///vet place mine
 	player_set_idle()
 	var a;
 	a=instance_create(x,y-10,mine)
-	a.creator=self.id
+	a.creator=a.id
+	a.player_who_placed_mine=self.id
 	mines_ammo-=1
 }
 else if sprite_index==sprites[66] || sprite_index==sprites[67]  ///vet dig

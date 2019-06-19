@@ -9,6 +9,13 @@
 STUNNED=argument0
                  ///////////get stunned
 
+var attacker
+if !instance_exists(other.creator)
+	attacker=other.creator
+else
+	attacker=noone
+	
+
 
 other.hit[P]=true
 if other.hit_collector!=noone
@@ -19,7 +26,7 @@ if other.hit_collector!=noone
 if !instance_exists(payday)            ////////add to hothands (if not payday)
 {
 	hothands+=argument1
-	if argument2!=0     //whether to reset hh (melee/ranged)
+	if argument2!=0 && attacker!=noone     //whether to reset hh (melee/ranged)
 		other.creator.hothands=0
 }
 if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
@@ -40,15 +47,18 @@ if argument3     /// knocks player out of current animation
 
 if argument4    ///gain meter
 {
-	with other.creator
+	if attacker!=noone
 	{
-		super_meter+=1
-		aizen.player_meter[P]+=1
-		if super_meter>aizen.SUPER_METER_AMOUNT
+		with other.creator
 		{
-			super_meter=0
-			aizen.player_meter[P]=0
-			player_get_ult()
+			super_meter+=1
+			aizen.player_meter[P]+=1
+			if super_meter>aizen.SUPER_METER_AMOUNT
+			{
+				super_meter=0
+				aizen.player_meter[P]=0
+				player_get_ult()
+			}
 		}
 	}
 }

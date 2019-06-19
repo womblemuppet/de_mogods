@@ -4767,6 +4767,14 @@
             }
         },
         {
+            "Key": "b4605d5e-62cb-4504-84e8-8d6e4995d915",
+            "Value": {
+                "id": "10a19d38-506c-4499-95be-56446c2740a1",
+                "resourcePath": "sprites\\mine_sprite_priming\\mine_sprite_priming.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b499c007-96e3-41a8-8949-a5b186cacdbc",
             "Value": {
                 "id": "7c850300-e201-4574-9d92-60121d772205",

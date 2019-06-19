@@ -3,7 +3,7 @@
   
 ****************************************************/
 
-if instance_exists(other.creator)                  /////////// ON HIT   //////////////////
+if instance_exists(other.creator) || other.creator==noone                   /////////// ON HIT   //////////////////
 {
 	if other.hit[P]==false && other.creator!=self.id  ///hit by enemy attack
 	{
