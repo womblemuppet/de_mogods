@@ -181,6 +181,20 @@ if push_other_attacks_timer>0
 
 if doublejumptimer>0
 	doublejumptimer-=1
+	
+if rocket_jump_input_time_counter_from_jump>0
+{
+	rocket_jump_input_time_counter_from_jump-=1
+	show_debug_message("from jump = "+string(rocket_jump_input_time_counter_from_jump))
+}
+
+if rocket_jump_input_time_counter_from_dash>0
+{
+	rocket_jump_input_time_counter_from_dash-=1
+	show_debug_message("from dash = "+string(rocket_jump_input_time_counter_from_dash))
+}
+
+
 if dash_attacks_allowed_counter>0
 {
 	//effect_create_above(ef_firework,x,y-20,0,c_red)
@@ -901,16 +915,17 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 	}
 }
 
-if checkkey_pushed(dashbutton)               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
+var rocketjumped;
+rocketjumped=false
+
+
+if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )  ///[finaledit] could happen with counters to free up check, optimisation.
 {
-	var exception;
-	exception=false
-    
-	if checkkey(upbutton) && !checkkey(downbutton)
+	if (checkkey_pushed(upbutton) || rocket_jump_input_time_counter_from_jump>0) && !checkkey(downbutton)
 	{
 		if player_may_attack()
 		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-			if groundcheck!=noone && dash_rocket_jump==0                                                        ////rocket jump
+			if (groundcheck!=noone || rocket_jump_input_time_counter_from_jump>0) && dash_rocket_jump==0                                                        ////rocket jump
 			{
 				exception=true
 				vspd=0
@@ -921,9 +936,20 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					sprite_index=sprites[31]   ///groundpound freeze super sprite
 				image_speed=FRAME_SPEED_FAST
 				image_index=0
+				rocketjumped=true
 			}
 		} 
-	}
+	}	
+}
+
+
+if checkkey_pushed(dashbutton)               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
+{
+	var exception;
+	exception=false
+	if rocketjumped
+		exception=true
+
 	if !exception && player_may_attack() && checkkey(downbutton) && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound
 		var dropcrabok;
@@ -1011,7 +1037,9 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				image_index=0
 				image_speed=FRAME_SPEED_NORMAL
                 
-                
+				rocket_jump_input_time_counter_from_dash = ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_DASH
+				show_debug_message(choose(" ","  ")+"rocket jump input time counter from dash set to 5")
+				
 				if right                                       //////////////////    dash initial movement
 					hspd=ground_dash_speed
 				else
@@ -1349,8 +1377,8 @@ if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
                                                     /* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
 {
-	var hasjumpedsodosprites;
-	hasjumpedsodosprites=false  
+	var set_jump_sprites;
+	set_jump_sprites=false  
     
 	if checkkey_pushed(upbutton)
 	{
@@ -1360,41 +1388,42 @@ if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 
 		if !exception
 		{
 			if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
-			{   
+			{
 				if (groundcheck!=noone || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
 				{////single or double jump
 					jumped=true  
 					alarm[3]=GROUNDPOUND_UNAVAILABLE_TIME      ///ground pound unavailable time (after jump)
 					cangroundpound=-1
         
-					if doublejump==0
+					if doublejump==0     ////single jump
 					{
-					doublejumptimer=DOUBLEJUMPTIME
-					vspd=-JUMPSPEED*wateryjump
+						rocket_jump_input_time_counter_from_jump=ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP
+						doublejumptimer=DOUBLEJUMPTIME
+						vspd=-JUMPSPEED*wateryjump
 					}
 					if doublejump==1     ///double jump
 					{
-					effect_aniend(whooshbigjump,0.2,-2)
-					vspd=-DOUBLEJUMPSPEED*wateryjump 
+						effect_aniend(whooshbigjump,0.2,-2)
+						vspd=-DOUBLEJUMPSPEED*wateryjump 
 					}
-					hasjumpedsodosprites=true         
+					set_jump_sprites=true         
 				}
                 
 				doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
 			}
 			///////////VETERAN PARACHUTE
-			if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && hasjumpedsodosprites==false
+			if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && set_jump_sprites==false
 			{
 				uniques_parachute=1
 				uniques_parachute_minimum_time_counter=UNIQUES_PARACHUTE_MINIMUM_TIME
 				doublejump=3
 				vspd=vspd/1.5
-				hasjumpedsodosprites=true 
+				set_jump_sprites=true 
 			}
 		}
 	}
     
-	if hasjumpedsodosprites==true   ///do sprites at end (just to be clean and avoid double checks I think)
+	if set_jump_sprites==true   ///do sprites at end
 	{
 		sprite_index=sprites[2]    ///jump windup sprite
 		if super_mode
@@ -1403,6 +1432,7 @@ if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 
 		image_index=0
 	}
 }
+
 if uniques_parachute==1     ////parachute floating effect
 {
 	if vspd>UNIQUES_PARACHUTE_FALL_SPEED
