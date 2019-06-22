@@ -237,10 +237,13 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 		var a;
 		a=instance_create_depth(x,y,0,slinger_airbolt)
 		a.creator=self.id
-		if right
+		if !right
 			a.image_xscale=-1
-		a.hspd=5*a.image_xscale
+		a.hspeed=7*a.image_xscale
+		a.vspeed=6
 	}
+	
+	vspd=min(vspd,-2)
 	uniques_airbolt_lockdown=2
 	uniques_airbolt_has_made_hitbox=true
 }

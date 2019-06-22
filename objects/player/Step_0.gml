@@ -896,6 +896,17 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
                 
 		        }
 		        break;
+		        
+		        	case 1:  ////slinger sunbolt
+			image_index=0
+			image_speed=FRAME_SPEED_NORMAL
+			sprite_index=sprites[72]
+			if super_mode
+				sprite_index=sprites[73]
+			uniques_airbolt_lockdown=1
+			uniques_airbolt_has_made_hitbox=false
+
+		        
 		}
 	}
 }

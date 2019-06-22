@@ -5247,6 +5247,14 @@
             }
         },
         {
+            "Key": "c51acb57-9d3e-47b8-9aba-ff14c4df4159",
+            "Value": {
+                "id": "4d0f6a15-082d-48e4-afd0-4bfc6e702ed9",
+                "resourcePath": "sprites\\slinger_airsunbolt_die_spr\\slinger_airsunbolt_die_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c570171e-2c5a-4848-b7cf-bb360f5ab5e1",
             "Value": {
                 "id": "355a865f-2e3f-46a0-a36b-f522d03599ae",

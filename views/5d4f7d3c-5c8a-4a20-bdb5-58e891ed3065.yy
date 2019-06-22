@@ -20,7 +20,8 @@
         "5bcd5731-5ef0-48f7-aa0e-213e88d33dc8",
         "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
         "dae7e265-fbe2-4c58-a633-ca09608cc2ab",
-        "740fa6ee-97a3-42d3-b9fc-0aaa8f06ae3a"
+        "740fa6ee-97a3-42d3-b9fc-0aaa8f06ae3a",
+        "c51acb57-9d3e-47b8-9aba-ff14c4df4159"
     ],
     "filterType": "GMSprite",
     "folderName": "Slinger",

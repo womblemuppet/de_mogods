@@ -1,5 +1,6 @@
 alarm[0]=1
-vspeed=4
+collided=false
+
 
 for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
 {
