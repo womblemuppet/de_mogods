@@ -5207,6 +5207,14 @@
             }
         },
         {
+            "Key": "c2f2c24c-9b1d-4fcc-82cb-912e087509a4",
+            "Value": {
+                "id": "8a95e41e-1a97-4ce6-9303-5015e1c56c5c",
+                "resourcePath": "sprites\\character_titles_spr\\character_titles_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c3720bb3-0250-4c3f-8ada-193d2e14784f",
             "Value": {
                 "id": "aa731ab9-f253-414a-a1d9-750fd2ff492c",

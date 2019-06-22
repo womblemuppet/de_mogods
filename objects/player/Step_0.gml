@@ -826,11 +826,14 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 
 			aim_octilinear()
 			var xx,yy;
-			xx=lengthdir_x(AIRGRAB_RANGE,octdir)
-			yy=lengthdir_y(AIRGRAB_RANGE,octdir)
+			xx=lengthdir_x(AIRGRAB_RANGE_VERTICAL,octdir)
+			yy=lengthdir_y(AIRGRAB_RANGE_HORIZONTAL,octdir)
 			var a;
 			a=instance_create(x+xx,y+yy+15,airgrab)
 			a.creator=self.id
+			a.xx=xx
+			a.yy=yy+15
+			
             
 			sprite_index=sprites[23]
 			if super_mode

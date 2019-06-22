@@ -183,7 +183,8 @@ airgrab_mode=0   ///0 = can airgrab 1 = has shot grab 2=grab in progress 3=targe
 airgrab_decidedir_time=0
 AIRGRAB_TIME_TO_DECIDE=30
 airgrab_target=-1
-AIRGRAB_RANGE=55
+AIRGRAB_RANGE_VERTICAL=55
+AIRGRAB_RANGE_HORIZONTAL=50
 MAX_CANBOUNCE_COUNTER=20
 AIRGRAB_STUN_TIME=65
 
