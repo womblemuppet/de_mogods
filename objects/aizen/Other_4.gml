@@ -10,7 +10,7 @@ if room==gameroom
 	
 	for (var i = 0; i < 5; ++i) 
 	{
-	    view_visible[i]=true
+		view_visible[i]=true
 		view_enabled[i]=true
 	}
 	
@@ -50,6 +50,7 @@ if room==gameroom
 	bottomhud_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_bottom_border_y,kouchou.rw,room_height-kouchou.room_bottom_border_y)
 	view_set_camera(4,bottomhud_cam)
 
+	instance_create_depth(0,0,-5,borderviews)
     
 	blockstosprite=ds_list_create()    ///list of blocks to have sprite connecting script applied in aizen step event (optimized by doing all at once only once)
 	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed

@@ -1703,8 +1703,11 @@ if  uniques_vet_digging==2
 	
 	if stop
 	{
+		attack_vet_dig_cancel()
+		uniques_vet_digging=0
 		dash_rocket_jump_charge=1
 		attack_rocket_jump()
+		effect_create_above(ef_firework,x,y,c_red,2)
 	}
 	
 }

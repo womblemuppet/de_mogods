@@ -6,7 +6,7 @@ if surface_exists(fossil_surface)
 
 with aizen
 {
-    fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_EVERY)
+    fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_INTERVAL)
 }
 aizen.surface_redraw_counter=0
 

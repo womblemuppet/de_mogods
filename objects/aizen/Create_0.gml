@@ -1,5 +1,7 @@
 room=gameroom
 
+
+
 global.fft=1   ///testing variable for flood orb parents
 
 to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
@@ -11,9 +13,9 @@ destroy_proximity_coods_x=ds_list_create()
 destroy_proximity_coods_y=ds_list_create()
 
 
-surface_redraw_counter=0   ///counter for SURFACE_REDRAW_EVERY
-SURFACE_REDRAW_EVERY=400  ///surface will be redrawn every x travelled
-fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_EVERY)   ///fossil surface  (has extra height past the viewable height as a buffer)
+surface_redraw_counter=0   ///counter for SURFACE_REDRAW_INTERVAL
+SURFACE_REDRAW_INTERVAL=400  ///surface will be redrawn every x travelled
+fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_INTERVAL)   ///fossil surface  (has extra height past the viewable height as a buffer)
 fossil_surface_redraw_needed=false
 
 
@@ -44,14 +46,20 @@ biome_schedule=ds_list_create()    ///list for which biome comes next
 number_of_tergenned_lines=0
 total_baseline_movement=0
 
+terrain_buffer_layer_newest=[]
+terrain_buffer_layer2=[]
+terrain_buffer_layer3=[]
+for (i = 0; i < kouchou.rw/40; i++)
+{
+	terrain_buffer_layer_newest[i]=-2
+	terrain_buffer_layer2[i]=-2
+	terrain_buffer_layer3[i]=-2
+}
+
+
 
 ds_list_add(biome_schedule,choose("forest","sand"))
 ds_list_add(biome_schedule,"cave")
-
-
-
-/////////////
-
 
 
 

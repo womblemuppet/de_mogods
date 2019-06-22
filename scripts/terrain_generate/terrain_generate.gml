@@ -8,6 +8,9 @@
 if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 {
 
+	var numberofblocks_horizontal
+	numberofblocks_horizontal=kouchou.rw/40
+
 	bedrockcounter-=40    ///reset bedrockcounter
 
 	for (var i = 0; i < ds_list_size(blockstosprite_prevlayer); i++) 
@@ -18,14 +21,21 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 
 	number_of_tergenned_lines++
 
-
+		
+	///shift buffer
+		
+	for (var i = 0; i < numberofblocks_horizontal; i++) 
+	{
+		terrain_buffer_layer3[i]=terrain_buffer_layer2[i]
+		terrain_buffer_layer2[i]=terrain_buffer_layer_newest[i]
+	}
+	
 	//show_debug_message("terrain gen at "+string(player_baseline+CREATIONDELAY)+"baseline:"+string(player_baseline)+"   "+string(bedrockcounter)+" is bedrockcounter")
 
 	terrainammo-=1  //move one layer on in current terrain chunk
 	//show_message(terraintype+"    ammo="+string(terrainammo))
 	if terrainammo<1   /// new terrain type
 	{
-		
 		////access random terraintype and chunk_type from chunkery
 		
 		if !ds_map_exists(map_of_chunk_style_pools,biome)
@@ -68,7 +78,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			case "rectangle":
 			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/2)/40)*40
 			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/2)/40)*40
-			platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-15)
+			platform_singleblob_startxi=irandom(floor(numberofblocks_horizontal)-15)
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(1,2,3,4,5,6,7)
 			break;    
@@ -77,7 +87,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			case "singleplatform":
 			platform_startya=choose(1,2)
 			platform_endya=choose(4,5)
-			platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-15)
+			platform_singleblob_startxi=irandom(floor(numberofblocks_horizontal)-15)
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(3,4,5,6,7,8,9)
 			break;
@@ -86,10 +96,10 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			case "lplatform":
 			lplatform_on_right=choose(true,false)
 			if lplatform_on_right
-				lplatform_xi=floor(kouchou.rw/40)-4-irandom(25)
+				lplatform_xi=floor(numberofblocks_horizontal)-4-irandom(25)
 			else
 				lplatform_xi=4+irandom(25)
-			platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-15)
+			platform_singleblob_startxi=irandom(floor(numberofblocks_horizontal)-15)
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(3,4,5,6,7)
 			break;
@@ -105,16 +115,16 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			{
 				terrain_wave_ha[i]=terrainammo-choose(1,2,3,4,5)
 			};                        
-			terrain_wave_xup[kouchou.rw/40]=false   ///resets array that stores whether there is a wave at that x pos or not [finaledit] don't need this line itself?
-			for (i=0; i<kouchou.rw/40; i+=1)
+			terrain_wave_xup[numberofblocks_horizontal]=false   ///resets array that stores whether there is a wave at that x pos or not [finaledit] don't need this line itself?
+			for (i=0; i<numberofblocks_horizontal; i+=1)
 			{
-				terrain_wave_xup[kouchou.rw/40]=false
+				terrain_wave_xup[numberofblocks_horizontal]=false
 			};
             
 			var build;
 			build=false
             
-			for (i=0; i<kouchou.rw/40; i+=1)
+			for (i=0; i<numberofblocks_horizontal; i+=1)
 			{
 				if random(1)>0.7  && build<-2
 					build=choose(2,3,4)                  ///only have a wave appear every 2,3,4 columns         
@@ -147,7 +157,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			if steps_on_right==true
 				sidesteps_start_i=4+irandom(4)
 			else
-				sidesteps_start_i=kouchou.rw/40-1-irandom(4)
+				sidesteps_start_i=numberofblocks_horizontal-1-irandom(4)
 			break;
 			
 			case "chamberspillar":
@@ -163,8 +173,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			secretbox_on_right=choose(true,false)   ///whether secret box is on right or left
 			if secretbox_on_right
 			{
-				secretbox_xistart=floor(kouchou.rw/40)-choose(8,9,10)         ///x start and end of the secret box
-				secretbox_xifinish=floor(kouchou.rw/40)-choose(3,4,5) 
+				secretbox_xistart=floor(numberofblocks_horizontal)-choose(8,9,10)         ///x start and end of the secret box
+				secretbox_xifinish=floor(numberofblocks_horizontal)-choose(3,4,5) 
 			}
 			else
 			{
@@ -204,7 +214,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	makeok=true
 
 	
-	for (i=0; i<kouchou.rw/40; i+=1)   ///create blocks by horizontal line
+	for (i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
 		if position_meeting(kouchou.room_left_border_x+i*40,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
@@ -315,7 +325,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
                 
 			case "pyramid" :
 			makeok=false
-			if i>terrainammo && i<(kouchou.rw/40)-terrainammo
+			if i>terrainammo && i<(numberofblocks_horizontal)-terrainammo
 				makeok=true
 			if terrainammo>terrain_pyramid_plateau_y
 				makeok=false
@@ -335,7 +345,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				makeok=true                 break;
                 
 			case "doublewaves":
-			if terrain_wave_xup[i]==false || terrain_wave_xup[min(i+1,floor(kouchou.rw/40))]==false        ///if not on or next to wave point, don't make wave   (waves are 2 thick)
+			if terrain_wave_xup[i]==false || terrain_wave_xup[min(i+1,floor(numberofblocks_horizontal))]==false        ///if not on or next to wave point, don't make wave   (waves are 2 thick)
 				makeok=false
 			var waveno;
 				waveno=floor(   (i*40)/(kouchou.rw/6))
@@ -432,7 +442,9 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		}
 
      
-        
+		var a;
+		a=-1
+		
 		////////////////////// if all checks passed,  create block
 		if makeok
 		{
@@ -453,36 +465,39 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			if random(1)>0.995 && terrain_special_block_ok()
 				typeofblock=5   ///sentinel    
      
-            
+
 			switch typeofblock
 			{
 				case 0:
-					ds_list_add(blockstosprite_prevlayer,spawn_block(kouchou.room_left_border_x+i*40,argument0,0))   break;
+					a=spawn_block(kouchou.room_left_border_x+i*40,argument0,0)
+					ds_list_add(blockstosprite_prevlayer,a)   break;
 				case 1:
-					spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 2:
-					spawn_weaksand_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_weaksand_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 3:
-					ds_list_add(blockstosprite,spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0))       ///gunnysnake itself doesn't make a block so this makes one for the initial position
+					a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0)
+					ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
 					instance_create(kouchou.room_left_border_x+i*40,argument0,gunnysnake) break;
 				case 4:
-					spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 5:
-					spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
 				default:
 					show_error("unhandled typeofblock case",true)
 			}
-             
 		}
+		
+		terrain_buffer_layer_newest[i]=a
 
-        
-		if random(1)>0.995                                                            /////fossil
+			
+		if random(1)>0.995                                                            /////fossils
 		{
 			var a;
 			a=instance_create(kouchou.room_left_border_x+i*40,argument0,ef_fossil)
 			a.image_xscale=choose(0.5,0.7,0.9)
 			a.image_yscale=a.image_xscale
-			a.image_xscale*=choose(1,-1)
+			a.image_xscale=choose(1,-1)
 			switch biome
 			{
 				case "summit":
@@ -512,33 +527,50 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 					break;
 				}
 				prop_create(kouchou.room_left_border_x+i*40,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
-    
-			}
-			if !makeok
-			{
-				if random(1)>0.995                                                          /////critter
-				{
-					var critter_type,critter_species;
-					critter_type=choose("ground")//,"flying"
-					if critter_type=="ground"
-						critter_species=choose("worm")//,snake etc)
-					var a;
-					a=instance_create(kouchou.room_left_border_x+i*40,5+argument0,critter)
-					with a
-						critter_setup("worm")
-				}
-				if random(1)>0.995                                                          /////throwable critters
-				{
-					var a;
-					a=instance_create(kouchou.room_left_border_x+i*40,argument0,crab)
-					with a
-						critter_throwable_setup(choose("crab","goat"))
-				}
 			}
 		}
+	
           
 	};
-	
-
-
+	if terraintype!="startingflat"
+	{
+		if random(1)>0.995                                                          /////critter
+		{
+			var critter_type,critter_species;
+			critter_type=choose("ground")//,"flying"
+			if critter_type=="ground"
+				critter_species=choose("worm")//,snake etc)
+			var a;
+			a=instance_create(kouchou.room_left_border_x+i*40,5+argument0,critter)
+			with a
+				critter_setup("worm")
+		}
+		
+		
+		
+		if random(1)>0.75                                                          /////throwable critters
+		{
+			var possibles=ds_list_create()
+			
+			for (var i = 0; i < numberofblocks_horizontal; i++) 
+			{
+				if terrain_buffer_layer_newest[i]>0 && terrain_buffer_layer2[i]==-1
+					ds_list_add(possibles,terrain_buffer_layer_newest[i])
+			}
+			
+			if ds_list_size(possibles) >0
+			{
+				ds_list_shuffle(possibles)
+				var critter_spawn_x;
+				critter_spawn_x=possibles[| 0].x
+				show_debug_message("spawned, crittter_spawn_x = "+string(critter_spawn_x)+" terrain_buffer_layer_newest["+string(0)+"] = "+string(terrain_buffer_layer_newest[0])+" terrain_buffer_layer2["+string(0)+"] = "+string(terrain_buffer_layer2[0]))
+				ds_list_destroy(possibles)
+				
+				var a;
+				a=instance_create(critter_spawn_x,argument0-40,crab)
+				with a
+					critter_throwable_setup(choose("crab","goat"))
+			}
+		}
+	}
 }

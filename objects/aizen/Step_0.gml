@@ -123,21 +123,20 @@ if lowest>840 && !instance_exists(ice_block)   // [finaledit] don't like doing t
 }
 
 
-{
-	bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
-	total_baseline_movement+=player_baseline_difference
-	if player_baseline_difference!=0
-		show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
-	
-	surface_redraw_counter+=player_baseline_difference
-	if surface_redraw_counter>SURFACE_REDRAW_EVERY
-	{
-		fossil_surface_redraw_needed=true
-		surface_redraw_counter-=SURFACE_REDRAW_EVERY
-	}
 
-	terrain_generate(player_baseline+CREATIONDELAY-bedrockcounter)
+bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
+total_baseline_movement+=player_baseline_difference
+//if player_baseline_difference!=0
+//	show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
+	
+surface_redraw_counter+=player_baseline_difference
+if surface_redraw_counter>SURFACE_REDRAW_INTERVAL
+{
+	fossil_surface_redraw_needed=true
+	surface_redraw_counter-=SURFACE_REDRAW_INTERVAL
 }
+
+terrain_generate(player_baseline+CREATIONDELAY-bedrockcounter)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   set all sprites for necessary blocks
