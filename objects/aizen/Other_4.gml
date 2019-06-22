@@ -215,7 +215,15 @@ if room==gameroom
 			startbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"startbutton")
 			if gamepad
 				padnumber=ds_map_find_value(kouchou.keybinding_map_array[P],"padnumber")
-  
+			
+			var b;
+			b=instance_create_depth(x,y,-4,ef_timed_indicator)
+			b.targ=id
+			b.sprite_index=playernumberindicators
+			b.image_speed=0
+			b.image_index=P
+			b.alarm[0]=120
+			
 		}
 	};
     

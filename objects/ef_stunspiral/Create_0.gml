@@ -1,2 +1,2 @@
-image_speed=0.2
-
+event_inherited()
+targ=-1
