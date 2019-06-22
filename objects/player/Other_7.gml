@@ -27,7 +27,7 @@ else if sprite_index==sprites[5] || sprite_index==sprites[7]  ///gp fall or gp f
 	image_speed=FRAME_SPEED_FAST    ///loop last frames of gp animation
 	image_index=image_number-2
 }
-else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket charge or rocket charge super
+else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket jump or rocket jump super
 {
 	if dash_rocket_jump==1
 	{ 
@@ -47,7 +47,7 @@ else if sprite_index==sprites[32]   ///vet place mine
 {
 	player_set_idle()
 	var a;
-	a=instance_create(x,y-10,mine)
+	a=instance_create(x,y+5,mine)
 	a.creator=a.id
 	a.player_who_placed_mine=self.id
 	mines_ammo-=1

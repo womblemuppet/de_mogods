@@ -137,4 +137,9 @@ switch argument0
 			}
 		}
 	} break;
+	case "mineexplosion_big":
+		if !place_meeting(x,y-1,block)
+			y-=1
+		canbounce_counter=25
+	break;
 }

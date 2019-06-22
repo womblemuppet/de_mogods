@@ -76,19 +76,27 @@ if triggered   /// >:O
 	{
 		var b,hitboxspr;
 		hitboxspr=mine_sprite_explosion
-		if !bigexplosion
-			effect_aniend(mine_sprite_explosion,0.2,-1)
-		else
+		
+		if bigexplosion
 		{
 			var b;
 			b=effect_aniend(mine_groundpunch_combo_shockwave,0.2,-1)
 			b.image_xscale=bigexplosion_xscale
 			hitboxspr=mine_groundpunch_combo_shockwave_hitbox
+			
+			b=attack_create_hitbox(60,1,false,true,true,"mineexplosion_big",hitboxspr,0.2,99,bigexplosion_xscale*8,4)
+			b.creator=noone
+			b.image_xscale=bigexplosion_xscale
 		}
-		
-		b=attack_create_hitbox(60,1,false,true,true,"mineexplosion",hitboxspr,0.2,99,0,2)
-		b.creator=noone
-		b.image_xscale=bigexplosion_xscale
+		else
+		{
+			effect_aniend(mine_sprite_explosion,0.2,-1)
+			
+			b=attack_create_hitbox(60,1,false,true,true,"mineexplosion",hitboxspr,0.2,99,0,2)
+			b.creator=noone
+			b.image_xscale=bigexplosion_xscale
+		}
+
 
 		instance_destroy()
 	}

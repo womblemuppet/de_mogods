@@ -20,6 +20,6 @@ dash_rocket_jump=2
 uniques_parachute=0 ///allow parachute  after rocket jump
 doublejump=2
 
-attack_create_dash_hitbox(true,DASH_ROCKET_JUMP_STUN_DURATION_LEVELS[dash_rocket_jump_charge],2,4,"rocket jump",rjump_hitbox1,FRAME_SPEED_NORMAL,false)
+attack_create_dash_hitbox(true,DASH_ROCKET_JUMP_STUN_DURATION_LEVELS[dash_rocket_jump_charge],3,9,"rocket jump",rjump_hitbox1,FRAME_SPEED_NORMAL,false)
 
 dash_rocket_jump_charge=0

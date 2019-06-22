@@ -871,7 +871,7 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 				a=instance_create(x,y-10,mine)
 				a.creator=self.id
 				a.direction=octdir
-			        with a
+				with a
 				{
 					if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315
 					{
