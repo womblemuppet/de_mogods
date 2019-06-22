@@ -139,6 +139,14 @@ else if sprite_index==sprites[70] || sprite_index==sprites[71]  ///slinger sunbl
 		player_set_idle()   
 	}
 }
+else if sprite_index==sprites[73] || sprite_index==sprites[72]  ///slinger air sunbolt
+{
+	if uniques_airbolt_lockdown==2
+	{
+		uniques_airbolt_lockdown=0
+		player_set_idle()
+	}
+}
 else if sprite_index==sprites[80] || sprite_index==sprites[81]  ///bait shark attack heavy attack
 {
 	if uniques_sharkattack_lockdown==2

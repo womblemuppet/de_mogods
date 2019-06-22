@@ -664,22 +664,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		image_index=0
 	}
     
-    /*
-	if !exception && dashcd>0 && uniques_attack_during_dash==true && uniques_combatroll_lockdown==0    ////slinger dash roll attack
-	{
-		exception=true
-		sprite_index=sprites[73]
-		image_speed=0.2
-		image_index=0
-		uniques_combatroll_lockdown=1
-		if (checkkey(leftbutton) && hspd<0) || (checkkey(rightbutton) && hspd>0)
-			hspd*=1.8
-		else
-			hspd*=1.3
-		alarm[5]=2
-        
-	}
-	*/
+
     
     
 	if !exception && canpush

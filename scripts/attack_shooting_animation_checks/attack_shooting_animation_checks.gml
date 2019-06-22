@@ -175,62 +175,74 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 {
 	if uniques_sunblast_has_made_hitbox==false
 	{
-	var b;
-	b=attack_create_hitbox(30,1,false,true,true,"sunblast",sunbolt_sprite,1,99,7,4)
-	with b
-	{
-		x=round(x/40)*40
-		instance_change(sunblast,false)
-	}
-
-	b.right=right
-	b.length=1
-	var c,MAX_LENGTH;
-	MAX_LENGTH=30
-	c=1
-	if b.right==false
-		c=-1
-        
-	with b
-	{
-		if right
+		var b;
+		b=attack_create_hitbox(30,1,false,true,true,"sunblast",sunblast_sprite,1,99,7,4)
+		with b
 		{
-			repeat(MAX_LENGTH)
+			x=round(x/40)*40
+			instance_change(sunblast,false)
+		}
+
+		b.right=right
+		b.length=1
+		var c,MAX_LENGTH;
+		MAX_LENGTH=30
+		c=1
+		if b.right==false
+			c=-1
+        
+		with b
+		{
+			if right
 			{
-				if !place_meeting(x+(40*length),y,block)
-					length+=1
+				repeat(MAX_LENGTH)
+				{
+					if !place_meeting(x+(40*length),y,block)
+						length+=1
+				}
+			}
+		else
+			{
+			repeat(MAX_LENGTH)
+				{
+					if !place_meeting(x-(40*length),y,block)
+						length+=1
+				}            
 			}
 		}
-	else
-		{
-		repeat(MAX_LENGTH)
-			{
-				if !place_meeting(x-(40*length),y,block)
-					length+=1
-			}            
-		}
-	}
-	//show_message(a.length)
-	var d;
-	d=create_terrain_cutter(eightysqcircle,"disintegrated",-1,7)      
+		//show_message(a.length)
+		var d;
+		d=create_terrain_cutter(eightysqcircle,"disintegrated",-1,7)      
          
-	//b = hitbox id, d = terrain cutter id
-	if b.right==false
-	{
-		b.image_xscale=-(b.length)
-		d.x-=b.length*40
-	}
-	else
-	{
-		b.image_xscale=b.length
-		d.x+=b.length*40
-	}
-        
-
+		//b = hitbox id, d = terrain cutter id
+		if b.right==false
+		{
+			b.image_xscale=-(b.length)
+			d.x-=b.length*40
+		}
+		else
+		{
+			b.image_xscale=b.length
+			d.x+=b.length*40
+		}
 
 	}
 	uniques_sunblast_lockdown=2
 	uniques_sunblast_has_made_hitbox=true
+}
+if image_index>3 && uniques_airbolt_lockdown==1                             //////////FIRE AIR SUNBOLT
+{
+	if uniques_airbolt_has_made_hitbox==false
+	{
+		var a;
+		a=instance_create_depth(x,y,0,slinger_airbolt)
+		a.creator=self.id
+		if right
+			a.image_xscale=-1
+		a.hspd=5*a.image_xscale
+	}
+	uniques_airbolt_lockdown=2
+	uniques_airbolt_has_made_hitbox=true
 }
 
 if uniques_sharkattack_lockdown==1 && image_index>3

@@ -162,7 +162,9 @@ switch character
 		{
 			supersparkle_sprite=P1_saiyanaura 
 			sentinel_colour=c_purple    
-			sprites[71]=Slinger_3H_sunbolt
+			sprites[73]=Slinger_3H_airsunbolt  ///super version (to be changed)
+			sprites[72]=Slinger_3H_airsunbolt
+			sprites[71]=Slinger_3H_sunbolt  ///super version (to be changed)
 			sprites[70]=Slinger_3H_sunbolt 
 			sprites[28]=Slinger_3H_rocketjump
 			sprites[29]=Slinger_3H_rocketjump
@@ -196,6 +198,7 @@ switch character
 			sprites[12]=Slinger_3H_fall      //super version     
 		}
 	} break;
+	
 	case "bait":
 	{
 		supersparkle_sprite=P1_saiyanaura 

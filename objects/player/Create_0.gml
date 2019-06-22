@@ -45,7 +45,7 @@ DASH_LOCKDOWN_TIME=20 ///time you can't move after dashing
 dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping the dash lockdown
 dash_rocket_jump=0 //// upward dash     0 can 1 freeze 2 in animation 3 used.
 dash_rocket_jump_charge=0 ///0 for not charged, 1 ,2, 3 for different charge durations
-ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP=5   ///amount of time after pushing up where pushing dash will start rocket jump
+ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP=3   ///amount of time after pushing up where pushing dash will start rocket jump
 rocket_jump_input_time_counter_from_jump=0   ///counter for above
 ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_DASH=3    ///amount of time after pushing dash where pushing up will start rocket jump
 rocket_jump_input_time_counter_from_dash=0   ///counter for above
@@ -155,6 +155,10 @@ uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
 uniques_sunblast_cd_counter=0
 UNIQUES_SUNBLAST_COOLDOWN=80
 uniques_sunblast_has_made_hitbox=false
+
+//SLINGER AIRBOLT
+uniques_airbolt_lockdown=0
+uniques_airbolt_has_made_hitbox=false
 
 //SLINGER AIRDASH RESET
 uniques_airdash_resets_jump=false

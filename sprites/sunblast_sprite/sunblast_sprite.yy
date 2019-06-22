@@ -2,7 +2,7 @@
     "id": "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sunbolt_sprite",
+    "name": "sunblast_sprite",
     "For3D": false,
     "HTile": false,
     "VTile": false,

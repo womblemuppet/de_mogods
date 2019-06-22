@@ -186,7 +186,7 @@
         
     ],
     "last": 0,
-    "maintainGms1Font": true,
+    "maintainGms1Font": false,
     "pointRounding": 0,
     "ranges": [
         {

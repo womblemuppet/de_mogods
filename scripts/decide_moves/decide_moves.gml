@@ -107,8 +107,8 @@ switch (character)
 	//no gp effect
 	ds_map_add(attacks, "air light attack", -1);
 	//no airgrab
-	ds_map_add(attacks, "air heavy attack", -1);
-	//no attack set
+	ds_map_add(attacks, "air heavy attack", 1);
+	//airbolt
 	ds_map_add(attacks, "ult get trigger", 0);
 	//ooga ki blast (probably gonna change)
 	ds_map_add(attacks, "special hold down", -1);

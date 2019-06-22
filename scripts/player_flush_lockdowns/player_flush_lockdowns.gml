@@ -10,6 +10,7 @@ uniques_aapunch_has_made_hitbox2=false
 uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_sunblast_lockdown=0
+uniques_airbolt_lockdown=0
 airgrab_mode=0
 cangroundpound=0
 dash_rocket_jump=0

@@ -76,81 +76,81 @@ if room==loremenu
 
 if room==settings
 {    
-    //draw_set_alpha(1)
-    draw_set_font(font_coins)
-    draw_set_halign(fa_left)
-    draw_set_valign(fa_left)
+	//draw_set_alpha(1)
+	draw_set_font(font_coins)
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_left)
     
 
-    draw_sprite(temp_settings_background_1,0,0,0)
+	draw_sprite(temp_settings_background_1,0,0,0)
     
-    var xx,yy,vgap;
-    xx=150    //settings title x
-    yy=300
-    vgap=55
-    xx2=850   ///settings setting x,,
+	var xx,yy,vgap;
+	xx=150    //settings title x
+	yy=300
+	vgap=55
+	xx2=850   ///settings setting x,,
     
     
-    var t;
-    t=""
+	var t;
+	t=""
         
-    draw_set_colour(c_black)
-    if setmenu_select==0
-        draw_set_colour(c_silver)
-    draw_text(xx,yy,"display mode")
-    if setmenu_fullscreen==true
-        t="fullscreen"
-    else
-        t="windowed"
-    draw_text(xx2,yy,t)
+	draw_set_colour(c_black)
+	if setmenu_select==0
+		draw_set_colour(c_silver)
+	draw_text(xx,yy,"display mode")
+	if setmenu_fullscreen==true
+		t="fullscreen"
+	else
+		t="windowed"
+	draw_text(xx2,yy,t)
         
-    draw_set_colour(c_black)
-    if setmenu_select==1
-        draw_set_colour(c_silver)
-    draw_text(xx,yy+vgap,"graphics detail")
-    if setmenu_graphics_fid==0
-        t="low"
-    else if setmenu_graphics_fid==1
-        t="high"
+	draw_set_colour(c_black)
+	if setmenu_select==1
+		draw_set_colour(c_silver)
+	draw_text(xx,yy+vgap,"graphics detail")
+	if setmenu_graphics_fid==0
+		t="low"
+	else if setmenu_graphics_fid==1
+		t="high"
     
-    draw_text(xx2,yy+vgap,t)
+	draw_text(xx2,yy+vgap,t)
         
-    draw_set_colour(c_black)
-    if setmenu_select==2
-        draw_set_colour(c_silver)
-    draw_text(xx,yy+vgap*2,"sound effects volume")
-    draw_text(xx2,yy+vgap*2,setmenu_eff_volume)
+	draw_set_colour(c_black)
+	if setmenu_select==2
+		draw_set_colour(c_silver)
+	draw_text(xx,yy+vgap*2,"sound effects volume")
+	draw_text(xx2,yy+vgap*2,setmenu_eff_volume)
     
-    draw_set_colour(c_black)
-    if setmenu_select==3
-        draw_set_colour(c_silver)
-    draw_text(xx,yy+vgap*3,"background music volume")
-    draw_text(xx2,yy+vgap*3,setmenu_bgm_volume)
+	draw_set_colour(c_black)
+	if setmenu_select==3
+		draw_set_colour(c_silver)
+	draw_text(xx,yy+vgap*3,"background music volume")
+	draw_text(xx2,yy+vgap*3,setmenu_bgm_volume)
 
-    draw_set_colour(c_black)
-    if setmenu_select==4
-        draw_set_colour(c_silver)
-    draw_text(xx,yy+vgap*4,"show fps counter")
+	draw_set_colour(c_black)
+	if setmenu_select==4
+		draw_set_colour(c_silver)
+	draw_text(xx,yy+vgap*4,"show fps counter")
 
-    if setmenu_show_fps==true
-        t="True"
-    else
-        t="False"
-    draw_text(xx2,yy+vgap*4,t)
+	if setmenu_show_fps==true
+		t="True"
+	else
+		t="False"
+	draw_text(xx2,yy+vgap*4,t)
 
     
-    draw_set_colour(c_black)
-    if setmenu_select==5
-        draw_set_colour(c_silver)
-    draw_text(xx,yy+vgap*5,"input code")
-    if setmenu_codetxt==""
-        t="-"
-    else
-        t=setmenu_codetxt
-    draw_text(xx2,yy+vgap*5,t)
+	draw_set_colour(c_black)
+	if setmenu_select==5
+		draw_set_colour(c_silver)
+	draw_text(xx,yy+vgap*5,"input code")
+	if setmenu_codetxt==""
+		t="-"
+	else
+		t=setmenu_codetxt
+	draw_text(xx2,yy+vgap*5,t)
     
-    draw_set_colour(make_colour_hsv(50,181,207))
-    draw_text(room_width/3,room_height-200,"Press Esc to save changes and leave")
+	draw_set_colour(make_colour_hsv(50,181,207))
+	draw_text(room_width/3,room_height-200,"Press Esc to save changes and leave")
     
 
 }
@@ -159,118 +159,117 @@ if room==settings
 
 if room==multiplayermenu
 {
-draw_set_halign(fa_left)
-draw_set_alpha(1)    
-draw_set_font(font_charselect)    
+	draw_set_halign(fa_left)
+	draw_set_alpha(1)    
+	draw_set_font(font_charselect)    
     
-//// if competitive, draw backgrounds and props
-if competitive_mode
-{
-	draw_clear(c_navy)
-	draw_sprite_ext(menu_competitive_groundback,0,0,room_height-650,room_width/100,1,0,c_white,1)
-	draw_sprite(cupppp,0,room_width/2,room_height/2)
-	draw_sprite(menu_first_to,0,room_width/2,60)
-}
+	//// if competitive, draw backgrounds and props
+	if competitive_mode
+	{
+		draw_clear(c_navy)
+		draw_sprite_ext(menu_competitive_groundback,0,0,room_height-650,room_width/100,1,0,c_white,1)
+		draw_sprite(cupppp,0,room_width/2,room_height/2)
+		draw_sprite(menu_first_to,0,room_width/2,60)
+	}
     
     
 
 
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
-{    
-	/// if not competitive, draw coloured player backgrounds (temp)
-	if !competitive_mode
-		draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
+	for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+	{    
+		/// if not competitive, draw coloured player backgrounds (temp)
+		if !competitive_mode
+			draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
         
         
-	//player join slot prompts
-	draw_set_colour(c_silver) 
-	if ready[i]==-1 && i==next_open_slot
-	{
-		draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+200,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
-		var t;
-		t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
-		if number_of_keyboards_in_use==1
-			t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
-		if number_of_keyboards_in_use>1
-			t="press [start]\n on controller to join"
-		draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+50,t)
-	}
+		//player join slot prompts
+		draw_set_colour(c_silver) 
+		if ready[i]==-1 && i==next_open_slot
+		{
+			draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+200,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
+			var t;
+				t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
+			if number_of_keyboards_in_use==1
+				t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
+			if number_of_keyboards_in_use>1
+				t="press [start]\n on controller to join"
+			draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+50,t)
+		}
         
-	var flip,flipextra_x;     ///flips character select portrait for p1 and p3
-	flip=-1
-	flipextra_x=600
-	if i mod 2 == 1
-	{
-		flip=1
-		flipextra_x=0   
-	}
+		var flip,flipextra_x;     ///flips character select portrait for p1 and p3
+		flip=-1
+		flipextra_x=600
+		if i mod 2 == 1
+		{
+			flip=1
+			flipextra_x=0   
+		}
             
-	if ready[i]!=-1
-	{
-		//draw character portrait
-		if ready[i]!=2
-			draw_sprite_ext(character_portraits_array[selected_character_id[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
-		else
-			draw_sprite_ext(character_portraits_array[selected_character_id[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+		if ready[i]!=-1
+		{
+			//draw character portrait
+			if ready[i]!=2
+				draw_sprite_ext(character_portraits_array[selected_character_id[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
+			else
+				draw_sprite_ext(character_portraits_array[selected_character_id[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
 				
-		//draw options frame
-		if ready[i]==0 || ready[i]==1
-			draw_sprite_ext(menu_player_options_frame,0,menu_player_options_x[i],menu_player_options_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
-	}
-	if ready[i]==0     /// selecting character, draw lore
-	{
-	
+			//draw options frame
+			if ready[i]==0 || ready[i]==1
+				draw_sprite_ext(menu_player_options_frame,0,menu_player_options_x[i],menu_player_options_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
+		}
+		if ready[i]==0     /// selecting character, draw character bio
+		{
 			for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selected_character_id[i]]); ++ii) 
 			{
-				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*15),ds_list_find_value(lore_character_select_bio_array[selected_character_id[i]],ii)   )
+				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*35),ds_list_find_value(lore_character_select_bio_array[selected_character_id[i]],ii)   )
 			}
 			
-		//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selected_character_id[i]]) [continue] lore_character_select_bio_0
-	}
-	else if ready[i]==1                                                                   ////// player options setup 
-	{
-		var normalcol,hovercol;
-		normalcol=c_silver
-		hovercol=c_white
-		draw_set_colour(normalcol)
+			//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selected_character_id[i]]) [continue] lore_character_select_bio_0
+		}
+		else if ready[i]==1                                                                   ////// player options setup 
+		{
+			var normalcol,hovercol;
+			normalcol=c_silver
+			hovercol=c_white
+			draw_set_colour(normalcol)
             
-		if readymenuselect[i]==0
-			draw_set_colour(hovercol)
-		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+100,"control scheme -")
+			if readymenuselect[i]==0
+				draw_set_colour(hovercol)
+			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+100,"control scheme -")
 		
-		var t;
-		if control_setup[i]=="kb_full"
-			t="keyboard full"
-		else if control_setup[i]=="kb_left"
-			t="keyboard narrow 1"
-		else if control_setup[i]=="kb_right"
-			t="keyboard narrow 2"
-		else if control_setup[i]=="controller_default"
-			t="controller default"
-		else if control_setup[i]=="controller_custom"
-			t="controller custom 1"
+			var t;
+			if control_setup[i]=="kb_full"
+				t="keyboard full"
+			else if control_setup[i]=="kb_left"
+				t="keyboard narrow 1"
+			else if control_setup[i]=="kb_right"
+				t="keyboard narrow 2"
+			else if control_setup[i]=="controller_default"
+				t="controller default"
+			else if control_setup[i]=="controller_custom"
+				t="controller custom 1"
 
-		draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+100,t)
+			draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+100,t)
             
             
-		draw_set_colour(normalcol)
-		if readymenuselect[i]==1
-			draw_set_colour(hovercol)
-		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"hp")
-		if playerhandicap[i]==1
-			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"+")
-		else if playerhandicap[i]==2
-			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"++")
+			draw_set_colour(normalcol)
+			if readymenuselect[i]==1
+				draw_set_colour(hovercol)
+			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"hp")
+			if playerhandicap[i]==1
+				draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"+")
+			else if playerhandicap[i]==2
+				draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+130,"++")
                 
-		draw_set_colour(normalcol)
-		if readymenuselect[i]==2
-			draw_set_colour(hovercol)
+			draw_set_colour(normalcol)
+			if readymenuselect[i]==2
+				draw_set_colour(hovercol)
             
-		draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
-		draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
+			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
+			draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
             
-	}
-};
+		}
+	};
     
 	if !competitive_mode
 		draw_sprite(mock_character_grid_background,0,midx,midy)
@@ -338,12 +337,12 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 
 if starbucksmode
 {
-    if !mouse_check_button(mb_left)
-    {
-        draw_set_colour(c_black)
-        draw_rectangle(0,0,mouse_x-25,room_height,false)
-        draw_rectangle(mouse_x+25,0,room_width,room_height,false)
-    }
+	if !mouse_check_button(mb_left)
+	{
+		draw_set_colour(c_black)
+		draw_rectangle(0,0,mouse_x-25,room_height,false)
+		draw_rectangle(mouse_x+25,0,room_width,room_height,false)
+	}
 }
 
 

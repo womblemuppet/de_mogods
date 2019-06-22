@@ -284,14 +284,14 @@ lore_character_select_bio_array=[lore_character_select_bio_0,lore_character_sele
 
 var lore_text_line_width;
 lore_text_line_width=450
-lore_character_select_name[0]="untitled"
-string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[0])
+lore_character_select_name[0]="Ooga"
+string_split_lines_add_to_list("In me is the fire that burns the sun and dries the oceans. I will ascend.",lore_text_line_width,lore_character_select_bio_array[0])
 lore_character_select_name[1]="Veteran"
-string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[1])
+string_split_lines_add_to_list("The islanders say theres something in this jungle, attacks without warning, a savage, a solitary predator with glowing red eyes. All I ever see out here is dead people an my own reflection",lore_text_line_width,lore_character_select_bio_array[1])
 lore_character_select_name[2]="Sunslinger"
-string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[2])
+string_split_lines_add_to_list("The resort goers have seen him annually for as long as anyone can remember. Sitting in the sunbaked sand, regretfully, like it was once a piece of him",lore_text_line_width,lore_character_select_bio_array[2])
 lore_character_select_name[3]="Bait"
-string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[3])
+string_split_lines_add_to_list("Sharks die if they stop moving, Bro.",lore_text_line_width,lore_character_select_bio_array[3])
 lore_character_select_name[4]="Bert"
 string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bio_array[4])
 lore_character_select_name[5]="jermy"
