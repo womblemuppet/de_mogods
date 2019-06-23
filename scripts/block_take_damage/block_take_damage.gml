@@ -46,10 +46,10 @@ switch other.type
 
 	break;
 	case "gilded":
-	effect_create_above(ef_firework,x,y,2,c_olive)
+	//effect_create_above(ef_firework,x,y,2,c_olive)
 	break;
 	case "disintegrated":
-	effect_create_above(ef_firework,x,y,2,c_blue)
+	//effect_create_above(ef_firework,x,y,2,c_blue)
 	break;
 	case "pushed":
 

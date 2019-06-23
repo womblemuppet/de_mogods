@@ -3207,6 +3207,14 @@
             }
         },
         {
+            "Key": "77a98b63-228a-412d-8fe2-6014fe989b2d",
+            "Value": {
+                "id": "a3a6eb56-5dc7-4b88-af79-ebb466d7a1f8",
+                "resourcePath": "sprites\\sunblast_blast_spr\\sunblast_blast_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "77cfa80d-3722-414e-8cb3-060f69c6c6dd",
             "Value": {
                 "id": "23c0ac65-64c1-4624-974b-29d1d865b96c",
@@ -6123,6 +6131,14 @@
             "Value": {
                 "id": "89ebb7ba-23c3-43ea-a83e-046b87f7162f",
                 "resourcePath": "sprites\\forest3\\forest3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e234ac5b-32a6-4b71-80ea-e901961d24a6",
+            "Value": {
+                "id": "eca66832-f8d5-4deb-923b-0728a5f13db0",
+                "resourcePath": "sprites\\sunblast_terrain_cut_mask\\sunblast_terrain_cut_mask.yy",
                 "resourceType": "GMSprite"
             }
         },

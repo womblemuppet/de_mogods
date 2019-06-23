@@ -210,9 +210,10 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 				}            
 			}
 		}
-		//show_message(a.length)
+
 		var d;
-		d=create_terrain_cutter(eightysqcircle,"disintegrated",-1,7)      
+		d=create_terrain_cutter(sunblast_terrain_cut_mask,"disintegrated",-1,7)
+		
          
 		//b = hitbox id, d = terrain cutter id
 		if b.right==false
@@ -224,6 +225,11 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 		{
 			b.image_xscale=b.length
 			d.x+=b.length*40
+		}
+		
+		with d
+		{
+			effect_aniend(sunblast_blast_spr,0.2,-1)
 		}
 
 	}
