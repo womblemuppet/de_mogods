@@ -1743,6 +1743,14 @@
             }
         },
         {
+            "Key": "42b59614-6f76-439b-9f39-f9140d6f4ac5",
+            "Value": {
+                "id": "a132e7e7-4ea1-470a-a90e-53af58f8e1a7",
+                "resourcePath": "sprites\\instrument_spr_boar_backup\\instrument_spr_boar_backup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42ebfff4-20cd-4be9-8222-7089277d798a",
             "Value": {
                 "id": "aab16608-ed60-4520-8b6c-e7e2f86b3719",
