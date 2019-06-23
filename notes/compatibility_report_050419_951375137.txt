@@ -21,8 +21,8 @@ Font font_scoreboard has been converted to font family Courier New Greek (Regula
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_scoreboard\font_scoreboard.gms1.png
 !!! Font font_score font family UD デジタル 教科書体 N-R is installed but couldn't match style - Font has NOT been regenerated
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_score\font_score.gms1.png
-Font font_coins has been converted to font family Arial (Bold)
-GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_coins\font_coins.gms1.png
+Font font_menu has been converted to font family Arial (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_menu\font_menu.gms1.png
 Font font_debug has been converted to font family Ebrima (Regular)
 GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_debug\font_debug.gms1.png
 Font font_game_start_countdown has been converted to font family Britannic Bold (Regular)

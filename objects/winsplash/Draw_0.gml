@@ -4,7 +4,7 @@ if show_restart_option
 {
     draw_set_halign(fa_center)
     draw_set_colour(c_black)
-    draw_set_font(font_coins)
+    draw_set_font(font_menu)
     draw_text(kouchou.room_x_halfway,kouchou.room_bottom_border_y-200,string_hash_to_newline("press [light attack] to restart"))
 }
 

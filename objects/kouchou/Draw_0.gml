@@ -5,7 +5,7 @@ if room==menu
 	draw_clear(menu_letterbox_colour)
 	draw_sprite(menu_background_1,menu_background_subspr,midx,midy)
 	draw_sprite_ext(log,menu_logo_subspr,room_width/2,225,4,4,0,c_white,1)
-	draw_set_font(font_coins)
+	draw_set_font(font_menu)
 	draw_set_halign(fa_middle)
 	draw_set_colour(c_gray)   
     
@@ -32,7 +32,7 @@ if room==menu
     
 
 }
-if room==loremenu
+else if room==loremenu
 {
 
 	//draw_set_alpha(1)
@@ -45,7 +45,7 @@ if room==loremenu
 	draw_rectangle(lorelistx,lorelisty,lorelistx+200,lorelisty+330,false) 
     
 	draw_set_colour(c_black)   ///back button
-	draw_set_font(font_coins)
+	draw_set_font(font_menu)
 	draw_set_valign(fa_left)
 	if lorebackselect==true
 	draw_set_colour(c_white)
@@ -60,7 +60,7 @@ if room==loremenu
 	{
 		if lorescroll+i<ds_list_size(lore_list)
 		{
-			draw_set_font(font_coins)
+			draw_set_font(font_menu)
 			draw_set_colour(c_black)
 			if loreselect==lorescroll+i && lorebackselect==false
 				draw_set_colour(c_white)
@@ -73,11 +73,10 @@ if room==loremenu
 	draw_text(loreboxx+20,loreboxy+20,ds_list_find_value(lore_data,loreselect))
 
 }
-
-if room==settings
+else if room==settings
 {    
 	//draw_set_alpha(1)
-	draw_set_font(font_coins)
+	draw_set_font(font_menu)
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_left)
     
@@ -154,10 +153,7 @@ if room==settings
     
 
 }
-
-
-
-if room==multiplayermenu
+else if room==multiplayermenu
 {
 	draw_set_halign(fa_left)
 	draw_set_alpha(1)    
@@ -167,7 +163,7 @@ if room==multiplayermenu
 	if competitive_mode
 	{
 		draw_clear(c_navy)
-		draw_sprite_ext(menu_competitive_groundback,0,0,room_height-650,room_width/100,1,0,c_white,1)
+		draw_sprite_ext(menu_competitive_groundback,0,0,0,room_width/1199,1,0,c_white,1)
 		draw_sprite(cupppp,0,room_width/2,room_height/2)
 		draw_sprite(menu_first_to,0,room_width/2,60)
 	}
@@ -290,7 +286,7 @@ if room==multiplayermenu
 	draw_text(room_width/2,room_height*(4/5),buglist_text)  */ 
     
 
-	draw_set_font(font_coins)
+	draw_set_font(font_menu)
 	draw_set_valign(fa_middle)
 	draw_set_colour(c_black)
     

@@ -209,12 +209,12 @@ competitive_mode=false
 menuselect=1
 MENUSELECTMAX=6
 main_menu_texts[MENUSELECTMAX]=""
-main_menu_texts[0]="singleplayer"
-main_menu_texts[1]="tryhard versus mode"
-main_menu_texts[2]="party mode"
-main_menu_texts[3]="lore"
-main_menu_texts[4]="settings"
-main_menu_texts[5]="exit"
+main_menu_texts[0]="SINGLEPLAYER"
+main_menu_texts[1]="TRYHARD VERSUS MODE"
+main_menu_texts[2]="PARTY MODE"
+main_menu_texts[3]="LORE"
+main_menu_texts[4]="SETTINGS"
+main_menu_texts[5]="EXIT"
 
 
 

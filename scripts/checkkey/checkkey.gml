@@ -9,7 +9,7 @@ if gamepad
 	{
 		if argument0==gp_padr && (kouchou.stick_pressed_r[P]==1 || kouchou.stick_pressed_r[P]==2)
 			return true
-		if argument0==gp_padu && (kouchou.stick_pressed_u[P]==1 || kouchou.stick_pressed_u[P]==2)
+		if (argument0==gp_padu || argument0==gp_face1) && (kouchou.stick_pressed_u[P]==1 || kouchou.stick_pressed_u[P]==2)
 			return true
 		if argument0==gp_padl && (kouchou.stick_pressed_l[P]==1 || kouchou.stick_pressed_l[P]==2)
 			return true
