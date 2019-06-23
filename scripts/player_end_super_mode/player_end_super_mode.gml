@@ -1,2 +1,4 @@
 unique_ooga_gp_charges=0
 super_mode=false
+
+player_update_super_meter_hud()

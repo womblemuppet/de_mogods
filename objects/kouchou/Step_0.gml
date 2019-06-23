@@ -41,7 +41,7 @@ if room==multiplayermenu
 				}
 			}
 		}
-	} 
+	}
 	
 	if number_of_keyboards_in_use==1
 	{  

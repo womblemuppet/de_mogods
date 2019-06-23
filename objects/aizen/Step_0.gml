@@ -13,6 +13,11 @@ if hudfloatingmasks_subimage>HUDFLOATINGMASKS_IMAGE_NUMBER
 	hudfloatingmasks_subimage=0
 
 
+for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
+{
+	if hud_player_ult_time_remaining[i]>0
+		hud_player_ult_time_remaining[i]-=1
+}
 
 
 stackframe_subimage+=0.2
@@ -22,6 +27,7 @@ if stackframe_subimage>stackframe_image_number
 }
 
 fossil_surface_redraw_needed=false
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   trial modes score ticker

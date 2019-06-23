@@ -51,7 +51,8 @@ switch (character)
 	running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
-    
+	super_mode_duration=1000
+
 	break;
     
 	case "veteran":
@@ -87,7 +88,7 @@ switch (character)
 	uniques_mines_enabled=true
 	mines_ammo=2   ///starting mines
 	uniques_vet_dig_enabled=true
-    
+	super_mode_duration=1000
     
 	break;
     
@@ -121,6 +122,7 @@ switch (character)
 	//ooga standard grab effect   
     
 	uniques_airdash_resets_jump=true
+	super_mode_duration=1000
 	break;
 
 	case "bait":
@@ -158,6 +160,8 @@ switch (character)
 	uniques_gpcombo_cripples_enabled=true
 	uniques_teleport_enabled=true
 	uniques_teleport=0
+	super_mode_duration=1000
+	
 	break;
     
 	default:

@@ -15,13 +15,13 @@
         "e554999d-3404-43ec-adcb-5e026400b6c7",
         "7c78568f-09b8-4ed9-a475-4db91c97d187",
         "8c9bed88-4c7a-41c7-bc6b-6aca093f9e04",
-        "e96b130e-e567-44e2-8518-b227898ce887",
         "16f91af5-117a-4539-9940-d122b45bc1f6",
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
         "1b99099c-f82e-4e8d-962d-5a3b757f592f",
-        "86087c03-92ac-4f6d-9d98-b793c05881a4"
+        "86087c03-92ac-4f6d-9d98-b793c05881a4",
+        "b8aeffe8-a8a7-43e0-b412-94c29526c57f"
     ],
     "filterType": "GMScript",
     "folderName": "player",
