@@ -81,7 +81,7 @@ if room==init
 			ds_map_add(keybinding_map_array[i],"padnumber",aizen.tempcontrollerid[i])
 			ds_map_add(keybinding_map_array[i],"leftbutton",gp_padl)
 			ds_map_add(keybinding_map_array[i],"rightbutton",gp_padr)
-			ds_map_add(keybinding_map_array[i],"upbutton",gp_face1)
+			ds_map_add(keybinding_map_array[i],"upbutton",gp_padu)
 			ds_map_add(keybinding_map_array[i],"downbutton",gp_padd)
 			ds_map_add(keybinding_map_array[i],"dashbutton",gp_face2)
 			ds_map_add(keybinding_map_array[i],"lightbutton",gp_face3)

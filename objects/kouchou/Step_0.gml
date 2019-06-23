@@ -256,12 +256,11 @@ else if room==gameroom
 	{
 		if ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
 		{
-			var padnumber;
+			var padnumber,h_axis,v_axis;
 			padnumber=ds_map_find_value(kouchou.keybinding_map_array[i],"padnumber")
 			h_axis=gamepad_axis_value(padnumber,gp_axislh)
 			v_axis=gamepad_axis_value(padnumber,gp_axislv)
-			show_debug_message("i = "+string(i)+ "  padnumber = "+string(padnumber))
-		
+
 			if stick_pressed_r[i]==3
 				stick_pressed_r[i]=0
 			if stick_pressed_u[i]==3
@@ -276,19 +275,19 @@ else if room==gameroom
 			{
 				if stick_pressed_l[i]==1 || stick_pressed_l[i]==2
 					stick_pressed_l[i]=3
-				if stick_pressed_r[i]==1
-					stick_pressed_r[i]=2
-				else
+				if stick_pressed_r[i]==0
 					stick_pressed_r[i]=1
+				else
+					stick_pressed_r[i]=2
 			}
 			else if h_axis<-deadzone[i]
 			{
 				if stick_pressed_r[i]==1 || stick_pressed_r[i]==2
 					stick_pressed_r[i]=3
-				if stick_pressed_l[i]==1
-					stick_pressed_l[i]=2
-				else
+				if stick_pressed_l[i]==0
 					stick_pressed_l[i]=1
+				else
+					stick_pressed_l[i]=2
 			}
 			if h_axis<=deadzone[i] && h_axis>=-deadzone[i]
 			{
@@ -296,6 +295,7 @@ else if room==gameroom
 					stick_pressed_l[i]=3
 				if stick_pressed_r[i]==1 || stick_pressed_r[i]==2
 					stick_pressed_r[i]=3
+
 			}			
 			
 			
@@ -304,19 +304,19 @@ else if room==gameroom
 			{
 				if stick_pressed_u[i]==1 || stick_pressed_u[i]==2
 					stick_pressed_u[i]=3
-				if stick_pressed_d[i]==1
-					stick_pressed_d[i]=2
-				else
+				if stick_pressed_d[i]==0
 					stick_pressed_d[i]=1
+				else
+					stick_pressed_d[i]=2
 			}		
 			else if v_axis<-deadzone[i]
 			{
 				if stick_pressed_d[i]==1 || stick_pressed_d[i]==2
 					stick_pressed_d[i]=3
-				if stick_pressed_u[i]==1
-					stick_pressed_u[i]=2
-				else
+				if stick_pressed_u[i]==0
 					stick_pressed_u[i]=1
+				else
+					stick_pressed_u[i]=2
 			}
 			if v_axis<=deadzone[i] && v_axis>=-deadzone[i]
 			{
@@ -325,6 +325,7 @@ else if room==gameroom
 				if stick_pressed_d[i]==1 || stick_pressed_d[i]==2
 					stick_pressed_d[i]=3
 			}
+			
 		}
 		
 	}
