@@ -57,40 +57,41 @@ if room==gameroom
 
 	//////////////////////////////////////HUD VARIABLES - incase players stop existing hud will draw from these values instead of grabbing from player instance
 
-	player_meter[kouchou.MAX_PLAYER_COUNT]=0
+	hud_player_meter[kouchou.MAX_PLAYER_COUNT-1]=0
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
-		player_meter[i]=0
+		hud_player_meter[i]=0
 	};   
-         
-	playersupercount[kouchou.MAX_PLAYER_COUNT]=0
+	
+	hud_player_ult_time_remaining[kouchou.MAX_PLAYER_COUNT-1]=0
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
-		playersupercount[i]=0
-	};       
+		hud_player_ult_time_remaining[i]=0
+	};
+	
     
-	playerhpglow[kouchou.MAX_PLAYER_COUNT]=hud_floatingoogamask_glow
+	playerhpglow[kouchou.MAX_PLAYER_COUNT-1]=hud_floatingoogamask_glow
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		playerhpglow[i]=hud_floatingoogamask_glow
 	};
     
-	playerpocketorb[kouchou.MAX_PLAYER_COUNT]=-1
+	playerpocketorb[kouchou.MAX_PLAYER_COUNT-1]=-1
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		playerpocketorb[i]=-1
 	};
     
-	playerulttimeindex[3]=0
+
     
-	playerorbcount[kouchou.MAX_PLAYER_COUNT]=-1
+	playerorbcount[kouchou.MAX_PLAYER_COUNT-1]=-1
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		playerorbcount[i]=0
 	};
     
     
-	player_draw_HUD[kouchou.MAX_PLAYER_COUNT]=false
+	player_draw_HUD[kouchou.MAX_PLAYER_COUNT-1]=false
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		player_draw_HUD[i]=false
@@ -104,7 +105,7 @@ if room==gameroom
 	convert selected_character_id[] (player select selected character ID number) into character strings
 	***************************************************/    
    
-	tempcharstrings[kouchou.MAX_PLAYER_COUNT]=""
+	tempcharstrings[kouchou.MAX_PLAYER_COUNT-1]=""
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
 		switch kouchou.selected_character_id[i]
@@ -143,7 +144,7 @@ if room==gameroom
 	
 	///////////////////////////////////////////////////////////////////// SPAWN LOCATIONS //////////////////////////////////////////////
 	
-	spawn_positions_x[kouchou.MAX_PLAYER_COUNT]=0
+	spawn_positions_x[kouchou.MAX_PLAYER_COUNT-1]=0
 	if kouchou.players_in==0 || kouchou.players_in==1
 	{
 		show_error("error - players in game less than 2",true)

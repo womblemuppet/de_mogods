@@ -32,7 +32,7 @@ temp_volc_spawn_possibles_list=ds_list_create()
 
 
 candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
-SUPER_METER_AMOUNT=12    ///meter is full after this many attacks
+SUPER_METER_AMOUNT=3    ///meter is full after this many attacks
 healthcap=5   ///max health value
 bedrockcounter=0   ///counts to 40, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
@@ -111,11 +111,7 @@ IMGSPEED_AMBIENT //slowish, should be able to see frame by frame
 //potentially have as a global frame (ratio) counter to sync everything? is that possible
 IMGSPEED_IMPORTANT // different ratio to ambient
 IMGSPEED_SPARKY   //double of important
-
-
-
-/* */
-/*  */
+*/
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   GUI   /////////
@@ -344,7 +340,9 @@ ds_map_add(chunkery_ammo_max,"","")
 ds_map_add(chunkery_id_of_prop_list,"","")
 */
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                ////////////////////////////////////////////////////////////////////////// TERGEN ////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///[finaledit] some of these might be obsolete
@@ -383,7 +381,7 @@ terrain_wave_ha[4]=0
 terrain_wave_xup[kouchou.rw/40]=false   ///array that stores whether there is a wave at that x pos or not
 for (i=0; i<kouchou.rw/40; i+=1)
 {
-    terrain_wave_xup[kouchou.rw/40]=false
+	terrain_wave_xup[kouchou.rw/40]=false
 };
 terrain_wave_ylim=choose(2,3,4)  ///bottom line that connects waves  (based on terrainammo)
 

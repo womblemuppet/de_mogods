@@ -29,12 +29,16 @@ GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set t
 GROUND_POUND_SPEED=15 
 GRAVITY=0.3   //gravity while rising  
 GRAVITY_DOWN=0.65  //gravity while falling
+
 orb_count_meter=0   ///meter, charged on landing hits
 super_mode=false
+super_meter=0    ///meter that charges up
+super_mode_time_remaining=0   ///time remaining until super mode times out
+
+DASH_COOLDOWN_TIME=22 //originally 70, cooldown between dashes. now irrelevant [finaledit]
 dashcd=0  /// dash cooldown counter
 dash_current_hitbox_object=noone
 dash_has_lifted_off_ground=false
-DASH_COOLDOWN_TIME=22 //originally 70, cooldown between dashes
 dash_button_currently_held=false
 ground_dash_speed=12.5    ///speed of the current dash (if grounded).             WARNING             gets changed when attack happens so this value here means nothing
 ground_dash_counter=0 ///counter for length of dash
@@ -43,6 +47,7 @@ AIR_DASH_SPEED=15   ///speed of dash when in air
 AIR_DASH_VSPEED=3.5    ///(minused when dashing in air)
 DASH_LOCKDOWN_TIME=20 ///time you can't move after dashing
 dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping the dash lockdown
+
 dash_rocket_jump=0 //// upward dash     0 can 1 freeze 2 in animation 3 used.
 dash_rocket_jump_charge=0 ///0 for not charged, 1 ,2, 3 for different charge durations
 ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP=3   ///amount of time after pushing up where pushing dash will start rocket jump
@@ -57,7 +62,9 @@ dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump 
 dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
 DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT=175
 DASH_ROCKET_TOP_COLLISION_MAXY=8
+
 recoil_sprite_counter=0    ///time left where idle sprite becomes flinching animation (shouldn't be called recoil)
+
 canpush=true   //// cooldown for uppercut (archaic...)
 push_other_attacks_timer=0 ///counter for below (archaic)
 PUSH_OTHER_ATTACKS_TIME=12 ////other attacks allowed after this time after an uppercut (archaic)
@@ -84,7 +91,7 @@ chained_debuff_x_pos=0     ///x pos of chain
 chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 cursed=false   ///bloodmoon buff
-super_meter=0
+
 pocket_orb=-1    ///ID of pocketed orb
 pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///BOUNCE EFFECT

@@ -52,13 +52,12 @@ if argument4    ///gain meter
 		with other.creator
 		{
 			super_meter+=1
-			aizen.player_meter[P]+=1
 			if super_meter>aizen.SUPER_METER_AMOUNT
 			{
 				super_meter=0
-				aizen.player_meter[P]=0
-				player_get_ult()
+				player_super_mode()
 			}
+			player_update_super_meter_hud()
 		}
 	}
 }

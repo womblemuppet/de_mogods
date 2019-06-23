@@ -20,7 +20,7 @@
         "9e42be21-8481-48ea-959a-679b3a8d0d64"
     ],
     "filterType": "GMObject",
-    "folderName": "orb and block effects",
+    "folderName": "orb effects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

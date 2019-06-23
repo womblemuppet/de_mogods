@@ -97,8 +97,8 @@ switch (character)
 	//slinger u/c attack
 	ds_map_add(attacks, "heavy attack", 2);
 	//sunblast/bolt/whatever
-	ds_map_add(attacks, "dash",2);
-	//slinger mixup dash
+	ds_map_add(attacks, "dash",0);
+	//normal dash (SLINGER NOBUNT DASH DISABLED)
 	ds_map_add(attacks, "airdash", 0);
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);

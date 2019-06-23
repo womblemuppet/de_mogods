@@ -90,12 +90,11 @@ meter_height=10
 draw_set_font(font_scoreboard)
 draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
 
-/////////////////////////////P1
+
 for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {
 	if player_draw_HUD[v]==true
 	{
-
 		draw_set_colour(c_lime)
 		subyy=yy+(areaheight+gapheight)*v//+areaheight
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
@@ -103,20 +102,18 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		if aizen.playerpocketorb[v]!=-1
 			draw_sprite(aizen.playerpocketorb[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
-        
-		if playerulttimeindex[v]>0
-		{
-			for (i=0; i<playersupercount[v]; i+=1)
-			{
-				draw_sprite(tile_stack_hud,1,xx+areaxstart+mask_xoffset+i*50,subyy+ultind_yoffset)
-			};
-		}
+		
 		draw_set_colour(METER_BACKGROUND_COLOUR)
 		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
+		
+		
 		draw_set_colour(METER_COLOUR)
-		if player_meter[v]==SUPER_METER_AMOUNT  ///if one more hit until super meter is full, change meter colour to red
+		
+		if 
+		if hud_player_meter[v]==SUPER_METER_AMOUNT  ///if one more hit until super meter is full, change meter colour to red
 			draw_set_colour(c_red)
-		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*player_meter[v])/SUPER_METER_AMOUNT),subyy+meter_yoffset+meter_height,false)
+		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*hud_player_meter[v])/SUPER_METER_AMOUNT),subyy+meter_yoffset+meter_height,false)
+		
 		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(playerorbcount[v])))
 		draw_text(areaxend-50,subyy+210,string_hash_to_newline("wins"+string(kouchou.playerwins[v])))
 	}

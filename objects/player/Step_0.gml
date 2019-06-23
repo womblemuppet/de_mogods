@@ -182,6 +182,18 @@ if push_other_attacks_timer>0
 if doublejumptimer>0
 	doublejumptimer-=1
 	
+/// ult time ticker
+if super_mode_time_remaining>0
+{
+	super_mode_time_remaining-=1
+	if super_mode_time_remaining==0 ///ran out of ult time
+	{
+		
+		player_end_super_mode()
+	}
+}
+	
+	
 if rocket_jump_input_time_counter_from_jump>0
 {
 	rocket_jump_input_time_counter_from_jump-=1

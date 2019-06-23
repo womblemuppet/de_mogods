@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "00fb7652-f5d4-45d0-a8b7-1c1dd4461a80",
+            "Value": {
+                "id": "a6e8408e-3d93-4f95-a4e8-f4678f06522d",
+                "resourcePath": "views\\00fb7652-f5d4-45d0-a8b7-1c1dd4461a80.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "013ace7f-9177-4ba4-92ec-805399c24f46",
             "Value": {
                 "id": "980456d3-10a3-4dd9-b5ef-28120bf95564",
@@ -100,6 +108,14 @@
                 "id": "30758649-97dc-4308-acad-30fbac5a7c04",
                 "resourcePath": "sprites\\jangle\\jangle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
+            "Value": {
+                "id": "14682c14-e903-4cb3-b676-199701d27b8e",
+                "resourcePath": "scripts\\player_end_super_mode\\player_end_super_mode.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -940,6 +956,14 @@
                 "id": "b163b795-529c-4a1f-b870-e788fe3b59e9",
                 "resourcePath": "sprites\\OogaR_U_dizzy\\OogaR_U_dizzy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1ff9514b-ff55-40c6-8228-856a753fb0a6",
+            "Value": {
+                "id": "a98798d6-8476-4dab-9585-6aafd4af28ba",
+                "resourcePath": "scripts\\player_update_super_meter_hud\\player_update_super_meter_hud.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3407,6 +3431,14 @@
             }
         },
         {
+            "Key": "7ee04df9-a663-4ae1-a86b-82a7a2b6fde7",
+            "Value": {
+                "id": "ceb1d050-cdd6-4e5f-8169-60855582631a",
+                "resourcePath": "views\\7ee04df9-a663-4ae1-a86b-82a7a2b6fde7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7f2bea6f-f8a8-43ac-ba96-01af39abb8fa",
             "Value": {
                 "id": "8d33913e-0825-4e59-adc7-ba3cfd741ea7",
@@ -3596,6 +3628,14 @@
                 "id": "5eefc793-d295-4ef2-9106-5c51d9bc68e9",
                 "resourcePath": "sprites\\grassy3\\grassy3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "86087c03-92ac-4f6d-9d98-b793c05881a4",
+            "Value": {
+                "id": "ec70f7fc-aa8c-4e24-81b2-29a44773ffc0",
+                "resourcePath": "views\\86087c03-92ac-4f6d-9d98-b793c05881a4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5175,6 +5215,14 @@
             }
         },
         {
+            "Key": "c06c54c9-4596-4f7d-a52f-a358ecc64e97",
+            "Value": {
+                "id": "c29a71f0-9d5f-476a-aba9-77fd791170ae",
+                "resourcePath": "views\\c06c54c9-4596-4f7d-a52f-a358ecc64e97.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c083a4e8-15a6-4cb7-a9ea-2e88fee202b0",
             "Value": {
                 "id": "2b751e02-6b1b-4f0c-9a73-4703e2ccfe31",
@@ -6362,7 +6410,7 @@
             "Key": "e96b130e-e567-44e2-8518-b227898ce887",
             "Value": {
                 "id": "7d21c6f9-3562-4f72-8b3a-71f8bfd4975c",
-                "resourcePath": "scripts\\player_get_ult\\player_get_ult.yy",
+                "resourcePath": "scripts\\player_super_mode\\player_super_mode.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6917,6 +6965,8 @@
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
         "1b99099c-f82e-4e8d-962d-5a3b757f592f",
+        "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
+        "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "558e254a-f29a-423d-8816-b45cadd7edbd",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",

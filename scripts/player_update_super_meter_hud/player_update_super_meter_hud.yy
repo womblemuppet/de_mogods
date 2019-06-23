@@ -1,8 +1,8 @@
 {
-    "id": "e96b130e-e567-44e2-8518-b227898ce887",
+    "id": "1ff9514b-ff55-40c6-8228-856a753fb0a6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_get_ult",
+    "name": "player_update_super_meter_hud",
     "IsCompatibility": false,
     "IsDnD": false
 }
