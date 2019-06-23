@@ -194,7 +194,7 @@ else if room==menu
 			map="multiplayer"
 			MAX_PLAYER_COUNT=2
                 
-			kouchou_set_charpor()
+			kouchou_set_select_menu_positions()
 
                 
 			room=multiplayermenu    break;
@@ -203,7 +203,7 @@ else if room==menu
 			map="multiplayer"
 			MAX_PLAYER_COUNT=4
                 
-			kouchou_set_charpor()
+			kouchou_set_select_menu_positions()
                 
 			room=multiplayermenu    break;
 			case 3:

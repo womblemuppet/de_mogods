@@ -1559,6 +1559,14 @@
             }
         },
         {
+            "Key": "3e7b2c78-ecf9-47f0-a561-24daef2fb05c",
+            "Value": {
+                "id": "0a687213-41c7-43de-a87c-9f5d2913a590",
+                "resourcePath": "views\\3e7b2c78-ecf9-47f0-a561-24daef2fb05c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3f276601-0344-4f50-9482-a17a07c463a4",
             "Value": {
                 "id": "7b99f5bc-83c0-4429-beab-724a02eb32ec",
@@ -2367,6 +2375,14 @@
             }
         },
         {
+            "Key": "5c11675e-68fc-4920-bff0-cf3a15969303",
+            "Value": {
+                "id": "2603348c-c165-4616-a9dd-266324cdf2ac",
+                "resourcePath": "views\\5c11675e-68fc-4920-bff0-cf3a15969303.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5c24c3fd-63fa-437f-b81f-224cefa848cc",
             "Value": {
                 "id": "7877d9e3-f112-464c-be86-70c316d4edae",
@@ -2588,6 +2604,14 @@
                 "id": "0567acf3-59f2-471c-bd65-425d73796254",
                 "resourcePath": "views\\6132bda0-76a2-4312-8e7c-45ab201fc9ed.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "61a34fa8-499e-4218-b556-cc5c642ad8fd",
+            "Value": {
+                "id": "200a0215-6664-4575-9d85-1274ed13b9a2",
+                "resourcePath": "sprites\\character_titles_spr_selected\\character_titles_spr_selected.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4194,7 +4218,7 @@
             "Key": "9d43507a-a458-4d85-b168-e9480bc67987",
             "Value": {
                 "id": "e257ba56-b5d9-421b-bede-e16e13b62033",
-                "resourcePath": "scripts\\kouchou_set_charpor\\kouchou_set_charpor.yy",
+                "resourcePath": "scripts\\kouchou_set_select_menu_positions\\kouchou_set_select_menu_positions.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4788,6 +4812,14 @@
                 "id": "c0c24cd1-63d4-4ed9-8c6e-b024569007e1",
                 "resourcePath": "objects\\ef_fossil\\ef_fossil.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b3eafec4-dd73-4ae0-a159-07a71ceba749",
+            "Value": {
+                "id": "364739b3-0eb8-42ae-9b15-04eae38a70ef",
+                "resourcePath": "views\\b3eafec4-dd73-4ae0-a159-07a71ceba749.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

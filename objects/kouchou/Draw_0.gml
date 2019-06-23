@@ -224,6 +224,7 @@ if room==multiplayermenu
 				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*35),ds_list_find_value(lore_character_select_bio_array[selected_character_id[i]],ii)   )
 			}
 			
+			draw_sprite(character_titles_spr,selected_character_id[i],menu_player_character_title_x[i],menu_player_character_title_y[i])
 			//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selected_character_id[i]]) [continue] lore_character_select_bio_0
 		}
 		else if ready[i]==1                                                                   ////// player options setup 
@@ -268,8 +269,9 @@ if room==multiplayermenu
 			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
 			draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
             
+            			draw_sprite(character_titles_spr_selected,selected_character_id[i],menu_player_character_title_x[i],menu_player_character_title_y[i])
 		}
-	};
+	}
     
 	if !competitive_mode
 		draw_sprite(mock_character_grid_background,0,midx,midy)

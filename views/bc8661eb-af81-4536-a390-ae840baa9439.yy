@@ -32,7 +32,7 @@
         "b76333b0-3720-4ef6-842b-00e3adaec98e"
     ],
     "filterType": "GMSprite",
-    "folderName": "orbs",
+    "folderName": "orb_sprites",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

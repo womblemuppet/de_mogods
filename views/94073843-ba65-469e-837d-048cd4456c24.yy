@@ -15,7 +15,8 @@
         "16052d81-d424-4567-9303-96e4e2b71b09",
         "e35d562e-0eb8-4c3f-b8cd-b49e86bd306c",
         "3d7a0f91-d4a0-4407-8f33-20af78d45998",
-        "c3720bb3-0250-4c3f-8ada-193d2e14784f"
+        "c3720bb3-0250-4c3f-8ada-193d2e14784f",
+        "15cac516-e61c-476a-a4e8-4b3c989e69f8"
     ],
     "filterType": "GMSprite",
     "folderName": "overworld",

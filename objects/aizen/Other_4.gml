@@ -223,6 +223,10 @@ if room==gameroom
 			b.image_speed=0
 			b.image_index=P
 			b.alarm[0]=120
+			b.vspeed=-0.001
+			b.friction=-0.001
+			b.image_xscale=0.9
+			b.image_yscale=0.9
 			
 		}
 	};

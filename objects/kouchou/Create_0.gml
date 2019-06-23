@@ -230,7 +230,7 @@ menu_crab_subspr=0
 MENU_CRAB_SUBSPR_LIMIT=7
 
 // CHARACTER LARGE BACKGROUNDS (QUADRANTS)
-kouchou_set_charpor()
+kouchou_set_select_menu_positions()
 
 
 

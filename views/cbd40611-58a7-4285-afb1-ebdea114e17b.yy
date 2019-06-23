@@ -8,10 +8,11 @@
         "5c110f8a-6b21-46fa-bfd8-690ec13b5086",
         "dd27d484-8f85-4de9-b2cf-f3c9aa35f8b9",
         "517c6610-98d3-4283-970b-7b0359931a07",
-        "eb316161-48c8-445b-be9b-cd8372ce983b"
+        "eb316161-48c8-445b-be9b-cd8372ce983b",
+        "7a046a10-1adc-46c3-a8e4-8469084142f5"
     ],
     "filterType": "GMSprite",
-    "folderName": "paydayattackandeffects",
+    "folderName": "payday",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
