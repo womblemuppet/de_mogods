@@ -112,9 +112,9 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		if hud_player_is_in_super_mode[v]==false
 		{
 			draw_set_colour(METER_COLOUR_NORMAL)
-			if hud_player_meter[v]==SUPER_METER_AMOUNT  ///if one more hit until super meter is full, change meter colour to red
+			if hud_player_meter[v]==SUPER_METER_FULL_AMOUNT  ///if one more hit until super meter is full, change meter colour to red
 				draw_set_colour(c_red)
-			draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*hud_player_meter[v])/SUPER_METER_AMOUNT),subyy+meter_yoffset+meter_height,false)
+			draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*hud_player_meter[v])/SUPER_METER_FULL_AMOUNT),subyy+meter_yoffset+meter_height,false)
 		}
 		else
 		{

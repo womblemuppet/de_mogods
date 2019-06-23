@@ -52,7 +52,7 @@ if argument4    ///gain meter
 		with other.creator
 		{
 			super_meter+=1
-			if super_meter>aizen.SUPER_METER_AMOUNT
+			if super_meter>aizen.SUPER_METER_FULL_AMOUNT
 			{
 				super_meter=0
 				player_super_mode()

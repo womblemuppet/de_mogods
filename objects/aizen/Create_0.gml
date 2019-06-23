@@ -32,7 +32,7 @@ temp_volc_spawn_possibles_list=ds_list_create()
 
 
 candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
-SUPER_METER_AMOUNT=3    ///meter is full after this many attacks
+SUPER_METER_FULL_AMOUNT=12    ///meter is full after this many attacks
 healthcap=5   ///max health value
 bedrockcounter=0   ///counts to 40, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
