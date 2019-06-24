@@ -462,8 +462,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				typeofblock=3     ////gunpowder
 			if random(1)>0.995
 				typeofblock=4   ///pineapple
-			if random(1)>0.995 && terrain_special_block_ok()
-				typeofblock=5   ///sentinel    
+			//if random(1)>0.995 && terrain_special_block_ok()      TURRET BLOCKS DISABLED
+			//	typeofblock=5   ///sentinel    
      
 
 			switch typeofblock

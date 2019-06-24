@@ -2,7 +2,7 @@
 
 
 with instance_place(x,y,block)
-    instance_destroy()
+	instance_destroy()
     
 dontmakeorb=false   ///if enabled won't spawn orb on death (eg if pocketed)
 

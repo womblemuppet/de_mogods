@@ -16,8 +16,8 @@ if canbounce_counter>0   //if bounce enabled, and will hit block below, reverse 
 
 
 //////////////////////////////////////////     groundcheck
-var id_of_groundpounded_instrument_if_exists
-id_of_groundpounded_instrument_if_exists=noone
+var id_of_groundpounded_boppable_if_exists
+id_of_groundpounded_boppable_if_exists=noone
 
 
 groundcheck=instance_place(x,y+1,block)  ///[finaledit] 
@@ -60,7 +60,11 @@ if groundcheck!=noone
 	}
 	else if groundcheck.object_index==instrument
 	{
-		id_of_groundpounded_instrument_if_exists=instance_place(x,y+1,instrument)
+		id_of_groundpounded_boppable_if_exists=instance_place(x,y+1,instrument)
+	}
+	else if groundcheck.object_index==tree_block
+	{
+		id_of_groundpounded_boppable_if_exists=instance_place(x,y+1,tree_block)
 	}
 }
 else ///( if groundcheck==noone)
@@ -475,9 +479,9 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 			}
 		}		
 		////collide gp with instrument below it
-		if id_of_groundpounded_instrument_if_exists!=noone
+		if id_of_groundpounded_boppable_if_exists!=noone
 		{
-			with id_of_groundpounded_instrument_if_exists
+			with id_of_groundpounded_boppable_if_exists
 			{
 				if protection<1
 				{

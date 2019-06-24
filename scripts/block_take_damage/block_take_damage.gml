@@ -1,22 +1,28 @@
 if object_index==ice_block
-    exit
+	exit
 if object_index==gunpowder
 {
-    instance_destroy()
-    exit
+	instance_destroy()
+	exit
 }
 
 
 if protection>0
 {
-    protection-=1
-    exit
+	protection-=1
+	exit
 }
 
 if object_index==instrument
 {
-    instrument_die_event()   
-    exit
+	instrument_die_event()   
+	exit
+}
+
+if object_index==tree_block
+{
+	instance_destroy()
+	exit
 }
 
 switch other.type
