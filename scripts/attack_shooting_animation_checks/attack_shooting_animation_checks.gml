@@ -48,12 +48,12 @@ if fpunch_feet_counter!=-1 && groundcheck!=noone
 		var b;
 		if fpunch_feet_counter==3
 		{
-			b=24 //28 cooler but annoying for gp combo
+			b=22 //28 cooler but annoying for gp combo
 			fpunch_feet_counter+=1
 		}
 		else
 		{
-			b=12 //18 cooler but annoying for gp combo
+			b=10 //18 cooler but annoying for gp combo
 			fpunch_feet_counter=-1   
 		}
 
