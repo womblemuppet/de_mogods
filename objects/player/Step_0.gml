@@ -120,203 +120,7 @@ if cursed==true && random(1)>0.6
 }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*  animations/timers/counters  */
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-
-hothandimageindex+=0.25//*hothands
-if hothandimageindex>HOTHANDIMAGENUMBER
-	hothandimageindex=0
-
-    
-if dashcd>0
-{
-	dashcd-=1
-	if dashcd==0
-		dash_wallbreak_forgive=false
-}
-if STUNNED>0
-{
-	STUNNED-=1
-}
-if STUNNED2>0
-{
-	STUNNED2-=1
-	if STUNNED2==0
-	{
-		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
-		{
-			sprite_index=sprites[25]
-			if super_mode
-				sprite_index=sprites[26]
-		}
-		else
-		{
-			sprite_index=sprites[0]
-			if super_mode
-				sprite_index=sprites[9]
-		}
-	}
-}
-else                                                   ////////////health blending
-{
-	//////HP   [finaledit]
-	if H==3
-	{
-		image_blend=c_white
-	}
-	if H==2
-	{
-		image_blend=make_colour_rgb(183, 245, 115)
-		if P>2
-			image_blend=make_colour_rgb(183, 245, 215)
-	}
-	if H==1
-	{
-		image_blend=make_colour_rgb(229, 172, 0)
-		if P>2
-			image_blend=make_colour_rgb(229, 172, 100)
-	}
-}
-
-if push_other_attacks_timer>0
-	push_other_attacks_timer-=1
-
-if doublejumptimer>0
-	doublejumptimer-=1
-	
-/// ult time ticker
-if super_mode_time_remaining>0
-{
-	super_mode_time_remaining-=1
-	if super_mode_time_remaining==0 ///ran out of ult time
-	{
-		
-		player_end_super_mode()
-	}
-}
-	
-	
-if rocket_jump_input_time_counter_from_jump>0
-{
-	rocket_jump_input_time_counter_from_jump-=1
-	show_debug_message("from jump = "+string(rocket_jump_input_time_counter_from_jump))
-}
-
-if rocket_jump_input_time_counter_from_dash>0
-{
-	rocket_jump_input_time_counter_from_dash-=1
-	show_debug_message("from dash = "+string(rocket_jump_input_time_counter_from_dash))
-}
-
-
-if dash_attacks_allowed_counter>0
-{
-	//effect_create_above(ef_firework,x,y-20,0,c_red)
-	dash_attacks_allowed_counter-=1
-}
-
-if recoil_sprite_counter>0                                           //recoil sprite end check
-{
-	recoil_sprite_counter-=1
-    
-    
-    
-	if recoil_sprite_counter==0
-	{
-		var pass;
-		pass=false
-		for (i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
-		{
-			if sprites[sprites_below_recoil_priority[| i]]==sprite_index
-			{
-				pass=true
-				break;
-			}
-		};
-		if pass
-		{  
-			player_set_idle()
-		}
-	}
-}
-if cripple_debuff_counter>0
-{
-	cripple_debuff_counter-=1
-	if (cripple_debuff_counter mod 10) == 0
-		effect_aniend(cripple_debuff_effect,1.5,-3)
-}
-if impact_debuff_counter>0
-{
-	impact_debuff_counter-=1
-	effect_aniend(impact_debuff_effect,0.25,0)
-}
-
-if fpunch_lockdown==1
-{
-	fpunch_charge+=1
-}
-if fpunch_cd_counter>0
-{
-	fpunch_cd_counter-=1
-}
-if uniques_aapunch_cd_counter>0
-{
-	uniques_aapunch_cd_counter-=1
-}
-if uniques_vet_chain_counter>0
-{
-	uniques_vet_chain_counter-=1
-}
-if uniques_sunblast_cd_counter>0
-{
-	uniques_sunblast_cd_counter-=1
-}
-if mild_slowed_counter>0
-{
-	mild_slowed_counter-=1
-	if slowed_show_trail
-		effect_aniend(slow_debuff_effect,0.25,-3)
-}
-if fuckoff_slowed_counter>0
-{
-	fuckoff_slowed_counter-=1
-	if slowed_show_trail
-		effect_aniend(mightyannoying_slow_debuff_effect,0.25,-3)    
-}
-if canbounce_counter>0
-{
-	canbounce_counter-=1
-	effect_aniend(bounce_debuff_effect,0.25,-3)
-}
-
-if dash_rocket_top_collision_safety>0
-{
-	dash_rocket_top_collision_safety-=1
-}
-if uniques_parachute_minimum_time_counter>0
-{
-	uniques_parachute_minimum_time_counter-=1
-}
-
-if chained_debuff_counter>0
-{
-	chained_debuff_counter-=1
-	if chained_debuff_counter==0
-	{
-		with chain_effect_id_to_delete
-			instance_destroy()
-		chain_effect_id_to_delete=noone
-		hspd=0
-		vspd=0
-		effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
-	}
-}
-
-if iframes>0
-	iframes-=1
-
+player_counters()
 
 
 ///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB THROW EVENT
@@ -477,7 +281,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 				sprite_index=sprites[84]
 				uniques_whirlwind_active=true
 			}
-		}		
+		}
 		////collide gp with instrument below it
 		if id_of_groundpounded_boppable_if_exists!=noone
 		{
@@ -488,6 +292,8 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 					block_take_damage()
 				}
 			}
+			vspd=-5.5    ////bounce up
+
 		}
 	}
 
@@ -497,7 +303,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 		if cangroundpound!=0  
 		{
 			mild_slowed_counter=0
-			fuckoff_slowed_counter=10
+			brutal_slowed_counter=10
 		}
 		//effect_create_above(ef_firework,x,y,2,c_blue)
 	}
@@ -1266,128 +1072,24 @@ if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab
 	}
 }
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
-if checkkey(leftbutton) && !checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
-{                                                                                /// move LEFT
-////###remember to change for right code too if changing this!!!!! ###////////////////////////////////
-	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
-	{
-		var slow_ratio;
-		slow_ratio=1
-		if mild_slowed_counter>0
-			slow_ratio=MILD_SLOW_PERCENTAGE
-		if fuckoff_slowed_counter>0
-			slow_ratio=FUCKOFF_SLOW_PERCENTAGE
-            
-            
-		if hor_running_counter>0
-			hor_running_counter=-HOR_SHUFFLE_THRESHOLD-1
-		hor_running_counter-=1
-        
-		if groundcheck!=noone
-		{
-			if  hor_running_counter==-HOR_SHUFFLE_THRESHOLD
-			hspd=-HOR_SHUFFLESPEED*slow_ratio
-			if  hor_running_counter<-HOR_RUNNING_THRESHOLD
-			hspd=-HOR_RUNSPEED*slow_ratio
-		}
-		else
-		{
-			if hspd>-HOR_AIR_MINSPEED
-				hspd=-HOR_AIR_MINSPEED
-			if hspd>-HOR_AIR_MAXSPEED
-				hspd-=HOR_AIR_ACCEL*slow_ratio
-		}
-	} 
-	//checks if player is allowed to change direction (could be own script)   remember to update for L and R! 
-	if player_allow_direction_switch()
-	{
-		image_xscale=-1
-		right=false
-	}
-	
-	if STUNNED2<1 && player_not_locked_down()
-	{
-		var pass;
-		pass=false
-		for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
-		{
-			if sprites[sprites_below_run_priority[| i]]==sprite_index
-			{
-				pass=true
-				break;
-			}
-		};
-        
-		if pass
-		{
-			sprite_index=sprites[1]   ///run sprite
-			if super_mode
-				sprite_index=sprites[8]
-			image_speed=FRAME_SPEED_SLOW
-		}
-	}
-}
-if checkkey(rightbutton) && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true ) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
-{                                                                               /// move RIGHT
-	if STUNNED==0 && STUNNED2==0 && player_not_locked_down()
-	{
-		var slow_ratio;
-		slow_ratio=1
-		if mild_slowed_counter>0
-			slow_ratio=MILD_SLOW_PERCENTAGE
-		if fuckoff_slowed_counter>0
-			slow_ratio=FUCKOFF_SLOW_PERCENTAGE
-            
-		if hor_running_counter<0
-			hor_running_counter=HOR_SHUFFLE_THRESHOLD+1
-		hor_running_counter+=1
-        
-		if groundcheck!=noone
-		{
-			if  hor_running_counter==HOR_SHUFFLE_THRESHOLD
-				hspd=HOR_SHUFFLESPEED*slow_ratio
-			if  hor_running_counter>HOR_RUNNING_THRESHOLD
-				hspd=HOR_RUNSPEED*slow_ratio
-		}
-		else
-		{
-			if hspd<HOR_AIR_MINSPEED
-				hspd=HOR_AIR_MINSPEED
-			if hspd<HOR_AIR_MAXSPEED
-				hspd+=HOR_AIR_ACCEL*slow_ratio
-		}
-	}
-	if player_allow_direction_switch()
-	{
-		image_xscale=1
-		right=true
-	}
-	if STUNNED2<1 && player_not_locked_down()
-	{
-		var pass;
-		pass=false
-		for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
-		{
-			if sprites[sprites_below_run_priority[| i]]==sprite_index
-			{
-				pass=true
-				break;
-			}
-		};
-        
-		if pass
-		{
-			sprite_index=sprites[1]    ///run sprite
-			if super_mode
-				sprite_index=sprites[8]
-			image_speed=FRAME_SPEED_SLOW
-		}
-	} 
+
+
+
+////first checks are if player can swap direction (disabled for things like whirlwind)
+if STUNNED2<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
+{
+	 if checkkey(leftbutton) && !checkkey(rightbutton)
+		player_horizontal_movement("left")
+	if checkkey(rightbutton)
+		player_horizontal_movement("right")	
 }
 if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
 {
 	hor_running_counter=0
 }
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                     /* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 

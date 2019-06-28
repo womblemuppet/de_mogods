@@ -3255,6 +3255,14 @@
             }
         },
         {
+            "Key": "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
+            "Value": {
+                "id": "c70e0103-f8ce-481f-8b2f-2da83989c642",
+                "resourcePath": "scripts\\player_horizontal_movement\\player_horizontal_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7808e22c-e662-451d-a740-6b916d04e5cf",
             "Value": {
                 "id": "82889591-4b8e-41f5-b399-284f51d6e8ae",
@@ -4255,6 +4263,14 @@
             }
         },
         {
+            "Key": "9c9f5f86-d034-495e-9402-91a69d5be884",
+            "Value": {
+                "id": "83613030-d0c9-44be-93b4-afda88dee831",
+                "resourcePath": "views\\9c9f5f86-d034-495e-9402-91a69d5be884.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9cb7442d-5e27-4c07-85ae-0c646d03ef04",
             "Value": {
                 "id": "505712d9-7c27-4956-b21a-d0c3784c9340",
@@ -4780,6 +4796,14 @@
                 "id": "c138d2a7-3083-434a-8e04-dc78fdf7d5ed",
                 "resourcePath": "objects\\groundpunch_shockwave\\groundpunch_shockwave.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0059e82-38b4-4e51-9ab3-5dfb2f96bd7a",
+            "Value": {
+                "id": "e075fc58-c270-4f47-8948-18d7ccaf094f",
+                "resourcePath": "scripts\\player_counters\\player_counters.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5556,6 +5580,14 @@
                 "id": "e216a5f6-6fe7-4cd8-b1e4-093f5059e9d0",
                 "resourcePath": "fonts\\font_commandlist\\font_commandlist.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "cb0cb273-a134-4357-8226-ba6a9a00ad4f",
+            "Value": {
+                "id": "92d32d93-1c5e-4817-a8d7-bd1347a94eb2",
+                "resourcePath": "sprites\\groundpound_hitbox\\groundpound_hitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6979,11 +7011,13 @@
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
-        "1b99099c-f82e-4e8d-962d-5a3b757f592f",
         "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "b8aeffe8-a8a7-43e0-b412-94c29526c57f",
+        "1b99099c-f82e-4e8d-962d-5a3b757f592f",
+        "b0059e82-38b4-4e51-9ab3-5dfb2f96bd7a",
+        "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
         "558e254a-f29a-423d-8816-b45cadd7edbd",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",

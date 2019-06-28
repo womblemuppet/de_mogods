@@ -26,11 +26,11 @@ if cangroundpound==2
         get_stunned(GROUND_POUND_STUN_AMOUNT,true)
 
     }
-    vspd=-2.5
-    if image_xscale==1
-        hspd=4
-    if image_xscale==-1
-        hspd=-4
+
+	if image_xscale==1
+		hspd=4
+	if image_xscale==-1
+		hspd=-4
     
 }
 
