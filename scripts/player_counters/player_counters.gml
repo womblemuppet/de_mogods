@@ -37,26 +37,26 @@ if STUNNED2>0
 		}
 	}
 }
-else                                                   ////////////health blending
-{
-	//////HP   [finaledit]
-	if H==3
-	{
-		image_blend=c_white
-	}
-	if H==2
-	{
-		image_blend=make_colour_rgb(183, 245, 115)
-		if P>2
-			image_blend=make_colour_rgb(183, 245, 215)
-	}
-	if H==1
-	{
-		image_blend=make_colour_rgb(229, 172, 0)
-		if P>2
-			image_blend=make_colour_rgb(229, 172, 100)
-	}
-}
+//else                                                   ////////////health blending
+//{
+//	//////HP   [finaledit]
+//	if H==3
+//	{
+//		image_blend=c_white
+//	}
+//	if H==2
+//	{
+//		image_blend=make_colour_rgb(183, 245, 115)
+//		if P>2
+//			image_blend=make_colour_rgb(183, 245, 215)
+//	}
+//	if H==1
+//	{
+//		image_blend=make_colour_rgb(229, 172, 0)
+//		if P>2
+//			image_blend=make_colour_rgb(229, 172, 100)
+//	}
+//}
 
 if ground_pound_freeze_counter>0
 {

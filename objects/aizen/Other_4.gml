@@ -195,6 +195,8 @@ if room==gameroom
 		with a
 		{
 			P=ii
+			if P%2==1
+				image_blend=c_orange
 			
 			character=aizen.tempcharstrings[P]
 			palette=kouchou.palette[P]
