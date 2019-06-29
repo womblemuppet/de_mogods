@@ -94,13 +94,13 @@ if super_mode_time_remaining>0
 if rocket_jump_input_time_counter_from_jump>0
 {
 	rocket_jump_input_time_counter_from_jump-=1
-	show_debug_message("from jump = "+string(rocket_jump_input_time_counter_from_jump))
+	//show_debug_message("from jump = "+string(rocket_jump_input_time_counter_from_jump))
 }
 
 if rocket_jump_input_time_counter_from_dash>0
 {
 	rocket_jump_input_time_counter_from_dash-=1
-	show_debug_message("from dash = "+string(rocket_jump_input_time_counter_from_dash))
+	//show_debug_message("from dash = "+string(rocket_jump_input_time_counter_from_dash))
 }
 
 

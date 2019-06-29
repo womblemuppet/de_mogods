@@ -3,10 +3,19 @@ if !dontmakeorb
 	var a;
 	a=spawn_orb_type(x+20,y+25,type)
 	
-	if instance_exists(other)
+	if instance_exists(other)   ///dash attack, or bop hitbox
 	{
-		if other.object_index==dashattack || (other.object_index==hitbox && other.attack_name=="ground pound")
-			a.targ=other
+		show_debug_message("other's("+string(other)+" object name = "+string(object_get_name(other.object_index)))
+		
+		if other.object_index==dashattack
+			a.targ=other.creator.id
+		else if  other.object_index==bop_hitbox
+			a.targ=other.creator.id
+		else if other.object_index==hitbox
+		{
+			if other.attack_name=="rocket jump"
+				a.targ=other.creator.id
+		}
 	}
 	
 	effect_aniend(instrument_catch_fire,0.05,-2)

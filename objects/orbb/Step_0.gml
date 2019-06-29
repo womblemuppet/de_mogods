@@ -48,8 +48,8 @@ if hspd!=0
  
 if alarm[1]<100
 {
-    if random(1)>0.95
-        effect_create_above(ef_firework,x,y-5,0,c_white)
+	if random(1)>0.95
+		effect_create_above(ef_firework,x,y-5,0,c_white)
 }
 
 
