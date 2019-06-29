@@ -82,50 +82,6 @@
             ]
         },
         {
-            "id": "559ad0d9-ec7a-44c5-9ab0-f8947b9fc1a9",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1aade843-22dd-4418-9631-e780b8cdd4e2",
-            "compositeImage": {
-                "id": "cdaac579-4d07-4d3e-808f-cd418a9ce45b",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "559ad0d9-ec7a-44c5-9ab0-f8947b9fc1a9",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "af97e7da-e4c2-4f2b-87dc-de651c03016b",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "559ad0d9-ec7a-44c5-9ab0-f8947b9fc1a9",
-                    "LayerId": "41352ebb-0140-46cc-97a6-31393fb3fa59"
-                }
-            ]
-        },
-        {
-            "id": "f98db55f-8c28-4141-bebe-59291db26483",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "1aade843-22dd-4418-9631-e780b8cdd4e2",
-            "compositeImage": {
-                "id": "55b53741-fdd8-4c33-8108-fbc47b35cc65",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "f98db55f-8c28-4141-bebe-59291db26483",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "17701ff9-a5dd-4118-9036-f893e62b992a",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "f98db55f-8c28-4141-bebe-59291db26483",
-                    "LayerId": "41352ebb-0140-46cc-97a6-31393fb3fa59"
-                }
-            ]
-        },
-        {
             "id": "7cdd6840-6dde-43b0-b6a2-ff485859294d",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
@@ -143,6 +99,50 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "7cdd6840-6dde-43b0-b6a2-ff485859294d",
+                    "LayerId": "41352ebb-0140-46cc-97a6-31393fb3fa59"
+                }
+            ]
+        },
+        {
+            "id": "1292e0fe-a49c-4557-884f-e8a3bc0933d4",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "1aade843-22dd-4418-9631-e780b8cdd4e2",
+            "compositeImage": {
+                "id": "e41da26d-7343-4567-b70b-401222883ff7",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "1292e0fe-a49c-4557-884f-e8a3bc0933d4",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "c41805fe-6dc1-4fa1-912a-37dce253ad28",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "1292e0fe-a49c-4557-884f-e8a3bc0933d4",
+                    "LayerId": "41352ebb-0140-46cc-97a6-31393fb3fa59"
+                }
+            ]
+        },
+        {
+            "id": "775c37d7-3f04-4f86-b173-dc14ddeb4905",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "1aade843-22dd-4418-9631-e780b8cdd4e2",
+            "compositeImage": {
+                "id": "403de0df-1e7d-474f-8417-2520e1e8158a",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "775c37d7-3f04-4f86-b173-dc14ddeb4905",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "897f5d2a-fac3-4795-92c3-1ea27c8addd0",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "775c37d7-3f04-4f86-b173-dc14ddeb4905",
                     "LayerId": "41352ebb-0140-46cc-97a6-31393fb3fa59"
                 }
             ]
