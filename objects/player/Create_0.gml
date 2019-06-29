@@ -19,7 +19,7 @@ HOR_AIR_MAXSPEED=4.5
 VSPEED_FROM_GRAVITY_DOWN_MAX=6   ///5.5 good but aiming for slightly heavier
 FRICTION=0.6
 AIR_FRICTION=0.2
-GRAVITY=0.3   //gravity while rising  
+GRAVITY=0.35   //gravity while rising  
 GRAVITY_DOWN=0.65  //gravity while falling
 
 mild_slowed_counter=0   /// 'small' slow counter for time remaining

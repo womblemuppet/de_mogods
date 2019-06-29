@@ -3495,6 +3495,14 @@
             }
         },
         {
+            "Key": "7ebf8b1f-ffae-46d9-9b10-79083d2ffd5e",
+            "Value": {
+                "id": "6005ff4c-1109-48d0-98d3-76c732214897",
+                "resourcePath": "sprites\\splash_effect1\\splash_effect1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ed404fc-7f2b-475b-9c5c-affe63bd7833",
             "Value": {
                 "id": "8e6f6244-dc10-4b2c-b2d6-6c67d12277b1",

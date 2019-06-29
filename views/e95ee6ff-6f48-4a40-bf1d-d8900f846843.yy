@@ -15,7 +15,8 @@
         "eaf14873-0b88-49fb-a3e6-399de1bad269",
         "48e67d00-3415-4aa6-a8f6-a6405532e608",
         "70f52363-0152-4893-899d-81210af23621",
-        "7928b44a-bb9c-48be-954e-b5a48cffc7ec"
+        "7928b44a-bb9c-48be-954e-b5a48cffc7ec",
+        "7ebf8b1f-ffae-46d9-9b10-79083d2ffd5e"
     ],
     "filterType": "GMSprite",
     "folderName": "water",

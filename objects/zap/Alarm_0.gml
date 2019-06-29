@@ -1,3 +1,3 @@
 image_alpha=1
-alarm[1]=15
+alarm[1]=25
 
