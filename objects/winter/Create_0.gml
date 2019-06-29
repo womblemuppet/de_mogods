@@ -38,7 +38,7 @@ if instance_exists(wave)
     {
         if y>level
         {   //[finaledit] frozen animation on player? another effect? something?
-            STUNNED2=50 ///untested
+            stunned_groundpound=50 ///untested
             var a;
             a=instance_create(x,y,ef_stunspiral)
             a.offsetx=0

@@ -14,14 +14,14 @@ if dashcd>0
 	if dashcd==0
 		dash_wallbreak_forgive=false
 }
-if STUNNED>0
+if stunned>0
 {
-	STUNNED-=1
+	stunned-=1
 }
-if STUNNED2>0
+if stunned_groundpound>0
 {
-	STUNNED2-=1
-	if STUNNED2==0
+	stunned_groundpound-=1
+	if stunned_groundpound==0
 	{
 		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
@@ -113,8 +113,6 @@ if dash_attacks_allowed_counter>0
 if recoil_sprite_counter>0                                           //recoil sprite end check
 {
 	recoil_sprite_counter-=1
-    
-    
     
 	if recoil_sprite_counter==0
 	{

@@ -6,8 +6,7 @@
 4 whether to gain meter or not
 */
 
-STUNNED=argument0
-                 ///////////get stunned
+stunned=argument0
 
 var attacker
 if instance_exists(other.creator)

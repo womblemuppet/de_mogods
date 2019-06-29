@@ -27,7 +27,7 @@ if other.bunts==true
 		hspd=-hknockback*airmulti
     
 	vspd=-vknockback*airvmulti
-	STUNNED=stun_amount
+	stunned=stun_amount
 	if !place_meeting(x,y-1,block)
 		y-=1
 
@@ -73,7 +73,7 @@ else    /// if clash object exists created by pusher, clash, deleting clash obje
 	else
 		clasher.gothit.hspd=-hknockback*airmulti
 	clasher.gothit.vspd=-vknockback*airvmulti
-	clasher.gothit.STUNNED=stun_amount
+	clasher.gothit.stunned=stun_amount
 	effect_create_above(ef_firework,x,y,2,c_green)
 	with clasher
 		instance_destroy()

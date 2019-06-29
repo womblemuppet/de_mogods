@@ -7,8 +7,7 @@ if other.creator!=self.id
 	a.sprite_index=other.hit_sprite
 	a.offsetx=0
 	a.offsety=0
-	show_stun_animation=true
-	player_get_stunned(85)
+	player_get_gp_stunned(85)
 	with other
 		instance_destroy()
 }

@@ -190,7 +190,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 				{
 					player_flush_lockdowns()
 					canbounce_counter=at
-					STUNNED2=at
+					stunned_groundpound=at
 					airgrab_mode=3
 					if throwside==true
 						hspd=7.5
@@ -1059,7 +1059,7 @@ if dash_rocket_jump==1
 
 
 
-if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab_decidedir_time>0   ///allow update direction during groundpound or groundpound bounce
+if (cangroundpound=3 && stunned_groundpound<1 && player_not_locked_down()  )   ||   airgrab_decidedir_time>0   ///allow update direction during groundpound or groundpound bounce
 {
 	if checkkey(leftbutton) 
 	{
@@ -1077,7 +1077,7 @@ if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab
 
 
 ////first checks are if player can swap direction (disabled for things like whirlwind)
-if STUNNED2<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
+if stunned_groundpound<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
 {
 	 if checkkey(leftbutton) && !checkkey(rightbutton)
 		player_set_horizontal_movement("left")
@@ -1093,7 +1093,7 @@ if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                                     /* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if STUNNED2<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
+if stunned_groundpound<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
 {
 	var set_jump_sprites;
 	set_jump_sprites=false  
@@ -1310,8 +1310,7 @@ if place_meeting(x-hspd,y,block) && player_not_digging()  /// horizontal block c
 	if uniques_whirlwind_active==true
 	{
 		uniques_whirlwind_active=false
-		show_stun_animation=true
-		player_get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
+		player_get_gp_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
 	}
 }
 else if place_meeting(x+hspd,y,block)  && player_not_digging()  /// horizontal block collision right
@@ -1377,8 +1376,7 @@ else if place_meeting(x+hspd,y,block)  && player_not_digging()  /// horizontal b
 	if uniques_whirlwind_active==true
 	{
 		uniques_whirlwind_active=false
-		show_stun_animation=false
-		player_get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
+		player_get_gp_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
 	}
 }
 

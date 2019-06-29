@@ -41,11 +41,11 @@ switch argument0
 		attack_stop_gp()
 	}
 	
-	show_stun_animation=true
+	player_get_gp_stunned(other.stunamount)
 	
 	break;
 	case "oogauppercut" :   ////ooga's
-	if STUNNED2>0
+	if stunned_groundpound>0
 	{
 		impact_debuff_counter=40
 		vspd-=6
@@ -61,7 +61,7 @@ switch argument0
 	}  
 	break;
 	case "falconpunch" :
-	if STUNNED2>0
+	if stunned_groundpound>0
 	{
 		impact_debuff_counter=40
 		cripple_debuff_counter=120

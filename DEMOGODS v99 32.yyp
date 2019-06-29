@@ -2250,7 +2250,7 @@
             "Key": "558e254a-f29a-423d-8816-b45cadd7edbd",
             "Value": {
                 "id": "244065ca-b4cc-426e-8477-f170af3fcd71",
-                "resourcePath": "scripts\\player_get_stunned\\player_get_stunned.yy",
+                "resourcePath": "scripts\\player_get_gp_stunned\\player_get_gp_stunned.yy",
                 "resourceType": "GMScript"
             }
         },
