@@ -1,8 +1,8 @@
 {
-    "id": "558e254a-f29a-423d-8816-b45cadd7edbd",
+    "id": "4ed56efa-0618-4f87-95cd-ef18be167773",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "get_stunned",
+    "name": "attack_stop_gp",
     "IsCompatibility": false,
     "IsDnD": false
 }

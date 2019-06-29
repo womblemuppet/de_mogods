@@ -1,8 +1,8 @@
 {
-    "id": "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
+    "id": "558e254a-f29a-423d-8816-b45cadd7edbd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "player_horizontal_movement",
+    "name": "player_get_stunned",
     "IsCompatibility": false,
     "IsDnD": false
 }

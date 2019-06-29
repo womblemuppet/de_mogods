@@ -70,3 +70,6 @@ if dash_current_hitbox_object!=noone
 		with dash_current_hitbox_object
 			instance_destroy()
 }
+
+//delete groundpound hitbox
+attack_stop_gp()

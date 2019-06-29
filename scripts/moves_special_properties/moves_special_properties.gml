@@ -7,6 +7,43 @@ else
 
 switch argument0
 {
+	case "ground pound":
+	with attacker
+	{
+		if cangroundpound==2
+		{
+			if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true 
+				attack_ooga_ultimate()
+			cangroundpound=3
+			var d;
+			d=other.id
+			with flower
+			{
+				if owner==d
+				{
+					cooldown=25
+					samepersoncooldown=70
+					owner=-1
+					vspd=-24
+					y-=4
+					timer=TIMERSTARTNUMBER
+					shake=0
+					sprite_index=pineapple_fall
+				}
+			}
+    
+			vspd=-2.5
+			if image_xscale==1
+				hspd=4
+			if image_xscale==-1
+				hspd=-4
+		}
+		attack_stop_gp()
+	}
+	
+	show_stun_animation=true
+	
+	break;
 	case "oogauppercut" :   ////ooga's
 	if STUNNED2>0
 	{

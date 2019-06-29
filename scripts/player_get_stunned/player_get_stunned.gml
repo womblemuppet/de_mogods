@@ -1,11 +1,11 @@
 /*
-	get_stunned(stun amount, use stun animation)
+	player_get_stunned(stun amount)
 	use whole numbers for stun amount, non-integer stun amounts will never count to 0
 */
 hspd=0
 STUNNED2=argument0 
 player_flush_lockdowns()
-if argument1
+if show_stun_animation==true
 {
 	sprite_index=sprites[19]
 	if super_mode
@@ -20,3 +20,4 @@ if argument1
 	a.image_yscale=image_yscale
 	a.image_speed=FRAME_SPEED_SLOW
 }
+show_stun_animation=false

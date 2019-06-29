@@ -256,7 +256,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 		
 
 
-	if  cangroundpound==2   ////GROUNDPOUND EFFECT EVENT
+	if  cangroundpound==2   ////GP HITS GROUND EFFECT EVENT
 	{
 		effect_aniend(groundpoundeffect,0.4,-2)
 		
@@ -295,6 +295,8 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 			vspd=-5.5    ////bounce up
 
 		}
+		//delete groundpound hitbox
+		attack_stop_gp()
 	}
 
 	if jumped                            ///////////after landing from a jump , slow the player for a bit
@@ -305,7 +307,6 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 			mild_slowed_counter=0
 			brutal_slowed_counter=10
 		}
-		//effect_create_above(ef_firework,x,y,2,c_blue)
 	}
 	cangroundpound=0
 	dash_rocket_jump=0
@@ -787,7 +788,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				sprite_index=sprites[7]
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
-			alarm[2]=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
+			ground_pound_freeze_counter=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
 			break;
 			case -1:
 			dropcrabok=false
@@ -1079,9 +1080,9 @@ if (cangroundpound=3 && STUNNED2<1 && player_not_locked_down()  )   ||   airgrab
 if STUNNED2<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
 {
 	 if checkkey(leftbutton) && !checkkey(rightbutton)
-		player_horizontal_movement("left")
+		player_set_horizontal_movement("left")
 	if checkkey(rightbutton)
-		player_horizontal_movement("right")	
+		player_set_horizontal_movement("right")	
 }
 if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
 {
@@ -1309,7 +1310,8 @@ if place_meeting(x-hspd,y,block) && player_not_digging()  /// horizontal block c
 	if uniques_whirlwind_active==true
 	{
 		uniques_whirlwind_active=false
-		get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT,true)
+		show_stun_animation=true
+		player_get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
 	}
 }
 else if place_meeting(x+hspd,y,block)  && player_not_digging()  /// horizontal block collision right
@@ -1375,7 +1377,8 @@ else if place_meeting(x+hspd,y,block)  && player_not_digging()  /// horizontal b
 	if uniques_whirlwind_active==true
 	{
 		uniques_whirlwind_active=false
-		get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT,true)
+		show_stun_animation=false
+		player_get_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
 	}
 }
 

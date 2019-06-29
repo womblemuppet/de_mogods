@@ -2079,6 +2079,14 @@
             }
         },
         {
+            "Key": "4ed56efa-0618-4f87-95cd-ef18be167773",
+            "Value": {
+                "id": "82c314f8-ea87-47f2-a520-b267a081930e",
+                "resourcePath": "scripts\\attack_stop_gp\\attack_stop_gp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4f56df09-4fe6-41aa-9e3c-b0ab134eeef9",
             "Value": {
                 "id": "ef8bec80-ee58-4c35-9e31-a1bdd2a847ed",
@@ -2218,7 +2226,7 @@
             "Key": "558e254a-f29a-423d-8816-b45cadd7edbd",
             "Value": {
                 "id": "244065ca-b4cc-426e-8477-f170af3fcd71",
-                "resourcePath": "scripts\\get_stunned\\get_stunned.yy",
+                "resourcePath": "scripts\\player_get_stunned\\player_get_stunned.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3258,7 +3266,7 @@
             "Key": "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
             "Value": {
                 "id": "c70e0103-f8ce-481f-8b2f-2da83989c642",
-                "resourcePath": "scripts\\player_horizontal_movement\\player_horizontal_movement.yy",
+                "resourcePath": "scripts\\player_set_horizontal_movement\\player_set_horizontal_movement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7018,7 +7026,6 @@
         "1b99099c-f82e-4e8d-962d-5a3b757f592f",
         "b0059e82-38b4-4e51-9ab3-5dfb2f96bd7a",
         "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
-        "558e254a-f29a-423d-8816-b45cadd7edbd",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",
@@ -7027,6 +7034,7 @@
         "49a5fd1f-eea7-42e5-ade1-948ae8ec00d9",
         "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
+        "558e254a-f29a-423d-8816-b45cadd7edbd",
         "6c702e2a-2603-4e19-8c09-8b1902866d44",
         "8f2497f9-ad09-4416-b04a-7931992aa8fb",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
@@ -7034,6 +7042,7 @@
         "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "353a867e-8cc9-4c04-843b-334f14b56d9c",
+        "4ed56efa-0618-4f87-95cd-ef18be167773",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

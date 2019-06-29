@@ -25,7 +25,7 @@ if STUNNED==0 && player_not_locked_down()
 		hor_running_counter=(sgn*HOR_SHUFFLE_THRESHOLD)+sgn
 	hor_running_counter+=sgn
 
-        
+
 	if groundcheck!=noone
 	{
 		if  hor_running_counter==sgn*HOR_SHUFFLE_THRESHOLD
