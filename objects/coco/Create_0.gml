@@ -6,3 +6,4 @@ image_yscale=2
 ani=0
 passes=0
 
+effect_aniend(splash_effect1,0.2,-1)
