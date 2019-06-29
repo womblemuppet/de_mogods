@@ -12,7 +12,7 @@ a.numberofhh=argument1
 a.reset_attacker_hh=argument2
 a.reset_opponent=argument3
 a.gains_meter_on_hit=argument4
-a.attackname=argument5
+a.attack_name=argument5
 
 
 a.sprite_index=argument6

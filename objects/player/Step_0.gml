@@ -16,8 +16,6 @@ if canbounce_counter>0   //if bounce enabled, and will hit block below, reverse 
 
 
 //////////////////////////////////////////     groundcheck
-var id_of_groundpounded_boppable_if_exists
-id_of_groundpounded_boppable_if_exists=noone
 
 
 groundcheck=instance_place(x,y+1,block)  ///[finaledit] 
@@ -57,14 +55,6 @@ if groundcheck!=noone
 				image_index=0
 			}
 		}
-	}
-	else if groundcheck.object_index==instrument
-	{
-		id_of_groundpounded_boppable_if_exists=instance_place(x,y+1,instrument)
-	}
-	else if groundcheck.object_index==tree_block
-	{
-		id_of_groundpounded_boppable_if_exists=instance_place(x,y+1,tree_block)
 	}
 }
 else ///( if groundcheck==noone)
@@ -282,19 +272,11 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 				uniques_whirlwind_active=true
 			}
 		}
-		////collide gp with instrument below it
-		if id_of_groundpounded_boppable_if_exists!=noone
-		{
-			with id_of_groundpounded_boppable_if_exists
-			{
-				if protection<1
-				{
-					block_take_damage()
-				}
-			}
-			vspd=-5.5    ////bounce up
+		
+		var a;
+		a=instance_create(x,y,bop_hitbox)
+		a.creator=self.id
 
-		}
 		//delete groundpound hitbox
 		attack_stop_gp()
 	}
@@ -492,32 +474,32 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
     
 	if !exception && canpush
 	{   
-		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attackname,extrahkb;
+		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attack_name,extrahkb;
 		spawn_normal_uc_hitbox=false
-		la_attackname="error"
+		la_attack_name="error"
 		extrahkb=0
         
 		switch attacks[? "light attack"]
 		{
 			case 0:  //ooga
-			la_attackname="oogauppercut"
+			la_attack_name="oogauppercut"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo 
 			extrahkb=3 break;
             
 			case 1:    ///veteran light attack (chains) 
-			la_attackname="veteranuppercut"
+			la_attack_name="veteranuppercut"
 			uniques_vet_chain_counter=UNIQUES_VET_CHAIN_COUNTER_TIME
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
 			case 2:   ///slinger held jump light attack
-			la_attackname="slingeruppercut"
+			la_attack_name="slingeruppercut"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
 			case 3:    ////bait chainer attack
-			la_attackname="baitchain"
+			la_attack_name="baitchain"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
@@ -530,7 +512,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
         
 		if spawn_normal_uc_hitbox
 		{
-			if la_attackname=="error"
+			if la_attack_name=="error"
 				show_error("invalid attack name recieved",true)
 			canpush=false
 			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
@@ -541,7 +523,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
             
-			attack_create_hitbox(30,1,true,true,true,la_attackname,uc_hitbox_shape,1,99,7+extrahkb,4)
+			attack_create_hitbox(30,1,true,true,true,la_attack_name,uc_hitbox_shape,1,99,7+extrahkb,4)
 		}
 	}
 }

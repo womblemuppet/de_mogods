@@ -1,4 +1,4 @@
-if other.attackname=="forwardpunch"
+if other.attack_name=="forwardpunch"
 {    
 	bigexplosion=true
 	triggered=true
