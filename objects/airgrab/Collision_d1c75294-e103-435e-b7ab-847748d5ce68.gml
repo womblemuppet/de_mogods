@@ -1,3 +1,6 @@
+if image_index>last_active_frame
+	exit
+
 if other!=creator 
 {   
 	if other.groundcheck==noone
