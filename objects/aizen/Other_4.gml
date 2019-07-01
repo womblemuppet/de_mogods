@@ -251,15 +251,15 @@ if room==gameroom
 	{
         
 		var prot;
-		        prot=0  // [finaledit] obsolete?
+			prot=0  // [finaledit] obsolete?
 		with spawn_block(kouchou.room_left_border_x,groundlevel-40,0)
-		        protection=prot
+			protection=prot
 		with spawn_block(kouchou.room_left_border_x+40,groundlevel-40,0)
-		        protection=prot
+			protection=prot
 		with spawn_block(kouchou.room_right_border_x-40,groundlevel-40,0)
-		        protection=prot
+			protection=prot
 		with spawn_block(kouchou.room_right_border_x,groundlevel-40,0)
-		        protection=prot
+			protection=prot
             
 		for (i=0; i<kouchou.rw; i+=40)
 		{
@@ -271,7 +271,7 @@ if room==gameroom
 			with spawn_block(kouchou.room_left_border_x+i,groundlevel+40,0)
 				protection=prot
 		};
-		alarm[10]=300   ///time before first volcs spawn
+
 
 		with block
 		{
@@ -310,7 +310,7 @@ if room==gameroom
 	
 	if kouchou.map=="multiplayer"
 	{
-		alarm[0]=300    //orbs
+		//
 	}
 	else if kouchou.map=="firetrial"
 	{

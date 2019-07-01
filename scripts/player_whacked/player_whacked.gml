@@ -13,20 +13,18 @@ if instance_exists(other.creator)
 	attacker=other.creator
 else
 	attacker=noone
-	
 
-
-other.hit[P]=true
-if other.hit_collector!=noone
-{
-	if instance_exists(other.hit_collector)
-		other.hit_collector.hit[P]=true
-}
-if !instance_exists(payday)            ////////add to hothands (if not payday)
+if !instance_exists(payday)            ////////add to hothands and do first blood (if not payday)
 {
 	hothands+=argument1
 	if argument2!=0 && attacker!=noone     //whether to reset hh (melee/ranged)
 		other.creator.hothands=0
+	
+	if aizen.first_blood_happened==false
+	{
+		spawn_instrument(self.id)
+		first_blood_activate(x,y,self.id)
+	}
 }
 if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 {
@@ -40,8 +38,6 @@ if argument3     /// knocks player out of current animation
 {
 	player_flush_lockdowns()
 }
-
-
 
 
 if argument4    ///gain meter

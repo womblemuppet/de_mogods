@@ -3535,6 +3535,14 @@
             }
         },
         {
+            "Key": "7f6d7270-3bda-485d-8d13-149d52c6e998",
+            "Value": {
+                "id": "5e8cfc88-f171-4a3f-819f-c285976f09dd",
+                "resourcePath": "sprites\\first_blood_zap\\first_blood_zap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7f9959d6-2858-4eaa-aa4f-d582a5944201",
             "Value": {
                 "id": "8e135b2e-ae78-4e0c-ba17-62c5e76f2c6d",
@@ -5399,6 +5407,14 @@
             }
         },
         {
+            "Key": "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
+            "Value": {
+                "id": "c77ace56-95c8-4420-b482-22bfbc29e81d",
+                "resourcePath": "scripts\\first_blood_activate\\first_blood_activate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c1dcccae-83fa-4827-8c00-57df9bcb1aab",
             "Value": {
                 "id": "5d6d2f10-4b90-430a-8cc8-5b9c0feba507",
@@ -6807,6 +6823,14 @@
             }
         },
         {
+            "Key": "f19f447e-8011-4590-bf58-bd178e36e2cb",
+            "Value": {
+                "id": "0a73953a-30e7-43ce-b609-c2fe3e0bcd92",
+                "resourcePath": "scripts\\find_lowest_diggable_middle_block\\find_lowest_diggable_middle_block.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1a246b5-d289-4e66-bfdb-91cc02a6d54f",
             "Value": {
                 "id": "dac4e539-dc8a-43ff-902c-4e64b8a7d913",
@@ -7178,6 +7202,8 @@
         "13065cb0-2340-4740-8a16-9e183a14177b",
         "6381e76c-9ea8-4b62-bbc4-a36b7df728d7",
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
+        "269c9d81-38b3-4b63-a99f-9af285206699",
+        "f19f447e-8011-4590-bf58-bd178e36e2cb",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
@@ -7201,8 +7227,8 @@
         "9eb22774-7e8b-47d2-b974-4884096f7f72",
         "fb6221bb-6a57-4f33-84a3-c09517ceb4a4",
         "0d48b2ca-8227-4b3a-a8b6-468f994a67e4",
-        "269c9d81-38b3-4b63-a99f-9af285206699",
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
+        "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "59b15fad-efa6-4052-9e08-995631aadc2c",

@@ -1,7 +1,6 @@
 room=gameroom
 
 
-
 global.fft=1   ///testing variable for flood orb parents
 
 to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
@@ -64,7 +63,9 @@ ds_list_add(biome_schedule,"cave")
 
 
 travelled=0      ////total distance in pixels that the screen has scrolled down
+
 mode=0          //// normal, about to shitcall, or shitcalling
+first_blood_happened=false
 
 /***************************************************
   0=normal

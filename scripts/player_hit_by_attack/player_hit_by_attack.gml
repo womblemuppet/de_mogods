@@ -7,6 +7,12 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 {
 	if other.hit[P]==false && other.creator!=self.id  ///hit by enemy attack
 	{
+		other.hit[P]=true
+		if other.hit_collector!=noone
+		{
+			if instance_exists(other.hit_collector)
+				other.hit_collector.hit[P]=true
+		}
 		player_generic_knockback(other.my_hknockback,other.my_vknockback)
 		player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent,other.gains_meter_on_hit)
 		moves_special_properties(other.attack_name)

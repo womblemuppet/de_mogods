@@ -7,26 +7,26 @@ stackframe_sprite=arcade_cabinet_maskbar_whoosh
 
 with orbb
 {
-    alarm[1]=1   ///die
+	alarm[1]=1   ///die
 }
 switch ds_list_find_value(STACK,0)
 {
-    case 0:
-        instance_create(0,0,badweather) break;
-    case 1:
-        instance_create(0,0,winter) break;
-    case 2:
-        instance_create(0,0,storm) break;     
-    case 3:
-        instance_create(0,0,payday) break;    
-    case 4:
-        instance_create(0,0,freakyfishtime) break;
-    case 5:
-        instance_create(0,0,tornadoe) break;
-    case 6:
-        instance_create(0,0,bloodmoon) break;
+	case 0:
+		instance_create(0,0,badweather) break;
+	case 1:
+		instance_create(0,0,winter) break;
+	case 2:
+		instance_create(0,0,storm) break;     
+	case 3:
+		instance_create(0,0,payday) break;    
+	case 4:
+		instance_create(0,0,freakyfishtime) break;
+	case 5:
+		instance_create(0,0,tornadoe) break;
+	case 6:
+		instance_create(0,0,bloodmoon) break;
     
-    default: show_error("unknown in stack",true)
+	default: show_error("unknown in stack",true)
 }
 
 

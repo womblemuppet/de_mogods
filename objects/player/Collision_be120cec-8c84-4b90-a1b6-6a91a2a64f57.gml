@@ -57,7 +57,6 @@ if other.ready==true && other.dying==false && !super_mode
 		default: show_error("unhandled orb sparkles effect?!",true)
 	}
      
-    //////////////////////////////////////////////////////////////////////////////////////   RESET AIZEN PEACETIME VARIABLE
-	aizen.peacetime=0
+
 }
 
