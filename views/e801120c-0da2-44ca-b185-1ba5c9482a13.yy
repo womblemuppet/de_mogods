@@ -26,7 +26,8 @@
         "249c5271-907d-4757-8eb5-beffa15f3131",
         "828b609a-1929-4e84-af62-aaae14152b74",
         "5d5fddb1-adf2-4b71-a011-8d0e1f83a265",
-        "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc"
+        "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc",
+        "e68aae9a-efb8-43ce-bef2-6c7d4d6892c7"
     ],
     "filterType": "GMSprite",
     "folderName": "Bait",

@@ -1583,6 +1583,14 @@
             }
         },
         {
+            "Key": "3d39ee8f-4a9c-4cdd-870c-5879a55553d6",
+            "Value": {
+                "id": "d8692563-d917-46e7-ad5b-9cb83d4f4a5e",
+                "resourcePath": "sprites\\Vet_rjump_effect_spr\\Vet_rjump_effect_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d7a0f91-d4a0-4407-8f33-20af78d45998",
             "Value": {
                 "id": "9e27f99f-854d-4eca-836c-9da701ec12ab",
@@ -5575,6 +5583,14 @@
             }
         },
         {
+            "Key": "c6ea115b-830a-4313-bcba-f010ac8c524b",
+            "Value": {
+                "id": "177a41c5-3acd-4b03-9a25-1d29b539d75b",
+                "resourcePath": "sprites\\Ooga_rjump_effect_spr\\Ooga_rjump_effect_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
             "Value": {
                 "id": "918bbbb5-b5d6-445d-95bc-0306f8cc8962",
@@ -5804,6 +5820,14 @@
                 "id": "9c96db31-7267-4621-9313-e8ac4c033821",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ccab341b-3f2f-4041-b139-ae497b8af791",
+            "Value": {
+                "id": "445cecee-bd5e-4296-8b9b-f58761b4deff",
+                "resourcePath": "sprites\\Slinger_rjump_effect_spr\\Slinger_rjump_effect_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6531,6 +6555,14 @@
             "Value": {
                 "id": "52584e02-49b9-4fad-a477-a792e2d1e652",
                 "resourcePath": "sprites\\forest7\\forest7.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e68aae9a-efb8-43ce-bef2-6c7d4d6892c7",
+            "Value": {
+                "id": "d0c70299-9e22-447f-a9e9-bc87991f7ac0",
+                "resourcePath": "sprites\\Bait_rjump_effect_spr\\Bait_rjump_effect_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

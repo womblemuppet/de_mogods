@@ -22,7 +22,8 @@
         "81e2e1ee-7c4c-48e8-a34c-9d1bc8a391fd",
         "d1865db5-d0ff-4d10-b22a-213a082b7cac",
         "9086953a-5ca6-4e84-bc41-bc7f5f830f38",
-        "cb0cb273-a134-4357-8226-ba6a9a00ad4f"
+        "cb0cb273-a134-4357-8226-ba6a9a00ad4f",
+        "c6ea115b-830a-4313-bcba-f010ac8c524b"
     ],
     "filterType": "GMSprite",
     "folderName": "Oooga",

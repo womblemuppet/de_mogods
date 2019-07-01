@@ -12,7 +12,7 @@ sprites_index_max=150
 sprites[sprites_index_max]=mask_player
 for (i=0; i<sprites_index_max; i+=1)
 {
-    sprites[i]=mask_player
+	sprites[i]=mask_player
 };
  
  
@@ -28,41 +28,42 @@ switch character
             
 			if H==3 || H==4 || H==5
 			{
-			sprites[27]=Ooga_gp_effect
-			sprites[28]=Ooga_4H_rocketjump
-			sprites[29]=Ooga_U_rocketjump
-			sprites[30]=Ooga_4H_rocketjump_charge
-			sprites[31]=Ooga_U_rocketjump_charge
-			sprites[42]=Ooga_death_by_acid
-			sprites[41]=Ooga_death_by_zap
-			sprites[40]=Ooga_death_by_ice
-			sprites[26]=Ooga_4H_recoiling_super
-			sprites[25]=Ooga_4H_recoiling
-			sprites[24]=Ooga_4H_airgrab  ///super version (to be changed)
-			sprites[23]=Ooga_4H_airgrab 
-			sprites[22]=Ooga_4H_falconpunch  ///super version (to be changed)
-			sprites[21]=Ooga_4H_falconpunch
-			sprites[20]=Ooga_4H_dizzy   ///superversion (to be chnageD)
-			sprites[19]=Ooga_4H_dizzy
-			sprites[18]=Ooga_U_uppercut
-			sprites[17]=Ooga_4H_uppercut
-			sprites[16]=Ooga_U_charge 
-			sprites[15]=Ooga_4H_charge
-			sprites[14]=goldboi
-			sprites[13]=P1_corpse
-			sprites[0]=Ooga_4H_idle
-			sprites[1]=Ooga_4H_run
-			sprites[2]=Ooga_4H_jump
-			sprites[3]=Ooga_4H_air 
-			sprites[4]=Ooga_4H_fall
-			sprites[5]=Ooga_4H_gpfall
-			sprites[6]=Ooga_pal1_ult_actiavte
-			sprites[7]=Ooga_U_gpfall
-			sprites[8]=Ooga_U_run
-			sprites[9]=Ooga_U_idle
-			sprites[10]=Ooga_U_jump
-			sprites[11]=Ooga_U_air
-			sprites[12]=Ooga_U_fall
+				sprites[27]=Ooga_gp_effect
+				sprites[28]=Ooga_4H_rocketjump
+				sprites[29]=Ooga_U_rocketjump
+				sprites[30]=Ooga_4H_rocketjump_charge
+				sprites[31]=Ooga_U_rocketjump_charge
+				sprites[33]=Ooga_rjump_effect_spr
+				sprites[42]=Ooga_death_by_acid
+				sprites[41]=Ooga_death_by_zap
+				sprites[40]=Ooga_death_by_ice
+				sprites[26]=Ooga_4H_recoiling_super
+				sprites[25]=Ooga_4H_recoiling
+				sprites[24]=Ooga_4H_airgrab  ///super version (to be changed)
+				sprites[23]=Ooga_4H_airgrab 
+				sprites[22]=Ooga_4H_falconpunch  ///super version (to be changed)
+				sprites[21]=Ooga_4H_falconpunch
+				sprites[20]=Ooga_4H_dizzy   ///superversion (to be chnageD)
+				sprites[19]=Ooga_4H_dizzy
+				sprites[18]=Ooga_U_uppercut
+				sprites[17]=Ooga_4H_uppercut
+				sprites[16]=Ooga_U_charge 
+				sprites[15]=Ooga_4H_charge
+				sprites[14]=goldboi
+				sprites[13]=P1_corpse
+				sprites[0]=Ooga_4H_idle
+				sprites[1]=Ooga_4H_run
+				sprites[2]=Ooga_4H_jump
+				sprites[3]=Ooga_4H_air 
+				sprites[4]=Ooga_4H_fall
+				sprites[5]=Ooga_4H_gpfall
+				sprites[6]=Ooga_pal1_ult_actiavte
+				sprites[7]=Ooga_U_gpfall
+				sprites[8]=Ooga_U_run
+				sprites[9]=Ooga_U_idle
+				sprites[10]=Ooga_U_jump
+				sprites[11]=Ooga_U_air
+				sprites[12]=Ooga_U_fall
 			}
 		}
 /*        else if palette==1
@@ -118,6 +119,7 @@ switch character
 			sprites[29]=Vet_3H_rocketjump   ///super version (to be changed)
 			sprites[30]=Vet_3H_rocketjump_charge
 			sprites[31]=Vet_3H_rocketjump_charge  ///super version (to be changed)
+			sprites[33]=Vet_rjump_effect_spr
 			sprites[26]=Vet_3H_recoiling  ///super version (to be changed)
 			sprites[25]=Vet_3H_recoiling
 			sprites[24]=Vet_3H_airgrab  ///super version (to be changed)
@@ -170,6 +172,7 @@ switch character
 			sprites[29]=Slinger_3H_rocketjump
 			sprites[30]=Slinger_3H_rocketjump_charge
 			sprites[31]=Slinger_3H_rocketjump_charge  ///super version (to be changed)
+			sprites[33]=Slinger_rjump_effect_spr
 			sprites[27]=groundpoundeffect
 			sprites[26]=Slinger_3H_recoiling  ///super version (to be changed)
 			sprites[25]=Slinger_3H_recoiling
@@ -212,6 +215,7 @@ switch character
 		sprites[29]=Bait_3H_rocketjump
 		sprites[30]=Bait_3H_rocketjump_charge
 		sprites[31]=Bait_3H_rocketjump_charge  ///super version (to be changed)
+		sprites[33]=Bait_rjump_effect_spr
 		sprites[27]=groundpoundeffect
 		sprites[26]=Bait_3H_recoiling  ///super version (to be changed)
 		sprites[25]=Bait_3H_recoiling

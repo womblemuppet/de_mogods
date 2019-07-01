@@ -20,6 +20,14 @@ dash_rocket_jump=2
 uniques_parachute=0 ///allow parachute  after rocket jump
 doublejump=2
 
-attack_create_dash_hitbox(true,DASH_ROCKET_JUMP_STUN_DURATION_LEVELS[dash_rocket_jump_charge],3,9,"rocket jump",rjump_hitbox1,FRAME_SPEED_NORMAL,false)
+var a;
+a=attack_create_dash_hitbox(true,DASH_ROCKET_JUMP_STUN_DURATION_LEVELS[dash_rocket_jump_charge],3,9,"rocket jump",rjump_hitbox1,FRAME_SPEED_NORMAL,false)
+var b;
+b=instance_create(a.x,a.y,ef_stunspiral)
+b.targ=a
+b.image_speed=0.2
+b.sprite_index=sprites[33]
+b.offsetx=0
+b.offsety=0
 
 dash_rocket_jump_charge=0
