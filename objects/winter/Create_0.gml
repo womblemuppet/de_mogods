@@ -40,7 +40,7 @@ if instance_exists(wave)
         {   //[finaledit] frozen animation on player? another effect? something?
             stunned_groundpound=50 ///untested
             var a;
-            a=instance_create(x,y,ef_stunspiral)
+            a=instance_create(x,y,ef_follower)
             a.offsetx=0
             a.offsety=0
             a.targ=self.id

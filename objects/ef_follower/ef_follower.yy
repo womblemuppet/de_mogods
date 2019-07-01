@@ -2,7 +2,7 @@
     "id": "ce4f9d18-b1ef-4dd8-8e54-b750dce630b1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ef_stunspiral",
+    "name": "ef_follower",
     "eventList": [
         {
             "id": "efb9830e-de74-4894-9d79-f839405776ba",

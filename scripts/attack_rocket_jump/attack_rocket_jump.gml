@@ -23,7 +23,7 @@ doublejump=2
 var a;
 a=attack_create_dash_hitbox(true,DASH_ROCKET_JUMP_STUN_DURATION_LEVELS[dash_rocket_jump_charge],3,9,"rocket jump",rjump_hitbox1,FRAME_SPEED_NORMAL,false)
 var b;
-b=instance_create(a.x,a.y,ef_stunspiral)
+b=instance_create(a.x,a.y,ef_follower)
 b.targ=a
 b.image_speed=0.2
 b.sprite_index=sprites[33]

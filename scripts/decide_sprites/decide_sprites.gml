@@ -22,8 +22,8 @@ switch character
 	{
 		if palette==0
 		{
-		supersparkle_sprite=P1_saiyanaura 
-		sentinel_colour=c_purple
+			supersparkle_sprite=P1_saiyanaura 
+			sentinel_colour=c_purple
 
             
 			if H==3 || H==4 || H==5

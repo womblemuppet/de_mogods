@@ -3,7 +3,7 @@ image_speed=0.3
 
 
 var a;
-a=instance_create_depth(x,y,-4,ef_stunspiral)
+a=instance_create_depth(x,y,-4,ef_follower)
 a.targ=self.id
 a.offsetx=0
 a.offsety=0

@@ -82,7 +82,7 @@ if instance_exists(wave)
 if super_mode && random(1)>0.6      ///////////super effect
 {
 	var a;
-	a=instance_create(x,y,ef_stunspiral)
+	a=instance_create(x,y,ef_follower)
 	a.sprite_index=supersparkle_sprite
 	a.targ=self.id
 	a.depth=-2
