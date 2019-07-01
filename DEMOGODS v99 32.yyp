@@ -4671,6 +4671,14 @@
             }
         },
         {
+            "Key": "a59e0892-0043-4cbf-9661-e07569fdfeeb",
+            "Value": {
+                "id": "ebe70292-8530-47a5-a18c-6024ef3df0c6",
+                "resourcePath": "scripts\\spawn_pineapple\\spawn_pineapple.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5a4b315-aca9-4cef-8464-069af15ab01d",
             "Value": {
                 "id": "6ce2553e-1b4a-4e9d-bf1a-3852be092379",
@@ -7285,6 +7293,7 @@
         "0d48b2ca-8227-4b3a-a8b6-468f994a67e4",
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
         "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
+        "a59e0892-0043-4cbf-9661-e07569fdfeeb",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "59b15fad-efa6-4052-9e08-995631aadc2c",
