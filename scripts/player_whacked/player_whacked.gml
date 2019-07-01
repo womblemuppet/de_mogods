@@ -22,7 +22,7 @@ if !instance_exists(payday)            ////////add to hothands and do first bloo
 	
 	if aizen.first_blood_happened==false
 	{
-		spawn_instrument(self.id)
+		spawn_instrument_spawner(self.id)
 		first_blood_activate(x,y,self.id)
 	}
 }

@@ -1,0 +1,12 @@
+if sprite_index==block_bubbler_end_spr
+{
+	if instance_exists(targ)
+	{
+		with targ
+		{
+			spawn_instrument_block(x,y)
+			instance_destroy()
+		}
+	}
+	instance_destroy()
+}

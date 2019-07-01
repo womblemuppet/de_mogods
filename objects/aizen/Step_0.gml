@@ -45,7 +45,7 @@ if mode==0
 	if first_blood_happened==false && peacetime==2000
 	{
 		var d;
-		d=spawn_instrument(noone)
+		d=spawn_instrument_spawner(noone)
 		//show_debug_message("peacetime limit, spawned instrument, diggable block ="+string(d))
 		first_blood_activate(d.x,d.y,noone)
 	}
