@@ -4,3 +4,5 @@ var a;
 a=effect_aniend(pinespawn,0.15,-1)
 a.image_alpha=0.5
 
+
+show_error("tree decripated dont use",true)
