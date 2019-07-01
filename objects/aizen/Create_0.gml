@@ -65,7 +65,6 @@ ds_list_add(biome_schedule,"cave")
 travelled=0      ////total distance in pixels that the screen has scrolled down
 
 mode=0          //// normal, about to shitcall, or shitcalling
-first_blood_happened=false
 
 /***************************************************
   0=normal
@@ -73,6 +72,8 @@ first_blood_happened=false
   2=shit happening
 ****************************************************/
 peacetime=0
+first_blood_happened=false
+first_blood_cooldown_counter=0
 
 image_speed=0.15
 

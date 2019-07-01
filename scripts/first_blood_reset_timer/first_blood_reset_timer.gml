@@ -1,0 +1,1 @@
+aizen.first_blood_cooldown_counter=350

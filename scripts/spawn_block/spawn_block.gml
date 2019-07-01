@@ -10,7 +10,6 @@
 var a;
 a=instance_create(argument0,argument1,block)   //if change this change room spawn blocks
 a.visible=true
-a.protection=0
 a.variant=choose(5,17)
 a.divisible=true
 

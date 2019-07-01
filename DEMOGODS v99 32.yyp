@@ -3511,6 +3511,14 @@
             }
         },
         {
+            "Key": "7d591364-72d8-4275-abbb-dfcb69300b67",
+            "Value": {
+                "id": "e3b28e57-12c8-45be-afcb-1f062bbd14c2",
+                "resourcePath": "scripts\\first_blood_reset_timer\\first_blood_reset_timer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7da1c6da-3514-4862-a45a-30affc4faf27",
             "Value": {
                 "id": "a55210fa-0834-4ad6-9517-e253212f4888",
@@ -7303,6 +7311,7 @@
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
         "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
         "a59e0892-0043-4cbf-9661-e07569fdfeeb",
+        "7d591364-72d8-4275-abbb-dfcb69300b67",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "59b15fad-efa6-4052-9e08-995631aadc2c",

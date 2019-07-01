@@ -7,12 +7,6 @@ if object_index==gunpowder
 }
 
 
-if protection>0
-{
-	protection-=1
-	exit
-}
-
 if object_index==instrument
 {
 	instrument_die_event()   

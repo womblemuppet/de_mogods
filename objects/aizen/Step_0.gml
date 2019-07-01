@@ -28,7 +28,12 @@ if stackframe_subimage>stackframe_image_number
 
 fossil_surface_redraw_needed=false
 
-
+if first_blood_cooldown_counter>0
+{
+	first_blood_cooldown_counter-=1
+	if first_blood_cooldown_counter==0
+		first_blood_happened=false
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   trial modes score ticker
 if kouchou.map=="firetrial" || kouchou.map=="icetrial"

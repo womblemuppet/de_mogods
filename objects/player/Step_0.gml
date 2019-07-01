@@ -388,17 +388,14 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 			a=adjacent_to_instrument()
 			if a>0
 			{
-				if a.protection<1
+				effect_create_above(ef_firework,x,y,2,c_green)
+				pocket_light_heavy_held_counter=-1000
+				pocket_orb=a.type
+				aizen.playerpocketorb[P]=a.sprite_index
+				with a
 				{
-					effect_create_above(ef_firework,x,y,2,c_green)
-					pocket_light_heavy_held_counter=-1000
-					pocket_orb=a.type
-					aizen.playerpocketorb[P]=a.sprite_index
-					with a
-					{
-						dontmakeorb=true
-						instrument_die_event()
-					}
+					dontmakeorb=true
+					instrument_die_event()
 				}
 			}
 		}

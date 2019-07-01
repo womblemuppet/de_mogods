@@ -5,7 +5,6 @@
  
 var a;
 a=instance_create(argument0,argument1,gunpowder)   //if change this change room spawn blocks
-a.protection=0
 a.sprite_index=gunny_full
 a.part=argument2
 a.variant=choose(5,17)

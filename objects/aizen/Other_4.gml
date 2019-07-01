@@ -247,37 +247,21 @@ if room==gameroom
 	};
     
     
-	if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches and protection blocks
+	if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches 
 	{
-        
-		var prot;
-			prot=0  // [finaledit] obsolete?
-		with spawn_block(kouchou.room_left_border_x,groundlevel-40,0)
-			protection=prot
-		with spawn_block(kouchou.room_left_border_x+40,groundlevel-40,0)
-			protection=prot
-		with spawn_block(kouchou.room_right_border_x-40,groundlevel-40,0)
-			protection=prot
-		with spawn_block(kouchou.room_right_border_x,groundlevel-40,0)
-			protection=prot
-            
 		for (i=0; i<kouchou.rw; i+=40)
 		{
-			with spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
-				protection=prot
+			spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
 		};
 		for (i=0; i<kouchou.rw; i+=40)
 		{
-			with spawn_block(kouchou.room_left_border_x+i,groundlevel+40,0)
-				protection=prot
+			spawn_block(kouchou.room_left_border_x+i,groundlevel+40,0)
 		};
 
 
 		with block
 		{
 			ds_list_add(aizen.blockstosprite,self.id)
-			if protection>0
-				image_blend=c_silver
 		}
 	}
     

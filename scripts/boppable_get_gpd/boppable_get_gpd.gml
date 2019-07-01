@@ -1,8 +1,7 @@
 
-if protection<1
-{
-	block_take_damage()
-}
+
+block_take_damage()
+
 
 if instance_exists(other.creator)
 {

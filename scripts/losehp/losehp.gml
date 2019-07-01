@@ -5,7 +5,7 @@ var me,safe;
 me=self.id
 safe=false
 
-TESTING_PLACEHOLDER=argument0
+TESTING_PLACEHOLDER=argument0   ///[finaledit] why is this named this?
 lastdamagetype=argument1
 
 if iframes>0
