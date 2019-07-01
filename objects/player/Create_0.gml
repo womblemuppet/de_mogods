@@ -41,6 +41,7 @@ super_mode=false
 super_meter=0    ///meter that charges up
 super_mode_time_remaining=0   ///time remaining until super mode times out
 
+
 DASH_COOLDOWN_TIME=22 //originally 70, cooldown between dashes. now irrelevant [finaledit]
 dashcd=0  /// dash cooldown counter
 dash_current_hitbox_object=noone
