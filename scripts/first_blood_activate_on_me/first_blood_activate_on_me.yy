@@ -1,8 +1,8 @@
 {
-    "id": "f19f447e-8011-4590-bf58-bd178e36e2cb",
+    "id": "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "find_lowest_diggable_middle_block",
+    "name": "first_blood_activate_on_me",
     "IsCompatibility": false,
     "IsDnD": false
 }

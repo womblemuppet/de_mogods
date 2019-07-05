@@ -1,8 +1,8 @@
 {
-    "id": "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
+    "id": "1d61c5ab-1628-4766-86d2-f82c6a720550",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "first_blood_activate",
+    "name": "first_blood_activate_neutral",
     "IsCompatibility": false,
     "IsDnD": false
 }

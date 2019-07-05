@@ -5,8 +5,6 @@ if other.ready==true && other.dying==false && !super_mode
 	aizen.playerorbcount[P]=orb_count_meter
 	player_update_super_meter_hud()
 	
-	first_blood_reset_timer()
-	
 	if orb_count_meter==4
 	{
 		spawn_pineapple()
@@ -34,6 +32,7 @@ if other.ready==true && other.dying==false && !super_mode
 		dying=true
 		image_index=0
 		image_speed=death_speed
+		trigger_first_blood=false
 	}
     
     ///////////////////////////////////////////////////////////////////////////////////////// CREATE 'ABS-ORB' EFFECT

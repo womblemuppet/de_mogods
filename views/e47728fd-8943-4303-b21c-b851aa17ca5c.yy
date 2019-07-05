@@ -11,7 +11,10 @@
         "6381e76c-9ea8-4b62-bbc4-a36b7df728d7",
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "269c9d81-38b3-4b63-a99f-9af285206699",
-        "f19f447e-8011-4590-bf58-bd178e36e2cb"
+        "f19f447e-8011-4590-bf58-bd178e36e2cb",
+        "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
+        "1d61c5ab-1628-4766-86d2-f82c6a720550",
+        "7d591364-72d8-4275-abbb-dfcb69300b67"
     ],
     "filterType": "GMScript",
     "folderName": "stack",

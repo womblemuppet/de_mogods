@@ -20,10 +20,9 @@ if !instance_exists(payday)            ////////add to hothands and do first bloo
 	if argument2!=0 && attacker!=noone     //whether to reset hh (melee/ranged)
 		other.creator.hothands=0
 	
-	if aizen.first_blood_happened==false
+	if aizen.first_blood_status=="none"
 	{
-		spawn_instrument_spawner(self.id)
-		first_blood_activate(x,y,self.id)
+		first_blood_activate_on_me(x,y)
 	}
 }
 if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled

@@ -5,7 +5,7 @@ if argument0!=noone
 }
 
 var diggable_block;
-diggable_block=find_lowest_diggable_middle_block(target_x)
+diggable_block=find_lowest_diggable_block(target_x)
 
 var new_spawner
 new_spawner=noone

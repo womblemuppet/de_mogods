@@ -34,7 +34,7 @@ with instrument_spawner
 {
 	if !instance_exists(targ)
 	{
-		first_blood_reset_timer()
+		first_blood_queue_neutral()
 		instance_destroy()
 	}
 }

@@ -927,6 +927,14 @@
             }
         },
         {
+            "Key": "1d61c5ab-1628-4766-86d2-f82c6a720550",
+            "Value": {
+                "id": "3d59db96-7fbd-4c1d-b8c9-c63cda09ba33",
+                "resourcePath": "scripts\\first_blood_activate_neutral\\first_blood_activate_neutral.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1dcba1e7-7014-4bec-ad22-1c23b5dccba1",
             "Value": {
                 "id": "e7d50201-cf8f-4a50-95d4-7037c89e99ab",
@@ -3383,6 +3391,14 @@
             }
         },
         {
+            "Key": "79110848-d7ff-4b62-aa25-0bb833a2abe1",
+            "Value": {
+                "id": "4893764b-13b2-4f6e-8b5b-eb1956158f1f",
+                "resourcePath": "sprites\\first_blood_zap_neutral\\first_blood_zap_neutral.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7918896e-af0d-4ca3-9aef-cd34504bf641",
             "Value": {
                 "id": "577c2884-c544-4f43-bfb2-b1b452f5ec80",
@@ -5458,7 +5474,7 @@
             "Key": "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
             "Value": {
                 "id": "c77ace56-95c8-4420-b482-22bfbc29e81d",
-                "resourcePath": "scripts\\first_blood_activate\\first_blood_activate.yy",
+                "resourcePath": "scripts\\first_blood_activate_on_me\\first_blood_activate_on_me.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6906,7 +6922,7 @@
             "Key": "f19f447e-8011-4590-bf58-bd178e36e2cb",
             "Value": {
                 "id": "0a73953a-30e7-43ce-b609-c2fe3e0bcd92",
-                "resourcePath": "scripts\\find_lowest_diggable_middle_block\\find_lowest_diggable_middle_block.yy",
+                "resourcePath": "scripts\\find_lowest_diggable_block\\find_lowest_diggable_block.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7285,6 +7301,9 @@
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "269c9d81-38b3-4b63-a99f-9af285206699",
         "f19f447e-8011-4590-bf58-bd178e36e2cb",
+        "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
+        "1d61c5ab-1628-4766-86d2-f82c6a720550",
+        "7d591364-72d8-4275-abbb-dfcb69300b67",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
@@ -7309,9 +7328,7 @@
         "fb6221bb-6a57-4f33-84a3-c09517ceb4a4",
         "0d48b2ca-8227-4b3a-a8b6-468f994a67e4",
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
-        "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
         "a59e0892-0043-4cbf-9661-e07569fdfeeb",
-        "7d591364-72d8-4275-abbb-dfcb69300b67",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "59b15fad-efa6-4052-9e08-995631aadc2c",

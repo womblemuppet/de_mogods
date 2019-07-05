@@ -26,5 +26,6 @@ if !dontmakeorb
 	}
 }
 
+
 instance_destroy()
 
