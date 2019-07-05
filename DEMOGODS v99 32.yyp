@@ -4487,14 +4487,6 @@
             }
         },
         {
-            "Key": "9f667e64-5684-4f59-a71d-1b5ddf7f9e41",
-            "Value": {
-                "id": "c5c0b365-0463-48eb-b206-c65543b73102",
-                "resourcePath": "objects\\ooga_gp_boom\\ooga_gp_boom.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9fca5d50-2469-4a76-8d1b-a169d545fad9",
             "Value": {
                 "id": "c242b916-d7ae-4ce1-bcaf-5d04471c7ba2",

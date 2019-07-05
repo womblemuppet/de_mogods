@@ -8,21 +8,15 @@ if unique_ooga_gp_charges<1    //if no more charges, end super mode (by setting 
 instance_create(x,y,jump_vibration)
 
 var a;
-a=instance_create(x,y,ooga_gp_boom)
+a=instance_create(x,y,ooga_gp_shockwave)
 a.hit=false
 a.creator=self.id
-with a
-{
-	var b;
-	b=instance_create(x,y,ooga_gp_shockwave)
-	b.hit=false
-	b.creator=creator
-	b=instance_create(x,y,ooga_gp_shockwave)
-	b.image_xscale=-1
-	b.direction=180
-	b.creator=creator
-	b.hit=false
-}
+a=instance_create(x,y,ooga_gp_shockwave)
+a.image_xscale=-1
+a.direction=180
+a.creator=self.id
+a.hit=false
+
 create_terrain_cutter(ooga_ultimate_groundpoundboom,"hit",90,7)
 
 var a;

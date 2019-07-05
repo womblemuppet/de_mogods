@@ -1,3 +1,3 @@
 life=60
-speed=4
+speed=8
 
