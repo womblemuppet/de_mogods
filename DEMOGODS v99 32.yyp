@@ -5559,6 +5559,14 @@
             }
         },
         {
+            "Key": "c3d07955-e108-4010-a910-5ddc6858ee30",
+            "Value": {
+                "id": "2325e669-ae80-4d05-a2cb-fad16aa0b0ec",
+                "resourcePath": "sprites\\ooga_ultimate_shockwave_cutter\\ooga_ultimate_shockwave_cutter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c4c965d2-4b10-46fb-91f4-cdee1aba3482",
             "Value": {
                 "id": "0161901f-0360-4b39-924e-a7c5ffcabfec",
@@ -7239,6 +7247,7 @@
         "5c592a5d-f232-42c3-8650-d5d9aa8d1487",
         "ffdfdcd0-fb2c-4bf3-ac33-fe50b68d7fe6",
         "078ae249-2430-4b2e-88fd-42be5294cab8",
+        "e96b130e-e567-44e2-8518-b227898ce887",
         "2573a69f-7627-4c3f-8d45-2167ec8b4f64",
         "d9ebf72f-8412-43b5-bc2f-f9756b1715a5",
         "d86a372c-6bd7-4f73-ad6f-5cd3cff5fc7c",
@@ -7251,7 +7260,6 @@
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
-        "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "b8aeffe8-a8a7-43e0-b412-94c29526c57f",

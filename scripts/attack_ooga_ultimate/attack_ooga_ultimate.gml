@@ -25,4 +25,18 @@ with a
 }
 create_terrain_cutter(ooga_ultimate_groundpoundboom,"hit",90,7)
 
+var a;
+for (var i = 0; i <180 ;i+=40) 
+{
+	a = create_terrain_cutter(ooga_ultimate_shockwave_cutter,"disintegrated",i,5)
+	a.direction=i
+	a.speed=6
+	a.image_angle=i
+	a.alarm[0]=15
+	a=effect_aniend(ooga_ultimate_shockwave_cutter,0.2,-2)
+	a.direction=i
+	a.speed=6
+	a.image_angle=i
+}
+
 alarm[7]=1
