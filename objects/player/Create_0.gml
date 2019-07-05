@@ -109,6 +109,8 @@ FRAME_SPEED_FAST=0.4
 FRAME_SPEED_SLOW=0.1
 image_speed=FRAME_SPEED_NORMAL
 
+has_made_splash_effect=false
+
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)
 dash_attacks_allowed_counter=0

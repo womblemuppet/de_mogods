@@ -69,8 +69,14 @@ if instance_exists(wave)
 {
 	if y>wave.y+30
 	{
+		if has_made_splash_effect==false
+			effect_aniend(splash_effect1,0.2,-1)
 		watery=2   ///gravity divided by this number underwater
 		wateryjump=0.75 ///jump timesed by this number underwater
+	}
+	else
+	{
+		has_made_splash_effect=false
 	}
 } 
 
