@@ -4,7 +4,7 @@ player_update_super_meter_hud()
 if unique_ooga_gp_charges<1    //if no more charges, end super mode (by setting ult timer to last tick)
 	player_end_super_mode()
 
-
+effect_aniend(ooga_ultimate_groundpoundboom,0.2,-2)
 instance_create(x,y,jump_vibration)
 
 var a;
