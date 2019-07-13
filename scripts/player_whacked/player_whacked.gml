@@ -17,8 +17,14 @@ else
 if !instance_exists(payday)            ////////add to hothands and do first blood (if not payday)
 {
 	hothands+=argument1
-	if argument2!=0 && attacker!=noone     //whether to reset hh (melee/ranged)
-		other.creator.hothands=0
+	if attacker!=noone
+	{
+		with attacker
+			cc_land_hit()
+		cc_get_hit()
+		if argument2!=0 //whether to reset hh (melee/ranged)
+			other.creator.hothands=0
+	}
 	
 	if aizen.first_blood_status=="none"
 	{

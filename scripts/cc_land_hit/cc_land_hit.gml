@@ -1,0 +1,1 @@
+combo_text_controller.last_hit_timer[P]=combo_text_controller.CLEAN_MAX_TIME

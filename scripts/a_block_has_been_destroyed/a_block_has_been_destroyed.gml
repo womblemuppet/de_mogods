@@ -32,9 +32,10 @@ ds_list_clear(destroy_proximity_coods_y)
 
 with instrument_spawner
 {
-	if !instance_exists(targ)
+	if dont_trigger_reset==false && !instance_exists(targ)
 	{
-		first_blood_queue_neutral()
+		first_blood_reset_timer(400)
+		first_blood_activate_neutral()
 		instance_destroy()
 	}
 }

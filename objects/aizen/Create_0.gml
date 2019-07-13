@@ -38,7 +38,7 @@ biome="summit"
 biome_length=1460  //1260
 biome_length_accumulative=0   
 
- 
+COMBO_TEXT_Y_VALUE=100
 
 CREATIONDELAY=200	//// complicated shit don't touch if you can help it 
 biome_schedule=ds_list_create()    ///list for which biome comes next

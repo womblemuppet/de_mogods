@@ -826,7 +826,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				if !right
 					dash_current_hitbox_object.direction=180
 				player_dashed=true
-				ground_dash_speed=9.5  
+				ground_dash_speed=9.5
 				
 				break;
 

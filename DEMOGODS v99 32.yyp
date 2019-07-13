@@ -3487,6 +3487,14 @@
             }
         },
         {
+            "Key": "7bf4e5d3-fb20-478f-ac76-79fb974a156b",
+            "Value": {
+                "id": "d6970297-68b2-4515-abe1-8bf24e1cf3c6",
+                "resourcePath": "views\\7bf4e5d3-fb20-478f-ac76-79fb974a156b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7c3d826a-9d1c-4d3c-afef-27ca6d32ab0f",
             "Value": {
                 "id": "3b2c4d70-31ed-4924-a776-e5ce87b10b8d",
@@ -5447,6 +5455,14 @@
             }
         },
         {
+            "Key": "c13b3352-6353-4693-a35e-e856d9f78d2d",
+            "Value": {
+                "id": "16a56c91-3a62-4c63-96f4-65fb5b032960",
+                "resourcePath": "objects\\combo_text_controller\\combo_text_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c188956e-b74a-4541-93ce-d72d4ff1603d",
             "Value": {
                 "id": "687410d8-9b41-4c98-9730-2900fd2bcfee",
@@ -5815,6 +5831,14 @@
             }
         },
         {
+            "Key": "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
+            "Value": {
+                "id": "f78949f5-b247-4545-a938-b3c91570300c",
+                "resourcePath": "scripts\\cc_get_hit\\cc_get_hit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cbbbbc0d-458e-485b-be17-cef287f4ef82",
             "Value": {
                 "id": "b18dc930-64f4-4bbc-9f63-3ddd34237c75",
@@ -6004,6 +6028,14 @@
                 "id": "80e73d95-b598-4513-abc1-329017c5e04a",
                 "resourcePath": "sprites\\lava6\\lava6.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d1807f0b-8718-4aab-ab98-2a9c8c153761",
+            "Value": {
+                "id": "e1468350-3c0c-4a1a-8e83-2f0cc201c01c",
+                "resourcePath": "scripts\\cc_land_hit\\cc_land_hit.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6895,6 +6927,14 @@
             }
         },
         {
+            "Key": "f054788c-2cb8-4de2-9e1d-d97d20238d83",
+            "Value": {
+                "id": "1699ade1-4bd8-44e2-93b7-e77b253ace5f",
+                "resourcePath": "objects\\ef_combo_text\\ef_combo_text.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f0a5d0d2-2c0f-43c9-ae14-0a27672ddb9a",
             "Value": {
                 "id": "27093ad9-ded4-4a13-9ba3-e0c5b3b3fe0e",
@@ -7277,6 +7317,8 @@
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "353a867e-8cc9-4c04-843b-334f14b56d9c",
         "4ed56efa-0618-4f87-95cd-ef18be167773",
+        "d1807f0b-8718-4aab-ab98-2a9c8c153761",
+        "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

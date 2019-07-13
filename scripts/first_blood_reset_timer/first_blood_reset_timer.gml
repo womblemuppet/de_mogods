@@ -1,0 +1,1 @@
+aizen.first_blood_neutral_cooldown=argument0

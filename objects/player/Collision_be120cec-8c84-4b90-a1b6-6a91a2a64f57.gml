@@ -10,16 +10,17 @@ if other.ready==true && other.dying==false && !super_mode
 		spawn_pineapple()
 	}
 	
-	if orb_count_meter>4
-	{
-		orb_count_meter=0
-		aizen.playerorbcount[P]=orb_count_meter
-		if H<aizen.healthcap
-		{
-			H+=1
-			player_update_health_hud()
-		}
-	}
+
+	//if orb_count_meter>4
+	//{
+	//	orb_count_meter=0
+	//	aizen.playerorbcount[P]=orb_count_meter
+	//	if H<aizen.healthcap
+	//	{
+	//		H+=1
+	//		player_update_health_hud()
+	//	}
+	//}
 
     
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   ADD ORB TO STACK

@@ -46,6 +46,7 @@ if first_blood_neutral_cooldown==0 && first_blood_neutral_queued==true
 	first_blood_status="timedout"
 	peacetime=0
 	first_blood_neutral_cooldown=350
+	first_blood_neutral_queued=false
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   trial modes score ticker
@@ -63,7 +64,7 @@ if mode==0 &&  first_blood_status=="none"
 	if peacetime>2000
 	{
 		//show_debug_message("peacetime limit, spawned instrument, diggable block ="+string(d))
-		first_blood_queue_neutral()
+		first_blood_activate_neutral()
 	}
 }
 
