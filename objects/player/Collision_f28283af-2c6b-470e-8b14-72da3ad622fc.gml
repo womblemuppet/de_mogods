@@ -1,4 +1,4 @@
 if other.owner!=self.id
-    losehp(false,"small attack")
+	losehp(false,"small attack")
 
 

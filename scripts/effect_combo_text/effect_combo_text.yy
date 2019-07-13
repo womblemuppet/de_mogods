@@ -1,8 +1,8 @@
 {
-    "id": "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
+    "id": "65f6f02b-a601-47d3-a217-3f54e57d1472",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "cc_get_hit",
+    "name": "effect_combo_text",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -19,6 +19,7 @@ if immune==false && safe==false
 	H-=1
 	player_flinch()
 	player_update_health_hud()
+	cc_reset_clean()
 	if H<1
 	{
 		playerdie()

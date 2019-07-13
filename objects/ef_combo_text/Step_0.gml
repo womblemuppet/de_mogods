@@ -9,3 +9,5 @@ if fading
 		instance_destroy()
 }
 
+if y>30
+	y-=3

@@ -20,8 +20,10 @@ if !instance_exists(payday)            ////////add to hothands and do first bloo
 	if attacker!=noone
 	{
 		with attacker
+		{
 			cc_land_hit()
-		cc_get_hit()
+		}
+		cc_reset_clean()
 		if argument2!=0 //whether to reset hh (melee/ranged)
 			other.creator.hothands=0
 	}
