@@ -1543,6 +1543,14 @@
             }
         },
         {
+            "Key": "37bc6135-127a-4e15-9085-908d5653bf43",
+            "Value": {
+                "id": "add59b8e-8d80-40b1-976c-4ef4df294f60",
+                "resourcePath": "scripts\\first_blood_allow_again\\first_blood_allow_again.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "38977787-aaf9-4f3a-b042-1558a0e7833e",
             "Value": {
                 "id": "fbccf125-ff32-4adc-888c-22277cb548cc",
@@ -7419,6 +7427,7 @@
         "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
         "1d61c5ab-1628-4766-86d2-f82c6a720550",
         "7d591364-72d8-4275-abbb-dfcb69300b67",
+        "37bc6135-127a-4e15-9085-908d5653bf43",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",

@@ -3,25 +3,20 @@ if other.ready==true && other.dying==false && !super_mode
 	////////////////////////////////////////////////////////////////////////////////// ADD TO PLAYERS SUPERCOUNT
 	orb_count_meter+=1
 	aizen.playerorbcount[P]=orb_count_meter
+	first_blood_allow_again()
 	player_update_super_meter_hud()
 	
 	if orb_count_meter==4
 	{
 		spawn_pineapple()
 	}
+	if orb_count_meter==5
+	{
+		player_activate_super_mode()
+		orb_count_meter=0
+	}
 	
-
-	//if orb_count_meter>4
-	//{
-	//	orb_count_meter=0
-	//	aizen.playerorbcount[P]=orb_count_meter
-	//	if H<aizen.healthcap
-	//	{
-	//		H+=1
-	//		player_update_health_hud()
-	//	}
-	//}
-
+	
     
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   ADD ORB TO STACK
 	stack_add_orb(other.type,true)
