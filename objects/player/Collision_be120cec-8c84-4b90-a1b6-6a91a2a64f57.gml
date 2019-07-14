@@ -3,8 +3,12 @@ if other.ready==true && other.dying==false && !super_mode
 	////////////////////////////////////////////////////////////////////////////////// ADD TO PLAYERS SUPERCOUNT
 	orb_count_meter+=1
 	aizen.playerorbcount[P]=orb_count_meter
+	pocket_orb=other.type
+	aizen.playerpocketorb[P]=other.sprite_index
+	
 	first_blood_allow_again()
 	player_update_super_meter_hud()
+	
 	
 	if orb_count_meter==4
 	{
@@ -17,10 +21,6 @@ if other.ready==true && other.dying==false && !super_mode
 	}
 	
 	
-    
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   ADD ORB TO STACK
-	stack_add_orb(other.type,true)
-    
 	////////////////////////////////////////////////////////////////////////////////////////// KILL ORB
 	with other
 	{

@@ -97,7 +97,7 @@ chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 cursed=false   ///bloodmoon buff
 
-pocket_orb=-1    ///ID of pocketed orb
+pocket_orb=-1    ///type of pocketed orb
 pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///BOUNCE EFFECT
 BOUNCE_MIN_VELOCITY=1
