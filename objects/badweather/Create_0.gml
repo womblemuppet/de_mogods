@@ -2,8 +2,8 @@ alarm[0]=250
 
 if ds_list_empty(aizen.STACK)
 {
-    if ds_list_find_value(aizen.STACK,0)==2   ///if stacking meteors, stop stacking
-        alarm[0]=600
+	if ds_list_find_value(aizen.STACK,0)==2   ///if stacking meteors, stop stacking
+		alarm[0]=600
 }
 
 alarm[1]=1
