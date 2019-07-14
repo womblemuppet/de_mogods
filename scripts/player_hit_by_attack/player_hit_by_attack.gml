@@ -3,6 +3,7 @@
   (when colliding with hitbox, or sunblast apparently)
 ****************************************************/
 
+
 if instance_exists(other.creator) || other.creator==noone                   /////////// ON HIT   //////////////////
 {
 	if other.hit[P]==false && other.creator!=self.id  ///hit by enemy attack
