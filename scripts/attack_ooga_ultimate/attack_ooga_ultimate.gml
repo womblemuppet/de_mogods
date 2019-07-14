@@ -17,7 +17,9 @@ a.direction=180
 a.creator=self.id
 a.hit=false
 
-create_terrain_cutter(ooga_ultimate_groundpoundboom,"hit",90,7)
+var a;
+a=create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
+
 
 var a;
 for (var i = 0; i <180 ;i+=40) 

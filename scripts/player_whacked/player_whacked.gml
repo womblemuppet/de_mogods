@@ -57,7 +57,7 @@ if argument4    ///gain meter
 			if super_meter>aizen.SUPER_METER_FULL_AMOUNT
 			{
 				super_meter=0
-				player_super_mode()
+				player_activate_super_mode()
 			}
 			player_update_super_meter_hud()
 		}

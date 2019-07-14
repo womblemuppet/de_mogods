@@ -5,7 +5,7 @@ if sprite_index==block_bubbler_end_spr
 	{
 		with targ
 		{
-			spawn_instrument_block(x,y)
+			spawn_instrument_block(x,y,true)
 			instance_destroy()
 		}
 	}

@@ -23,18 +23,3 @@ else
 return new_spawner
 
 
-//var diggable_block
-//diggable_block=find_a_diggable_block()
-//if diggable_block>0
-//{
-//	with diggable_block
-//	{
-//		spawn_instrument_block(x,y)
-//		instance_destroy()
-//	}
-//}
-//else
-//{
-//	show_debug_message("failed to find a diggable block. return = "+string(diggable_block))
-//}
-

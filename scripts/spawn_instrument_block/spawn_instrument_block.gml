@@ -1,5 +1,5 @@
 /***************************************************
-  spawn_instrument_block(x,y)
+  spawn_instrument_block(x,y,spawn meteor please)
   called by the block chosen by spawn_instrument
   returns the created instance id
 ****************************************************/
@@ -9,7 +9,11 @@ var a;
 a=instance_create(argument0,argument1,instrument)   //if change this change room spawn blocks
 a.variant=0
 a.divisible=false
-a.type=choose(0,0,0,1,1,2,2,4,5)
+if argument2
+	a.type=0
+else
+	a.type=choose(1,1,2,2,4,5)
+	
 switch (a.type)
 {
 	case 0: 

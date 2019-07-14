@@ -6794,7 +6794,7 @@
             "Key": "e96b130e-e567-44e2-8518-b227898ce887",
             "Value": {
                 "id": "7d21c6f9-3562-4f72-8b3a-71f8bfd4975c",
-                "resourcePath": "scripts\\player_super_mode\\player_super_mode.yy",
+                "resourcePath": "scripts\\player_activate_super_mode\\player_activate_super_mode.yy",
                 "resourceType": "GMScript"
             }
         },

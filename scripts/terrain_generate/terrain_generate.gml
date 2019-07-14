@@ -458,6 +458,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			}
 			if biome=="sand" && random(1)>0.75
 				typeofblock=2      ////dissolve block (weaksand)
+			if random(1)>0.995
+				typeofblock=6
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder
 			//if random(1)>0.995
@@ -483,6 +485,8 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 					a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case 5:
 					a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
+				case 6:
+					a=spawn_instrument_block(kouchou.room_left_border_x+i*40,argument0,false) break;
 				default:
 					show_error("unhandled typeofblock case",true)
 			}
