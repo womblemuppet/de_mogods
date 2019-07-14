@@ -1,6 +1,6 @@
 /***************************************************
   player hit by attack
-  
+  (when colliding with hitbox, or sunblast apparently)
 ****************************************************/
 
 if instance_exists(other.creator) || other.creator==noone                   /////////// ON HIT   //////////////////
@@ -13,6 +13,8 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 			if instance_exists(other.hit_collector)
 				other.hit_collector.hit[P]=true
 		}
+		if attack_should_crush(other.attack_name)
+			exit
 		player_generic_knockback(other.my_hknockback,other.my_vknockback)
 		player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent,other.gains_meter_on_hit)
 		moves_special_properties(other.attack_name)
