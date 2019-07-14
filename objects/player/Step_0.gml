@@ -242,7 +242,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 	{
 		iframes=1
 		//attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,gain meter on hit,attack name,sprite,image speed,active steps,hkb,vkb)
-		attack_create_hitbox(30,1,true,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
+		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
 		
 		if right
 			hspd=UNIQUES_WHIRLWIND_SPEED
@@ -526,7 +526,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
             
-			attack_create_hitbox(30,1,true,true,true,la_attack_name,uc_hitbox_shape,1,99,7+extrahkb,4)
+			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,7+extrahkb,4)
 		}
 	}
 }

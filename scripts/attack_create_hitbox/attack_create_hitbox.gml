@@ -11,17 +11,16 @@ a.stunamount=argument0
 a.numberofhh=argument1
 a.reset_attacker_hh=argument2
 a.reset_opponent=argument3
-a.gains_meter_on_hit=argument4
-a.attack_name=argument5
+a.attack_name=argument4
 
 
-a.sprite_index=argument6
-a.image_speed=argument7
-a.alarm[0]=argument8
+a.sprite_index=argument5
+a.image_speed=argument6
+a.alarm[0]=argument7
 
 
-a.my_hknockback=argument9   ///knockback hspeed
-a.my_vknockback=argument10
+a.my_hknockback=argument8   ///knockback hspeed
+a.my_vknockback=argument9
 
 
 

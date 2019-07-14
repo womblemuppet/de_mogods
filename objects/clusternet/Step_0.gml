@@ -40,7 +40,7 @@ if place_meeting(x,y+vspd,player)
 if triggered
 {
     var a;
-    a=attack_create_hitbox(25,1,false,false,false,"clusterbomb",vet_clusterbomb_firesprite,0.25,99,0,-6)
+    a=attack_create_hitbox(25,1,false,false,"clusterbomb",vet_clusterbomb_firesprite,0.25,99,0,-6)
     a.creator=creator
     effect_aniend(vet_clusterbomb_firesprite,0.25,-2)
     instance_destroy()

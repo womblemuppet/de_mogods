@@ -38,7 +38,6 @@ groundpound_current_hitbox_object=noone
 
 orb_count_meter=0   ///meter, charged on landing hits
 super_mode=false
-super_meter=0    ///meter that charges up
 super_mode_time_remaining=0   ///time remaining until super mode times out
 
 

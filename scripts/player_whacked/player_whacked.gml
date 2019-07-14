@@ -47,24 +47,6 @@ if argument3     /// knocks player out of current animation
 }
 
 
-if argument4    ///gain meter
-{
-	if attacker!=noone
-	{
-		with other.creator
-		{
-			super_meter+=1
-			if super_meter>aizen.SUPER_METER_FULL_AMOUNT
-			{
-				super_meter=0
-				player_activate_super_mode()
-			}
-			player_update_super_meter_hud()
-		}
-	}
-}
-
-
 ///delete dash hitbox
 if dash_current_hitbox_object!=noone
 {

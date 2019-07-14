@@ -17,7 +17,7 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 		if attack_should_crush(other.attack_name)
 			exit
 		player_generic_knockback(other.my_hknockback,other.my_vknockback)
-		player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent,other.gains_meter_on_hit)
+		player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
 		moves_special_properties(other.attack_name)
 	}
 	//if other.hit[P]==false && other.creator==self.id   ///hit by own attack

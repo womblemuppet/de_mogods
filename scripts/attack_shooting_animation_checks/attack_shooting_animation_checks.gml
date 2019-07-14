@@ -12,7 +12,7 @@ else if fpunch_lockdown==2
 	{
 		if fpunch_has_made_hitbox==false
 		{            
-			attack_create_hitbox(30,1,true,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
+			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
 		}
         
 		fpunch_has_made_hitbox=true
@@ -107,7 +107,7 @@ if uniques_aapunch_lockdown==1 && image_index>5
 {
 	if uniques_aapunch_has_made_hitbox==false 
 	{
-		attack_create_hitbox(25,1,true,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
+		attack_create_hitbox(25,1,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
 	} 
     
 	uniques_aapunch_has_made_hitbox=true
@@ -120,7 +120,7 @@ if uniques_aapunch_lockdown==2 && image_index>15
 {
 	if uniques_aapunch_has_made_hitbox2==false 
 	{
-		attack_create_hitbox(25,1,true,true,true,"upwardpunch2",vet_upwardpunch_hitbox2,1,99,5,2)
+		attack_create_hitbox(25,1,true,true,"upwardpunch2",vet_upwardpunch_hitbox2,1,99,5,2)
 	} 
     
 	uniques_aapunch_has_made_hitbox=true
@@ -151,7 +151,7 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 		with a                                                                       ////create the first shockwave hitbox here (changes here should also change groundpunch_shockwave alarm[0]
 		{
 			var b
-			b=attack_create_hitbox(25,1,true,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
+			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
 			b.creator=creator
 			b.target=creator
 			b.image_xscale=image_xscale
@@ -176,7 +176,7 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 	if uniques_sunblast_has_made_hitbox==false
 	{
 		var b;
-		b=attack_create_hitbox(30,1,false,true,true,"sunblast",sunblast_sprite,1,99,7,4)
+		b=attack_create_hitbox(30,1,false,true,"sunblast",sunblast_sprite,1,99,7,4)
 		with b
 		{
 			x=round(x/40)*40
@@ -260,7 +260,7 @@ if uniques_sharkattack_lockdown==1 && image_index>3
 
 	if uniques_sharkattack_has_made_hitbox==false 
 	{
-		attack_create_hitbox(25,1,true,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
+		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
 	} 
     
 	uniques_sharkattack_has_made_hitbox=true

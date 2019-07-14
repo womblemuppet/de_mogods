@@ -107,22 +107,6 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
 		
 		
-
-		
-		if hud_player_is_in_super_mode[v]==false
-		{
-			draw_set_colour(METER_COLOUR_NORMAL)
-			if hud_player_meter[v]==SUPER_METER_FULL_AMOUNT  ///if one more hit until super meter is full, change meter colour to red
-				draw_set_colour(c_red)
-			draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*hud_player_meter[v])/SUPER_METER_FULL_AMOUNT),subyy+meter_yoffset+meter_height,false)
-		}
-		else
-		{
-			draw_set_colour(METER_COLOUR_ULTING)
-			draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+((meter_length*hud_player_ult_time_remaining[v])/HUD_PLAYER_SUPER_TIME_TOTAL),subyy+meter_yoffset+meter_height,false)
-			
-		}
-		
 		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(playerorbcount[v])))
 		draw_text(areaxend-50,subyy+210,string_hash_to_newline("wins"+string(kouchou.playerwins[v])))
 	}
