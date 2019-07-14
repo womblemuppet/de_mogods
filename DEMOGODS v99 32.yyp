@@ -4743,14 +4743,6 @@
             }
         },
         {
-            "Key": "a5a4b315-aca9-4cef-8464-069af15ab01d",
-            "Value": {
-                "id": "6ce2553e-1b4a-4e9d-bf1a-3852be092379",
-                "resourcePath": "sprites\\tile_stack_hud\\tile_stack_hud.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "a5f0c8ce-20ac-4251-a0e7-0e3a00457e11",
             "Value": {
                 "id": "0e6f4585-2b88-4c02-849f-3bdd3ccfa107",
@@ -6635,6 +6627,14 @@
             "Value": {
                 "id": "ca213c56-8e7a-4f59-9efb-a12b970e5387",
                 "resourcePath": "sprites\\temple1\\temple1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3cd252c-53d9-4651-948f-a1848b2aa49f",
+            "Value": {
+                "id": "362b2b8c-3639-493c-afab-0c74788136b2",
+                "resourcePath": "sprites\\hud_pocket_circle_area\\hud_pocket_circle_area.yy",
                 "resourceType": "GMSprite"
             }
         },

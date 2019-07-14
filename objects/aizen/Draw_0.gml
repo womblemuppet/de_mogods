@@ -70,8 +70,8 @@ gapheight=0
 maskscale=1.8
 mask_xoffset=82   ///plus
 mask_yoffset=15   ///plus
-pocket_xoffset=200  ////plus
-pocket_yoffset=200  ///plus
+pocket_xoffset=185  ////plus
+pocket_yoffset=170  ///plus
 ultind_yoffset=225
 meter_length=140
 meter_xoffset=70  ///plus
@@ -94,6 +94,8 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
 		draw_sprite_ext(playerhpglow[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		draw_sprite(hud_pocket_circle_area,0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		
 		if playerpocketorb[v]!=-1
 			draw_sprite(aizen.playerpocketorb[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
