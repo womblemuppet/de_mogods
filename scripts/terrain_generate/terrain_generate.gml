@@ -450,15 +450,14 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		{
 			var typeofblock;
 			typeofblock="block"   ///normal
-            
-            
-			if biome!="summit" && terrain_special_block_ok() && random(1)>0.9   ////[finaledit] horrible way of doing chance
-			{
+			var rand;
+			rand=random(1)
+			
+			if biome!="summit" && terrain_special_block_ok() && rand<0.05   ////[finaledit] horrible way of doing chance
 				typeofblock="payday ore"      ////payday
-			}
-			if biome=="sand" && random(1)>0.75
+			if biome=="sand" && rand>=0.05 && rand <0.1
 				typeofblock="weaksand"      ////dissolve block (weaksand)
-			if random(1)>0.995
+			if rand>=0.1 && rand<0.15
 				typeofblock="instrument"
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder
@@ -486,6 +485,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				//case 5:
 				//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case "instrument":
+					//show_message("i="+string(i))
 					a=spawn_instrument_block(kouchou.room_left_border_x+i*40,argument0,false) break;
 				default:
 					show_error("unhandled typeofblock case",true)

@@ -4,7 +4,7 @@
   returns the created instance id
 ****************************************************/
 
-show_message("spawn instrument called, x="+string(argument0)+" y="+string(argument1))
+//show_message("spawn instrument called, x="+string(argument0)+" y="+string(argument1))
  
 var a;
 a=instance_create(argument0,argument1,instrument)   //if change this change room spawn blocks
