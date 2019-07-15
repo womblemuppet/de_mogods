@@ -446,20 +446,20 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		a=-1
 		
 		////////////////////// if all checks passed,  create block
-		if makeok
+		if makeok 
 		{
 			var typeofblock;
-			typeofblock=0   ///normal
+			typeofblock="block"   ///normal
             
             
 			if biome!="summit" && terrain_special_block_ok() && random(1)>0.9   ////[finaledit] horrible way of doing chance
 			{
-				typeofblock=1      ////payday
+				typeofblock="payday ore"      ////payday
 			}
 			if biome=="sand" && random(1)>0.75
-				typeofblock=2      ////dissolve block (weaksand)
+				typeofblock="weaksand"      ////dissolve block (weaksand)
 			if random(1)>0.995
-				typeofblock=6
+				typeofblock="instrument"
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder
 			//if random(1)>0.995
@@ -470,22 +470,22 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 
 			switch typeofblock
 			{
-				case 0:
+				case "block":
 					a=spawn_block(kouchou.room_left_border_x+i*40,argument0,0)
 					ds_list_add(blockstosprite_prevlayer,a)   break;
-				case 1:
+				case "payday ore":
 					a=spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case 2:
+				case "weaksand":
 					a=spawn_weaksand_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case 3:
-					a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0)
-					ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
-					instance_create(kouchou.room_left_border_x+i*40,argument0,gunnysnake) break;
-				case 4:
-					a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case 5:
-					a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case 6:
+				//case 3:
+				//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0)
+				//	ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
+				//	instance_create(kouchou.room_left_border_x+i*40,argument0,gunnysnake) break;
+				//case 4:
+				//	a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
+				//case 5:
+				//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
+				case "instrument":
 					a=spawn_instrument_block(kouchou.room_left_border_x+i*40,argument0,false) break;
 				default:
 					show_error("unhandled typeofblock case",true)
