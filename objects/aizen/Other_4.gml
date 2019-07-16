@@ -94,10 +94,10 @@ if room==gameroom
 		playerhpglow[i]=hud_floatingoogamask_glow
 	};
     
-	playerpocketorb[kouchou.MAX_PLAYER_COUNT-1]=-1
+	player_pocket_orb_sprite[kouchou.MAX_PLAYER_COUNT-1]=-1
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
-		playerpocketorb[i]=-1
+		player_pocket_orb_sprite[i]=-1
 	};
     
 

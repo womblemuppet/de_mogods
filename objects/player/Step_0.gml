@@ -393,10 +393,14 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 	{
 		if pocket_orb!=-1
 		{
-			effect_create_above(ef_firework,x,y,2,c_red)
 			stack_add_orb(pocket_orb,true)
 			pocket_orb=-1 //continue
-			aizen.playerpocketorb[P]=-1
+			if pocket_super_mode_stored
+			{
+				player_activate_super_mode()
+				pocket_super_mode_stored=false
+			}
+			player_update_pocket_hud()
 		}
 	}
 

@@ -19,7 +19,7 @@
         "84cb497a-6ff7-498c-b0bd-e3b58621f1af"
     ],
     "filterType": "GMSprite",
-    "folderName": "orb_effects",
+    "folderName": "orbs and orb effects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

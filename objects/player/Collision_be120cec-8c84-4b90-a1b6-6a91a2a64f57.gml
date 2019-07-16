@@ -4,7 +4,7 @@ if other.ready==true && other.dying==false && !super_mode
 	orb_count_meter+=1
 	aizen.playerorbcount[P]=orb_count_meter
 	pocket_orb=other.type
-	aizen.playerpocketorb[P]=other.sprite_index
+	player_update_pocket_hud()
 	
 	first_blood_allow_again()
 	player_update_super_meter_hud()
