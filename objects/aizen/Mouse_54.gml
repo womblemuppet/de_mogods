@@ -6,5 +6,5 @@ a=instance_create(mouse_x,mouse_y,crab)
 //spawn_instrument()
 //instance_create(mouse_x,mouse_y,flower)
 
-instance_create(x,y,storm)
+instance_create(0,0,tornadoe)
 

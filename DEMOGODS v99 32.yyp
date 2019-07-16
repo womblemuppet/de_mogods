@@ -1314,7 +1314,7 @@
             "Key": "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
             "Value": {
                 "id": "06961f10-4a3b-495f-a3c7-cccec9b283c3",
-                "resourcePath": "scripts\\convert_orb_to_orb_sprite\\convert_orb_to_orb_sprite.yy",
+                "resourcePath": "scripts\\convert_orb_type_to_sprite\\convert_orb_type_to_sprite.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2143,14 +2143,6 @@
             }
         },
         {
-            "Key": "4dbbbf26-86a6-4ac3-8c1a-603c8b764897",
-            "Value": {
-                "id": "e77c6ee1-2346-48fd-bb29-9e8f5525f9e2",
-                "resourcePath": "sprites\\tornadospr_mainarea\\tornadospr_mainarea.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4e4e1b33-44ff-4790-8212-b090aea89a54",
             "Value": {
                 "id": "810054e0-deb3-431f-84e1-ac8aea1ccdf8",
@@ -2427,6 +2419,14 @@
             "Value": {
                 "id": "94b22449-669d-41ff-8f18-02feaea85c56",
                 "resourcePath": "scripts\\effect\\effect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "593838dd-3320-4556-ae6b-b969f290916d",
+            "Value": {
+                "id": "1e596cf3-e185-4feb-bada-5f19497607eb",
+                "resourcePath": "scripts\\convert_orb_type_to_mask_sprite\\convert_orb_type_to_mask_sprite.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7529,7 +7529,8 @@
         "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
         "dbf4b51b-f443-4495-9b75-0bd0302c16b2",
         "2127dd53-8c61-443d-abca-358437011297",
-        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae"
+        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
+        "593838dd-3320-4556-ae6b-b969f290916d"
     ],
     "tutorial": ""
 }

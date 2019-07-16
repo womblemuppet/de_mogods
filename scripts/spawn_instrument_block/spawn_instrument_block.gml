@@ -15,7 +15,7 @@ if argument2
 else
 	a.type=choose(1,1,2,2,4,5)
 	
-convert_orb_to_orb_sprite(a.type)
+a.sprite_index=convert_orb_type_to_sprite(a.type)
  
 
 with a
