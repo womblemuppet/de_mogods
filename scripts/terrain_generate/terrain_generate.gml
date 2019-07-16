@@ -455,9 +455,9 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			
 			if biome!="summit" && terrain_special_block_ok() && rand<0.05   ////[finaledit] horrible way of doing chance
 				typeofblock="payday ore"      ////payday
-			if biome=="sand" && rand>=0.05 && rand <0.1
+			if biome=="sand" && rand>=0.05 && rand <0.07
 				typeofblock="weaksand"      ////dissolve block (weaksand)
-			if rand>=0.1 && rand<0.15
+			if rand>=0.07 && rand<0.075
 				typeofblock="instrument"
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder
