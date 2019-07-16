@@ -16,7 +16,8 @@ if other.ready==true && other.dying==false && !super_mode
 	}
 	if orb_count_meter==5
 	{
-		player_activate_super_mode()
+		pocket_super_mode_stored=true
+		//player_activate_super_mode()
 		orb_count_meter=0
 	}
 	

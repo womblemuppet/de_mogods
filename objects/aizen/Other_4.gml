@@ -81,6 +81,12 @@ if room==gameroom
 	{
 		HUD_PLAYER_SUPER_TIME_TOTAL[i]=0
 	};
+	
+	hud_pocket_has_super_mode[kouchou.MAX_PLAYER_COUNT-1]=0
+	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
+	{
+		hud_pocket_has_super_mode[i]=0
+	};
     
 	playerhpglow[kouchou.MAX_PLAYER_COUNT-1]=hud_floatingoogamask_glow
 	for (i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)

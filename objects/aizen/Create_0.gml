@@ -92,6 +92,9 @@ hothandspaydaycolour=c_white
 hudfloatingmasks_subimage=0
 HUDFLOATINGMASKS_IMAGE_NUMBER=22
 
+hudpocketcircle_subimage=0
+HUDPOCKETCIRCLE_IMAGE_NUMBER=6
+
 stackframe_sprite=arcade_cabinet_maskbar_inactive
 stackframe_subimage=0
 stackframe_image_number=0

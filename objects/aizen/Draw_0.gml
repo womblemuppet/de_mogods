@@ -93,8 +93,14 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		subyy=yy+(areaheight+gapheight)*v//+areaheight
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
 		draw_sprite_ext(playerhpglow[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		
 		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
-		draw_sprite(hud_pocket_circle_area,0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		
+		var pocket_circle_sprite
+		pocket_circle_sprite=hud_pocket_circle_area
+		if hud_pocket_has_super_mode==false
+			pocket_circle_sprite=hud_pocket_circle_area
+		draw_sprite(pocket_circle_sprite,0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		if playerpocketorb[v]!=-1
 			draw_sprite(aizen.playerpocketorb[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)

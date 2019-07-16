@@ -6167,6 +6167,14 @@
             }
         },
         {
+            "Key": "d338394b-43f5-454b-8b25-fc6f0599ea08",
+            "Value": {
+                "id": "4a6d1416-fc08-46d4-bd06-6559c668ad7b",
+                "resourcePath": "sprites\\hud_pocket_circle_area_has_super_mode\\hud_pocket_circle_area_has_super_mode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d35132cf-4fc1-4806-b423-a003e709457a",
             "Value": {
                 "id": "29e6aacc-294d-4ad3-8157-50afd1f0f776",
@@ -7375,7 +7383,6 @@
         "5c592a5d-f232-42c3-8650-d5d9aa8d1487",
         "ffdfdcd0-fb2c-4bf3-ac33-fe50b68d7fe6",
         "078ae249-2430-4b2e-88fd-42be5294cab8",
-        "e96b130e-e567-44e2-8518-b227898ce887",
         "2573a69f-7627-4c3f-8d45-2167ec8b4f64",
         "d9ebf72f-8412-43b5-bc2f-f9756b1715a5",
         "d86a372c-6bd7-4f73-ad6f-5cd3cff5fc7c",
@@ -7388,6 +7395,7 @@
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
+        "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "b8aeffe8-a8a7-43e0-b412-94c29526c57f",

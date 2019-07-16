@@ -12,6 +12,10 @@ hudfloatingmasks_subimage+=0.2
 if hudfloatingmasks_subimage>HUDFLOATINGMASKS_IMAGE_NUMBER
 	hudfloatingmasks_subimage=0
 
+hudpocketcircle_subimage+=0.2
+if hudpocketcircle_subimage>HUDPOCKETCIRCLE_IMAGE_NUMBER
+	hudpocketcircle_subimage=0
+
 
 for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
 {
