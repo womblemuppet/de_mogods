@@ -1219,11 +1219,11 @@ else if vspd<0
 	};
 }
 
-
+///////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL BLOCK CHECKS
  if player_not_digging() 
  {
-	 if player_horizontal_block_check_collision("left")==false
-		player_horizontal_block_check_collision("rightt")
+	player_horizontal_block_check_collision("left")
+	player_horizontal_block_check_collision("right")
  }
 
 

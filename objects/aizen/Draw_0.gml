@@ -100,10 +100,10 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		pocket_circle_sprite=hud_pocket_circle_area
 		if hud_pocket_has_super_mode==false
 			pocket_circle_sprite=hud_pocket_circle_area
-		draw_sprite(pocket_circle_sprite,0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		draw_sprite(pocket_circle_sprite,hudpocketcircle_subimage,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		if player_pocket_orb_sprite[v]!=-1
-			draw_sprite(aizen.player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+			draw_sprite(player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		draw_set_colour(METER_BACKGROUND_COLOUR)
 		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
