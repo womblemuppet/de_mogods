@@ -98,6 +98,7 @@ chain_effect_id_to_delete=noone   ///id of chain effect instance
 cursed=false   ///bloodmoon buff
 
 pocket_orb=-1    ///type of pocketed orb
+pocket_super_mode_stored=false ///if true, super_mode is stored in current pocket
 pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///BOUNCE EFFECT
 BOUNCE_MIN_VELOCITY=1
