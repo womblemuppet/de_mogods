@@ -22,12 +22,12 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 			if abs(hspd)<1
 			{
 				hspd=-sgn*BOUNCE_MIN_VELOCITY
-				show_debug_message("bounced min , set hspd "+argument0)
+				show_debug_message("bounced min")
 			}
 			else
 			{
-				hspd=-sgn*BOUNCE_MAX_VELOCITY
-				show_debug_message("bounced max, set hspd "+argument0)
+				hspd=-sgn*10
+				show_debug_message("bounced max")
 			}
 			//hspd=clamp(sgn*BOUNCE_MIN_VELOCITY,sgn*hspd,sgn*BOUNCE_MAX_VELOCITY)
 			//show_message("bounce, go left! hspd is:"+string(hspd))
@@ -43,6 +43,7 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 	
 		if bounced==true
 		{
+			vspd=-2
 			if place_meeting(x+sgn,y,block)
 			{
 				x+=sgn
