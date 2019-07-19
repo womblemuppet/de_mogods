@@ -30,7 +30,7 @@ switch (character)
 	ds_map_add(attacks, "airdash", 0);
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
-	//ooga standard gp
+	//standard gp (uga's delayable gp effect and super mode gp effect enabled below)
 	ds_map_add(attacks, "gpeffect", 0);
 	//no gp effect
 	ds_map_add(attacks, "air light attack", 0);
@@ -50,6 +50,8 @@ switch (character)
     
 	running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
+	ground_pound_freeze_time-=3
+	uniques_uga_delayable_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
 	super_mode_duration=1000
 
@@ -66,7 +68,7 @@ switch (character)
 	ds_map_add(attacks, "airdash", 0);
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
-	//ooga standard gp
+	//standard gp
 	ds_map_add(attacks, "gpeffect", 0);
 	//no gp effect
 	ds_map_add(attacks, "air light attack", 0);
@@ -103,7 +105,7 @@ switch (character)
 	ds_map_add(attacks, "airdash", 0);
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
-	//ooga standard gp
+	//standard gp
 	ds_map_add(attacks, "gpeffect", 0);
 	//no gp effect
 	ds_map_add(attacks, "air light attack", -1);
@@ -137,7 +139,7 @@ switch (character)
 	ds_map_add(attacks, "airdash", 0);
 	//ooga standard airdash
 	ds_map_add(attacks, "gp", 0);
-	//ooga standard gp
+	//standard gp
 	ds_map_add(attacks, "gpeffect", 1);
 	//bait whirlwind
 	ds_map_add(attacks, "air light attack", 0);

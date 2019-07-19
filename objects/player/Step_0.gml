@@ -762,7 +762,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				sprite_index=sprites[7]
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
-			ground_pound_freeze_counter=GROUD_POUND_FREEZE_TIME           //ground pound freeze time
+			ground_pound_freeze_counter=ground_pound_freeze_time           //ground pound freeze time
 			break;
 			case -1:
 			dropcrabok=false
@@ -941,6 +941,15 @@ if dash_button_currently_held
 		//show_debug_message("dash_button_currently_held set to false")
 		hspd=(hspd/3)*2
 		//effect_create_above(ef_firework,x,y,1,c_red)
+	}
+}
+
+if uniques_uga_delayable_gp_enabled
+{
+	if checkkey_released(dashbutton)
+	{
+		if ground_pound_freeze_time<GROUND_POUND_FREEZE_TIME_MAX
+			ground_pound_freeze_time+=1
 	}
 }
 
