@@ -52,6 +52,14 @@ else if sprite_index==sprites[32]   ///vet place mine
 	a.player_who_placed_mine=self.id
 	mines_ammo-=1
 }
+else if sprite_index==sprites[90] || sprite_index==sprites[91]
+{
+	if uniques_sticky_mine_lockdown==1
+	{
+		uniques_sticky_mine_lockdown=0
+		player_set_idle()
+	}
+}
 else if sprite_index==sprites[66] || sprite_index==sprites[67]  ///vet dig
 {
 	if uniques_vet_digging==1

@@ -156,6 +156,11 @@ uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 
+//VET STICKY MINE
+uniques_sticky_mine_enabled=false
+uniques_sticky_mine_lockdown=0
+
+
 //VETERAN PARACHUTE
 uniques_parachute_enabled=false
 uniques_parachute=0   ///0 = can use 1 = in use 2 = used/can't use

@@ -1,0 +1,2 @@
+triggered=false
+delaycounter=5

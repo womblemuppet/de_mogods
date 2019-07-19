@@ -1359,6 +1359,14 @@
             }
         },
         {
+            "Key": "3089aada-5719-458c-a706-42d7230370e8",
+            "Value": {
+                "id": "a20ba1f8-8d64-44fd-9038-d26e7210621e",
+                "resourcePath": "objects\\ef_connector\\ef_connector.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "30c1655f-ec36-454c-a1ce-c8aae418f789",
             "Value": {
                 "id": "c6872db6-0d1e-49b8-953e-70e68a37be06",
@@ -3743,6 +3751,14 @@
             }
         },
         {
+            "Key": "832263f9-df33-4da1-9977-1c729336c929",
+            "Value": {
+                "id": "936aa538-81d5-4464-9992-2d970fd0d58f",
+                "resourcePath": "sprites\\Vet_3H_attach_sticky_mine\\Vet_3H_attach_sticky_mine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "834d66f2-f9bb-4066-8964-d1ac189236eb",
             "Value": {
                 "id": "39d09805-823c-4276-bc1f-997203b853c1",
@@ -4940,6 +4956,14 @@
                 "id": "0baa7870-02cb-46cc-bb10-4eb6327392db",
                 "resourcePath": "views\\adfdfdf4-92cf-4c9d-93c0-fa9a97c17175.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ae177c82-2745-4a9a-b58b-ffe24714168d",
+            "Value": {
+                "id": "1abdc276-600f-4e8a-b288-f810d032edb3",
+                "resourcePath": "sprites\\vet_3H_sticky_mine_connect_effect\\vet_3H_sticky_mine_connect_effect.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6255,6 +6279,14 @@
             }
         },
         {
+            "Key": "d572a4ce-f69f-43f5-9d20-6350723b0077",
+            "Value": {
+                "id": "928365bb-03d5-4b1b-81f1-327f8f140838",
+                "resourcePath": "sprites\\mine_stickied_sprite\\mine_stickied_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
             "Value": {
                 "id": "d017838f-dc9d-4870-8e8b-73cd6be0198c",
@@ -6356,6 +6388,14 @@
                 "id": "ba5c4ddc-c294-4123-8e78-eb2df5dcc369",
                 "resourcePath": "views\\d877707b-6471-4c2a-8518-d3f38753abf1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d8b36847-78a2-4c4b-a76f-e05db359f11b",
+            "Value": {
+                "id": "dbf4c5fc-715f-4ca5-8d73-d7ff97bb1e41",
+                "resourcePath": "objects\\stickymine\\stickymine.yy",
+                "resourceType": "GMObject"
             }
         },
         {
