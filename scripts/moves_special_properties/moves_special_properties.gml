@@ -60,6 +60,12 @@ switch argument0
 		}
 	}  
 	break;
+	case "veteranuppercut":
+	if attacker!=noone
+	{
+		attacker.uniques_vet_la_target=self.id
+	}
+	break;
 	case "falconpunch" :
 	if stunned_groundpound>0
 	{

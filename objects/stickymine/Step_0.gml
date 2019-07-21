@@ -7,5 +7,11 @@ if triggered
 {
 	delaycounter-=1
 	if delaycounter<1
+	{
+		var a;
+		a=instance_create(x,y,mine)
+		a.player_who_placed_mine=creator
+		
 		instance_destroy()
+	}
 }

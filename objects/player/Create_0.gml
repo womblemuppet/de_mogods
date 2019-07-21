@@ -150,6 +150,7 @@ uniques_aapunch_has_made_hitbox2=false
 
 //VETERAN STANDARD PUNCH
 uniques_vet_chain_counter=0
+uniques_vet_la_target=noone
 UNIQUES_VET_CHAIN_COUNTER_TIME=35
 
 //VETERAN FORWARD PUNCH

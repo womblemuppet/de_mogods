@@ -532,9 +532,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		player_throw_crab()
 	}
 	
-	if !exception && uniques_sticky_mine_enabled && uniques_vet_chain_counter>0
+	if !exception && uniques_vet_la_target!=noone && uniques_sticky_mine_enabled && uniques_vet_chain_counter>0
 	{
-		image_speed=FRAME_SPEED_NORMAL
+		image_speed=FRAME_SPEED_SLOW
 		image_index=0
 		sprite_index=sprites[90]
 		if super_mode
@@ -543,9 +543,14 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		var a;
 		a=instance_create_depth(x,y,-1,ef_connector)
 		a.targ1=self.id
-		a.targ2=self.id //change to opp
+		a.targ2=uniques_vet_la_target
 		a.sprite_index=vet_3H_sticky_mine_connect_effect
 		a.image_speed=FRAME_SPEED_NORMAL
+		
+		a=instance_create_depth(uniques_vet_la_target.x,-1,uniques_vet_la_target.y,stickymine)
+		a.creator=self.id
+		a.targ=uniques_vet_la_target
+		exception=true
 	}
 	
 	if !exception
