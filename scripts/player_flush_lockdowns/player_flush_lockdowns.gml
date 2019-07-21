@@ -18,6 +18,7 @@ dash_rocket_jump=0
 uniques_parachute=0
 dash_rocket_jump=0
 uniques_whirlwind_active=false
+uniques_sharkattack_lockdown=0
 
 if uniques_vet_dig_enabled
 {
