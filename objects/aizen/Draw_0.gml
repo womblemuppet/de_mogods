@@ -54,7 +54,7 @@ if draw
 
 
 
-///gui
+///hud
 
 
 
@@ -98,8 +98,8 @@ for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		
 		var pocket_circle_sprite
 		pocket_circle_sprite=hud_pocket_circle_area
-		if hud_pocket_has_super_mode==false
-			pocket_circle_sprite=hud_pocket_circle_area
+		if hud_pocket_has_super_mode[v]
+			pocket_circle_sprite=hud_pocket_circle_area_has_super_mode
 		draw_sprite(pocket_circle_sprite,hudpocketcircle_subimage,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		if player_pocket_orb_sprite[v]!=-1

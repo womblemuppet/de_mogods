@@ -406,11 +406,15 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 
 }
 
-
-if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(leftbutton) || checkkey(rightbutton) || checkkey(upbutton) //////pocket keys release event
-{
-	pocket_light_heavy_held_counter=0
+if pocket_light_heavy_held_counter>0    //////pocket keys release event
+{   ///checks counter first for optimisation
+	if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(leftbutton) || checkkey(rightbutton) || checkkey(upbutton) 
+	{
+		pocket_light_heavy_held_counter=0
+	}
 }
+if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && checkkey(rightbutton)) || (checkkey_released(rightbutton) && checkkey(leftbutton))    )
+	can_activate_super_mode=true
 
 
 
@@ -547,7 +551,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		a.sprite_index=vet_3H_sticky_mine_connect_effect
 		a.image_speed=FRAME_SPEED_NORMAL
 		
-		a=instance_create_depth(uniques_vet_la_target.x,-1,uniques_vet_la_target.y,stickymine)
+		a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
 		a.creator=self.id
 		a.targ=uniques_vet_la_target
 		exception=true

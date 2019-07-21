@@ -36,7 +36,9 @@ GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set t
 GROUND_POUND_SPEED=15
 groundpound_current_hitbox_object=noone
 
-orb_count_meter=0   ///meter, charged on landing hits
+orb_count_meter=4   ///charge towards super mode, gained by activating orbs
+can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call
+
 super_mode=false
 super_mode_time_remaining=0   ///time remaining until super mode times out
 

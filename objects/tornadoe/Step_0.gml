@@ -4,7 +4,7 @@ if spawn_windup_effects
 	a.vspeed=-0.5
 	a.gravity_direction=90
 	a.x+=2*(WIDTH/3)-(random(WIDTH/3)*4)
-	a.y-=random(HEIGHT)  
+	a.y-=random(height)  
 	a.gravity=0.1
 }
 if active

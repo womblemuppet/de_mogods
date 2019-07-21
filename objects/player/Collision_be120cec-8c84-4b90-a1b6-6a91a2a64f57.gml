@@ -4,7 +4,7 @@ if other.ready==true && other.dying==false && !super_mode
 	orb_count_meter+=1
 	aizen.playerorbcount[P]=orb_count_meter
 	pocket_orb=other.type
-	player_update_pocket_hud()
+
 	
 	first_blood_allow_again()
 	player_update_super_meter_hud()
@@ -17,11 +17,12 @@ if other.ready==true && other.dying==false && !super_mode
 	if orb_count_meter==5
 	{
 		pocket_super_mode_stored=true
+		can_activate_super_mode=false
 		//player_activate_super_mode()
 		orb_count_meter=0
 	}
 	
-	
+	player_update_pocket_hud()	
 	////////////////////////////////////////////////////////////////////////////////////////// KILL ORB
 	with other
 	{
