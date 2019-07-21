@@ -536,7 +536,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		player_throw_crab()
 	}
 	
-	if !exception && uniques_vet_la_target!=noone && uniques_sticky_mine_enabled && uniques_vet_chain_counter>0
+	if !exception && uniques_vet_la_target!=noone && uniques_sticky_mine_enabled && uniques_vet_chain_counter>0 && mines_ammo>0   ///// sticky mine
 	{
 		image_speed=FRAME_SPEED_SLOW
 		image_index=0
@@ -551,6 +551,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		a.sprite_index=vet_3H_sticky_mine_connect_effect
 		a.image_speed=FRAME_SPEED_NORMAL
 		
+		mines_ammo-=1
 		a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
 		a.creator=self.id
 		a.targ=uniques_vet_la_target
