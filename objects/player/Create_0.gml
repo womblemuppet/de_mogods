@@ -29,7 +29,7 @@ BRUTAL_SLOW_PERCENTAGE=0.2 ///speed timesed by this number
 slowed_show_trail=false   ///is set when slow effect applied
 
 ground_pound_freeze_counter=0
-ground_pound_freeze_time=13   ///amount of time to hover in air before going down for GP. uga's fastest gp is this value - 3
+ground_pound_freeze_time=13   ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)
 cangroundpound=0   /// -1 jump delay 0 can 1 freeze 2 down 3 bounced
 GROUNDPOUND_UNAVAILABLE_TIME=5 ///9   //prevents groundpound after jumping for this long
 GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set to twice this
@@ -122,7 +122,8 @@ uniques_my_teleport_id=-4
 
 //UGA GP
 uniques_uga_delayable_gp_enabled=false
-GROUND_POUND_FREEZE_TIME_MAX=ground_pound_freeze_time+10
+GROUND_POUND_EXTRA_DELAY_MAX=40
+ground_pound_extra_delay_counter=0
 
 
 //OOGA FPUNCH

@@ -779,6 +779,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
 			ground_pound_freeze_counter=ground_pound_freeze_time           //ground pound freeze time
+			ground_pound_extra_delay_counter=0   //for uga's delay
 			break;
 			case -1:
 			dropcrabok=false
@@ -919,7 +920,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 ////hold dash button event
 if checkkey(dashbutton)
 {
-	if dash_button_currently_held==true && dash_has_lifted_off_ground==false    ////continues momentum of ground dash
+	if dash_button_currently_held && dash_has_lifted_off_ground==false    ////continues momentum of ground dash
 	{
 		if image_index>3
 			image_index=1
@@ -937,6 +938,17 @@ if checkkey(dashbutton)
 		
 		//show_debug_message(string(ground_dash_counter))
 		//effect_create_above(ef_firework,x,y,0,c_aqua)
+	}
+
+
+	if uniques_uga_delayable_gp_enabled && ground_pound_freeze_counter>0
+	{
+		if ground_pound_extra_delay_counter<GROUND_POUND_EXTRA_DELAY_MAX
+		{
+			ground_pound_extra_delay_counter+=1
+			ground_pound_freeze_counter+=1
+			show_debug_message("gptime = "+string(ground_pound_freeze_counter))
+		}
 	}
 }
 //////end ground dash
@@ -960,14 +972,6 @@ if dash_button_currently_held
 	}
 }
 
-if uniques_uga_delayable_gp_enabled
-{
-	if checkkey_released(dashbutton)
-	{
-		if ground_pound_freeze_time<GROUND_POUND_FREEZE_TIME_MAX
-			ground_pound_freeze_time+=1
-	}
-}
 
 
 

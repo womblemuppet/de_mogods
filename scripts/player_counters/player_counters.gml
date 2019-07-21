@@ -63,7 +63,6 @@ if ground_pound_freeze_counter>0
 	ground_pound_freeze_counter-=1
 	if ground_pound_freeze_counter==0
 	{    ///start groundpound (descent)
-		
 		cangroundpound=2
 		vspd=GROUND_POUND_SPEED
 		  //attack_create_dash_hitbox(bunts,stun amount,horizontal kb, vertical kb,attack name,sprite index,image speed,stops dasher on contact)
