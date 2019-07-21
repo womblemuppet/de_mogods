@@ -1,3 +1,3 @@
-/// @description  destroy air tunnel and self
+/// @description  destroy self
 instance_destroy()
 

@@ -1,25 +1,38 @@
-if spawn_windup_effects
+repeat(repeat_effects_factor)
 {
-	a=effect_aniend(spiralpower_base,0.05,-1)
+	a=effect_aniend(spiralpower_base,0.8,-1)
 	a.vspeed=-0.5
 	a.gravity_direction=90
-	a.x+=2*(WIDTH/3)-(random(WIDTH/3)*4)
-	a.y-=random(height)  
-	a.gravity=0.1
+	a.gravity=0.01
+	a.x+=8-random(16)
+	var h;
+	h=random(TOTAL_HEIGHT)-SPIRAL_EFFECT_HEIGHT  
+	a.y-=h
+	if a.y<effect_line_y+SPIRAL_EFFECT_HEIGHT/2
+	{
+		a.gravity*=0.1
+		//a.vspeed=-2
+		a.sprite_index=spiralpower_base_in_zone
+	}
+	
 }
+
 if active
 {
-	repeat(2)    ////[finaledit] spam loads of effects to lag the game down
+	if height<MAX_GROWTH_DEPTH
 	{
-		a=effect_aniend(tunnel_effect1,0.2,-1)
-		a.y-=MAX_HEIGHT+random(height)
+		height+=grow_rate
+		effect_line_y=y-TOTAL_HEIGHT+height
+	}
 		
-		var ceb;
-		ceb=WIDTH/2
-		
-		a.x+=ceb-(   random(ceb*2)   )       
-		a.vspeed=choose(-0.5,-1.5)
+	for (var i = 0; i < WIDTH/TUNNEL_EFFECT_WIDTH-1;i++) 
+	{
+		a=effect_aniend(tunnel_effect1,choose(0.3,0.4),-3)
+		a.y-=TOTAL_HEIGHT-height
+		a.x+=TUNNEL_EFFECT_WIDTH/2+(TUNNEL_EFFECT_WIDTH*i)-WIDTH/2
+		a.x+=6-random(12)
+		a.vspeed=-1.5
 		a.gravity_direction=90
-		a.gravity=0.2
+		a.gravity=0.15
 	}
 }

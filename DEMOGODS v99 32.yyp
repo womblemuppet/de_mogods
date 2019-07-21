@@ -2175,6 +2175,14 @@
             }
         },
         {
+            "Key": "4f64edcf-31be-4c2a-b298-71dc4b9d7723",
+            "Value": {
+                "id": "fb65ec04-1c70-4a90-a805-89dfa8e0b96f",
+                "resourcePath": "sprites\\spiralpower_base_in_zone\\spiralpower_base_in_zone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5006d02e-1a7d-41a0-9bf4-7e80b25e9212",
             "Value": {
                 "id": "33b3d4fa-571d-43b1-ae75-2ca36bdf6eea",
@@ -3107,14 +3115,6 @@
             "Value": {
                 "id": "b7a3fc71-33bf-40f6-871b-3ca158ae5612",
                 "resourcePath": "sprites\\prop_sprite_statue_3\\prop_sprite_statue_3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6cd4399f-e8e2-4fb3-a86a-90fb35ab06c8",
-            "Value": {
-                "id": "1619376e-36d8-495e-adfd-aea7be983b68",
-                "resourcePath": "sprites\\airjet_area\\airjet_area.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6116,14 +6116,6 @@
                 "id": "abd6f101-05bc-4107-ab9a-1fe14785deb0",
                 "resourcePath": "scripts\\character_select_button_down\\character_select_button_down.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d140a704-5124-40ff-8ab0-245251bec169",
-            "Value": {
-                "id": "dbe934e5-61b5-4390-925b-33f7cd8b3daf",
-                "resourcePath": "sprites\\spiralpower_edge\\spiralpower_edge.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
