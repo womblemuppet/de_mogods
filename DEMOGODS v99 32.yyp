@@ -5479,6 +5479,14 @@
             }
         },
         {
+            "Key": "be076a66-7e3d-48cc-b375-fed62a475709",
+            "Value": {
+                "id": "14f7259f-d7d6-4f41-bc5c-6c469bc8752e",
+                "resourcePath": "scripts\\cc_hit_by_orb_effect_event\\cc_hit_by_orb_effect_event.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "be6f2ce6-2839-48b7-b626-4a7930faa82d",
             "Value": {
                 "id": "69fe974d-7266-4f15-84a6-5d7b54a69932",
@@ -7457,6 +7465,7 @@
         "4ed56efa-0618-4f87-95cd-ef18be167773",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
+        "be076a66-7e3d-48cc-b375-fed62a475709",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

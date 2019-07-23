@@ -5,7 +5,7 @@ image_speed=0.2  ///0.45 LOOKS GOOD
 hit=false
 if instance_exists(wave)
 {
-    if y>wave.y-20
-        image_blend=c_dkgray
+	if y>wave.y-20
+		image_blend=c_dkgray //[finaledit]
 }
 
