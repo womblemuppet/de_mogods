@@ -1,7 +1,10 @@
-victim = argument0
+var victim = argument0
 
 with combo_text_controller
 {
+	if !instance_exists(victim)
+	exit
+	
 	if last_got_hit_by[victim.P]==noone
 	exit
 	

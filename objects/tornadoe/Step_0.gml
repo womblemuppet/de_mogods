@@ -53,9 +53,17 @@ if active
 }
 
 if hspd>min_speed
-	hspd-=0.2
+	hspd-=0.125
 if hspd<-min_speed
-	hspd+=0.2
+	hspd+=0.125
 	
-	
-x+=hspd
+if hspd>0
+{
+	if x+hspd+WIDTH/2<kouchou.room_right_border_x
+		x+=hspd
+}
+else if hspd<0
+{
+	if x-hspd-WIDTH/2>kouchou.room_left_border_x
+		x+=hspd
+}
