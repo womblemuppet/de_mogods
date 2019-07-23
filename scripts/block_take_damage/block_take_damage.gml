@@ -6,7 +6,7 @@ if object_index==gunpowder
 	exit
 }
 
-
+//[continue]  ///shit this wont work with tornadoe's will it.
 if object_index==instrument
 {
 	instrument_die_event()   

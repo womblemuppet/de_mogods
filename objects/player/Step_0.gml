@@ -914,6 +914,24 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
                 
 				if uniques_parachute==1
 					uniques_parachute=2   //dash cancels parachute
+					
+				if instance_exists(tornadoe)
+				{
+					for (var i = 0; i < instance_number(tornadoe); i++)
+					{
+						var t = instance_find(tornadoe,i)
+						if x>t.x-t.WIDTH/2 && x<t.x+t.WIDTH/2
+						{
+							if right
+								t.hspd=t.pushed_speed
+							else
+								t.hspd=-t.pushed_speed
+							
+
+						}
+					}
+					
+				}
                 
 				if sidezap==true                              ////////////////////     kanehameha
 				{
