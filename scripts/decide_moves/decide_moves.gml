@@ -21,32 +21,22 @@ switch (character)
 {
 	case "ooga":
     
-	ds_map_add(attacks, "light attack", 0);
-	//ooga standard uppercut
-	ds_map_add(attacks, "heavy attack", 0);
-	//ooga windup punch
-	ds_map_add(attacks, "dash", 0);
-	//standard bunt dash
+	ds_map_add(attacks, "light attack", "uga_uppercut");
+	ds_map_add(attacks, "heavy attack", "uga_falconpunch");
+	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	//ooga standard airdash
-	ds_map_add(attacks, "gp", 0);
-	//standard gp (uga's delayable gp effect and super mode gp effect enabled below)
-	ds_map_add(attacks, "gpeffect", 0);
-	//no gp effect
-	ds_map_add(attacks, "air light attack", 0);
-	//ooga airgrab
-	ds_map_add(attacks, "air heavy attack", -1);
-	//no attack set
-	ds_map_add(attacks, "ult get trigger", 0);
-	//ooga ult
-	ds_map_add(attacks, "special hold down", -1);
-	//nothing
+	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
+	//no gp effect (uga super mode gp doesn't use this system for some reason)
+	ds_map_add(attacks, "air light attack", "standard_airgrab");
+	ds_map_add(attacks, "air heavy attack", "no_effect");
+	ds_map_add(attacks, "ult get trigger", "uga_get_ult");
+	ds_map_add(attacks, "special hold down", "no_effect");
 	ds_map_add(attacks, "special2", -1);
 	//not set
 	ds_map_add(attacks, "special3", -1);
 	//not set
-	ds_map_add(attacks, "air grab effect", 0);
-	//ooga standard grab effect
+	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
 	running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
@@ -59,32 +49,21 @@ switch (character)
     
 	case "veteran":
     
-	ds_map_add(attacks, "light attack", 1);
-	//veteran uppercut (standard but chains to veteran specials)
-	ds_map_add(attacks, "heavy attack", 1);
-	//veteran anti air punch
-	ds_map_add(attacks, "dash", 0);
-	//standard bunt dash
+	ds_map_add(attacks, "light attack", "vet_uppercut");
+	ds_map_add(attacks, "heavy attack", "vet_armspin");
+	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	//ooga standard airdash
-	ds_map_add(attacks, "gp", 0);
-	//standard gp
-	ds_map_add(attacks, "gpeffect", 0);
-	//no gp effect
-	ds_map_add(attacks, "air light attack", 0);
-	//ooga airgrab
-	ds_map_add(attacks, "air heavy attack", 0);  
-	//veteran mine throw
-	ds_map_add(attacks, "ult get trigger", 1);
-	//veteran ult setup
-	ds_map_add(attacks, "special hold down", 0);
-	//veteran place mine
+	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
+	ds_map_add(attacks, "air light attack", "standard_airgrab");
+	ds_map_add(attacks, "air heavy attack", "veteran_mine_throw");  
+	ds_map_add(attacks, "ult get trigger", "vet_get_ult");
+	ds_map_add(attacks, "special hold down", "vet_place_mine");
 	ds_map_add(attacks, "special2", -1);
 	//not set
 	ds_map_add(attacks, "special3", -1);
 	//not set
-	ds_map_add(attacks, "air grab effect", 0);
-	//ooga standard grab effect
+	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
 	uniques_parachute_enabled=true
 	uniques_mines_enabled=true
@@ -97,32 +76,21 @@ switch (character)
     
 	case "slinger":
     
-	ds_map_add(attacks, "light attack", 2);
-	//slinger u/c attack
-	ds_map_add(attacks, "heavy attack", 2);
-	//sunblast/bolt/whatever
-	ds_map_add(attacks, "dash",0);
-	//normal dash (SLINGER NOBUNT DASH DISABLED)
+	ds_map_add(attacks, "light attack", "slinger_uppercut");
+	ds_map_add(attacks, "heavy attack", "slinger_sunblast");
+	ds_map_add(attacks, "dash","bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	//ooga standard airdash
-	ds_map_add(attacks, "gp", 0);
-	//standard gp
-	ds_map_add(attacks, "gpeffect", 0);
-	//no gp effect
-	ds_map_add(attacks, "air light attack", -1);
-	//no airgrab
-	ds_map_add(attacks, "air heavy attack", 1);
-	//airbolt
-	ds_map_add(attacks, "ult get trigger", 0);
-	//ooga ki blast (probably gonna change)
-	ds_map_add(attacks, "special hold down", -1);
-	//not set
+	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
+	ds_map_add(attacks, "air light attack", "standard_airgrab");
+	ds_map_add(attacks, "air heavy attack", "slinger_air_sunbolt");
+	ds_map_add(attacks, "ult get trigger", "slinger_get_ult");
+	ds_map_add(attacks, "special hold down", "no_effect");
 	ds_map_add(attacks, "special2", -1);
 	//not set
 	ds_map_add(attacks, "special3", -1);
 	//not set
-	ds_map_add(attacks, "air grab effect", 0);
-	//ooga standard grab effect   
+	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
 	uniques_airdash_resets_jump=true
 	super_mode_duration=1000
@@ -131,32 +99,21 @@ switch (character)
 	case "bait":
     
     
-	ds_map_add(attacks, "light attack", 3);
-	//bait chain uppercut
-	ds_map_add(attacks, "heavy attack", 3);
-	//bait sharkattack heavy attack
-	ds_map_add(attacks, "dash", 0);
-	//standard bunt dash
+	ds_map_add(attacks, "light attack", "bait_chaining_uppercut");
+	ds_map_add(attacks, "heavy attack", "bait_haymaker");
+	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	//ooga standard airdash
-	ds_map_add(attacks, "gp", 0);
-	//standard gp
-	ds_map_add(attacks, "gpeffect", 1);
-	//bait whirlwind
-	ds_map_add(attacks, "air light attack", 0);
-	//ooga airgrab
-	ds_map_add(attacks, "air heavy attack", -1);
-	//no attack set
-	ds_map_add(attacks, "ult get trigger", 0);
-	//ooga ult
-	ds_map_add(attacks, "special hold down", 1);
-	//bait place teleport
+	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp_hit_ground_effect","bait_whirlwind");
+	ds_map_add(attacks, "air light attack", "standard_airgrab");
+	ds_map_add(attacks, "air heavy attack", "no_effect");
+	ds_map_add(attacks, "ult get trigger","bait_get_ult");
+	ds_map_add(attacks, "special hold down", "bait_teleport");
 	ds_map_add(attacks, "special2", -1);
 	//not set
 	ds_map_add(attacks, "special3", -1);
 	//not set
-	ds_map_add(attacks, "air grab effect", 0);
-	//ooga standard grab effect
+	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
 	//running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true

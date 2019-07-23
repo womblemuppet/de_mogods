@@ -176,7 +176,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 	{
 		switch attacks[? "air grab effect"]
 		{
-			case 0:   ///standard airgrab
+			case "standard_airgrab_effect":
 			if instance_exists(airgrab_target) && airgrab_target!=-1   ///if airgrab target exists, apply throw
 			{
                 
@@ -269,12 +269,12 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 		
 		if !exception
 		{
-			switch attacks[? "gpeffect"]
+			switch attacks[? "gp_hit_ground_effect"]
 			{
 				case 0:
 				//nandemonai
 				break;
-				case 1:   ////bait whirlwind
+				case "bait_whirlwind":
 				image_index=0
 				image_speed=FRAME_SPEED_FAST
 				sprite_index=sprites[84]
@@ -477,24 +477,24 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
         
 		switch attacks[? "light attack"]
 		{
-			case 0:  //ooga
+			case "uga_uppercut":
 			la_attack_name="oogauppercut"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo 
 			extrahkb=3 break;
             
-			case 1:    ///veteran light attack (chains) 
+			case "vet_uppercut":
 			la_attack_name="veteranuppercut"
 			uniques_vet_chain_counter=UNIQUES_VET_CHAIN_COUNTER_TIME
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
-			case 2:   ///slinger held jump light attack
+			case "slinger_uppercut":
 			la_attack_name="slingeruppercut"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
-			case 3:    ////bait chainer attack
+			case "bait_chaining_uppercut":
 			la_attack_name="baitchain"
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
@@ -562,7 +562,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 	{
 		switch attacks[? "heavy attack"]
 		{
-			case 0:    ////ooga default heavy attack
+			case "uga_falconpunch":
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[21]
 			if super_mode
@@ -575,7 +575,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			break;
             
             
-			case 1:    //// veteran aa punch
+			case "vet_armspin":
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[60]
 			if super_mode
@@ -585,7 +585,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			uniques_aapunch_lockdown=1
 			break;
                
-			case 2:  ////slinger sunblast
+			case "slinger_sunblast":
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[70]
@@ -597,7 +597,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
             
 			break;
             
-			case 3:    ////bait shark attack heavy punch
+			case "bait_haymaker":
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[80]
 			if super_mode
@@ -616,7 +616,7 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		}
 	}
 }
-if attacks[? "heavy attack"]==0     ///ooga heavy attack button release    [finaledit] way to optimise maybe
+if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release    [finaledit] way to optimise maybe
 {
 	if fpunch_lockdown==1 && (   (!checkkey(heavybutton) && fpunch_charge>FPUNCH_CHARGE_MIN ) || fpunch_charge>FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
@@ -644,7 +644,7 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 	{
 		switch attacks[? "air light attack"]
 		{
-			case 0:
+			case "standard_airgrab":
 			airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 
 			aim_octilinear()
@@ -686,7 +686,7 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 	{
 		switch attacks[? "air heavy attack"]
 		{
-			case 0:  ///veteran mine throw
+			case "veteran_mine_throw":  ///veteran mine throw
 			if mines_ammo>0
 			{
 				mines_ammo-=1
@@ -720,10 +720,10 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
  
 				}
                 
-		        }
-		        break;
+			}
+			break;
 		        
-		        	case 1:  ////slinger sunbolt
+			case "slinger_air_sunbolt":
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[72]
@@ -731,7 +731,15 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 				sprite_index=sprites[73]
 			uniques_airbolt_lockdown=1
 			uniques_airbolt_has_made_hitbox=false
-
+			break;
+			
+			case "no_effect":
+			//nothing in particular
+			break;
+			
+			default:
+			show_error("new phone who dis",true)
+			break;
 		        
 		}
 	}
@@ -816,12 +824,8 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
             
 			switch attacks[? "dash"]    ///specific dash stuff
 			{ 
-				case 1:   /// (was once veteran dash but has now been removed)
-				/*nandemonai*/
-				break;     
-		
-		
-				case 2:   ///slinger nobunt dash
+
+				case 2:   ///slinger nobunt dash  (disabled)
 
 				if dash_attacks_allowed_counter<1
 					dash_attacks_allowed_counter=12
@@ -833,7 +837,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				ground_dash_speed=10.5
                 
 				break;                          
-				case 0:   ///bunt dash
+				case "bunt_dash":   ///bunt dash
                 
 				if dash_attacks_allowed_counter<1
 					dash_attacks_allowed_counter=20
@@ -1008,7 +1012,11 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 {
 	switch attacks[? "special hold down"] 
 	{
-		case 0:     ////veteran 
+		case "no_effect":
+		///whoop whoop
+		break;
+		
+		case "vet_place_mine":
 
 		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
 		{
@@ -1038,7 +1046,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
         
         
         
-		case 1:   //bait teleport
+		case "bait_teleport":
 		if uniques_teleport_enabled==1      ////start place/use teleport animation
 		{
 			if sprite_index!=sprites[82] && sprite_index!=sprites[83]

@@ -10,19 +10,19 @@ sprite_index=sprites[6]   ///super activate animation
 
 switch attacks[? "ult get trigger"]
 {
-	case 0:    ///ooga ult
+	case "uga_get_ult":
 		orb_count_meter=0
 		if uniques_super_ooga_gp_enabled==true
 			unique_ooga_gp_charges=1
 	break;
-	case 1:
+	case "vet_get_ult":
 		//vetult
 	break;
-	case 2:
-	
+	case "slinger_get_ult":
+		//slingerult
 	break;
-	case 3:
-	
+	case "bait_get_ult":
+		//baitult
 	break;
 	default:
 	show_error(" beopop, unknown ult get trigger attack id",true)
