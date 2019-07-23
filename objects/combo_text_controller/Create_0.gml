@@ -19,7 +19,7 @@ for (var i = 0; i <kouchou.MAX_PLAYER_COUNT;i++)
 }
 
 last_got_hit_by[0]=noone
-for (var i ; i <kouchou.MAX_PLAYER_COUNT; i++)
+for (var i =0; i <kouchou.MAX_PLAYER_COUNT; i++)
 {
 	last_got_hit_by[i]=noone
 }
