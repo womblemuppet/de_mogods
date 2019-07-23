@@ -8,7 +8,7 @@ if ammo>0
     
 	if meteor_wave==0 
 	{
-		for (i=0; i<meteorsperwave; i+=1)
+		for (var i=0; i<meteorsperwave; i+=1)
 		{
 			a=instance_create_depth(kouchou.room_left_border_x+50+i*(kouchou.rw/meteorsperwave),-i*50,0,meteor)
 			a.hspeed=0.5
@@ -17,7 +17,7 @@ if ammo>0
 	}
 	else if meteor_wave==1  ///lazy
 	{
-		for (i=0; i<meteorsperwave; i+=1)
+		for (var i=0; i<meteorsperwave; i+=1)
 		{
 			a=instance_create_depth(kouchou.room_right_border_x-(50+i*(kouchou.rw/meteorsperwave)),-i*50,0,meteor)
 			a.hspeed=-0.5

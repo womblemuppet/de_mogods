@@ -12,7 +12,7 @@ for (ii=0; ii<3; ii+=1)
     if yes!=-2
     {
         draw_set_alpha(0.5)
-        for (i=0; i<purse[ii];i+=1)
+        for (var i=0; i<purse[ii];i+=1)
         {
             draw_sprite(coins,image_index+i,yes.x,yes.y-16-(38*i))
         };      

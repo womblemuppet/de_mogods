@@ -132,7 +132,7 @@ game_start_countdown=0
 
 
 ready[MAX_PLAYER_COUNT-1]=-1    /// -1 controller not plugged in 0 = character select    1 = options   2   = locked in
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	ready[i]=-1
 };
@@ -143,7 +143,7 @@ for (i=0; i<MAX_PLAYER_COUNT; i+=1)
 players_in=0
 next_open_slot=0
 controller_player_slot[12]=-1   ///when controller joins, saves the player slot in this.
-for (i=0; i<12; i+=1)
+for (var i=0; i<12; i+=1)
 {
 	controller_player_slot[i]=-1
 };
@@ -163,7 +163,7 @@ kb2_up_button=ord("I")
 kb2_down_button=ord("K")
 
 keybinding_map_array[MAX_PLAYER_COUNT]=undefined
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	keybinding_map_array[MAX_PLAYER_COUNT]=undefined
 };
@@ -187,20 +187,20 @@ for (i = 0; i < MAX_PLAYER_COUNT;i++)
 
 
 readymenuselect[MAX_PLAYER_COUNT]=0    /// 0=control 1=handicap
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	readymenuselect[i]=0
 };
 
 
 control_setup[MAX_PLAYER_COUNT]="kb_full"   // 0 = kb full  1 = kbnarrow(1) 2 = kbnarrow(2)  3 = controller default
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	control_setup[i]="kb_full"
 };
 
 palette[MAX_PLAYER_COUNT]=0
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	palette[i]=0
 };

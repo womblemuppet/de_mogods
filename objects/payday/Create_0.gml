@@ -1,4 +1,4 @@
-for (i=kouchou.room_left_border_x; i<kouchou.rw/220; i+=1)
+for (var i=kouchou.room_left_border_x; i<kouchou.rw/220; i+=1)
 {
     instance_create(150+i*180,0-150*(i mod 2),coin)
     

@@ -29,7 +29,7 @@ switch other.type
 	var noblocks;
 	noblocks=40/aizen.BLOCK_DESTRUCTION_FIDELITY
     
-	for (i=0; i<40; i+=noblocks)
+	for (var i=0; i<40; i+=noblocks)
 	{
 		for (ii=0; ii<40; ii+=noblocks)
 		{
@@ -59,7 +59,7 @@ switch other.type
 	var noblocks;
 	noblocks=80/aizen.BLOCK_DESTRUCTION_FIDELITY
 
-	for (i=0; i<40; i+=noblocks)
+	for (var i=0; i<40; i+=noblocks)
 	{
 		for (ii=0; ii<40; ii+=noblocks)
 		{
@@ -83,7 +83,7 @@ switch other.type
 	var noblocks;
 	noblocks=10
         
-	for (i=0; i<40; i+=noblocks)
+	for (var i=0; i<40; i+=noblocks)
 	{
 	for (ii=0; ii<40; ii+=noblocks)
 	{
@@ -104,7 +104,7 @@ switch other.type
 	var noblocks;
 	noblocks=20
         
-	for (i=0; i<40; i+=noblocks)
+	for (var i=0; i<40; i+=noblocks)
 	{
 		for (ii=0; ii<40; ii+=noblocks)
 		{

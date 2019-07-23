@@ -12,7 +12,7 @@ with block
 
 ds_list_shuffle(blocklist)
 //show_message(ds_list_size(blocklist))
-for (i=0; i<ds_list_size(blocklist); i+=1)
+for (var i=0; i<ds_list_size(blocklist); i+=1)
 {
     with ds_list_find_value(blocklist,i)
     {

@@ -22,7 +22,7 @@ if !competitive_mode
 	charpor_y[2]=midy+500
     
     
-	for (i=0; i<4; i+=1)
+	for (var i=0; i<4; i+=1)
 	{
 		charpormid_x[i]=charpor_x[i]+charpor_w/2
 		charpormid_y[i]=charpor_y[i]+charpor_h/2
@@ -36,7 +36,7 @@ else
 	charpor_y[1]=room_height-750
     
     
-    for (i=0; i<4; i+=1)
+    for (var i=0; i<4; i+=1)
 	{
 		charpormid_x[i]=charpor_x[i]+charpor_w/2
 		charpormid_y[i]=charpor_y[i]+charpor_h/2
@@ -56,7 +56,7 @@ chargrid_w=chargrid_numberofcolumns*smallportrait_w
 
 chargrid_xstart=(room_width/2)-(chargrid_w/2)+(smallportrait_w/2)
 
-for (i=0; i<chargrid_numberofcolumns; i+=1)
+for (var i=0; i<chargrid_numberofcolumns; i+=1)
 {
 	chargrid_x[i]=chargrid_xstart+i*smallportrait_w
 };
@@ -69,7 +69,7 @@ chargrid_h=chargrid_numberofrows*smallportrait_h
 
 chargrid_ystart=(room_height/2)-(chargrid_h/2)+(smallportrait_h/2)
 
-for (i=0; i<chargrid_numberofrows; i+=1)
+for (var i=0; i<chargrid_numberofrows; i+=1)
 {
 	chargrid_y[i]=chargrid_ystart+i*smallportrait_h
 };
@@ -79,7 +79,7 @@ for (i=0; i<chargrid_numberofrows; i+=1)
 
 if competitive_mode
 {
-	for (i=0; i<chargrid_numberofrows; i+=1)
+	for (var i=0; i<chargrid_numberofrows; i+=1)
 	{
 		var c;
 		c=290
@@ -95,7 +95,7 @@ menu_player_options_y[MAX_PLAYER_COUNT]=0
 
 if !competitive_mode
 {
-	for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+	for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	{
 		menu_player_options_x[i]=charpor_x[i]
 		menu_player_options_y[i]=charpor_y[i]
@@ -112,13 +112,13 @@ else
 menu_player_join_prompt_x[MAX_PLAYER_COUNT]=-1
 menu_player_join_prompt_y[MAX_PLAYER_COUNT]=-1
 
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	menu_player_join_prompt_x[i]=menu_player_options_x[i]+170
 	menu_player_join_prompt_y[i]=menu_player_options_y[i]+70
 };
 
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
 	menu_player_character_title_x[i]=menu_player_options_x[i]+300
 	menu_player_character_title_y[i]=menu_player_options_y[i]-15

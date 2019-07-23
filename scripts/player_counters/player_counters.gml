@@ -117,7 +117,7 @@ if recoil_sprite_counter>0                                           //recoil sp
 	{
 		var pass;
 		pass=false
-		for (i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
+		for (var i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
 		{
 			if sprites[sprites_below_recoil_priority[| i]]==sprite_index
 			{

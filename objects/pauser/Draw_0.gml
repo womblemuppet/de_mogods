@@ -64,7 +64,7 @@ if select!=10
     normiecolour=c_black
     mlistygap=40
     
-    for (i=0; i<SELECTMAX+1; i+=1)
+    for (var i=0; i<SELECTMAX+1; i+=1)
     {
         if select==i
             draw_set_colour(highlightcolour)
@@ -97,7 +97,7 @@ else   ////command list
     clistbox_edge=90 //distance of command list box from edge of menu borders
     clistbox_height=80
     
-    for (i=0; i<ds_list_size(commands_list); i+=1)
+    for (var i=0; i<ds_list_size(commands_list); i+=1)
     {
         if commandlist_select==i
             draw_set_colour(box_highlightcolour[commands_list_boxtype[| i]])

@@ -11,7 +11,7 @@ draw_text_colour(room_width/2,room_height/2-150,string_hash_to_newline(string_co
 
     
 draw_set_font(font_openingcredits)
-for (i=1; i<NUMBEROFLINES; i+=1)
+for (var i=1; i<NUMBEROFLINES; i+=1)
 {
     draw_text_colour(room_width/2,room_height/2-120+i*linegap,string_hash_to_newline(string_copy(text[i],0,textpos[i])),c_white,c_white,c_white,c_white,min(1,0.05*textpos[i]))
 };

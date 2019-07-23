@@ -22,7 +22,7 @@ if ammo>0
     
     if meteor_wave==0 
     {
-        for (i=0; i<meteorsperwave; i+=1)
+        for (var i=0; i<meteorsperwave; i+=1)
         {
             a=instance_create(50+i*(room_width/meteorsperwave),-i*50,meteor)
             a.hspeed=0.75
@@ -40,7 +40,7 @@ if ammo>0
     }
     else if meteor_wave==1  ///lazy
     {
-        for (i=0; i<meteorsperwave; i+=1)
+        for (var i=0; i<meteorsperwave; i+=1)
         {
             a=instance_create(room_width-(50+i*(room_width/meteorsperwave)),-i*50,meteor)
             a.hspeed=-0.75

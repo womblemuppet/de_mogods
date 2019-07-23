@@ -32,7 +32,7 @@ draw_blocks_and_fossils()
 var draw;
 draw=false
 
-for (i=0; i<instance_number(player); i+=1)  //[finaledit] optimize
+for (var i=0; i<instance_number(player); i+=1)  //[finaledit] optimize
 {
 	if instance_find(player,i).y<50
 	{
@@ -42,7 +42,7 @@ for (i=0; i<instance_number(player); i+=1)  //[finaledit] optimize
 };
 if draw
 {
-	for (i=kouchou.room_left_border_x; i<kouchou.room_right_border_x; i+=50)
+	for (var i=kouchou.room_left_border_x; i<kouchou.room_right_border_x; i+=50)
 	{
 		draw_sprite(bound_warning_sprite,warning_subimage,i,0)
 	};
@@ -136,7 +136,7 @@ draw_sprite(stackframe_sprite,stackframe_subimage,kouchou.room_right_border_x+17
 
 
 //////////////////////////////////////////////////////////////////////////////       draw stack masks
-for (i=0; i<ds_list_size(STACK); i+=1)
+for (var i=0; i<ds_list_size(STACK); i+=1)
 {
 	draw_sprite_ext(ds_list_find_value(STACK_ORB_SPRITES,ds_list_find_value(STACK,i)),0,xx+2,yy+210+ds_list_size(STACK)+i*150,3.75,3.75,0,c_white,1)
 };

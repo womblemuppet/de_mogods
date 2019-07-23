@@ -18,7 +18,7 @@ SMALLTIME=140
 var a;
 if D==90 || D==270
 {
-    for (i=0; i<numberofspikes; i+=1)
+    for (var i=0; i<numberofspikes; i+=1)
     {
         if i!=gap
         {
@@ -32,7 +32,7 @@ if D==90 || D==270
         }
     };
     
-    for (i=0; i<numberofspikes; i+=1)
+    for (var i=0; i<numberofspikes; i+=1)
     {
         if i!=gap2
         {
@@ -49,7 +49,7 @@ if D==90 || D==270
 }
 else
 {
-    for (i=0; i<numberofspikes; i+=1)
+    for (var i=0; i<numberofspikes; i+=1)
     {
         if i!=gap
         {
@@ -63,7 +63,7 @@ else
         }
     };
     
-    for (i=0; i<numberofspikes; i+=1)
+    for (var i=0; i<numberofspikes; i+=1)
     {
         if i!=gap2
         {

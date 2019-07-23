@@ -31,7 +31,7 @@ if mode==0
 	}
 }
 
-for (i=0; i<13; i+=1)
+for (var i=0; i<13; i+=1)
 {
 	if timer[i]>-1
 		timer[i]-=1

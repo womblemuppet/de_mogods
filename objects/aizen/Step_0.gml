@@ -78,7 +78,7 @@ if mode==0 &&  first_blood_status=="none"
 var lowest;
 lowest=0
 
-for (i=0; i<instance_number(player); i+=1)
+for (var i=0; i<instance_number(player); i+=1)
 {
 	if instance_find(player,i).y>lowest
 		lowest=instance_find(player,i).y
@@ -176,7 +176,7 @@ terrain_generate(player_baseline+CREATIONDELAY-bedrockcounter)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   set all sprites for necessary blocks
 if !ds_list_empty(blockstosprite)
 {
-	for (i=0; i<ds_list_size(blockstosprite); i+=1)
+	for (var i=0; i<ds_list_size(blockstosprite); i+=1)
 	{
 		with ds_list_find_value(blockstosprite,i)
 		{
@@ -208,7 +208,7 @@ if will_update_blocks_to_draw_list==true
 }
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// pause
-for (i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems
+for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems
 {
 	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] should have a better system.
 	if gamepad

@@ -30,7 +30,7 @@ alarm[1]=WAVETIMER+300 //[finaledit] ^
 lavaUP=true
 if wavecounter mod 3 ==0
 {   ///create clingy
-    for (i=1; i<numberofclingys+1; i+=1)
+    for (var i=1; i<numberofclingys+1; i+=1)
     {        
         var a,b,c;
         b=1

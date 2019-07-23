@@ -13,7 +13,7 @@ if room==menu
     
 	////draw main menu options
     
-	for (i=0; i<MENUSELECTMAX; i+=1)
+	for (var i=0; i<MENUSELECTMAX; i+=1)
 	{
 		draw_set_colour(c_black)
 		if menuselect==i     ////draw selected menu item settings
@@ -56,7 +56,7 @@ else if room==loremenu
 	loreboxx=310
 	loreboxy=370
     
-	for (i=0; i<LORELISTNUMBER; i+=1)
+	for (var i=0; i<LORELISTNUMBER; i+=1)
 	{
 		if lorescroll+i<ds_list_size(lore_list)
 		{
@@ -171,7 +171,7 @@ else if room==multiplayermenu
     
 
 
-	for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+	for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	{    
 		/// if not competitive, draw coloured player backgrounds (temp)
 		if !competitive_mode
@@ -272,7 +272,7 @@ else if room==multiplayermenu
 	if !competitive_mode
 		draw_sprite(mock_character_grid_background,0,midx,midy)
         
-	for (i=0; i<chargrid_numberofcolumns; i+=1)
+	for (var i=0; i<chargrid_numberofcolumns; i+=1)
 	{   
 		for (ii=0; ii<chargrid_numberofrows; ii+=1)
 		{
@@ -304,7 +304,7 @@ else if room==multiplayermenu
 	if playerhandicap[1]>1
 	draw_sprite(handicapicon,image_index,p2x+230,p2y)*/
 
-	for (i=0; i<4; i+=1)
+	for (var i=0; i<4; i+=1)
 	{
 		if ready[i]==0
 			draw_sprite(selectbox_sprites[i],char_selectbox_subspr+i,chargrid_x[convert_chargrid_char_to_column(selected_character_id[i])],chargrid_y[convert_chargrid_char_to_row(selected_character_id[i])])

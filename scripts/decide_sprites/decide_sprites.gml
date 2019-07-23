@@ -10,7 +10,7 @@
 var sprites_index_max;
 sprites_index_max=150
 sprites[sprites_index_max]=mask_player
-for (i=0; i<sprites_index_max; i+=1)
+for (var i=0; i<sprites_index_max; i+=1)
 {
 	sprites[i]=mask_player
 };

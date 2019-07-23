@@ -383,7 +383,7 @@ terrain_wave_ha[3]=0
 terrain_wave_ha[4]=0
 
 terrain_wave_xup[kouchou.rw/40]=false   ///array that stores whether there is a wave at that x pos or not
-for (i=0; i<kouchou.rw/40; i+=1)
+for (var i=0; i<kouchou.rw/40; i+=1)
 {
 	terrain_wave_xup[kouchou.rw/40]=false
 };

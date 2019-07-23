@@ -8,7 +8,7 @@ will_update_blocks_to_draw_list=true
 var xx,yy;
 
 //show_debug_message(string(ds_list_size(destroy_proximity_coods_x))+" is length of dpcx")
-for (i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
+for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 {
 	xx=destroy_proximity_coods_x[| i]	
 	yy=destroy_proximity_coods_y[| i]	

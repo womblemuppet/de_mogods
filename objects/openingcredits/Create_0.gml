@@ -12,7 +12,7 @@ text[5]=""
 text[6]="Thank you for playing!"
 
 textpos[NUMBEROFLINES]=0
-for (i=0; i<NUMBEROFLINES; i+=1)
+for (var i=0; i<NUMBEROFLINES; i+=1)
 {
 	textpos[i]=0
 };

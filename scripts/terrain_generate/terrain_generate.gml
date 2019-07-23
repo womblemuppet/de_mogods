@@ -111,12 +111,12 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			
 			case "doublewaves":         ///both waves and double waves
 			case "waves":              
-			for (i=0; i<6; i+=1)
+			for (var i=0; i<6; i+=1)
 			{
 				terrain_wave_ha[i]=terrainammo-choose(1,2,3,4,5)
 			};                        
 			terrain_wave_xup[numberofblocks_horizontal]=false   ///resets array that stores whether there is a wave at that x pos or not [finaledit] don't need this line itself?
-			for (i=0; i<numberofblocks_horizontal; i+=1)
+			for (var i=0; i<numberofblocks_horizontal; i+=1)
 			{
 				terrain_wave_xup[numberofblocks_horizontal]=false
 			};
@@ -124,7 +124,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			var build;
 			build=false
             
-			for (i=0; i<numberofblocks_horizontal; i+=1)
+			for (var i=0; i<numberofblocks_horizontal; i+=1)
 			{
 				if random(1)>0.7  && build<-2
 					build=choose(2,3,4)                  ///only have a wave appear every 2,3,4 columns         
@@ -140,7 +140,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
             
 			case "blobs":
 			terrain_blob_number=choose(3,4,5,6)
-			for (i=0; i<terrain_blob_number; i+=1)
+			for (var i=0; i<terrain_blob_number; i+=1)
 			{
 				terrain_blob_xl[i]=kouchou.room_left_border_x+random(kouchou.rw-300)
 				terrain_blob_xr[i]=terrain_blob_xl[i]+200
@@ -214,7 +214,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	makeok=true
 
 	
-	for (i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
+	for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
 		if position_meeting(kouchou.room_left_border_x+i*40,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.

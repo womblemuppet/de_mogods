@@ -5,19 +5,19 @@ D=choose(90,270)
 if wavecount>2
     D=choose(0,90,180,270)
 
-for (i=0; i<room_width/40; i+=1)
+for (var i=0; i<room_width/40; i+=1)
 {
     spawn_ice_block(i*40,0)
 };
-for (i=0; i<room_width/40; i+=1)
+for (var i=0; i<room_width/40; i+=1)
 {
     spawn_ice_block(i*40,room_height-40)
 };
-for (i=1; i<(room_height/40)-1; i+=1)
+for (var i=1; i<(room_height/40)-1; i+=1)
 {
     spawn_ice_block(0,i*40)
 };
-for (i=1; i<(room_height/40)-1; i+=1)
+for (var i=1; i<(room_height/40)-1; i+=1)
 {
     spawn_ice_block(room_width-40,i*40)
 };

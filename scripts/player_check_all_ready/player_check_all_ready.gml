@@ -5,7 +5,7 @@
 var n;
 n=0
 
-for (i=0; i<MAX_PLAYER_COUNT; i+=1)
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
     if ready[i]==2
         n+=1

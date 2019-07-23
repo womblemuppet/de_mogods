@@ -5,19 +5,19 @@ if room==theoverworld
     {
 	    case 0:
     
-	    for (i=0; i<room_width-40; i+=1)
+	    for (var i=0; i<room_width-40; i+=1)
 	    {
 	        instance_create(i*40,40,wall)
 	    };
-	    for (i=0; i<room_height-40; i+=1)
+	    for (var i=0; i<room_height-40; i+=1)
 	    {
 	        instance_create(40,i*40,wall)
 	    };
-	    for (i=0; i<room_width-40; i+=1)
+	    for (var i=0; i<room_width-40; i+=1)
 	    {
 	        instance_create(i*40,room_height-40,wall)
 	    };
-	    for (i=0; i<room_height-40; i+=1)
+	    for (var i=0; i<room_height-40; i+=1)
 	    {
 	        instance_create(room_width-40,i*40,wall)
 	    };    

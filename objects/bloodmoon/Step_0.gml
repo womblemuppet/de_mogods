@@ -9,7 +9,7 @@ if mode==1
 
 
     var xr;
-    for (i=0; i<instance_number(player); i+=1)
+    for (var i=0; i<instance_number(player); i+=1)
     {
         a=instance_find(player,i)
         if a.cursed==true
@@ -27,7 +27,7 @@ if mode==1
 
 if mode!=2
 {
-    for (i=0; i<30; i+=1)
+    for (var i=0; i<30; i+=1)
     {
         if fallamount[i]==0
             continue;     //skips to next column

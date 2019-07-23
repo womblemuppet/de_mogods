@@ -6,7 +6,7 @@ tie=0
 highest=0
 winning=-1
 
-for (i=0; i<4; i+=1)
+for (var i=0; i<4; i+=1)
 {
    // show_message(string(highest)+" is the highest value, contested by "+string(i)+" with "+string(purse[i]))
     if purse[i]>highest
@@ -18,7 +18,7 @@ for (i=0; i<4; i+=1)
 };
 if winning!=-1
 {
-    for (i=0; i<3; i+=1)
+    for (var i=0; i<3; i+=1)
     {
         if purse[i]==purse[winning]
         {

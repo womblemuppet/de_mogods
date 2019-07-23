@@ -57,7 +57,7 @@ if player_not_locked_down()
 {
 	var pass;
 	pass=false
-	for (i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
+	for (var i=0; i<ds_list_size(sprites_below_run_priority); i+=1)
 	{
 		if sprites[sprites_below_run_priority[| i]]==sprite_index
 		{

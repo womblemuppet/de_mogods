@@ -1,7 +1,7 @@
 
 if mode==0
 {
-	for (i=0; i<NUMBEROFLINES; i+=1)
+	for (var i=0; i<NUMBEROFLINES; i+=1)
 	{
 		if textpos[i]>0 || i==0
 		{

@@ -9,7 +9,7 @@ UP_TIME=60   ///wave moves up for this amount at start
 
 
 timer[12]=-1
-for (i=0; i<12; i+=1)
+for (var i=0; i<12; i+=1)
 {
     timer[i]=-1
 };
@@ -42,7 +42,7 @@ if !first       ///////////raise water
     }
     else     //////////////jellyfish yo
     {
-        for (i=0; i<6; i+=1)
+        for (var i=0; i<6; i+=1)
         {
             instance_create(clamp(kouchou.room_left_border_x,40*((i*kouchou.rw/6)/40)+choose(-40,0,40),kouchou.room_right_border_x),kouchou.room_bottom_border_y+choose(0,0,80,80,240,280,440,480),jellyfish)    
         };
@@ -69,7 +69,7 @@ if !first       ///////////raise water
     //show_message("death, number="+string(myfft))
     if frozen && mode!=3
     {
-        for (i=kouchou.room_left_border_x; i<kouchou.room_right_border_y/sprite_width; i+=1)
+        for (var i=kouchou.room_left_border_x; i<kouchou.room_right_border_y/sprite_width; i+=1)
         {
             for (ii=y/sprite_height; ii<room_height/sprite_height; ii+=1)
             {                               

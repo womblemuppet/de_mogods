@@ -353,7 +353,7 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 {
 	var pass;
 	pass=false
-	for (i=0; i<ds_list_size(sprites_below_idle_priority); i+=1)
+	for (var i=0; i<ds_list_size(sprites_below_idle_priority); i+=1)
 	{
 		if sprites[sprites_below_idle_priority[| i]]==sprite_index
 		{
@@ -1213,7 +1213,7 @@ player_falldown_sprite_check()
 
 if hspd>0
 {
-	for (i=0; i<hspd; i+=1)
+	for (var i=0; i<hspd; i+=1)
 	{
 		if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x-20 && (chained_debuff_counter<1 || (x-chained_debuff_x_pos<BAITCHAIN_CHAIN_RANGE))
 			x+=1
@@ -1223,7 +1223,7 @@ if hspd>0
 }
 else if hspd<0
 {
-	for (i=0; i<-hspd; i+=1)
+	for (var i=0; i<-hspd; i+=1)
 	{
 		if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x+20 && (chained_debuff_counter<1 || (chained_debuff_x_pos-x<BAITCHAIN_CHAIN_RANGE))
 			x-=1
@@ -1252,7 +1252,7 @@ if vspd>10 && cangroundpound!=2 && airgrab_mode!=4
 //VERTICAL MOVEMENT
 if vspd>0
 {
-	for (i=0; i<vspd; i+=1)
+	for (var i=0; i<vspd; i+=1)
 	{
 		if !place_meeting(x,y+1,block) && (chained_debuff_counter<1 || (y-chained_debuff_y_pos<BAITCHAIN_CHAIN_RANGE)) ///don't replace this with groundcheck you dumbo
 			y+=1
@@ -1267,7 +1267,7 @@ else if vspd<0
 		vspd=0
 	}
     
-	for (i=0; i<-vspd; i+=1)
+	for (var i=0; i<-vspd; i+=1)
 	{
 		if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
 			 y-=1

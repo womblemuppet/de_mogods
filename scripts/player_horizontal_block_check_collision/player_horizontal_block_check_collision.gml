@@ -33,7 +33,7 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 			//show_message("bounce, go left! hspd is:"+string(hspd))
 		}
 	
-		for (i=0; i<abs(hspd); i+=1)
+		for (var i=0; i<abs(hspd); i+=1)
 		{
 			if !place_meeting(x-sgn,y,block)
 				x-=sgn

@@ -16,7 +16,7 @@ LAVAFALLEN=room_height+20
 lavalevel=LAVAFALLEN+50
 lavaUP=true
 meteorlevel=0
-for (i=-1; i<room_width/redlumpwidth; i+=1)
+for (var i=-1; i<room_width/redlumpwidth; i+=1)
 {
     instance_create(i*redlumpwidth,lavalevel,bottomlava)
 };

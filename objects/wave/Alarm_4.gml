@@ -1,4 +1,4 @@
-for (i=0; i<room_width/sprite_width; i+=1)
+for (var i=0; i<room_width/sprite_width; i+=1)
 {
     for (ii=y/sprite_height; ii<room_height/sprite_height; ii+=1)
     {                               

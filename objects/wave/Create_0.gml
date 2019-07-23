@@ -8,7 +8,7 @@ if ds_list_size(aizen.STACK)==0  ////if last one
     {
         //show_message("wave create event, last on stack so stopping alarm[0](stack caller), number="+string(myfft))    
         alarm[0]=-1
-        for (i=0; i<13; i+=1)
+        for (var i=0; i<13; i+=1)
         {
             timer[i]=-1
         }

@@ -30,12 +30,12 @@ else if room==init
 	with a
 	{
 		tempcontrollerid[12]=-1
-		for (i=0; i<12; i+=1)
+		for (var i=0; i<12; i+=1)
 		{
 			tempcontrollerid[i]=-1
 		};
         
-		for (i=0; i<12; i+=1)
+		for (var i=0; i<12; i+=1)
 		{
 			if kouchou.controller_player_slot[i]!=-1
 			{
@@ -45,7 +45,7 @@ else if room==init
 		};
 	}
     
-	for (i=0; i<players_in; i+=1)
+	for (var i=0; i<players_in; i+=1)
 	{
 		keybinding_map_array[i]=ds_map_create()
 		ds_map_add(keybinding_map_array[i],"controlsetup",control_setup[i])

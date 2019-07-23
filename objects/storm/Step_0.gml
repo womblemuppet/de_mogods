@@ -4,7 +4,7 @@ if mode==0 || mode==1
     var hy;
     hy=9999
 
-    for (i=0; i<instance_number(player); i+=1)
+    for (var i=0; i<instance_number(player); i+=1)
     {
         if instance_find(player,i).y<hy || ( instance_find(player,i).y==hy && aizen.player_priority==instance_find(player,i).P)
         {

@@ -2,7 +2,7 @@ if phase==3    ///starts at phase 3 btw...
 {
     roundnumber+=1
     phase=0
-    for (i=1; i<7; i+=1)
+    for (var i=1; i<7; i+=1)
     {
         instance_create((room_width/7)*i,0,lightning_totem)
     };    
