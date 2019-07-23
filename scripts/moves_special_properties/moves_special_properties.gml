@@ -60,6 +60,9 @@ switch argument0
 		}
 	}  
 	break;
+	case "uga_gp_ult_shockwave":
+		player_get_gp_stunned(other.stunamount)
+	break;
 	case "veteranuppercut":
 	if attacker!=noone
 	{
@@ -97,7 +100,8 @@ switch argument0
 				effect_aniend(spr_slinger_reset_jump,0.1,-2)
 			}
 		}
-	} break;
+	} 
+	break;
 	case "slingeruppercut" :
 	{
 		if attacker!=noone
@@ -110,7 +114,8 @@ switch argument0
 				}
 			}
 		}
-	}   break;
+	}   
+	break;
 	case "baitchain" :
 	{
 		if chained_debuff_counter>0
@@ -141,7 +146,8 @@ switch argument0
 				ty=me.y
 			}
 		}
-	} break;
+	} 
+	break;
 	case "sharkattack":
 	{    ////when hit by sharkattack, move chain origin in direction of attack
 		if chained_debuff_counter>0    ///debuff when etting hit by bait chaining attack
@@ -168,7 +174,8 @@ switch argument0
 			}
 			
 		}
-	}break;
+	}
+	break;
 	case "whirlwind" :
 	{
 		if attacker!=noone
@@ -179,7 +186,8 @@ switch argument0
 				player_flush_lockdowns()
 			}
 		}
-	} break;
+	} 
+	break;
 	case "mineexplosion_big":
 		if !place_meeting(x,y-1,block)
 			y-=1

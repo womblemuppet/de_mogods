@@ -8,17 +8,19 @@ effect_aniend(ooga_ultimate_groundpoundboom,0.2,-2)
 instance_create(x,y,jump_vibration)
 
 var a;
-a=instance_create(x,y,ooga_gp_shockwave)
-a.hit=false
-a.creator=self.id
-a=instance_create(x,y,ooga_gp_shockwave)
-a.image_xscale=-1
-a.direction=180
-a.creator=self.id
-a.hit=false
+a=attack_create_hitbox(200,0,false,true,"uga_gp_ult_shockwave",ooga_ultimate_groundpound_hitbox,0.2,99,1,3)
+a.direction=0
+a.image_xscale=1
+with a
+	instance_change(ooga_gp_shockwave,true)
 
-var a;
-a=create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
+a=attack_create_hitbox(200,0,false,true,"uga_gp_ult_shockwave",ooga_ultimate_groundpound_hitbox,0.2,99,1,3)
+a.direction=180
+a.image_xscale=-1
+with a
+	instance_change(ooga_gp_shockwave,true)
+
+create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
 
 
 var a;
@@ -34,5 +36,3 @@ for (var i = 0; i <180 ;i+=40)
 	a.speed=6
 	a.image_angle=i
 }
-
-alarm[7]=1

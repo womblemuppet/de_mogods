@@ -18,7 +18,6 @@ if other.ready==true && other.dying==false && !super_mode
 	{
 		pocket_super_mode_stored=true
 		can_activate_super_mode=false
-		//player_activate_super_mode()
 		orb_count_meter=0
 	}
 	

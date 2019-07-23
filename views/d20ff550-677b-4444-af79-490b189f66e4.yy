@@ -15,6 +15,8 @@
         "0562a67a-62fa-487b-ba59-b51b5fb23463",
         "d692275b-fd45-46fb-8845-0de36e0a6fdf",
         "5006d02e-1a7d-41a0-9bf4-7e80b25e9212",
+        "ef72aab2-90f1-416c-b8db-5d987a08ab68",
+        "4abacc61-70ad-410a-92b5-08be311adea7",
         "c3d07955-e108-4010-a910-5ddc6858ee30",
         "956b5d5d-e66e-4055-beab-9e673f9962b6",
         "950d577f-2975-4e80-b15e-fb769f95ce44",
@@ -26,7 +28,7 @@
         "c6ea115b-830a-4313-bcba-f010ac8c524b"
     ],
     "filterType": "GMSprite",
-    "folderName": "Oooga",
+    "folderName": "Uga",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

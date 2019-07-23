@@ -14,13 +14,12 @@ if instance_exists(other.creator)
 else
 	attacker=noone
 
-if !instance_exists(payday)            ////////add to hothands and do first blood (if not payday)
+if instance_exists(payday)==false           ////////add to hothands and do first blood (if not payday)
 {
 	hothands+=argument1
 	if attacker!=noone
 	{
 		cc_land_hit(self.id,attacker)
-		
 		cc_reset_clean()
 		if argument2!=0 //whether to reset hh (melee/ranged)
 			other.creator.hothands=0

@@ -2071,6 +2071,14 @@
             }
         },
         {
+            "Key": "4abacc61-70ad-410a-92b5-08be311adea7",
+            "Value": {
+                "id": "a8514576-d7cb-4270-9774-72d3f6403a8a",
+                "resourcePath": "sprites\\ooga_ultimate_groundpound_shockwave_hitbox\\ooga_ultimate_groundpound_shockwave_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4afa7c58-d214-468b-b80f-3d6bf332378c",
             "Value": {
                 "id": "2ff539be-2c97-4514-87c1-09cfe3350e96",
@@ -7079,6 +7087,14 @@
             }
         },
         {
+            "Key": "ef72aab2-90f1-416c-b8db-5d987a08ab68",
+            "Value": {
+                "id": "9886fc28-bf74-47b3-a862-df34a7c290cb",
+                "resourcePath": "sprites\\ooga_ultimate_groundpound_shockwave_die\\ooga_ultimate_groundpound_shockwave_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ef787ccf-b441-473f-acc9-1c1144ce0b5e",
             "Value": {
                 "id": "f13f7c90-ab7c-44ec-8666-0d9e9418d750",
@@ -7486,14 +7502,14 @@
         "8a3d1fbd-e3e2-495b-be0c-7b4862bfa012",
         "c188956e-b74a-4541-93ce-d72d4ff1603d",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
+        "a528cead-32f2-4b6e-9813-d941fe720b0c",
+        "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",
         "418f6ce5-eef3-4018-bff5-b27e4acbf60f",
         "c570171e-2c5a-4848-b7cf-bb360f5ab5e1",
         "49a5fd1f-eea7-42e5-ade1-948ae8ec00d9",
-        "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "8fb04e20-2eec-4128-ae3d-a8a7ca97deaa",
-        "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
         "558e254a-f29a-423d-8816-b45cadd7edbd",
         "6c702e2a-2603-4e19-8c09-8b1902866d44",
         "8f2497f9-ad09-4416-b04a-7931992aa8fb",
