@@ -959,6 +959,14 @@
             }
         },
         {
+            "Key": "1e9f7193-46d6-489e-a466-b8647be6c4e8",
+            "Value": {
+                "id": "103896bf-d847-44df-a576-1983dbc295a2",
+                "resourcePath": "sprites\\editor_tornado\\editor_tornado.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1ed484b6-c81a-4055-a2cf-7d03cd737979",
             "Value": {
                 "id": "e7a59027-72e1-4696-b62d-e68233b7d59f",
@@ -1770,7 +1778,7 @@
             "Key": "40bb8dd0-9b5b-441e-9581-ea360fc5d490",
             "Value": {
                 "id": "f44ff31d-00b1-4e37-851b-406da94c125b",
-                "resourcePath": "sprites\\cold_effect1\\cold_effect1.yy",
+                "resourcePath": "sprites\\editor_cold\\editor_cold.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2810,7 +2818,7 @@
             "Key": "61e9ddca-b904-405b-b7c9-c55db331c523",
             "Value": {
                 "id": "cb0c9f7e-391d-4eac-bd9f-8b3f13872031",
-                "resourcePath": "sprites\\sun_effect1\\sun_effect1.yy",
+                "resourcePath": "sprites\\editor_sun\\editor_sun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3450,7 +3458,7 @@
             "Key": "78cff2fe-a5e0-4c0d-beb7-6aa2c8065102",
             "Value": {
                 "id": "4faa4730-895f-46aa-815f-b13e1c8987b1",
-                "resourcePath": "sprites\\chachinggg\\chachinggg.yy",
+                "resourcePath": "sprites\\editor_payday\\editor_payday.yy",
                 "resourceType": "GMSprite"
             }
         },

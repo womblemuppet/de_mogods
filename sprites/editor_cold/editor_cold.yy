@@ -2,7 +2,7 @@
     "id": "40bb8dd0-9b5b-441e-9581-ea360fc5d490",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "cold_effect1",
+    "name": "editor_cold",
     "For3D": false,
     "HTile": false,
     "VTile": false,

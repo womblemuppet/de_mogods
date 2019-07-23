@@ -2,7 +2,7 @@
     "id": "61e9ddca-b904-405b-b7c9-c55db331c523",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sun_effect1",
+    "name": "editor_sun",
     "For3D": false,
     "HTile": false,
     "VTile": false,
