@@ -10,17 +10,17 @@ with combo_text_controller
 	if clean_hit_count[attacker.P]==3
 	{
 		show_debug_message("C L E A N ! 3")
-		effect_combo_text(self.id,"clean",attacker.P)
+		effect_combo_text(attacker,"clean")
 	}
 	if clean_hit_count[attacker.P]==4
 	{
 		show_debug_message("C L E A N ! 4")
 		with ef_combo_text
 		{
-			if targ==victim
+			if targ==attacker
 				instance_destroy()
 		}
-		effect_combo_text(self.id,"clean4",attacker.P)
+		effect_combo_text(attacker,"clean4")
 	}
 
 }

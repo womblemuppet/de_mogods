@@ -40,7 +40,7 @@ switch (character)
     
 	running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
-	ground_pound_freeze_time-=10
+	ground_pound_freeze_time-=4
 	uniques_uga_delayable_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
 	super_mode_duration=1000

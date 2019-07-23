@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "0c4302f9-6bef-4d8b-af38-9221ee3769a5",
+            "Value": {
+                "id": "8728dc97-fc17-4554-8f28-d61797c4368d",
+                "resourcePath": "sprites\\cctextspr_cucked_p3\\cctextspr_cucked_p3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c4ef715-1268-4a1c-b8c8-2a4db9f12a27",
             "Value": {
                 "id": "eac25267-14ba-40fd-9f88-0f9d0600d60c",
@@ -844,6 +852,14 @@
                 "id": "00feb38b-2fc8-44d1-8996-da481dd1e311",
                 "resourcePath": "views\\1a4db64c-c548-4a4e-af30-f69ad33edb73.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1a512326-2085-40c8-9797-a3366ce2268c",
+            "Value": {
+                "id": "39894b30-1bb0-41cd-a80e-97651f2a08a6",
+                "resourcePath": "sprites\\cctextspr_cucked_p4\\cctextspr_cucked_p4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2143,6 +2159,14 @@
             }
         },
         {
+            "Key": "4e14d837-a5cf-4349-833b-26c657fff44d",
+            "Value": {
+                "id": "29850d1b-2841-4d31-aa70-add213694ea8",
+                "resourcePath": "sprites\\cctextspr_cucked_p1\\cctextspr_cucked_p1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e4e1b33-44ff-4790-8212-b090aea89a54",
             "Value": {
                 "id": "810054e0-deb3-431f-84e1-ac8aea1ccdf8",
@@ -2435,6 +2459,14 @@
             "Value": {
                 "id": "8c157f1a-7cfb-4e1c-be7c-93b33ad4da39",
                 "resourcePath": "sprites\\handicapicon\\handicapicon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5992789a-40fc-43d8-963d-761b2373a98e",
+            "Value": {
+                "id": "88396a70-f568-49d9-ba69-20b08ec1e5dd",
+                "resourcePath": "sprites\\cctextspr_cucked_p2\\cctextspr_cucked_p2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6868,6 +6900,14 @@
                 "id": "7d21c6f9-3562-4f72-8b3a-71f8bfd4975c",
                 "resourcePath": "scripts\\player_activate_super_mode\\player_activate_super_mode.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e9d5f40f-264b-456d-a6e3-d6c7c87d5ac9",
+            "Value": {
+                "id": "c82cb373-918e-4f2b-9cdc-e1f00e970645",
+                "resourcePath": "sprites\\cctextspr_back\\cctextspr_back.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -13,6 +13,6 @@ if other.ready==true
 		}
 	}
 	
-	cc_hit_by_orb_effect_event(P)
+	cc_hit_by_orb_effect_event(self.id)
 }
 

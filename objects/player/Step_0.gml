@@ -786,7 +786,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		dropcrabok=true    ///if player can't gp then this stops crab being dropped
 		switch attacks[? "gp"]
 		{                   
-			case 0: ////standard gp
+			case "groundpound": ////standard gp
 			exception=true                                                                                                                                     
 			vspd=0
 			cangroundpound=1

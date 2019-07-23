@@ -4,6 +4,6 @@ if other.hit==false
 	with other
 		hit=true
 		
-	cc_hit_by_orb_effect_event(P)
+	cc_hit_by_orb_effect_event(self.id)
 }
 

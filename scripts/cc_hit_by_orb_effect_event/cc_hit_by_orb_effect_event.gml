@@ -1,9 +1,21 @@
+victim = argument0
+
 with combo_text_controller
 {
-	if last_got_hit_timer[argument0]>CUCKED_CUTOFF_TIME
+	if last_got_hit_by[victim.P]==noone
+	exit
+	
+	if last_got_hit_timer[victim.P]>CUCKED_CUTOFF_GOT_HIT_TIME && last_hit_timer[victim.P]>CUCKED_CUTOFF_HIT_TIME && last_got_hit_by[victim.P].hothands==3
 	{
 		show_debug_message("cucked")
-		effect_combo_text(self.id,"cucked",last_got_hit_by[argument0])
+		
+		with ef_combo_text
+		{
+			if targ==victim
+				instance_destroy()
+		}
+		effect_combo_text(victim,"cucked")
+		
 	}
 	
 }
