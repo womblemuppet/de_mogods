@@ -6,6 +6,7 @@
     "children": [
         "8b7eb301-af9b-4573-90d6-13ebcc3e5928",
         "80460dac-a003-426a-9331-8921c54330a7",
+        "321b0fc9-af9c-4c97-93df-085887b32976",
         "e61a82df-c541-4858-bbec-9d7078fc5cdc",
         "a1601676-e510-4d8c-a413-710e316cbbd7",
         "465fd941-3d10-4546-b947-597f24e0c39a",
@@ -27,7 +28,8 @@
         "828b609a-1929-4e84-af62-aaae14152b74",
         "5d5fddb1-adf2-4b71-a011-8d0e1f83a265",
         "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc",
-        "e68aae9a-efb8-43ce-bef2-6c7d4d6892c7"
+        "e68aae9a-efb8-43ce-bef2-6c7d4d6892c7",
+        "4515df03-13dc-4139-8c99-e930b078b0fa"
     ],
     "filterType": "GMSprite",
     "folderName": "Bait",

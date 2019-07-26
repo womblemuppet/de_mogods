@@ -54,6 +54,24 @@ else if argument1=="clean4"
 		show_error("unknown P for cctextspr",true)
 	}
 }
+else if argument1=="volley"
+{
+	switch target_player.P
+	{
+		case 0:
+		a.sprite_index=cctextspr_volley_p1
+		break;
+		case 1:
+		a.sprite_index=cctextspr_volley_p2
+		break;
+		case 2:
+		a.sprite_index=cctextspr_volley_p3
+		break;
+		case 3:
+		a.sprite_index=cctextspr_volley_p4
+		break;
+	}
+}
 else if argument1=="cucked"
 {
 	switch target_player.P

@@ -1471,6 +1471,14 @@
             }
         },
         {
+            "Key": "321b0fc9-af9c-4c97-93df-085887b32976",
+            "Value": {
+                "id": "cc15af6b-a1de-42a8-8876-39fbf2c96b62",
+                "resourcePath": "sprites\\Bait_3H_blinkjump\\Bait_3H_blinkjump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "32b6d29c-bb57-48b5-acef-7864b256b164",
             "Value": {
                 "id": "194424aa-3a29-4e1f-bec2-990985e1d7a8",
@@ -1927,6 +1935,14 @@
             }
         },
         {
+            "Key": "4515df03-13dc-4139-8c99-e930b078b0fa",
+            "Value": {
+                "id": "acd25229-d27c-457e-bae7-2dcfa85c123b",
+                "resourcePath": "sprites\\bait_blinkjump_effect\\bait_blinkjump_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "465fd941-3d10-4546-b947-597f24e0c39a",
             "Value": {
                 "id": "d732d2c7-c0ea-426d-a306-5ffc1a0484e4",
@@ -2091,6 +2107,14 @@
             "Value": {
                 "id": "a8514576-d7cb-4270-9774-72d3f6403a8a",
                 "resourcePath": "sprites\\ooga_ultimate_groundpound_shockwave_hitbox\\ooga_ultimate_groundpound_shockwave_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4af5a7b3-e6f6-49a3-aa14-227960b9913a",
+            "Value": {
+                "id": "8a777266-6785-4d49-95f8-94b65a1f65b3",
+                "resourcePath": "sprites\\mine_drill_end_sprite\\mine_drill_end_sprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6567,6 +6591,14 @@
             }
         },
         {
+            "Key": "dca446d3-04a1-4bf4-b835-e8d607af76ea",
+            "Value": {
+                "id": "363328ea-1b25-414c-820f-c36ca881b3fc",
+                "resourcePath": "sprites\\Vet_3H_dig_placed\\Vet_3H_dig_placed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dcf396ae-991a-4d63-a60f-885d4ca8141c",
             "Value": {
                 "id": "2a2b8fff-ce38-4980-8549-6a7c495a7ce1",
@@ -7271,6 +7303,14 @@
             }
         },
         {
+            "Key": "f3fdd1bd-1c8b-4c85-baaf-f2c7a4e9cc54",
+            "Value": {
+                "id": "98abdc13-e87e-495e-9e13-43750968a9cb",
+                "resourcePath": "objects\\drillmine\\drillmine.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f4099da0-9590-4d74-9504-23d73489b6fd",
             "Value": {
                 "id": "43560e55-8eb3-4074-ba1c-25849974751b",
@@ -7491,6 +7531,14 @@
             "Value": {
                 "id": "1fb92315-15e2-4bbe-8f83-6d35accee2ba",
                 "resourcePath": "sprites\\avatar_idle_left\\avatar_idle_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fe2e1849-f5ae-4138-aa4a-3314146c555a",
+            "Value": {
+                "id": "3395a905-0038-4685-bd25-c9377d31e0c3",
+                "resourcePath": "sprites\\mine_drill_sprite\\mine_drill_sprite.yy",
                 "resourceType": "GMSprite"
             }
         },

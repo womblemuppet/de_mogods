@@ -126,6 +126,8 @@ switch character
 			sprites[23]=Vet_3H_airgrab 
 			sprites[90]=Vet_3H_attach_sticky_mine
 			sprites[91]=Vet_3H_attach_sticky_mine //super version (to be changed)
+			sprites[92]=Vet_3H_dig_placed
+			sprites[93]=Vet_3H_dig_placed //super version (to be changed)
 			sprites[69]=Vet_3H_dig_h  ////super version (to be changed)
 			sprites[68]=Vet_3H_dig_h 
 			sprites[66]=Vet_3H_dig_channel   ///super version (to be changed)

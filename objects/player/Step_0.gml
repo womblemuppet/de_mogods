@@ -694,7 +694,8 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 				aim_octilinear()   ///changes octdir variable.
 				var a;
 				a=instance_create(x,y-10,mine)
-				a.creator=self.id
+				a.creator=a.id
+				a.player_who_placed_mine=self.id
 				a.direction=octdir
 				with a
 				{
@@ -865,7 +866,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 				image_speed=FRAME_SPEED_NORMAL
                 
 				rocket_jump_input_time_counter_from_dash = ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_DASH
-				show_debug_message(choose(" ","  ")+"rocket jump input time counter from dash set to 5")
+				//show_debug_message(choose(" ","  ")+"rocket jump input time counter from dash set to 5")
 				
 				if right                                       //////////////////    dash initial movement
 					hspd=ground_dash_speed
@@ -1016,7 +1017,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 		///whoop whoop
 		break;
 		
-		case "vet_place_mine":
+		case "vet_place_mine_or_dig":
 
 		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
 		{
@@ -1338,8 +1339,20 @@ if canbounce_counter<1   ///disable horizontal friction if bouncing
 }
 
 
-if  uniques_vet_digging==2
+if uniques_vet_digging==2
 {
+	if checkkey_pushed(heavybutton) && mines_ammo>0
+	{
+		sprite_index=sprites[92]
+		if super_mode
+			sprite_index=sprites[93]
+		var a;
+		a=instance_create_depth(x,y,-1,drillmine)
+		a.creator=self.id
+
+	}
+	
+	
 	var SPD,stop;
 	SPD=5
 	stop=false
