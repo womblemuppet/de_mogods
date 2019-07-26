@@ -1,6 +1,6 @@
 if !dying
 {
-	y-=vspd
+	y+=vspd
 	
 	if !place_meeting(x,y,block)
 	{

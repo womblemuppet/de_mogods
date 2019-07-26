@@ -207,6 +207,14 @@ if chained_debuff_counter>0
 		effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
 	}
 }
+if uniques_baitchain_last_chained_timer>0
+{
+	uniques_baitchain_last_chained_timer-=1
+	if uniques_baitchain_last_chained_timer==0
+		uniques_baitchain_last_chained=noone
+}
+
+
 
 if iframes>0
 	iframes-=1

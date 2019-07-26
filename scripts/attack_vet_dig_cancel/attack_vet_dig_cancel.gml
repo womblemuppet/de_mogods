@@ -11,3 +11,5 @@
 ****************************************************/
 
 create_terrain_cutter(eightysq_semicircle1,"pushed",90,3)
+if !place_meeting(x,y-40,block)
+	y-=40

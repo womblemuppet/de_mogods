@@ -4095,6 +4095,14 @@
             }
         },
         {
+            "Key": "8c4e5695-877e-49e3-84b1-7837bdd95edb",
+            "Value": {
+                "id": "e36d491b-697a-485e-bfaa-f58ff16c4a0f",
+                "resourcePath": "scripts\\player_is_dashing\\player_is_dashing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8c9472e3-940b-4e78-94e2-00c7e61440e2",
             "Value": {
                 "id": "2ba05fad-63d1-4a12-a9eb-18be38e84109",
@@ -7375,6 +7383,14 @@
             }
         },
         {
+            "Key": "f8da6822-2706-4aef-8b6b-8a089ae3facf",
+            "Value": {
+                "id": "f4669a39-2ea1-406e-b88f-dc5c759c4038",
+                "resourcePath": "objects\\proxy_vet_blink_gp_attack\\proxy_vet_blink_gp_attack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
             "Value": {
                 "id": "9d073c22-00d6-42b0-a827-efb00a39e1f3",
@@ -7597,6 +7613,7 @@
         "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
         "8a3d1fbd-e3e2-495b-be0c-7b4862bfa012",
         "c188956e-b74a-4541-93ce-d72d4ff1603d",
+        "8c4e5695-877e-49e3-84b1-7837bdd95edb",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",

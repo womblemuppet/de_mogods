@@ -196,7 +196,15 @@ uniques_airbolt_has_made_hitbox=false
 uniques_airdash_resets_jump=false
 
 //BAIT CHAIN
+BAITCHAIN_CHAIN_TIME=150
 BAITCHAIN_CHAIN_RANGE=75
+uniques_baitchain_last_chained=noone
+uniques_baitchain_last_chained_timer=0
+
+//BAIT DASH GP BLINK ATTACK
+uniques_dashgpblinkattack_enabled=false  //for want of a better name
+uniques_dashgpblinkattack_lockdown=0  //0 = not in use 1 = blinking
+UNIQUES_DASHGPBLINKATTACK_START_HEIGHT=175
 
 //BAIT WHIRLWIND
 uniques_whirlwind_active=false

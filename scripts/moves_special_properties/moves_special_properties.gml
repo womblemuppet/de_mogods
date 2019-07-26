@@ -127,8 +127,8 @@ switch argument0
 				chain_effect_id_to_delete=noone
 			}
 		}
-        
-		chained_debuff_counter=150
+		
+		chained_debuff_counter=BAITCHAIN_CHAIN_TIME   //failsafe, reset to attackers chain_time if attacker exists
 		chained_debuff_x_pos=x
 		chained_debuff_y_pos=y
 		var me;
@@ -146,6 +146,13 @@ switch argument0
 				ty=me.y
 			}
 		}
+		if attacker!=noone
+		{
+			chained_debuff_counter=attacker.BAITCHAIN_CHAIN_TIME
+			attacker.uniques_baitchain_last_chained_timer=attacker.BAITCHAIN_CHAIN_TIME
+			attacker.uniques_baitchain_last_chained=self.id
+		}
+		
 	} 
 	break;
 	case "sharkattack":

@@ -15,7 +15,6 @@ with combo_text_controller
 	if last_got_hit_timer[victim.P]>VOLLEY_CUTOFF_TIME
 	{
 		show_debug_message("volleyed")
-		[continue] put these lines into the effect_combo_text function
 		with ef_combo_text
 		{
 			if targ==attacker

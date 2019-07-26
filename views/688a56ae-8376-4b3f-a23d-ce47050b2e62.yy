@@ -20,7 +20,8 @@
         "073fed5c-66ab-4084-af0f-3141691e5275",
         "c7af5b38-1c0b-41a0-ab67-99f0dc2f70e7",
         "31be611a-265d-4f67-a976-9d168218eb98",
-        "c7e32f4b-5b09-42f5-8f2b-57ad100f4f35"
+        "c7e32f4b-5b09-42f5-8f2b-57ad100f4f35",
+        "f8da6822-2706-4aef-8b6b-8a089ae3facf"
     ],
     "filterType": "GMObject",
     "folderName": "player attacks",

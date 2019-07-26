@@ -1,3 +1,7 @@
+/*
+  player_set_horizontal_movement
+  changes player direction and sets/increases hspd
+*/
 var button,reverse_button,sgn
 
 if argument0=="left"

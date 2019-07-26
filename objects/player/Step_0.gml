@@ -774,12 +774,39 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 }
 
 
-if checkkey_pushed(dashbutton)               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
+if checkkey_pushed(dashbutton) && rocketjumped==false               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
 {
 	var exception;
 	exception=false
-	if rocketjumped
-		exception=true
+
+	if !player_is_dashing() && uniques_dashgpblinkattack_enabled && uniques_baitchain_last_chained!=noone
+	{
+		uniques_dashgpblinkattack_lockdown=1
+		var a;
+		a=instance_create_depth(x,y,-1,proxy_vet_blink_gp_attack)
+		a.creator=self.id
+		a.targ_x=uniques_baitchain_last_chained.x
+		a.targ_y=uniques_baitchain_last_chained.y-UNIQUES_DASHGPBLINKATTACK_START_HEIGHT
+		
+		var distance,dir;
+		distance = point_distance(a.x,a.y,a.targ_x,a.targ_y)
+		dir = point_direction(a.x,a.y,a.targ_x,a.targ_y)
+		
+		a.pos_x[3]=a.targ_x
+		a.pos_y[3]=a.targ_y
+		
+		a.pos_x[1]=a.x+lengthdir_x(distance/3,dir)
+		a.pos_y[1]=a.y+lengthdir_y(distance/3,dir)
+		
+		a.pos_x[2]=a.x+lengthdir_x(2*distance/3,dir)
+		a.pos_y[2]=a.y+lengthdir_y(2*distance/3,dir)
+		
+		a.pos_x[0]=a.x
+		a.pos_y[0]=a.y
+		
+		instance_deactivate_object(self)
+	}
+	
 
 	if !exception && player_may_attack() && checkkey(downbutton) && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound
@@ -812,7 +839,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 		}
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-	if !exception && !checkkey(downbutton) && dashcd<1 && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
+	if !exception && !checkkey(downbutton) && !player_is_dashing() && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
 	{
 		if cripple_debuff_counter<1
 		{
@@ -864,7 +891,7 @@ if checkkey_pushed(dashbutton)               ///////////////////////////////////
 					sprite_index=sprites[16]
 				image_index=0
 				image_speed=FRAME_SPEED_NORMAL
-                
+				
 				rocket_jump_input_time_counter_from_dash = ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_DASH
 				//show_debug_message(choose(" ","  ")+"rocket jump input time counter from dash set to 5")
 				
@@ -1009,7 +1036,7 @@ if dash_button_currently_held
 
 
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
-if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck !=noone
+if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 {
 	switch attacks[? "special hold down"] 
 	{
@@ -1020,7 +1047,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 		case "vet_place_mine_or_dig":
 
 		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
-		{
+		{///start digging
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			uniques_vet_digging=1
@@ -1119,7 +1146,7 @@ if (cangroundpound=3 && stunned_groundpound<1 && player_not_locked_down()  )   |
 ////first checks are if player can swap direction (disabled for things like whirlwind)
 if stunned_groundpound<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
 {
-	 if checkkey(leftbutton) && !checkkey(rightbutton)
+	if checkkey(leftbutton) && !checkkey(rightbutton)
 		player_set_horizontal_movement("left")
 	if checkkey(rightbutton)
 		player_set_horizontal_movement("right")	
