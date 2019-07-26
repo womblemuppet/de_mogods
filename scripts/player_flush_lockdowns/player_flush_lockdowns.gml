@@ -19,6 +19,7 @@ uniques_parachute=0
 dash_rocket_jump=0
 uniques_whirlwind_active=false
 uniques_sharkattack_lockdown=0
+uniques_drill_mine_place_animation_lock=false
 
 if uniques_vet_dig_enabled
 {

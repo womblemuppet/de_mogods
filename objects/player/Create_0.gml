@@ -164,6 +164,9 @@ uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 st
 uniques_sticky_mine_enabled=false
 uniques_sticky_mine_lockdown=0
 
+//VET DRILL MINE
+uniques_drill_mine_place_animation_lock=false
+
 
 //VETERAN PARACHUTE
 uniques_parachute_enabled=false

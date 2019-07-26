@@ -167,5 +167,12 @@ else if sprite_index==sprites[16] || sprite_index==sprites[18]   ///super dash o
 {
 	player_set_idle() 
 }
+else if sprite_index==sprites[92] || sprite_index==sprites[93]
+{
+	uniques_drill_mine_place_animation_lock=false
+	sprite_index=sprites[68]
+	if super_mode
+		sprite_index=sprites[69]
+}
 
 
