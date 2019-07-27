@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "184a41d6-fc8f-4082-a377-b5e69bf8b047",
+            "Value": {
+                "id": "c28f32f1-a499-481f-b7be-13ed72dbc497",
+                "resourcePath": "scripts\\set_hud_pocket_circle_orb_lost_animation\\set_hud_pocket_circle_orb_lost_animation.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1869fdc1-0abe-4fde-806c-d2a94446289c",
             "Value": {
                 "id": "db3681de-d53d-4865-a951-a0ca9eebf6f1",
@@ -1516,6 +1524,14 @@
                 "id": "194424aa-3a29-4e1f-bec2-990985e1d7a8",
                 "resourcePath": "sprites\\superorbcall_effect_circle\\superorbcall_effect_circle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "32bee222-a7cd-4554-bf72-0ac9249e41d4",
+            "Value": {
+                "id": "8912f9e0-708b-458a-ad7c-0c6e7528b2ac",
+                "resourcePath": "scripts\\set_hud_pocket_circle_orb_super_mode\\set_hud_pocket_circle_orb_super_mode.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3775,6 +3791,14 @@
             }
         },
         {
+            "Key": "7f2a2d69-ab18-4c91-8521-92983f3a882c",
+            "Value": {
+                "id": "1d412c59-ec04-4ecd-98dd-b608c5997284",
+                "resourcePath": "sprites\\hud_pocket_circle_area_orb_lost\\hud_pocket_circle_area_orb_lost.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7f2bea6f-f8a8-43ac-ba96-01af39abb8fa",
             "Value": {
                 "id": "8d33913e-0825-4e59-adc7-ba3cfd741ea7",
@@ -3940,6 +3964,14 @@
                 "id": "39d09805-823c-4276-bc1f-997203b853c1",
                 "resourcePath": "rooms\\startup\\startup.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "839dd084-46c6-41b7-963e-bdfc83d6c05c",
+            "Value": {
+                "id": "3d377da4-047e-490d-bc05-598648694de1",
+                "resourcePath": "scripts\\set_hud_pocket_circle_orb_normal\\set_hud_pocket_circle_orb_normal.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7780,10 +7812,13 @@
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
         "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
-        "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "b8aeffe8-a8a7-43e0-b412-94c29526c57f",
         "1a349010-23f7-4fbc-b948-1989cb1ce882",
         "8084dd92-86f0-4b61-8ce1-2e8e116ae995",
+        "1ff9514b-ff55-40c6-8228-856a753fb0a6",
+        "839dd084-46c6-41b7-963e-bdfc83d6c05c",
+        "32bee222-a7cd-4554-bf72-0ac9249e41d4",
+        "184a41d6-fc8f-4082-a377-b5e69bf8b047",
         "1b99099c-f82e-4e8d-962d-5a3b757f592f",
         "b0059e82-38b4-4e51-9ab3-5dfb2f96bd7a",
         "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",

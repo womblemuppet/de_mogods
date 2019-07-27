@@ -19,7 +19,10 @@ if other.ready==true && other.dying==false && !super_mode
 		pocket_super_mode_stored=true
 		can_activate_super_mode=false
 		orb_count_meter=0
+		set_hud_pocket_circle_orb_super_mode()
 	}
+	else
+		set_hud_pocket_circle_orb_normal()
 	
 	player_update_pocket_hud()	
 	////////////////////////////////////////////////////////////////////////////////////////// KILL ORB

@@ -18,10 +18,21 @@ if immune==false && safe==false
 	hothands=0
 	H-=1
 	
+	if pocket_orb!=-1
+		set_hud_pocket_circle_orb_lost_animation()
+	else
+	{
+		if pocket_super_mode_stored
+			set_hud_pocket_circle_orb_super_mode()
+		else
+			set_hud_pocket_circle_orb_normal()
+	}
+	
 	pocket_orb=-1                               ///reset pocket orb
 	pocket_super_mode_stored=false
-	player_update_pocket_hud()
 	
+	
+	player_update_pocket_hud()
 	player_flinch()
 	player_update_health_hud()
 	cc_reset_clean()

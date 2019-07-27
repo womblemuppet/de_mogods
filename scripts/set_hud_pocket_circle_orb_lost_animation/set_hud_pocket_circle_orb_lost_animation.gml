@@ -1,0 +1,3 @@
+aizen.hud_pocket_circle_sprite[P]=hud_pocket_circle_area_orb_lost
+aizen.hudpocketcircle_subimage[P]=0
+aizen.hudpocketcircle_image_number[P]=aizen.HUD_POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER

@@ -28,4 +28,5 @@ switch attacks[? "ult get trigger"]
 	show_error(" beopop, unknown ult get trigger attack id",true)
 }
 
+set_hud_pocket_circle_orb_super_mode()
 player_update_super_meter_hud()

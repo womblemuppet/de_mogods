@@ -92,9 +92,23 @@ hothandspaydaycolour=c_white
 hudfloatingmasks_subimage=0
 HUDFLOATINGMASKS_IMAGE_NUMBER=22
 
-hudpocketcircle_subimage=0
-HUDPOCKETCIRCLE_IMAGE_NUMBER=6
 
+HUD_POCKET_CIRCLE_AREA_IMAGE_NUMBER=1
+HUD_POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER=6
+HUD_POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
+
+hudpocketcircle_subimage[kouchou.MAX_PLAYER_COUNT-1]=0
+hudpocketcircle_image_number[kouchou.MAX_PLAYER_COUNT-1]=1
+for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
+{
+	hudpocketcircle_subimage[i]=0
+	hudpocketcircle_image_number[i]=1
+	hud_pocket_circle_sprite[i]=hud_pocket_circle_area
+}
+
+
+
+//hud_pocket_circle_orb_lost
 stackframe_sprite=arcade_cabinet_maskbar_inactive
 stackframe_subimage=0
 stackframe_image_number=0
