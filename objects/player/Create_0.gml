@@ -4,9 +4,13 @@ groundcheck=noone
 groundcheck_prev=noone
 JUMPSPEED=6.75 
 DOUBLEJUMPSPEED=8 //needs to be higher than 7.5 with grav(up) at 0.35 to reach over two blocks high
-doublejump=0        ///what jum-p the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
+doublejump=0        ///what jump the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
 DOUBLEJUMPTIME=60  //time to double tap up for double jump
 doublejumptimer=0   ///the counter for the above
+water_jump_factor=1       ///(changed every step)
+water_gravity_factor=1     ///(changed every step)
+WATER_JUMP_FACTOR_IN_WATER=0.75 ///jump timesed by this number underwater 
+WATER_GRAVITY_FACTOR_IN_WATER=2 ///gravity divided by this number underwater 
 HOR_RUNSPEED=5
 HOR_SHUFFLESPEED=4   ///shuffling is the small movement when you tap a key but release before holding
 hor_running_counter=0  //4 = pressed r  8+ = holding r  -4 = pressed l  -8< = holding l

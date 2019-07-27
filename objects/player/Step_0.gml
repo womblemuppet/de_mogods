@@ -2,18 +2,7 @@
 /*step event///////////////////////////////////
 *//////////////////////////////////////////////
 
-if canbounce_counter>0 && abs(hspd)>4 && abs(vspd)>6   //if bounce enabled, and will hit block below, reverse vspd and move player up one pixel. must happen before groundcheck
-{
-	if place_meeting(x,y+vspd,block)      /////    bounce upward
-	{
-		if canbounce_counter>MAX_CANBOUNCE_COUNTER
-			canbounce_counter=MAX_CANBOUNCE_COUNTER
-		vspd=clamp(-BOUNCE_MIN_VELOCITY,-abs(vspd),-BOUNCE_MAX_VELOCITY)
-		if !place_meeting(x,y-1,block)
-			y-=1
-	}
-}
-
+player_vertical_bounce_check()
 
 //////////////////////////////////////////     groundcheck
 
@@ -62,63 +51,8 @@ else ///( if groundcheck==noone)
 	dash_has_lifted_off_ground=true
 }
 
-var watery,wateryjump;
-watery=1
-wateryjump=1
-if instance_exists(wave)
-{
-	if y>wave.y+30
-	{
-		if has_made_splash_effect==false
-		{
-			effect_aniend(splash_effect1,0.2,-1)
-			has_made_splash_effect=true
-		}
-		watery=2   ///gravity divided by this number underwater
-		wateryjump=0.75 ///jump timesed by this number underwater
-	}
-	else
-	{
-		has_made_splash_effect=false
-	}
-} 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*  emmiters  */
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-if super_mode && random(1)>0.6      ///////////super effect
-{
-	var a;
-	a=instance_create(x,y,ef_follower)
-	a.sprite_index=supersparkle_sprite
-	a.targ=self.id
-	a.depth=-2
-	a.offsetx=0
-	a.offsety=0
-	a.image_speed=0.25
-	a.image_xscale=1.25
-	a.image_yscale=1.25
-}
-if sidezap && random(1)>0.8        /////////////kanehameha effect
-{
-	var a;
-	a=effect_aniend(flameofsidezap,0.25,-1)
-	a.x+=6-random(12)
-	a.vspeed=choose(0,-1,-2)
-	a.image_alpha=0.8
-	if a.vspeed==-2
-		a.image_alpha=0.5
-}
-
-if cursed==true && random(1)>0.6
-{
-	with effect_aniend(imdyinginside,0.4,-1)
-		vspeed=-2
-}
-
-
+player_handle_water_physics()
+player_emitters()
 player_counters()
 
 
@@ -227,19 +161,11 @@ else if ltt>-2
 /*  gravity && landing/ceiling collision    +    idle sprite setting  */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-if groundcheck==noone && cangroundpound!=1 && dash_rocket_jump!=2 && airgrab_mode!=2 && airgrab_mode!=4      /// player gravity
-{  
-	if vspd<0
-		vspd+=GRAVITY/watery
-	else
-	{
-		if vspd<VSPEED_FROM_GRAVITY_DOWN_MAX
-			vspd+=GRAVITY_DOWN/watery
-	}
-}
-if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertical block collision below (don't count as landed if launching rocket jump)
+player_set_gravity()
+
+if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downward block collision  (don't count as landed if launching rocket jump)
 {
-	airgrab_mode=0
+	airgrab_mode=0   ///reset airgrab antispam penalty
 	
 	if uniques_whirlwind_active
 	{
@@ -339,13 +265,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// vertic
 	}
 }
 
-if vspd<0
-{
-	if place_meeting(x,y-1,block) /// vertical block collision above
-	{
-		vspd=0
-	}
-}
+player_block_above_check()
 
 
 //set to idle sprite if on ground and not pushing left or right
@@ -629,8 +549,6 @@ if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button 
 
 if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {
-
-
 	var exception;
 	exception=false
     
@@ -1109,117 +1027,17 @@ if dash_rocket_jump==1
 
 
 
-if (cangroundpound=3 && stunned_groundpound<1 && player_not_locked_down()  )   ||   airgrab_decidedir_time>0   ///allow update direction during groundpound or groundpound bounce
-{
-	if checkkey(leftbutton) 
-	{
-		image_xscale=-1
-		right=false
-	}
-	if checkkey(rightbutton)     ///right > left
-	{
-		image_xscale=1
-		right=true
-	}
-}
+
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
+player_turn_right_or_left()
 
 
+player_handle_move_right_or_left()
 
-////first checks are if player can swap direction (disabled for things like whirlwind)
-if stunned_groundpound<1 && (cangroundpound==0 || cangroundpound==3) && (dashcd<DASH_COOLDOWN_TIME-DASH_LOCKDOWN_TIME || dash_wallbreak_forgive==true) && airgrab_mode!=2 && airgrab_mode!=4 && !uniques_whirlwind_active
-{
-	if checkkey(leftbutton) && !checkkey(rightbutton)
-		player_set_horizontal_movement("left")
-	if checkkey(rightbutton)
-		player_set_horizontal_movement("right")	
-}
-if (!checkkey(leftbutton) && !checkkey(rightbutton)) && hspd==0
-{
-	hor_running_counter=0
-}
-
-
+player_handle_jump()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                    /* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if stunned_groundpound<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
-{
-	var set_jump_sprites;
-	set_jump_sprites=false  
-    
-	if checkkey_pushed(upbutton)
-	{
-		var exception;
-		exception=false
-
-		if !exception
-		{
-			if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
-			{
-				if (groundcheck!=noone || ltt>0) || doublejump==1  /// 'all checks cleared' for jump.  (on ground or looneytunesing , or use up double jump)
-				{////single or double jump
-					jumped=true  
-					alarm[3]=GROUNDPOUND_UNAVAILABLE_TIME      ///ground pound unavailable time (after jump)
-					cangroundpound=-1
-        
-					if doublejump==0     ////single jump
-					{
-						rocket_jump_input_time_counter_from_jump=ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP
-						doublejumptimer=DOUBLEJUMPTIME
-						vspd=-JUMPSPEED*wateryjump
-					}
-					if doublejump==1     ///double jump
-					{
-						effect_aniend(whooshbigjump,0.2,-2)
-						vspd=-DOUBLEJUMPSPEED*wateryjump 
-					}
-					set_jump_sprites=true         
-				}
-                
-				doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
-			}
-			///////////VETERAN PARACHUTE
-			if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && set_jump_sprites==false
-			{
-				uniques_parachute=1
-				uniques_parachute_minimum_time_counter=UNIQUES_PARACHUTE_MINIMUM_TIME
-				doublejump=3
-				vspd=vspd/1.5
-				set_jump_sprites=true 
-			}
-		}
-	}
-    
-	if set_jump_sprites==true   ///do sprites at end
-	{
-		sprite_index=sprites[2]    ///jump windup sprite
-		if super_mode
-			sprite_index=sprites[10]
-		image_speed=FRAME_SPEED_FAST
-		image_index=0
-	}
-}
-
-if uniques_parachute==1     ////parachute floating effect
-{
-	if vspd>UNIQUES_PARACHUTE_FALL_SPEED
-		vspd=UNIQUES_PARACHUTE_FALL_SPEED
-	if sprite_index==sprites[4]  ///fall sprite
-		sprite_index=sprites[64] ///parachute sprite
-	if sprite_index==sprites[12] ///fall super sprite
-		sprite_index=sprites[65] ///parachute super sprite
-	if !checkkey(upbutton)        ////release parachute
-	{
-		uniques_parachute=2
-		if sprite_index==sprites[64] || sprite_index==sprites[65]
-		{
-			sprite_index=sprites[4]  //fall sprite
-			if super_mode
-				sprite_index=sprites[12] //fall super sprite       
-		}        
-	}
-}
+player_vet_parachute_sprite_check()
 
 player_falldown_sprite_check()
 
@@ -1230,34 +1048,8 @@ player_falldown_sprite_check()
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL MOVEMENT
 
 
-if hspd>0
-{
-	for (var i=0; i<hspd; i+=1)
-	{
-		if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x-20 && (chained_debuff_counter<1 || (x-chained_debuff_x_pos<BAITCHAIN_CHAIN_RANGE))
-			x+=1
-		else
-			break;
-	};
-}
-else if hspd<0
-{
-	for (var i=0; i<-hspd; i+=1)
-	{
-		if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x+20 && (chained_debuff_counter<1 || (chained_debuff_x_pos-x<BAITCHAIN_CHAIN_RANGE))
-			x-=1
-		else
-			break;
-	};
-}
-if uniques_whirlwind_active    ////[finaledit] checking every step, probably can be optimized
-{
-	if (   x - (kouchou.room_left_border_x+20) <2 ) ||  (   (kouchou.room_right_border_x-20) - x   )<2
-	{
-		uniques_whirlwind_active=false
-		player_flush_lockdowns()
-	}
-}
+player_move_horizontal()
+player_bait_move_horizontal_in_whirlwind()
 
 ////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
 attack_shooting_animation_checks()
@@ -1268,32 +1060,7 @@ attack_shooting_animation_checks()
 //LIMIT VSPD
 if vspd>10 && cangroundpound!=2 && airgrab_mode!=4
 	vspd=10
-//VERTICAL MOVEMENT
-if vspd>0
-{
-	for (var i=0; i<vspd; i+=1)
-	{
-		if !place_meeting(x,y+1,block) && (chained_debuff_counter<1 || (y-chained_debuff_y_pos<BAITCHAIN_CHAIN_RANGE)) ///don't replace this with groundcheck you dumbo
-			y+=1
-		else
-			break;
-	};
-}
-else if vspd<0
-{
-	if (dash_rocket_top_collision_safety>0 && y<DASH_ROCKET_TOP_COLLISION_MAXY)
-	{
-		vspd=0
-	}
-    
-	for (var i=0; i<-vspd; i+=1)
-	{
-		if !place_meeting(x,y-1,block) && (chained_debuff_counter<1 || (chained_debuff_y_pos-y<BAITCHAIN_CHAIN_RANGE))
-			 y-=1
-		else
-			break;
-	};
-}
+player_move_vertical()
 
 ///////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL BLOCK CHECKS
  if player_not_digging() 
@@ -1304,49 +1071,7 @@ else if vspd<0
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL FRICTION AND HSPD LIMIT
-if canbounce_counter<1   ///disable horizontal friction if bouncing
-{
-	if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
-	{ 
-		var fir;
-		fir=FRICTION
-		if groundcheck==noone
-			fir=AIR_FRICTION
-		if !player_not_locked_down()
-		{
-			fir/=3
-		}
-		if hspd>0
-		{
-			hspd-=fir
-			if hspd<0    ///sets to 0 instead of going negative
-			hpsd=0
-		}
-		if hspd<0 
-		{
-			hspd+=fir
-			if hspd>0    ///sets to 0 instead of going negative
-			hspd=0
-		}    
-	}
-	else                                                ///                                     else limit hspd if running 
-	{
-		var fir;
-		fir=FRICTION
-		if hspd>RUNNING_HSPD_MAX
-		{
-			hspd-=fir
-			if hspd<0    ///sets to 0 instead of going negative
-				hpsd=0
-		}
-		if hspd<-RUNNING_HSPD_MAX
-		{
-			hspd+=fir
-			if hspd>0    ///sets to 0 instead of going negative
-				hspd=0
-		}
-	}
-}
+player_set_friction()
 
 
 if uniques_vet_digging==2
@@ -1394,11 +1119,8 @@ if uniques_vet_digging==2
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////// TOP SCREEN DEATH
-if y<-10
-{
-	if dash_rocket_top_collision_safety<1
-		playerdie()
-}
+player_check_if_off_top_of_screen()
+
 
 
 ////end step stuff
