@@ -2047,6 +2047,14 @@
             }
         },
         {
+            "Key": "48b4d9a1-4239-4fb1-9ed3-f0faa4b172bf",
+            "Value": {
+                "id": "ee30f2cf-e16c-415c-b90e-04f0fc752202",
+                "resourcePath": "scripts\\attack_start_groundpound_descent\\attack_start_groundpound_descent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "48bd6505-4615-4773-b2d0-4a1bc980abd0",
             "Value": {
                 "id": "f0885358-0fc6-4aec-b7ed-93433128aab3",
@@ -7764,6 +7772,7 @@
         "61ee04b1-d091-4125-bec3-0a16c24a8357",
         "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
+        "48b4d9a1-4239-4fb1-9ed3-f0faa4b172bf",
         "353a867e-8cc9-4c04-843b-334f14b56d9c",
         "4ed56efa-0618-4f87-95cd-ef18be167773",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",

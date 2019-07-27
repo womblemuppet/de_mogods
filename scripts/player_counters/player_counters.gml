@@ -62,14 +62,9 @@ if ground_pound_freeze_counter>0
 {
 	ground_pound_freeze_counter-=1
 	if ground_pound_freeze_counter==0
-	{    ///start groundpound (descent)
-		cangroundpound=2
-		vspd=GROUND_POUND_SPEED
-		  //attack_create_dash_hitbox(bunts,stun amount,horizontal kb, vertical kb,attack name,sprite index,image speed,stops dasher on contact)
-		  //-attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,gain meter on hit,attack name,sprite,image speed,active steps,hkb,vkb)
-		groundpound_current_hitbox_object=attack_create_hitbox(GROUND_POUND_STUN_AMOUNT,1,true,true,"ground pound",groundpound_hitbox,0.2,0,0,-10)
+	{    
+		attack_start_groundpound_descent()
 	}
-
 }
 
 if push_other_attacks_timer>0
