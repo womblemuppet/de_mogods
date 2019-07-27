@@ -680,9 +680,9 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 				vspd=0
 				dash_rocket_jump=1
 				hspd=0
-				sprite_index=sprites[30]    ///groundpound freeze sprite
+				sprite_index=sprites[30]    ///rocketjump freeze sprite
 				if super_mode
-					sprite_index=sprites[31]   ///groundpound freeze super sprite
+					sprite_index=sprites[31]   ///rocketjump freeze super sprite
 				image_speed=FRAME_SPEED_FAST
 				image_index=0
 				rocketjumped=true

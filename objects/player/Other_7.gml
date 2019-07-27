@@ -105,7 +105,16 @@ else if sprite_index==sprites[83]  ///bait teleport use
 }
 else if sprite_index==sprites[86] ||sprite_index==sprites[87]  ///bait blink gp attack
 { 
-		uniques_dashgpblinkattack_lockdown=0
+	effect_aniend(bait_blinkjump_effect,-1,0.2) 
+	uniques_dashgpblinkattack_lockdown=0
+	
+	var skip=false;
+	if uniques_baitchain_last_chained==noone 
+		skip=true
+	if !skip && !instance_exists(uniques_baitchain_last_chained)
+		skip=true
+	if !skip && !place_meeting(uniques_baitchain_last_chained.x,uniques_baitchain_last_chained.y-UNIQUES_DASHGPBLINKATTACK_START_HEIGHT,block)
+	{
 		var a;
 		a=instance_create_depth(x,y,-1,proxy_bait_blink_gp_attack)
 		a.creator=self.id
@@ -129,7 +138,9 @@ else if sprite_index==sprites[86] ||sprite_index==sprites[87]  ///bait blink gp 
 		a.pos_y[0]=a.y
 		
 		instance_deactivate_object(self)
-		player_set_idle()
+	}
+	
+	player_set_idle()
 }
 else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump end
 {

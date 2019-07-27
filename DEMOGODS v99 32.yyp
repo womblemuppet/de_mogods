@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "208351a8-213a-4643-80f2-e9a7943c4b5a",
+            "Value": {
+                "id": "a021c7f4-b082-4188-a782-051441c97f47",
+                "resourcePath": "sprites\\Bait_3H_blinkjump_frame4\\Bait_3H_blinkjump_frame4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2096af27-55e3-4235-91c5-4d2506e6e162",
             "Value": {
                 "id": "388223e7-aee6-4a4c-ba3e-61046ac08da5",
@@ -3207,6 +3215,14 @@
             }
         },
         {
+            "Key": "6ae00bfb-b2a6-4774-9ccd-fac858e6e9b3",
+            "Value": {
+                "id": "49bc66f3-4fae-43fe-87e9-fee371dcb4a8",
+                "resourcePath": "sprites\\Bait_3H_blinkjump_frame3\\Bait_3H_blinkjump_frame3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b73cc9b-df12-4eb9-92a4-163fddac2163",
             "Value": {
                 "id": "e7ced8e8-e996-40e6-abbc-445dbb481025",
@@ -3548,6 +3564,14 @@
                 "id": "0fed3ee7-0234-4727-bde7-dbb562f9ecbd",
                 "resourcePath": "scripts\\call_block_setup\\call_block_setup.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "78bf2d8b-e3fc-46ae-986a-ec8e4d20d1af",
+            "Value": {
+                "id": "8a8f4ad2-e3d1-48b2-99ed-c573306d348d",
+                "resourcePath": "sprites\\Bait_3H_blinkjump_frame2\\Bait_3H_blinkjump_frame2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4895,6 +4919,14 @@
             }
         },
         {
+            "Key": "a38ee4ac-f0c7-490b-85a2-e892a325489e",
+            "Value": {
+                "id": "c45fdc55-d921-42dd-85af-31474d9ed1ed",
+                "resourcePath": "views\\a38ee4ac-f0c7-490b-85a2-e892a325489e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a3b3f18a-16dd-4f9b-aa52-f70b7c685615",
             "Value": {
                 "id": "dea4ce25-090b-4de4-8a0a-6ac741ec0a64",
@@ -5804,6 +5836,14 @@
                 "id": "c77ace56-95c8-4420-b482-22bfbc29e81d",
                 "resourcePath": "scripts\\first_blood_activate_on_me\\first_blood_activate_on_me.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c1d36029-b00f-455c-b63b-7acddc4015f5",
+            "Value": {
+                "id": "b2f64db2-8c34-4f87-9b77-34b87fe097ec",
+                "resourcePath": "sprites\\Bait_3H_blinkjump_frame1\\Bait_3H_blinkjump_frame1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
