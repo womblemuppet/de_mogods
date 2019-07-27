@@ -74,7 +74,7 @@ else    /// if clash object exists created by pusher, clash, deleting clash obje
 		clasher.gothit.hspd=-hknockback*airmulti
 	clasher.gothit.vspd=-vknockback*airvmulti
 	clasher.gothit.stunned=stun_amount
-	effect_create_above(ef_firework,x,y,2,c_green)
+	effect_create_above(ef_firework,x,y,2,c_orange)
 	with clasher
 		instance_destroy()
 	with dashattack

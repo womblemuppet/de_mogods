@@ -779,32 +779,15 @@ if checkkey_pushed(dashbutton) && rocketjumped==false               ////////////
 	var exception;
 	exception=false
 
-	if !player_is_dashing() && uniques_dashgpblinkattack_enabled && uniques_baitchain_last_chained!=noone
+	if !player_is_dashing() && groundcheck!=noone && checkkey(downbutton) && uniques_dashgpblinkattack_enabled && uniques_baitchain_last_chained!=noone
 	{
 		uniques_dashgpblinkattack_lockdown=1
-		var a;
-		a=instance_create_depth(x,y,-1,proxy_vet_blink_gp_attack)
-		a.creator=self.id
-		a.targ_x=uniques_baitchain_last_chained.x
-		a.targ_y=uniques_baitchain_last_chained.y-UNIQUES_DASHGPBLINKATTACK_START_HEIGHT
-		
-		var distance,dir;
-		distance = point_distance(a.x,a.y,a.targ_x,a.targ_y)
-		dir = point_direction(a.x,a.y,a.targ_x,a.targ_y)
-		
-		a.pos_x[3]=a.targ_x
-		a.pos_y[3]=a.targ_y
-		
-		a.pos_x[1]=a.x+lengthdir_x(distance/3,dir)
-		a.pos_y[1]=a.y+lengthdir_y(distance/3,dir)
-		
-		a.pos_x[2]=a.x+lengthdir_x(2*distance/3,dir)
-		a.pos_y[2]=a.y+lengthdir_y(2*distance/3,dir)
-		
-		a.pos_x[0]=a.x
-		a.pos_y[0]=a.y
-		
-		instance_deactivate_object(self)
+		image_speed=0.2
+		image_index=0
+		sprite_index=sprites[86]
+		if super_mode
+			sprite_index=sprites[87]
+		exception=true
 	}
 	
 

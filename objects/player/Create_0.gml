@@ -203,7 +203,7 @@ uniques_baitchain_last_chained_timer=0
 
 //BAIT DASH GP BLINK ATTACK
 uniques_dashgpblinkattack_enabled=false  //for want of a better name
-uniques_dashgpblinkattack_lockdown=0  //0 = not in use 1 = blinking
+uniques_dashgpblinkattack_lockdown=0  //0 = not in use 1 = windup (after windup player deactivates and this goes to 0 again)
 UNIQUES_DASHGPBLINKATTACK_START_HEIGHT=175
 
 //BAIT WHIRLWIND

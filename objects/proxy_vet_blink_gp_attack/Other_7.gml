@@ -1,2 +1,0 @@
-instance_activate_object(creator)
-instance_destroy()

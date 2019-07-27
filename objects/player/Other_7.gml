@@ -103,6 +103,34 @@ else if sprite_index==sprites[83]  ///bait teleport use
 	}	
 	
 }
+else if sprite_index==sprites[86] ||sprite_index==sprites[87]  ///bait blink gp attack
+{ 
+		uniques_dashgpblinkattack_lockdown=0
+		var a;
+		a=instance_create_depth(x,y,-1,proxy_bait_blink_gp_attack)
+		a.creator=self.id
+		a.targ_x=uniques_baitchain_last_chained.x
+		a.targ_y=uniques_baitchain_last_chained.y-UNIQUES_DASHGPBLINKATTACK_START_HEIGHT
+		
+		var distance,dir;
+		distance = point_distance(a.x,a.y,a.targ_x,a.targ_y)
+		dir = point_direction(a.x,a.y,a.targ_x,a.targ_y)
+		
+		a.pos_x[3]=a.targ_x
+		a.pos_y[3]=a.targ_y
+		
+		a.pos_x[1]=a.x+lengthdir_x(distance/3,dir)
+		a.pos_y[1]=a.y+lengthdir_y(distance/3,dir)
+		
+		a.pos_x[2]=a.x+lengthdir_x(2*distance/3,dir)
+		a.pos_y[2]=a.y+lengthdir_y(2*distance/3,dir)
+		
+		a.pos_x[0]=a.x
+		a.pos_y[0]=a.y
+		
+		instance_deactivate_object(self)
+		player_set_idle()
+}
 else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump end
 {
 	if dash_rocket_jump==2

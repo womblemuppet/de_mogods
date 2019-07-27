@@ -2,7 +2,7 @@
     "id": "f8da6822-2706-4aef-8b6b-8a089ae3facf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "proxy_vet_blink_gp_attack",
+    "name": "proxy_bait_blink_gp_attack",
     "eventList": [
         {
             "id": "ce87b341-5215-4d41-9065-9b5c1136849c",
@@ -53,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "4515df03-13dc-4139-8c99-e930b078b0fa",
+    "spriteId": "321b0fc9-af9c-4c97-93df-085887b32976",
     "visible": true
 }

@@ -210,6 +210,8 @@ switch character
 	{
 		supersparkle_sprite=P1_saiyanaura 
 		sentinel_colour=c_purple
+		sprites[86]=Bait_3H_blinkjump_windup
+		sprites[87]=Bait_3H_blinkjump_windup //super version (to be changed)
 		sprites[84]=Bait_3H_spin
 		sprites[83]=Bait_3H_use_teleport
 		sprites[82]=Bait_3H_place_teleport

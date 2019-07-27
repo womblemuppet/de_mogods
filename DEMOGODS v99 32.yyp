@@ -2335,6 +2335,14 @@
             }
         },
         {
+            "Key": "5396010f-221d-48fe-8099-0593085a5420",
+            "Value": {
+                "id": "364bc1fa-c682-485d-8e85-7b5c57d522f1",
+                "resourcePath": "sprites\\Bait_3H_blinkjump_windup\\Bait_3H_blinkjump_windup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "53d11516-640d-4ea2-8113-6933b2e67759",
             "Value": {
                 "id": "c8f410db-63c6-4b0b-94e8-e788e3b01f99",
@@ -7386,7 +7394,7 @@
             "Key": "f8da6822-2706-4aef-8b6b-8a089ae3facf",
             "Value": {
                 "id": "f4669a39-2ea1-406e-b88f-dc5c759c4038",
-                "resourcePath": "objects\\proxy_vet_blink_gp_attack\\proxy_vet_blink_gp_attack.yy",
+                "resourcePath": "objects\\proxy_bait_blink_gp_attack\\proxy_bait_blink_gp_attack.yy",
                 "resourceType": "GMObject"
             }
         },
