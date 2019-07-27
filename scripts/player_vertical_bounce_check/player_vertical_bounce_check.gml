@@ -4,7 +4,7 @@ if canbounce_counter>0 && abs(hspd)>4 && abs(vspd)>6   //if bounce enabled, and 
 	{
 		if canbounce_counter>MAX_CANBOUNCE_COUNTER
 			canbounce_counter=MAX_CANBOUNCE_COUNTER
-		vspd=clamp(-BOUNCE_MIN_VELOCITY,-abs(vspd),-BOUNCE_MAX_VELOCITY)
+		vspd=clamp(-BOUNCE_MIN_VELOCITY,-abs(vspd),-BOUNCE_VERTICAL_VELOCITY)
 		if !place_meeting(x,y-1,block)
 			y-=1
 	}

@@ -21,16 +21,14 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 			canbounce_show_bounced_effect_counter=CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME
 			if abs(hspd)<1
 			{
-				hspd=-sgn*BOUNCE_MIN_VELOCITY
+				hspd=-sgn*BOUNCE_HORIZONTAL_MINOR_VELOCITY
 				//show_debug_message("bounced min")
 			}
 			else
 			{
-				hspd=-sgn*10
+				hspd=-sgn*BOUNCE_HORIZONTAL_VELOCITY
 				//show_debug_message("bounced max")
 			}
-			//hspd=clamp(sgn*BOUNCE_MIN_VELOCITY,sgn*hspd,sgn*BOUNCE_MAX_VELOCITY)
-			//show_message("bounce, go left! hspd is:"+string(hspd))
 		}
 	
 		for (var i=0; i<abs(hspd); i+=1)
