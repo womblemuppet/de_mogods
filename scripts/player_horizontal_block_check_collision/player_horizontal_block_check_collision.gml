@@ -17,8 +17,8 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 		{
 
 			bounced=true
-			if canbounce_counter>MAX_CANBOUNCE_COUNTER
-				canbounce_counter=MAX_CANBOUNCE_COUNTER
+			canbounce_counter=0
+			canbounce_show_bounced_effect_counter=CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME
 			if abs(hspd)<1
 			{
 				hspd=-sgn*BOUNCE_MIN_VELOCITY

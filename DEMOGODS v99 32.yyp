@@ -5031,6 +5031,14 @@
             }
         },
         {
+            "Key": "a7de8f10-9822-4381-ac1a-34e8b03bacd5",
+            "Value": {
+                "id": "eb5fe1a3-241a-4a98-82fb-7c7e039f7dac",
+                "resourcePath": "sprites\\bounce_bouncing_effect\\bounce_bouncing_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a87ab99b-53d5-4f8a-974a-5a6b6576019f",
             "Value": {
                 "id": "71185b80-c7ae-4d55-b357-2d61276ba11c",
