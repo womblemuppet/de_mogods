@@ -3,7 +3,7 @@ if crab_being_held!=-1 && crab_being_held!=noone && crab_being_held!=undefined /
     if instance_exists(crab_being_held)
     {
         var a;
-        a=instance_create(x,y,crabjectile)
+        a=instance_create(x,y+20,crabjectile)
         a.creator=self.id
         a.sprite_index=crab_being_held.thrown_sprite
         a.squish_sprite=crab_being_held.squish_sprite
