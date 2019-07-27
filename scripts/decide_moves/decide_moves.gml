@@ -68,7 +68,7 @@ switch (character)
 	uniques_parachute_enabled=true
 	uniques_mines_enabled=true
 	uniques_sticky_mine_enabled=true
-	mines_ammo=2   ///starting mines
+	mines_ammo=3   ///starting mines
 	uniques_vet_dig_enabled=true
 	super_mode_duration=1000
     

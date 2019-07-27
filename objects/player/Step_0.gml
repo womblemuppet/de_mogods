@@ -1076,7 +1076,7 @@ player_set_friction()
 
 if uniques_vet_digging==2
 {
-	if checkkey_pushed(heavybutton) && mines_ammo>0 && uniques_drill_mine_place_animation_lock==false
+	if checkkey_pushed(heavybutton) && mines_ammo-instance_number(drillmine) >0 && uniques_drill_mine_place_animation_lock==false
 	{
 		uniques_drill_mine_place_animation_lock=true
 		sprite_index=sprites[92]
@@ -1085,7 +1085,7 @@ if uniques_vet_digging==2
 		var a;
 		a=instance_create_depth(x,y,-1,drillmine)
 		a.creator=self.id
-		
+		mines_ammo-=1
 	}
 	
 	
