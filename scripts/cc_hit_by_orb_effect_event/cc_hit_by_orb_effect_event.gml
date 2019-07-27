@@ -2,13 +2,14 @@ var victim = argument0
 
 with combo_text_controller
 {
-	show_message("player hit by orb effect test, victim.P = "+string(victim.P)+" lastgothittimer = "+string(last_got_hit_timer[victim.P])+" lastgothitby = "+string(last_got_hit_by[victim.P]))
 	if !instance_exists(victim)
 	exit
-	
+
 	if last_got_hit_by[victim.P]==noone
 	exit
-	
+
+	show_debug_message("player hit by orb effect test, victim.P = "+string(victim.P)+" lastgothittimer = "+string(last_got_hit_timer[victim.P])+" lastgothitby = "+string(last_got_hit_by[victim.P]))
+
 	var attacker = last_got_hit_by[victim.P];
 	
 	
