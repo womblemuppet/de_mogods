@@ -21,6 +21,7 @@ uniques_whirlwind_active=false
 uniques_sharkattack_lockdown=0
 uniques_drill_mine_place_animation_lock=false
 uniques_dashgpblinkattack_lockdown=0
+uniques_slam_airgrab_slam_lockdown=0
 
 if uniques_vet_dig_enabled
 {
