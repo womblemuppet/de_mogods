@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "0fb138d8-4077-4d14-9ea7-4f373de96c6c",
+            "Value": {
+                "id": "777cd16b-9ba2-49ce-98f9-7ffd603772f1",
+                "resourcePath": "sprites\\Bait_3H_idle_super_mode\\Bait_3H_idle_super_mode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "104471d5-5053-44ed-a05a-dc1c472f7ea8",
             "Value": {
                 "id": "07068f9d-20ec-4d36-8ce6-414f2d7e59e4",
@@ -636,6 +644,14 @@
                 "id": "9cfdbb5c-f852-49ad-ac9f-0cfbe2786d2f",
                 "resourcePath": "views\\137c6f79-ac50-4ad7-ace0-1e9890ea0c03.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "13ce7d36-3e46-4d02-87ec-e5716d2be98f",
+            "Value": {
+                "id": "76566fdd-3e76-48d6-b5d1-f1f1b4bcc253",
+                "resourcePath": "sprites\\Ooga_4H_airgrab_slam_down\\Ooga_4H_airgrab_slam_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5495,6 +5511,14 @@
             }
         },
         {
+            "Key": "b492ef20-1839-45b0-9432-62c7317fdfac",
+            "Value": {
+                "id": "8311815d-960c-4866-913e-b2fd266a6ef3",
+                "resourcePath": "sprites\\Bait_3H_run_super_mode\\Bait_3H_run_super_mode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b499c007-96e3-41a8-8949-a5b186cacdbc",
             "Value": {
                 "id": "7c850300-e201-4574-9d92-60121d772205",
@@ -5987,6 +6011,14 @@
             "Value": {
                 "id": "8a95e41e-1a97-4ce6-9303-5015e1c56c5c",
                 "resourcePath": "sprites\\character_titles_spr\\character_titles_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c33dab78-d7d5-4182-96e8-bd900b2364c5",
+            "Value": {
+                "id": "bd6c515a-849e-4bda-8ebc-e297ec10cdbf",
+                "resourcePath": "sprites\\armoured_get_hit_spr\\armoured_get_hit_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7531,6 +7563,14 @@
             "Value": {
                 "id": "52033a0d-fb94-4901-9a40-03f6b405d6e8",
                 "resourcePath": "sprites\\icicle_sprite_attached\\icicle_sprite_attached.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f1d25513-83e0-4e3a-a393-f0f2a9475f97",
+            "Value": {
+                "id": "9d97993b-8ff8-4cf3-b117-e66af20cbe48",
+                "resourcePath": "sprites\\uga_airgrab_slam_fake_hitbox\\uga_airgrab_slam_fake_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },

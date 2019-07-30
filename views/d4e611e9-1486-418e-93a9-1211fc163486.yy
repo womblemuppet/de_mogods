@@ -30,7 +30,8 @@
         "12a534ba-7e27-4954-a5bd-77c831b91f76",
         "204d6501-427e-42d2-be7c-a856d48188b2",
         "afb0f973-2528-48b7-9640-13c958441912",
-        "ca13a4d0-de32-4c7d-9e0c-b1ab5b68c456"
+        "ca13a4d0-de32-4c7d-9e0c-b1ab5b68c456",
+        "c33dab78-d7d5-4182-96e8-bd900b2364c5"
     ],
     "filterType": "GMSprite",
     "folderName": "player",

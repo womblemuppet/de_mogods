@@ -34,6 +34,10 @@ switch character
 				sprites[30]=Ooga_4H_rocketjump_charge
 				sprites[31]=Ooga_U_rocketjump_charge
 				sprites[33]=Ooga_rjump_effect_spr
+				sprites[34]=Ooga_4H_airgrab_slam
+				sprites[35]=Ooga_4H_airgrab_slam //super version (to be changed)
+				sprites[36]=Ooga_4H_airgrab_slam_down
+				sprites[37]=Ooga_4H_airgrab_slam_down //super version (to be changed)
 				sprites[42]=Ooga_death_by_acid
 				sprites[41]=Ooga_death_by_zap
 				sprites[40]=Ooga_death_by_ice
@@ -243,8 +247,8 @@ switch character
 		sprites[5]=Bait_3H_gpfall
 		sprites[6]=Ooga_pal1_ult_actiavte
 		sprites[7]=Bait_3H_gpfall  //super version
-		sprites[8]=Bait_3H_run  //super version
-		sprites[9]=Bait_3H_idle  //super version
+		sprites[8]=Bait_3H_run_super_mode  //super version
+		sprites[9]=Bait_3H_idle_super_mode  //super version
 		sprites[10]=Bait_3H_jump  //super version
 		sprites[11]=Bait_3H_air  //super version
 		sprites[12]=Bait_3H_fall      //super version          

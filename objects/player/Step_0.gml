@@ -59,8 +59,27 @@ player_counters()
 ///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB THROW EVENT
 if airgrab_mode==2 && airgrab_decidedir_time>0
 {
-	if instance_exists(airgrab_target) && airgrab_target!=-1    /// position grabbed target infront of character
+	if instance_exists(airgrab_target) && airgrab_target!=noone    /// position grabbed target infront of character
 	{
+		if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==0 && checkkey(dashbutton) && checkkey(downbutton)
+		{///UGA unique airgrab slam
+			uniques_slam_airgrab_slam_lockdown=1
+			sprite_index=sprites[34]
+			if super_mode
+				sprite_index=sprites[35]
+			image_index=0
+			image_speed=0.2
+			uniques_slam_airgrab_target=airgrab_target
+			uniques_slam_airgrab_target.x=x
+			uniques_slam_airgrab_target.y=y
+			
+			airgrab_decidedir_time=0
+			airgrab_target=noone
+			airgrab_decidedir_time=0
+			
+		}
+		
+		
 		var tx,ty,steps_to_try_move;
 		steps_to_try_move=8
 		if right
@@ -111,7 +130,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 		switch attacks[? "air grab effect"]
 		{
 			case "standard_airgrab_effect":
-			if instance_exists(airgrab_target) && airgrab_target!=-1   ///if airgrab target exists, apply throw
+			if instance_exists(airgrab_target) && airgrab_target!=noone   ///if airgrab target exists, apply throw
 			{
                 
 				var throwside;   ///whether throwing left or right, to be passed to airgrab target
@@ -167,10 +186,15 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 {
 	airgrab_mode=0   ///reset airgrab antispam penalty
 	
+	if uniques_slam_airgrab_slam_enabled
+	{
+		uniques_slam_airgrab_slam_lockdown=0
+		player_set_idle()
+	}
+	
 	if uniques_whirlwind_active
 	{
 		iframes=1
-		//attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,gain meter on hit,attack name,sprite,image speed,active steps,hkb,vkb)
 		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
 		
 		if right
@@ -562,6 +586,7 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 	{
 		switch attacks[? "air light attack"]
 		{
+			
 			case "standard_airgrab":
 			airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 

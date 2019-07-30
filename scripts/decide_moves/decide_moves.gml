@@ -43,6 +43,7 @@ switch (character)
 	ground_pound_freeze_time-=4
 	uniques_uga_delayable_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
+	uniques_slam_airgrab_slam_enabled=true
 	super_mode_duration=1000
 
 	break;

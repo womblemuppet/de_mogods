@@ -135,6 +135,11 @@ uniques_uga_delayable_gp_enabled=false
 GROUND_POUND_EXTRA_DELAY_MAX=40
 ground_pound_extra_delay_counter=0
 
+//UGA AIRGRAB SLAM
+uniques_slam_airgrab_slam_enabled=false
+uniques_slam_airgrab_slam_lockdown=0 //0 can do 1 freeze 2 slamming down
+uniques_slam_airgrab_target=noone
+UNIQUES_SLAM_AIRGRAB_VSPD=8
 
 //OOGA FPUNCH
 fpunch_cd_counter=0

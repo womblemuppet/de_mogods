@@ -1,5 +1,8 @@
 if armouredframes>0
+{
+	effect_aniend(armoured_get_hit_spr,0.2,-1)
 	exit
+}
 
 var hknockback,vknockback;
 hknockback=argument0   ///knockback hspeed
