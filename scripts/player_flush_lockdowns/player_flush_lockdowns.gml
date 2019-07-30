@@ -32,6 +32,19 @@ if uniques_vet_dig_enabled
 	
 }
 
+if airgrab_target!=noone
+{
+	if instance_exists(airgrab_target)
+	{
+		with airgrab_target
+		{
+			if airgrab_mode=="being_airgrabbed"
+				airgrab_mode="cannot_airgrab"
+		}
+	}
+	airgrab_target=noone
+}
+
 player_set_idle()
 
 

@@ -73,9 +73,16 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 			uniques_slam_airgrab_target.x=x
 			uniques_slam_airgrab_target.y=y
 			
+			with airgrab_target
+			{
+				stunned=25
+				vspd=-2
+				airgrab_mode="cannot_airgrab"
+			}
+				
 			airgrab_decidedir_time=0
 			airgrab_target=noone
-			airgrab_decidedir_time=0
+
 			
 		}
 		
@@ -149,7 +156,6 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					else
 						hspd=-7.5
 					vspd=18
-                    
 					hothands+=1                         //// ONE HH DAMAGE
 					player_hothands_check()
 				}
@@ -157,6 +163,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 			}
 			
 			airgrab_mode="cannot_airgrab"
+			airgrab_target=noone
 			vspd=-1                                                                 break;
 			case -1:
 			/*nandemonai*/                                                          break;
@@ -517,7 +524,6 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			fpunch_feet_counter=0
 			fpunch_has_made_hitbox=false
 			break;
-            
             
 			case "vet_armspin":
 			image_speed=FRAME_SPEED_FAST
