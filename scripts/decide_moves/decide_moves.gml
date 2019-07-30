@@ -93,7 +93,6 @@ switch (character)
 	//not set
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
-	uniques_airdash_resets_jump=true
 	super_mode_duration=1000
 	break;
 

@@ -1,5 +1,5 @@
 //////////////* JUMP EVENT *///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if stunned_groundpound<1 && player_not_locked_down() && airgrab_mode!=2 && airgrab_mode!=4 && cripple_debuff_counter<1 
+if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1 
 {
 	var set_jump_sprites;
 	set_jump_sprites=false  

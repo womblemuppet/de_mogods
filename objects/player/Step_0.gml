@@ -143,7 +143,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 					player_flush_lockdowns()
 					canbounce_counter=at
 					stunned_groundpound=at
-					airgrab_mode=3
+					airgrab_mode=4
 					if throwside==true
 						hspd=7.5
 					else
@@ -186,7 +186,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 {
 	airgrab_mode=0   ///reset airgrab antispam penalty
 	
-	if uniques_slam_airgrab_slam_enabled
+	if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==2
 	{
 		uniques_slam_airgrab_slam_lockdown=0
 		player_set_idle()
@@ -1050,11 +1050,18 @@ if dash_rocket_jump==1
 	}
 }
 
-
+if uniques_phase_counter>0
+{
+	if player_can_phase()
+	{
+		//phase stuff
+		
+	}
+}
 
 
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
-player_turn_right_or_left()
+player_special_case_turn_right_or_left()
 
 
 player_handle_move_right_or_left()

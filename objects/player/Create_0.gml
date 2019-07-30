@@ -195,6 +195,10 @@ uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontal
 //VETERAN MINES
 mines_ammo=0
 
+//SLINGER PHASE
+uniques_phase_counter=0
+UNIQUES_SLINGER_TIME_IN_PHASE=275 
+
 //SLINGER SUNBLAST
 uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
 uniques_sunblast_cd_counter=0
@@ -204,9 +208,6 @@ uniques_sunblast_has_made_hitbox=false
 //SLINGER AIRBOLT
 uniques_airbolt_lockdown=0
 uniques_airbolt_has_made_hitbox=false
-
-//SLINGER AIRDASH RESET
-uniques_airdash_resets_jump=false
 
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150

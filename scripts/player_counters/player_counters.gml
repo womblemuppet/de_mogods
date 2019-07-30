@@ -211,7 +211,14 @@ if uniques_baitchain_last_chained_timer>0
 	if uniques_baitchain_last_chained_timer==0
 		uniques_baitchain_last_chained=noone
 }
-
+if uniques_phase_counter>0
+{
+	uniques_phase_counter-=1
+	if uniques_phase_counter==0
+	{
+		attack_slinger_phase_cancelled()
+	}
+}
 
 
 if iframes>0

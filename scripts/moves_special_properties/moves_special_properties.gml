@@ -89,33 +89,15 @@ switch argument0
 	{
 		canbounce_counter=40
 	} break;
-	case "uga_air_slam"
+	case "uga_air_slam":
 		canbounce_counter=25
-	break;
-	case "slingerjumpresetdash" :
-	{
-		if attacker!=noone
-		{
-			if groundcheck==noone
-			{
-				other.creator.doublejump=1
-				other.creator.doublejumptimer=DOUBLEJUMPTIME*3
-				effect_aniend(spr_slinger_reset_jump,0.1,-2)
-			}
-		}
-	} 
 	break;
 	case "slingeruppercut" :
 	{
 		if attacker!=noone
 		{
-			with other.creator
-			{
-				if checkkey(lightbutton)
-				{
-				effect_create_above(ef_firework,x,y,c_green,2)
-				}
-			}
+			with attacker
+				attack_slinger_enter_phase()
 		}
 	}   
 	break;

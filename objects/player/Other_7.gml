@@ -43,7 +43,7 @@ else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash or push
 {
 	player_set_idle()
 }
-else if sprite_index==sprites[34] || sprite_index==sprites[35]
+else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab slam
 {
 	uniques_slam_airgrab_slam_lockdown=2
 	sprite_index=sprites[36]

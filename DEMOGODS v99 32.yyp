@@ -1383,6 +1383,14 @@
             }
         },
         {
+            "Key": "2deb9680-572b-49e5-8a6e-bb6920ba7924",
+            "Value": {
+                "id": "7c5b57ae-d247-4cc9-b4ae-155fa87d5d70",
+                "resourcePath": "scripts\\attack_slinger_phase_cancelled\\attack_slinger_phase_cancelled.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
             "Value": {
                 "id": "06961f10-4a3b-495f-a3c7-cccec9b283c3",
@@ -4927,6 +4935,14 @@
             }
         },
         {
+            "Key": "a1657ff5-6d48-4f17-9e40-e832ec54d84c",
+            "Value": {
+                "id": "85cbc56b-5d15-4393-a7b8-ddbc61b85ae3",
+                "resourcePath": "scripts\\player_can_phase\\player_can_phase.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a171ba72-b8f1-42e9-9560-99f2bcd788e3",
             "Value": {
                 "id": "95a443bf-0d7e-43e9-9be4-bb8cacc0c61e",
@@ -5596,6 +5612,14 @@
                 "id": "faa07a86-b585-4cb2-aa6a-13072267c4fa",
                 "resourcePath": "sprites\\Bait_3H_air\\Bait_3H_air.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b657bdf7-b7fd-47f8-844c-f170f74cacde",
+            "Value": {
+                "id": "1f621bfc-2fcf-49ad-9bb9-fad815b167bb",
+                "resourcePath": "scripts\\attack_slinger_enter_phase\\attack_slinger_enter_phase.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6506,7 +6530,7 @@
             "Key": "d1063aa1-90c3-48ad-92dd-69dc3a9e9b3b",
             "Value": {
                 "id": "68d73dfc-3653-4d31-8e22-ef9a7857811c",
-                "resourcePath": "scripts\\player_turn_right_or_left\\player_turn_right_or_left.yy",
+                "resourcePath": "scripts\\player_special_case_turn_right_or_left\\player_special_case_turn_right_or_left.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7962,6 +7986,9 @@
         "48b4d9a1-4239-4fb1-9ed3-f0faa4b172bf",
         "353a867e-8cc9-4c04-843b-334f14b56d9c",
         "4ed56efa-0618-4f87-95cd-ef18be167773",
+        "a1657ff5-6d48-4f17-9e40-e832ec54d84c",
+        "b657bdf7-b7fd-47f8-844c-f170f74cacde",
+        "2deb9680-572b-49e5-8a6e-bb6920ba7924",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
         "be076a66-7e3d-48cc-b375-fed62a475709",
