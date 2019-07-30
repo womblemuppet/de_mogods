@@ -236,7 +236,7 @@ UNIQUES_SHARKATTACK_COOLDOWN=50
 uniques_honeybadger_enabled=false
 
 // AIRGRAB
-airgrab_mode=0   ///0 = can airgrab 1 = has shot grab 2=grab in progress 3=target thrown 4=being grabbed atm   progress of airgrab
+airgrab_mode="can_airgrab"   ///"can_airgrab" "attempting" "is_grabbing" "cannot_airgrab" "being_airgrabbed"
 airgrab_decidedir_time=0
 AIRGRAB_TIME_TO_DECIDE=30
 airgrab_target=-1

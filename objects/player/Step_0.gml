@@ -57,7 +57,7 @@ player_counters()
 
 
 ///////////////////////////////////////////////////////////////////////////////       (during airgrab throw && the throw event itself)                    AIRGRAB THROW EVENT
-if airgrab_mode==2 && airgrab_decidedir_time>0
+if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 {
 	if instance_exists(airgrab_target) && airgrab_target!=noone    /// position grabbed target infront of character
 	{
@@ -143,7 +143,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 					player_flush_lockdowns()
 					canbounce_counter=at
 					stunned_groundpound=at
-					airgrab_mode=4
+					airgrab_mode="cannot_airgrab"
 					if throwside==true
 						hspd=7.5
 					else
@@ -156,7 +156,7 @@ if airgrab_mode==2 && airgrab_decidedir_time>0
 				hothands=0                              //// RESETS THROWERS HH
 			}
 			
-			airgrab_mode=3
+			airgrab_mode="cannot_airgrab"
 			vspd=-1                                                                 break;
 			case -1:
 			/*nandemonai*/                                                          break;
@@ -184,7 +184,7 @@ player_set_gravity()
 
 if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downward block collision  (don't count as landed if launching rocket jump)
 {
-	airgrab_mode=0   ///reset airgrab antispam penalty
+	airgrab_mode="can_airgrab"   ///reset airgrab antispam penalty
 	
 	if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==2
 	{
@@ -588,7 +588,7 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 		{
 			
 			case "standard_airgrab":
-			airgrab_mode=1   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
+			airgrab_mode="attempting"   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 
 			aim_octilinear()
 			var xx,yy;
@@ -1063,7 +1063,6 @@ if uniques_phase_counter>0
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
 player_special_case_turn_right_or_left()
 
-
 player_handle_move_right_or_left()
 
 player_handle_jump()
@@ -1090,7 +1089,7 @@ attack_shooting_animation_checks()
 
 
 //LIMIT VSPD
-if vspd>10 && cangroundpound!=2 && airgrab_mode!=4
+if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed"
 	vspd=10
 player_move_vertical()
 

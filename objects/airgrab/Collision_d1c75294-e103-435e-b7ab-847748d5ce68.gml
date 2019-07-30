@@ -9,7 +9,7 @@ if other!=creator
 		grabbed=other
 		with creator
 		{
-			airgrab_mode=2
+			airgrab_mode="is_grabbing"
 			hspd=0
 			vspd=0
 			airgrab_decidedir_time=AIRGRAB_TIME_TO_DECIDE
@@ -20,7 +20,7 @@ if other!=creator
 			player_flush_lockdowns()
 			hspd=0
 			vspd=0
-			airgrab_mode=4
+			airgrab_mode="being_airgrabbed"
 		}
 		instance_destroy()
 	}
