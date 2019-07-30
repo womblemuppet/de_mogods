@@ -88,7 +88,10 @@ switch argument0
 	else
 	{
 		canbounce_counter=40
-	}
+	} break;
+	case "uga_air_slam"
+		canbounce_counter=25
+	break;
 	case "slingerjumpresetdash" :
 	{
 		if attacker!=noone
