@@ -113,6 +113,7 @@ BOUNCE_HORIZONTAL_VELOCITY=12
 BOUNCE_HORIZONTAL_MINOR_VELOCITY=1
 BOUNCE_VERTICAL_VELOCITY=6  //positive
 iframes=0 //cant be hit while this is >0
+armouredframes=0  //can't be knocked back during this time
 FRAME_SPEED_NORMAL=0.2
 FRAME_SPEED_FAST=0.4
 FRAME_SPEED_SLOW=0.1
@@ -121,7 +122,7 @@ image_speed=FRAME_SPEED_NORMAL
 has_made_splash_effect=false
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-running_startup_frames=0   ///number of startup frames in running animation (eg for ooga)
+running_startup_frames=0   ///number of startup frames in running animation (currently only implemented with uga)
 dash_attacks_allowed_counter=0
 uniques_mines_enabled=false
 uniques_gpcombo_cripples_enabled=false
@@ -224,6 +225,9 @@ uniques_sharkattack_has_made_hitbox=false
 uniques_sharkattack_feet_counter=-1
 uniques_sharkattack_cd_counter=0
 UNIQUES_SHARKATTACK_COOLDOWN=50
+
+//BAIT SUPER MODE
+uniques_honeybadger_enabled=false
 
 // AIRGRAB
 airgrab_mode=0   ///0 = can airgrab 1 = has shot grab 2=grab in progress 3=target thrown 4=being grabbed atm   progress of airgrab

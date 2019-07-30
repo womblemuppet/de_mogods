@@ -1,3 +1,6 @@
+if armouredframes>0
+	exit
+
 var hknockback,vknockback;
 hknockback=argument0   ///knockback hspeed
 vknockback=argument1

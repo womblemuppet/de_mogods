@@ -79,7 +79,6 @@ if super_mode_time_remaining>0
 	super_mode_time_remaining-=1
 	if super_mode_time_remaining==0 ///ran out of ult time
 	{
-		
 		player_end_super_mode()
 	}
 }

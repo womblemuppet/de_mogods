@@ -8,7 +8,7 @@ with combo_text_controller
 	if last_got_hit_by[victim.P]==noone
 	exit
 
-	show_debug_message("player hit by orb effect test, victim.P = "+string(victim.P)+" lastgothittimer = "+string(last_got_hit_timer[victim.P])+" lastgothitby = "+string(last_got_hit_by[victim.P]))
+	show_debug_message("player hit by orb effect test, victim.P = "+string(victim.P)+" lastgothittimer = "+string(last_got_hit_timer[victim.P])+" lastgothitby = "+string(last_got_hit_by[victim.P])+"last_got_hit_by[victim.P].hh = "+string(last_got_hit_by[victim.P].hothands))
 
 	var attacker = last_got_hit_by[victim.P];
 	

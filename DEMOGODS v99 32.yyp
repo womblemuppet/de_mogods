@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "127f34a2-f10c-4cd7-b9c5-1637acc29e04",
+            "Value": {
+                "id": "6b250220-d6a3-4a92-bb7a-86156e4a4a43",
+                "resourcePath": "sprites\\Vet_3H_idle_bomber\\Vet_3H_idle_bomber.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "127f7518-b74e-4806-a523-2f7c4c1e132b",
             "Value": {
                 "id": "8e83680a-b60c-42bc-8b83-f7f506d53b70",
@@ -1683,6 +1691,14 @@
             "Value": {
                 "id": "94a7c292-8f5d-4738-be8e-21dae18d1cb7",
                 "resourcePath": "sprites\\gunny11\\gunny11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b2cbebc-d2fb-4049-b9e6-91d354bf2a3f",
+            "Value": {
+                "id": "80fa3022-9e25-4411-85b0-b615b7995097",
+                "resourcePath": "sprites\\fbindicatorsprite_blue\\fbindicatorsprite_blue.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3535,6 +3551,14 @@
             }
         },
         {
+            "Key": "77cb615e-faaf-4c0c-af0a-b7fcab985a7e",
+            "Value": {
+                "id": "39e4da1e-6246-4a62-9f62-eea985b07021",
+                "resourcePath": "sprites\\fbindicatorsprite_red\\fbindicatorsprite_red.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "77cfa80d-3722-414e-8cb3-060f69c6c6dd",
             "Value": {
                 "id": "23c0ac65-64c1-4624-974b-29d1d865b96c",
@@ -4687,6 +4711,14 @@
             }
         },
         {
+            "Key": "9b5d60de-fbb9-44e4-8f0a-17eb40816811",
+            "Value": {
+                "id": "147a753d-99de-4ac8-a14b-7787f9f4f841",
+                "resourcePath": "sprites\\Slinger_3H_run_phase\\Slinger_3H_run_phase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9b80de3c-aa05-4563-93ce-ddcd33cd47de",
             "Value": {
                 "id": "c5b86a0b-3d36-48a8-b705-90b0fa05d468",
@@ -5311,6 +5343,14 @@
             }
         },
         {
+            "Key": "afb8f9ac-5bf3-4e18-83ba-b67d926cb9c0",
+            "Value": {
+                "id": "1acc9908-a74c-4c3d-953e-db482c83cffe",
+                "resourcePath": "sprites\\Vet_3H_run_bomber\\Vet_3H_run_bomber.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "affa4410-70e5-402a-9ad4-4af460962f23",
             "Value": {
                 "id": "c138d2a7-3083-434a-8e04-dc78fdf7d5ed",
@@ -5907,6 +5947,14 @@
             "Value": {
                 "id": "b89540e2-6980-41a1-872c-5ae7f4f0929b",
                 "resourcePath": "sprites\\avatar_walk_left\\avatar_walk_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c2b6daba-e1c3-4185-bac1-a06ba6b510eb",
+            "Value": {
+                "id": "e0431cf5-da46-4d84-bddb-cb813fb585da",
+                "resourcePath": "sprites\\Ooga_4H_airgrab_slam\\Ooga_4H_airgrab_slam.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7383,6 +7431,14 @@
             }
         },
         {
+            "Key": "ef670d7b-0304-4f95-9e41-a7679373b2e1",
+            "Value": {
+                "id": "38309dc9-921c-45b8-8841-b186940c6a36",
+                "resourcePath": "sprites\\Slinger_3H_idle_phase\\Slinger_3H_idle_phase.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ef72aab2-90f1-416c-b8db-5d987a08ab68",
             "Value": {
                 "id": "9886fc28-bf74-47b3-a862-df34a7c290cb",
@@ -7563,6 +7619,14 @@
             "Value": {
                 "id": "8fc7b4ed-4128-4f77-a62b-abd61a9c598c",
                 "resourcePath": "sprites\\lava3\\lava3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f61bc27c-d726-483b-9ebd-43dd1c2854f4",
+            "Value": {
+                "id": "49b12469-cd61-4b7a-b7b0-10f80af30c24",
+                "resourcePath": "sprites\\Slinger_3H_superattack\\Slinger_3H_superattack.yy",
                 "resourceType": "GMSprite"
             }
         },
