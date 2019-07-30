@@ -75,9 +75,8 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 			
 			with airgrab_target
 			{
-				stunned=25
-				vspd=-2
-				airgrab_mode="cannot_airgrab"
+				vspd=0
+				hspd=0
 			}
 				
 			airgrab_decidedir_time=0

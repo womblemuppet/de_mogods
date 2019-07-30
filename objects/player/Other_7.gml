@@ -54,7 +54,11 @@ else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab s
 	var target_P
 	target_P=undefined
 	if instance_exists(uniques_slam_airgrab_target) && uniques_slam_airgrab_target!=noone
+	{
+		if uniques_slam_airgrab_target.airgrab_mode=="being_airgrabbed"
+		uniques_slam_airgrab_target.airgrab_mode="cannot_airgrab"
 		target_P=uniques_slam_airgrab_target.P
+	}
 	with attack_create_hitbox(20,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.0002,99,0,UNIQUES_SLAM_AIRGRAB_VSPD)
 	{
 		for (var i=0;i<kouchou.MAX_PLAYER_COUNT;i++)
@@ -64,6 +68,7 @@ else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab s
 		if target_P!=undefined
 			hit[target_P]=false
 	}
+	uniques_slam_airgrab_target=noone
 }
 else if sprite_index==sprites[32]   ///vet place mine
 {

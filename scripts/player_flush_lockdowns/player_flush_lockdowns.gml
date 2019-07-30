@@ -45,6 +45,18 @@ if airgrab_target!=noone
 	}
 	airgrab_target=noone
 }
+if uniques_slam_airgrab_target!=noone
+{
+	if instance_exists(uniques_slam_airgrab_target)
+	{
+		with uniques_slam_airgrab_target
+		{
+			if airgrab_mode=="being_airgrabbed"
+				airgrab_mode="cannot_airgrab"
+		}
+	}
+	uniques_slam_airgrab_target=noone
+}
 
 player_set_idle()
 
