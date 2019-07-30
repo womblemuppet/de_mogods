@@ -14,11 +14,12 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 			if instance_exists(other.hit_collector)
 				other.hit_collector.hit[P]=true
 		}
-		if attack_should_crush(other.attack_name)
-			exit
-		player_generic_knockback(other.my_hknockback,other.my_vknockback)
-		player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
-		moves_special_properties(other.attack_name)
+		if !attack_should_crush(other.attack_name) && iframes<1
+		{
+			player_generic_knockback(other.my_hknockback,other.my_vknockback)
+			player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
+			moves_special_properties(other.attack_name)
+		}
 	}
 	//if other.hit[P]==false && other.creator==self.id   ///hit by own attack
 	//{

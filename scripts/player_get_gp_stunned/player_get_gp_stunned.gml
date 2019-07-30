@@ -2,6 +2,13 @@
 	player_get_gp_stunned(stun amount)
 	use whole numbers for stun amount, non-integer stun amounts will never count to 0
 */
+
+if armouredframes>0
+{
+	effect_aniend(armoured_get_hit_spr,0.2,-4)
+	exit
+}
+
 hspd=0
 stunned=0
 stunned_groundpound=argument0 

@@ -200,7 +200,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	
 	if uniques_whirlwind_active
 	{
-		iframes=1
+		iframes+=1
 		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
 		
 		if right

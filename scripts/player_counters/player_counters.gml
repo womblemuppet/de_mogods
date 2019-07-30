@@ -223,4 +223,7 @@ if uniques_phase_counter>0
 
 if iframes>0
 	iframes-=1
+	
+if armouredframes>0
+	armouredframes-=1
 

@@ -1,3 +1,9 @@
+if armouredframes>0
+{
+	effect_aniend(armoured_get_hit_spr,0.2,-4)
+	exit
+}
+
 var stun_amount,hknockback,vknockback,airmulti,airvmulti,aircheck1;
 stun_amount=argument0   ///time to be stunned
 hknockback=argument1   ///knockback hspeed
