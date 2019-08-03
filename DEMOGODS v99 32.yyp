@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "17366ead-6abf-48e2-95b6-cc0a51813cce",
+            "Value": {
+                "id": "3d9d5279-1422-473f-b8dd-a3a7d12f67bb",
+                "resourcePath": "scripts\\attack_slinger_phase_move\\attack_slinger_phase_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1789d35a-efed-4a11-9cd4-a4d8a8c68851",
             "Value": {
                 "id": "00ebf0a4-50a2-4031-8cf4-616a934b465a",
@@ -7989,6 +7997,7 @@
         "a1657ff5-6d48-4f17-9e40-e832ec54d84c",
         "b657bdf7-b7fd-47f8-844c-f170f74cacde",
         "2deb9680-572b-49e5-8a6e-bb6920ba7924",
+        "17366ead-6abf-48e2-95b6-cc0a51813cce",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
         "be076a66-7e3d-48cc-b375-fed62a475709",

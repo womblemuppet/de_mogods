@@ -694,11 +694,34 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 	}
 }
 
-var rocketjumped;
+var rocketjumped,nodashmoves;
 rocketjumped=false
+nodashmoves=false
 
 
-if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )  ///[finaledit] could happen with counters to free up check, optimisation.
+
+if uniques_phase_counter>0
+{
+	if player_can_phase()
+	{
+		if checkkey_pushed(dashbutton)
+		{
+			if checkkey(upbutton)
+			{
+				attack_slinger_phase_move("up")
+				nodashmoves=true
+			}
+			else if checkkey(downbutton) && groundcheck==noone
+			{
+				attack_slinger_phase_move("down")
+				nodashmoves=true
+			}
+		}
+	}
+}
+
+
+if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) ) && nodashmoves==false ///[finaledit] could happen with counters to free up check, optimisation.
 {
 	if (checkkey_pushed(upbutton) || rocket_jump_input_time_counter_from_jump>0) && !checkkey(downbutton)
 	{
@@ -722,13 +745,13 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 }
 
 
-if checkkey_pushed(dashbutton) && rocketjumped==false               /////////////////////////////////////                        events for    rocket jump, groundpound, and dash 
+if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false               /////////////////////////////////////                        events for groundpound, and dash 
 {
 	var exception;
 	exception=false
 
-	if !player_is_dashing() && groundcheck!=noone && checkkey(downbutton) && uniques_dashgpblinkattack_enabled && uniques_baitchain_last_chained!=noone
-	{
+	if uniques_dashgpblinkattack_enabled && !player_is_dashing() && groundcheck!=noone && checkkey(downbutton)  && uniques_baitchain_last_chained!=noone
+	{ 
 		uniques_dashgpblinkattack_lockdown=1
 		image_speed=0.2
 		image_index=0
@@ -1052,15 +1075,6 @@ if dash_rocket_jump==1
 			if dash_rocket_jump_charge!=0
 				attack_rocket_jump()
 		}
-	}
-}
-
-if uniques_phase_counter>0
-{
-	if player_can_phase()
-	{
-		//phase stuff
-		
 	}
 }
 

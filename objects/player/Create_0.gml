@@ -197,7 +197,9 @@ mines_ammo=0
 
 //SLINGER PHASE
 uniques_phase_counter=0
-UNIQUES_SLINGER_TIME_IN_PHASE=275 
+UNIQUES_SLINGER_TIME_IN_PHASE=100
+UNIQUES_SLINGER_PHASE_UP_DISTANCE=50
+UNIQUES_SLINGER_PHASE_DOWN_DISTANCE=80
 
 //SLINGER SUNBLAST
 uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
@@ -206,7 +208,7 @@ UNIQUES_SUNBLAST_COOLDOWN=80
 uniques_sunblast_has_made_hitbox=false
 
 //SLINGER AIRBOLT
-uniques_airbolt_lockdown=0
+uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
 
 //BAIT CHAIN
