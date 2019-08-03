@@ -219,7 +219,8 @@ if uniques_phase_counter>0
 		attack_slinger_phase_cancelled()
 	}
 }
-
+if float_counter>0
+	float_counter-=1
 
 if iframes>0
 	iframes-=1

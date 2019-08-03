@@ -231,7 +231,6 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 		{
 			effect_aniend(sunblast_blast_spr,0.2,-1)
 		}
-
 	}
 	uniques_sunblast_lockdown=2
 	uniques_sunblast_has_made_hitbox=true
@@ -247,25 +246,23 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 			a.image_xscale=-1
 		a.hspeed=7*a.image_xscale
 		a.vspeed=6
+		
+		float_counter=UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT
+		vspd=min(vspd,0)   //if falling, stop fall
 	}
-	
-	vspd=min(vspd,-2)
 	uniques_airbolt_lockdown=2
 	uniques_airbolt_has_made_hitbox=true
 }
 
 if uniques_sharkattack_lockdown==1 && image_index>3
 {
-
-
 	if uniques_sharkattack_has_made_hitbox==false 
 	{
 		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
 	} 
     
 	uniques_sharkattack_has_made_hitbox=true
-	uniques_sharkattack_lockdown=2
-            
+	uniques_sharkattack_lockdown=2         
 }
 
 

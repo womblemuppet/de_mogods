@@ -25,6 +25,7 @@ FRICTION=0.6
 AIR_FRICTION=0.2
 GRAVITY=0.35   //gravity while rising  
 GRAVITY_DOWN=0.65  //gravity while falling
+float_counter=0  //no gravity counter
 
 mild_slowed_counter=0   /// 'small' slow counter for time remaining
 MILD_SLOW_PERCENTAGE=0.5     ///speed timesed by this number
@@ -198,18 +199,21 @@ mines_ammo=0
 //SLINGER PHASE
 uniques_phase_counter=0
 UNIQUES_SLINGER_TIME_IN_PHASE=100
-UNIQUES_SLINGER_PHASE_UP_DISTANCE=50
-UNIQUES_SLINGER_PHASE_DOWN_DISTANCE=80
+UNIQUES_SLINGER_PHASE_UP_DISTANCE=80
+UNIQUES_SLINGER_PHASE_DOWN_DISTANCE=120
 
 //SLINGER SUNBLAST
 uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
 uniques_sunblast_cd_counter=0
 UNIQUES_SUNBLAST_COOLDOWN=80
 uniques_sunblast_has_made_hitbox=false
+UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT=14
 
 //SLINGER AIRBOLT
 uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
+UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=14
+
 
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150

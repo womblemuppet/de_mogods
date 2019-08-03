@@ -543,6 +543,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
 			uniques_sunblast_lockdown=1
 			uniques_sunblast_has_made_hitbox=false
+			
+			float_counter=UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT
+			vspd=min(vspd,0)   //if falling, stop fall
             
 			break;
             

@@ -1,5 +1,5 @@
 var sgn,stepdist,steps;
-steps=12
+steps=8
 
 if argument0=="up"
 {
