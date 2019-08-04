@@ -546,7 +546,6 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			
 			float_counter=UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT
 			vspd=min(vspd,0)   //if falling, stop fall
-            
 			break;
             
 			case "bait_haymaker":

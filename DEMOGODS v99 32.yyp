@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "06cf1575-3492-4231-a9c7-873930a9a051",
+            "Value": {
+                "id": "22f70802-d7fc-48a7-9bcd-7a2e7605a1f2",
+                "resourcePath": "sprites\\slinger_airsunbolt_die_aoe_mask\\slinger_airsunbolt_die_aoe_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
             "Value": {
                 "id": "5defd004-0cbf-4dcb-9a21-ca07f3c7928f",
