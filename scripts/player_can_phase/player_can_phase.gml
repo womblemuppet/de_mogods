@@ -1,10 +1,10 @@
 if player_may_attack()
 	return true
 	
-if uniques_sunblast_lockdown==1
+if uniques_sunblast_lockdown==1 || uniques_sunblast_lockdown==2
 	return true
 	
-if uniques_airbolt_lockdown==1
+if uniques_airbolt_lockdown==1 || uniques_airbolt_lockdown==2
 	return true
 
 return false

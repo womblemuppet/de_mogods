@@ -232,8 +232,6 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 			effect_aniend(sunblast_blast_spr,0.2,-1)
 		}
 		
-		float_counter=UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT
-		vspd=min(vspd,0)   //if falling, stop fall
 	}
 	
 	uniques_sunblast_lockdown=2
