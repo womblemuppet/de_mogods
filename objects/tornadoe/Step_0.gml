@@ -19,6 +19,11 @@ repeat(repeat_effects_factor)
 
 if active
 {
+	var effect_line_yy,xmin,xmax
+	effect_line_yy=effect_line_y
+	xmin=x-WIDTH/2
+	xmax=x+WIDTH/2
+	
 	if height<MAX_GROWTH_DEPTH
 	{
 		height+=grow_rate
@@ -28,15 +33,23 @@ if active
 		if height_delta_counter>20
 		{
 			height_delta_counter-=20
-			var effect_line_yy,xmin,xmax
-			xmin=x-WIDTH/2
-			xmax=x+WIDTH/2
-			effect_line_yy=effect_line_y
 			with block
 			{
 				if y<effect_line_yy && x>xmin && x<xmax
 					block_take_damage()
 			}
+
+		}
+	}
+
+	
+	with player    ///[finaledit] can maybe optimise
+	{
+		if y<effect_line_yy && x>xmin && x<xmax && armouredframes<1
+		{
+			stunned=999
+			vspd=-150
+			dash_rocket_top_collision_safety=-1
 		}
 	}
 		
@@ -50,6 +63,8 @@ if active
 		a.gravity_direction=90
 		a.gravity=0.15
 	}
+	
+
 }
 
 if hspd>min_speed
