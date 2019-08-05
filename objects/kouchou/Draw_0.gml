@@ -176,7 +176,7 @@ else if room==multiplayermenu
 		/// if not competitive, draw coloured player backgrounds (temp)
 		if !competitive_mode
 			draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
-        
+		
         
 		//player join slot prompts
 		draw_set_colour(c_silver) 

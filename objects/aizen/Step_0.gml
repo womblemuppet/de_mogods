@@ -12,6 +12,10 @@ hudfloatingmasks_subimage+=0.2
 if hudfloatingmasks_subimage>HUDFLOATINGMASKS_IMAGE_NUMBER
 	hudfloatingmasks_subimage=0
 
+hud_fb_indicator_subimage+=0.2
+if hud_fb_indicator_subimage>HUD_FB_INDICATOR_IMAGE_NUMBER
+	hud_fb_indicator_subimage=0
+
 
 
 for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)

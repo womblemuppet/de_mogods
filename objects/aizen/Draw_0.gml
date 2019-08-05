@@ -131,6 +131,10 @@ draw_sprite(arcade_cabinet_rightborder,0,kouchou.room_right_border_x-5,0)
 
 draw_sprite(stackframe_sprite,stackframe_subimage,kouchou.room_right_border_x+17,125)
 
+//////////////////////////////////////////////////////////////////////////////////////// fb indicator (patchy)
+if aizen.first_blood_status=="none"
+	draw_sprite(fbindicatorsprite_red,0,xx-20,y+15)
+
 
 //////////////////////////////////////////////////////////////////////////////       draw stack masks
 for (var i=0; i<ds_list_size(STACK); i+=1)
@@ -142,6 +146,7 @@ if last_stack_sprite!=-1
 	draw_sprite_ext(last_stack_sprite,image_index,xx,yy+ds_list_size(STACK)+40,2,2,0,c_white,1)
 	draw_sprite_ext(active_effect_line,0,xx,yy-50,1,1.75,0,c_white,1)    
 }
+
 
 if kouchou.setmenu_show_fps
 {
