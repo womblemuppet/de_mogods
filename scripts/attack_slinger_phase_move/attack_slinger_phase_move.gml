@@ -24,13 +24,13 @@ if uniques_sunblast_lockdown=0
 	{
 		if !place_meeting(x+4,y,block)
 			x+=4
-		hspd=max(hspd,10)  //set hspd to 7 if not that fast
+		hspd=max(hspd,UNIQUES_SLINGER_PHASE_UP_HSPD)  //set hspd to 10 if not that fast
 	}
 	else
 	{
 		if !place_meeting(x-4,y,block)
 			x-=4
-		hspd=min(hspd,-10)   ///set hspd to -7 if not that fast
+		hspd=min(hspd,-UNIQUES_SLINGER_PHASE_UP_HSPD)   ///set hspd to -10 if not that fast
 	}
 }
 
