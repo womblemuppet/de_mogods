@@ -4631,6 +4631,14 @@
             }
         },
         {
+            "Key": "96ca38a5-0325-4a7a-bfd5-2b328930b276",
+            "Value": {
+                "id": "09d4914b-afb8-41f6-9c0f-0fc5d8e52674",
+                "resourcePath": "scripts\\player_use_pocket\\player_use_pocket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9756f5ad-7ba4-46eb-a08f-a9896138100a",
             "Value": {
                 "id": "15ac9e7b-9dc5-4799-834c-fc9ecc75f553",
@@ -8037,6 +8045,7 @@
         "1d61c5ab-1628-4766-86d2-f82c6a720550",
         "7d591364-72d8-4275-abbb-dfcb69300b67",
         "37bc6135-127a-4e15-9085-908d5653bf43",
+        "96ca38a5-0325-4a7a-bfd5-2b328930b276",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
