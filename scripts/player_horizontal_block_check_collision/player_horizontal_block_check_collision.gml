@@ -58,7 +58,6 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 	}
 	if uniques_whirlwind_active==true
 	{
-		uniques_whirlwind_active=false
-		player_get_gp_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)
+		attack_bait_whirlwind_selfstun()
 	}
 }

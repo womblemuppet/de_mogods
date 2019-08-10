@@ -1,0 +1,2 @@
+uniques_whirlwind_active=false
+player_get_gp_stunned(UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT)

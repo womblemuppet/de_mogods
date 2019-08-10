@@ -2655,6 +2655,14 @@
             }
         },
         {
+            "Key": "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
+            "Value": {
+                "id": "2d6c5048-b372-4f01-ba04-8a16e3a6e07a",
+                "resourcePath": "scripts\\attack_bait_whirlwind_selfstun\\attack_bait_whirlwind_selfstun.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5902740d-15b5-42f2-9a40-2b269957be10",
             "Value": {
                 "id": "94b22449-669d-41ff-8f18-02feaea85c56",
@@ -5186,7 +5194,7 @@
             "Key": "a87ab99b-53d5-4f8a-974a-5a6b6576019f",
             "Value": {
                 "id": "71185b80-c7ae-4d55-b357-2d61276ba11c",
-                "resourcePath": "scripts\\player_bait_move_horizontal_in_whirlwind\\player_bait_move_horizontal_in_whirlwind.yy",
+                "resourcePath": "scripts\\player_bait_end_whirlwind_if_at_screen_edge\\player_bait_end_whirlwind_if_at_screen_edge.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8049,6 +8057,7 @@
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
         "be076a66-7e3d-48cc-b375-fed62a475709",
+        "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
         "71f10d9c-db1c-4627-803c-e2f3692cb222",

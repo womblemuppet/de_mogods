@@ -1094,7 +1094,7 @@ player_falldown_sprite_check()
 
 
 player_move_horizontal()
-player_bait_move_horizontal_in_whirlwind()
+player_bait_end_whirlwind_if_at_screen_edge()
 
 ////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
 attack_shooting_animation_checks()
