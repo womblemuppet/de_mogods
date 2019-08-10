@@ -62,9 +62,11 @@ if first_blood_neutral_cooldown==0 && first_blood_neutral_queued==true
 
 	var a;
 	a=effect_aniend(first_blood_zap_neutral,0.2,-2)
-	a.x=new_spawner.x
-	a.y=new_spawner.y
-
+	if instance_exists(a)  ///[finaledit] bandaid fix to effect dying offscreen (unlikely to happen in real gameplay)
+	{
+		a.x=new_spawner.x
+		a.y=new_spawner.y
+	}
 	first_blood_status="timedout"
 	peacetime=0
 	first_blood_neutral_cooldown=350
