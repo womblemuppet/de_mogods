@@ -116,6 +116,8 @@ switch argument0
 		chained_debuff_counter=BAITCHAIN_CHAIN_TIME   //failsafe, reset to attackers chain_time if attacker exists
 		chained_debuff_x_pos=x
 		chained_debuff_y_pos=y
+		uniques_baitchain_update_pos_counter=8  ///updates above positions in a few steps (feels better)
+		
 		var me;
 		me=self.id
 		chain_effect_id_to_delete=instance_create(x,y,ef_chain)
@@ -137,7 +139,6 @@ switch argument0
 			attacker.uniques_baitchain_last_chained_timer=attacker.BAITCHAIN_CHAIN_TIME
 			attacker.uniques_baitchain_last_chained=self.id
 		}
-		
 	} 
 	break;
 	case "whirlwind" :

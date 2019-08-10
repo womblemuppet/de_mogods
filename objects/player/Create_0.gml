@@ -221,6 +221,7 @@ BAITCHAIN_CHAIN_TIME=150
 BAITCHAIN_CHAIN_RANGE=75
 uniques_baitchain_last_chained=noone
 uniques_baitchain_last_chained_timer=0
+uniques_baitchain_update_pos_counter=0
 
 //BAIT DASH GP BLINK ATTACK
 uniques_dashgpblinkattack_enabled=false  //for want of a better name

@@ -211,6 +211,22 @@ if uniques_baitchain_last_chained_timer>0
 	if uniques_baitchain_last_chained_timer==0
 		uniques_baitchain_last_chained=noone
 }
+
+if uniques_baitchain_update_pos_counter>0
+{
+	uniques_baitchain_update_pos_counter-=1
+	//if uniques_baitchain_update_pos_counter==0
+	//{
+		chained_debuff_x_pos=x
+		chained_debuff_y_pos=y	
+		if instance_exists(chain_effect_id_to_delete)
+		{
+			chain_effect_id_to_delete.x=x
+			chain_effect_id_to_delete.y=y
+		}
+	//}
+}
+
 if uniques_phase_counter>0
 {
 	uniques_phase_counter-=1
