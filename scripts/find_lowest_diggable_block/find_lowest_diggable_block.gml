@@ -7,9 +7,9 @@ var middle_x_val,yy,b;
 
 
 if argument0==-1
-	middle_x_val=round(kouchou.room_x_halfway/20)*20
+	middle_x_val=round(kouchou.room_x_halfway/aizen.bw/2)*aizen.bw/2
 else
-	middle_x_val=round(argument0/20)*20
+	middle_x_val=round(argument0/aizen.bw/2)*aizen.bw/2
 
 yy=0
 for (var i = 0; i < kouchou.rh; i++)

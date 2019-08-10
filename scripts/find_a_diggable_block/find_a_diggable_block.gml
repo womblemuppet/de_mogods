@@ -21,8 +21,8 @@ maxy=ds_grid_height(temp_block_grid)-1
 with block
 {
     var nxx,nyy;
-    nxx=floor((x-kouchou.room_left_border_x)/20)
-    nyy=floor((y-kouchou.room_top_border_y)/20)
+    nxx=floor((x-kouchou.room_left_border_x)/aizen.bw/2)
+    nyy=floor((y-kouchou.room_top_border_y)/aizen.bh/2)
     
     //show_message("block "+string(id)+"x="+string(x)+" y="+string(y)+" nxx="+string(nxx)+" nyy="+string(nyy))
     

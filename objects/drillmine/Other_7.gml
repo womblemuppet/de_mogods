@@ -1,7 +1,7 @@
 if dying
 {
 	var a;
-	a=instance_create_depth(x,y-20,-1,mine)
+	a=instance_create_depth(x,y-aizen.bh/2,-1,mine)
 	a.player_who_placed_mine=creator
 	a.creator=a.id
 	

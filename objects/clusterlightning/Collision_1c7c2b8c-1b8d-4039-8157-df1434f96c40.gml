@@ -7,7 +7,7 @@ if ready
         fuse+=1
         y-=1
     }
-    instance_create(x,y-20,lightning_collectable)
+    instance_create(x,y-aizen.bh/2,lightning_collectable)
     create_terrain_cutter(eightysqcircle,"hit",-1,7)
     instance_destroy()
 }
