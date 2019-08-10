@@ -238,7 +238,7 @@ else if room==settings
 	}
 	else if keyboard_check(vk_anykey)
 	{
-		if setmenu_select==5
+		if setmenu_select==4
 		{
 			setmenu_codetxt=keyboard_string        
 		}

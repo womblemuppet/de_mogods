@@ -13,7 +13,7 @@ if room==settings
 {
     setmenu_select-=1
     if setmenu_select==-1
-        setmenu_select=5
+        setmenu_select=SETMENU_SELECT_NUMBER
 }
 
 if room==loremenu

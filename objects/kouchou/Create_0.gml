@@ -51,12 +51,7 @@ if file_exists("options.txt")
 	if setmenu_fullscreen==0
 		setmenu_fullscreen=false
 	else
-		setmenu_fullscreen=true    
-
-	file_text_readln(OPT)
-	readgrab=file_text_read_string(OPT)
-    
-	setmenu_graphics_fid=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))    
+		setmenu_fullscreen=true      
        
 	file_text_readln(OPT)  
 	readgrab=file_text_read_string(OPT)    
@@ -89,8 +84,6 @@ else ///////////////////////////////////////////////////////////////////////////
 		show_error("options file can not be created",true)
 	file_text_write_string(OPT,"fullscreen=0")
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"graphics_fid=1")
-	file_text_writeln(OPT)
 	file_text_write_string(OPT,"eff_volume=0")
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"bgm_volume=0")
@@ -99,7 +92,6 @@ else ///////////////////////////////////////////////////////////////////////////
 	file_text_close(OPT)    
     
 	setmenu_fullscreen=true
-	setmenu_graphics_fid=1   //0,1
 	setmenu_eff_volume=0
 	setmenu_bgm_volume=0
 	setmenu_show_fps=true
@@ -296,6 +288,7 @@ string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bi
 
 
 setmenu_select=0
+SETMENU_SELECT_NUMBER=4
 setmenu_codetxt=""
 
 

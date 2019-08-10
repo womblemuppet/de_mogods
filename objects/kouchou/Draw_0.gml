@@ -106,47 +106,36 @@ else if room==settings
 	draw_set_colour(c_black)
 	if setmenu_select==1
 		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap,"graphics detail")
-	if setmenu_graphics_fid==0
-		t="low"
-	else if setmenu_graphics_fid==1
-		t="high"
+	draw_text(xx,yy+vgap,"sound effects volume")
+	draw_text(xx2,yy+vgap,setmenu_eff_volume)
     
-	draw_text(xx2,yy+vgap,t)
-        
 	draw_set_colour(c_black)
 	if setmenu_select==2
 		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*2,"sound effects volume")
-	draw_text(xx2,yy+vgap*2,setmenu_eff_volume)
-    
+	draw_text(xx,yy+vgap*2,"background music volume")
+	draw_text(xx2,yy+vgap*2,setmenu_bgm_volume)
+
 	draw_set_colour(c_black)
 	if setmenu_select==3
 		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*3,"background music volume")
-	draw_text(xx2,yy+vgap*3,setmenu_bgm_volume)
-
-	draw_set_colour(c_black)
-	if setmenu_select==4
-		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*4,"show fps counter")
+	draw_text(xx,yy+vgap*3,"show fps counter")
 
 	if setmenu_show_fps==true
 		t="True"
 	else
 		t="False"
-	draw_text(xx2,yy+vgap*4,t)
+	draw_text(xx2,yy+vgap*3,t)
 
     
 	draw_set_colour(c_black)
-	if setmenu_select==5
+	if setmenu_select==4
 		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*5,"input code")
+	draw_text(xx,yy+vgap*4,"input code")
 	if setmenu_codetxt==""
 		t="-"
 	else
 		t=setmenu_codetxt
-	draw_text(xx2,yy+vgap*5,t)
+	draw_text(xx2,yy+vgap*4,t)
     
 	draw_set_colour(make_colour_hsv(50,181,207))
 	draw_text(room_width/3,room_height-200,"Press Esc to save changes and leave")
