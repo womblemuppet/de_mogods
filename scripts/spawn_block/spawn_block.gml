@@ -30,7 +30,7 @@ with a
 
 if aizen.biome=="forest"   ///create vines
 {
-	if random(1)>0.9
+	if random(1)>0.9925
 		instance_create(argument0+10+random(20),argument1+41,ef_vine)
 }
 
