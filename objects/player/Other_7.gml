@@ -39,8 +39,10 @@ else if sprite_index==sprites[6]  ///super activate
 {
 	sprite_index=sprites[8]    ///super running
 }
-else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash or push
+else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash
 {
+	hspd=0//(hspd/3)
+	mild_slowed_counter=8
 	player_set_idle()
 }
 else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab slam

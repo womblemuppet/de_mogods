@@ -976,7 +976,7 @@ if dash_button_currently_held
 		ground_dash_counter=0
 		dash_button_currently_held=false
 		//show_debug_message("dash_button_currently_held set to false")
-		hspd=(hspd/3)*2
+
 		//effect_create_above(ef_firework,x,y,1,c_red)
 	}
 }
