@@ -2,7 +2,7 @@ if ready
 {
     var fuse;
     fuse=0
-    while (fuse<40 && !place_meeting(x,y,block))
+    while (fuse<aizen.bh && !place_meeting(x,y,block))
     {
         fuse+=1
         y-=1

@@ -28,13 +28,13 @@ right=false
 up=false
 down=false
 
-if position_meeting(x+40,y,block)
+if position_meeting(x+aizen.bw,y,block)
     right=true    
-if position_meeting(x,y-40,block)
+if position_meeting(x,y-aizen.bh,block)
     up=true
-if position_meeting(x-40,y,block)
+if position_meeting(x-aizen.bw,y,block)
     left=true
-if position_meeting(x,y+40,block)
+if position_meeting(x,y+aizen.bh,block)
     down=true   
     
 if (left && right)

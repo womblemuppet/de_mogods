@@ -5,13 +5,13 @@
   called from aizen
   
  ***************************************************/
-if bedrockcounter>40    ///create new blocks every 40 pixels moved down
+if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x = block height )
 {
 
 	var numberofblocks_horizontal
-	numberofblocks_horizontal=kouchou.rw/40
+	numberofblocks_horizontal=kouchou.rw/aizen.bw
 
-	bedrockcounter-=40    ///reset bedrockcounter
+	bedrockcounter-=aizen.bh    ///reset bedrockcounter
 
 	for (var i = 0; i < ds_list_size(blockstosprite_prevlayer); i++) 
 	{
@@ -65,19 +65,19 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			case "pits":  
 			ds_list_clear(pitlist)
 			repeat(5)
-				ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/40)*40)
+				ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/aizen.bw)*aizen.bw)
 			//terrainammo=choose(3,3,8)            
 			break;
 			
 			case "reverserectangle":
-			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/1.5)/40)*40
-			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/1.5)/40)*40
+			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/1.5)/aizen.bw)*aizen.bw
+			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/1.5)/aizen.bw)*aizen.bw
 			break;   
 			
 			case "rectanglebumpy":    ///both rectangle and rectangle bumpy      
 			case "rectangle":
-			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/2)/40)*40
-			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/2)/40)*40
+			rectx1=kouchou.room_x_halfway-round(random(kouchou.rw/2)/aizen.bw)*aizen.bw
+			rectx2=kouchou.room_x_halfway+round(random(kouchou.rw/2)/aizen.bw)*aizen.bw
 			platform_singleblob_startxi=irandom(floor(numberofblocks_horizontal)-15)
 			platform_singleblob_endxi=platform_singleblob_startxi+5+irandom(9)
 			platform_singleblob_ya=choose(1,2,3,4,5,6,7)
@@ -166,7 +166,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			chambers_y[2]=choose(8,9,10)
 			chambers_y[3]=choose(12,13,14)
 			chambers_y[4]=choose(16,17,18)
-			chambers_central_pillar=floor((kouchou.rw/2)/40)+choose(-3,-1,0,1,3)
+			chambers_central_pillar=floor((kouchou.rw/2)/aizen.bw)+choose(-3,-1,0,1,3)
 			break;
             
 			case "secretbox":
@@ -199,11 +199,6 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		terraintype="biomegap"
 		terrainammo=4
 		biomeswitch=false
-		//create torches 
-		/*a=instance_create(40,argument0-40,torch)    
-		a.sprite_index=torch_sprite
-		a=instance_create(1160,argument0-40,torch)
-		a.sprite_index=torchBLOO*/
 		//call_block_setup()
 	}
 
@@ -217,12 +212,13 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 	for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
 	{
 		makeok=true
-		if position_meeting(kouchou.room_left_border_x+i*40,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
+		if position_meeting(kouchou.room_left_border_x+i*aizen.bw,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
 			makeok=false
         
 		switch (terraintype)
 		{
 			case "solidline" :
+			///nandemonai
 				break;
 			case "line": 
 			if random(1)>0.75
@@ -242,7 +238,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			case "pits":
 			for (ii=0; ii<ds_list_size(pitlist); ii+=1)
 			{
-				if i*40==ds_list_find_value(pitlist,ii)
+				if i*aizen.bw==ds_list_find_value(pitlist,ii)
 					makeok=false
 				if terrainammo==1 /// connect pits at bottom
 				{
@@ -254,7 +250,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
             
             
 			case "rectangle" :
-			if i*40+kouchou.room_left_border_x<rectx1 || i*40+kouchou.room_left_border_x>rectx2+40
+			if i*aizen.bw+kouchou.room_left_border_x<rectx1 || i*aizen.bw+kouchou.room_left_border_x>rectx2+aizen.bw
 				makeok=false
 			//if terrainammo==1 && (i*40-40==round(rectx1/40)*40 || i*40+40==round(rectx2/40)*40  || i*40==round(rectx1/40)*40 || i*40==round(rectx2/40)*40 )
 			if terrainammo==1 && random(1)>0.75 || terrainammo==2 
@@ -262,7 +258,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
                 
             
 			case "rectanglebumpy" :
-			if i*40+kouchou.room_left_border_x<rectx1 || i*40+kouchou.room_left_border_x>rectx2+40
+			if i*aizen.bw+kouchou.room_left_border_x<rectx1 || i*aizen.bw+kouchou.room_left_border_x>rectx2+aizen.bw
 				makeok=false
 			//if terrainammo==1 && (i*40-40==round(rectx1/40)*40 || i*40+40==round(rectx2/40)*40  || i*40==round(rectx1/40)*40 || i*40==round(rectx2/40)*40 )
 			if terrainammo==1 && random(1)>0.75 || terrainammo==2 
@@ -275,7 +271,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
                                 
 			case "reverserectangle" :
 			makeok=false
-			if i*40+kouchou.room_left_border_x<rectx1 || i*40+kouchou.room_left_border_x>rectx2
+			if i*aizen.bw+kouchou.room_left_border_x<rectx1 || i*aizen.bw+kouchou.room_left_border_x>rectx2
 				makeok=true
 
 			/*
@@ -348,7 +344,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			if terrain_wave_xup[i]==false || terrain_wave_xup[min(i+1,floor(numberofblocks_horizontal))]==false        ///if not on or next to wave point, don't make wave   (waves are 2 thick)
 				makeok=false
 			var waveno;
-				waveno=floor(   (i*40)/(kouchou.rw/6))
+				waveno=floor(   (i*aizen.bw)/(kouchou.rw/6))
 			if terrainammo>=terrain_wave_ha[waveno]   ///errored here with 0 as waveno?
 				makeok=false
 			if terrainammo<=terrain_wave_ylim
@@ -358,7 +354,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			makeok=false
 			for (ii=0; ii<terrain_blob_number; ii+=1)
 			{
-				if (i*40)+kouchou.room_left_border_x>= terrain_blob_xl[ii] && (i*40)+kouchou.room_left_border_x<= terrain_blob_xr[ii] && terrainammo >= terrain_blob_yu[ii] && terrainammo <= terrain_blob_yd[ii]
+				if (i*aizen.bw)+kouchou.room_left_border_x>= terrain_blob_xl[ii] && (i*aizen.bw)+kouchou.room_left_border_x<= terrain_blob_xr[ii] && terrainammo >= terrain_blob_yu[ii] && terrainammo <= terrain_blob_yd[ii]
 				{
 					makeok=true
 				}
@@ -470,12 +466,12 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			switch typeofblock
 			{
 				case "block":
-					a=spawn_block(kouchou.room_left_border_x+i*40,argument0,0)
+					a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,argument0,0)
 					ds_list_add(blockstosprite_prevlayer,a)   break;
 				case "payday ore":
-					a=spawn_ore_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
 				case "weaksand":
-					a=spawn_weaksand_block(kouchou.room_left_border_x+i*40,argument0) break;
+					a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
 				//case 3:
 				//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0)
 				//	ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
@@ -486,7 +482,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
 				case "instrument":
 					//show_message("i="+string(i))
-					a=spawn_instrument_block(kouchou.room_left_border_x+i*40,argument0,false) break;
+					a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,argument0,false) break;
 				default:
 					show_error("unhandled typeofblock case",true)
 			}
@@ -498,7 +494,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 		if random(1)>0.995                                                            /////fossils
 		{
 			var a;
-			a=instance_create(kouchou.room_left_border_x+i*40,argument0,ef_fossil)
+			a=instance_create(kouchou.room_left_border_x+i*aizen.bw,argument0,ef_fossil)
 			a.image_xscale=choose(0.5,0.7,0.9)
 			a.image_yscale=a.image_xscale
 			a.image_xscale=choose(1,-1)
@@ -530,7 +526,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 					p_type_die=prop_sprite_statue_1_die
 					break;
 				}
-				prop_create(kouchou.room_left_border_x+i*40,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
+				prop_create(kouchou.room_left_border_x+i*aizen.bw,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
 			}
 		}
 	
@@ -545,7 +541,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 			if critter_type=="ground"
 				critter_species=choose("worm")//,snake etc)
 			var a;
-			a=instance_create(kouchou.room_left_border_x+i*40,5+argument0,critter)
+			a=instance_create(kouchou.room_left_border_x+i*aizen.bw,5+argument0,critter)
 			with a
 				critter_setup("worm")
 		}
@@ -571,7 +567,7 @@ if bedrockcounter>40    ///create new blocks every 40 pixels moved down
 				ds_list_destroy(possibles)
 				
 				var a;
-				a=instance_create(critter_spawn_x,argument0-40,crab)
+				a=instance_create(critter_spawn_x,argument0-aizen.bh,crab)
 				with a
 					critter_throwable_setup(choose("crab","goat"))
 			}

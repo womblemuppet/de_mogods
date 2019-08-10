@@ -27,11 +27,11 @@ switch other.type
 	//show_message("other.direction= "+string(dir))
     
 	var noblocks;
-	noblocks=40/aizen.BLOCK_DESTRUCTION_FIDELITY
+	noblocks=aizen.bw/aizen.BLOCK_DESTRUCTION_FIDELITY
     
-	for (var i=0; i<40; i+=noblocks)
+	for (var i=0; i<aizen.bw; i+=noblocks)
 	{
-		for (ii=0; ii<40; ii+=noblocks)
+		for (ii=0; ii<aizen.bh; ii+=noblocks)
 		{
 			a=instance_create(x+i,y+ii,ef_rubble)
 			a.sprite_index=sprite_index
@@ -59,9 +59,9 @@ switch other.type
 	var noblocks;
 	noblocks=80/aizen.BLOCK_DESTRUCTION_FIDELITY
 
-	for (var i=0; i<40; i+=noblocks)
+	for (var i=0; i<aizen.bw; i+=noblocks)
 	{
-		for (ii=0; ii<40; ii+=noblocks)
+		for (var ii=0; ii<aizen.bh; ii+=noblocks)
 		{
 			a=instance_create(x+i,y+ii,ef_rubble)
 			a.sprite_index=sprite_index
@@ -83,30 +83,30 @@ switch other.type
 	var noblocks;
 	noblocks=10
         
-	for (var i=0; i<40; i+=noblocks)
+	for (var i=0; i<aizen.bw; i+=noblocks)
 	{
-	for (ii=0; ii<40; ii+=noblocks)
-	{
-		a=instance_create(x+i,y+ii,ef_rubble)
-		a.sprite_index=sprite_index
-		a.image_xscale=0.25
-		a.image_yscale=0.25
-		a.image_angle=random(360)
-		a.dir=85+random(10)
-		a.spd=4
-		a.alarm[0]=6
-	};
+		for (var ii=0; ii<aizen.bh; ii+=noblocks)
+		{
+			a=instance_create(x+i,y+ii,ef_rubble)
+			a.sprite_index=sprite_index
+			a.image_xscale=0.25
+			a.image_yscale=0.25
+			a.image_angle=random(360)
+			a.dir=85+random(10)
+			a.spd=4
+			a.alarm[0]=6
+		}
     
-	};
+	}
 	break;
 	case "funnel":
     
 	var noblocks;
 	noblocks=20
         
-	for (var i=0; i<40; i+=noblocks)
+	for (var i=0; i<aizen.bw; i+=noblocks)
 	{
-		for (ii=0; ii<40; ii+=noblocks)
+		for (var ii=0; ii<aizen.bh; ii+=noblocks)
 		{
 			a=instance_create(x+i,y+ii,ef_rubble)
 			a.sprite_index=sprite_index

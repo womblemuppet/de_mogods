@@ -17,7 +17,7 @@ for (var i = 0; i < instance_number(block); i++)
 
 with block
 {
-	if y<kouchou.rh+40 ///40 is buffer
+	if y<kouchou.rh+aizen.bh ///added bh is buffer
 		ds_list_add(aizen.to_draw,id)	
 }
 

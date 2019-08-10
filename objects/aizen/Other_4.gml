@@ -256,13 +256,13 @@ if room==gameroom
     
 	if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches 
 	{
-		for (var i=0; i<kouchou.rw; i+=40)
+		for (var i=0; i<kouchou.rw; i+=bw)
 		{
 			spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
 		};
-		for (var i=0; i<kouchou.rw; i+=40)
+		for (var i=0; i<kouchou.rw; i+=bw)
 		{
-			spawn_block(kouchou.room_left_border_x+i,groundlevel+40,0)
+			spawn_block(kouchou.room_left_border_x+i,groundlevel+bh,0)
 		};
 
 
@@ -285,10 +285,10 @@ if room==gameroom
 	for (iii=17; iii<27; iii+=1)   //row by row  
 	{
 		biomeswitch=false
-		travelled+=40            
+		travelled+=bh            
 		bedrockcounter=41
 		travelled_tick_biome_threshold_check()
-		terrain_generate(iii*40)
+		terrain_generate(iii*bh)
 	}
 	
 	bedrockcounter=0

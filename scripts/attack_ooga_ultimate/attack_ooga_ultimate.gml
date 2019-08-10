@@ -27,7 +27,7 @@ create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
 
 
 var a;
-for (var i = 0; i <180 ;i+=40) 
+for (var i = 0; i <180 ;i+=aizen.bw) 
 {
 	a = create_terrain_cutter(ooga_ultimate_shockwave_cutter,"disintegrated",i,5)
 	a.direction=i

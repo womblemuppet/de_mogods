@@ -37,10 +37,10 @@ terrain_wave_ha[2]=0
 terrain_wave_ha[3]=0
 terrain_wave_ha[4]=0
 
-terrain_wave_xup[kouchou.rw/40]=false   ///array that stores whether there is a wave at that x pos or not
-for (var i=0; i<kouchou.rw/40; i+=1)
+terrain_wave_xup[kouchou.rw/aizen.bw]=false   ///array that stores whether there is a wave at that x pos or not
+for (var i=0; i<kouchou.rw/aizen.bw; i+=1)
 {
-	terrain_wave_xup[kouchou.rw/40]=false
+	terrain_wave_xup[kouchou.rw/aizen.bw]=false
 };
 terrain_wave_ylim=choose(2,3,4)  ///bottom line that connects waves  (based on terrainammo)
 
@@ -75,10 +75,10 @@ lplatform_xi=10
 biomeswitch=false        ///true when changing biomes
 
 ///these are default values for the first created chunk as set below it
-rectx1=round(random(kouchou.rw/2)/40)*40
-rectx2=round(random(kouchou.rw/2)/40)*40+kouchou.room_x_halfway
+rectx1=round(random(kouchou.rw/2)/aizen.bw)*aizen.bw
+rectx2=round(random(kouchou.rw/2)/aizen.bw)*aizen.bw+kouchou.room_x_halfway
 platform_startya=3
 platform_endya=4
-platform_singleblob_startxi=irandom(floor(kouchou.rw/40)-6)      ///defines a potential single blob (doesn't get created if ya =-1)
+platform_singleblob_startxi=irandom(floor(kouchou.rw/aizen.bw)-6)      ///defines a potential single blob (doesn't get created if ya =-1)
 platform_singleblob_endxi=platform_singleblob_startxi+irandom(5)
 platform_singleblob_ya=choose(-1,-1,-1,-1,1,2,3,4,5)

@@ -1000,7 +1000,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			uniques_vet_digging=1
-			y+=40
+			y+=aizen.bh
 			sprite_index=sprites[66]
 			if super_mode
 				sprite_index=sprites[67]

@@ -17,7 +17,7 @@ for (var i = 0; i < kouchou.rh; i++)
 	b=instance_position(middle_x_val,yy,block)
 	if b!=noone
 		break;
-	yy+=40
+	yy+=aizen.bh
 }
 
 return b

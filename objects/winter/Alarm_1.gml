@@ -16,9 +16,9 @@ for (var i=0; i<ds_list_size(blocklist); i+=1)
 {
     with ds_list_find_value(blocklist,i)
     {
-            instance_create(x,y+40,icespike)
+            instance_create(x,y+aizen.bh,icespike)
             //instance_create(x+10,y+40,icespike)
-            instance_create(x+20,y+40,icespike)
+            instance_create(x+20,y+aizen.bh,icespike)
             //instance_create(x+30,y+40,icespike)                        
 
     }

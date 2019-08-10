@@ -3,6 +3,8 @@ room=gameroom
 
 global.fft=1   ///testing variable for flood orb parents
 
+
+
 to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
 to_draw_size=0
 will_update_blocks_to_draw_list=false
@@ -25,17 +27,19 @@ debug_show_hitboxes=false
 debug=false
 bloodmoon_recalc_call=false
 
+bw=40  ///block width
+bh=40  ///block height
+
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()
 
 
 candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
 healthcap=5   ///max health value
-bedrockcounter=0   ///counts to 40, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
+bedrockcounter=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
 biome_length=1460  //1260
 biome_length_accumulative=0   
-
 
 
 CREATIONDELAY=200	//// complicated shit don't touch if you can help it 
@@ -46,7 +50,7 @@ total_baseline_movement=0
 terrain_buffer_layer_newest=[]
 terrain_buffer_layer2=[]
 terrain_buffer_layer3=[]
-for (i = 0; i < kouchou.rw/40; i++)
+for (i = 0; i < kouchou.rw/bw; i++)
 {
 	terrain_buffer_layer_newest[i]=-2
 	terrain_buffer_layer2[i]=-2

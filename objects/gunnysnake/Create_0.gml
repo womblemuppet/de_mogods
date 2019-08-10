@@ -15,11 +15,11 @@ repeat(length)
         
     
 	if D==0
-		xx+=40
+		xx+=aizen.bw
 	else if D==180
-		xx-=40
+		xx-=aizen.bw
 	else if D==270
-		yy+=40
+		yy+=aizen.bh
 	ds_list_add(aizen.blockstosprite_prevlayer,spawn_gunpowder_block(xx,yy,0))   
     
 }

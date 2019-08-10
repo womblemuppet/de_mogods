@@ -58,7 +58,7 @@ if ammo>0
     }
     else if meteor_wave==2
     {
-        a=instance_create((random(room_width)/40)*40,0,meteor)
+        a=instance_create((random(room_width)/aizen.bw)*aizen.bw,0,meteor)
         a.hspeed=-0.5+random(1)
         
         

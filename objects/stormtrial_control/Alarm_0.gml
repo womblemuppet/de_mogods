@@ -24,8 +24,8 @@ else if phase==1
     {
         repeat(40)
         {
-        a=instance_create(room_width/2,5,lightningbomb)
-        a.number=3
+	        a=instance_create(room_width/2,5,lightningbomb)
+	        a.number=3
         }
     }
     else
