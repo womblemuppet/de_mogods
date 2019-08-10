@@ -1887,14 +1887,6 @@
             }
         },
         {
-            "Key": "3ff6ae9a-36bd-4ac2-872b-bedd265d40fc",
-            "Value": {
-                "id": "7929b2df-703c-4421-a670-47237a94150d",
-                "resourcePath": "sprites\\bait_sharkattack_hit_effect\\bait_sharkattack_hit_effect.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4037ce6e-9f42-40c5-b927-468db4bd59dd",
             "Value": {
                 "id": "65c4644b-cba4-43ba-aa54-9f7384c16832",

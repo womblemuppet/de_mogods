@@ -140,34 +140,6 @@ switch argument0
 		
 	} 
 	break;
-	case "sharkattack":
-	{    ////when hit by sharkattack, move chain origin in direction of attack
-		if chained_debuff_counter>0    ///debuff when etting hit by bait chaining attack
-		{
-			if chained_debuff_counter<100     ///prolongs chain timer a tad
-				chained_debuff_counter=100
-			var chaindir;
-			chaindir=other.direction
-			with effect_aniend(bait_sharkattack_hit_effect,0.3,-1)
-			{
-				y-=40
-				direction=chaindir
-				speed=3
-			}
-			var dx;
-			dx=80
-			if other.direction==180
-				dx=-80
-			chained_debuff_x_pos+=dx
-			if  chain_effect_id_to_delete!=noone
-			{
-				with chain_effect_id_to_delete
-					x+=dx
-			}
-			
-		}
-	}
-	break;
 	case "whirlwind" :
 	{
 		if attacker!=noone
