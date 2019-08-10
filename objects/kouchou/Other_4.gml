@@ -23,18 +23,18 @@ else if room==init
 	///// creates a new array of player slots with a controller id attached, to be used to give player objects pad numbers
 	with a
 	{
-		tempcontrollerid[12]=-1
+		temporary_player_controller_pad_numbers[12]=-1
 		for (var i=0; i<12; i+=1)
 		{
-			tempcontrollerid[i]=-1
+			temporary_player_controller_pad_numbers[i]=-1
 		};
         
 		for (var i=0; i<12; i+=1)
 		{
 			if kouchou.controller_player_slot[i]!=-1
 			{
-				tempcontrollerid[kouchou.controller_player_slot[i]]=i
-				//show_message("setting tempcontrollerid "+string(kouchou.controller_player_slot[i])+" to "+string(i))
+				temporary_player_controller_pad_numbers[kouchou.controller_player_slot[i]]=i
+				//show_message("setting temporary_player_controller_pad_numbers "+string(kouchou.controller_player_slot[i])+" to "+string(i))
 			}
 		};
 	}
@@ -82,7 +82,7 @@ else if room==init
             
 			case "controller_default":
 			ds_map_add(keybinding_map_array[i],"gamepad",true)
-			ds_map_add(keybinding_map_array[i],"padnumber",aizen.tempcontrollerid[i])
+			ds_map_add(keybinding_map_array[i],"padnumber",aizen.temporary_player_controller_pad_numbers[i])
 			ds_map_add(keybinding_map_array[i],"leftbutton",gp_padl)
 			ds_map_add(keybinding_map_array[i],"rightbutton",gp_padr)
 			ds_map_add(keybinding_map_array[i],"upbutton",gp_padu)
