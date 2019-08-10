@@ -1,12 +1,3 @@
-/*if !audio_is_playing(menoos)
-{
-    audio_stop_sound(playmoos)
-    audio_play_sound(menoos,0,true)
-}*/
-
-
-
-
 ///take control of app surface
 application_surface_draw_enable(false)  ///has to be called each room start
 
@@ -27,6 +18,9 @@ else if room==init
 	var a;
 	a=instance_create(x,y,aizen)    ///the birth of a monster
 	a.player_priority=irandom(players_in-1)+1
+	
+	    
+	///// creates a new array of player slots with a controller id attached, to be used to give player objects pad numbers
 	with a
 	{
 		tempcontrollerid[12]=-1

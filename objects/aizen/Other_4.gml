@@ -143,13 +143,7 @@ if room==gameroom
     
     
 
-    
-    
-	////gives each controller slot (stored in tempcontrollerid) a player ID connected to it, to give the player object that slot later on.
-	//// basically, this is to give player objects pad numbers
-    
 
-    
     
 	var groundlevel;
 	groundlevel=600

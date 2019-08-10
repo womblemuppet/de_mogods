@@ -51,7 +51,7 @@ if file_exists("options.txt")
 	if setmenu_fullscreen==0
 		setmenu_fullscreen=false
 	else
-		setmenu_fullscreen=true      
+		setmenu_fullscreen=true
        
 	file_text_readln(OPT)  
 	readgrab=file_text_read_string(OPT)    
