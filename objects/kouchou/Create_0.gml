@@ -1,6 +1,6 @@
 /***************************************************
   Demogods (working title)
-a game by jeremy wood, pobelt (sp*) 'po' $LASTNAME (swap order depending on what sounds best)
+a game by jeremy wood, poe gour 
 
 testers:
 Jordan (ALT) $LASTNAME
@@ -9,13 +9,15 @@ po's coworker couple
 po's japanese student
 po's fighting game friend that likes projectiles
 simon
-cody
-lars
-jordan 2
-mark
+cody slater
+lars hopman
+jordan young
+mark hamilton
+john mcneil (lots of testing so far)
+
 
 thanks to
-gamemaker - mark overmars/yoyogames (could use yoyogames logo)
+gamemaker - mark overmars/yoyogames (could use yoyogames logo check design requirements)
 starbucks baristas in nishinasuno lol
 
 
