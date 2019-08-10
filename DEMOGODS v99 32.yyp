@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "00aa205e-b08d-409a-ba41-ff0b247512fc",
+            "Value": {
+                "id": "2fce8426-9710-4357-aef5-36e249b1e4da",
+                "resourcePath": "scripts\\tergen_init\\tergen_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "00ab9cc5-49e7-49ec-86ea-8a8e3b4f1d1d",
             "Value": {
                 "id": "330ce66c-8754-4b72-8819-d47c3ac2812e",
@@ -1076,6 +1084,14 @@
                 "id": "efc49d05-1370-4523-8335-b290ebafb3d5",
                 "resourcePath": "sprites\\prop_sprite_statue_1_die\\prop_sprite_statue_1_die.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "204d26b8-16fc-4288-929b-1c949c4f5198",
+            "Value": {
+                "id": "ded74f52-f037-406d-8c05-c57c4c73a4f7",
+                "resourcePath": "scripts\\terrain_block_sprite_lists_init\\terrain_block_sprite_lists_init.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2436,6 +2452,14 @@
                 "id": "3beccee5-4bdb-4244-8c69-3fe17022c9f3",
                 "resourcePath": "sprites\\avatar_walk_right\\avatar_walk_right.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "536bc997-c975-4647-9a40-f5898fadca6f",
+            "Value": {
+                "id": "95ae7585-6884-4ece-93b4-653f2e35a5f7",
+                "resourcePath": "scripts\\chunkery_init\\chunkery_init.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8079,6 +8103,9 @@
         "0d48b2ca-8227-4b3a-a8b6-468f994a67e4",
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
         "a59e0892-0043-4cbf-9661-e07569fdfeeb",
+        "536bc997-c975-4647-9a40-f5898fadca6f",
+        "00aa205e-b08d-409a-ba41-ff0b247512fc",
+        "204d26b8-16fc-4288-929b-1c949c4f5198",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "65f6f02b-a601-47d3-a217-3f54e57d1472",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
