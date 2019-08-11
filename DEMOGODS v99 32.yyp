@@ -3530,7 +3530,7 @@
             "Key": "74106e2e-7344-40a8-8dc3-c5a844dac6b0",
             "Value": {
                 "id": "813939f1-a9d7-4c5e-947e-bde4ca296203",
-                "resourcePath": "sprites\\log\\log.yy",
+                "resourcePath": "sprites\\logo_spr\\logo_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4079,6 +4079,14 @@
             }
         },
         {
+            "Key": "8426e5a9-c7b5-4e39-8933-05692451aec5",
+            "Value": {
+                "id": "cb258f5a-7f21-4698-8c22-1a3e75d7b6b8",
+                "resourcePath": "objects\\console\\console.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "84cb497a-6ff7-498c-b0bd-e3b58621f1af",
             "Value": {
                 "id": "4d1c4ff7-a3b8-49af-bf68-e9398bfc77a6",
@@ -4604,6 +4612,14 @@
                 "id": "f5177719-0981-465b-b3ff-a4c8704a7c52",
                 "resourcePath": "sprites\\P1_saiyanaura\\P1_saiyanaura.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "95958abb-9c94-4b53-9692-ee2858a88243",
+            "Value": {
+                "id": "342d6a17-0820-43c5-b3d1-041bc75be61d",
+                "resourcePath": "scripts\\convert_orb_type_to_orb_parent\\convert_orb_type_to_orb_parent.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5603,14 +5619,6 @@
             "Value": {
                 "id": "48b85539-a6a8-48c5-b67c-709a76acf861",
                 "resourcePath": "objects\\terrain_destruction\\terrain_destruction.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "b516f6c4-8570-4d26-860c-8802b0e29333",
-            "Value": {
-                "id": "f1414307-a8f0-4c11-a8af-35c17c018b63",
-                "resourcePath": "objects\\ef_debug_fade_text\\ef_debug_fade_text.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -7810,7 +7818,7 @@
             "Key": "f981ee6b-f5f7-4e36-860d-396d25a08b78",
             "Value": {
                 "id": "0fa51409-06ea-48f8-8841-29a93e325fe4",
-                "resourcePath": "scripts\\create_console_top_fade_text\\create_console_top_fade_text.yy",
+                "resourcePath": "scripts\\console_log\\console_log.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8141,7 +8149,8 @@
         "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
         "dbf4b51b-f443-4495-9b75-0bd0302c16b2",
         "2127dd53-8c61-443d-abca-358437011297",
-        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae"
+        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
+        "95958abb-9c94-4b53-9692-ee2858a88243"
     ],
     "tutorial": ""
 }

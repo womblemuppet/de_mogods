@@ -1,7 +1,10 @@
 //[finaledit]
 debug=!debug
+console.visible=debug
+keyboard_string=""
+
 if debug
-    create_console_top_fade_text("debug enabled")
+    console_log("console enabled")
 else
-    create_console_top_fade_text("debug disabled")
+    console_log("console disabled")
 

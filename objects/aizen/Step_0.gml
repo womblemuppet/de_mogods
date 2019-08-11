@@ -236,13 +236,16 @@ for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in mig
 		
 		
 	/////////////////////////////////////////////////////////////////////////////////////////////////////PAUSE SCREEN REQUEST
-	if checkkey_released(ds_map_find_value(kouchou.keybinding_map_array[i],"startbutton"))
+	if !debug
 	{
-		if pausescreen_doubletap_counter<1
+		if checkkey_released(ds_map_find_value(kouchou.keybinding_map_array[i],"startbutton"))
 		{
-			pausescreen_requester_id=i
-			alarm[11]=2   ///delay
-			pausescreen_doubletap_counter=20
+			if pausescreen_doubletap_counter<1
+			{
+				pausescreen_requester_id=i
+				alarm[11]=2   ///delay
+				pausescreen_doubletap_counter=20
+			}
 		}
 	}
 };
