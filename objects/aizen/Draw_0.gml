@@ -1,16 +1,16 @@
    
-if debug     ////debug information drawing
-{
-	draw_set_font(font_debug)
-	draw_text(kouchou.room_left_border_x+150,50,string_hash_to_newline("travelled: "+string(travelled)))
-	draw_text(kouchou.room_left_border_x+150,80,string_hash_to_newline("peacetime: "+string(peacetime)))
-	draw_set_colour(c_lime)
-	draw_line(0,player_baseline,room_width,player_baseline)
-	draw_set_colour(c_green)
-	draw_text(400,400,number_of_tergenned_lines)
-	draw_set_colour(c_yellow)
-	draw_text(400,500,total_baseline_movement)
-}
+//if debug     ////debug information drawing
+//{
+//	draw_set_font(font_debug)
+//	draw_text(kouchou.room_left_border_x+150,50,string_hash_to_newline("travelled: "+string(travelled)))
+//	draw_text(kouchou.room_left_border_x+150,80,string_hash_to_newline("peacetime: "+string(peacetime)))
+//	draw_set_colour(c_lime)
+//	draw_line(0,player_baseline,room_width,player_baseline)
+//	draw_set_colour(c_green)
+//	draw_text(400,400,number_of_tergenned_lines)
+//	draw_set_colour(c_yellow)
+//	draw_text(400,500,total_baseline_movement)
+//}
 
 
 if kouchou.map=="firetrial" || kouchou.map=="icetrial"
@@ -161,8 +161,8 @@ if kouchou.setmenu_show_fps
 		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real))+" fps"))
 	}
     
-	if debug
-		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y+35,string_hash_to_newline(string(round(instance_count/25)*25)+"("+string(instance_number(block))+")"))
+	//if debug
+	//	draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y+35,string_hash_to_newline(string(round(instance_count/25)*25)+"("+string(instance_number(block))+")"))
 }   
 
 

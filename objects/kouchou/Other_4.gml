@@ -78,7 +78,7 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"dashbutton",$BE)
 			ds_map_add(keybinding_map_array[i],"lightbutton",$BF)
 			ds_map_add(keybinding_map_array[i],"heavybutton",vk_shift)
-			ds_map_add(keybinding_map_array[i],"startbutton",vk_control) break;          
+			ds_map_add(keybinding_map_array[i],"startbutton",vk_enter) break;          
             
 			case "controller_default":
 			ds_map_add(keybinding_map_array[i],"gamepad",true)

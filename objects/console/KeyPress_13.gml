@@ -1,29 +1,48 @@
 var txt,stacktype;
 txt=keyboard_string
+
+if txt==""
+	exit
+
 stacktype=""
 
 txt=string_replace_all(txt,"_"," ")
 txt=string_lower(txt)
 
+console_log(txt)
+
 if string_count("stack",txt)>0
 {
 	stacktype=txt
-	var pos;
-	pos=string_pos("stack",stacktype)
-	stacktype=string_delete(stacktype,0,pos+1)
+	stacktype=string_delete(stacktype,1,6)
+	
 	txt="stack"
 }
 else if string_count("call",txt)>0
 {
 	stacktype=txt
-	var pos;
-	pos=string_pos("call",stacktype)
-	stacktype=string_delete(stacktype,0,pos+1)
+	stacktype=string_delete(stacktype,1,5)
 	txt="call"
 }
 
+
 switch txt
 {
+	case "clear":
+	
+	ds_list_clear(log)
+	log_pos=0
+	log_pos_last=0
+	break;
+	
+	case "practice":
+	
+	with player
+		H+=9999
+	console_log("infinite hp mode")
+	
+	break;
+	
 	case "hitbox":
 	case "hitboxes":
 	
@@ -53,19 +72,24 @@ switch txt
 	
 	case "super":
 	case "super mode":
+	
 	console_log("super modes forced")
 	with player
 		player_activate_super_mode()
+		
 	break;
-	
+
 	case "slinger phase":
 	case "phase":
 	case "stance phase":
 	
 	console_log("slinger phase forced")
 	with player
-	if character=="slinger"
-		attack_slinger_enter_phase()
+	{
+		if character=="slinger"
+			attack_slinger_enter_phase()
+	}	
+		
 	break;
 	
 	case "restart":
@@ -74,7 +98,7 @@ switch txt
 	
 	case "quit":
 	case "exit":
-	game_end()
+		game_end()
 	break;
 	
 	case "stack":
@@ -117,15 +141,27 @@ switch txt
 		break;
 	}
 	
+	//show_debug_message("txt "+string(txt))
+	//show_debug_message("stacktype "+string(stacktype))
+	//if orb_type!=undefined
+	//	show_debug_message("orb_type "+string(orb_type))
+	//else
+	//	show_debug_message("orb_type is undefined")
+	
 	if orb_type==undefined
 		console_log("unknown orb type")
 	else
 	{
-		console_log(txt+" added to stack")
 		if txt=="stack"
+		{
 			stack_add_orb(orb_type,true)
+			console_log(stacktype+" added to stack")
+		}
 		else if txt=="call"
+		{
 			instance_create(0,0,convert_orb_type_to_orb_parent(orb_type))
+			console_log(stacktype+" called")
+		}
 		else
 			show_error("stack call case has neither stack or call effect",true)
 	}
@@ -134,6 +170,9 @@ switch txt
 	break;
 	
 	//console_log(object_get_name(convert_orb_type_to_orb_parent(orb_type))
+	default:
+		console_log("unknown command")
+	break;
 }
 
 keyboard_string=""
