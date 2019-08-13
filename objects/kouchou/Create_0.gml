@@ -13,7 +13,7 @@ cody slater
 lars hopman
 jordan young
 mark hamilton
-john mcneil (lots of testing so far)
+john mcneil
 
 
 thanks to
@@ -47,11 +47,21 @@ if file_exists("options.txt")
 {
 	OPT=file_text_open_read("options.txt")
 	readgrab=file_text_read_string(OPT)
+	
 	setmenu_fullscreen=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
 	if setmenu_fullscreen==0
 		setmenu_fullscreen=false
 	else
 		setmenu_fullscreen=true
+	
+	file_text_readln(OPT)
+	readgrab=file_text_read_string(OPT)
+		
+	setmenu_scale_screen=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	if setmenu_scale_screen==0
+		setmenu_scale_screen=false
+	else
+		setmenu_scale_screen=true
        
 	file_text_readln(OPT)  
 	readgrab=file_text_read_string(OPT)    
@@ -84,6 +94,8 @@ else ///////////////////////////////////////////////////////////////////////////
 		show_error("options file can not be created",true)
 	file_text_write_string(OPT,"fullscreen=0")
 	file_text_writeln(OPT)
+	file_text_write_string(OPT,"scale_screen=0")
+	file_text_writeln(OPT)
 	file_text_write_string(OPT,"eff_volume=0")
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"bgm_volume=0")
@@ -92,12 +104,22 @@ else ///////////////////////////////////////////////////////////////////////////
 	file_text_close(OPT)    
     
 	setmenu_fullscreen=true
+	setmenu_scale_screen=true
 	setmenu_eff_volume=0
 	setmenu_bgm_volume=0
 	setmenu_show_fps=true
 }
 
 window_set_fullscreen(setmenu_fullscreen)
+if setmenu_scale_screen==false
+{
+	application_surface_draw_enable(false)  ///has to be called each room start
+		var w,h;
+		w=1680
+		h=950
+	window_set_rectangle(display_get_width()/2-(w/2),display_get_height()/2-(h/2),w,h);
+	display_set_gui_size(1680,950)
+}
 
 
 
@@ -287,8 +309,20 @@ string_split_lines_add_to_list(".",lore_text_line_width,lore_character_select_bi
 
 
 
-setmenu_select=0
-SETMENU_SELECT_NUMBER=4
+
+setmenu_select_number=0
+SETMENU_SELECT_NUMBER_MAX=6
+setmenu_select_options[SETMENU_SELECT_NUMBER_MAX]=0
+
+setmenu_select_options[0]="fullscreen"
+setmenu_select_options[1]="scale_screen"
+setmenu_select_options[2]="sound_effects_volume"
+setmenu_select_options[3]="background_music_volume"
+setmenu_select_options[4]="fps_counter"
+setmenu_select_options[5]="code"
+
+setmenu_select=setmenu_select_options[setmenu_select_number]
+
 setmenu_codetxt=""
 
 

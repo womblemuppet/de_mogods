@@ -11,9 +11,10 @@ if room==menu
 }
 if room==settings
 {
-    setmenu_select-=1
-    if setmenu_select==-1
-        setmenu_select=SETMENU_SELECT_NUMBER
+    setmenu_select_number-=1
+    if setmenu_select_number==-1
+        setmenu_select_number=SETMENU_SELECT_NUMBER_MAX-1
+	setmenu_select=setmenu_select_options[setmenu_select_number]
 }
 
 if room==loremenu

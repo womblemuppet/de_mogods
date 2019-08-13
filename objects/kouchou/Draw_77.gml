@@ -1,5 +1,8 @@
-if !window_get_fullscreen()
-    draw_surface_ext(application_surface,0,0,1,1,0,c_white,1)
+if setmenu_scale_screen
+{
+	if !window_get_fullscreen()
+		draw_surface_ext(application_surface,0,0,1,1,0,c_white,1)
+}
 else
 {
     var w,h;

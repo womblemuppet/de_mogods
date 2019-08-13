@@ -87,56 +87,68 @@ else if room==settings
 	xx=150    //settings title x
 	yy=300
 	vgap=55
-	xx2=850   ///settings setting x,,
+	xx2=850   ///settings setting x
     
     
 	var t;
 	t=""
-        
-	draw_set_colour(c_black)
-	if setmenu_select==0
-		draw_set_colour(c_silver)
-	draw_text(xx,yy,"display mode")
-	if setmenu_fullscreen==true
-		t="fullscreen"
-	else
-		t="windowed"
-	draw_text(xx2,yy,t)
-        
-	draw_set_colour(c_black)
-	if setmenu_select==1
-		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap,"sound effects volume")
-	draw_text(xx2,yy+vgap,setmenu_eff_volume)
-    
-	draw_set_colour(c_black)
-	if setmenu_select==2
-		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*2,"background music volume")
-	draw_text(xx2,yy+vgap*2,setmenu_bgm_volume)
 
-	draw_set_colour(c_black)
-	if setmenu_select==3
-		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*3,"show fps counter")
+	for (var i = 0; i < SETMENU_SELECT_NUMBER_MAX; i++) {
+		draw_set_colour(c_black)
+		if setmenu_select==setmenu_select_options[i]
+			draw_set_colour(c_silver)
+		switch setmenu_select_options[i]
+		{
+			case "fullscreen":
+				draw_text(xx,yy+vgap*i,"display mode")
+				if setmenu_fullscreen==true
+					t="fullscreen"
+				else
+					t="windowed"
+				draw_text(xx2,yy+vgap*i,t)			
+			break;
+			
+			case "scale_screen":
+				draw_text(xx,yy+vgap*i,"window scaling")
+				if setmenu_scale_screen==true
+					t="on"
+				else
+					t="off"
+				draw_text(xx2,yy+vgap*i,t)			
+			break;
+			
+			
+			case "sound_effects_volume":
+				draw_text(xx,yy+vgap*i,"sound effects volume")
+				draw_text(xx2,yy+vgap*i,setmenu_eff_volume)			
+			break;
+			
+			case "background_music_volume":
+				draw_text(xx,yy+vgap*i,"background music volume")
+				draw_text(xx2,yy+vgap*i,setmenu_bgm_volume)
+			break;
+			
+			case "fps_counter":
+				draw_text(xx,yy+vgap*i,"show fps counter")
+				if setmenu_show_fps==true
+					t="On"
+				else
+					t="Off"
+				draw_text(xx2,yy+vgap*i,t)
+			break;
+			
+			case "code":
+				draw_text(xx,yy+vgap*i,"input code")
+				if setmenu_codetxt==""
+					t="-"
+				else
+					t=setmenu_codetxt
+				draw_text(xx2,yy+vgap*i,t)			
+			break;
+			
+		}
+	}
 
-	if setmenu_show_fps==true
-		t="True"
-	else
-		t="False"
-	draw_text(xx2,yy+vgap*3,t)
-
-    
-	draw_set_colour(c_black)
-	if setmenu_select==4
-		draw_set_colour(c_silver)
-	draw_text(xx,yy+vgap*4,"input code")
-	if setmenu_codetxt==""
-		t="-"
-	else
-		t=setmenu_codetxt
-	draw_text(xx2,yy+vgap*4,t)
-    
 	draw_set_colour(make_colour_hsv(50,181,207))
 	draw_text(room_width/3,room_height-200,"Press Esc to save changes and leave")
     

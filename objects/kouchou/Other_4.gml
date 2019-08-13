@@ -1,15 +1,9 @@
 ///take control of app surface
-application_surface_draw_enable(false)  ///has to be called each room start
+
 
 if room==startup
 {
 	randomize()
-	var w,h;
-	w=1680
-	h=950
-	window_set_rectangle(display_get_width()/2-(w/2),display_get_height()/2-(h/2),w,h);
-
-	display_set_gui_size(1680,950)
 	room_goto_next()
 }
 else if room==init
