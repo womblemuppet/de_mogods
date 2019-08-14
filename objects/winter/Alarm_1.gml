@@ -5,7 +5,7 @@ blocklist=ds_list_create()
 
 with block
 {
-    if !place_meeting(x,y+1,block) && !place_meeting(x,y+41,block) && !place_meeting(x,y+81,block) && divisible  ///if no block under you for two squares
+    if !place_meeting(x,y+1,block) && !place_meeting(x,y+aizen.bh+1,block) && !place_meeting(x,y+81,block) && divisible  ///if no block under you for two squares
         ds_list_add(blocklist,self.id)
 }
 

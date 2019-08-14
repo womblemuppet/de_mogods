@@ -27,8 +27,8 @@ debug_show_hitboxes=false
 debug=false
 bloodmoon_recalc_call=false
 
-bw=40  ///block width
-bh=40  ///block height
+bw=50  ///block width
+bh=50  ///block height
 
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()

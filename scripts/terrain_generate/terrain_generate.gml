@@ -1,6 +1,6 @@
 /***************************************************
   the terrain type and block creation part of terrain gen
-  doesn't include biome selection, backdrops and torches.
+  doesn't include biome selection or backdrops.
   not connected to "travelled" variable
   called from aizen
   
@@ -333,7 +333,7 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 			if terrain_wave_xup[i]==false
 				makeok=false
 			var waveno;
-			waveno=floor(   (i*40)/(kouchou.rw/6))
+			waveno=floor(   (i*kouchou.bw)/(kouchou.rw/6))
 			//show_message(string(waveno))
 			if terrainammo>=terrain_wave_ha[waveno]
 				makeok=false
@@ -449,11 +449,11 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 			var rand;
 			rand=random(1)
 			
-			if biome!="summit" && terrain_special_block_ok() && rand<0.05   ////[finaledit] horrible way of doing chance
+			if biome!="summit" && terrain_special_block_ok() && rand<0.02
 				typeofblock="payday ore"      ////payday
-			if biome=="sand" && rand>=0.05 && rand <0.07
+			if biome=="sand" && rand>=0.02 && rand <0.04
 				typeofblock="weaksand"      ////dissolve block (weaksand)
-			if rand>=0.07 && rand<0.075
+			if rand>=0.04 && rand<0.045
 				typeofblock="instrument"
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder

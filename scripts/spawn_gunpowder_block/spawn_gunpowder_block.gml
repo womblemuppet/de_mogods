@@ -31,6 +31,6 @@ if argument2!=0
 if aizen.biome=="forest" && argument2==0    ///create vines
 {
     if random(1)>0.9
-        instance_create(argument0+10+random(20),argument1+41,ef_vine)
+        instance_create(argument0+10+random(20),argument1+aizen.bh+1,ef_vine)
 }
 return a

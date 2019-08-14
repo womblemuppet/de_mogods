@@ -82,7 +82,25 @@ if file_exists("options.txt")
 		setmenu_show_fps=false
 	else
 		setmenu_show_fps=true    
-        
+       
+	file_text_readln(OPT)
+	readgrab=file_text_read_string(OPT)
+	
+	setmenu_block_width=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_block_width=real(setmenu_block_width)
+	
+	file_text_readln(OPT)
+	readgrab=file_text_read_string(OPT)
+	
+	setmenu_block_height=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_block_height=real(setmenu_block_height)	
+	
+	file_text_readln(OPT)
+	readgrab=file_text_read_string(OPT)
+	
+	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_player_scale=real(setmenu_player_scale)	
+
 	file_text_close(OPT)
 }
 else //////////////////////////////////////////////////////////////////////////////////////////// CREATE OPTIONS FILE
@@ -101,6 +119,14 @@ else ///////////////////////////////////////////////////////////////////////////
 	file_text_write_string(OPT,"bgm_volume=0")
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"show_fps=1")  
+	
+	////testing purposes only, to be removed
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"show_fps=1")  
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"show_fps=1")  
+	file_text_writeln(OPT)
+	file_text_write_string(OPT,"show_fps=1")  
 	file_text_close(OPT)    
     
 	setmenu_fullscreen=true
@@ -114,9 +140,9 @@ window_set_fullscreen(setmenu_fullscreen)
 if setmenu_scale_screen==false
 {
 	application_surface_draw_enable(false)  ///has to be called each room start
-		var w,h;
-		w=1680
-		h=950
+	var w,h;
+	w=1680
+	h=950
 	window_set_rectangle(display_get_width()/2-(w/2),display_get_height()/2-(h/2),w,h);
 	display_set_gui_size(1680,950)
 }

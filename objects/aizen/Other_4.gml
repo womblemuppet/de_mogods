@@ -281,7 +281,7 @@ if room==gameroom
 	{
 		biomeswitch=false
 		travelled+=bh            
-		bedrockcounter=41
+		bedrockcounter=aizen.bh+1
 		travelled_tick_biome_threshold_check()
 		terrain_generate(iii*bh)
 	}
