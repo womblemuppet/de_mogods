@@ -12,7 +12,8 @@ else if room==init
 	var a;
 	a=instance_create(x,y,aizen)    ///the birth of a monster
 	a.player_priority=irandom(players_in-1)+1
-	
+	a.bh=setmenu_block_height
+	a.bw=setmenu_block_width
 	    
 	///// creates a new array of player slots with a controller id attached, to be used to give player objects pad numbers
 	with a

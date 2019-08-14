@@ -122,11 +122,11 @@ else ///////////////////////////////////////////////////////////////////////////
 	
 	////testing purposes only, to be removed
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"show_fps=1")  
+	file_text_write_string(OPT,"block_width=1")  
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"show_fps=1")  
+	file_text_write_string(OPT,"block_height=1")  
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"show_fps=1")  
+	file_text_write_string(OPT,"player_scale=1")  
 	file_text_close(OPT)    
     
 	setmenu_fullscreen=true
@@ -134,6 +134,14 @@ else ///////////////////////////////////////////////////////////////////////////
 	setmenu_eff_volume=0
 	setmenu_bgm_volume=0
 	setmenu_show_fps=true
+	
+	setmenu_block_width=40
+	setmenu_block_height=40
+	setmenu_player_scale=1
+	
+	readgrab=file_text_read_string(OPT)
+	
+	
 }
 
 window_set_fullscreen(setmenu_fullscreen)
