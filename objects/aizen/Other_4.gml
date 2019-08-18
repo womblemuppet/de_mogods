@@ -162,18 +162,18 @@ if room==gameroom
 	{
 		show_error("error - players in game less than 2",true)
 	}
-	if kouchou.players_in==2
+	else if kouchou.players_in==2
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920
 	}
-	if kouchou.players_in==3
+	else if kouchou.players_in==3
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920
 		spawn_positions_x[2]=600
 	}
-	if kouchou.players_in==4
+	else if kouchou.players_in==4
 	{
 		spawn_positions_x[0]=280
 		spawn_positions_x[1]=920

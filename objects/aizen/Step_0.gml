@@ -212,8 +212,7 @@ if !ds_list_empty(blockstosprite)
 if !surface_exists(fossil_surface)
 	fossil_surface_redraw_needed=true
     
-	
-	
+
 	
 if call_a_block_has_been_destroyed
 {
@@ -228,13 +227,13 @@ if will_update_blocks_to_draw_list==true
 }
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// pause
-for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems
+for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems, needs 
 {
-	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] should have a better system.
+	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] bandaid solution -  should have a better system.
 	if gamepad
 		padnumber=ds_map_find_value(kouchou.keybinding_map_array[i],"padnumber")
 		
-		
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////PAUSE SCREEN REQUEST
 	if !debug
 	{
