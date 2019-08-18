@@ -47,17 +47,6 @@ biome_schedule=ds_list_create()    ///list for which biome comes next
 number_of_tergenned_lines=0
 total_baseline_movement=0
 
-terrain_buffer_layer_newest=[]
-terrain_buffer_layer2=[]
-terrain_buffer_layer3=[]
-for (i = 0; i < (kouchou.rw/bw); i++)
-{
-	terrain_buffer_layer_newest[i]=-2
-	terrain_buffer_layer2[i]=-2
-	terrain_buffer_layer3[i]=-2
-}
-
-
 
 ds_list_add(biome_schedule,choose("forest","sand"))
 ds_list_add(biome_schedule,"cave")
@@ -151,4 +140,3 @@ terrain_block_sprite_lists_init()
 
 chunkery_init()
 
-tergen_init()

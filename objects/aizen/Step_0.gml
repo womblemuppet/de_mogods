@@ -225,9 +225,9 @@ if will_update_blocks_to_draw_list==true
 	update_blocks_to_draw_list()
 	will_update_blocks_to_draw_list=false
 }
-    
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// pause
-for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems, needs 
+for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in might cause slot problems?
 {
 	gamepad=ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")    ///sets gamepad and padnumber variables for input scripts. [finaledit] bandaid solution -  should have a better system.
 	if gamepad

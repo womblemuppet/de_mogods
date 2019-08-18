@@ -14,6 +14,8 @@ else if room==init
 	a.player_priority=irandom(players_in-1)+1
 	a.bh=40//setmenu_block_height
 	a.bw=40//setmenu_block_width
+	with a
+		tergen_init()  //delayed as relies on bh/bw being set
 	    
 	///// creates a new array of player slots with a controller id attached, to be used to give player objects pad numbers
 	with a

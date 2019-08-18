@@ -37,7 +37,7 @@ switch (character)
 	ds_map_add(attacks, "special3", -1);
 	//not set
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
-    
+
 	running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
 	ground_pound_freeze_time-=4

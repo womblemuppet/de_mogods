@@ -1,6 +1,6 @@
 if select!=10       //// outer pause menu
 {
-
+	P=pausescreen_requester_id   ///[finaledit] bandaid solution to dependency problem, need to seperate checkkey functions
 	if checkkey_pushed(ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester_id],"downbutton"))
 	{
 		select+=1

@@ -5,6 +5,19 @@
 
 
 ///[finaledit] some of these might be obsolete
+
+
+terrain_buffer_layer_newest=[]
+terrain_buffer_layer2=[]
+terrain_buffer_layer3=[]
+for (i = 0; i < (kouchou.rw/bw); i++)
+{
+	terrain_buffer_layer_newest[i]=-2
+	terrain_buffer_layer2[i]=-2
+	terrain_buffer_layer3[i]=-2
+}
+
+
 lightingcolourmap=ds_map_create()
 lightingalphamap=ds_map_create()
 ds_map_add(lightingcolourmap,"summit",c_white)
