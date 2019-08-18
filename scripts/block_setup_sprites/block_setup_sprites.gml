@@ -95,6 +95,9 @@ if (!left && !right && !up && !down)
 sprite_index=ds_list_find_value(sprite_list,num)
 mask_index=block_mask40
 
+image_xscale=aizen.bw/40
+image_xscale=aizen.bh/40
+
 
 
 

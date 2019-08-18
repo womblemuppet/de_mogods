@@ -27,13 +27,13 @@ debug_show_hitboxes=false
 debug=false
 bloodmoon_recalc_call=false
 
-bw=50  ///block width
-bh=50  ///block height
+//bw=40  ///block width
+//bh=40  ///block height
 
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()
 
-
+//rename this to withindrawtimethreshold
 candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
 healthcap=5   ///max health value
 bedrockcounter=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
@@ -50,7 +50,7 @@ total_baseline_movement=0
 terrain_buffer_layer_newest=[]
 terrain_buffer_layer2=[]
 terrain_buffer_layer3=[]
-for (i = 0; i < kouchou.rw/bw; i++)
+for (i = 0; i < (kouchou.rw/bw); i++)
 {
 	terrain_buffer_layer_newest[i]=-2
 	terrain_buffer_layer2[i]=-2

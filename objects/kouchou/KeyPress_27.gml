@@ -33,8 +33,20 @@ else if room==settings
         file_text_write_string(OPT,"0")
     else
         file_text_write_string(OPT,"1")    
+	   
+    file_text_write_string(OPT,setmenu_eff_volume)
+    file_text_writeln(OPT)
+    file_text_write_string(OPT,"block_width=")
+    file_text_write_string(OPT,setmenu_block_width)
+    file_text_writeln(OPT)
+    file_text_write_string(OPT,"block_height=")   
+    file_text_write_string(OPT,setmenu_block_height)
+    file_text_writeln(OPT)
+    file_text_write_string(OPT,"setmenu_player_scale=") 
+    file_text_write_string(OPT,setmenu_player_scale)
+
     file_text_close(OPT)   
-    //show_message("options saved")
+    show_debug_message("options saved")
     
     window_set_fullscreen(setmenu_fullscreen)
     room=menu

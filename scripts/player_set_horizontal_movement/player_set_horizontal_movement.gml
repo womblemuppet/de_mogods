@@ -49,7 +49,7 @@ if stunned==0 && player_not_locked_down()
 //checks if player is allowed to change direction
 if player_allow_direction_switch()
 {
-	image_xscale=sgn
+	image_xscale=sgn*scale
 	if argument0=="left"
 		right=false
 	else

@@ -86,19 +86,19 @@ if file_exists("options.txt")
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
 	
-	setmenu_block_width=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_block_width=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
 	setmenu_block_width=real(setmenu_block_width)
 	
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
 	
-	setmenu_block_height=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_block_height=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
 	setmenu_block_height=real(setmenu_block_height)	
 	
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
 	
-	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,1))
+	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
 	setmenu_player_scale=real(setmenu_player_scale)	
 
 	file_text_close(OPT)
@@ -137,11 +137,7 @@ else ///////////////////////////////////////////////////////////////////////////
 	
 	setmenu_block_width=40
 	setmenu_block_height=40
-	setmenu_player_scale=1
-	
-	readgrab=file_text_read_string(OPT)
-	
-	
+	setmenu_player_scale=1	
 }
 
 window_set_fullscreen(setmenu_fullscreen)
