@@ -1,1 +1,1 @@
-left_HUD.PLAYER_SUPER_TIME_TOTAL=super_mode_duration
+top_HUD.PLAYER_SUPER_TIME_TOTAL=super_mode_duration

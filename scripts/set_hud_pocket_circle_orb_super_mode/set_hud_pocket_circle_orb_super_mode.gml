@@ -1,3 +1,3 @@
-aizen.hud_pocket_circle_sprite[P]=hud_pocket_circle_area_has_super_mode
-aizen.hudpocketcircle_subimage[P]=0
-aizen.hudpocketcircle_image_number[P]=aizen.HUD_POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER
+top_HUD.pocket_circle_sprite[P]=hud_pocket_circle_area_has_super_mode
+top_HUD.pocket_circle_subimage[P]=0
+top_HUD.pocket_circle_image_number[P]=top_HUD.POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER

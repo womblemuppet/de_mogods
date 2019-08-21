@@ -79,29 +79,12 @@ vscreenshake_ammo=8
 vscreenshake_D=0 /// -1, 0 1
 vscreenshake_speed=5
 
-warning_subimage=0
+top_of_screen_warning_subimage=0
 
 hothandspaydaycolour=c_white
 
-hudfloatingmasks_subimage=0
-HUDFLOATINGMASKS_IMAGE_NUMBER=22
-
-hud_fb_indicator_subimage=0
-HUD_FB_INDICATOR_IMAGE_NUMBER=8
 
 
-HUD_POCKET_CIRCLE_AREA_IMAGE_NUMBER=1
-HUD_POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER=6
-HUD_POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
-
-hudpocketcircle_subimage[kouchou.MAX_PLAYER_COUNT-1]=0
-hudpocketcircle_image_number[kouchou.MAX_PLAYER_COUNT-1]=1
-for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
-{
-	hudpocketcircle_subimage[i]=0
-	hudpocketcircle_image_number[i]=1
-	hud_pocket_circle_sprite[i]=hud_pocket_circle_area
-}
 
 
 

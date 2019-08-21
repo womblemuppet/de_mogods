@@ -3,37 +3,9 @@ bloodmoon_recalc_call=false
 if pausescreen_doubletap_counter>0
 	pausescreen_doubletap_counter-=1
 
-warning_subimage+=1
-if warning_subimage>9
-	warning_subimage=0
-
-
-hudfloatingmasks_subimage+=0.2
-if hudfloatingmasks_subimage>HUDFLOATINGMASKS_IMAGE_NUMBER
-	hudfloatingmasks_subimage=0
-
-hud_fb_indicator_subimage+=0.2
-if hud_fb_indicator_subimage>HUD_FB_INDICATOR_IMAGE_NUMBER
-	hud_fb_indicator_subimage=0
-
-
-
-for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
-{
-	hudpocketcircle_subimage[i]+=0.2
-	
-	if hudpocketcircle_subimage[i]>hudpocketcircle_image_number[i]
-	{
-		hudpocketcircle_subimage[i]=0
-	
-		if hud_pocket_circle_sprite[i]==hud_pocket_circle_area_orb_lost
-		{
-			hud_pocket_circle_sprite[i]=hud_pocket_circle_area
-			hudpocketcircle_image_number[i]=HUD_POCKET_CIRCLE_AREA_IMAGE_NUMBER
-		}
-	}
-}
-
+top_of_screen_warning_subimage+=1
+if top_of_screen_warning_subimage>9
+	top_of_screen_warning_subimage=0
 
 
 stackframe_subimage+=0.2

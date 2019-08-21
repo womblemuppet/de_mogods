@@ -2,7 +2,7 @@
     "id": "f2908bec-0743-4828-8c2e-ca50b6687622",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "left_HUD",
+    "name": "top_HUD",
     "eventList": [
         {
             "id": "8df1097e-84e6-4ce8-a317-6f02879ea170",

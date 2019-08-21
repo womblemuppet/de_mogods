@@ -1,2 +1,2 @@
-left_HUD.player_is_in_super_mode[P]=super_mode
-left_HUD.player_ult_time_remaining[P]=super_mode_time_remaining
+top_HUD.player_is_in_super_mode[P]=super_mode
+top_HUD.player_ult_time_remaining[P]=super_mode_time_remaining

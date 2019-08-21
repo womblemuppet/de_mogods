@@ -44,7 +44,7 @@ if draw
 {
 	for (var i=kouchou.room_left_border_x; i<kouchou.room_right_border_x; i+=50)
 	{
-		draw_sprite(bound_warning_sprite,warning_subimage,i,0)
+		draw_sprite(bound_warning_sprite,top_of_screen_warning_subimage,i,0)
 	};
 }
 
@@ -87,26 +87,26 @@ draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
 
 for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {
-	if left_HUD.player_HUD_enabled[v]==true
+	if top_HUD.player_HUD_enabled[v]==true
 	{
 		draw_set_colour(c_lime)
 		subyy=yy+(areaheight+gapheight)*v//+areaheight
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
-		draw_sprite_ext(left_HUD.player_hp_glow_spr[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		draw_sprite_ext(top_HUD.player_hp_glow_spr[v],top_HUD.floating_masks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		
-		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		draw_sprite_ext(hud_floatingoogamask,top_HUD.floating_masks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		
 			
-		draw_sprite(hud_pocket_circle_sprite[v],hudpocketcircle_subimage[v],xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		draw_sprite(top_HUD.pocket_circle_sprite[v],top_HUD.pocket_circle_subimage[v],xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
-		if left_HUD.player_pocket_orb_sprite[v]!=-1
-			draw_sprite(left_HUD.player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		if top_HUD.player_pocket_orb_sprite[v]!=-1
+			draw_sprite(top_HUD.player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		draw_set_colour(METER_BACKGROUND_COLOUR)
 		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
 		
 		
-		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(left_HUD.playerorbcount[v])))
+		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(top_HUD.player_orb_count[v])))
 		draw_text(areaxend-50,subyy+210,string_hash_to_newline("wins"+string(kouchou.playerwins[v])))
 	}
 	else

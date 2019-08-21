@@ -7682,7 +7682,7 @@
             "Key": "f2908bec-0743-4828-8c2e-ca50b6687622",
             "Value": {
                 "id": "eb3e2cfa-18dd-4bc3-9e36-3fc3f6056cce",
-                "resourcePath": "objects\\left_HUD\\left_HUD.yy",
+                "resourcePath": "objects\\top_HUD\\top_HUD.yy",
                 "resourceType": "GMObject"
             }
         },
