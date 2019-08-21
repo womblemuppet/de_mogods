@@ -87,26 +87,26 @@ draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
 
 for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {
-	if player_draw_HUD[v]==true
+	if left_HUD.player_draw_HUD[v]==true
 	{
 		draw_set_colour(c_lime)
 		subyy=yy+(areaheight+gapheight)*v//+areaheight
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
-		draw_sprite_ext(playerhpglow[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		draw_sprite_ext(left_HUD.playerhpglow[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		
 		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		
 			
 		draw_sprite(hud_pocket_circle_sprite[v],hudpocketcircle_subimage[v],xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
-		if player_pocket_orb_sprite[v]!=-1
-			draw_sprite(player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
+		if left_HUD.player_pocket_orb_sprite[v]!=-1
+			draw_sprite(left_HUD.player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
 		
 		draw_set_colour(METER_BACKGROUND_COLOUR)
 		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
 		
 		
-		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(playerorbcount[v])))
+		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(left_HUD.playerorbcount[v])))
 		draw_text(areaxend-50,subyy+210,string_hash_to_newline("wins"+string(kouchou.playerwins[v])))
 	}
 	else

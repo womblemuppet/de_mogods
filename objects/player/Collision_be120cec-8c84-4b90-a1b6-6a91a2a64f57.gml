@@ -8,7 +8,7 @@ if other.ready==true && other.dying==false && !super_mode
 	
 	////////////////////////////////////////////////////////////////////////////////// ADD TO PLAYERS SUPERCOUNT
 	orb_count_meter+=1
-	aizen.playerorbcount[P]=orb_count_meter
+	left_HUD.playerorbcount[P]=orb_count_meter
 	pocket_orb=other.type
 
 	

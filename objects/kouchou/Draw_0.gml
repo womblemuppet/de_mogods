@@ -336,6 +336,7 @@ else if room==multiplayermenu
 
 if starbucksmode
 {
+	depth=-10000
 	if !mouse_check_button(mb_left)
 	{
 		draw_set_colour(c_black)

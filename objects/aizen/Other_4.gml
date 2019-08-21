@@ -53,70 +53,13 @@ if room==gameroom
 	instance_create_depth(0,0,-5,borderviews)
 	instance_create_depth(0,0,0,combo_text_controller)
 	instance_create_depth(0,0,-5,console)
+	instance_create_depth(0,0,-5,left_HUD)
     
 	blockstosprite=ds_list_create()    ///list of blocks to have sprite connecting script applied in aizen step event (optimized by doing all at once only once)
 	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed
 
 	//////////////////////////////////////HUD VARIABLES - incase players stop existing hud will draw from these values instead of grabbing from player instance
-
-	hud_player_meter[kouchou.MAX_PLAYER_COUNT-1]=0
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		hud_player_meter[i]=0
-	};   
-
-	hud_player_is_in_super_mode[kouchou.MAX_PLAYER_COUNT-1]=false
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		hud_player_ult_time_remaining[i]=false
-	};
-
-	hud_player_ult_time_remaining[kouchou.MAX_PLAYER_COUNT-1]=0
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		hud_player_ult_time_remaining[i]=0
-	};
-	
-	HUD_PLAYER_SUPER_TIME_TOTAL[kouchou.MAX_PLAYER_COUNT-1]=0
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		HUD_PLAYER_SUPER_TIME_TOTAL[i]=0
-	};
-	
-	hud_pocket_has_super_mode[kouchou.MAX_PLAYER_COUNT-1]=0
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		hud_pocket_has_super_mode[i]=0
-	};
-    
-	playerhpglow[kouchou.MAX_PLAYER_COUNT-1]=hud_floatingoogamask_glow
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		playerhpglow[i]=hud_floatingoogamask_glow
-	};
-    
-	player_pocket_orb_sprite[kouchou.MAX_PLAYER_COUNT-1]=-1
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		player_pocket_orb_sprite[i]=-1
-	};
-    
-
-    
-	playerorbcount[kouchou.MAX_PLAYER_COUNT-1]=-1
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		playerorbcount[i]=0
-	};
-    
-    
-	player_draw_HUD[kouchou.MAX_PLAYER_COUNT-1]=false
-	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-	{
-		player_draw_HUD[i]=false
-		if i<kouchou.players_in
-			player_draw_HUD[i]=true
-	};
+   
 
     
     
@@ -244,7 +187,7 @@ if room==gameroom
 			b.image_xscale=0.9
 			b.image_yscale=0.9
 			
-			player_set_up_hud()
+			player_set_up_HUD()
 		}
 	};
     

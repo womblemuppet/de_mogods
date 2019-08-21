@@ -140,16 +140,10 @@ switch txt
 		orb_type=5
 		break;
 	}
-	
-	//show_debug_message("txt "+string(txt))
-	//show_debug_message("stacktype "+string(stacktype))
-	//if orb_type!=undefined
-	//	show_debug_message("orb_type "+string(orb_type))
-	//else
-	//	show_debug_message("orb_type is undefined")
+
 	
 	if orb_type==undefined
-		console_log("unknown orb type")
+		console_log("unknown orb type "+stacktype)
 	else
 	{
 		if txt=="stack"
