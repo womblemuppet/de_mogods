@@ -14,6 +14,11 @@ POCKET_CIRCLE_AREA_IMAGE_NUMBER=1
 POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER=6
 POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   GUI   /////////
+METER_BACKGROUND_COLOUR=make_colour_rgb(17,255,61)
+METER_COLOUR_NORMAL= make_colour_rgb(237,255,216)
+METER_COLOUR_ULTING = c_aqua
+
 
 player_meter[kouchou.MAX_PLAYER_COUNT-1]=0
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)

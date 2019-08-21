@@ -58,61 +58,9 @@ if draw
 
 
 
-var xx,yy,subyy,areaheight,areaxend,areaxstart,maskalpha,maskscale,meter_xoffset,meter_yoffset,meter_height,meter_length,ultind_yoffset;
+var xx,yy;
 xx=0
 yy=0
-subyy=0
-maskalpha=1
-areaxend=kouchou.room_left_border_x   ///absolute
-areaxstart=5  ////plus
-areaheight=250
-gapheight=0
-maskscale=1.8
-mask_xoffset=82   ///plus
-mask_yoffset=15   ///plus
-pocket_xoffset=185  ////plus
-pocket_yoffset=170  ///plus
-ultind_yoffset=225
-meter_length=140
-meter_xoffset=70  ///plus
-meter_yoffset=235  ///plus
-meter_height=10
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////// LEFT SIDE (MASKS)
-draw_set_font(font_scoreboard)
-draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
-
-
-for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
-{
-	if top_HUD.player_HUD_enabled[v]==true
-	{
-		draw_set_colour(c_lime)
-		subyy=yy+(areaheight+gapheight)*v//+areaheight
-		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
-		draw_sprite_ext(top_HUD.player_hp_glow_spr[v],top_HUD.floating_masks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
-		
-		draw_sprite_ext(hud_floatingoogamask,top_HUD.floating_masks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
-		
-			
-		draw_sprite(top_HUD.pocket_circle_sprite[v],top_HUD.pocket_circle_subimage[v],xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
-		
-		if top_HUD.player_pocket_orb_sprite[v]!=-1
-			draw_sprite(top_HUD.player_pocket_orb_sprite[v],0,xx+areaxstart+pocket_xoffset,subyy+pocket_yoffset)
-		
-		draw_set_colour(METER_BACKGROUND_COLOUR)
-		draw_rectangle(xx+areaxstart+meter_xoffset,subyy+meter_yoffset,xx+areaxstart+meter_xoffset+meter_length,subyy+meter_yoffset+meter_height,false)
-		
-		
-		draw_text(areaxend-50,subyy+190,string_hash_to_newline("orbs"+string(top_HUD.player_orb_count[v])))
-		draw_text(areaxend-50,subyy+210,string_hash_to_newline("wins"+string(kouchou.playerwins[v])))
-	}
-	else
-		draw_sprite(arcade_cabinet_scorebar_inactive,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))
-}
-
 
 //////////////////////////////////////////////////////////////////////////////////////// RIGHT SIDE (BAR)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
