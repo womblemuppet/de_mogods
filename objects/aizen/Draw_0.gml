@@ -87,12 +87,12 @@ draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
 
 for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {
-	if left_HUD.player_draw_HUD[v]==true
+	if left_HUD.player_HUD_enabled[v]==true
 	{
 		draw_set_colour(c_lime)
 		subyy=yy+(areaheight+gapheight)*v//+areaheight
 		draw_sprite(arcade_cabinet_scorebar,0,xx+areaxstart,yy+(    (areaheight+gapheight)*v    ))   
-		draw_sprite_ext(left_HUD.playerhpglow[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
+		draw_sprite_ext(left_HUD.player_hp_glow_spr[v],hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		
 		draw_sprite_ext(hud_floatingoogamask,hudfloatingmasks_subimage,xx+areaxstart+mask_xoffset,subyy+mask_yoffset,maskscale,maskscale,0,c_white,maskalpha)
 		

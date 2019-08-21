@@ -58,7 +58,6 @@ if room==gameroom
 	blockstosprite=ds_list_create()    ///list of blocks to have sprite connecting script applied in aizen step event (optimized by doing all at once only once)
 	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed
 
-	//////////////////////////////////////HUD VARIABLES - incase players stop existing hud will draw from these values instead of grabbing from player instance
    
 
     
