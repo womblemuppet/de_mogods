@@ -1,5 +1,5 @@
-///take control of app surface
-
+room_width=1350
+room_height=768
 
 if room==startup
 {

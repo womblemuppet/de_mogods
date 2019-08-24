@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 248,
+    "bbox_bottom": 101,
     "bbox_left": 0,
     "bbox_right": 259,
     "bbox_top": 0,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 249,
+    "height": 102,
     "layers": [
         {
             "id": "e9cf54b1-1667-4477-b470-0aa52831232d",
@@ -54,7 +54,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 9,
     "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,

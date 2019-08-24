@@ -1583,6 +1583,14 @@
             }
         },
         {
+            "Key": "3265cb24-873c-4278-8a95-5397b8d0ce32",
+            "Value": {
+                "id": "8307f751-af0f-44b4-98e1-85204653b214",
+                "resourcePath": "scripts\\load_options_file\\load_options_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32b6d29c-bb57-48b5-acef-7864b256b164",
             "Value": {
                 "id": "194424aa-3a29-4e1f-bec2-990985e1d7a8",
@@ -1796,6 +1804,14 @@
                 "id": "42afa96f-009f-4160-8e48-bb257e80c67d",
                 "resourcePath": "sprites\\hud_floatingoogamask_glowr\\hud_floatingoogamask_glowr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3cfc5e4d-bb12-4cad-9f25-5b84e38087c7",
+            "Value": {
+                "id": "7ef43764-130c-4df4-8334-f00eddfaf9b4",
+                "resourcePath": "scripts\\terrain_generate_at_start\\terrain_generate_at_start.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2972,6 +2988,14 @@
                 "id": "73d86a3a-f711-47e1-b608-c8efd1998cd9",
                 "resourcePath": "objects\\payday\\payday.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "60dfb10c-1920-4899-8c2e-c4b5e06dafe1",
+            "Value": {
+                "id": "e4144622-705a-448b-b945-f5252c69a045",
+                "resourcePath": "scripts\\keyboard_set_menu_key_bindings\\keyboard_set_menu_key_bindings.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4668,6 +4692,14 @@
                 "id": "dff036f0-4284-430f-bf3c-cf8f11488f08",
                 "resourcePath": "objects\\scrolls\\scrolls.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9672053d-63c5-4ddf-bb99-51d9a2dcebff",
+            "Value": {
+                "id": "59059f25-78c4-454d-95ec-9e2991262a33",
+                "resourcePath": "scripts\\lore_init\\lore_init.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8082,6 +8114,9 @@
         "5e18a68d-8769-494f-b35b-703427e4d778",
         "14ae9649-1ac5-4402-a578-e454101aeda3",
         "a0d92035-4e62-436b-a283-b746bc55df79",
+        "9672053d-63c5-4ddf-bb99-51d9a2dcebff",
+        "3265cb24-873c-4278-8a95-5397b8d0ce32",
+        "60dfb10c-1920-4899-8c2e-c4b5e06dafe1",
         "157b7f1f-59bc-4822-9ac3-c9c190bfe264",
         "4513e3db-a9fa-4864-8988-20651de425ab",
         "8aede115-b9c0-40e8-9e46-3b4f87f0cf6c",
@@ -8123,6 +8158,7 @@
         "536bc997-c975-4647-9a40-f5898fadca6f",
         "00aa205e-b08d-409a-ba41-ff0b247512fc",
         "204d26b8-16fc-4288-929b-1c949c4f5198",
+        "3cfc5e4d-bb12-4cad-9f25-5b84e38087c7",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "65f6f02b-a601-47d3-a217-3f54e57d1472",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",

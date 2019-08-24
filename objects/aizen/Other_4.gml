@@ -2,13 +2,10 @@ if room==menu
 	instance_destroy()
 if room==gameroom
 {
-	//audio_stop_sound(menoos)
-	//audio_play_sound(playmoos,0,true)
-	
-	
+
 	///////////////////////////////////////VIEWS AND CAMERAS////////////////////////////////////////////////////////////////////////////////////////
 	
-	for (var i = 0; i < 5; ++i) 
+	for (var i = 0; i < 2; i++) 
 	{
 		view_visible[i]=true
 		view_enabled[i]=true
@@ -23,32 +20,32 @@ if room==gameroom
 	camera_set_view_pos(main_cam,kouchou.room_left_border_x,kouchou.room_top_border_y)
 	
     
-	view_set_wport(1,kouchou.room_left_border_x)
-	view_set_hport(1,room_height)	
-	lefthud_cam=camera_create_view(0,0,kouchou.room_left_border_x,room_height)
-	view_set_camera(1,lefthud_cam)
+	//view_set_wport(1,kouchou.room_left_border_x)
+	//view_set_hport(1,room_height)	
+	//lefthud_cam=camera_create_view(0,0,kouchou.room_left_border_x,room_height)
+	//view_set_camera(1,lefthud_cam)
 	
 	
-	view_set_xport(2,kouchou.room_right_border_x)
-	view_set_wport(2,kouchou.room_right_full-kouchou.room_right_border_x)
-	view_set_hport(2,room_height)	
-	righthud_cam=camera_create_view(kouchou.room_right_border_x,0,kouchou.room_right_full-kouchou.room_right_border_x,room_height)
-	view_set_camera(2,righthud_cam)
+	//view_set_xport(2,kouchou.room_right_border_x)
+	//view_set_wport(2,kouchou.room_right_full-kouchou.room_right_border_x)
+	//view_set_hport(2,room_height)	
+	//righthud_cam=camera_create_view(kouchou.room_right_border_x,0,kouchou.room_right_full-kouchou.room_right_border_x,room_height)
+	//view_set_camera(2,righthud_cam)
 	
-	
-	view_set_xport(3,kouchou.room_left_border_x)
-	view_set_wport(3,kouchou.rw)
-	view_set_hport(3,kouchou.room_top_border_y)	
+	 
+	view_set_xport(1,kouchou.room_left_border_x)
+	view_set_wport(1,kouchou.rw)
+	view_set_hport(1,kouchou.room_top_border_y)	
 	tophud_cam=camera_create_view(kouchou.room_left_border_x,0,kouchou.rw,kouchou.room_top_border_y)
-	view_set_camera(3,tophud_cam)
+	view_set_camera(1,tophud_cam)
 	
 	
-	view_set_xport(4,kouchou.room_left_border_x)
-	view_set_wport(4,kouchou.rw)
-	view_set_yport(4,kouchou.room_bottom_border_y)
-	view_set_hport(4,room_height-kouchou.room_bottom_border_y)	
-	bottomhud_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_bottom_border_y,kouchou.rw,room_height-kouchou.room_bottom_border_y)
-	view_set_camera(4,bottomhud_cam)
+	//view_set_xport(4,kouchou.room_left_border_x)
+	//view_set_wport(4,kouchou.rw)
+	//view_set_yport(4,kouchou.room_bottom_border_y)
+	//view_set_hport(4,room_height-kouchou.room_bottom_border_y)	
+	//bottomhud_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_bottom_border_y,kouchou.rw,room_height-kouchou.room_bottom_border_y)
+	//view_set_camera(4,bottomhud_cam)
 
 	instance_create_depth(0,0,-5,borderviews)
 	instance_create_depth(0,0,0,combo_text_controller)
@@ -191,44 +188,34 @@ if room==gameroom
 	};
     
     
-	if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches 
-	{
-		for (var i=0; i<kouchou.rw; i+=bw)
-		{
-			spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
-		};
-		for (var i=0; i<kouchou.rw; i+=bw)
-		{
-			spawn_block(kouchou.room_left_border_x+i,groundlevel+bh,0)
-		};
+	//if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches 
+	//{
+	//	for (var i=0; i<kouchou.rw; i+=bw)
+	//	{
+	//		spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
+	//	};
+	//	for (var i=0; i<kouchou.rw; i+=bw)
+	//	{
+	//		spawn_block(kouchou.room_left_border_x+i,groundlevel+bh,0)
+	//	};
 
 
-		with block
-		{
-			ds_list_add(aizen.blockstosprite,self.id)
-		}
-	}
+	//	with block
+	//	{
+	//		ds_list_add(aizen.blockstosprite,self.id)
+	//	}
+	//}
     
     
         
 	with player
 		sprite_index=sprites[0]
-		
 
-	biomeswitch=false   ///(I think) true when cutting gap between biomes
-	player_baseline_prev=880
-	player_baseline=880
 
-	for (iii=17; iii<27; iii+=1)   //row by row  
-	{
-		biomeswitch=false
-		travelled+=bh            
-		bedrockcounter=aizen.bh+1
-		travelled_tick_biome_threshold_check()
-		terrain_generate(iii*bh)
-	}
+	terrain_generate_at_start()
 	
-	bedrockcounter=0
+	
+	
 	//create fossil surface for first time
 	redraw_fossil_surface()
 

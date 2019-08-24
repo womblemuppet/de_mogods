@@ -101,7 +101,7 @@ if kouchou.setmenu_show_fps
 	if fps_real>80
 	{
 		draw_set_color(c_white)    
-		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real/10)*10)+" fps"))
+		draw_text(kouchou.room_left_border_x+40,kouchou.room_top_border_y+20,string_hash_to_newline(string(round(fps_real/10)*10)+" fps"))
 	}
 	else
 	{

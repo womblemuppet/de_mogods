@@ -1,0 +1,10 @@
+kb1_start_button=vk_space
+kb1_left_button=ord("A")
+kb1_right_button=ord("D")
+kb1_up_button=ord("W")
+kb1_down_button=ord("S")
+kb2_start_button=vk_enter
+kb2_left_button=ord("J")
+kb2_right_button=ord("L")
+kb2_up_button=ord("I")
+kb2_down_button=ord("K")
