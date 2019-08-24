@@ -10,9 +10,11 @@ if room==settings
 {
 	if setmenu_select=="fullscreen"
 	{
-		setmenu_fullscreen=!setmenu_fullscreen        
+		setmenu_fullscreen=!setmenu_fullscreen     
+		if !setmenu_fullscreen
+			setmenu_scale_screen=false
 	}
-	else if setmenu_select=="scale_screen"
+	else if setmenu_select=="scale_screen" && setmenu_fullscreen==true
 	{
 		setmenu_scale_screen=!setmenu_scale_screen
 	}

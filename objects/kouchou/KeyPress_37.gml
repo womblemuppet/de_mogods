@@ -15,7 +15,7 @@ if room==settings
     {
         setmenu_fullscreen=!setmenu_fullscreen        
     }
-    else if setmenu_select=="scale_screen"
+    else if setmenu_select=="scale_screen" && setmenu_fullscreen==true
     {
 		setmenu_scale_screen=!setmenu_scale_screen
     }

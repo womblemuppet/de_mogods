@@ -101,13 +101,17 @@ else ///////////////////////////////////////////////////////////////////////////
 }
 
 window_set_fullscreen(setmenu_fullscreen)
-if setmenu_scale_screen==false
+
+if setmenu_fullscreen==false
+	setmenu_scale_screen=false
+
+if setmenu_scale_screen==true && setmenu_fullscreen==true
 {
-	application_surface_draw_enable(false)  ///has to be called each room start
+	application_surface_draw_enable(false)
 	var w,h;
-	w=1680
-	h=950
+	w=1350
+	h=768
 	window_set_rectangle(display_get_width()/2-(w/2),display_get_height()/2-(h/2),w,h);
-	display_set_gui_size(1680,950)
+	display_set_gui_size(1350,768)
 }
 

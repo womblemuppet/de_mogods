@@ -14,8 +14,13 @@ if room==settings
     setmenu_select_number+=1
     if setmenu_select_number==SETMENU_SELECT_NUMBER_MAX
         setmenu_select_number=0
-	   
 	setmenu_select=setmenu_select_options[setmenu_select_number]
+	if setmenu_select=="scale_screen" && setmenu_fullscreen==false
+	{
+		setmenu_select_number+=1
+		setmenu_select=setmenu_select_options[setmenu_select_number]	
+	}	
+
 }
 
 

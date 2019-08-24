@@ -89,14 +89,10 @@ if room==gameroom
 	instance_create(0,0,sky)
 	instance_create(0,0,lighting)    
 	
-	///////////////////////////////////////////////////////////////////// SPAWN LOCATIONS //////////////////////////////////////////////
-	
 	find_starting_spawn_locations()
 		
 		
 	////////////////////////////////////////////////////// SPAWNS	
-		
-		
 	var a;
     
 	for (var i=0; i<kouchou.players_in; i+=1)
@@ -128,7 +124,8 @@ if room==gameroom
 			decide_sprites() //////////////////////////////////// character setup
 			decide_sprite_hierarchy_lists()
 			decide_moves()
-            
+			sprite_index=sprites[0]            
+
 			///////////////////////////////////////////////////// controls
 			gamepad=ds_map_find_value(kouchou.keybinding_map_array[P],"gamepad")
 			leftbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"leftbutton")
@@ -157,35 +154,8 @@ if room==gameroom
 			player_set_up_HUD()
 		}
 	};
-    
-    
-	//if kouchou.map=="multiplayer"      ///for multiplayer, spawn torches 
-	//{
-	//	for (var i=0; i<kouchou.rw; i+=bw)
-	//	{
-	//		spawn_block(kouchou.room_left_border_x+i,groundlevel,0)
-	//	};
-	//	for (var i=0; i<kouchou.rw; i+=bw)
-	//	{
-	//		spawn_block(kouchou.room_left_border_x+i,groundlevel+bh,0)
-	//	};
-
-
-	//	with block
-	//	{
-	//		ds_list_add(aizen.blockstosprite,self.id)
-	//	}
-	//}
-    
-    
-        
-	with player
-		sprite_index=sprites[0]
-
 
 	terrain_generate_at_start()
-	
-	
 	
 	//create fossil surface for first time
 	redraw_fossil_surface()
@@ -194,22 +164,22 @@ if room==gameroom
 	update_blocks_to_draw_list()
 	
 	
-	if kouchou.map=="multiplayer"
-	{
-		//
-	}
-	else if kouchou.map=="firetrial"
-	{
-		instance_create(0,0,firetrial_control) 
-	}
-	else if kouchou.map=="icetrial"
-	{
-		instance_create(0,0,icetrial_control) 
-	}
-	else if kouchou.map=="stormtrial"
-	{
-		instance_create(0,0,stormtrial_control)
-	}    
+	//if kouchou.map=="multiplayer"
+	//{
+	//	//
+	//}
+	//else if kouchou.map=="firetrial"
+	//{
+	//	instance_create(0,0,firetrial_control) 
+	//}
+	//else if kouchou.map=="icetrial"
+	//{
+	//	instance_create(0,0,icetrial_control) 
+	//}
+	//else if kouchou.map=="stormtrial"
+	//{
+	//	instance_create(0,0,stormtrial_control)
+	//}    
 
 }
 

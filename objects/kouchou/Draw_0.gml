@@ -109,6 +109,8 @@ else if room==settings
 			break;
 			
 			case "scale_screen":
+				if setmenu_fullscreen==false
+					draw_set_color(c_dkgray)
 				draw_text(xx,yy+vgap*i,"window scaling")
 				if setmenu_scale_screen==true
 					t="on"
@@ -150,7 +152,7 @@ else if room==settings
 	}
 
 	draw_set_colour(make_colour_hsv(50,181,207))
-	draw_text(room_width/3,room_height-200,"Press Esc to save changes and leave")
+	draw_text(room_width/3,room_height-100,"Press Esc to save changes and leave")
     
 
 }
