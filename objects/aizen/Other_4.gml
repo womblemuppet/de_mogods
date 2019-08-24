@@ -81,46 +81,17 @@ if room==gameroom
 		}
 	};
     
-    
 
-
-    
 	var groundlevel;
 	groundlevel=600
 	var playerspawnheight;
 	playerspawnheight=200
 	instance_create(0,0,sky)
-	instance_create(0,0,lighting)
-
-    
+	instance_create(0,0,lighting)    
 	
 	///////////////////////////////////////////////////////////////////// SPAWN LOCATIONS //////////////////////////////////////////////
 	
-	spawn_positions_x[kouchou.MAX_PLAYER_COUNT-1]=0
-	if kouchou.players_in==0 || kouchou.players_in==1
-	{
-		show_error("error - players in game less than 2",true)
-	}
-	else if kouchou.players_in==2
-	{
-		spawn_positions_x[0]=280
-		spawn_positions_x[1]=920
-	}
-	else if kouchou.players_in==3
-	{
-		spawn_positions_x[0]=280
-		spawn_positions_x[1]=920
-		spawn_positions_x[2]=600
-	}
-	else if kouchou.players_in==4
-	{
-		spawn_positions_x[0]=280
-		spawn_positions_x[1]=920
-		spawn_positions_x[2]=560
-		spawn_positions_x[3]=640
-	}
-	if spawn_positions_x[0]==undefined
-		show_error("spawn positions undefined",true)
+	find_starting_spawn_locations()
 		
 		
 	////////////////////////////////////////////////////// SPAWNS	

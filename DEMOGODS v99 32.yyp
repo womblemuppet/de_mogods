@@ -6311,6 +6311,14 @@
             }
         },
         {
+            "Key": "c7c14d59-0241-4eb1-8522-49d3d2c7d242",
+            "Value": {
+                "id": "a27051d0-4bbe-4fe6-9330-f1b1f63dd8f6",
+                "resourcePath": "scripts\\find_starting_spawn_locations\\find_starting_spawn_locations.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c7e32f4b-5b09-42f5-8f2b-57ad100f4f35",
             "Value": {
                 "id": "c1fcb676-1aaa-42d6-b8de-94eaa2cfee16",
@@ -8159,6 +8167,7 @@
         "00aa205e-b08d-409a-ba41-ff0b247512fc",
         "204d26b8-16fc-4288-929b-1c949c4f5198",
         "3cfc5e4d-bb12-4cad-9f25-5b84e38087c7",
+        "c7c14d59-0241-4eb1-8522-49d3d2c7d242",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "65f6f02b-a601-47d3-a217-3f54e57d1472",
         "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
