@@ -42,7 +42,7 @@ biome_length=1460  //1260
 biome_length_accumulative=0   
 
 
-CREATIONDELAY=200	//// complicated shit don't touch if you can help it 
+CREATIONDELAY=200
 biome_schedule=ds_list_create()    ///list for which biome comes next
 number_of_tergenned_lines=0
 total_baseline_movement=0
