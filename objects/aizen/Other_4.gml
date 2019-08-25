@@ -51,6 +51,9 @@ if room==gameroom
 	instance_create_depth(0,0,0,combo_text_controller)
 	instance_create_depth(0,0,-5,console)
 	instance_create_depth(0,0,-6,top_HUD)
+
+		
+
     
 	blockstosprite=ds_list_create()    ///list of blocks to have sprite connecting script applied in aizen step event (optimized by doing all at once only once)
 	blockstosprite_prevlayer=ds_list_create()  //list of blocks created that will need sprites to be reconnected when the next layer of blocks is made    //[finaledit] these need to be destroyed
