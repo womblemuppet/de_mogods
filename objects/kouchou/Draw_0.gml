@@ -111,7 +111,7 @@ else if room==settings
 			case "scale_screen":
 				if setmenu_fullscreen==false
 					draw_set_color(c_dkgray)
-				draw_text(xx,yy+vgap*i,"window scaling")
+				draw_text(xx,yy+vgap*i,"window scaling (changes on restart)")
 				if setmenu_scale_screen==true
 					t="on"
 				else

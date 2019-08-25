@@ -104,8 +104,10 @@ window_set_fullscreen(setmenu_fullscreen)
 
 if setmenu_fullscreen==false
 	setmenu_scale_screen=false
+	
+scale_screen=setmenu_scale_screen
 
-if setmenu_scale_screen==true && setmenu_fullscreen==true
+if scale_screen==false && setmenu_fullscreen==true
 {
 	application_surface_draw_enable(false)
 	var w,h;

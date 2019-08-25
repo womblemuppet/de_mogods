@@ -7,13 +7,10 @@ if room==loremenu
         lorebackselect=true
 }
 if room==settings
-{
-
-	
-	
+{	
     if setmenu_select=="fullscreen"
     {
-        setmenu_fullscreen=!setmenu_fullscreen        
+        setmenu_fullscreen=!setmenu_fullscreen
     }
     else if setmenu_select=="scale_screen" && setmenu_fullscreen==true
     {
