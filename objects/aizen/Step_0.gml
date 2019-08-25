@@ -80,7 +80,7 @@ player_baseline_difference=player_baseline-player_baseline_prev
 player_baseline_prev=player_baseline
 
 
-if lowest>840// && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
+if lowest>scroll_threshold // && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
 {	//////////////////////////////////////// CAMERA SCROLL
 	var scrollspeed;
 	scrollspeed=4

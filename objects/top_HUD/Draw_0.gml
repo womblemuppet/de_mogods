@@ -22,8 +22,6 @@ meter_yoffset=235  ///plus
 meter_height=10
 
 draw_set_font(font_scoreboard)
-draw_sprite_ext(arcade_cabinet,0,kouchou.room_left_border_x,0,-1,1,0,c_white,1)
-
 
 for (v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {

@@ -333,7 +333,7 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 			if terrain_wave_xup[i]==false
 				makeok=false
 			var waveno;
-			waveno=floor(   (i*kouchou.bw)/(kouchou.rw/6))
+			waveno=floor(   (i*aizen.bw)/(kouchou.rw/6))
 			//show_message(string(waveno))
 			if terrainammo>=terrain_wave_ha[waveno]
 				makeok=false
