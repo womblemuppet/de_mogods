@@ -6,7 +6,7 @@
 
 if instance_exists(other.creator) || other.creator==noone                   /////////// ON HIT   //////////////////
 {
-	if other.hit[P]==false && other.creator!=self.id  ///hit by enemy attack
+	if other.hit[P]==false && other.creator!=self.id  ///hitbox owned by enemy
 	{
 		other.hit[P]=true
 		if other.hit_collector!=noone
@@ -14,7 +14,8 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 			if instance_exists(other.hit_collector)
 				other.hit_collector.hit[P]=true
 		}
-		if !attack_should_crush(other.attack_name) && iframes<1
+		
+		if player_is_hittable(other.attack_name)
 		{
 			player_generic_knockback(other.my_hknockback,other.my_vknockback)
 			player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)

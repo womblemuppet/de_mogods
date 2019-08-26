@@ -25,7 +25,7 @@ if instance_exists(payday)==false           ////////add to hothands and do first
 		if argument2!=0 //whether to reset hh (melee/ranged)
 			other.creator.hothands=0
 	}
-	
+
 	if aizen.first_blood_status=="none"
 	{
 		first_blood_activate_on_me(x,y)

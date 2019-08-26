@@ -16,4 +16,6 @@ if hothands>3                        //////////// hothands proc on 4
 	a.image_yscale=2
 	a.sprite_index=hothand_boom
 	a.targ=self.id
+	return true
 }
+return false

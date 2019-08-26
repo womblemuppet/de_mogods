@@ -1,4 +1,4 @@
-if canbounce_counter<1   ///disable horizontal friction if bouncing
+if canbounce_counter<1 && float_counter<1   ///disable horizontal friction if bouncing or floating
 {
 	if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
 	{ 

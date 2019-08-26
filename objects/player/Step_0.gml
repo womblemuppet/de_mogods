@@ -138,25 +138,29 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 			case "standard_airgrab_effect":
 			if instance_exists(airgrab_target) && airgrab_target!=noone   ///if airgrab target exists, apply throw
 			{
-                
-				var throwside;   ///whether throwing left or right, to be passed to airgrab target
-				throwside=right
+				var throw_to_right;   ///whether throwing left or right, to be passed to airgrab target
+				throw_to_right=right
 				var at;
 				at=AIRGRAB_STUN_TIME;
-                
+
 				with airgrab_target
 				{
 					player_flush_lockdowns()
 					canbounce_counter=at
 					stunned_groundpound=at
 					airgrab_mode="cannot_airgrab"
-					if throwside==true
+					if throw_to_right==true
 						hspd=7.5
 					else
 						hspd=-7.5
 					vspd=18
-					hothands+=1                         //// ONE HH DAMAGE
-					player_hothands_check()
+					float_counter=10
+					
+					if player_is_hittable("standard_airgrab_effect")
+					{
+						hothands+=1                         //// ONE HH DAMAGE
+						player_hothands_check()
+					}
 				}
 				hothands=0                              //// RESETS THROWERS HH
 			}
@@ -1102,8 +1106,9 @@ attack_shooting_animation_checks()
 
 
 //LIMIT VSPD
-if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed"
+if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed" && float_counter<1
 	vspd=10
+	
 player_move_vertical()
 
 ///////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL BLOCK CHECKS
