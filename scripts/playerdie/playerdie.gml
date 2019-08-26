@@ -35,40 +35,36 @@ switch lastdamagetype
 aizen.lastplayerx=x
 if kouchou.map=="multiplayer"
 {
-    if instance_number(player)==1 && aizen.candraw==true    ///draw
-    {
-        with winsplash
-            instance_destroy()
-        var a;
-        a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
-        a.image_index=4   
-        if kouchou.drinkmode==true
-            a.image_index=7
-    }
-    if instance_number(player)==2                         ///player wins
-    {
-        aizen.alarm[9]=5   ///candraw alarm (hikiwake)
-        var a;
-        a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+	if instance_number(player)==1 && aizen.candraw==true    ///draw
+	{
+		with winsplash
+			instance_destroy()
+		var a;
+		a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+		a.image_index=4   
+		if kouchou.drinkmode==true
+			a.image_index=7
+	}
+	if instance_number(player)==2                         ///player wins
+	{
+		aizen.alarm[9]=5   ///candraw alarm (hikiwake)
+		var a;
+		a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
         
-        var him;   ///find the ID of the player still alive
-        with player
-        {
-            if H>0
-                him=self.id
-        }
+		var him;   ///find the ID of the player still alive   ///very gender-inclusive..
+		with player
+		{
+			if H>0
+				him=self.id
+		}
         
-        
-        a.image_index=him.P
+		a.image_index=him.P
                 
-        if kouchou.drinkmode==true
-            a.image_index=7
+		if kouchou.drinkmode==true
+			a.image_index=7
             
-        kouchou.playerwins[him.P]+=1
-
-    }
-
-
+		kouchou.playerwins[him.P]+=1
+	}
 }
 else if kouchou.map=="stormtrial" && stormtrial_control.timer<1
 {
@@ -78,7 +74,7 @@ else if kouchou.map=="stormtrial" && stormtrial_control.timer<1
         with corpse
             instance_destroy()
 }
-else
+else      ////noone wins
 {
         var a;
         a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)

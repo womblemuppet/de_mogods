@@ -201,6 +201,7 @@ setmenu_select=setmenu_select_options[setmenu_select_number]
 
 setmenu_codetxt=""
 
+starting_hp=3
 
 trial=0
 test_numberoftrials=2

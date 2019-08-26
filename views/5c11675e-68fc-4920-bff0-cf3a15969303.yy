@@ -12,7 +12,7 @@
         "9477ed72-24e6-4d48-a77f-ab058f219ed3"
     ],
     "filterType": "GMSprite",
-    "folderName": "generic_masks",
+    "folderName": "collision_masks",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -111,7 +111,7 @@ if room==gameroom
 			
 			character=aizen.tempcharstrings[P]
 			palette=kouchou.palette[P]
-			H=3
+			H=kouchou.starting_hp
 			H+=kouchou.playerhandicap[P]
 			
 			if x<kouchou.room_x_halfway/2

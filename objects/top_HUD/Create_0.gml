@@ -20,13 +20,6 @@ POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   GUI   /////////
 
-
-player_meter[kouchou.MAX_PLAYER_COUNT-1]=0
-for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-{
-	player_meter[i]=0
-}; 
-
 player_is_in_super_mode[kouchou.MAX_PLAYER_COUNT-1]=false
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 {
@@ -52,11 +45,12 @@ for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	pocket_has_super_mode[i]=0
 };
 
-player_hp_glow_spr[kouchou.MAX_PLAYER_COUNT-1]=hud_floatingoogamask_glow
-for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
+
+player_hp[kouchou.MAX_PLAYER_COUNT-1]=0
+for (var i=0; i<kouchou.MAX_PLAYER_COUNT;i++)
 {
-	player_hp_glow_spr[i]=hud_floatingoogamask_glow
-};
+	player_hp[i]=kouchou.starting_hp
+}
 
 player_pocket_orb_sprite[kouchou.MAX_PLAYER_COUNT-1]=-1
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
