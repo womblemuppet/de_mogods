@@ -7,4 +7,6 @@ for (var i=0;i<NUMBER_OF_POCKET_SPACES;i++)
 	}
 }
 
+
+
 //[finaledit] what to do if pockets are full?

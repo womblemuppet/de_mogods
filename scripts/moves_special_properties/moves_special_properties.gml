@@ -10,7 +10,7 @@ switch argument0
 	case "ground pound":
 	with attacker
 	{
-		if cangroundpound==2
+		if cangroundpound==2  ///if gping
 		{
 			if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true 
 				attack_ooga_ultimate()
@@ -37,6 +37,9 @@ switch argument0
 				hspd=4
 			if image_xscale==-1
 				hspd=-4
+				
+			player_add_to_pocket(0)
+			player_update_pocket_hud()	
 		}
 		attack_stop_gp()
 	}
