@@ -18,7 +18,7 @@ if immune==false && safe==false
 	hothands=0
 	H-=1
 	
-	if pocket_orb!=-1
+	if !player_no_pockets()
 		set_hud_pocket_circle_orb_lost_animation()
 	else
 	{
@@ -28,7 +28,7 @@ if immune==false && safe==false
 			set_hud_pocket_circle_orb_normal()
 	}
 	
-	pocket_orb=-1                               ///reset pocket orb
+	player_empty_pockets()                               ///reset pocket orb
 	pocket_super_mode_stored=false
 	
 	

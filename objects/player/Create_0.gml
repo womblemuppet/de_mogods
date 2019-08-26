@@ -104,7 +104,9 @@ chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 cursed=false   ///bloodmoon buff
 
-pocket_orb=-1    ///type of pocketed orb
+NUMBER_OF_POCKET_SPACES=4
+pocket_orb[NUMBER_OF_POCKET_SPACES-1]=-1    ///type of pocketed orb
+player_empty_pockets()
 pocket_super_mode_stored=false ///if true, super_mode is stored in current pocket
 pocket_light_heavy_held_counter=0
 canbounce_counter=0  ///bounce counter
@@ -215,7 +217,6 @@ UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT=14
 uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
 UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=14
-
 
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150

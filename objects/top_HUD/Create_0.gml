@@ -52,12 +52,6 @@ for (var i=0; i<kouchou.MAX_PLAYER_COUNT;i++)
 	player_hp[i]=kouchou.starting_hp
 }
 
-player_pocket_orb_sprite[kouchou.MAX_PLAYER_COUNT-1]=-1
-for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-{
-	player_pocket_orb_sprite[i]=-1
-};
-
 player_orb_count[kouchou.MAX_PLAYER_COUNT-1]=-1
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 {

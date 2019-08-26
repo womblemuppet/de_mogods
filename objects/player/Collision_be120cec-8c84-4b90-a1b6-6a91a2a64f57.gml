@@ -1,15 +1,9 @@
 if other.ready==true && other.dying==false && !super_mode
 {
-	
-	////////////////////////////////////////////////////////////////////////////////// USE POCKET ORB IF THERE
-	
-	if pocket_orb!=-1
-		player_use_pocket()
-	
 	////////////////////////////////////////////////////////////////////////////////// ADD TO PLAYERS SUPERCOUNT
 	orb_count_meter+=1
 	top_HUD.player_orb_count[P]=orb_count_meter
-	pocket_orb=other.type
+	player_add_to_pocket(other.type)
 
 	
 	first_blood_allow_again()

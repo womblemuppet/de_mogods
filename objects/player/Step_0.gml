@@ -341,7 +341,7 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 	pocket_light_heavy_held_counter+=1
 	if pocket_light_heavy_held_counter>3
 	{
-		if pocket_orb!=-1
+		if !player_no_pockets()
 		{
 			player_use_pocket()
 		}

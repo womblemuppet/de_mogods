@@ -34,7 +34,10 @@ for (var v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 		draw_text(xx+hp_xoffset,yy+hp_yoffset,player_hp[v])
 		draw_sprite(pocket_circle_sprite[v],pocket_circle_subimage[v],xx+pocket_xoffset,yy+pocket_yoffset)
 		
-		if player_pocket_orb_sprite[v]!=-1
-			draw_sprite(player_pocket_orb_sprite[v],0,xx+mask_xoffset,yy+mask_yoffset)
+		for (var i = 0; i < 4; ++i) 
+		{
+			if player_pocket_orb_sprite[v,i]!=-1
+				draw_sprite(player_pocket_orb_sprite[v,i],0,xx+mask_xoffset,yy+mask_yoffset)
+		}
 	}
 }
