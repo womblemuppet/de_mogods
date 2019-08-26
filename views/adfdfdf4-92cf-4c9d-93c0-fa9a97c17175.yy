@@ -9,8 +9,7 @@
         "0f80200b-0bda-4c20-bb7d-1e02556930d1",
         "60d7c0c9-25ae-472e-bf97-445e7e4b87a4",
         "58cbd3bb-7a97-4c1b-8292-8799db1270dc",
-        "49e47a04-5529-4afc-9dad-804e16ab3a85",
-        "0d3de0f1-2b8e-4e25-89d2-32a2a93a7236"
+        "49e47a04-5529-4afc-9dad-804e16ab3a85"
     ],
     "filterType": "GMObject",
     "folderName": "orb parents",

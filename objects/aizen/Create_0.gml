@@ -25,7 +25,6 @@ STACK_SHITCALL_NUMBER=3  /// [finaledit] probably can delete this variable
 last_stack_sprite=-1
 debug_show_hitboxes=false
 debug=false
-bloodmoon_recalc_call=false
 
 //bw=40  ///block width
 //bh=40  ///block height

@@ -23,8 +23,6 @@ switch ds_list_find_value(STACK,0)
 		instance_create(0,0,freakyfishtime) break;
 	case 5:
 		instance_create(0,0,tornadoe) break;
-	case 6:
-		instance_create(0,0,bloodmoon) break;
     
 	default: show_error("unknown in stack",true)
 }

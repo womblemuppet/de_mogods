@@ -903,14 +903,6 @@
             }
         },
         {
-            "Key": "18c8e589-b813-4be0-b5de-bd7b4421d164",
-            "Value": {
-                "id": "76a1c38f-733e-4977-b7c3-005fa1b0bc65",
-                "resourcePath": "sprites\\imdyinginside\\imdyinginside.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "18e25160-a93e-4cb1-92f6-ee53390209a8",
             "Value": {
                 "id": "54ef3a7d-1424-465c-9b2b-a02d84e01eb2",
@@ -3999,14 +3991,6 @@
             }
         },
         {
-            "Key": "80627ac2-7600-4d9f-aa01-4330a725eba4",
-            "Value": {
-                "id": "d3781ea5-c2c0-4024-b583-e08a4026e66c",
-                "resourcePath": "views\\80627ac2-7600-4d9f-aa01-4330a725eba4.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "8084dd92-86f0-4b61-8ce1-2e8e116ae995",
             "Value": {
                 "id": "6696844a-5bb3-48b0-99c5-e84dd6e0ac3f",
@@ -5975,14 +5959,6 @@
             }
         },
         {
-            "Key": "bdc00bbf-e16c-4096-8068-d582277f931b",
-            "Value": {
-                "id": "f787b102-8ea3-4086-90ff-6621da763688",
-                "resourcePath": "sprites\\deathdoomeffect\\deathdoomeffect.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "be076a66-7e3d-48cc-b375-fed62a475709",
             "Value": {
                 "id": "14f7259f-d7d6-4f41-bc5c-6c469bc8752e",
@@ -6027,14 +6003,6 @@
             "Value": {
                 "id": "bfe56a1c-fa71-496a-8118-4c4fdcb0c63e",
                 "resourcePath": "sprites\\instrument_spr_boar\\instrument_spr_boar.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "bf6ff4ab-c1e2-4e4e-825a-d722f65a43b0",
-            "Value": {
-                "id": "7924ee2d-6be2-4b81-9c7b-d50cdae5b4c1",
-                "resourcePath": "sprites\\deathdoomcomingeffect\\deathdoomcomingeffect.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8239,7 +8207,6 @@
         "633fe73c-8167-4e56-84f9-348791ddcee8",
         "24f264c0-9cf0-4558-863c-df4914c0052d",
         "65f6f02b-a601-47d3-a217-3f54e57d1472",
-        "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "59b15fad-efa6-4052-9e08-995631aadc2c",
         "21ff676a-dbb0-4bac-9efb-2dbe461f8976",
         "12d4d4c3-567f-48a1-89cf-015d24e579d8",
@@ -8267,6 +8234,7 @@
         "3fe3bd6c-8754-49eb-9d0e-cda69f4c387b",
         "5902740d-15b5-42f2-9a40-2b269957be10",
         "78a15054-91a9-4900-a31e-3dc1cac28da0",
+        "c57f178d-fae3-4f04-aa9c-e92b68539d8c",
         "6a297808-eab2-47ef-b2df-fa77bd655484",
         "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
         "dbf4b51b-f443-4495-9b75-0bd0302c16b2",

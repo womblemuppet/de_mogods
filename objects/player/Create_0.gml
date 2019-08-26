@@ -102,7 +102,6 @@ chained_debuff_counter=0    ///debuff when etting hit by bait chaining attack
 chained_debuff_x_pos=0     ///x pos of chain
 chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
-cursed=false   ///bloodmoon buff
 
 NUMBER_OF_POCKET_SPACES=4
 pocket_orb[NUMBER_OF_POCKET_SPACES-1]=-1    ///type of pocketed orb

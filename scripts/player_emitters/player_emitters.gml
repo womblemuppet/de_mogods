@@ -28,9 +28,3 @@ if sidezap && random(1)>0.8        /////////////kanehameha effect
 		a.image_alpha=0.5
 }
 
-if cursed==true && random(1)>0.6
-{
-	with effect_aniend(imdyinginside,0.4,-1)
-		vspeed=-2
-}
-

@@ -1,5 +1,3 @@
-bloodmoon_recalc_call=false
-
 if pausescreen_doubletap_counter>0
 	pausescreen_doubletap_counter-=1
 
@@ -137,9 +135,6 @@ if lowest>scroll_threshold // && !instance_exists(ice_block)   // [finaledit] do
 
 		travelled_tick_biome_threshold_check()
 	}
-	
-    
-	bloodmoon_recalc_call=true
 }
 
 
