@@ -40,7 +40,7 @@ GROUNDPOUND_UNAVAILABLE_TIME=5 ///9   //prevents groundpound after jumping for t
 GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set to twice this
 GROUND_POUND_SPEED=15
 groundpound_current_hitbox_object=noone
-recovery_groundpound_counter=0 ///the player has ceiling-kill protection if this counter is active
+recovery_groundpound_active=false///the player has ceiling-kill protection if this is active
 
 orb_count_meter=0   ///charge towards super mode, gained by activating orbs
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call

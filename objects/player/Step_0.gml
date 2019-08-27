@@ -279,7 +279,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		}
 	}
     
-	////////////////////////////////////////////////if falling and not recoiling, set sprite back to idle
+	////////////////////////////////////////////////if falling sprite, set sprite back to idle
 	if sprite_index==sprites[4]   ///fall sprite
 	{
 		sprite_index=sprites[0]   ///idle sprite

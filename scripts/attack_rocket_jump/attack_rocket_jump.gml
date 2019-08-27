@@ -16,7 +16,7 @@ vspd=-DASH_ROCKET_JUMP_AMOUNT_LEVELS[dash_rocket_jump_charge]
 
 
 dash_rocket_jump=2
-        
+
 uniques_parachute=0 ///allow parachute  after rocket jump
 doublejump=2
 

@@ -98,9 +98,6 @@ if lowest>scroll_threshold // && !instance_exists(ice_block)   // [finaledit] do
 			if !place_meeting(x,y+scrollspeed,block)
 				y+=scrollspeed
 		}
-
-		if y<-10
-			playerdie()
 	}
 	with icespike
 	{

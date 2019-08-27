@@ -6,7 +6,7 @@ for (var i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
 	if sprites[sprites_below_recoil_priority[| i]]==sprite_index
 	{
 		pass=true
-		break;
+		break;  //[finaledit] could be exit
 	}
 };
 

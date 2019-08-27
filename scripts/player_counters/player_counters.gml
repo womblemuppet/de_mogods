@@ -244,13 +244,4 @@ if iframes>0
 if armouredframes>0
 	armouredframes-=1
 	
-if recovery_groundpound_counter>0
-{
-	recovery_groundpound_counter-=1
-	if recovery_groundpound_counter==0
-	{
-		with groundpound_current_hitbox_object
-			cutting=false
-	}
-}
 

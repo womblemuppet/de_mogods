@@ -1,18 +1,33 @@
-if y<kouchou.room_top_border_y-10
+if y<kouchou.room_top_border_y-20
 {
-	if recovery_groundpound_counter>0
-		recovery_groundpound_counter+=1
 
-	if dash_rocket_top_collision_safety<1 && recovery_groundpound_counter<1
+	if dash_rocket_top_collision_safety>0
 	{
-		y-=200
+		if vspd<-2
+			vspd=-2
+	}
+	else if recovery_groundpound_active==false
+	{
+		sprite_index=sprites[5]   ///gp
+		if super_mode
+			sprite_index=sprites[7]
+		y-=750
+		player_flush_lockdowns()
+		hspd=0
 		losehp(false,"falling")
-		recovery_groundpound_counter=10
-		show_debug_message("rec gp counter"+string(recovery_groundpound_counter))
+		recovery_groundpound_active=true
 		player_make_vunerable()
 		var a;
 		a=attack_start_groundpound_descent()
 		with a
 			instance_change(hitbox_recovery_groundpound,true)	
+			
 	}
+}
+
+if y>kouchou.room_y_halfway
+{
+	recovery_groundpound_active=false
+	with groundpound_current_hitbox_object
+		cutting=false
 }
