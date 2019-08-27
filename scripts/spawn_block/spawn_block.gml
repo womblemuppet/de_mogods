@@ -1,5 +1,5 @@
 /***************************************************
-  spawn block(x,y)
+  spawn_block(x,y)
 ****************************************************/
  
 
@@ -12,6 +12,8 @@ a=instance_create(argument0,argument1,block)   //if change this change room spaw
 a.visible=true
 a.variant=choose(5,17)
 a.divisible=true
+a.image_xscale=aizen.bw/40
+a.image_yscale=aizen.bh/40
 
 if argument2==0
 {

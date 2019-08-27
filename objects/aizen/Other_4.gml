@@ -114,6 +114,8 @@ if room==gameroom
 			H=kouchou.starting_hp
 			H+=kouchou.playerhandicap[P]
 			
+			scale=kouchou.setmenu_player_scale
+			
 			if x<kouchou.room_x_halfway/2
 			{
 				right=true

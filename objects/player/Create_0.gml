@@ -123,7 +123,7 @@ FRAME_SPEED_NORMAL=0.2
 FRAME_SPEED_FAST=0.4
 FRAME_SPEED_SLOW=0.1
 image_speed=FRAME_SPEED_NORMAL
-scale=1
+
 
 has_made_splash_effect=false
 
