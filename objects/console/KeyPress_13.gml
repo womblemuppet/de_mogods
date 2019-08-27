@@ -45,6 +45,10 @@ switch txt
 	
 	case "hitbox":
 	case "hitboxes":
+	case "show hitboxes":
+	case "show hitbox":
+	case "draw hitbox":
+	case "draw hitboxes":
 	
 	if aizen.debug_show_hitboxes
 	{

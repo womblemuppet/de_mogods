@@ -54,4 +54,4 @@ if dash_current_hitbox_object!=noone
 }
 
 //delete groundpound hitbox
-attack_stop_gp()
+attack_stop_groundpound()

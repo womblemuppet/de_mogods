@@ -40,6 +40,7 @@ GROUNDPOUND_UNAVAILABLE_TIME=5 ///9   //prevents groundpound after jumping for t
 GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set to twice this
 GROUND_POUND_SPEED=15
 groundpound_current_hitbox_object=noone
+recovery_groundpound_counter=0 ///the player has ceiling-kill protection if this counter is active
 
 orb_count_meter=0   ///charge towards super mode, gained by activating orbs
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call
@@ -75,6 +76,8 @@ dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump 
 dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
 DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT=175
 DASH_ROCKET_TOP_COLLISION_MAXY=8
+
+
 
 recoil_sprite_counter=0    ///time left where idle sprite becomes flinching animation (shouldn't be called recoil)
 

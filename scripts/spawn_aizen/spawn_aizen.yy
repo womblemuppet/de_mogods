@@ -1,8 +1,8 @@
 {
-    "id": "4ed56efa-0618-4f87-95cd-ef18be167773",
+    "id": "cce0eae3-4d22-4cb6-b8f9-9674dd338976",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "attack_stop_gp",
+    "name": "spawn_aizen",
     "IsCompatibility": false,
     "IsDnD": false
 }

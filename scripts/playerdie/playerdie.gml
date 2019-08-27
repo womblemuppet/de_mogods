@@ -16,7 +16,7 @@ a.scale=true
 a.image_speed=0.1
 switch lastdamagetype 
 {
-    case "icespike":                // no breaks for these cases  !  !  !
+    case "icespike":
     a.sprite_index=sprites[40]
     a.image_speed=0.3 break;
     case "zap":

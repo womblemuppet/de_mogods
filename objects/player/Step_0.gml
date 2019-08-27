@@ -247,7 +247,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		a.creator=self.id
 
 		//delete groundpound hitbox
-		attack_stop_gp()
+		attack_stop_groundpound()
 	}
 
 	if jumped                            ///////////after landing from a jump , slow the player for a bit

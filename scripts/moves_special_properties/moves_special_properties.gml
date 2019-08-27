@@ -41,7 +41,7 @@ switch argument0
 			player_add_to_pocket(0)
 			player_update_pocket_hud()	
 		}
-		attack_stop_gp()
+		attack_stop_groundpound()
 	}
 	
 	player_get_gp_stunned(other.stunamount)
