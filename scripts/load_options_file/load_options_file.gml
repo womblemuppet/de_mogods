@@ -82,9 +82,9 @@ else ///////////////////////////////////////////////////////////////////////////
 	
 	////testing purposes only, to be removed
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"block_width=1")  
+	file_text_write_string(OPT,"block_width=40")  
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"block_height=1")  
+	file_text_write_string(OPT,"block_height=40")  
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"player_scale=1")  
 	file_text_close(OPT)    
