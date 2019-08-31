@@ -14,8 +14,8 @@ else
 		a.player_priority=1	
 }
 
-a.bh=setmenu_block_height
-a.bw=setmenu_block_width
+a.bh=kouchou.setmenu_block_height
+a.bw=kouchou.setmenu_block_width
 
 with a
 	tergen_init()  //delayed as relies on bh/bw being set

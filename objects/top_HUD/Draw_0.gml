@@ -1,26 +1,28 @@
-var xx,yy,area_height,area_width,gap_width,area_xend,area_xstart;
+var xx,stack_hud_start_y,player_hud_start_y,area_height,area_width,area_xend,area_xstart;
 var hp_xoffset,hp_yoffset;
-var mask_scale,mask_xoffset,mask_yoffset,mask_gap_width;
-var pocket_xoffset,pocket_yoffset;
+var pocket_mask_scale,pocket_mask_xoffset,pocket_mask_yoffset,pocket_mask_gap_width;
+var pocket_area_xoffset,pocket_area_yoffset;
+var stack_mask_gap_width;
 
 
-yy=0
+
+
+player_hud_start_y=50
 area_xend=kouchou.room_left_border_x   ///absolute
 area_xstart=5  ////plus
 area_width=PLAYER_HUD_AREA_WIDTH
 area_height=250
-gap_width=20
 
-hp_xoffset=45
-hp_yoffset=45
+hp_xoffset=20
+hp_yoffset=20
 
-pocket_xoffset=152  ////plus
-pocket_yoffset=51  ///plus
+pocket_area_xoffset=62  ////plus
+pocket_area_yoffset=1  ///plus
 
-mask_scale=1.8   //[finaledit] scale=bad
-mask_xoffset=105   ///plus
-mask_yoffset=50   ///plus
-mask_gap_width=30
+pocket_mask_scale=1.8   //[finaledit] scale=bad
+pocket_mask_xoffset=90   ///plus
+pocket_mask_yoffset=30   ///plus
+pocket_mask_gap_width=35
 
 draw_set_font(font_scoreboard)
 
@@ -29,14 +31,33 @@ for (var v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 	if player_HUD_enabled[v]==true
 	{
 		xx=HUDx[v]
-		draw_sprite(arcade_cabinet_scorebar,0,xx,yy)   
-		draw_text(xx+hp_xoffset,yy+hp_yoffset,player_hp[v])
-		draw_sprite(pocket_circle_sprite[v],pocket_circle_subimage[v],xx+pocket_xoffset,yy+pocket_yoffset)
+		draw_sprite(arcade_cabinet_scorebar,0,xx,player_hud_start_y)   
+		draw_text(xx+hp_xoffset,player_hud_start_y+hp_yoffset,player_hp[v])
+		draw_sprite(pocket_circle_sprite[v],pocket_circle_subimage[v],xx+pocket_area_xoffset,player_hud_start_y+pocket_area_yoffset)
 
 		for (var i=0;i<4;i++)
 		{
 			if player_pocket_orb_sprite[v,i]!=-1
-				draw_sprite(player_pocket_orb_sprite[v,i],0,xx+mask_xoffset+i*mask_gap_width,yy+mask_yoffset)
+				draw_sprite(player_pocket_orb_sprite[v,i],0,xx+pocket_mask_xoffset+i*pocket_mask_gap_width,player_hud_start_y+pocket_mask_yoffset)
 		}
 	}
 }
+
+
+xx=300
+stack_hud_start_y=0
+stack_mask_gap_width=75
+
+for (var i=0; i<ds_list_size(aizen.STACK); i+=1)
+{
+	draw_sprite_ext(ds_list_find_value(aizen.STACK_ORB_SPRITES,ds_list_find_value(aizen.STACK,i)),0,xx+stack_mask_gap_width*i,stack_hud_start_y,1.5,1.5,0,c_white,1)
+};
+
+//if last_stack_sprite!=-1
+//{
+//	draw_sprite_ext(last_stack_sprite,image_index,xx,stack_hud_start_y+ds_list_size(STACK)+40,2,2,0,c_white,1)
+//	draw_sprite_ext(active_effect_line,0,xx,stack_hud_start_y-50,1,1.75,0,c_white,1)    
+//}
+
+
+
