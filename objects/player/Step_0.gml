@@ -353,7 +353,7 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 
 }
 
-if pocket_light_heavy_held_counter>0    //////pocket keys release event
+//if pocket_light_heavy_held_counter>0    //////pocket keys release event
 {   ///checks counter first for optimisation
 	if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(leftbutton) || checkkey(rightbutton) || checkkey(upbutton) 
 	{

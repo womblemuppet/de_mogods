@@ -4,7 +4,7 @@ for (var i=0;i<NUMBER_OF_POCKET_SPACES-1;i++)
 {
     pocket_orb[i]=pocket_orb[i+1]
 }
-pocket_orb[NUMBER_OF_POCKET_SPACES]=-1
+pocket_orb[NUMBER_OF_POCKET_SPACES-1]=-1
 
 if pocket_super_mode_stored
 {
@@ -12,3 +12,5 @@ if pocket_super_mode_stored
 	pocket_super_mode_stored=false
 }
 player_update_pocket_hud()
+
+pocket_light_heavy_held_counter=-1000
