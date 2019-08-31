@@ -1775,6 +1775,14 @@
             }
         },
         {
+            "Key": "3a9c00bb-f55a-4933-a645-d6fcbdc2e432",
+            "Value": {
+                "id": "d3c9e3a2-d2f3-4edb-8880-8aa360e026e4",
+                "resourcePath": "scripts\\move_that_adds_pocket\\move_that_adds_pocket.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3b2cbebc-d2fb-4049-b9e6-91d354bf2a3f",
             "Value": {
                 "id": "80fa3022-9e25-4411-85b0-b615b7995097",
@@ -8210,6 +8218,7 @@
         "1d61c5ab-1628-4766-86d2-f82c6a720550",
         "7d591364-72d8-4275-abbb-dfcb69300b67",
         "37bc6135-127a-4e15-9085-908d5653bf43",
+        "3a9c00bb-f55a-4933-a645-d6fcbdc2e432",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",

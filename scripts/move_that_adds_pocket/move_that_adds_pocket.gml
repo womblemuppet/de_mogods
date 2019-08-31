@@ -1,0 +1,2 @@
+player_add_to_pocket(0)
+player_update_pocket_hud()

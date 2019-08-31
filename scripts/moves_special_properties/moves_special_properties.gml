@@ -37,9 +37,6 @@ switch argument0
 				hspd=4
 			if image_xscale==-1
 				hspd=-4
-				
-			player_add_to_pocket(0)
-			player_update_pocket_hud()	
 		}
 		attack_stop_groundpound()
 	}
@@ -73,6 +70,8 @@ switch argument0
 	}
 	break;
 	case "falconpunch" :
+	with attacker
+		move_that_adds_pocket()
 	if stunned_groundpound>0
 	{
 		impact_debuff_counter=40
@@ -160,5 +159,11 @@ switch argument0
 		if !place_meeting(x,y-1,block)
 			y-=1
 		canbounce_counter=25
+	break;
+	case "sharkattack":
+	case "sunblast":
+	case "upwardpunch":
+		with attacker
+			move_that_adds_pocket()
 	break;
 }
