@@ -2399,6 +2399,14 @@
             }
         },
         {
+            "Key": "4e94ef91-10cc-416c-ae8f-2a04e9944ccf",
+            "Value": {
+                "id": "21095e2a-319e-455e-86fe-e2bf42ce23b5",
+                "resourcePath": "scripts\\player_make_immune\\player_make_immune.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4ed56efa-0618-4f87-95cd-ef18be167773",
             "Value": {
                 "id": "82c314f8-ea87-47f2-a520-b267a081930e",
@@ -8123,6 +8131,7 @@
         "d86a372c-6bd7-4f73-ad6f-5cd3cff5fc7c",
         "316e7352-3c38-4fd7-a968-eb7749188c97",
         "13fdfdf2-32de-4baf-9965-9a507374c341",
+        "4e94ef91-10cc-416c-ae8f-2a04e9944ccf",
         "e554999d-3404-43ec-adcb-5e026400b6c7",
         "7c78568f-09b8-4ed9-a475-4db91c97d187",
         "16f91af5-117a-4539-9940-d122b45bc1f6",

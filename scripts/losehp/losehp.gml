@@ -13,8 +13,7 @@ if iframes>0
 
 if immune==false && safe==false
 {                                                                              //////////////take damage ///////////////////////////////////////////////////////////
-	alarm[4]=80    ///flashing time
-	immune=true
+	player_make_immune(80)
 	hothands=0
 	H-=1
 	
