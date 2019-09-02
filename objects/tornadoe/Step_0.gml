@@ -47,8 +47,15 @@ if active
 	{
 		if y<effect_line_yy && x>xmin && x<xmax && armouredframes<1
 		{
-			stunned=999
-			vspd=-150
+			var a=effect_aniend(sprite_index,0.2,depth)
+			a.vspeed=-50
+			y=-100
+			var offset;
+			offset=P*2*aizen.bw
+			if tornadoe.x>kouchou.room_x_halfway
+				x=kouchou.room_left_border_x+offset
+			else
+				x=kouchou.room_right_border_x-offset
 			dash_rocket_top_collision_safety=-1
 		}
 	}
