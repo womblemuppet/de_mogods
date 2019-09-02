@@ -12,7 +12,7 @@ if iframes>0
 	safe=true
 
 if immune==false && safe==false
-{                                                                              //////////////take damage ///////////////////////////////////////////////////////////
+{                                                                 //////////////take damage ///////////////////////////////////////////////////////////
 	player_make_immune(80)
 	hothands=0
 	H-=1

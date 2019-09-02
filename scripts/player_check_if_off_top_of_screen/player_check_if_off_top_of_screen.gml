@@ -17,6 +17,7 @@ if y<kouchou.room_top_border_y-20
 		losehp(false,"falling")
 		recovery_groundpound_active=true
 		player_make_vunerable()
+		player_make_immune(150)
 		var a;
 		a=attack_start_groundpound_descent()
 		with a
