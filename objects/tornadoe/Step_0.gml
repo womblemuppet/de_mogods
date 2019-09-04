@@ -10,11 +10,12 @@ repeat(repeat_effects_factor)
 	a.y-=h
 	if a.y<effect_line_y+SPIRAL_EFFECT_HEIGHT/2
 	{
-		a.gravity*=0.1
+		a.gravity*=2
 		//a.vspeed=-2
 		a.sprite_index=spiralpower_base_in_zone
 	}
-	
+	else
+		a.image_alpha=0.25
 }
 
 if active
@@ -70,8 +71,6 @@ if active
 		a.gravity_direction=90
 		a.gravity=0.15
 	}
-	
-
 }
 
 if hspd>min_speed

@@ -1112,11 +1112,11 @@ if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed" && float_cou
 player_move_vertical()
 
 ///////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL BLOCK CHECKS
- if player_not_digging() 
- {
+if player_not_digging() 
+{
 	player_horizontal_block_check_collision("left")
 	player_horizontal_block_check_collision("right")
- }
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL FRICTION AND HSPD LIMIT
