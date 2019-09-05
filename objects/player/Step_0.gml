@@ -7,7 +7,9 @@ player_vertical_bounce_check()
 //////////////////////////////////////////     groundcheck
 
 
-groundcheck=instance_place(x,y+1,block)  ///[finaledit] 
+groundcheck=instance_place(x,y+1,block) 
+playerintersectioncheck=instance_place(x,y,player)
+
 if groundcheck!=noone
 {
 	if groundcheck.object_index==turret_block
