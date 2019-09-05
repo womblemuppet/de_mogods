@@ -2,6 +2,8 @@ hspd=0
 vspd=0
 groundcheck=noone
 groundcheck_prev=noone
+playerintersectioncheck=noone
+
 JUMPSPEED=6.75 
 DOUBLEJUMPSPEED=8 //needs to be higher than 7.5 with grav(up) at 0.35 to reach over two blocks high
 doublejump=0        ///what jump the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
