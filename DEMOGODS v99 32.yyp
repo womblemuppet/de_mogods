@@ -2599,6 +2599,14 @@
             }
         },
         {
+            "Key": "55b12d9e-0fba-4982-a135-010a458a7a04",
+            "Value": {
+                "id": "300a69b7-a82a-4533-923c-a1676f6af5da",
+                "resourcePath": "sprites\\crabjectile_mask_spr\\crabjectile_mask_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "55c53566-1bd1-468b-bc17-68b51a107e29",
             "Value": {
                 "id": "b1166229-32a9-4c7f-ad16-9009c2cdea73",

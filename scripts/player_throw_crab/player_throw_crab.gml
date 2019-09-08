@@ -8,6 +8,7 @@ if crab_being_held!=-1 && crab_being_held!=noone && crab_being_held!=undefined /
         a.sprite_index=crab_being_held.thrown_sprite
         a.squish_sprite=crab_being_held.squish_sprite
         a.hit_sprite=crab_being_held.hit_sprite
+	   a.mask_index=crabjectile_mask_spr
         if !right
             a.direction=180
         
