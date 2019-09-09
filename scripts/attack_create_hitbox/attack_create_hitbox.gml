@@ -4,6 +4,7 @@
 
 var a;
 a=instance_create(x,y,hitbox)
+
 a.creator=self.id  
 a.target=self.id
 
@@ -23,11 +24,22 @@ a.my_hknockback=argument8   ///knockback hspeed
 a.my_vknockback=argument9
 
 
-if image_xscale=-1
+if image_xscale=-scale
 {
 	a.direction=180
 	a.image_xscale=-1       
 }
+
+
+with a
+{
+	hit[kouchou.MAX_PLAYER_COUNT]=false
+	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
+	{
+		hit[i]=false
+	};
+}
+
 
 
 return a
