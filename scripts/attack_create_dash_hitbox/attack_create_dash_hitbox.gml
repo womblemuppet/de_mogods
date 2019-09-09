@@ -16,11 +16,13 @@ a.image_speed=argument6
 a.stops_dasher_on_contact=argument7
 
 
-if image_xscale=-1
-{
-	    a.direction=180
-	    a.image_xscale=-1
-}
+a.image_xscale=image_xscale
+a.image_yscale=image_yscale
+
+if image_xscale=-scale
+	a.direction=180
+
+
 a.dir=a.direction   ///for block_take_damage script
 a.spd=6                    ///for block_take_damage script
 

@@ -58,7 +58,7 @@ if file_exists("options.txt")
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
 	
-	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
+	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,3))
 	setmenu_player_scale=real(setmenu_player_scale)	
 
 	file_text_close(OPT)
