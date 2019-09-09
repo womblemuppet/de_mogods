@@ -72,5 +72,5 @@ if hothands!=0
 	draw_sprite_ext(hhspr,hothandimageindex,x,y-22,1,1,0,aizen.hothandspaydaycolour,1)
 
 if aizen.debug_show_hitboxes
-	draw_sprite(mask_index,0,x,y)
+	draw_sprite_ext(mask_index,0,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 

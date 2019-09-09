@@ -115,6 +115,8 @@ if room==gameroom
 			H+=kouchou.playerhandicap[P]
 			
 			scale=kouchou.setmenu_player_scale
+			image_xscale=scale
+			image_yscale=scale
 			
 			if x<kouchou.room_x_halfway/2
 			{
@@ -123,7 +125,7 @@ if room==gameroom
 			else
 			{
 				right=false
-				image_xscale=-1
+				image_xscale=-image_xscale
 			}
             
 			decide_sprites() //////////////////////////////////// character setup
