@@ -275,28 +275,28 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		uniques_parachute=0 
 		if sprite_index==sprites[64] || sprite_index==sprites[65]
 		{
-			sprite_index=sprites[4]  //fall sprite
+			sprite_index=sprites[? "fall"]  //fall sprite
 			if super_mode
-				sprite_index=sprites[12] //fall super sprite
+				sprite_index=sprites[? "fall_u"] //fall super sprite
 		}
 	}
     
 	////////////////////////////////////////////////if falling sprite, set sprite back to idle
-	if sprite_index==sprites[4]   ///fall sprite
+	if sprite_index==sprites[? "fall"]   ///fall sprite
 	{
-		sprite_index=sprites[0]   ///idle sprite
+		sprite_index=sprites[? "idle"]
 		if recoil_sprite_counter>0
 		{
-			sprite_index=sprites[25]
+			sprite_index=sprites[? "recoiling"]
 		}
 	}
 	
-	if sprite_index==sprites[12]  ///fall super sprite
+	if sprite_index==sprites[? "fall_u"]  ///fall super sprite
 	{
-		sprite_index=sprites[9]   ///idle super sprite
+		sprite_index=sprites[? "idle_u"]   ///idle super sprite
 		if recoil_sprite_counter>0
 		{
-			sprite_index=sprites[26]
+			sprite_index=sprites[? "recoiling_u"]
 		}
 	}
 }
@@ -322,15 +322,15 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 	{
 		if recoil_sprite_counter>0
 		{
-			sprite_index=sprites[25]
+			sprite_index=sprites[? "recoiling"]
 			if super_mode
-				sprite_index=sprites[26]
+				sprite_index=sprites[? "recoiling_u"]
 		}
 		else
 		{
-			sprite_index=sprites[0]
+			sprite_index=sprites[? "idle"]
 			if super_mode
-				sprite_index=sprites[9]
+				sprite_index=sprites[? "idle_u"]
 		}
 		image_speed=FRAME_SPEED_NORMAL
 	}
@@ -462,9 +462,9 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			canpush=false
 			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
 			alarm[1]=PUSH_COOLDOWN   
-			sprite_index=sprites[17]
+			sprite_index=sprites[? "light_attack"]
 			if super_mode
-				sprite_index=sprites[18]
+				sprite_index=sprites[? "light_attack_u"]
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
             
@@ -607,9 +607,9 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 			a.yy=yy+15
 			
             
-			sprite_index=sprites[23]
+			sprite_index=sprites[? "airgrab"]
 			if super_mode
-				sprite_index=sprites[24]
+				sprite_index=sprites[? "airgrab_u"]
 			image_speed=FRAME_SPEED_FAST                                   break;
 			case -1:
 			/*nandemonai*/ break;
@@ -734,9 +734,9 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 				vspd=0
 				dash_rocket_jump=1
 				hspd=0
-				sprite_index=sprites[30]    ///rocketjump freeze sprite
+				sprite_index=sprites[? "rocketjump_charge"]    ///rocketjump freeze sprite
 				if super_mode
-					sprite_index=sprites[31]   ///rocketjump freeze super sprite
+					sprite_index=sprites[? "rocketjump_charge_u"]   ///rocketjump freeze super sprite
 				image_speed=FRAME_SPEED_FAST
 				image_index=0
 				rocketjumped=true
@@ -774,9 +774,9 @@ if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false     
 			vspd=0
 			cangroundpound=1
 			hspd=0
-			sprite_index=sprites[5]
+			sprite_index=sprites[? "gpfall"]
 			if super_mode
-				sprite_index=sprites[7]
+				sprite_index=sprites[? "gpfall_u"]
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
 			ground_pound_freeze_counter=ground_pound_freeze_time           //ground pound freeze time
@@ -841,9 +841,9 @@ if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false     
             
 			if player_dashed    ///generic dash stuff
 			{
-				sprite_index=sprites[15]                     ///////////////////   dash  sprite
+				sprite_index=sprites[? "dash"]                     ///////////////////   dash  sprite
 				if super_mode
-					sprite_index=sprites[16]
+					sprite_index=sprites[? "dash_u"]
 				image_index=0
 				image_speed=FRAME_SPEED_NORMAL
 				
@@ -1067,7 +1067,7 @@ if dash_rocket_jump==1
 {
 	if !checkkey(upbutton)
 	{ ////early release of rocket jump
-		if dash_rocket_jump==1 && (sprite_index=sprites[30] || sprite_index==sprites[31])
+		if dash_rocket_jump==1 && (sprite_index=sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"])
 		{
 			if image_index>DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD
 				dash_rocket_jump_charge=1

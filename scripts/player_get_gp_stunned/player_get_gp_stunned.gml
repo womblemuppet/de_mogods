@@ -14,9 +14,9 @@ stunned=0
 stunned_groundpound=argument0 
 player_flush_lockdowns()
 
-sprite_index=sprites[19]
+sprite_index=sprites[? "dizzy"]
 if super_mode
-	sprite_index=sprites[20]
+	sprite_index=sprites[? "dizzy_u"]
 	
 image_speed=0.08
 var a;

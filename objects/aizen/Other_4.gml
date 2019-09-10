@@ -72,15 +72,15 @@ if room==gameroom
 		switch kouchou.selected_character_id[i]
 		{
 			case 0:
-			tempcharstrings[i]="ooga" break;
+				tempcharstrings[i]="ooga" break;
 			case 1:
-			tempcharstrings[i]="veteran" break;
+				tempcharstrings[i]="veteran" break;
 			case 2:
-			tempcharstrings[i]="slinger" break;
+				tempcharstrings[i]="slinger" break;
 			case 3:
-			tempcharstrings[i]="bait" break;
+				tempcharstrings[i]="bait" break;
 			default:
-			show_error("unknown selected_character_id ID encountered during conversion to strings",true) break;
+				show_error("unknown selected_character_id ID encountered during conversion to strings",true) break;
 		}
 	};
     
@@ -131,7 +131,7 @@ if room==gameroom
 			decide_sprites() //////////////////////////////////// character setup
 			decide_sprite_hierarchy_lists()
 			decide_moves()
-			sprite_index=sprites[0]            
+			sprite_index=sprites[? "idle"]            
 
 			///////////////////////////////////////////////////// controls
 			gamepad=ds_map_find_value(kouchou.keybinding_map_array[P],"gamepad")

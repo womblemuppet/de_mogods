@@ -1,33 +1,33 @@
-if sprite_index==sprites[2]  ///jump
+if sprite_index==sprites[? "jump"]
 {
-	sprite_index=sprites[3]   ////air
+	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[1] || sprite_index==sprites[8]
+else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]
 {
 	image_index=running_startup_frames
 }
-else if sprite_index==sprites[10]    ///jump super
+else if sprite_index==sprites[? "jump_u"]    ///jump super
 {
-	sprite_index=sprites[11]    ///air super
+	sprite_index=sprites[? "air_u"]    ///air super
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[23]  ///airgrab
+else if sprite_index==sprites[? "airgrab"]  ///airgrab
 {
-	sprite_index=sprites[3]   ////air
+	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[24]    ///airgrab super
+else if sprite_index==sprites[? "airgrab_u"]    ///airgrab super
 {
-	sprite_index=sprites[11]    ///air super
+	sprite_index=sprites[? "air_u"]    ///air super
 	 image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[5] || sprite_index==sprites[7]  ///gp fall or gp fall super
+else if sprite_index==sprites[? "gpfall"] || sprite_index==sprites[? "gpfall_u"]  ///gp fall or gp fall super
 {
 	image_speed=FRAME_SPEED_FAST    ///loop last frames of gp animation
 	image_index=image_number-2
 }
-else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket jump or rocket jump super
+else if sprite_index==sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"]  ///rocket jump or rocket jump super
 {
 	if dash_rocket_jump==1
 	{ 
@@ -35,11 +35,11 @@ else if sprite_index==sprites[30] || sprite_index==sprites[31]  ///rocket jump o
 		attack_rocket_jump()
 	}
 }
-else if sprite_index==sprites[6]  ///super activate
+else if sprite_index==sprites[? "super_activate"]  ///super activate
 {
-	sprite_index=sprites[8]    ///super running
+	sprite_index=sprites[? "run_u"]    ///super running
 }
-else if sprite_index==sprites[15] || sprite_index==sprites[17]   ///dash
+else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack"]   ///dash
 {
 	hspd=0//(hspd/3)
 	mild_slowed_counter=8
@@ -171,7 +171,7 @@ else if sprite_index==sprites[86] ||sprite_index==sprites[87]  ///bait blink gp 
 	
 	player_set_idle()
 }
-else if sprite_index==sprites[28] || sprite_index==sprites[29]  ///rocket jump end
+else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocketjump_u"]  ///rocket jump end
 {
 	if dash_rocket_jump==2
 	{
@@ -232,7 +232,7 @@ else if sprite_index==sprites[80] || sprite_index==sprites[81]  ///bait shark at
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[16] || sprite_index==sprites[18]   ///super dash or super push
+else if sprite_index==sprites[? "dash_u"] || sprite_index==sprites[? "light_attack_u"]   ///super dash or super push
 {
 	player_set_idle() 
 }

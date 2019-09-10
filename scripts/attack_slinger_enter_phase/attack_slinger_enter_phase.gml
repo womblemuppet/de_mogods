@@ -1,8 +1,8 @@
 uniques_phase_counter=UNIQUES_SLINGER_TIME_IN_PHASE
-sprites[0]=Slinger_3H_idle_phase
-sprites[9]=Slinger_3H_idle_phase
-sprites[1]=Slinger_3H_run_phase
-sprites[8]=Slinger_3H_run_phase
+sprites[? "idle"]=Slinger_3H_idle_phase
+sprites[? "idle_u"]=Slinger_3H_idle_phase
+sprites[? "run"]=Slinger_3H_run_phase
+sprites[? "run_u"]=Slinger_3H_run_phase
 if sprite_index==Slinger_3H_idle
 	sprite_index=Slinger_3H_idle_phase
 else if sprite_index==Slinger_3H_run

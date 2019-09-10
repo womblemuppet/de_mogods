@@ -1,9 +1,9 @@
 if !place_meeting(x,y-1,block)
 	y-=1
            
-sprite_index=sprites[28]
+sprite_index=sprites[? "rocketjump"]
 if super_mode
-	sprite_index=sprites[29]
+	sprite_index=sprites[? "rocketjump_u"]
 image_index=0
 image_speed=FRAME_SPEED_NORMAL
 dash_rocket_top_collision_safety_on=true
@@ -26,7 +26,7 @@ var b;
 b=instance_create(a.x,a.y,ef_follower)
 b.targ=a
 b.image_speed=0.2
-b.sprite_index=sprites[33]
+b.sprite_index=sprites[? "rocketjump_effect"]
 b.offsetx=0
 b.offsety=0
 

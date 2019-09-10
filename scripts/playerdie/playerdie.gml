@@ -4,9 +4,9 @@
  
  
  /***************************************************
-                   sprites[42]=Ooga_death_by_acid
-                sprites[41]=Ooga_death_by_zap
-                sprites[40]=Ooga_death_by_ice
+                   sprites[? "death_acid"]=Ooga_death_by_acid
+                sprites[? "death_zap"]=Ooga_death_by_zap
+                sprites[? "death_ice"]=Ooga_death_by_ice
   ***************************************************/
 
 var a;
@@ -17,15 +17,15 @@ a.image_speed=0.1
 switch lastdamagetype 
 {
     case "icespike":
-    a.sprite_index=sprites[40]
+    a.sprite_index=sprites[? "death_ice"]
     a.image_speed=0.3 break;
     case "zap":
-    a.sprite_index=sprites[41] break;
+    a.sprite_index=sprites[? "death_zap"] break;
     case "acid":
-    a.sprite_index=sprites[42] break;
+    a.sprite_index=sprites[? "death_acid"] break;
 
     default:
-    a.sprite_index=sprites[13]
+    a.sprite_index=sprites[? "death_fall"]
     a.hspeed=hspd/2
     a.vspeed=-7
     a.gravity=0.2
