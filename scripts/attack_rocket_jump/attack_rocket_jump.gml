@@ -6,7 +6,7 @@ if super_mode
 	sprite_index=sprites[29]
 image_index=0
 image_speed=FRAME_SPEED_NORMAL
-dash_rocket_top_collision_safety=DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT
+dash_rocket_top_collision_safety_on=true
 
 if dash_rocket_jump_charge==0
 	show_error("dashrjmp 0 charge issue",true)

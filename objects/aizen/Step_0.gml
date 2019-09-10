@@ -93,7 +93,7 @@ if lowest>scroll_threshold // && !instance_exists(ice_block)   // [finaledit] do
 	}
 	with player      ///kill players above the top boundary
 	{
-		if dash_rocket_top_collision_safety>0
+		if dash_rocket_top_collision_safety_on==true
 		{
 			if !place_meeting(x,y+scrollspeed,block)
 				y+=scrollspeed

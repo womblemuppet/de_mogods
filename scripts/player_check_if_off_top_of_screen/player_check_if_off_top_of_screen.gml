@@ -1,7 +1,7 @@
 if y<kouchou.room_top_border_y-20
 {
 
-	if dash_rocket_top_collision_safety>0
+	if dash_rocket_top_collision_safety_on==true
 	{
 		if vspd<-2
 			vspd=-2

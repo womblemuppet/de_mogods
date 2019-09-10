@@ -183,10 +183,6 @@ if canbounce_show_bounced_effect_counter>0
 	canbounce_show_bounced_effect_counter-=1	
 	effect_aniend(bounce_bouncing_effect,0.25,-3)
 }
-if dash_rocket_top_collision_safety>0
-{
-	dash_rocket_top_collision_safety-=1
-}
 if uniques_parachute_minimum_time_counter>0
 {
 	uniques_parachute_minimum_time_counter-=1

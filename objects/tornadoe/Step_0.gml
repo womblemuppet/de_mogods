@@ -57,7 +57,7 @@ if active
 				x=kouchou.room_left_border_x+offset
 			else
 				x=kouchou.room_right_border_x-offset
-			dash_rocket_top_collision_safety=-1
+			dash_rocket_top_collision_safety_on=false
 		}
 	}
 		

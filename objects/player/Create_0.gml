@@ -75,8 +75,7 @@ DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD=13
 DASH_ROCKET_JUMP_AMOUNT_LEVELS=[0,8,10,14] ////vspd minued this amount depending on charge level
 DASH_ROCKET_JUMP_STUN_DURATION_LEVELS=[0,25,35,40] ////stun amount also depends on charge 
 dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump charge, get crippled for this amount
-dash_rocket_top_collision_safety=0 //counter, player can't die from going off top, and will limit vspd near top while this counter >0
-DASH_ROCKET_TOP_COLLISION_SAFETY_AMOUNT=175
+dash_rocket_top_collision_safety_on=false //player can't die from going off top, and will limit vspd near top while this is true
 DASH_ROCKET_TOP_COLLISION_MAXY=8
 
 

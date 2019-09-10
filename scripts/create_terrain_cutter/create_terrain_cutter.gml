@@ -14,6 +14,10 @@ a.sprite_index=argument0
 a.type=argument1
 a.dir=argument2
 a.spd=argument3
+
+a.image_xscale=image_xscale
+a.image_yscale=image_yscale
+
 return a
 
 

@@ -11,7 +11,7 @@ if vspd>0
 }
 else if vspd<0
 {
-	if (dash_rocket_top_collision_safety>0 && y<DASH_ROCKET_TOP_COLLISION_MAXY)
+	if (dash_rocket_top_collision_safety_on==true && y<DASH_ROCKET_TOP_COLLISION_MAXY)
 	{
 		vspd=0
 	}
