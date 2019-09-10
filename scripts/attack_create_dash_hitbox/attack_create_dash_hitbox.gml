@@ -15,12 +15,15 @@ a.sprite_index=argument5
 a.image_speed=argument6
 a.stops_dasher_on_contact=argument7
 
-
-a.image_xscale=image_xscale
-a.image_yscale=image_yscale
-
-if image_xscale=-scale
+if right
+a.image_xscale=scale
+else
+{
+	a.image_xscale=-scale
 	a.direction=180
+}
+
+a.image_yscale=scale
 
 
 a.dir=a.direction   ///for block_take_damage script

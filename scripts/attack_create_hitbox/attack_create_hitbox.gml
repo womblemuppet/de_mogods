@@ -14,11 +14,18 @@ a.reset_attacker_hh=argument2
 a.reset_opponent=argument3
 a.attack_name=argument4
 
-a.image_xscale=image_xscale
-a.image_yscale=image_yscale
-
-if image_xscale=-scale
+if right
+{
+	a.image_xscale=scale
+}
+else
+{
+	a.image_xscale=-scale
 	a.direction=180
+}
+
+a.image_yscale=scale
+
 
 a.sprite_index=argument5
 a.image_speed=argument6
