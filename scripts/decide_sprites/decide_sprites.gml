@@ -42,7 +42,7 @@ switch character
 				sprites[? "dash_u"]=Ooga_U_charge 
 				sprites[? "dash"]=Ooga_4H_charge
 				//sprites[? "gilded"]=goldboi
-				sprites[? "death_fall"]=P1_corpse
+				sprites[? "death_fall"]=Uga_death_by_fall
 				sprites[? "idle"]=Ooga_4H_idle
 				sprites[? "run"]=Ooga_4H_run
 				sprites[? "jump"]=Ooga_4H_jump
@@ -103,7 +103,7 @@ switch character
 			sprites[? "dash_u"]=Vet_3H_charge    ////super version (to be changed) 
 			sprites[? "dash"]=Vet_3H_charge
 			sprites[? "gilded"]=goldboi
-			sprites[? "death_fall"]=P1_corpse
+			sprites[? "death_fall"]=Vet_death_by_fall
 			sprites[? "idle"]=Vet_3H_idle_E
 			sprites[? "run"]=Vet_3H_run
 			sprites[? "jump"]=Vet_3H_jump

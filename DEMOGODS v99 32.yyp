@@ -2786,7 +2786,7 @@
             "Key": "5a98319f-ce4c-4b6e-871d-6327dd87f886",
             "Value": {
                 "id": "a3157a3d-1b4d-422b-b016-715d9354db83",
-                "resourcePath": "sprites\\P1_corpse\\P1_corpse.yy",
+                "resourcePath": "sprites\\Uga_death_by_fall\\Uga_death_by_fall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7316,6 +7316,14 @@
                 "id": "6cf9925d-20d6-4632-af46-d60dc7caf7b6",
                 "resourcePath": "views\\e31e32c6-4d7b-43f9-b500-50334aec061a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e3453708-67a5-42df-9311-63d1a3ffe4be",
+            "Value": {
+                "id": "eecfb607-5473-4578-b17e-3fd962485568",
+                "resourcePath": "sprites\\Vet_death_by_fall\\Vet_death_by_fall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
