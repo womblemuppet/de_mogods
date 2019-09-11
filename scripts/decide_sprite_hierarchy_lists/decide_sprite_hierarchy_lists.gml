@@ -1,7 +1,4 @@
-ds_list_add(sprites_below_run_priority,0,1,5,7,8,9)
-ds_list_add(sprites_below_idle_priority,1,5,7,8,9)
-ds_list_add(sprites_below_recoil_priority,0,1,4,7,8,9,25,26)
-
-
-
+ds_list_add(sprites_below_run_priority,"idle","run","gpfall","gpfall_u","run_u","idle_u")
+ds_list_add(sprites_below_idle_priority,"run","gpfall","gpfall_u","run_u","idle_u")
+ds_list_add(sprites_below_recoil_priority,"idle","run","fall","gpfall_u","run_u","idle_u","recoiling","recoiling_u")
 
