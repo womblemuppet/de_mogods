@@ -117,6 +117,9 @@ switch character
 			sprites[? "jump_u"]=Vet_3H_jump  //super version
 			sprites[? "air_u"]=Vet_3H_air  //super version
 			sprites[? "fall_u"]=Vet_3H_fall  //super version
+			sprites[? "death_acid"]=Vet_death_by_acid
+			sprites[? "death_zap"]=Vet_death_by_zap
+			sprites[? "death_ice"]=Vet_death_by_ice
 		}
 	}break;
     

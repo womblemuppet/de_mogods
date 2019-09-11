@@ -3239,6 +3239,14 @@
             }
         },
         {
+            "Key": "645ce342-e04a-4fa8-ba41-c448f058d9fb",
+            "Value": {
+                "id": "aaf9e1d3-1f4a-4b78-8983-6ac3b8189439",
+                "resourcePath": "sprites\\Vet_death_by_zap\\Vet_death_by_zap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "64999e5b-c7bb-4d84-8753-85c3c8a017d4",
             "Value": {
                 "id": "f0e3b90a-675e-429f-9f59-c38c99a97e14",
@@ -4971,6 +4979,14 @@
             "Value": {
                 "id": "21016ee1-282c-472e-9079-ab852d47225f",
                 "resourcePath": "sprites\\cave13\\cave13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d395527-b202-4fc1-b2a4-70ea0d9f034b",
+            "Value": {
+                "id": "8b1f8b51-01d3-498a-a8f4-c9ec75789a63",
+                "resourcePath": "sprites\\Vet_death_by_acid\\Vet_death_by_acid.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8115,6 +8131,14 @@
             "Value": {
                 "id": "2b9d9ffd-97c6-4628-ac8e-ebd453c1a7da",
                 "resourcePath": "sprites\\forest4\\forest4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ffa40819-c53c-4ad8-82c7-d8a0f05b05fe",
+            "Value": {
+                "id": "fffd178a-790b-44b1-bdf4-cf3ba2bbe9c9",
+                "resourcePath": "sprites\\Vet_death_by_ice\\Vet_death_by_ice.yy",
                 "resourceType": "GMSprite"
             }
         },
