@@ -45,12 +45,12 @@ else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack
 	mild_slowed_counter=8
 	player_set_idle()
 }
-else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab slam
+else if sprite_index==sprites[? "uniques_airgrab_slam_down"] || sprite_index==sprites[? "uniques_airgrab_slam_down_u"]   //uga airgrab slam
 {
 	uniques_slam_airgrab_slam_lockdown=2
-	sprite_index=sprites[36]
+	sprite_index=sprites[? "uniques_airgrab_slam_down"]
 	if super_mode
-		sprite_index=sprites[37]
+		sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
 	vspd=UNIQUES_SLAM_AIRGRAB_VSPD
 	
 	var target_P
@@ -72,7 +72,7 @@ else if sprite_index==sprites[34] || sprite_index==sprites[35]   //uga airgrab s
 	}
 	uniques_slam_airgrab_target=noone
 }
-else if sprite_index==sprites[32]   ///vet place mine
+else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 {
 	player_set_idle()
 	var a;
@@ -81,7 +81,7 @@ else if sprite_index==sprites[32]   ///vet place mine
 	a.player_who_placed_mine=self.id
 	mines_ammo-=1
 }
-else if sprite_index==sprites[90] || sprite_index==sprites[91] //vet sticky mine
+else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sprites[? "uniques_place_sticky_mine_u"] //vet sticky mine
 {
 	if uniques_sticky_mine_lockdown==1
 	{
@@ -89,17 +89,17 @@ else if sprite_index==sprites[90] || sprite_index==sprites[91] //vet sticky mine
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[66] || sprite_index==sprites[67]  ///vet dig
+else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprites[? "uniques_dig_channel"]  ///vet dig
 {
 	if uniques_vet_digging==1
 	{
 		uniques_vet_digging=2
-		sprite_index=sprites[68]
+		sprite_index=sprites[? "uniques_dig"]
 		if super_mode
-			sprite_index=sprites[69]
+			sprite_index=sprites[? "uniques_dig_u"]
 	}
 }
-else if sprite_index==sprites[82]  ///bait teleport place
+else if sprite_index==sprites[? "uniques_place_teleport"]  ///bait teleport place
 {
 	player_set_idle()
 	if uniques_teleport==0 		////create teleport if there isn't one
@@ -110,7 +110,7 @@ else if sprite_index==sprites[82]  ///bait teleport place
 		effect_create_above(ef_firework,x,y,2,c_red)
 	}
 }
-else if sprite_index==sprites[83]  ///bait teleport use
+else if sprite_index==sprites[? "uniques_use_teleport"]  ///bait teleport use
 {
 	player_set_idle()
 
@@ -132,7 +132,7 @@ else if sprite_index==sprites[83]  ///bait teleport use
 	}	
 	
 }
-else if sprite_index==sprites[86] ||sprite_index==sprites[87]  ///bait blink gp attack
+else if sprite_index==sprites[? "uniques_blinkjump_windup"] ||sprite_index==sprites[? "uniques_blinkjump_windup_u"]  ///bait blink gp attack
 { 
 	effect_aniend(bait_blinkjump_effect,-1,0.2) 
 	uniques_dashgpblinkattack_lockdown=0
@@ -181,7 +181,7 @@ else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocket
 		dash_rocket_top_collision_safety_on=false
 	}
 }
-else if sprite_index==sprites[21] || sprite_index==sprites[22]  ///falc punch
+else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"]  ///falc punch
 {
 	if fpunch_lockdown==3
 	{
@@ -189,7 +189,7 @@ else if sprite_index==sprites[21] || sprite_index==sprites[22]  ///falc punch
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[60] || sprite_index=sprites[61]    ///aa punch
+else if sprite_index==sprites[? "uniques_upwardpunch"] || sprite_index=sprites[? "uniques_upwardpunch_u"]    ///aa punch
 {
 	if uniques_aapunch_lockdown==3
 	{
@@ -199,7 +199,7 @@ else if sprite_index==sprites[60] || sprite_index=sprites[61]    ///aa punch
 		player_set_idle()
 	}    
 }
-else if sprite_index=sprites[62] || sprite_index=sprites[63]    /// veteran chain forwardpunch
+else if sprite_index=sprites[? "uniques_forwardpunch"] || sprite_index=sprites[? "uniques_forwardpunch_u"]    /// veteran chain forwardpunch
 {
 	if uniques_forwardpunch_lockdown==2
 	{ 
@@ -208,7 +208,7 @@ else if sprite_index=sprites[62] || sprite_index=sprites[63]    /// veteran chai
 		player_set_idle()  
 	}
 }
-else if sprite_index==sprites[70] || sprite_index==sprites[71]  ///slinger sunblast
+else if sprite_index==sprites[? "uniques_sunbolt"] || sprite_index==sprites[? "uniques_sunbolt_u"]  ///slinger sunblast
 {
 	if uniques_sunblast_lockdown==2
 	{
@@ -216,7 +216,7 @@ else if sprite_index==sprites[70] || sprite_index==sprites[71]  ///slinger sunbl
 		player_set_idle()   
 	}
 }
-else if sprite_index==sprites[73] || sprite_index==sprites[72]  ///slinger air sunbolt
+else if sprite_index==sprites[? "uniques_airsunbolt_u"] || sprite_index==sprites[? "uniques_airsunbolt"]  ///slinger air sunbolt
 {
 	if uniques_airbolt_lockdown==2
 	{
@@ -224,7 +224,7 @@ else if sprite_index==sprites[73] || sprite_index==sprites[72]  ///slinger air s
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[80] || sprite_index==sprites[81]  ///bait shark attack heavy attack
+else if sprite_index==sprites[? "uniques_heavyswing"] || sprite_index==sprites[? "uniques_heavyswing_u"]  ///bait shark attack heavy attack
 {
 	if uniques_sharkattack_lockdown==2
 	{
@@ -236,12 +236,12 @@ else if sprite_index==sprites[? "dash_u"] || sprite_index==sprites[? "light_atta
 {
 	player_set_idle() 
 }
-else if sprite_index==sprites[92] || sprite_index==sprites[93]
+else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprites[? "uniques_dig_place_mine_u"]
 {
 	uniques_drill_mine_place_animation_lock=false
-	sprite_index=sprites[68]
+	sprite_index=sprites[? "uniques_dig"]
 	if super_mode
-		sprite_index=sprites[69]
+		sprite_index=sprites[? "uniques_dig_u"]
 }
 
 

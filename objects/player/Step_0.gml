@@ -66,9 +66,9 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 		if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==0 && checkkey(dashbutton) && checkkey(downbutton)
 		{///UGA unique airgrab slam
 			uniques_slam_airgrab_slam_lockdown=1
-			sprite_index=sprites[34]
+			sprite_index=sprites[? "uniques_airgrab_slam_down"]
 			if super_mode
-				sprite_index=sprites[35]
+				sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
 			image_index=0
 			image_speed=0.2
 			uniques_slam_airgrab_target=airgrab_target
@@ -239,7 +239,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 				case "bait_whirlwind":
 				image_index=0
 				image_speed=FRAME_SPEED_FAST
-				sprite_index=sprites[84]
+				sprite_index=sprites[? "uniques_whirlwind"]
 				uniques_whirlwind_active=true
 			}
 		}
@@ -273,7 +273,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	if uniques_parachute>0
 	{
 		uniques_parachute=0 
-		if sprite_index==sprites[64] || sprite_index==sprites[65]
+		if sprite_index==sprites[? "uniques_parachute"] || sprite_index==sprites[? "uniques_parachute_u"]
 		{
 			sprite_index=sprites[? "fall"]  //fall sprite
 			if super_mode
@@ -408,9 +408,9 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		uniques_vet_chain_counter=-1
 		
 		image_speed=FRAME_SPEED_NORMAL
-		sprite_index=sprites[62]
+		sprite_index=sprites[? "uniques_forwardpunch"]
 		if super_mode
-			sprite_index=sprites[63]
+			sprite_index=sprites[? "uniques_forwardpunch_u"]
 		image_index=0
 	}
     
@@ -489,9 +489,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 	{
 		image_speed=FRAME_SPEED_SLOW
 		image_index=0
-		sprite_index=sprites[90]
+		sprite_index=sprites[? "uniques_place_sticky_mine"]
 		if super_mode
-			sprite_index=sprites[91]
+			sprite_index=sprites[? "uniques_place_sticky_mine_u"]
 		uniques_sticky_mine_lockdown=1
 		var a;
 		a=instance_create_depth(x,y,-1,ef_connector)
@@ -513,9 +513,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		{
 			case "uga_falconpunch":
 			image_speed=FRAME_SPEED_FAST
-			sprite_index=sprites[21]
+			sprite_index=sprites[? "uniques_falconpunch"]
 			if super_mode
-				sprite_index=sprites[22]
+				sprite_index=sprites[? "uniques_falconpunch_u"]
 			image_index=0
 			fpunch_lockdown=1
 			fpunch_cd_counter=FPUNCH_COOLDOWN
@@ -525,9 +525,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
             
 			case "vet_armspin":
 			image_speed=FRAME_SPEED_FAST
-			sprite_index=sprites[60]
+			sprite_index=sprites[? "uniques_upwardpunch"]
 			if super_mode
-				sprite_index=sprites[61]
+				sprite_index=sprites[? "uniques_upwardpunch_u"]
 			image_index=0
 			uniques_aapunch_cd_counter=UNIQUES_AAPUNCH_COOLDOWN
 			uniques_aapunch_lockdown=1
@@ -536,9 +536,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			case "slinger_sunblast":
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
-			sprite_index=sprites[70]
+			sprite_index=sprites[? "uniques_sunbolt"]
 			if super_mode
-				sprite_index=sprites[71]
+				sprite_index=sprites[? "uniques_sunbolt_u"]
 			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
 			uniques_sunblast_lockdown=1
 			uniques_sunblast_has_made_hitbox=false
@@ -549,9 +549,9 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
             
 			case "bait_haymaker":
 			image_speed=FRAME_SPEED_NORMAL
-			sprite_index=sprites[80]
+			sprite_index=sprites[? "uniques_heavyswing"]
 			if super_mode
-				sprite_index=sprites[81]
+				sprite_index=sprites[? "uniques_heavyswing_u"]
 			image_index=0
 			uniques_sharkattack_lockdown=1 
 			uniques_sharkattack_cd_counter=UNIQUES_SHARKATTACK_COOLDOWN
@@ -676,9 +676,9 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 			case "slinger_air_sunbolt":
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
-			sprite_index=sprites[72]
+			sprite_index=sprites[? "uniques_airsunbolt"]
 			if super_mode
-				sprite_index=sprites[73]
+				sprite_index=sprites[? "uniques_airsunbolt_u"]
 			uniques_airbolt_lockdown=1
 			uniques_airbolt_has_made_hitbox=false
 			break;
@@ -756,9 +756,9 @@ if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false     
 		uniques_dashgpblinkattack_lockdown=1
 		image_speed=0.2
 		image_index=0
-		sprite_index=sprites[86]
+		sprite_index=sprites[? "uniques_blinkjump_windup"]
 		if super_mode
-			sprite_index=sprites[87]
+			sprite_index=sprites[? "uniques_blinkjump_windup_u"]
 		exception=true
 	}
 	
@@ -1007,9 +1007,9 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 			image_speed=FRAME_SPEED_NORMAL
 			uniques_vet_digging=1
 			y+=aizen.bh
-			sprite_index=sprites[66]
+			sprite_index=sprites[? "uniques_dig_channel_u"]
 			if super_mode
-				sprite_index=sprites[67]
+				sprite_index=sprites[? "uniques_dig_channel"]
 		}
 		
 		if uniques_vet_digging==0
@@ -1018,10 +1018,10 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 			{
 				if mines_ammo>0                ///start place mine animation
 				{
-					if sprite_index!=sprites[32]
+					if sprite_index!=sprites[? "uniques_place_mine"]
 						image_index=0
 					image_speed=FRAME_SPEED_NORMAL
-					sprite_index=sprites[32]
+					sprite_index=sprites[? "uniques_place_mine"]
 				}
 			} 
 		}
@@ -1032,20 +1032,20 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 		case "bait_teleport":
 		if uniques_teleport_enabled==1      ////start place/use teleport animation
 		{
-			if sprite_index!=sprites[82] && sprite_index!=sprites[83]
+			if sprite_index!=sprites[? "uniques_place_teleport"] && sprite_index!=sprites[? "uniques_use_teleport"]
 			{
 				image_speed=FRAME_SPEED_NORMAL
 				image_index=0
-				sprite_index=sprites[82]
+				sprite_index=sprites[? "uniques_place_teleport"]
 				if uniques_teleport==1
-					sprite_index=sprites[83]
+					sprite_index=sprites[? "uniques_use_teleport"]
 			}
 
 			/*if !instance_exists(uniques_my_teleport_id)
 			{   ///if teleport got destroyed, reset variables and instead try to place teleport next step
 				uniques_teleport=0
 				uniques_my_teleport_id=-4
-				sprite_index=sprites[82]
+				sprite_index=sprites[? "uniques_place_teleport"]
 			}*/
 		}
 
@@ -1056,7 +1056,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 
 if checkkey_released(downbutton)
 { ////// down button hold counter reset (for abilities like place mine)
-	if sprite_index==sprites[82] || sprite_index=sprites[83]
+	if sprite_index==sprites[? "uniques_place_teleport"] || sprite_index=sprites[? "uniques_use_teleport"]
 	{
 		player_set_idle()
 	}
@@ -1130,9 +1130,9 @@ if uniques_vet_digging==2
 	if checkkey_pushed(heavybutton) && mines_ammo-instance_number(drillmine) >0 && uniques_drill_mine_place_animation_lock==false
 	{
 		uniques_drill_mine_place_animation_lock=true
-		sprite_index=sprites[92]
+		sprite_index=sprites[? "uniques_dig_place_mine"]
 		if super_mode
-			sprite_index=sprites[93]
+			sprite_index=sprites[? "uniques_dig_place_mine_u"]
 		var a;
 		a=instance_create_depth(x,y,-1,drillmine)
 		a.creator=self.id

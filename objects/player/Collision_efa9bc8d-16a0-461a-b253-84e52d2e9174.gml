@@ -2,7 +2,7 @@ if other.creator!=self.id && stunned_groundpound<1 && other.image_index<3 && oth
 {
 	other.hit[P]=true
 	player_get_gp_stunned(GROUND_POUND_STUN_AMOUNT*2)
-	sprite_index=sprites[14]
+	sprite_index=sprites[? "gilded"]
 	vspd=-1
 }
 
