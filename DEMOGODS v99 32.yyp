@@ -1583,6 +1583,14 @@
             }
         },
         {
+            "Key": "31be93aa-ea8c-4b06-adc2-00f14900ecfc",
+            "Value": {
+                "id": "b0d30fb6-3411-4a50-8e73-793579ac5d52",
+                "resourcePath": "sprites\\Slinger_death_by_zap\\Slinger_death_by_zap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31f60d96-8187-4a2d-8b10-2eacaa79f755",
             "Value": {
                 "id": "b015e2a6-6048-4e13-972c-37ae9f021483",
@@ -1787,6 +1795,14 @@
             "Value": {
                 "id": "80fa3022-9e25-4411-85b0-b615b7995097",
                 "resourcePath": "sprites\\fbindicatorsprite_blue\\fbindicatorsprite_blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b4ee5ac-5152-4ef4-bdcb-3076ffdbd0b5",
+            "Value": {
+                "id": "d3cca19c-b8fd-49b5-b3d7-0bc43d0ca6c2",
+                "resourcePath": "sprites\\Slinger_death_by_fall\\Slinger_death_by_fall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3655,6 +3671,14 @@
             }
         },
         {
+            "Key": "7509b22a-127f-4a5b-a47a-78c0d3d71b2b",
+            "Value": {
+                "id": "8798e4d0-2a1b-4d24-9c03-26d7a6af1aef",
+                "resourcePath": "sprites\\Slinger_death_by_acid\\Slinger_death_by_acid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75f62215-5312-419e-8d9f-0454e64c5d97",
             "Value": {
                 "id": "cc3fafc8-e767-47cc-863e-6880b918b4aa",
@@ -4551,6 +4575,14 @@
             }
         },
         {
+            "Key": "90ca2a0a-4eda-4acb-a9ad-a21af406f5aa",
+            "Value": {
+                "id": "93e1adea-3466-4368-b5dd-b4de1c1c9ec7",
+                "resourcePath": "sprites\\Slinger_death_by_ice\\Slinger_death_by_ice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "911225c6-93db-4ca3-9116-9649798f48d5",
             "Value": {
                 "id": "6aeaac0c-39a5-41df-96ce-39970658f352",
@@ -4711,10 +4743,26 @@
             }
         },
         {
+            "Key": "95187a47-8ea5-4283-9bcc-e457ec9263a2",
+            "Value": {
+                "id": "e280c0a0-ebb8-4794-97c8-8f6e5d4e0b47",
+                "resourcePath": "sprites\\Bait_death_by_ice\\Bait_death_by_ice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "956b5d5d-e66e-4055-beab-9e673f9962b6",
             "Value": {
                 "id": "f5177719-0981-465b-b3ff-a4c8704a7c52",
                 "resourcePath": "sprites\\P1_saiyanaura\\P1_saiyanaura.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "95796d22-9977-4dee-ba3d-9fc3106ae192",
+            "Value": {
+                "id": "bc5244d7-79a3-4ff2-a356-50ce750197cb",
+                "resourcePath": "sprites\\Bait_death_by_zap\\Bait_death_by_zap.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5955,6 +6003,14 @@
             "Value": {
                 "id": "a580aecf-5dc1-4b77-942d-c5428484849c",
                 "resourcePath": "sprites\\temple14\\temple14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba54409c-de9f-4ee5-ad67-7cc1d49fc9fc",
+            "Value": {
+                "id": "116bfc38-47db-4ccd-aaa7-b89562cd58ce",
+                "resourcePath": "sprites\\Bait_death_by_acid\\Bait_death_by_acid.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7979,6 +8035,14 @@
             "Value": {
                 "id": "b8c8fabc-03d1-41e4-b292-f3bc92142811",
                 "resourcePath": "sprites\\meteor_sprite_cold\\meteor_sprite_cold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f968c3ae-60da-4a99-a8ad-ff3d13d33dce",
+            "Value": {
+                "id": "9f9f124c-abc2-411f-92d1-32cfd598b515",
+                "resourcePath": "sprites\\Bait_death_by_fall\\Bait_death_by_fall.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -150,7 +150,7 @@ switch character
 			sprites[? "dash_u"]=Slinger_3H_charge    ////super version (to be changed) 
 			sprites[? "dash"]=Slinger_3H_charge
 			sprites[? "gilded"]=goldboi
-			sprites[? "death_fall"]=P1_corpse
+			sprites[? "death_fall"]=Slinger_death_by_fall
 			sprites[? "idle"]=Slinger_3H_idle
 			sprites[? "run"]=Slinger_3H_run
 			sprites[? "jump"]=Slinger_3H_jump
@@ -163,7 +163,10 @@ switch character
 			sprites[? "idle_u"]=Slinger_3H_idle  //super version
 			sprites[? "jump_u"]=Slinger_3H_jump  //super version
 			sprites[? "air_u"]=Slinger_3H_air  //super version
-			sprites[? "fall_u"]=Slinger_3H_fall      //super version     
+			sprites[? "fall_u"]=Slinger_3H_fall      //super version
+			sprites[? "death_acid"]=Slinger_death_by_acid
+			sprites[? "death_zap"]=Slinger_death_by_zap
+			sprites[? "death_ice"]=Slinger_death_by_ice
 		}
 	} break;
 	
@@ -195,7 +198,7 @@ switch character
 		sprites[? "dash_u"]=Bait_3H_dash    ////super version (to be changed) 
 		sprites[? "dash"]=Bait_3H_dash
 		sprites[? "gilded"]=goldboi
-		sprites[? "death_fall"]=P1_corpse
+		sprites[? "death_fall"]=Bait_death_by_fall
 		sprites[? "idle"]=Bait_3H_idle
 		sprites[? "run"]=Bait_3H_run
 		sprites[? "jump"]=Bait_3H_jump
@@ -209,6 +212,9 @@ switch character
 		sprites[? "jump_u"]=Bait_3H_jump  //super version
 		sprites[? "air_u"]=Bait_3H_air  //super version
 		sprites[? "fall_u"]=Bait_3H_fall      //super version          
+		sprites[? "death_acid"]=Bait_death_by_acid
+		sprites[? "death_zap"]=Bait_death_by_zap
+		sprites[? "death_ice"]=Bait_death_by_ice
 	} break;
     
 	default:
