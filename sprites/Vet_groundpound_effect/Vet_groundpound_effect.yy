@@ -2,7 +2,7 @@
     "id": "fc0cda92-e423-4ab2-81ca-82ee9be80691",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "groundpoundeffect",
+    "name": "Vet_groundpound_effect",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -252,7 +252,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 9,
     "originLocked": false,
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
@@ -264,5 +264,5 @@
     "type": 0,
     "width": 70,
     "xorig": 35,
-    "yorig": 18
+    "yorig": -36
 }

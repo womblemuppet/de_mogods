@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "28e9afa3-714c-4831-97d2-2538e63e0acd",
+            "Value": {
+                "id": "0a3dd198-8745-4fb8-9ede-f120a1bd7c64",
+                "resourcePath": "sprites\\Bait_groundpound_effect\\Bait_groundpound_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2925809d-2da4-4d07-9009-205af5fb0da2",
             "Value": {
                 "id": "f96537d9-ad31-4b5c-9051-1e614c419a27",
@@ -4124,6 +4132,14 @@
                 "id": "14fdbe44-3fa8-4b5d-99b2-eb83ad122e8e",
                 "resourcePath": "scripts\\player_whacked\\player_whacked.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "823cbc1a-29d1-43e4-9146-061be9761a67",
+            "Value": {
+                "id": "adb9bec4-46bf-4b4a-98b5-a4d08846952b",
+                "resourcePath": "sprites\\Slinger_groundpound_effect\\Slinger_groundpound_effect.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8170,7 +8186,7 @@
             "Key": "fc0cda92-e423-4ab2-81ca-82ee9be80691",
             "Value": {
                 "id": "50ede225-d5ec-4051-a964-c131f666907d",
-                "resourcePath": "sprites\\groundpoundeffect\\groundpoundeffect.yy",
+                "resourcePath": "sprites\\Vet_groundpound_effect\\Vet_groundpound_effect.yy",
                 "resourceType": "GMSprite"
             }
         },

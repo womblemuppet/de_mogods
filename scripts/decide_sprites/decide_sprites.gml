@@ -72,7 +72,7 @@ switch character
 			supersparkle_sprite=P1_saiyanaura 
 			sentinel_colour=c_purple     
 			sprites[? "uniques_place_mine"]=Vet_3H_place_mine
-			sprites[? "gp_hit_ground_effect"]=groundpoundeffect
+			sprites[? "gp_hit_ground_effect"]=Vet_groundpound_effect
 			sprites[? "rocketjump"]=Vet_3H_rocketjump
 			sprites[? "rocketjump_u"]=Vet_3H_rocketjump   ///super version (to be changed)
 			sprites[? "rocketjump_charge"]=Vet_3H_rocketjump_charge
@@ -138,7 +138,7 @@ switch character
 			sprites[? "rocketjump_charge"]=Slinger_3H_rocketjump_charge
 			sprites[? "rocketjump_charge_u"]=Slinger_3H_rocketjump_charge  ///super version (to be changed)
 			sprites[? "rocketjump_effect"]=Slinger_rjump_effect_spr
-			sprites[? "gp_hit_ground_effect"]=groundpoundeffect
+			sprites[? "gp_hit_ground_effect"]=Slinger_groundpound_effect
 			sprites[? "recoiling_u"]=Slinger_3H_recoiling  ///super version (to be changed)
 			sprites[? "recoiling"]=Slinger_3H_recoiling
 			sprites[? "airgrab_u"]=Vet_3H_airgrab  ///super version (to be changed)
@@ -186,7 +186,7 @@ switch character
 		sprites[? "rocketjump_charge"]=Bait_3H_rocketjump_charge
 		sprites[? "rocketjump_charge_u"]=Bait_3H_rocketjump_charge  ///super version (to be changed)
 		sprites[? "rocketjump_effect"]=Bait_rjump_effect_spr
-		sprites[? "gp_hit_ground_effect"]=groundpoundeffect
+		sprites[? "gp_hit_ground_effect"]=Bait_groundpound_effect
 		sprites[? "recoiling_u"]=Bait_3H_recoiling  ///super version (to be changed)
 		sprites[? "recoiling"]=Bait_3H_recoiling
 		sprites[? "airgrab_u"]=Vet_3H_airgrab  ///super version (to be changed)
