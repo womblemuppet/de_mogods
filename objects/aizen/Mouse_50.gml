@@ -1,4 +1,4 @@
-with create_terrain_cutter(boomcircle,"hit",90,14)
+with create_terrain_cutter(mask40,"hit",90,14)
 {
     x=mouse_x
     y=mouse_y

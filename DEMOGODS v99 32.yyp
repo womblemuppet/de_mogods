@@ -4463,6 +4463,14 @@
             }
         },
         {
+            "Key": "8c684894-dc0b-4ba1-9986-1b1de7b822a6",
+            "Value": {
+                "id": "afe72e12-6895-49c1-9cce-69d35778ec2e",
+                "resourcePath": "sounds\\bam\\bam.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8c9472e3-940b-4e78-94e2-00c7e61440e2",
             "Value": {
                 "id": "2ba05fad-63d1-4a12-a9eb-18be38e84109",

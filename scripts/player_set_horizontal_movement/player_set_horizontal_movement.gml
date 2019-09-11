@@ -2,6 +2,7 @@
   player_set_horizontal_movement
   changes player direction and sets/increases hspd
 */
+
 var button,reverse_button,sgn
 
 if argument0=="left"
@@ -27,12 +28,13 @@ if stunned==0 && player_not_locked_down()
 
 	if (argument0=="left" && hor_running_counter>0) || (argument0=="right" && hor_running_counter<0)
 		hor_running_counter=(sgn*HOR_SHUFFLE_THRESHOLD)+sgn
+
 	hor_running_counter+=sgn
 
 
 	if groundcheck!=noone
 	{
-		if  hor_running_counter==sgn*HOR_SHUFFLE_THRESHOLD
+		if hor_running_counter==sgn*HOR_SHUFFLE_THRESHOLD
 			hspd=sgn*HOR_SHUFFLESPEED*slow_ratio
 		if (argument0=="left" && hor_running_counter<-HOR_RUNNING_THRESHOLD) || (argument0=="right" && hor_running_counter>HOR_RUNNING_THRESHOLD)
 			hspd=sgn*HOR_RUNSPEED*slow_ratio

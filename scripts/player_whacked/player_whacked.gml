@@ -6,6 +6,8 @@
 4 whether to gain meter or not
 */
 
+audio_play_sound(bam,5,false)
+
 if armouredframes<1
 	stunned=argument0
 
