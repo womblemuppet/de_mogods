@@ -217,7 +217,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		
 
 
-	if  cangroundpound==2   ////GP HITS GROUND EFFECT EVENT
+	if cangroundpound==2   ////GP HITS GROUND EFFECT EVENT
 	{
 		effect_aniend(groundpoundeffect,0.4,-2)
 		
@@ -231,16 +231,21 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		
 		if !exception
 		{
-			switch attacks[? "gp_hit_ground_effect"]
+			if start_of_game_dont_do_groundpound_effects
+				start_of_game_dont_do_groundpound_effects=false
+			else
 			{
-				case 0:
-				//nandemonai
-				break;
-				case "bait_whirlwind":
-				image_index=0
-				image_speed=FRAME_SPEED_FAST
-				sprite_index=sprites[? "uniques_whirlwind"]
-				uniques_whirlwind_active=true
+				switch attacks[? "gp_hit_ground_effect"]
+				{
+					case 0:
+					//nandemonai
+					break;
+					case "bait_whirlwind":
+					image_index=0
+					image_speed=FRAME_SPEED_FAST
+					sprite_index=sprites[? "uniques_whirlwind"]
+					uniques_whirlwind_active=true
+				}
 			}
 		}
 		

@@ -270,4 +270,5 @@ lastdamagetype=""  ///last type of damage taken (string) for corpse
 attacks=ds_map_create()   //[finaledit] to be deleted on game end
 
 
+start_of_game_dont_do_groundpound_effects=true
 
