@@ -139,14 +139,19 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 		a=instance_create(x,y,groundpunch_shockwave)       ///create object that will make chain of shockwave hitboxes
 		a.creator=self.id
 		a.target=self.id
+		a.right=right
+		a.scale=sign(scale)
 		
 		if !right
 		{
 			a.image_xscale=-1
-			a.GAP=-30
+			a.GAP=-60
 		}
 		else
-			a.GAP=30
+		{
+			a.image_xscale=1
+			a.GAP=60
+		}
 
 		with a                                                                       ////create the first shockwave hitbox here (changes here should also change groundpunch_shockwave alarm[0]
 		{
@@ -156,7 +161,8 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 			b.target=creator
 			b.image_xscale=image_xscale
 			b.hit_collector=self.id
-			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
+			show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
+
 		}
 
 

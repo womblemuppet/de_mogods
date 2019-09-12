@@ -474,7 +474,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
             
-			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,7+extrahkb,4)
+			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,8+extrahkb,11)
 		}
 	}
 }
