@@ -178,7 +178,6 @@ else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocket
 		vspd/=1.5
 		player_set_idle()
 		dash_rocket_jump=3
-		dash_rocket_top_collision_safety_on=false
 	}
 }
 else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"]  ///falc punch

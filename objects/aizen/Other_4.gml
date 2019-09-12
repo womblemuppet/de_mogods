@@ -130,8 +130,7 @@ if room==gameroom
             
 			decide_sprites() //////////////////////////////////// character setup
 			decide_sprite_hierarchy_lists()
-			decide_moves()
-			sprite_index=sprites[? "idle"]            
+			decide_moves()           
 
 			///////////////////////////////////////////////////// controls
 			gamepad=ds_map_find_value(kouchou.keybinding_map_array[P],"gamepad")
@@ -160,6 +159,8 @@ if room==gameroom
 			
 			player_set_up_HUD()
 			attack_start_groundpound_descent()
+			vspd=7
+			sprite_index=sprites[? "gpfall"]
 		}
 	};
 

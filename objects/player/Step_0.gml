@@ -273,7 +273,8 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		instance_create(x,y,jump_vibration)
 	vspd=0
 	doublejump=0
-
+	dash_rocket_top_collision_safety_on=false
+	
 	//////vet parachute turn off
 	if uniques_parachute>0
 	{
