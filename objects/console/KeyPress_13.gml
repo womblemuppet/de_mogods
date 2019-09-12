@@ -57,6 +57,8 @@ switch txt
 			visible=true
 		with dashattack
 			visible=true
+		with mine
+			sprite_index=mask_index
 	}
 	else
 	{
@@ -65,6 +67,8 @@ switch txt
 			visible=false
 		with dashattack
 			visible=false
+		with mine
+			sprite_index=mine_sprite
 	}
 
 	if aizen.debug_show_hitboxes
