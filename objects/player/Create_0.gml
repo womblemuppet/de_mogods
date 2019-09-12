@@ -96,6 +96,7 @@ stunned_groundpound=0  ///not constant     [finaledit] replace with lowercase ve
 immune=false      ///inability to take further damage while flickering
 sidezap=false
 hothands=0
+hhspr=mask_index
 hothandimageindex=0      ///hothands indicator image index
 HOTHANDIMAGENUMBER=10 //update when changing hothands counter sprite
 holding_a_crab=false

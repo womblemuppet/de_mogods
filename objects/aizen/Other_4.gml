@@ -106,13 +106,14 @@ if room==gameroom
 		with a
 		{
 			P=ii
-			if P%2==1
+			if P % 2==1
 				image_blend=c_orange
 			
 			character=aizen.tempcharstrings[P]
 			palette=kouchou.palette[P]
 			H=kouchou.starting_hp
 			H+=kouchou.playerhandicap[P]
+			player_update_hh_indicator()
 			
 			scale=kouchou.setmenu_player_scale
 			image_xscale=scale
@@ -130,7 +131,7 @@ if room==gameroom
             
 			decide_sprites() //////////////////////////////////// character setup
 			decide_sprite_hierarchy_lists()
-			decide_moves()           
+			decide_moves()
 
 			///////////////////////////////////////////////////// controls
 			gamepad=ds_map_find_value(kouchou.keybinding_map_array[P],"gamepad")
@@ -144,7 +145,7 @@ if room==gameroom
 			startbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"startbutton")
 			if gamepad
 				padnumber=ds_map_find_value(kouchou.keybinding_map_array[P],"padnumber")
-			
+
 			var b;
 			b=instance_create_depth(x,y,-4,ef_timed_indicator)
 			b.targ=id

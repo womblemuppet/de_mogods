@@ -161,7 +161,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					if player_is_hittable("standard_airgrab_effect")
 					{
 						hothands+=1                         //// ONE HH DAMAGE
-						player_hothands_check()
+						player_has_taken_hh_damage()
 					}
 				}
 				hothands=0                              //// RESETS THROWERS HH

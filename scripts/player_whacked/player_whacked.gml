@@ -39,7 +39,7 @@ if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 }
 
 player_flinch()
-player_hothands_check()
+player_has_taken_hh_damage()
 
 if argument3     /// knocks player out of current animation
 {

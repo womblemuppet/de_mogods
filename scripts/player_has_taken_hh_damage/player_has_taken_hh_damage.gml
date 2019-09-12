@@ -1,0 +1,2 @@
+player_hothands_check()
+player_update_hh_indicator()
