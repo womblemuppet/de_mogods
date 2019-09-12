@@ -510,6 +510,8 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
 		a.creator=self.id
 		a.targ=uniques_vet_la_target
+		a.right=right
+		a.scale=1
 		exception=true
 	}
 	
@@ -649,6 +651,8 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 				aim_octilinear()   ///changes octdir variable.
 				var a;
 				a=instance_create(x,y-10,mine)
+				a.right=right
+				a.scale=1
 				a.creator=a.id
 				a.player_who_placed_mine=self.id
 				a.direction=octdir
@@ -1142,6 +1146,8 @@ if uniques_vet_digging==2
 		var a;
 		a=instance_create_depth(x,y,-1,drillmine)
 		a.creator=self.id
+		a.right=right
+		a.scale=1
 		mines_ammo-=1
 	}
 	
