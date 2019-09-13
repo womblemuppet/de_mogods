@@ -181,62 +181,16 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 {
 	if uniques_sunblast_has_made_hitbox==false
 	{//josh bertwhistle
-		var b;
-		b=attack_create_hitbox(30,1,false,true,"sunblast",sunblast_sprite,1,99,7,4)
-		with b
-		{
-			x=round(x/40)*40
-			instance_change(sunblast,false)
-		}
-
-		b.right=right
-		b.length=1
-		var c,MAX_LENGTH;
-		MAX_LENGTH=30
-		c=1
-		if b.right==false
-			c=-1
-        
-		with b
-		{
-			if right
-			{
-				repeat(MAX_LENGTH)
-				{
-					if !place_meeting(x+(40*length),y,block)
-						length+=1
-				}
-			}
-		else
-			{
-			repeat(MAX_LENGTH)
-				{
-					if !place_meeting(x-(40*length),y,block)
-						length+=1
-				}            
-			}
-		}
-
-		var d;
-		d=create_terrain_cutter(sunblast_terrain_cut_mask,"disintegrated",-1,7)
+		var a;
+		a=instance_create_depth(x,y,-1,sunblast)
+		a.right=right
+		a.scale=scale
+		a.creator=self.id
 		
-         
-		//b = hitbox id, d = terrain cutter id
-		if b.right==false
-		{
-			b.image_xscale=-(b.length)
-			d.x-=b.length*40
-		}
+		if right
+			a.hspeed=20
 		else
-		{
-			b.image_xscale=b.length
-			d.x+=b.length*40
-		}
-		
-		with d
-		{
-			effect_aniend(sunblast_blast_spr,0.2,-1)
-		}
+			a.hspeed=-20
 		
 	}
 	
