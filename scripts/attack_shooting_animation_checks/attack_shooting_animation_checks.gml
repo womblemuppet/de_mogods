@@ -180,7 +180,7 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {
 	if uniques_sunblast_has_made_hitbox==false
-	{
+	{//josh bertwhistle
 		var b;
 		b=attack_create_hitbox(30,1,false,true,"sunblast",sunblast_sprite,1,99,7,4)
 		with b
@@ -250,10 +250,12 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 		var a;
 		a=instance_create_depth(x,y,0,slinger_airbolt)
 		a.creator=self.id
+		a.right=right
+		a.scale=scale
 		if !right
 			a.image_xscale=-1
-		a.hspeed=7*a.image_xscale
-		a.vspeed=6
+		a.hspeed=12*a.image_xscale
+		a.vspeed=9
 		
 		float_counter=UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT
 		vspd=min(vspd,0)   //if falling, stop fall
