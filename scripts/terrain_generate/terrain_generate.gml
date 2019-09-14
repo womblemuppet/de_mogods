@@ -453,8 +453,8 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 				typeofblock="payday ore"      ////payday
 			if biome=="sand" && rand>=0.02 && rand <0.04
 				typeofblock="weaksand"      ////dissolve block (weaksand)
-			if rand>=0.04 && rand<0.045
-				typeofblock="instrument"
+			//if rand>=0.04 && rand<0.045
+			//	typeofblock="instrument"
 			//if biome!="summit" && random(1)>0.999
 			//	typeofblock=3     ////gunpowder
 			//if random(1)>0.995
@@ -480,9 +480,9 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 				//	a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
 				//case 5:
 				//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
-				case "instrument":
-					//show_message("i="+string(i))
-					a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,argument0,false) break;
+				//case "instrument":
+				//	//show_message("i="+string(i))
+				//	a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,argument0,false) break;
 				default:
 					show_error("unhandled typeofblock case",true)
 			}
