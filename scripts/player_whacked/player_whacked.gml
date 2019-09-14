@@ -28,10 +28,6 @@ if instance_exists(payday)==false           ////////add to hothands and do first
 			other.creator.hothands=0
 	}
 
-	if aizen.first_blood_status=="none"
-	{
-		first_blood_activate_on_me(x,y)
-	}
 }
 if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 {

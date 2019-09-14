@@ -15,45 +15,11 @@ if stackframe_subimage>stackframe_image_number
 fossil_surface_redraw_needed=false
 
 
-
-if first_blood_neutral_cooldown>0
-	first_blood_neutral_cooldown-=1
-///////////////////////                                                           neutral first blood event                                                                     ///////////////////////////////////////
-if first_blood_neutral_cooldown==0 && first_blood_neutral_queued==true
-{
-	var new_spawner;
-	new_spawner=spawn_instrument_spawner(noone)
-
-	var a;
-	a=effect_aniend(first_blood_zap_neutral,0.2,-2)
-	if instance_exists(a)  ///[finaledit] bandaid fix to effect dying offscreen (unlikely to happen in real gameplay)
-	{
-		a.x=new_spawner.x
-		a.y=new_spawner.y
-	}
-	first_blood_status="timedout"
-	peacetime=0
-	first_blood_neutral_cooldown=350
-	first_blood_neutral_queued=false
-}
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   trial modes score ticker
 if kouchou.map=="firetrial" || kouchou.map=="icetrial"
 {
 	if instance_exists(player)
 		scoer+=1
-}
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   peacetime counter
-if mode==0 &&  first_blood_status=="none" 
-{
-	peacetime+=1
-	if peacetime>2000
-	{
-		//show_debug_message("peacetime limit, spawned instrument, diggable block ="+string(d))
-		first_blood_activate_neutral()
-	}
 }
 
 

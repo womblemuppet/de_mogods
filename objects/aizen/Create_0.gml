@@ -62,9 +62,6 @@ mode=0          //// normal, about to shitcall, or shitcalling
   2=shit happening
 ****************************************************/
 peacetime=0
-first_blood_status="none"  //"none" no fb yet - counting down peacetime, "occurred" player first blood hit, "timedout" ground has been zapped
-first_blood_neutral_cooldown=0
-first_blood_neutral_queued=false
 
 image_speed=0.15
 

@@ -5,8 +5,6 @@ if other.ready==true && other.dying==false && !super_mode
 	top_HUD.player_orb_count[P]=orb_count_meter
 	player_add_to_pocket(other.type)
 
-	
-	first_blood_allow_again()
 	player_update_super_meter_hud()
 	
 	
@@ -32,7 +30,6 @@ if other.ready==true && other.dying==false && !super_mode
 		dying=true
 		image_index=0
 		image_speed=death_speed
-		trigger_first_blood=false
 	}
     
     ///////////////////////////////////////////////////////////////////////////////////////// CREATE 'ABS-ORB' EFFECT

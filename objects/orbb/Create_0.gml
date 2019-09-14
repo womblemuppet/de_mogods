@@ -8,4 +8,3 @@ alarm[2]=1
 dying=false
 targ=noone
 depth=-3
-trigger_first_blood=true

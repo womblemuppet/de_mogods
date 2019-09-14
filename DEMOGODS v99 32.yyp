@@ -1023,14 +1023,6 @@
             }
         },
         {
-            "Key": "1d61c5ab-1628-4766-86d2-f82c6a720550",
-            "Value": {
-                "id": "3d59db96-7fbd-4c1d-b8c9-c63cda09ba33",
-                "resourcePath": "scripts\\first_blood_activate_neutral\\first_blood_activate_neutral.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1dcba1e7-7014-4bec-ad22-1c23b5dccba1",
             "Value": {
                 "id": "e7d50201-cf8f-4a50-95d4-7037c89e99ab",
@@ -1747,14 +1739,6 @@
             "Value": {
                 "id": "5e3b06b0-79b3-4358-9e05-ee363a161536",
                 "resourcePath": "scripts\\checkkey_pushed\\checkkey_pushed.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "37bc6135-127a-4e15-9085-908d5653bf43",
-            "Value": {
-                "id": "add59b8e-8d80-40b1-976c-4ef4df294f60",
-                "resourcePath": "scripts\\first_blood_allow_again\\first_blood_allow_again.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3831,14 +3815,6 @@
             }
         },
         {
-            "Key": "79110848-d7ff-4b62-aa25-0bb833a2abe1",
-            "Value": {
-                "id": "4893764b-13b2-4f6e-8b5b-eb1956158f1f",
-                "resourcePath": "sprites\\first_blood_zap_neutral\\first_blood_zap_neutral.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7918896e-af0d-4ca3-9aef-cd34504bf641",
             "Value": {
                 "id": "577c2884-c544-4f43-bfb2-b1b452f5ec80",
@@ -3975,14 +3951,6 @@
             }
         },
         {
-            "Key": "7d591364-72d8-4275-abbb-dfcb69300b67",
-            "Value": {
-                "id": "e3b28e57-12c8-45be-afcb-1f062bbd14c2",
-                "resourcePath": "scripts\\first_blood_reset_timer\\first_blood_reset_timer.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "7da1c6da-3514-4862-a45a-30affc4faf27",
             "Value": {
                 "id": "a55210fa-0834-4ad6-9517-e253212f4888",
@@ -4035,14 +4003,6 @@
             "Value": {
                 "id": "ac56513d-00e8-49ba-b612-0bf82e0b37ab",
                 "resourcePath": "sprites\\hh_stack_purple2\\hh_stack_purple2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7f6d7270-3bda-485d-8d13-149d52c6e998",
-            "Value": {
-                "id": "5e8cfc88-f171-4a3f-819f-c285976f09dd",
-                "resourcePath": "sprites\\first_blood_zap\\first_blood_zap.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6231,14 +6191,6 @@
             }
         },
         {
-            "Key": "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
-            "Value": {
-                "id": "c77ace56-95c8-4420-b482-22bfbc29e81d",
-                "resourcePath": "scripts\\first_blood_activate_on_me\\first_blood_activate_on_me.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c1d36029-b00f-455c-b63b-7acddc4015f5",
             "Value": {
                 "id": "b2f64db2-8c34-4f87-9b77-34b87fe097ec",
@@ -8376,10 +8328,6 @@
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "269c9d81-38b3-4b63-a99f-9af285206699",
         "f19f447e-8011-4590-bf58-bd178e36e2cb",
-        "c1ae53f2-8195-4889-8bb8-cb31f3e737ea",
-        "1d61c5ab-1628-4766-86d2-f82c6a720550",
-        "7d591364-72d8-4275-abbb-dfcb69300b67",
-        "37bc6135-127a-4e15-9085-908d5653bf43",
         "3a9c00bb-f55a-4933-a645-d6fcbdc2e432",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",

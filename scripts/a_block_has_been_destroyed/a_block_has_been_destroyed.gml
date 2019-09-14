@@ -34,8 +34,6 @@ with instrument_spawner
 {
 	if dont_trigger_reset==false && !instance_exists(targ)
 	{
-		first_blood_reset_timer(400)
-		first_blood_activate_neutral()
 		instance_destroy()
 	}
 }
