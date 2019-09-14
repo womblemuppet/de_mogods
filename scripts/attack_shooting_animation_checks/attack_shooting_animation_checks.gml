@@ -188,9 +188,9 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 		a.creator=self.id
 		
 		if right
-			a.hspeed=20
+			a.hspeed=40
 		else
-			a.hspeed=-20
+			a.hspeed=-40
 		
 	}
 	

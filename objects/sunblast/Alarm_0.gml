@@ -6,3 +6,5 @@ for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
 {
 	a.hit[i]=hit[i]
 }
+
+alarm[0]=3
