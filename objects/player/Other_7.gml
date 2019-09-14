@@ -128,8 +128,7 @@ else if sprite_index==sprites[? "uniques_use_teleport"]  ///bait teleport use
 			}
 			with uniques_my_teleport_id        ////delete teleport
 				instance_destroy()
-			uniques_my_teleport_id=-4
-			uniques_teleport=0
+			attack_bait_reset_teleport()
 		}
 	}	
 	

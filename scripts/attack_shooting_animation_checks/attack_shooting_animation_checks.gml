@@ -222,7 +222,7 @@ if uniques_sharkattack_lockdown==1 && image_index>3
 {
 	if uniques_sharkattack_has_made_hitbox==false 
 	{
-		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,1,99,9,3)
+		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,0.2,99,9,3)
 	} 
     
 	uniques_sharkattack_has_made_hitbox=true

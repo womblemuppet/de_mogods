@@ -1,0 +1,2 @@
+uniques_my_teleport_id=noone
+uniques_teleport=0

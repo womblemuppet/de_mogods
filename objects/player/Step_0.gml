@@ -1051,12 +1051,6 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 					sprite_index=sprites[? "uniques_use_teleport"]
 			}
 
-			/*if !instance_exists(uniques_my_teleport_id)
-			{   ///if teleport got destroyed, reset variables and instead try to place teleport next step
-				uniques_teleport=0
-				uniques_my_teleport_id=-4
-				sprite_index=sprites[? "uniques_place_teleport"]
-			}*/
 		}
 
         

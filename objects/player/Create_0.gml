@@ -136,7 +136,7 @@ uniques_mines_enabled=false
 uniques_gpcombo_cripples_enabled=false
 uniques_teleport_enabled=false
 uniques_teleport=-1   ///-1 not enabled    0 = placeable 1 = placed 
-uniques_my_teleport_id=-4
+uniques_my_teleport_id=noone
 
 //UGA GP
 uniques_uga_delayable_gp_enabled=false
