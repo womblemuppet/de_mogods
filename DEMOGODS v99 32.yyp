@@ -1031,6 +1031,14 @@
             }
         },
         {
+            "Key": "1e62b934-4603-4edc-a063-e1fe7c2dd9a7",
+            "Value": {
+                "id": "2e633d0f-a11a-47c1-befa-257e7f0e852e",
+                "resourcePath": "sprites\\mask_teleport_anchor\\mask_teleport_anchor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e9f7193-46d6-489e-a466-b8647be6c4e8",
             "Value": {
                 "id": "103896bf-d847-44df-a576-1983dbc295a2",
