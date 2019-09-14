@@ -37,11 +37,11 @@ candraw=true   ///whether 2 players dying at the same time can cause a draw. set
 healthcap=5   ///max health value
 bedrockcounter=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
-biome_length=1460  //1260
+biome_length=1440  //1260
 biome_length_accumulative=0   
 
 
-CREATIONDELAY=200
+CREATIONDELAY=480
 biome_schedule=ds_list_create()    ///list for which biome comes next
 number_of_tergenned_lines=0
 total_baseline_movement=0
@@ -61,7 +61,7 @@ mode=0          //// normal, about to shitcall, or shitcalling
   1=space just pushed (shit about to happen)
   2=shit happening
 ****************************************************/
-peacetime=0
+
 
 image_speed=0.15
 
