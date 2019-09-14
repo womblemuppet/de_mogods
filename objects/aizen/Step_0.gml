@@ -65,6 +65,18 @@ if lowest>scroll_threshold // && !instance_exists(ice_block)   // [finaledit] do
 				y+=scrollspeed
 		}
 	}
+	with teleport
+	{
+		if y<60
+		{
+			if instance_exists(creator)
+				with creator
+					attack_bait_reset_teleport()
+
+			instance_destroy()
+		}
+		
+	}
 	with icespike
 	{
 		if y<0
