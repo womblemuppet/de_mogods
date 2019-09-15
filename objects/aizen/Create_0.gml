@@ -1,5 +1,6 @@
 room=gameroom
 
+show_message(instance_number(aizen))
 
 global.fft=1   ///testing variable for flood orb parents
 

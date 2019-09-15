@@ -54,16 +54,48 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 	spawn_line_of_blocks(y_position)
 	
 	
-	if terraintype!="startingflat"
+
+	
+	var spawn_a_throwable_critter;
+	spawn_a_throwable_critter=false
+	
+	var spawn_a_nonthrowable_critter;
+	spawn_a_nonthrowable_critter=false
+	
+	if random(1)>0.5  
+		spawn_a_throwable_critter=true
+	
+	if random(1)>0.5
+		spawn_a_nonthrowable_critter=true
+		
+	if spawn_a_throwable_critter || spawn_a_nonthrowable_critter
 	{
-		if random(1)>0.995                                                          /////critter
+		var possibles=ds_list_create()
+	
+		for (var i = 0; i < numberofblocks_horizontal; i++) 
 		{
-			spawn_critter(y_position)
+			if terrain_buffer_layer_newest[i]>0 && terrain_buffer_layer2[i]==-1
+				ds_list_add(possibles,terrain_buffer_layer_newest[i])
+		}
+	
+	
+		if ds_list_size(possibles)>0
+		{
+			if spawn_a_throwable_critter
+			{
+				ds_list_shuffle(possibles)
+				spawn_throwable_critter(y_position,possibles)
+			}
+			
+			if spawn_a_nonthrowable_critter
+			{
+				ds_list_shuffle(possibles)
+				spawn_nonthrowable_critter(y_position,possibles)
+			}
 		}
 		
-		if random(1)>0.75                                                          /////throwable critters
-		{
-			spawn_throwable_critter(y_position)
-		}
+		ds_list_destroy(possibles)
 	}
+	
+
 }

@@ -6354,7 +6354,7 @@
             "Key": "c4c0e43b-19e8-4a6a-8ff0-9b91d1d219a7",
             "Value": {
                 "id": "2f07d264-aaa5-47b1-8457-e4d6fe4e7e69",
-                "resourcePath": "scripts\\spawn_critter\\spawn_critter.yy",
+                "resourcePath": "scripts\\spawn_nonthrowable_critter\\spawn_nonthrowable_critter.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -8194,7 +8194,7 @@
             "Key": "fb6221bb-6a57-4f33-84a3-c09517ceb4a4",
             "Value": {
                 "id": "b2172161-7aab-4fe5-87a1-91f5896ecf5f",
-                "resourcePath": "scripts\\critter_setup\\critter_setup.yy",
+                "resourcePath": "scripts\\critter_nonthrowable_setup\\critter_nonthrowable_setup.yy",
                 "resourceType": "GMScript"
             }
         },

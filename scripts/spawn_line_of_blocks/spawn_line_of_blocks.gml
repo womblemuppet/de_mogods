@@ -2,12 +2,15 @@ var gapammo,makeok;
 gapammo=0
 makeok=true
 
+var y_position;
+y_position=argument0
+
 var numberofblocks_horizontal
 numberofblocks_horizontal=kouchou.rw/aizen.bw
 	
 for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
 {
-	//if position_meeting(kouchou.room_left_border_x+i*aizen.bw,argument0,block)   //[finaledit] it pains me to do this check just for gunpowder.
+	//if position_meeting(kouchou.room_left_border_x+i*aizen.bw,y_position,block)   //[finaledit] it pains me to do this check just for gunpowder.
 	//	makeok=false
        
 	var block_column_number;
@@ -26,9 +29,9 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		var rand;
 		rand=random(1)
 			
-		if biome!="summit" && terrain_special_block_ok() && rand<0.02
-			typeofblock="payday ore"      ////payday
-		if biome=="sand" && rand>=0.02 && rand <0.04
+		//if biome!="summit" && terrain_special_block_ok() && rand<0.02
+		//	typeofblock="payday ore"      ////payday
+		if biome=="sand" && rand>=0.02 && rand<0.04
 			typeofblock="weaksand"      ////dissolve block (weaksand)
 		//if rand>=0.04 && rand<0.045
 		//	typeofblock="instrument"
@@ -43,23 +46,23 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		switch typeofblock
 		{
 			case "block":
-				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,argument0,0)
+				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,y_position,0)
 				ds_list_add(blockstosprite_prevlayer,a)   break;
 			//case "payday ore":
-			//	a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
+			//	a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;
 			case "weaksand":
-				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
+				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;
 			//case 3:
-			//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,argument0,0)
+			//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,y_position,0)
 			//	ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
-			//	instance_create(kouchou.room_left_border_x+i*40,argument0,gunnysnake) break;
+			//	instance_create(kouchou.room_left_border_x+i*40,y_position,gunnysnake) break;
 			//case 4:
-			//	a=spawn_tree_block(kouchou.room_left_border_x+i*40,argument0) break;
+			//	a=spawn_tree_block(kouchou.room_left_border_x+i*40,y_position) break;
 			//case 5:
-			//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,argument0) break;
+			//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,y_position) break;
 			//case "instrument":
 			//	//show_message("i="+string(i))
-			//	a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,argument0,false) break;
+			//	a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,y_position,false) break;
 			default:
 				show_error("unhandled typeofblock case",true)
 		}
@@ -71,7 +74,7 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 	if random(1)>0.995                                                            /////fossils
 	{
 		var a;
-		a=instance_create(kouchou.room_left_border_x+i*aizen.bw,argument0,ef_fossil)
+		a=instance_create(kouchou.room_left_border_x+i*aizen.bw,y_position,ef_fossil)
 		a.image_xscale=choose(0.5,0.7,0.9)
 		a.image_yscale=a.image_xscale
 		a.image_xscale=choose(1,-1)
@@ -94,9 +97,7 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 	{
 		if random(1)>0.999                                                           /////props
 		{
-			var block_column_number;
-			block_column_number=i
-			spawn_prop(argument0,i)
+			spawn_prop(y_position,block_column_number)
 		}
 	}
 	
