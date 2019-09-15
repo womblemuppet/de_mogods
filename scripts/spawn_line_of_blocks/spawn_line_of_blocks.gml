@@ -45,8 +45,8 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 			case "block":
 				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,argument0,0)
 				ds_list_add(blockstosprite_prevlayer,a)   break;
-			case "payday ore":
-				a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
+			//case "payday ore":
+			//	a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
 			case "weaksand":
 				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,argument0) break;
 			//case 3:
