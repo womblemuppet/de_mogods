@@ -1807,6 +1807,14 @@
             }
         },
         {
+            "Key": "3b61dd23-d7a9-4c23-86f6-43a03bb3207c",
+            "Value": {
+                "id": "94f0b51d-f87a-4c9f-97a0-92286956e896",
+                "resourcePath": "scripts\\set_terrain_type_patterns\\set_terrain_type_patterns.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3b6d91c2-c76c-44c4-aa34-f5344fc576b6",
             "Value": {
                 "id": "08d23853-a9d5-4c80-b697-624685cee957",
@@ -2068,6 +2076,14 @@
                 "id": "da8835a2-77f5-4f5f-8922-0c6535eee097",
                 "resourcePath": "sprites\\cave7\\cave7.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43da254d-2dc8-4fde-bd06-c1924991e334",
+            "Value": {
+                "id": "9f32399e-1567-4fc7-9923-037f13a9e349",
+                "resourcePath": "scripts\\spawn_prop\\spawn_prop.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3135,6 +3151,14 @@
             }
         },
         {
+            "Key": "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
+            "Value": {
+                "id": "dabd1819-4c5f-421d-b0c5-325e781ba42a",
+                "resourcePath": "scripts\\set_new_chunk\\set_new_chunk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "62829c18-9ff7-43ea-a291-e72dea60fadf",
             "Value": {
                 "id": "2c71b0d1-9fb7-4ad7-97ad-b393db4aa757",
@@ -3156,6 +3180,14 @@
                 "id": "a8e98993-26bd-44d2-9e1c-5d9f3f7f229f",
                 "resourcePath": "sprites\\avatar_walk_down\\avatar_walk_down.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "631a1c4b-a9db-4081-9cba-cce2384cbf4b",
+            "Value": {
+                "id": "f03eb7d5-12e6-4695-9337-819edd7f131e",
+                "resourcePath": "scripts\\spawn_line_of_blocks\\spawn_line_of_blocks.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4799,6 +4831,14 @@
             }
         },
         {
+            "Key": "9605edaa-e534-4da7-9ff0-112a24bdafcf",
+            "Value": {
+                "id": "ae7db1d4-d590-4805-9d17-54f0b4bbe18f",
+                "resourcePath": "scripts\\spawn_throwable_critter\\spawn_throwable_critter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9657db8e-d265-4bcf-a71e-243242c164e8",
             "Value": {
                 "id": "3af844cc-4885-40b5-823f-8bbba32fc741",
@@ -6311,6 +6351,14 @@
             }
         },
         {
+            "Key": "c4c0e43b-19e8-4a6a-8ff0-9b91d1d219a7",
+            "Value": {
+                "id": "2f07d264-aaa5-47b1-8457-e4d6fe4e7e69",
+                "resourcePath": "scripts\\spawn_critter\\spawn_critter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c4c965d2-4b10-46fb-91f4-cdee1aba3482",
             "Value": {
                 "id": "0161901f-0360-4b39-924e-a7c5ffcabfec",
@@ -6723,6 +6771,14 @@
             "Value": {
                 "id": "1f50cfd3-c6e3-4499-80f9-8711dab9c880",
                 "resourcePath": "views\\ced550f3-6f76-4cf0-8ff0-3082aadd15ef.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cf08650c-1dc5-4146-a7d3-a0723976b7d1",
+            "Value": {
+                "id": "ef398530-d4e1-4b49-aa23-3d47ca0fd192",
+                "resourcePath": "views\\cf08650c-1dc5-4146-a7d3-a0723976b7d1.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -7791,6 +7847,14 @@
             }
         },
         {
+            "Key": "efa7aab0-8709-4d3c-9758-70714d84ba1e",
+            "Value": {
+                "id": "37eb23ec-b67a-4c51-a54d-8c88aa50a47c",
+                "resourcePath": "scripts\\terrain_type_spawn_block_pattern_logic\\terrain_type_spawn_block_pattern_logic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "efc8c0aa-d9bd-42bb-8f87-e8901e42720b",
             "Value": {
                 "id": "4bfc68df-d6f2-4f2b-82a9-d28fe3ffed73",
@@ -8347,6 +8411,13 @@
         "f19f447e-8011-4590-bf58-bd178e36e2cb",
         "3a9c00bb-f55a-4933-a645-d6fcbdc2e432",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
+        "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
+        "3b61dd23-d7a9-4c23-86f6-43a03bb3207c",
+        "631a1c4b-a9db-4081-9cba-cce2384cbf4b",
+        "efa7aab0-8709-4d3c-9758-70714d84ba1e",
+        "43da254d-2dc8-4fde-bd06-c1924991e334",
+        "c4c0e43b-19e8-4a6a-8ff0-9b91d1d219a7",
+        "9605edaa-e534-4da7-9ff0-112a24bdafcf",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
         "9fca5d50-2469-4a76-8d1b-a169d545fad9",
