@@ -62,22 +62,29 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 	var spawn_a_nonthrowable_critter;
 	spawn_a_nonthrowable_critter=false
 	
-	if random(1)>0.5  
+	if random(1)>0.9  
 		spawn_a_throwable_critter=true
 	
-	if random(1)>0.5
+	if random(1)>0.1
 		spawn_a_nonthrowable_critter=true
 		
 	if spawn_a_throwable_critter || spawn_a_nonthrowable_critter
 	{
-		var possibles=ds_list_create()
+		possibles=ds_list_create()   ///var at start
 	
 		for (var i = 0; i < numberofblocks_horizontal; i++) 
 		{
-			if terrain_buffer_layer_newest[i]>0 && terrain_buffer_layer2[i]==-1
+			var block_newest=terrain_buffer_layer_newest[i]
+			var block_layer2=terrain_buffer_layer2[i]
+			
+			if block_newest>0 && block_layer2==-1
 				ds_list_add(possibles,terrain_buffer_layer_newest[i])
+			
+			//if terrain_buffer_layer_newest[i]>0 && terrain_buffer_layer2[i]==-1
+				
 		}
 	
+		show_debug_message("size of possibles"+string(ds_list_size(possibles)))
 	
 		if ds_list_size(possibles)>0
 		{
