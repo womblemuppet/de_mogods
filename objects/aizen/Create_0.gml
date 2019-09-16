@@ -3,7 +3,6 @@ room=gameroom
 global.fft=1   ///testing variable for flood orb parents
 
 
-
 to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
 to_draw_size=0
 will_update_blocks_to_draw_list=false
@@ -24,9 +23,6 @@ STACK_SHITCALL_NUMBER=3  /// [finaledit] probably can delete this variable
 last_stack_sprite=-1
 debug_show_hitboxes=false
 debug=false
-
-//bw=40  ///block width
-//bh=40  ///block height
 
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()
@@ -109,8 +105,10 @@ IMGSPEED_SPARKY   //double of important
 
 
 
-
 terrain_block_sprite_lists_init()
+ds_list_add(STACK_ORB_SPRITES,orb_sprite2,orb_sprite4,orb_sprite7,orb_sprite8,orb_flood,tornadoe_orbsprite,moonlight_orbsprite)
+ds_list_add(STACK_ORB_SPRITES_DIE,orb_sprite2_die,orb_sprite4_die,orb_sprite7_die,orb_sprite8_die,orb_flood_die,tornadoe_orbsprite_die,moonlight_orbsprite_die)
+ds_list_add(STACK_ORB_SPRITES_BIRTH,orb_sprite2_spawn,orb_sprite4_spawn,orb_sprite7_spawn,orb_sprite8_spawn,orb_flood_spawn,tornadoe_orbsprite_spawn,moonlight_orbsprite_spawn)
 
 chunkery_init()
 

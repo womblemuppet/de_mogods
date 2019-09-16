@@ -11,7 +11,7 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 	var y_position;
 	y_position=argument0
 
-	var numberofblocks_horizontal
+	var numberofblocks_horizontal;
 	numberofblocks_horizontal=kouchou.rw/aizen.bw
 
 	bedrockcounter-=aizen.bh    ///reset bedrockcounter
@@ -44,7 +44,7 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 	if biomeswitch   ///[finaledit] check if used...
 	{
 		terraintype="biomegap"
-		terrainammo=4
+		terrainammo=6
 		biomeswitch=false
 		//call_block_setup()
 	}
@@ -91,7 +91,6 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 			if spawn_a_throwable_critter
 			{
 				ds_list_shuffle(possibles)
-				spawn_throwable_critter(y_position,possibles)
 			}
 			
 			if spawn_a_nonthrowable_critter

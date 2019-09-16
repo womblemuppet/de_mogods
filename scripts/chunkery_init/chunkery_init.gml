@@ -31,8 +31,7 @@ chunkery_id_of_prop_list=ds_map_create()
 
 
     
-    
-    
+
 map_of_chunk_style_pools=ds_map_create()   ///each key links to a list with the pool of chunk styles
 
 ////////////////////////////////////////////////////////////////////////////////////////// SUMMIT

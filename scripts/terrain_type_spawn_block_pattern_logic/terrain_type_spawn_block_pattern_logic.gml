@@ -223,7 +223,9 @@ switch (terraintype)
             
             
 	case "biomegap":      
-	makeok=false                    break;  
+	makeok=false   
+	
+	break;  
             
                
             

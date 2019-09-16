@@ -164,7 +164,7 @@ if room==gameroom
 			sprite_index=sprites[? "gpfall"]
 		}
 	};
-
+	biomeswitch=false   ///(I think) true when cutting gap between biomes
 	terrain_generate_at_start()
 	
 	//create fossil surface for first time
