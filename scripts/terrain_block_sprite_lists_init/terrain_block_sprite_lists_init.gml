@@ -20,6 +20,4 @@ ds_list_add(BLOCK_SPRITE_CAVE_FULL,cave_full,cave1,cave2,cave3,cave4,cave5,cave6
 ds_list_add(BLOCK_SPRITE_CAVE_FULL,cave5_2)
 ds_list_add(BLOCK_SPRITE_GUNNY_FULL,gunny_full,gunny1,gunny2,gunny3,gunny4,gunny5,gunny6,gunny7,gunny8,gunny9,gunny10,gunny11,gunny12,gunny13,gunny14,gunny15,gunny16)
 ds_list_add(BLOCK_SPRITE_GUNNY_FULL,gunny5)
-STACK_ORB_SPRITES=ds_list_create()
-STACK_ORB_SPRITES_DIE=ds_list_create()
-STACK_ORB_SPRITES_BIRTH=ds_list_create()
+

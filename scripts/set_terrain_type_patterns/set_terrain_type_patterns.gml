@@ -12,8 +12,7 @@ switch (terraintype)
 	case "pits":  
 	ds_list_clear(pitlist)
 	repeat(5)
-		ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/aizen.bw)*aizen.bw)
-	//terrainammo=choose(3,3,8)            
+		ds_list_add(pitlist,kouchou.room_left_border_x+round(random(kouchou.rw)/aizen.bw)*aizen.bw)     
 	break;
 			
 	case "reverserectangle":
@@ -52,7 +51,6 @@ switch (terraintype)
 	break;
             
 	case "pyramid":
-	//terrainammo=choose(10,12,14,16)
 	terrain_pyramid_plateau_y=terrainammo-choose(3,4,5)
 	break;
 			

@@ -46,7 +46,7 @@ ds_list_add(list_of_chunk_styles_summit,"platgrassy","rectanglebumpygrassy","lpl
 ds_map_add(chunkery_chunk_type,"startingflat","solidline")
 ds_map_add(chunkery_sprite_list,"startingflat",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"startingflat",7)
-ds_map_add(chunkery_ammo_max,"startingflat",10)
+ds_map_add(chunkery_ammo_max,"startingflat",7)
 ds_map_add(chunkery_id_of_prop_list,"startingflat",0)    
        
 ////platgrassy
@@ -69,7 +69,6 @@ ds_map_add(chunkery_sprite_list,"lplatformtemple",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"lplatformtemple",6)
 ds_map_add(chunkery_ammo_max,"lplatformtemple",8)
 ds_map_add(chunkery_id_of_prop_list,"lplatformtemple",0)
-
 
 ////doublewavesgrassy
 ds_map_add(chunkery_chunk_type,"doublewavesgrassy","doublewaves")
