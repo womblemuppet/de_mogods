@@ -43,7 +43,7 @@ GROUND_POUND_STUN_AMOUNT=70              ///steps to be stunned for ///payday st
 GROUND_POUND_SPEED=15
 groundpound_current_hitbox_object=noone
 recovery_groundpound_active=false        ///the player has ceiling-kill protection if this is active
-start_of_game_dont_do_groundpound_effects=true
+disable_next_groundpound_effect=true
 
 orb_count_meter=0   ///charge towards super mode, gained by activating orbs
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call

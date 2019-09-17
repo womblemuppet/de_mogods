@@ -231,8 +231,8 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		
 		if !exception
 		{
-			if start_of_game_dont_do_groundpound_effects
-				start_of_game_dont_do_groundpound_effects=false
+			if disable_next_groundpound_effect
+				disable_next_groundpound_effect=false
 			else
 			{
 				switch attacks[? "gp_hit_ground_effect"]

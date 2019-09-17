@@ -22,7 +22,7 @@ if y<kouchou.room_top_border_y-20
 		a=attack_start_groundpound_descent()
 		with a
 			instance_change(hitbox_recovery_groundpound,true)	
-		start_of_game_dont_do_groundpound_effects=false
+		disable_next_groundpound_effect=true
 	}
 }
 
