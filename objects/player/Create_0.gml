@@ -36,13 +36,14 @@ BRUTAL_SLOW_PERCENTAGE=0.2 ///speed timesed by this number
 slowed_show_trail=false   ///is set when slow effect applied
 
 ground_pound_freeze_counter=0
-ground_pound_freeze_time=13   ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)
-cangroundpound=0   /// -1 jump delay 0 can 1 freeze 2 down 3 bounced
-GROUNDPOUND_UNAVAILABLE_TIME=5 ///9   //prevents groundpound after jumping for this long
-GROUND_POUND_STUN_AMOUNT=70   ///steps to be stunned for ///payday stun is set to twice this
+ground_pound_freeze_time=13              ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)
+cangroundpound=0                         /// -1 jump delay 0 can 1 freeze 2 down 3 bounced
+GROUNDPOUND_UNAVAILABLE_TIME=5           //prevents groundpound after jumping for this long
+GROUND_POUND_STUN_AMOUNT=70              ///steps to be stunned for ///payday stun is set to twice this
 GROUND_POUND_SPEED=15
 groundpound_current_hitbox_object=noone
-recovery_groundpound_active=false///the player has ceiling-kill protection if this is active
+recovery_groundpound_active=false        ///the player has ceiling-kill protection if this is active
+start_of_game_dont_do_groundpound_effects=true
 
 orb_count_meter=0   ///charge towards super mode, gained by activating orbs
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call
@@ -271,5 +272,5 @@ lastdamagetype=""  ///last type of damage taken (string) for corpse
 attacks=ds_map_create()   //[finaledit] to be deleted on game end
 
 
-start_of_game_dont_do_groundpound_effects=true
+
 
