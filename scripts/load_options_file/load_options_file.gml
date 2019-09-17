@@ -82,9 +82,9 @@ else ///////////////////////////////////////////////////////////////////////////
 	
 	////testing purposes only, to be removed
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"block_width=60")  
+	file_text_write_string(OPT,"block_width=75")  
 	file_text_writeln(OPT)
-	file_text_write_string(OPT,"block_height=60")  
+	file_text_write_string(OPT,"block_height=75")  
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"player_scale=2")  
 	file_text_close(OPT)    
@@ -95,8 +95,8 @@ else ///////////////////////////////////////////////////////////////////////////
 	setmenu_bgm_volume=0
 	setmenu_show_fps=true
 	
-	setmenu_block_width=60
-	setmenu_block_height=60
+	setmenu_block_width=75
+	setmenu_block_height=75
 	setmenu_player_scale=2
 }
 
