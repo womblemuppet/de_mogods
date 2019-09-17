@@ -62,10 +62,10 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 	var spawn_a_nonthrowable_critter;
 	spawn_a_nonthrowable_critter=false
 	
-	if random(1)>0.9  
+	if random(1)>0.4 
 		spawn_a_throwable_critter=true
 	
-	if random(1)>0.1
+	if random(1)>0.3
 		spawn_a_nonthrowable_critter=true
 		
 	if spawn_a_throwable_critter || spawn_a_nonthrowable_critter
