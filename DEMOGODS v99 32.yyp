@@ -4151,6 +4151,14 @@
             }
         },
         {
+            "Key": "829600a2-13ff-4980-a2b6-12dcf3edb97c",
+            "Value": {
+                "id": "1a8805bf-dadf-4012-8529-2779e393b2e7",
+                "resourcePath": "sprites\\crab_mask_sprite\\crab_mask_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
             "Value": {
                 "id": "4ac42c23-9797-4627-ba75-57957bbfb130",

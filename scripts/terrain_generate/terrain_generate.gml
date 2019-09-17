@@ -6,10 +6,18 @@
   called from aizen
   
  ***************************************************/
-if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x = block height )
+if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( x = block height )
 {
 	var y_position;
 	y_position=argument0
+
+	show_debug_message("GENERATED--------------------")
+	show_debug_message("bedrockcounter="+string(bedrockcounter));
+	show_debug_message("y_position="+string(y_position));
+	show_debug_message("absolute_y_position = "+ string(y_position+travelled));
+
+	debug_amount_scrolled_since_last_tergen=0
+
 
 	var numberofblocks_horizontal;
 	numberofblocks_horizontal=kouchou.rw/aizen.bw
@@ -84,13 +92,14 @@ if bedrockcounter>aizen.bh    ///create new blocks every x pixels moved down ( x
 				
 		}
 	
-		show_debug_message("size of possibles"+string(ds_list_size(possibles)))
+		//show_debug_message("size of possibles"+string(ds_list_size(possibles)))
 	
 		if ds_list_size(possibles)>0
 		{
 			if spawn_a_throwable_critter
 			{
 				ds_list_shuffle(possibles)
+				spawn_throwable_critter(y_position,possibles)
 			}
 			
 			if spawn_a_nonthrowable_critter

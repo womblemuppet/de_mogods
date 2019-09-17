@@ -13,7 +13,8 @@
         "58a7e927-cb9a-4413-b93b-4fa7b7bd3ac8",
         "d5824359-995a-4d89-9d3a-d7e04cf7d834",
         "b822dd81-02cf-416d-b091-3159269ed31e",
-        "0f6b0091-dd40-448d-8813-3693bdd18841"
+        "0f6b0091-dd40-448d-8813-3693bdd18841",
+        "888e4898-07f4-4d51-9101-47c0b455c660"
     ],
     "filterType": "GMObject",
     "folderName": "special blocks and objects",

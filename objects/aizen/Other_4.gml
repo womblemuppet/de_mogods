@@ -164,7 +164,11 @@ if room==gameroom
 			sprite_index=sprites[? "gpfall"]
 		}
 	};
-	biomeswitch=false   ///(I think) true when cutting gap between biomes
+	biomeswitch=false   ///true when cutting gap between biomes
+	travelled=0      ////total distance in pixels that the screen has scrolled down
+	
+	debug_amount_scrolled_since_last_tergen=0
+	
 	terrain_generate_at_start()
 	
 	//create fossil surface for first time
@@ -173,7 +177,8 @@ if room==gameroom
 	//fill list of blocks that will be drawn in draw event
 	update_blocks_to_draw_list()
 	
-	scroll_threshold=kouchou.room_bottom_border_y-bh*4
+	scroll_threshold=kouchou.room_bottom_border_y-bh*4    ///screen starts scrolling when lower than this
+	
 	//if kouchou.map=="multiplayer"
 	//{
 	//	//

@@ -47,8 +47,6 @@ ds_list_add(biome_schedule,"cave")
 
 
 
-travelled=0      ////total distance in pixels that the screen has scrolled down
-
 mode=0          //// normal, about to shitcall, or shitcalling
 
 /***************************************************
