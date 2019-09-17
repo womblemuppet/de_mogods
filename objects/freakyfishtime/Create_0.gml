@@ -42,10 +42,10 @@ if !first       ///////////raise water
     }
     else     //////////////jellyfish yo
     {
-        for (var i=0; i<6; i+=1)
-        {
-            instance_create(clamp(kouchou.room_left_border_x,aizen.bw*((i*kouchou.rw/6)/aizen.bw)+choose(-aizen.bw,0,aizen.bw),kouchou.room_right_border_x),kouchou.room_bottom_border_y+choose(0,0,80,80,240,280,440,480),jellyfish)    
-        };
+        //for (var i=0; i<6; i+=1)
+        //{
+        //    instance_create(clamp(kouchou.room_left_border_x,aizen.bw*((i*kouchou.rw/6)/aizen.bw)+choose(-aizen.bw,0,aizen.bw),kouchou.room_right_border_x),kouchou.room_bottom_border_y+choose(0,0,80,80,240,280,440,480),jellyfish)    
+        //};
     }
     
     var me;

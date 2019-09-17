@@ -15,8 +15,7 @@
         "d965c922-6e16-4ca6-8d6b-365ce5d239a9",
         "492e2dd4-9518-4fa9-89d1-79005bbb02c7",
         "35f213fd-e2eb-447f-a134-2e56667c4391",
-        "6da5d52c-8468-4a2d-a618-89fb1a2e42bf",
-        "9e42be21-8481-48ea-959a-679b3a8d0d64"
+        "6da5d52c-8468-4a2d-a618-89fb1a2e42bf"
     ],
     "filterType": "GMObject",
     "folderName": "orb effects",
