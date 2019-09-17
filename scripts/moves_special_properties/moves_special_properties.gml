@@ -75,7 +75,7 @@ switch argument0
 	if stunned_groundpound>0
 	{
 		impact_debuff_counter=40
-		cripple_debuff_counter=120
+		//cripple_debuff_counter=120
 		vspd-=1
 		repeat(5)
 		{
@@ -90,7 +90,8 @@ switch argument0
 	else
 	{
 		canbounce_counter=40
-	} break;
+	} 
+	break;
 	case "uga_air_slam":
 		canbounce_counter=25
 	break;
