@@ -17,7 +17,7 @@ for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 	{
 		with aizen.to_draw[| ii]
 		{
-			if distance_to_point(xx,yy)<65
+			if distance_to_point(xx,yy)<105
 			{
 				ds_list_add(aizen.blockstosprite,self.id)
 			}

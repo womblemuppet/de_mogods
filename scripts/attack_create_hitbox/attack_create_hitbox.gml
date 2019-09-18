@@ -1,5 +1,5 @@
 /***************************************************
-  -attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
+  attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
 ****************************************************/
 
 var a;

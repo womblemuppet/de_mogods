@@ -119,7 +119,7 @@ canbounce_show_bounced_effect_counter=0   ///effect trail after bouncing off wal
 CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME=10
 BOUNCE_HORIZONTAL_VELOCITY=12
 BOUNCE_HORIZONTAL_MINOR_VELOCITY=1
-BOUNCE_VERTICAL_VELOCITY=6  //positive
+BOUNCE_VERTICAL_VELOCITY=9  //positive
 iframes=0 //cant be hit while this is >0
 armouredframes=0  //can't be knocked back during this time
 FRAME_SPEED_NORMAL=0.2
@@ -148,7 +148,7 @@ ground_pound_extra_delay_counter=0
 uniques_slam_airgrab_slam_enabled=false
 uniques_slam_airgrab_slam_lockdown=0 //0 can do 1 freeze 2 slamming down
 uniques_slam_airgrab_target=noone
-UNIQUES_SLAM_AIRGRAB_VSPD=8
+UNIQUES_SLAM_AIRGRAB_VSPD=22
 
 //OOGA FPUNCH
 fpunch_cd_counter=0
