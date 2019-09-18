@@ -1047,31 +1047,9 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 	}
 }
 
-if checkkey_released(downbutton)
-{ ////// down button hold counter reset (for abilities like place mine)
-	if sprite_index==sprites[? "uniques_place_teleport"] || sprite_index=sprites[? "uniques_use_teleport"]
-	{
-		player_set_idle()
-	}
-}
+player_check_teleport_release()
 
-
-if dash_rocket_jump==1
-{
-	if !checkkey(upbutton)
-	{ ////early release of rocket jump
-		if dash_rocket_jump==1 && (sprite_index=sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"])
-		{
-			if image_index>DASH_ROCKET_JUMP_CHARGE_LEVEL_1_THRESHOLD
-				dash_rocket_jump_charge=1
-			if image_index>DASH_ROCKET_JUMP_CHARGE_LEVEL_2_THRESHOLD
-				dash_rocket_jump_charge=2
-			if dash_rocket_jump_charge!=0
-				attack_rocket_jump()
-		}
-	}
-}
-
+player_check_rocket_jump_release()
 
 ////////////////////////////////////////////////////////// BASIC MOVEMENT //////////////////////////////////////////////////////////////////////////////
 player_special_case_turn_right_or_left()
