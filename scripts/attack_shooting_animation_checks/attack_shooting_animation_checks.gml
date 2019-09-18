@@ -107,15 +107,20 @@ if uniques_spinner_attack_lockdown==1 && image_index>5
 {
 	if uniques_spinner_attack_has_made_aa_hitbox==false 
 	{
-		attack_create_hitbox(25,1,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
+		uniques_spinner_attack_hitbox_id=attack_create_hitbox(25,1,true,true,"spinattack",vet_upwardpunch_hitbox,0.2,99,0,9)
 	} 
     
 	uniques_spinner_attack_has_made_aa_hitbox=true
-	uniques_spinner_attack_lockdown=2
 }
 
-if uniques_spinner_attack_lockdown==1  && image_index>11     //loops spinner anti-air attack
-		image_index=9
+if uniques_spinner_attack_lockdown==1  && image_index>12     //loops spinner anti-air attack
+{
+	image_index=9
+	if uniques_spinner_attack_hitbox_id!=noone
+		if instance_exists(uniques_spinner_attack_hitbox_id)
+			with uniques_spinner_attack_hitbox_id
+				image_index=0
+}
 
 if uniques_spinner_attack_lockdown==2 && image_index>12                         ///SHOOT FORWARDPUNCH 
 {

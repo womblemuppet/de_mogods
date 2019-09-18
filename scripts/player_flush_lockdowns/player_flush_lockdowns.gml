@@ -7,6 +7,7 @@ uniques_fpunch_has_made_hitbox=false
 uniques_spinner_attack_lockdown=0
 uniques_spinner_attack_has_made_aa_hitbox=false
 uniques_spinner_attack_has_made_shockwave_hitbox=false
+uniques_spinner_attack_hitbox_id=noone
 uniques_sticky_mine_lockdown=0
 uniques_sunblast_lockdown=0
 uniques_airbolt_lockdown=0

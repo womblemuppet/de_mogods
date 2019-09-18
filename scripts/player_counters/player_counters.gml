@@ -141,6 +141,12 @@ if uniques_fpunch_lockdown==1
 {
 	uniques_fpunch_charge+=1
 }
+
+if uniques_spinner_attack_lockdown==1
+{
+	uniques_spinner_attack_charge+=1
+}
+
 if uniques_fpunch_cd_counter>0
 {
 	uniques_fpunch_cd_counter-=1

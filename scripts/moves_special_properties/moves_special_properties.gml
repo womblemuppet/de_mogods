@@ -164,7 +164,7 @@ switch argument0
 	break;
 	case "sharkattack":
 	case "sunblast":
-	case "upwardpunch":
+	case "spinattack":
 		with attacker
 			move_that_adds_pocket()
 	break;

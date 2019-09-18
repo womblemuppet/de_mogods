@@ -575,7 +575,8 @@ if checkkey_pushed(heavybutton) && player_may_attack() && uniques_fpunch_cd_coun
 		}
 	}
 }
-if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release    [finaledit] way to optimise maybe
+
+if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release/max time    [finaledit] way to optimise maybe
 {
 	if uniques_fpunch_lockdown==1 && (   (!checkkey(heavybutton) && uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MIN ) || uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
@@ -585,6 +586,17 @@ if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button 
 		uniques_fpunch_lockdown=2
 	}
 }
+else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button release/max time    [finaledit] way to optimise maybe
+{
+	if uniques_spinner_attack_lockdown==1 && (   (!checkkey(heavybutton) && uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MIN ) || uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
+	{
+		image_speed=FRAME_SPEED_NORMAL
+		image_index=11
+		uniques_spinner_attack_charge=0
+		uniques_spinner_attack_lockdown=2
+	}
+}
+
 
 if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {

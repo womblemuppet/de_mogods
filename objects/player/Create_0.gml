@@ -164,11 +164,14 @@ uniques_fpunch_has_made_hitbox=false
 uniques_super_ooga_gp_enabled=false
 unique_ooga_gp_charges=0
 
-
 //VETERAN SPINNER ATTACK
 uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre shockwave attack 3 = recovery
 uniques_spinner_attack_has_made_aa_hitbox=false
 uniques_spinner_attack_has_made_shockwave_hitbox=false
+uniques_spinner_attack_charge=0
+UNIQUES_SPINNER_ATTACK_CHARGE_MIN=20
+UNIQUES_SPINNER_ATTACK_CHARGE_MAX=400
+uniques_spinner_attack_hitbox_id=noone
 
 //VETERAN STANDARD PUNCH
 uniques_vet_la_target_counter=0
