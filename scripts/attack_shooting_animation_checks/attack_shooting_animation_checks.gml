@@ -126,10 +126,11 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 {
 	if uniques_forwardpunch_has_made_hitbox==false
 	{
-		var a;
+		var a,me;
+		me=self.id
 		a=instance_create(x,y,groundpunch_shockwave)       ///create object that will make chain of shockwave hitboxes
-		a.creator=self.id
-		a.target=self.id
+		a.creator=me
+		a.target=me
 		a.right=right
 		a.scale=sign(scale)
 		
@@ -148,8 +149,8 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 		{
 			var b
 			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
-			b.creator=creator
-			b.target=creator
+			b.creator=me
+			b.target=me
 			b.image_xscale=image_xscale
 			b.hit_collector=self.id
 			show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))

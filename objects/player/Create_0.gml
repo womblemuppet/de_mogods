@@ -170,7 +170,7 @@ uniques_spinner_attack_has_made_aa_hitbox=false
 uniques_spinner_attack_has_made_shockwave_hitbox=false
 uniques_spinner_attack_charge=0
 UNIQUES_SPINNER_ATTACK_CHARGE_MIN=15
-UNIQUES_SPINNER_ATTACK_CHARGE_MAX=30
+UNIQUES_SPINNER_ATTACK_CHARGE_MAX=50
 uniques_spinner_attack_hitbox_id=noone
 
 //VETERAN STANDARD PUNCH
