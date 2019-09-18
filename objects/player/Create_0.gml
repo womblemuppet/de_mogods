@@ -169,8 +169,8 @@ uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre 
 uniques_spinner_attack_has_made_aa_hitbox=false
 uniques_spinner_attack_has_made_shockwave_hitbox=false
 uniques_spinner_attack_charge=0
-UNIQUES_SPINNER_ATTACK_CHARGE_MIN=20
-UNIQUES_SPINNER_ATTACK_CHARGE_MAX=400
+UNIQUES_SPINNER_ATTACK_CHARGE_MIN=15
+UNIQUES_SPINNER_ATTACK_CHARGE_MAX=30
 uniques_spinner_attack_hitbox_id=noone
 
 //VETERAN STANDARD PUNCH
