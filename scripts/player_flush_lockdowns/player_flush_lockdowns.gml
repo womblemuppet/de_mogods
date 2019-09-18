@@ -4,11 +4,9 @@
 
 fpunch_lockdown=0 
 fpunch_has_made_hitbox=false
-uniques_aapunch_lockdown=0
-uniques_aapunch_has_made_hitbox=false
-uniques_aapunch_has_made_hitbox2=false
-uniques_forwardpunch_lockdown=0
-uniques_forwardpunch_has_made_hitbox=false
+uniques_spinner_attack_lockdown=0
+uniques_spinner_attack_has_made_aa_hitbox=false
+uniques_spinner_attack_has_made_shockwave_hitbox=false
 uniques_sticky_mine_lockdown=0
 uniques_sunblast_lockdown=0
 uniques_airbolt_lockdown=0

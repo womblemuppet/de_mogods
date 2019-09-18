@@ -145,14 +145,10 @@ if fpunch_cd_counter>0
 {
 	fpunch_cd_counter-=1
 }
-if uniques_aapunch_cd_counter>0
+if uniques_vet_la_target_counter>0
 {
-	uniques_aapunch_cd_counter-=1
-}
-if uniques_vet_chain_counter>0
-{
-	uniques_vet_chain_counter-=1
-	if uniques_vet_chain_counter==0
+	uniques_vet_la_target_counter-=1
+	if uniques_vet_la_target_counter==0
 	{
 		uniques_vet_la_target=noone
 	}

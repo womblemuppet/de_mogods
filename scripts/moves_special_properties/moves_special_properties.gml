@@ -66,6 +66,7 @@ switch argument0
 	case "veteranuppercut":
 	if attacker!=noone
 	{
+		attacker.uniques_vet_la_target_counter=UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME
 		attacker.uniques_vet_la_target=self.id
 	}
 	break;

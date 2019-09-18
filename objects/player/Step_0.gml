@@ -405,20 +405,20 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 		}
 	}
 	
-	if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
-	{
-		exception=true
-		uniques_forwardpunch_has_made_hitbox=false
-		uniques_forwardpunch_lockdown=1
-		uniques_forwardpunch_feet_counter=0
-		uniques_vet_chain_counter=-1
+	//if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
+	//{
+	//	exception=true
+	//	uniques_forwardpunch_has_made_hitbox=false
+	//	uniques_forwardpunch_lockdown=1
+	//	uniques_forwardpunch_feet_counter=0
+	//	uniques_vet_chain_counter=-1
 		
-		image_speed=FRAME_SPEED_NORMAL
-		sprite_index=sprites[? "uniques_forwardpunch"]
-		if super_mode
-			sprite_index=sprites[? "uniques_forwardpunch_u"]
-		image_index=0
-	}
+	//	image_speed=FRAME_SPEED_NORMAL
+	//	sprite_index=sprites[? "uniques_forwardpunch"]
+	//	if super_mode
+	//		sprite_index=sprites[? "uniques_forwardpunch_u"]
+	//	image_index=0
+	//}
     
 
     
@@ -440,7 +440,6 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
             
 			case "vet_uppercut":
 			la_attack_name="veteranuppercut"
-			uniques_vet_chain_counter=UNIQUES_VET_CHAIN_COUNTER_TIME
 			spawn_normal_uc_hitbox=true
 			uc_hitbox_shape=bammeroo break;
             
@@ -491,28 +490,31 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 		player_throw_crab()
 	}
 	
-	if !exception && uniques_vet_la_target!=noone && uniques_sticky_mine_enabled && uniques_vet_chain_counter>0 && mines_ammo>0   ///// sticky mine
+	if !exception && uniques_sticky_mine_enabled && uniques_vet_la_target_counter>0 && mines_ammo>0   ///// sticky mine
 	{
-		image_speed=FRAME_SPEED_SLOW
-		image_index=0
-		sprite_index=sprites[? "uniques_place_sticky_mine"]
-		if super_mode
-			sprite_index=sprites[? "uniques_place_sticky_mine_u"]
-		uniques_sticky_mine_lockdown=1
-		var a;
-		a=instance_create_depth(x,y,-1,ef_connector)
-		a.targ1=self.id
-		a.targ2=uniques_vet_la_target
-		a.sprite_index=vet_3H_sticky_mine_connect_effect
-		a.image_speed=FRAME_SPEED_NORMAL
+		if uniques_vet_la_target!=noone && instance_exists(uniques_vet_la_target)
+		{
+			image_speed=FRAME_SPEED_SLOW
+			image_index=0
+			sprite_index=sprites[? "uniques_place_sticky_mine"]
+			if super_mode
+				sprite_index=sprites[? "uniques_place_sticky_mine_u"]
+			uniques_sticky_mine_lockdown=1
+			var a;
+			a=instance_create_depth(x,y,-1,ef_connector)
+			a.targ1=self.id
+			a.targ2=uniques_vet_la_target
+			a.sprite_index=vet_3H_sticky_mine_connect_effect
+			a.image_speed=FRAME_SPEED_NORMAL
 		
-		mines_ammo-=1
-		a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
-		a.creator=self.id
-		a.targ=uniques_vet_la_target
-		a.right=right
-		a.scale=1
-		exception=true
+			mines_ammo-=1
+			a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
+			a.creator=self.id
+			a.targ=uniques_vet_la_target
+			a.right=right
+			a.scale=1
+			exception=true
+		}
 	}
 	
 	if !exception
@@ -533,12 +535,11 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
             
 			case "vet_armspin":
 			image_speed=FRAME_SPEED_FAST
-			sprite_index=sprites[? "uniques_upwardpunch"]
+			sprite_index=sprites[? "uniques_spinattack"]
 			if super_mode
-				sprite_index=sprites[? "uniques_upwardpunch_u"]
+				sprite_index=sprites[? "uniques_spinattack_u"]
 			image_index=0
-			uniques_aapunch_cd_counter=UNIQUES_AAPUNCH_COOLDOWN
-			uniques_aapunch_lockdown=1
+			uniques_spinner_attack_lockdown=1
 			break;
                
 			case "slinger_sunblast":
@@ -942,6 +943,7 @@ if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false     
 		}
 	}
 }
+
 ////hold dash button event
 if checkkey(dashbutton)
 {
@@ -999,7 +1001,6 @@ if dash_button_currently_held
 
 
 
-
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
 if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 {
@@ -1009,19 +1010,7 @@ if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) &
 		///whoop whoop
 		break;
 		
-		case "vet_place_mine_or_dig":
-
-		if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutton) && uniques_vet_digging==0
-		{///start digging
-			image_index=0
-			image_speed=FRAME_SPEED_NORMAL
-			uniques_vet_digging=1
-			y+=aizen.bh
-			sprite_index=sprites[? "uniques_dig_channel_u"]
-			if super_mode
-				sprite_index=sprites[? "uniques_dig_channel"]
-		}
-		
+		case "vet_place_mine":
 		if uniques_vet_digging==0
 		{
 			if uniques_mines_enabled  && groundcheck!=noone

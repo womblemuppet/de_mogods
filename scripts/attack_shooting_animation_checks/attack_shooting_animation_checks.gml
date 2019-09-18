@@ -103,35 +103,21 @@ if uniques_sharkattack_feet_counter!=-1 && groundcheck!=noone   // -1  = not in 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////SHOOT AAPUNCH
-if uniques_aapunch_lockdown==1 && image_index>5
+if uniques_spinner_attack_lockdown==1 && image_index>5
 {
-	if uniques_aapunch_has_made_hitbox==false 
+	if uniques_spinner_attack_has_made_aa_hitbox==false 
 	{
 		attack_create_hitbox(25,1,true,true,"upwardpunch",vet_upwardpunch_hitbox,1,99,0,9)
 	} 
     
-	uniques_aapunch_has_made_hitbox=true
-	uniques_aapunch_lockdown=2
-    
-
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////SHOOT AAPUNCH HITTBOX 2
-if uniques_aapunch_lockdown==2 && image_index>15
-{
-	if uniques_aapunch_has_made_hitbox2==false 
-	{
-		attack_create_hitbox(25,1,true,true,"upwardpunch2",vet_upwardpunch_hitbox2,1,99,5,2)
-	} 
-    
-	uniques_aapunch_has_made_hitbox=true
-	uniques_aapunch_lockdown=3
-    
-
+	uniques_spinner_attack_has_made_aa_hitbox=true
+	uniques_spinner_attack_lockdown=2
 }
 
+if uniques_spinner_attack_lockdown==1  && image_index>11     //loops spinner anti-air attack
+		image_index=9
 
-
-if image_index>3  && uniques_forwardpunch_lockdown==1                         ///SHOOT FORWARDPUNCH 
+if uniques_spinner_attack_lockdown==2 && image_index>12                         ///SHOOT FORWARDPUNCH 
 {
 	if uniques_forwardpunch_has_made_hitbox==false
 	{
@@ -172,10 +158,8 @@ if image_index>3  && uniques_forwardpunch_lockdown==1                         //
 		if !right
 			a.image_xscale=-1
 	}
-    
-	uniques_forwardpunch_lockdown=2
-	uniques_forwardpunch_has_made_hitbox=true    
-    
+	uniques_spinner_attack_lockdown=3
+	uniques_spinner_attack_has_made_shockwave_hitbox=true
 }
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {

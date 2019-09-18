@@ -5,8 +5,7 @@
 //// keep adding to it it'll be fine
 
 if fpunch_lockdown==0 
-&& uniques_aapunch_lockdown==0 
-&& uniques_forwardpunch_lockdown==0 
+&& uniques_spinner_attack_lockdown==0 
 && uniques_sunblast_lockdown==0 
 && uniques_sharkattack_lockdown==0 
 && airgrab_mode=="can_airgrab" 

@@ -92,10 +92,8 @@ switch character
 			sprites[? "uniques_dig_channel"]=Vet_3H_dig_channel
 			sprites[? "uniques_parachute_u"]=Vet_3H_fall_parachute  ///super version (to be changed)
 			sprites[? "uniques_parachute"]=Vet_3H_fall_parachute
-			sprites[? "uniques_forwardpunch"]=Vet_3H_forwardpunch
-			sprites[? "uniques_forwardpunch_u"]=Vet_3H_forwardpunch //super version (to be changed)
-			sprites[? "uniques_upwardpunch"]=Vet_3H_upwardpunch  ///super version (to be changed)
-			sprites[? "uniques_upwardpunch_u"]=Vet_3H_upwardpunch
+			sprites[? "uniques_spinattack"]=Vet_3H_spinattack  ///super version (to be changed)
+			sprites[? "uniques_spinattack_u"]=Vet_3H_spinattack
 			sprites[? "dizzy_u"]=Vet_3H_dizzy  //super version
 			sprites[? "dizzy"]=Vet_3H_dizzy
 			sprites[? "light_attack_u"]=Vet_3H_uppercut  //super version

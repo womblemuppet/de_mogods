@@ -6,8 +6,8 @@
     "children": [
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",
-        "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",
+        "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
         "f5986e91-cd6d-47a6-a335-eed9e446e214",
         "418f6ce5-eef3-4018-bff5-b27e4acbf60f",
@@ -30,7 +30,8 @@
         "17366ead-6abf-48e2-95b6-cc0a51813cce",
         "7bf4e5d3-fb20-478f-ac76-79fb974a156b",
         "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
-        "d645af01-a535-4e88-9b06-051d4fe6d7ff"
+        "d645af01-a535-4e88-9b06-051d4fe6d7ff",
+        "c8ca083e-7800-4b8a-a288-fe6e6ac15113"
     ],
     "filterType": "GMScript",
     "folderName": "attacks",

@@ -189,24 +189,15 @@ else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[? "uniques_upwardpunch"] || sprite_index=sprites[? "uniques_upwardpunch_u"]    ///aa punch
+else if sprite_index==sprites[? "uniques_spinattack"] || sprite_index=sprites[? "uniques_spinattack_u"]    ///aa punch
 {
-	if uniques_aapunch_lockdown==3
+	if uniques_spinner_attack_lockdown==3
 	{
-		uniques_aapunch_has_made_hitbox=false
-		uniques_aapunch_has_made_hitbox2=false
-		uniques_aapunch_lockdown=0  
+		uniques_spinner_attack_has_made_aa_hitbox=false
+		uniques_spinner_attack_has_made_shockwave_hitbox=false
+		uniques_spinner_attack_lockdown=0  
 		player_set_idle()
 	}    
-}
-else if sprite_index=sprites[? "uniques_forwardpunch"] || sprite_index=sprites[? "uniques_forwardpunch_u"]    /// veteran chain forwardpunch
-{
-	if uniques_forwardpunch_lockdown==2
-	{ 
-		uniques_forwardpunch_lockdown=0
-		uniques_forwardpunch_has_made_hitbox=false
-		player_set_idle()  
-	}
 }
 else if sprite_index==sprites[? "uniques_sunbolt"] || sprite_index==sprites[? "uniques_sunbolt_u"]  ///slinger sunblast
 {

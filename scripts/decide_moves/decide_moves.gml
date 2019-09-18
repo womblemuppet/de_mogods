@@ -59,7 +59,7 @@ switch (character)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "veteran_mine_throw");  
 	ds_map_add(attacks, "ult get trigger", "vet_get_ult");
-	ds_map_add(attacks, "special hold down","vet_place_mine_or_dig");
+	ds_map_add(attacks, "special hold down","vet_place_mine");
 	ds_map_add(attacks, "special2", -1);
 	//not set
 	ds_map_add(attacks, "special3", -1);

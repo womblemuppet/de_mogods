@@ -165,20 +165,18 @@ uniques_super_ooga_gp_enabled=false
 unique_ooga_gp_charges=0
 
 
-//VETERAN ANTI AIR PUNCH
-uniques_aapunch_cd_counter=0
-uniques_aapunch_lockdown=0  //0 = nothing 1 = charging 2 = punching
-UNIQUES_AAPUNCH_COOLDOWN=50
-uniques_aapunch_has_made_hitbox=false
-uniques_aapunch_has_made_hitbox2=false
+//VETERAN SPINNER ATTACK
+uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre shockwave attack 3 = recovery
+uniques_spinner_attack_has_made_aa_hitbox=false
+uniques_spinner_attack_has_made_shockwave_hitbox=false
 
 //VETERAN STANDARD PUNCH
-uniques_vet_chain_counter=0
+uniques_vet_la_target_counter=0
 uniques_vet_la_target=noone
-UNIQUES_VET_CHAIN_COUNTER_TIME=35
+UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME=35
 
 //VETERAN FORWARD PUNCH
-uniques_forwardpunch_lockdown=0
+//uniques_forwardpunch_lockdown=0
 uniques_forwardpunch_has_made_hitbox=false
 uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
 
@@ -188,7 +186,6 @@ uniques_sticky_mine_lockdown=0
 
 //VET DRILL MINE
 uniques_drill_mine_place_animation_lock=false
-
 
 //VETERAN PARACHUTE
 uniques_parachute_enabled=false
