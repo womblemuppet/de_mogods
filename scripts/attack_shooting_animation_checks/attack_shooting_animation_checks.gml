@@ -1,60 +1,60 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// FPUNCH
-if fpunch_lockdown==1    //loops animation while charging 
+if uniques_fpunch_lockdown==1    //loops animation while charging 
 {
 	if image_index>3.9
 		image_index=1
 }
-else if fpunch_lockdown==2 
+else if uniques_fpunch_lockdown==2 
 {
 	if image_index>5
 	{
-		if fpunch_has_made_hitbox==false
+		if uniques_fpunch_has_made_hitbox==false
 		{            
 			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
 		}
         
-		fpunch_has_made_hitbox=true
-		fpunch_lockdown=3
+		uniques_fpunch_has_made_hitbox=true
+		uniques_fpunch_lockdown=3
         
 	}
 
-	if fpunch_feet_counter==2
+	if uniques_fpunch_feet_counter==2
 	{
 		if round(image_index)>4
-			fpunch_feet_counter=3
+			uniques_fpunch_feet_counter=3
 	}
 }
 
 
 ///////FPUNCH FEET STEPS
-if fpunch_feet_counter!=-1 && groundcheck!=noone
+if uniques_fpunch_feet_counter!=-1 && groundcheck!=noone
 {
-	if fpunch_feet_counter==0 || fpunch_feet_counter==1
+	if uniques_fpunch_feet_counter==0 || uniques_fpunch_feet_counter==1
 	{       
 		var b;
-		if fpunch_feet_counter==0
+		if uniques_fpunch_feet_counter==0
 			b=-9
 		else
 			b=-11
             
-		fpunch_feet_counter+=1
+		uniques_fpunch_feet_counter+=1
     
 		punch_step_in(b)
 	}
-	if fpunch_feet_counter==3 || fpunch_feet_counter==4
+	if uniques_fpunch_feet_counter==3 || uniques_fpunch_feet_counter==4
 	{
 		var b;
-		if fpunch_feet_counter==3
+		if uniques_fpunch_feet_counter==3
 		{
 			b=22 //28 cooler but annoying for gp combo
-			fpunch_feet_counter+=1
+			uniques_fpunch_feet_counter+=1
 		}
 		else
 		{
 			b=10 //18 cooler but annoying for gp combo
-			fpunch_feet_counter=-1   
+			uniques_fpunch_feet_counter=-1   
 		}
 
 		punch_step_in(b)

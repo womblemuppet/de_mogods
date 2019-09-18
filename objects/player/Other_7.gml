@@ -183,9 +183,9 @@ else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocket
 }
 else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"]  ///falc punch
 {
-	if fpunch_lockdown==3
+	if uniques_fpunch_lockdown==3
 	{
-		fpunch_lockdown=0  
+		uniques_fpunch_lockdown=0  
 		player_set_idle()
 	}
 }

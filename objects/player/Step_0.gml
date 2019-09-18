@@ -479,7 +479,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// heavy attack
-if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
+if checkkey_pushed(heavybutton) && player_may_attack() && uniques_fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
 {
 	var exception;
 	exception=false
@@ -527,10 +527,10 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 			if super_mode
 				sprite_index=sprites[? "uniques_falconpunch_u"]
 			image_index=0
-			fpunch_lockdown=1
-			fpunch_cd_counter=FPUNCH_COOLDOWN
-			fpunch_feet_counter=0
-			fpunch_has_made_hitbox=false
+			uniques_fpunch_lockdown=1
+			uniques_fpunch_cd_counter=UNIQUES_FPUNCH_COOLDOWN
+			uniques_fpunch_feet_counter=0
+			uniques_fpunch_has_made_hitbox=false
 			break;
             
 			case "vet_armspin":
@@ -577,12 +577,12 @@ if checkkey_pushed(heavybutton) && player_may_attack() && fpunch_cd_counter<1 &&
 }
 if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release    [finaledit] way to optimise maybe
 {
-	if fpunch_lockdown==1 && (   (!checkkey(heavybutton) && fpunch_charge>FPUNCH_CHARGE_MIN ) || fpunch_charge>FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
+	if uniques_fpunch_lockdown==1 && (   (!checkkey(heavybutton) && uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MIN ) || uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
 		image_speed=FRAME_SPEED_NORMAL
 		image_index=4
-		fpunch_charge=0
-		fpunch_lockdown=2
+		uniques_fpunch_charge=0
+		uniques_fpunch_lockdown=2
 	}
 }
 

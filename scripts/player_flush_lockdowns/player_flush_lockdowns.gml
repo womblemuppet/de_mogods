@@ -2,8 +2,8 @@
   more of a reset everything button
 ****************************************************/
 
-fpunch_lockdown=0 
-fpunch_has_made_hitbox=false
+uniques_fpunch_lockdown=0 
+uniques_fpunch_has_made_hitbox=false
 uniques_spinner_attack_lockdown=0
 uniques_spinner_attack_has_made_aa_hitbox=false
 uniques_spinner_attack_has_made_shockwave_hitbox=false

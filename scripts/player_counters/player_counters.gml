@@ -137,13 +137,13 @@ if impact_debuff_counter>0
 	effect_aniend(impact_debuff_effect,0.25,0)
 }
 
-if fpunch_lockdown==1
+if uniques_fpunch_lockdown==1
 {
-	fpunch_charge+=1
+	uniques_fpunch_charge+=1
 }
-if fpunch_cd_counter>0
+if uniques_fpunch_cd_counter>0
 {
-	fpunch_cd_counter-=1
+	uniques_fpunch_cd_counter-=1
 }
 if uniques_vet_la_target_counter>0
 {

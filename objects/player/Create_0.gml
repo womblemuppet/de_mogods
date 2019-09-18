@@ -151,14 +151,14 @@ uniques_slam_airgrab_target=noone
 UNIQUES_SLAM_AIRGRAB_VSPD=22
 
 //OOGA FPUNCH
-fpunch_cd_counter=0
-FPUNCH_COOLDOWN=50
-fpunch_lockdown=0   //0 = nothing 1 = charging 2 = locked in
-fpunch_charge=0   ///charge counter of fpunch
-FPUNCH_CHARGE_MAX=50
-FPUNCH_CHARGE_MIN=10
-fpunch_feet_counter=-1   /// -1 = not in use 0= please start 1/2 steps back 3= please start 4/5 steps forward (4 resets to -1)
-fpunch_has_made_hitbox=false
+uniques_fpunch_cd_counter=0
+UNIQUES_FPUNCH_COOLDOWN=50
+uniques_fpunch_lockdown=0   //0 = nothing 1 = charging 2 = locked in
+uniques_fpunch_charge=0   ///charge counter of fpunch
+UNIQUES_FPUNCH_CHARGE_MIN=10
+UNIQUES_FPUNCH_CHARGE_MAX=50
+uniques_fpunch_feet_counter=-1   /// -1 = not in use 0= please start 1/2 steps back 3= please start 4/5 steps forward (4 resets to -1)
+uniques_fpunch_has_made_hitbox=false
 
 //OOGA ULT
 uniques_super_ooga_gp_enabled=false
