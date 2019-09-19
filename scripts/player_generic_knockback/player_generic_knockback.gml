@@ -49,10 +49,10 @@ with coco                     ///////////////// transfer fish
 
 
 vspd=-vknockback
+show_debug_message("vspd="+string(vspd))
 if other.direction==0             //////////pushed to right
 	hspd=hknockback
 else if other.direction==180            ///////////pushed to left
-
 	hspd=-hknockback
 
 

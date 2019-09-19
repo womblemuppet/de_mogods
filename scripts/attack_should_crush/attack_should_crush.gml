@@ -10,7 +10,7 @@ if argument0=="rocket jump"
 	{
 		effect_create_above(ef_firework,x,y,2,c_orange)
 		//player_flush_lockdowns()
-		//attack_stop_groundpound()
+		//attack_clear_groundpound_current_hitbox_object()
 		return true
 	}
 }

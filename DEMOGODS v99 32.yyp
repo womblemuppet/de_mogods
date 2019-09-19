@@ -2442,7 +2442,7 @@
             "Key": "4ed56efa-0618-4f87-95cd-ef18be167773",
             "Value": {
                 "id": "82c314f8-ea87-47f2-a520-b267a081930e",
-                "resourcePath": "scripts\\attack_stop_groundpound\\attack_stop_groundpound.yy",
+                "resourcePath": "scripts\\attack_clear_groundpound_current_hitbox_object\\attack_clear_groundpound_current_hitbox_object.yy",
                 "resourceType": "GMScript"
             }
         },

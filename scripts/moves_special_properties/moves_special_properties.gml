@@ -38,7 +38,7 @@ switch argument0
 			if image_xscale==-1
 				hspd=-4
 		}
-		attack_stop_groundpound()
+		attack_clear_groundpound_current_hitbox_object()
 	}
 	
 	player_get_gp_stunned(other.stunamount)
