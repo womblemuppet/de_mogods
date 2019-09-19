@@ -199,10 +199,12 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	
 	if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==2
 	{
+		create_terrain_cutter(uga_airgrab_slam_terrain_cut,"hit",270,6)
+		effect_aniend(uga_airgrab_slam_effect,FRAME_SPEED_SLOW,-4)
 		uniques_slam_airgrab_slam_lockdown=0
 		player_set_idle()
 	}
-	
+
 	if uniques_whirlwind_active
 	{
 		iframes+=1
@@ -1090,7 +1092,7 @@ attack_shooting_animation_checks()
 
 
 //LIMIT VSPD
-if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed" && float_counter<1
+if vspd>10 && cangroundpound!=2 && airgrab_mode!="being_airgrabbed" && float_counter<1 && canbounce_counter<1
 	vspd=10
 	
 player_move_vertical()

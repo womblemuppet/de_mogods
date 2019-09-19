@@ -25,7 +25,9 @@
         "d1865db5-d0ff-4d10-b22a-213a082b7cac",
         "9086953a-5ca6-4e84-bc41-bc7f5f830f38",
         "c6ea115b-830a-4313-bcba-f010ac8c524b",
-        "f1d25513-83e0-4e3a-a393-f0f2a9475f97"
+        "f1d25513-83e0-4e3a-a393-f0f2a9475f97",
+        "6e5f1128-1f6d-418f-a4e6-8ff12c6f1aa7",
+        "37b2a079-4d72-46a9-90e5-7a438398907e"
     ],
     "filterType": "GMSprite",
     "folderName": "Uga",

@@ -1751,6 +1751,14 @@
             }
         },
         {
+            "Key": "37b2a079-4d72-46a9-90e5-7a438398907e",
+            "Value": {
+                "id": "7ecdc45b-8448-462d-803f-3494a0e6e2d7",
+                "resourcePath": "sprites\\uga_airgrab_slam_terrain_cut\\uga_airgrab_slam_terrain_cut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38977787-aaf9-4f3a-b042-1558a0e7833e",
             "Value": {
                 "id": "fbccf125-ff32-4adc-888c-22277cb548cc",
@@ -3548,6 +3556,14 @@
                 "id": "45322189-cd99-4cc5-a435-bb0bb4063cd3",
                 "resourcePath": "scripts\\player_handle_move_right_or_left\\player_handle_move_right_or_left.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6e5f1128-1f6d-418f-a4e6-8ff12c6f1aa7",
+            "Value": {
+                "id": "ff8a843a-1797-4687-b139-850371cdec63",
+                "resourcePath": "sprites\\uga_airgrab_slam_effect\\uga_airgrab_slam_effect.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

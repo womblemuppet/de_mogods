@@ -95,6 +95,7 @@ switch argument0
 	break;
 	case "uga_air_slam":
 		canbounce_counter=40
+		show_debug_message("vspd="+string(vspd))
 	break;
 	case "slingeruppercut" :
 	{
