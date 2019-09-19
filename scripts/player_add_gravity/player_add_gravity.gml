@@ -14,7 +14,7 @@ if cangroundpound!=1 && dash_rocket_jump!=2 && airgrab_mode!="is_grabbing" && ai
 		vspd+=GRAVITY/water_gravity_factor
 	else
 	{
-		if vspd<VSPEED_FROM_GRAVITY_DOWN_MAX
+		if vspd<VSPD_FROM_GRAVITY_DOWN_MAX
 			vspd+=GRAVITY_DOWN/water_gravity_factor
 	}
 }

@@ -44,7 +44,7 @@ with coco                     ///////////////// transfer fish
 		passes+=1
 		if passes>2
 			instance_destroy()
-	}  
+	}
 }
 
 

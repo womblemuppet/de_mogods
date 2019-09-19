@@ -1,6 +1,6 @@
 /***************************************************
   player hit by attack
-  (when colliding with hitbox, or sunblast apparently)
+  (when colliding with hitbox)
 ****************************************************/
 
 

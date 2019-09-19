@@ -1,9 +1,9 @@
-if sprite_index==sprites[? "jump"]
+if sprite_index==sprites[? "jump"]    ///when finished jump ani, go to air
 {
 	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]
+else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]   ///loop running animations
 {
 	image_index=running_startup_frames
 }
@@ -41,7 +41,7 @@ else if sprite_index==sprites[? "super_activate"]  ///super activate
 }
 else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack"]   ///dash
 {
-	hspd=0//(hspd/3)
+	hspd=0
 	mild_slowed_counter=8
 	player_set_idle()
 }
@@ -61,16 +61,18 @@ else if sprite_index==sprites[? "uniques_airgrab_slam_down"] || sprite_index==sp
 			uniques_slam_airgrab_target.airgrab_mode="cannot_airgrab"
 		target_P=uniques_slam_airgrab_target.P
 	}
-	with attack_create_hitbox(40,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.0002,99,0,-20)
+	with attack_create_hitbox(40,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.2,99,0,-20)
 	{
-		for (var i=0;i<kouchou.MAX_PLAYER_COUNT;i++)
-		{
-			hit[i]=true
-		}
-		if target_P!=undefined
-			hit[target_P]=false
+		//for (var i=0;i<kouchou.MAX_PLAYER_COUNT;i++)
+		//{
+		//	hit[i]=true
+		//}
+		//if target_P!=undefined
+		//	hit[target_P]=false
 	}
 	uniques_slam_airgrab_target=noone
+	airgrab_decidedir_time=0
+	player_set_idle()
 }
 else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 {

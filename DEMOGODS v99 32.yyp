@@ -1578,7 +1578,7 @@
             "Key": "318c2dde-cc48-4b59-91d8-2ba5977afba4",
             "Value": {
                 "id": "91737e95-3cc8-4115-9585-7f8779177f74",
-                "resourcePath": "scripts\\player_set_gravity\\player_set_gravity.yy",
+                "resourcePath": "scripts\\player_add_gravity\\player_add_gravity.yy",
                 "resourceType": "GMScript"
             }
         },

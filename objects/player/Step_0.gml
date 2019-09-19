@@ -83,7 +83,6 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 				
 			airgrab_decidedir_time=0
 			airgrab_target=noone
-
 			
 		}
 		
@@ -192,7 +191,7 @@ else if ltt>-2
 /*  gravity && landing/ceiling collision    +    idle sprite setting  */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-player_set_gravity()
+player_add_gravity()
 
 if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downward block collision  (don't count as landed if launching rocket jump)
 {

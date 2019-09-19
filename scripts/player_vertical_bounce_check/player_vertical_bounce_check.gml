@@ -1,4 +1,4 @@
-if canbounce_counter>0 && (abs(hspd)>4 || abs(hspd)<1) && abs(vspd)>10   //if bounce enabled, and will hit block below, reverse vspd and move player up one pixel. must happen before groundcheck
+if canbounce_counter>0 && abs(vspd)>10   //if bounce enabled, and will hit block below, reverse vspd and move player up one pixel. must happen before groundcheck
 {
 	if place_meeting(x,y+vspd,block)      /////    bounce upward
 	{

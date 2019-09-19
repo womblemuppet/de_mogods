@@ -22,7 +22,7 @@ RUNNING_HSPD_MAX=8
 HOR_AIR_ACCEL=0.5
 HOR_AIR_MINSPEED=1.5
 HOR_AIR_MAXSPEED=5.5
-VSPEED_FROM_GRAVITY_DOWN_MAX=10
+VSPD_FROM_GRAVITY_DOWN_MAX=10
 FRICTION=0.6
 AIR_FRICTION=0.2
 GRAVITY=0.7   //gravity while rising  
@@ -132,6 +132,8 @@ image_speed=FRAME_SPEED_NORMAL
 has_made_splash_effect=false
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//[finaledit] instead of player class holding baggage for all characters make them only hold/check relevant vars
+
 running_startup_frames=0   ///number of startup frames in running animation (currently only implemented with uga)
 dash_attacks_allowed_counter=0
 uniques_mines_enabled=false
