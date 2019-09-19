@@ -7,7 +7,7 @@ if life<1 && sprite_index!=die_sprite
 {
 	for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	{
-		hit[i]=false
+		hit[i]=true
 	};
 
 	sprite_index=die_sprite

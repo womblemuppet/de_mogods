@@ -2,19 +2,11 @@
   player hit by attack
   (when colliding with hitbox)
 ****************************************************/
-
-
+	
 if instance_exists(other.creator) || other.creator==noone                   /////////// ON HIT   //////////////////
 {
-	if other.hit[P]==false && other.creator!=self.id  ///hitbox owned by enemy
+	if other.hit[P]==false && other.creator!=self.id  ///if hitbox owned by enemy and not yet hit
 	{
-		other.hit[P]=true
-		if other.hit_collector!=noone
-		{
-			if instance_exists(other.hit_collector)
-				other.hit_collector.hit[P]=true
-		}
-		
 		if player_is_hittable(other.attack_name)
 		{
 			player_generic_knockback(other.my_hknockback,other.my_vknockback)
@@ -40,3 +32,13 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 	//	}
 	//}
 }
+
+
+///set hitbox status to collided with
+other.hit[P]=true
+if other.hit_collector!=noone
+{
+	if instance_exists(other.hit_collector)
+		other.hit_collector.hit[P]=true
+}
+	

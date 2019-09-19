@@ -59,7 +59,7 @@
     "playbackSpeed": 1,
     "playbackSpeedType": 1,
     "premultiplyAlpha": false,
-    "sepmasks": true,
+    "sepmasks": false,
     "swatchColours": [
         4278190335,
         4278255615,

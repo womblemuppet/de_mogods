@@ -1,1 +1,1 @@
-//override
+//override (alarm would set hit=true for all players)
