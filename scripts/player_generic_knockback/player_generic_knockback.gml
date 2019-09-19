@@ -48,16 +48,13 @@ with coco                     ///////////////// transfer fish
 }
 
 
+vspd=-vknockback
 if other.direction==0             //////////pushed to right
-{
 	hspd=hknockback
-	vspd=-vknockback
-}
-if other.direction==180            ///////////pushed to left
-{
+else if other.direction==180            ///////////pushed to left
+
 	hspd=-hknockback
-	vspd=-vknockback
-}
+
 
 if !place_meeting(x,y-1,block)               ////includes 1 pixel raise
 	y-=1

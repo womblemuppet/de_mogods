@@ -52,24 +52,15 @@ else if sprite_index==sprites[? "uniques_airgrab_slam_down"] || sprite_index==sp
 	if super_mode
 		sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
 	vspd=UNIQUES_SLAM_AIRGRAB_VSPD
-	
-	var target_P
-	target_P=undefined
+
 	if instance_exists(uniques_slam_airgrab_target) && uniques_slam_airgrab_target!=noone
 	{
 		if uniques_slam_airgrab_target.airgrab_mode=="being_airgrabbed"
 			uniques_slam_airgrab_target.airgrab_mode="cannot_airgrab"
-		target_P=uniques_slam_airgrab_target.P
 	}
-	with attack_create_hitbox(40,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.2,99,0,-20)
-	{
-		//for (var i=0;i<kouchou.MAX_PLAYER_COUNT;i++)
-		//{
-		//	hit[i]=true
-		//}
-		//if target_P!=undefined
-		//	hit[target_P]=false
-	}
+	
+	attack_create_hitbox(40,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.2,99,0,-20)
+
 	uniques_slam_airgrab_target=noone
 	airgrab_decidedir_time=0
 	player_set_idle()
