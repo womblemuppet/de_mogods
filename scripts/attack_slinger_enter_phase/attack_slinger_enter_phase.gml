@@ -2,6 +2,8 @@
 ///  	attack_slinger_enter_phase(target)
 /////////////////////////////////////////////////////
 
+player_flush_lockdowns();
+
 uniques_phase_counter=UNIQUES_SLINGER_TIME_IN_PHASE
 sprites[? "idle"]=Slinger_3H_idle_phase
 sprites[? "idle_u"]=Slinger_3H_idle_phase

@@ -178,7 +178,7 @@ switch incoming_attack_name
 			var me;
 			me=self.id
 			with attacker
-				attack_slinger_enter_phase(self.id)
+				attack_slinger_enter_phase(me)
 		}
 	}   
 	break;	

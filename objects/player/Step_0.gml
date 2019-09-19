@@ -724,14 +724,6 @@ rocketjumped=false
 
 
 
-if uniques_phase_counter>0
-{
-	if player_can_phase()
-	{
-		if checkkey(downbutton)
-			attack_slinger_phase_move()
-	}
-}
 
 
 if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) ) ///[finaledit] could happen with counters to free up check, optimisation.
@@ -1000,51 +992,72 @@ if dash_button_currently_held
 	}
 }
 
+var down_pushed;
+down_pushed=checkkey_pushed(downbutton)
 
+
+////////////////////////////////////////////// slinger phase on downkey (separate because of HA exception
+if down_pushed
+{
+	if uniques_phase_enabled && uniques_phase_counter>0
+	{ 	
+		if player_can_phase()
+		{
+			if sprite_index!=sprites[? "phase"]
+				image_index=0
+			image_speed=FRAME_SPEED_NORMAL
+			sprite_index=sprites[? "phase"]
+		}
+	}	
+}
 
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
-if checkkey_pushed(downbutton) && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
+if down_pushed && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
 {
-	switch attacks[? "special hold down"] 
+
+	if groundcheck!=noone
 	{
-		case "no_effect":
-		///whoop whoop
-		break;
+		switch attacks[? "special hold down"] 
+		{
+			case "no_effect":
+			///whoop whoop
+			break;
 		
-		case "vet_place_mine":
-		if uniques_vet_digging==0
-		{
-			if uniques_mines_enabled  && groundcheck!=noone
+			case "vet_place_mine":
+			if uniques_vet_digging==0
 			{
-				if mines_ammo>0                ///start place mine animation
+				if uniques_mines_enabled  && groundcheck!=noone
 				{
-					if sprite_index!=sprites[? "uniques_place_mine"]
-						image_index=0
-					image_speed=FRAME_SPEED_NORMAL
-					sprite_index=sprites[? "uniques_place_mine"]
-				}
-			} 
-		}
-		break;
+					if mines_ammo>0                ///start place mine animation
+					{
+						if sprite_index!=sprites[? "uniques_place_mine"]
+							image_index=0
+						image_speed=FRAME_SPEED_NORMAL
+						sprite_index=sprites[? "uniques_place_mine"]
+					}
+				} 
+			}
+			break;
         
         
         
-		case "bait_teleport":
-		if uniques_teleport_enabled==1      ////start place/use teleport animation
-		{
-			if sprite_index!=sprites[? "uniques_place_teleport"] && sprite_index!=sprites[? "uniques_use_teleport"]
+			case "bait_teleport":
+			if uniques_teleport_enabled==1      ////start place/use teleport animation
 			{
-				image_speed=FRAME_SPEED_NORMAL
-				image_index=0
-				sprite_index=sprites[? "uniques_place_teleport"]
-				if uniques_teleport==1
-					sprite_index=sprites[? "uniques_use_teleport"]
+				if sprite_index!=sprites[? "uniques_place_teleport"] && sprite_index!=sprites[? "uniques_use_teleport"]
+				{
+					image_speed=FRAME_SPEED_NORMAL
+					image_index=0
+					sprite_index=sprites[? "uniques_place_teleport"]
+					if uniques_teleport==1
+						sprite_index=sprites[? "uniques_use_teleport"]
+				}
+
 			}
 
-		}
-
         
-		break;
+			break;
+		}
 	}
 }
 

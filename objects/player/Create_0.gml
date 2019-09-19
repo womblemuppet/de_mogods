@@ -167,6 +167,11 @@ uniques_fpunch_has_made_hitbox=false
 uniques_super_ooga_gp_enabled=false
 unique_ooga_gp_charges=0
 
+//VETERAN STANDARD PUNCH
+uniques_vet_la_target_counter=0
+uniques_vet_la_target=noone
+UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME=35
+
 //VETERAN SPINNER ATTACK
 uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre shockwave attack 3 = recovery
 uniques_spinner_attack_has_made_aa_hitbox=false
@@ -176,14 +181,12 @@ UNIQUES_SPINNER_ATTACK_CHARGE_MIN=15
 UNIQUES_SPINNER_ATTACK_CHARGE_MAX=50
 uniques_spinner_attack_hitbox_id=noone
 
-//VETERAN STANDARD PUNCH
-uniques_vet_la_target_counter=0
-uniques_vet_la_target=noone
-UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME=35
-
 //VETERAN FORWARD PUNCH
-//uniques_forwardpunch_lockdown=0
 //uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
+
+
+//VETERAN MINES
+mines_ammo=0
 
 //VET STICKY MINE
 uniques_sticky_mine_enabled=false
@@ -203,10 +206,8 @@ UNIQUES_PARACHUTE_MINIMUM_TIME=30
 uniques_vet_dig_enabled=false
 uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontally 3 = digging up 
 
-//VETERAN MINES
-mines_ammo=0
-
 //SLINGER PHASE
+uniques_phase_enabled=false
 uniques_phase_counter=0
 uniques_phase_target=noone
 UNIQUES_SLINGER_TIME_IN_PHASE=150

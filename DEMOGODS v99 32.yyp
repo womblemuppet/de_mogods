@@ -1759,6 +1759,14 @@
             }
         },
         {
+            "Key": "37e20c2d-a34a-44f2-8a59-e31c432b8e55",
+            "Value": {
+                "id": "4cc95c1a-c4f8-4618-b26f-fdc78a120998",
+                "resourcePath": "sprites\\Slinger_3H_phaseblink\\Slinger_3H_phaseblink.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38977787-aaf9-4f3a-b042-1558a0e7833e",
             "Value": {
                 "id": "fbccf125-ff32-4adc-888c-22277cb548cc",

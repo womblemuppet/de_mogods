@@ -92,7 +92,8 @@ switch (character)
 	ds_map_add(attacks, "special3", -1);
 	//not set
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
-    
+	
+     uniques_phase_enabled=true
 	super_mode_duration=1000
 	break;
 

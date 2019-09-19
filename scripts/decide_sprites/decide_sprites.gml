@@ -165,6 +165,8 @@ switch character
 			sprites[? "death_acid"]=Slinger_death_by_acid
 			sprites[? "death_zap"]=Slinger_death_by_zap
 			sprites[? "death_ice"]=Slinger_death_by_ice
+			sprites[? "phase"]=Slinger_3H_phaseblink
+			sprites[? "phase_u"]=Slinger_3H_phaseblink  //super version
 		}
 	} break;
 	
