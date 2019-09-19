@@ -42,7 +42,8 @@ else if sprite_index==sprites[? "super_activate"]  ///super activate
 else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack"]   ///dash
 {
 	hspd=0
-	mild_slowed_counter=8
+	//mild_slowed_counter=8
+	brutal_slowed_counter=8
 	player_set_idle()
 }
 else if sprite_index==sprites[? "uniques_airgrab_slam_down"] || sprite_index==sprites[? "uniques_airgrab_slam_down_u"]   //uga airgrab slam
