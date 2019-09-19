@@ -719,9 +719,8 @@ if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()    
 	}
 }
 
-var rocketjumped,nodashmoves;
+var rocketjumped;
 rocketjumped=false
-nodashmoves=false
 
 
 
@@ -729,24 +728,13 @@ if uniques_phase_counter>0
 {
 	if player_can_phase()
 	{
-		if checkkey_pushed(dashbutton)
-		{
-			if checkkey(upbutton)
-			{
-				attack_slinger_phase_move("up")
-				nodashmoves=true
-			}
-			else if checkkey(downbutton) && groundcheck==noone
-			{
-				attack_slinger_phase_move("down")
-				nodashmoves=true
-			}
-		}
+		if checkkey(downbutton)
+			attack_slinger_phase_move()
 	}
 }
 
 
-if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) ) && nodashmoves==false ///[finaledit] could happen with counters to free up check, optimisation.
+if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) ) ///[finaledit] could happen with counters to free up check, optimisation.
 {
 	if (checkkey_pushed(upbutton) || rocket_jump_input_time_counter_from_jump>0) && !checkkey(downbutton)
 	{
@@ -770,7 +758,7 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 }
 
 
-if checkkey_pushed(dashbutton) && rocketjumped==false && nodashmoves==false               /////////////////////////////////////                        events for groundpound, and dash 
+if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////////////////////////////                        events for groundpound, and dash 
 {
 	var exception;
 	exception=false

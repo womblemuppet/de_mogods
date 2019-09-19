@@ -87,18 +87,18 @@ switch txt
 		
 	break;
 
-	case "slinger phase":
-	case "phase":
-	case "stance phase":
+	//case "slinger phase":
+	//case "phase":
+	//case "stance phase":
 	
-	console_log("slinger phase forced")
-	with player
-	{
-		if character=="slinger"
-			attack_slinger_enter_phase()
-	}	
+	//console_log("slinger phase forced")
+	//with player
+	//{
+	//	if character=="slinger"
+	//		attack_slinger_enter_phase()
+	//}	
 		
-	break;
+	//break;
 	
 	case "restart":
 		game_restart()

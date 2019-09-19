@@ -61,25 +61,25 @@ if uniques_fpunch_feet_counter!=-1 && groundcheck!=noone
 	}
 }
 
-///////// FORWARDPUNCH FEET STEPS
-if uniques_forwardpunch_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
-{
-	if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
-	{
-		if uniques_forwardpunch_feet_counter==0
-		{
-			b=22
-			uniques_forwardpunch_feet_counter+=1
-		}
-		else
-		{
-			b=16
-			uniques_forwardpunch_feet_counter=-1   
-		}
+/////////// FORWARDPUNCH FEET STEPS
+//if uniques_forwardpunch_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
+//{
+//	if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
+//	{
+//		if uniques_forwardpunch_feet_counter==0
+//		{
+//			b=22
+//			uniques_forwardpunch_feet_counter+=1
+//		}
+//		else
+//		{
+//			b=16
+//			uniques_forwardpunch_feet_counter=-1   
+//		}
     
-		punch_step_in(b)
-	}
-}
+//		punch_step_in(b)
+//	}
+//}
 
 ///////// SHARKATTACK PUNCH FEET STEPS
 if uniques_sharkattack_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
@@ -124,7 +124,7 @@ if uniques_spinner_attack_lockdown==1  && image_index>12     //loops spinner ant
 
 if uniques_spinner_attack_lockdown==2 && image_index>12                         ///SHOOT FORWARDPUNCH 
 {
-	if uniques_forwardpunch_has_made_hitbox==false
+	if uniques_spinner_attack_has_made_shockwave_hitbox==false
 	{
 		var a,me;
 		me=self.id

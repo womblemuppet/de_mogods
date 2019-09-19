@@ -175,8 +175,10 @@ switch incoming_attack_name
 	{
 		if attacker!=noone
 		{
+			var me;
+			me=self.id
 			with attacker
-				attack_slinger_enter_phase()
+				attack_slinger_enter_phase(self.id)
 		}
 	}   
 	break;	

@@ -7,3 +7,4 @@ if sprite_index==Slinger_3H_idle_phase
 	sprite_index=Slinger_3H_idle
 else if sprite_index==Slinger_3H_run_phase
 	sprite_index=Slinger_3H_idle
+uniques_phase_target=noone
