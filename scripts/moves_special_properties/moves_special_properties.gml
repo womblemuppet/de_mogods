@@ -94,7 +94,7 @@ switch argument0
 	} 
 	break;
 	case "uga_air_slam":
-		canbounce_counter=40
+		canbounce_counter=400
 	break;
 	case "slingeruppercut" :
 	{
