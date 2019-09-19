@@ -4,8 +4,10 @@ if instance_exists(other.creator)
 else
 	attacker=noone
 
+var incoming_attack_name;
+incoming_attack_name=argument0
 
-switch argument0
+switch incoming_attack_name
 {
 	case "ground pound":
 	with attacker
@@ -71,8 +73,6 @@ switch argument0
 	}
 	break;
 	case "falconpunch" :
-	with attacker
-		move_that_adds_pocket()
 	if stunned_groundpound>0
 	{
 		impact_debuff_counter=40
@@ -96,15 +96,6 @@ switch argument0
 	case "uga_air_slam":
 		canbounce_counter=40
 		show_debug_message("vspd="+string(vspd))
-	break;
-	case "slingeruppercut" :
-	{
-		if attacker!=noone
-		{
-			with attacker
-				attack_slinger_enter_phase()
-		}
-	}   
 	break;
 	case "baitchain" :
 	{
@@ -163,10 +154,30 @@ switch argument0
 			y-=1
 		canbounce_counter=25
 	break;
+}
+
+//HA's add orb
+switch incoming_attack_name
+{
 	case "sharkattack":
 	case "sunblast":
 	case "spinattack":
+	case "falconpunch":
 		with attacker
 			move_that_adds_pocket()
 	break;
+}
+
+switch incoming_attack_name
+{
+	case "sunblast":
+	case "slingeruppercut" :
+	{
+		if attacker!=noone
+		{
+			with attacker
+				attack_slinger_enter_phase()
+		}
+	}   
+	break;	
 }
