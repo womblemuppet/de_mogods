@@ -18,5 +18,5 @@ if sprite_index==Slinger_3H_idle
 	sprite_index=Slinger_3H_idle_phase
 else if sprite_index==Slinger_3H_run
 	sprite_index=Slinger_3H_idle_phase
-iframes=10
+
 uniques_phase_target=argument0

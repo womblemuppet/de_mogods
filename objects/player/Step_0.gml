@@ -1006,6 +1006,7 @@ if down_pushed
 				image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[? "phase"]
+			iframes=10
 		}
 	}	
 }
