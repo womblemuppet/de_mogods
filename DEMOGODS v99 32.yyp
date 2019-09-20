@@ -4583,6 +4583,14 @@
             }
         },
         {
+            "Key": "8e758c42-c6ba-4a19-8d72-8a7cd4440cc6",
+            "Value": {
+                "id": "54893317-c0a2-48d2-8a41-811b3feebf2a",
+                "resourcePath": "scripts\\cup_hover_movement\\cup_hover_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8e780e41-e3a9-4179-b06e-d7089bde5562",
             "Value": {
                 "id": "faf69b29-79a5-4fb1-b243-c671652ceeed",
@@ -8469,6 +8477,7 @@
         "a0d92035-4e62-436b-a283-b746bc55df79",
         "60dfb10c-1920-4899-8c2e-c4b5e06dafe1",
         "cf124625-d8fd-4fa2-8f44-7af6cc99cf28",
+        "8e758c42-c6ba-4a19-8d72-8a7cd4440cc6",
         "157b7f1f-59bc-4822-9ac3-c9c190bfe264",
         "4513e3db-a9fa-4864-8988-20651de425ab",
         "8aede115-b9c0-40e8-9e46-3b4f87f0cf6c",
