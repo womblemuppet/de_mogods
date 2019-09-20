@@ -64,19 +64,21 @@ if draw
 
 if kouchou.setmenu_show_fps
 {
-	if fps_real>80
+	if fps_real>300
 	{
 		draw_set_color(c_white)    
-		draw_text(kouchou.room_left_border_x+40,kouchou.room_top_border_y+20,string_hash_to_newline(string(round(fps_real/10)*10)+" fps"))
+		draw_text(kouchou.room_left_border_x+70,kouchou.room_top_border_y+20,string_hash_to_newline(string(round(fps_real/200)*200)+" fps"))
+	}
+	else if fps_real>80
+	{
+		draw_set_color(c_white)    
+		draw_text(kouchou.room_left_border_x+70,kouchou.room_top_border_y+20,string_hash_to_newline(string(round(fps_real/10)*10)+" fps"))
 	}
 	else
 	{
 		draw_set_color(c_red)
-		draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real))+" fps"))
+		draw_text(kouchou.room_left_border_x+70,kouchou.room_top_border_y,string_hash_to_newline(string(round(fps_real))+" fps"))
 	}
-    
-	//if debug
-	//	draw_text(kouchou.room_left_border_x,kouchou.room_top_border_y+35,string_hash_to_newline(string(round(instance_count/25)*25)+"("+string(instance_number(block))+")"))
 }   
 
 
