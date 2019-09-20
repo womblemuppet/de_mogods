@@ -21,9 +21,11 @@ uniques_sharkattack_lockdown=0
 uniques_drill_mine_place_animation_lock=false
 uniques_dashgpblinkattack_lockdown=0
 uniques_slam_airgrab_slam_lockdown=0
-uniques_phase_counter=0
 dash_rocket_top_collision_safety_on=false
 recovery_groundpound_active=false
+
+if uniques_phase_counter>0
+	attack_slinger_phase_cancelled()
 
 if uniques_vet_dig_enabled
 {
