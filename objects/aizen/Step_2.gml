@@ -19,15 +19,14 @@ player_baseline_difference=player_baseline-player_baseline_prev
 player_baseline_prev=player_baseline
 
 
-if lowest_player_y>=scroll_threshold // && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
+if lowest_player_y>=SCROLL_THRESHOLD // && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
 {	//////////////////////////////////////// CAMERA SCROLL
 	var scrollspeed;
-	scrollspeed=4
+	scrollspeed=5
 	
 	with scrolls     ///scroll objects down with the 'view'
-	{
 		y-=scrollspeed
-	} 
+
 	with block       ///kill blocks outside the map
 	{
 		if y<-80

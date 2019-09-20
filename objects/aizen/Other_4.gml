@@ -177,7 +177,7 @@ if room==gameroom
 	//fill list of blocks that will be drawn in draw event
 	update_blocks_to_draw_list()
 	
-	scroll_threshold=kouchou.room_bottom_border_y-bh*4    ///screen starts scrolling when lower than this
+	SCROLL_THRESHOLD=kouchou.room_bottom_border_y-bh*3    ///screen starts scrolling when lower than this
 	
 	//if kouchou.map=="multiplayer"
 	//{
