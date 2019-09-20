@@ -5,7 +5,7 @@
 //var current_sprite,current_image_index;
 //current_sprite=sprite_index
 //current_image_index=image_index
-player_flush_lockdowns();
+//player_flush_lockdowns();
 //sprite_index=current_sprite
 //image_index=current_image_index
 
