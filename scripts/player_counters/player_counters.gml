@@ -63,7 +63,7 @@ if ground_pound_freeze_counter>0
 	ground_pound_freeze_counter-=1
 	if ground_pound_freeze_counter==0
 	{    
-		attack_start_groundpound_descent()
+		attack_start_groundpound_descent(attacks[? "gp"])
 	}
 }
 

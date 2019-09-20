@@ -25,7 +25,7 @@ switch (character)
 	ds_map_add(attacks, "heavy attack", "uga_falconpunch");
 	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp", "ground pound");
 	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
 	//no gp effect (uga super mode gp doesn't use this system for some reason)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
@@ -54,7 +54,7 @@ switch (character)
 	ds_map_add(attacks, "heavy attack", "vet_armspin");
 	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp", "ground pound");
 	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "veteran_mine_throw");  
@@ -81,7 +81,7 @@ switch (character)
 	ds_map_add(attacks, "heavy attack", "slinger_sunblast");
 	ds_map_add(attacks, "dash","bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp", "ground pound with phase");
 	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "slinger_air_sunbolt");
@@ -104,7 +104,7 @@ switch (character)
 	ds_map_add(attacks, "heavy attack", "bait_haymaker");
 	ds_map_add(attacks, "dash", "bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
-	ds_map_add(attacks, "gp", "groundpound");
+	ds_map_add(attacks, "gp", "ground pound");
 	ds_map_add(attacks, "gp_hit_ground_effect","bait_whirlwind");
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "no_effect");

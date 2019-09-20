@@ -770,8 +770,9 @@ if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////
 		var dropcrabok;
 		dropcrabok=true    ///if player can't gp then this stops crab being dropped
 		switch attacks[? "gp"]
-		{                   
-			case "groundpound": ////standard gp
+		{
+			case "ground pound with phase": ///slinger phase
+			case "ground pound": ////standard gp
 			exception=true                                                                                                                                     
 			vspd=0
 			cangroundpound=1

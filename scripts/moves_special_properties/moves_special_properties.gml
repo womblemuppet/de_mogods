@@ -9,6 +9,7 @@ incoming_attack_name=argument0
 
 switch incoming_attack_name
 {
+	case "ground pound with phase":
 	case "ground pound":
 	with attacker
 	{
@@ -168,8 +169,12 @@ switch incoming_attack_name
 	break;
 }
 
+
+//Phase stance
 switch incoming_attack_name
 {
+	case "ground pound with phase":
+	case "sunbolt":
 	case "sunblast":
 	case "slingeruppercut" :
 	{

@@ -7,6 +7,6 @@ with creator
 	sprite_index=sprites[? "gpfall"]   ///groundpound freeze sprite
 	if super_mode
 		sprite_index=sprites[? "gpfall_u"]
-	attack_start_groundpound_descent()
+	attack_start_groundpound_descent("ground pound")
 }
 instance_destroy()

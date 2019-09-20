@@ -19,7 +19,7 @@ if y<kouchou.room_top_border_y-20
 		player_make_vunerable()
 		player_make_immune(150)
 		var a;
-		a=attack_start_groundpound_descent()
+		a=attack_start_groundpound_descent("ground pound")
 		with a
 			instance_change(hitbox_recovery_groundpound,true)	
 		disable_next_groundpound_effect=true
