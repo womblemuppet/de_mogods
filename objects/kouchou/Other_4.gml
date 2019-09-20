@@ -81,3 +81,10 @@ else if room==menu
 	ready[3]=-1
 	player_join_update_controller_variables()
 }
+else if room==multiplayermenu
+{
+	if competitive_mode==true
+	{
+		create_menupart_basic(cupppp,0.01,room_width/2,room_height/2,-4)
+	}
+}

@@ -165,7 +165,6 @@ else if room==multiplayermenu
 	{
 		draw_clear(c_navy)
 		draw_sprite_ext(menu_competitive_groundback,0,0,0,room_width/1199,1,0,c_white,1)
-		draw_sprite(cupppp,0,room_width/2,room_height/2)
 		draw_sprite(menu_first_to,0,room_width/2,60)
 	}
     
@@ -181,17 +180,20 @@ else if room==multiplayermenu
         
 		//player join slot prompts
 		draw_set_colour(c_silver) 
+		draw_set_halign(fa_center)
 		if ready[i]==-1 && i==next_open_slot
 		{
-			draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+200,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
+			draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]-100,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
 			var t;
-				t="press [space]\n to add keyboard player \npress [start] on controller\n to join"
+				t="press [space] to add \na keyboard player \npress [start] on a controller\n to join"
 			if number_of_keyboards_in_use==1
-				t="press [enter]\n to add keyboard player\npress [start] on controller\n to join"
+				t="press [enter] to add \na keyboard player\npress [start] on a controller\n to join"
 			if number_of_keyboards_in_use>1
-				t="press [start]\n on controller to join"
-			draw_text(menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]+50,t)
+				t="press [start]\n on a controller to join"
+
+			draw_text(menu_player_join_prompt_middle_x[i],menu_player_join_prompt_y[i]+50,t)
 		}
+		draw_set_halign(fa_left)
         
 		var flip,flipextra_x;     ///flips character select portrait for p1 and p3
 		flip=-1

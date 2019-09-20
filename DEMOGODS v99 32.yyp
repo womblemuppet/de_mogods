@@ -6839,6 +6839,14 @@
             }
         },
         {
+            "Key": "cf124625-d8fd-4fa2-8f44-7af6cc99cf28",
+            "Value": {
+                "id": "d1ff8686-4d31-4e53-8542-363999f34528",
+                "resourcePath": "scripts\\create_menupart_basic\\create_menupart_basic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf9b6d3d-06a3-4e14-83e8-6ed13f6480ca",
             "Value": {
                 "id": "555378b8-a23c-4395-bd19-e453567495a7",
@@ -8460,6 +8468,7 @@
         "14ae9649-1ac5-4402-a578-e454101aeda3",
         "a0d92035-4e62-436b-a283-b746bc55df79",
         "60dfb10c-1920-4899-8c2e-c4b5e06dafe1",
+        "cf124625-d8fd-4fa2-8f44-7af6cc99cf28",
         "157b7f1f-59bc-4822-9ac3-c9c190bfe264",
         "4513e3db-a9fa-4864-8988-20651de425ab",
         "8aede115-b9c0-40e8-9e46-3b4f87f0cf6c",

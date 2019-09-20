@@ -111,18 +111,19 @@ else
 
 menu_player_join_prompt_x[MAX_PLAYER_COUNT]=-1
 menu_player_join_prompt_y[MAX_PLAYER_COUNT]=-1
+menu_player_join_prompt_middle_x[MAX_PLAYER_COUNT]=-1
 
 for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-	menu_player_join_prompt_x[i]=menu_player_options_x[i]+170
-	menu_player_join_prompt_y[i]=menu_player_options_y[i]+70
-};
-
-for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
-{
+	menu_player_join_prompt_x[i]=menu_player_options_x[i]
+	menu_player_join_prompt_y[i]=menu_player_options_y[i]+100
+	
+	menu_player_join_prompt_middle_x[i]=menu_player_join_prompt_x[i]+327
+	
 	menu_player_character_title_x[i]=menu_player_options_x[i]+300
 	menu_player_character_title_y[i]=menu_player_options_y[i]-15
 };
+
 
 
 
