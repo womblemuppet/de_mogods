@@ -208,7 +208,8 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 		a.vspeed=9
 		
 		float_counter=UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT
-		vspd=min(vspd,0)   //if falling, stop fall
+		vspd=min(vspd,-1)   //if falling, stop fall
+		hspd=clamp(hspd,-1,1)
 	}
 	uniques_airbolt_lockdown=2
 	uniques_airbolt_has_made_hitbox=true
