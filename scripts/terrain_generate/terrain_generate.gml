@@ -52,7 +52,7 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	if biomeswitch   ///[finaledit] check if used...
 	{
 		terraintype="biomegap"
-		terrainammo=6
+		terrainammo=4
 		biomeswitch=false
 		//call_block_setup()
 	}
