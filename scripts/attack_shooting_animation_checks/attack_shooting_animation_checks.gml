@@ -6,7 +6,7 @@ if uniques_fpunch_lockdown==1    //loops animation while charging
 	if image_index>3.9
 		image_index=1
 }
-else if uniques_fpunch_lockdown==2 
+else if uniques_fpunch_lockdown==2
 {
 	if image_index>5
 	{

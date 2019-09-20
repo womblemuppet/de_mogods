@@ -264,7 +264,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		if cangroundpound!=0  
 		{
 			mild_slowed_counter=0
-			brutal_slowed_counter=10
+			brutal_slowed_counter=7
 		}
 	}
 	cangroundpound=0
@@ -371,8 +371,6 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 }
 if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && checkkey(rightbutton)) || (checkkey_released(rightbutton) && checkkey(leftbutton))    )
 	can_activate_super_mode=true
-
-
 
 
 
