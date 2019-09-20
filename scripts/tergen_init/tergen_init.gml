@@ -36,7 +36,7 @@ cavelevel=biome_length*3+CREATIONDELAY+200
 mountainlevel=biome_length*2+CREATIONDELAY-4400
 
 terraintype=chunkery_chunk_type[? chunk_type]    ///type of chunk being created
-terrainammo=5      /// number of rows left on current chunk
+terrain_ammo=5      /// number of rows left on current chunk
 
 pitlist=ds_list_create()  //where the pits are
 rectx1=0                  //rectangle and reverse rectangle bounds
@@ -55,14 +55,14 @@ for (var i=0; i<kouchou.rw/aizen.bw; i+=1)
 {
 	terrain_wave_xup[kouchou.rw/aizen.bw]=false
 };
-terrain_wave_ylim=choose(2,3,4)  ///bottom line that connects waves  (based on terrainammo)
+terrain_wave_ylim=choose(2,3,4)  ///bottom line that connects waves  (based on terrain_ammo)
 
 terrain_blob_number=10    ////number of blobs
 terrain_blob_xl[10]=0    //// coordinates of each blob 
 terrain_blob_xr[10]=0
 terrain_blob_yu[10]=0
 terrain_blob_yd[10]=0
-terrain_blob_line1y=choose(7,8,9)   ///based on terrainammo
+terrain_blob_line1y=choose(7,8,9)   ///based on terrain_ammo
 terrain_blob_line2y=choose(0,1,2)
 
 steps_on_right=true   ////whether steps appear on the right or left

@@ -14,6 +14,6 @@ if !ds_map_exists(chunkery_ammo_max,chunk_type)
 ///set specific terraintype characteristics
             
 //if terraintype!="solidline"   ///full line
-	terrainammo=irandom_range(chunkery_ammo_min[? chunk_type],chunkery_ammo_max[? chunk_type])
+	terrain_ammo=irandom_range(chunkery_ammo_min[? chunk_type],chunkery_ammo_max[? chunk_type])
 	
 set_terrain_type_patterns()

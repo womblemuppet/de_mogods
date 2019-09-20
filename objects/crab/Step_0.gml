@@ -1,12 +1,12 @@
 if owner==-1 
 {
-		if y<aizen.player_baseline+aizen.CREATIONDELAY
+		if y<aizen.player_baseline+aizen.CREATIONDELAY-aizen.bh
 			grav(8)
         //[finaledit]  shouldn't be happening in the first place
 		if y<-30 || y>3000
 		{
-			show_debug_message("crab blerped off bottom of room")
-			 instance_destroy()
+			show_debug_message("crab blerped off top/bottom of room, y="+string(y))
+			instance_destroy()
 		}
 
 

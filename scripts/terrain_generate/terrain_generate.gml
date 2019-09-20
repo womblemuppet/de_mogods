@@ -43,16 +43,16 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	
 	//show_debug_message("terrain gen at "+string(player_baseline+CREATIONDELAY)+"baseline:"+string(player_baseline)+"   "+string(bedrockcounter)+" is bedrockcounter")
 
-	terrainammo-=1  //move one layer on in current terrain chunk
-	//show_message(terraintype+"    ammo="+string(terrainammo))
-	if terrainammo<1   /// new terrain type
+	terrain_ammo-=1  //move one layer on in current terrain chunk
+	//show_message(terraintype+"    ammo="+string(terrain_ammo))
+	if terrain_ammo<1   /// new terrain type
 		set_new_chunk()
 
 	/////////////////////////////////////////////////////////////////////////////////////////////biomeswitch event will overwrite all of the above switch 
 	if biomeswitch   ///[finaledit] check if used...
 	{
 		terraintype="biomegap"
-		terrainammo=4
+		terrain_ammo=4
 		biomeswitch=false
 		//call_block_setup()
 	}

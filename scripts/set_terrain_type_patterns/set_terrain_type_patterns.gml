@@ -51,14 +51,14 @@ switch (terraintype)
 	break;
             
 	case "pyramid":
-	terrain_pyramid_plateau_y=terrainammo-choose(3,4,5)
+	terrain_pyramid_plateau_y=terrain_ammo-choose(3,4,5)
 	break;
 			
 	case "doublewaves":         ///both waves and double waves
 	case "waves":              
 	for (var i=0; i<6; i+=1)
 	{
-		terrain_wave_ha[i]=terrainammo-choose(1,2,3,4,5)
+		terrain_wave_ha[i]=terrain_ammo-choose(1,2,3,4,5)
 	};                        
 	terrain_wave_xup[numberofblocks_horizontal]=false   ///resets array that stores whether there is a wave at that x pos or not [finaledit] don't need this line itself?
 	for (var i=0; i<numberofblocks_horizontal; i+=1)
@@ -93,7 +93,7 @@ switch (terraintype)
 		terrain_blob_yd[i]=terrain_blob_yu[i]+choose(2,3,4)
 	};            
 
-	terrain_blob_line1y=choose(7,8,9)   ///based on terrainammo
+	terrain_blob_line1y=choose(7,8,9)   ///based on terrain_ammo
 	terrain_blob_line2y=choose(0,1,2)
 	break;  
 			
