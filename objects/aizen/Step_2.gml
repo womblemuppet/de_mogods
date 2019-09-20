@@ -80,9 +80,10 @@ if lowest_player_y>=SCROLL_THRESHOLD // && !instance_exists(ice_block)   // [fin
 			if y+sprite_height<0
 				instance_destroy()
 		}
-		if travelled>mountainlevel && !instance_exists(mountains_backdrop) 
+		if travelled>mountainlevel && !mountains_have_spawned
 		{
 			instance_create(kouchou.room_left_border_x,room_height,mountains_backdrop)
+			mountains_have_spawned=true
 		} 
 
 		travelled_tick_biome_threshold_check()

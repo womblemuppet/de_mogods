@@ -34,6 +34,7 @@ lightingtravelledbiome=ds_list_create()
 mountainscrolllevel=biome_length*3+CREATIONDELAY-1000
 cavelevel=biome_length*3+CREATIONDELAY+200
 mountainlevel=biome_length*2+CREATIONDELAY-4400
+mountains_have_spawned=false
 
 terraintype=chunkery_chunk_type[? chunk_type]    ///type of chunk being created
 terrain_ammo=5      /// number of rows left on current chunk
