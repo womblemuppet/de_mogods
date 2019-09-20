@@ -377,7 +377,7 @@ if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && che
 
 
 
-if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack / push
+if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack
 {
 	var exception;
 	exception=false

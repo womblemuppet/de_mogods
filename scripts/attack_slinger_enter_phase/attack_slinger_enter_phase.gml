@@ -2,7 +2,12 @@
 ///  	attack_slinger_enter_phase(target)
 /////////////////////////////////////////////////////
 
+var current_sprite,current_image_index;
+current_sprite=sprite_index
+current_image_index=image_index
 player_flush_lockdowns();
+sprite_index=current_sprite
+image_index=current_image_index
 
 uniques_phase_counter=UNIQUES_SLINGER_TIME_IN_PHASE
 sprites[? "idle"]=Slinger_3H_idle_phase
