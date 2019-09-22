@@ -3647,6 +3647,14 @@
             }
         },
         {
+            "Key": "71b243a7-9349-413d-9bc6-477d3402fba4",
+            "Value": {
+                "id": "0c73746b-0d3d-4650-b21c-295e289634ba",
+                "resourcePath": "sprites\\hit_by_lightning_effect\\hit_by_lightning_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71f10d9c-db1c-4627-803c-e2f3692cb222",
             "Value": {
                 "id": "a60d9579-6388-47b0-8079-1b5c8e656daa",
