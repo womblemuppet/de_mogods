@@ -1,50 +1,37 @@
-repeat(repeat_effects_factor)
-{
-	a=effect_aniend(spiralpower_base,0.8,-1)
-	a.vspeed=-0.5
-	a.gravity_direction=90
-	a.gravity=0.01
-	a.x+=8-random(16)
-	var h;
-	h=random(TOTAL_HEIGHT)-SPIRAL_EFFECT_HEIGHT  
-	a.y-=h
-	if a.y<effect_line_y+SPIRAL_EFFECT_HEIGHT/2
-	{
-		a.gravity*=2
-		//a.vspeed=-2
-		a.sprite_index=spiralpower_base_in_zone
-	}
-	else
-		a.image_alpha=0.25
-}
-
 if active
 {
 	var effect_line_yy,xmin,xmax
-	effect_line_yy=effect_line_y
+	effect_line_yy=effect_line_y   ////(reference when using with)
 	xmin=x-WIDTH/2
 	xmax=x+WIDTH/2
 	
 	if height<MAX_GROWTH_DEPTH
 	{
-		height+=grow_rate
+		height+=grow_rate                                  ///// grow towards max height
 		height_delta_counter+=grow_rate
 		effect_line_y=y-TOTAL_HEIGHT+height
 		
-		if height_delta_counter>20
+		if height_delta_counter>10                    //////////destroy blocks above effect line every 10 moves
 		{
-			height_delta_counter-=20
+			height_delta_counter-=10
+			
+			ds_list_clear(make_effect_blocks)
+			
+			var make_effect_blocks_ref;
+			make_effect_blocks_ref=make_effect_blocks;
+			
 			with block
 			{
+				if y<effect_line_yy-30 && x>xmin && x<max
+					ds_list_add(make_effect_blocks_ref,self.id)
 				if y<effect_line_yy && x>xmin && x<xmax
 					block_take_damage()
 			}
-
 		}
 	}
 
 	
-	with player    ///[finaledit] can maybe optimise
+	with player /////////////if player in effect area above effect line, get sucked up ///[finaledit] can maybe optimise
 	{
 		if y<effect_line_yy && x>xmin && x<xmax && armouredframes<1
 		{
@@ -60,24 +47,17 @@ if active
 			dash_rocket_top_collision_safety_on=false
 		}
 	}
-		
-	for (var i = 0; i < WIDTH/TUNNEL_EFFECT_WIDTH-1;i++) 
-	{
-		a=effect_aniend(tunnel_effect1,choose(0.3,0.4),-3)
-		a.y-=TOTAL_HEIGHT-height
-		a.x+=TUNNEL_EFFECT_WIDTH/2+(TUNNEL_EFFECT_WIDTH*i)-WIDTH/2
-		a.x+=6-random(12)
-		a.vspeed=-1.5
-		a.gravity_direction=90
-		a.gravity=0.15
-	}
 }
 
+
+/// friction
 if hspd>min_speed
 	hspd-=0.125
 if hspd<-min_speed
 	hspd+=0.125
-	
+
+
+/////// horizontal movement
 if hspd>0
 {
 	if x+hspd+WIDTH/2<kouchou.room_right_border_x

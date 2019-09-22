@@ -4351,14 +4351,6 @@
             }
         },
         {
-            "Key": "8739afc2-d79e-4275-bfca-94a1e972f144",
-            "Value": {
-                "id": "cb73dda9-91e4-4ca9-b2ea-5d86c98318e3",
-                "resourcePath": "sprites\\tunnel_effect1\\tunnel_effect1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "87f712d2-6ae7-4d11-8309-819e9ca6b4a1",
             "Value": {
                 "id": "27ca3904-27c0-44fd-a091-8afb63423f93",
