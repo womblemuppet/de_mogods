@@ -10,7 +10,8 @@
         "f937c47a-cd74-4fc0-bd8b-c9a9eab644b8",
         "1a9bd115-36f0-470e-ad6d-79975790d755",
         "c1dcccae-83fa-4827-8c00-57df9bcb1aab",
-        "b7aefcc9-4e5d-451e-bfd5-5e9e65012255"
+        "b7aefcc9-4e5d-451e-bfd5-5e9e65012255",
+        "998974f8-d157-40c2-8cf5-4ba681a29a1c"
     ],
     "filterType": "GMSprite",
     "folderName": "meteors",
