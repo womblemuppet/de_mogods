@@ -1,10 +1,10 @@
-var b;
-b=find_a_diggable_block()
-if b>0
-{
-	with b
-		effect(mask40,0.01,-10)
-}
+//var b;
+//b=find_a_diggable_block()
+//if b>0
+//{
+//	with b
+//		effect(mask40,0.01,-10)
+//}
 
 
 
