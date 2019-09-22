@@ -46,7 +46,7 @@ if room==menu
 			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2+crabxoffset,room_height-375+50*i)
 		}
 		
-		if main_menu_select_options[i]=="single_player"        ///// draw non selectable menu options in silver
+		if main_menu_select_options[i]=="single_player" || main_menu_select_options[i]=="party_mode" ||  main_menu_select_options[i]=="lore" ///// draw non selectable menu options in silver
 			draw_set_colour(c_silver)
 			
 
