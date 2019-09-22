@@ -185,7 +185,7 @@ else if room==menu
 
 	if menu_any_player_start_button_check()
 	{
-		switch menuselect
+		switch main_menu_select_number
 		{
 			case 0:
 			room=preoverworld           break;
@@ -213,7 +213,7 @@ else if room==menu
 			case 5:
 				game_end()              break;
 			default:
-				show_error("unknown menuselect destination",true) break;
+				show_error("unknown main_menu_select_number destination",true) break;
 		}
 	}
 }

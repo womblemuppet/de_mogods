@@ -3,17 +3,27 @@ if game_start_countdown>0
 
 if room==menu
 {
-    menuselect+=1
-    if menuselect==MENUSELECTMAX
-        menuselect=0
-    if menuselect==0   ///singleplayer disabled
-       menuselect=1
+	main_menu_select_number+=1
+	if main_menu_select_number>MAIN_MENU_SELECT_NUMBER_MAX
+		main_menu_select_number=0
+	 
+	main_menu_select=main_menu_select_options[main_menu_select_number]
+	
+	while main_menu_select=="single_player" || main_menu_select=="party_mode" || main_menu_select=="lore"   ///singleplayer disabled
+	{
+		main_menu_select_number+=1
+		
+		if main_menu_select_number>MAIN_MENU_SELECT_NUMBER_MAX
+			main_menu_select_number=0
+			
+		main_menu_select=main_menu_select_options[main_menu_select_number]
+	}
 }
-if room==settings
+else if room==settings
 {
-    setmenu_select_number+=1
-    if setmenu_select_number==SETMENU_SELECT_NUMBER_MAX
-        setmenu_select_number=0
+	setmenu_select_number+=1
+	if setmenu_select_number>SETMENU_SELECT_NUMBER_MAX
+		setmenu_select_number=0
 	setmenu_select=setmenu_select_options[setmenu_select_number]
 	if setmenu_select=="scale_screen" && setmenu_fullscreen==false
 	{
@@ -22,9 +32,7 @@ if room==settings
 	}	
 
 }
-
-
-if room==loremenu
+else if room==loremenu
 {
     loreselect+=1
     if loreselect>lorescroll+LORELISTNUMBER-2

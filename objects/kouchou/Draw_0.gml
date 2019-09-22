@@ -1,7 +1,6 @@
 
 if room==menu
 {
-	//draw_set_alpha(1)
 	draw_clear(menu_letterbox_colour)
 	draw_sprite(menu_background_1,menu_background_subspr,midx,midy)
 	draw_sprite_ext(logo_spr,menu_logo_subspr,room_width/2,225,4,4,0,c_white,1)
@@ -9,31 +8,55 @@ if room==menu
 	draw_set_halign(fa_middle)
 	draw_set_colour(c_gray)
     
-	////draw main menu options
-    
-	for (var i=0; i<MENUSELECTMAX; i+=1)
+	/////////////////////////////////////////////////////////////////////draw main menu options
+	var vgap;
+	vgap=50
+
+	for (var i=0; i<MAIN_MENU_SELECT_NUMBER_MAX+1; i++)
 	{
 		draw_set_colour(c_black)
-		if menuselect==i     ////draw selected menu item settings
+		
+		var t;
+		switch main_menu_select_options[i]          ///// determine main menu text options
+		{
+			case "single_player":
+				t="SINGLEPLAYER" break;
+			case "competitive_mode":
+				t="COMPETITVE" break;
+			case "party_mode":
+				t="4P CHAOS" break;
+			case "lore":
+				t="LORE" break;
+			case "settings":
+				t="OPTIONS" break;
+			case "exit":
+				t="QUIT" break;
+			default:
+				show_error("unhandled main menu select option",true);
+		}
+		
+		if main_menu_select_number==i     ////draw selected menu item in white and draw crabs
 		{
 			draw_set_colour(c_white)  ///c_white
+			
 			var crabxoffset;
-			crabxoffset=40+string_width(main_menu_texts[i])/2
+			crabxoffset=40+string_width(t)/2
+			
 			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2-crabxoffset,room_height-375+50*i)
 			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2+crabxoffset,room_height-375+50*i)
 		}
-		if i==0                          ///// else draw non-selected menu item settings
+		
+		if main_menu_select_options[i]=="single_player"        ///// draw non selectable menu options in silver
 			draw_set_colour(c_silver)
-		draw_text(room_width/2,room_height-375+50*i,main_menu_texts[i])
-		draw_set_colour(c_black)
+			
+
+				
+		draw_text(room_width/2,room_height-375+vgap*i,t)          ////////draw menu option
 	};
     
-
 }
 else if room==loremenu
 {
-
-	//draw_set_alpha(1)
 	var lorelistx,lorelisty,lorelistinterval;    
 	lorelistx=97
 	lorelisty=640
@@ -73,7 +96,6 @@ else if room==loremenu
 }
 else if room==settings
 {    
-	//draw_set_alpha(1)
 	draw_set_font(font_menu)
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_left)
@@ -91,10 +113,12 @@ else if room==settings
 	var t;
 	t=""
 
-	for (var i = 0; i < SETMENU_SELECT_NUMBER_MAX; i++) {
+	for (var i = 0; i < SETMENU_SELECT_NUMBER_MAX; i++) 
+	{
 		draw_set_colour(c_black)
 		if setmenu_select==setmenu_select_options[i]
 			draw_set_colour(c_silver)
+			
 		switch setmenu_select_options[i]
 		{
 			case "fullscreen":

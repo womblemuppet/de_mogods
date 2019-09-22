@@ -2,10 +2,13 @@ with kouchou
 {
 	if room==menu
 	{
-	    if menuselect==MENUSELECTMAX-1
+	    if main_menu_select=="exit"
 	        game_end()
 	    else
-	        menuselect=MENUSELECTMAX-1
+	    {
+			main_menu_select_number=MAIN_MENU_SELECT_NUMBER_MAX
+			main_menu_select=main_menu_select_options[main_menu_select_number]
+	    }
 	}
 	else if room==multiplayermenu
 	{

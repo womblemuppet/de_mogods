@@ -128,15 +128,18 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 
 
 competitive_mode=false
-menuselect=1
-MENUSELECTMAX=6
-main_menu_texts[MENUSELECTMAX]=""
-main_menu_texts[0]="SINGLEPLAYER"
-main_menu_texts[1]="TRYHARD VERSUS MODE"
-main_menu_texts[2]="PARTY MODE"
-main_menu_texts[3]="LORE"
-main_menu_texts[4]="SETTINGS"
-main_menu_texts[5]="EXIT"
+
+main_menu_select_number=1
+MAIN_MENU_SELECT_NUMBER_MAX=5
+main_menu_select_options[MAIN_MENU_SELECT_NUMBER_MAX]=""
+main_menu_select_options[0]="single_player"
+main_menu_select_options[1]="competitive_mode"
+main_menu_select_options[2]="party_mode"
+main_menu_select_options[3]="lore"
+main_menu_select_options[4]="settings"
+main_menu_select_options[5]="exit"
+
+main_menu_select=main_menu_select_options[main_menu_select_number]
 
 menu_background_subspr=0
 MENU_BACKGROUND_SUBSPR_LIMIT=17
@@ -187,9 +190,8 @@ lore_init()
 
 //////////////////////////////////////////////SETTINGS MENU 
 setmenu_select_number=0
-SETMENU_SELECT_NUMBER_MAX=6
+SETMENU_SELECT_NUMBER_MAX=5
 setmenu_select_options[SETMENU_SELECT_NUMBER_MAX]=0
-
 setmenu_select_options[0]="fullscreen"
 setmenu_select_options[1]="scale_screen"
 setmenu_select_options[2]="sound_effects_volume"
