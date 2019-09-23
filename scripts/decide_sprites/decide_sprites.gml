@@ -56,6 +56,7 @@ switch character
 				sprites[? "jump_u"]=Ooga_U_jump
 				sprites[? "air_u"]=Ooga_U_air
 				sprites[? "fall_u"]=Ooga_U_fall
+				sprites[? "envoke"]=Ooga_4H_envoke
 			}
 		}
 /*        else if palette==1
@@ -118,6 +119,7 @@ switch character
 			sprites[? "death_acid"]=Vet_death_by_acid
 			sprites[? "death_zap"]=Vet_death_by_zap
 			sprites[? "death_ice"]=Vet_death_by_ice
+			sprites[? "envoke"]=Vet_3H_envoke
 		}
 	}break;
     
@@ -167,6 +169,7 @@ switch character
 			sprites[? "death_ice"]=Slinger_death_by_ice
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  //super version
+			sprites[? "envoke"]=Slinger_3H_envoke
 		}
 	} break;
 	
@@ -215,6 +218,7 @@ switch character
 		sprites[? "death_acid"]=Bait_death_by_acid
 		sprites[? "death_zap"]=Bait_death_by_zap
 		sprites[? "death_ice"]=Bait_death_by_ice
+		sprites[? "envoke"]=Bait_3H_envoke
 	} break;
     
 	default:

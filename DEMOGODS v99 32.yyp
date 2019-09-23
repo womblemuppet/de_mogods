@@ -2767,6 +2767,14 @@
             }
         },
         {
+            "Key": "5894ad62-c419-4b47-a6cb-f5a2a1bfa71e",
+            "Value": {
+                "id": "4c39ce4d-cf6d-41c2-b1f1-19e590d900f2",
+                "resourcePath": "sprites\\Slinger_3H_envoke\\Slinger_3H_envoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58a7e927-cb9a-4413-b93b-4fa7b7bd3ac8",
             "Value": {
                 "id": "6067316d-125a-4703-acec-5d2ac49f0984",
@@ -3671,6 +3679,14 @@
             }
         },
         {
+            "Key": "71be92a0-e83d-41e0-9edb-11bf9e340131",
+            "Value": {
+                "id": "7cf540c5-c842-4d0c-a609-51d1a6bb5073",
+                "resourcePath": "sprites\\Ooga_4H_envoke\\Ooga_4H_envoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71f10d9c-db1c-4627-803c-e2f3692cb222",
             "Value": {
                 "id": "a60d9579-6388-47b0-8079-1b5c8e656daa",
@@ -3931,6 +3947,14 @@
             "Value": {
                 "id": "d5837675-47f4-47cf-974e-5e4fe75316ad",
                 "resourcePath": "sprites\\jellyfish_sprite\\jellyfish_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7962075c-2c10-4002-880d-ca951c95d4fc",
+            "Value": {
+                "id": "efdf876f-f8a0-4f2f-9e68-4972b377b0a5",
+                "resourcePath": "sprites\\Bait_3H_envoke\\Bait_3H_envoke.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6276,6 +6300,14 @@
                 "id": "e0eb6e1d-6b18-492b-8366-e64948e6dda4",
                 "resourcePath": "scripts\\ky\\ky.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bf005fed-5378-4a99-803b-dd98a1debdf8",
+            "Value": {
+                "id": "ddcee52b-5aff-4eba-94f4-41a8ecdbc1fe",
+                "resourcePath": "sprites\\Vet_3H_envoke\\Vet_3H_envoke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -234,5 +234,9 @@ else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprit
 	if super_mode
 		sprite_index=sprites[? "uniques_dig_u"]
 }
+else if sprite_index==sprites[? "envoke"]
+{
+	player_set_idle()	
+}
 
 
