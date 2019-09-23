@@ -1727,6 +1727,14 @@
             }
         },
         {
+            "Key": "360021fe-213e-4807-8f77-2d370ad275f7",
+            "Value": {
+                "id": "cf2629a7-8383-421b-b926-5caea42fca55",
+                "resourcePath": "sprites\\tornado_rain_on_block_effect\\tornado_rain_on_block_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "361ddddc-82bf-46a3-b364-5a2cd30d9f99",
             "Value": {
                 "id": "5986e510-1d47-43d5-b59b-1fe667293fd4",
@@ -3620,6 +3628,14 @@
                 "id": "4916c0e6-ca4d-4d9d-a538-c18af219b096",
                 "resourcePath": "objects\\freakyfriday\\freakyfriday.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "702fb915-c14f-480d-ba3f-be32401e8655",
+            "Value": {
+                "id": "e0d6b409-558b-4a1a-a41a-ba714dea3465",
+                "resourcePath": "sprites\\tornado_rain_tile\\tornado_rain_tile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

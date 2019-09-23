@@ -1,6 +1,8 @@
 alarm[0]=35   ///become active alarm
 alarm[1]=990   //destroy alarm
 
+sky.rain_on=true
+
 sprite_index=tornado_main_spr
 image_speed=0.2
 

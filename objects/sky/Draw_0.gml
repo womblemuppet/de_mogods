@@ -16,5 +16,15 @@ else
     draw_rectangle_colour(kouchou.room_left_border_x,kouchou.room_top_border_y,kouchou.room_right_border_x,kouchou.room_bottom_border_y,topcol,topcol,c_black,c_black,false)  //background fill behind cave backdrop
 }
 
-
+if rain_on
+{
+	for (var i = -1; i <1+ kouchou.room_right_border_x/TORNADO_RAIN_TILE_SIZE;i++)
+	{
+		for (var ii = -1; ii <1+ kouchou.room_bottom_border_y/TORNADO_RAIN_TILE_SIZE;ii++) 
+		{
+			draw_sprite(tornado_rain_tile,0,i*TORNADO_RAIN_TILE_SIZE+rain_offset,ii*TORNADO_RAIN_TILE_SIZE+rain_offset)
+		}
+	}	
+	
+}
 

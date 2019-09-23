@@ -3,6 +3,14 @@ horizon_2_start=775+kouchou.room_top_border_y
 horizon_1=horizon_1_start   ///sky meets sea
 horizon_2=horizon_2_start   ///sea meets ground
 
+rain_on=false
+rain_offset=0
+RAIN_OFFSET_MAX=275
+TORNADO_RAIN_TILE_SIZE=275
+
+rain_make_block_effect_counter=0
+RAIN_MAKE_BLOCK_EFFECT_COUNTER_MAX=10
+
 
 convergence=7000
 
