@@ -905,12 +905,13 @@ if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////
 				if uniques_parachute==1
 					uniques_parachute=2   //dash cancels parachute
 					
-				if instance_exists(tornadoe)
+				if instance_exists(tornadoe)    ////'push' tornado if under it
 				{
 					for (var i = 0; i < instance_number(tornadoe); i++)
 					{
 						var t = instance_find(tornadoe,i)
-						if x>t.x-t.WIDTH/2 && x<t.x+t.WIDTH/2
+						
+						if x>t.x-t.WIDTH/2-75 && x<t.x+t.WIDTH/2+75
 						{
 							if right
 								t.hspd=t.pushed_speed

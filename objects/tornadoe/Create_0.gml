@@ -1,6 +1,7 @@
 alarm[0]=35   ///become active alarm
 alarm[1]=990   //destroy alarm
 
+sprite_index=tornado_main_spr
 image_speed=0.2
 
 hspd=1.25
@@ -11,9 +12,12 @@ WIDTH=150
 TOTAL_HEIGHT=700
 height=50   ///distance from top of tornado to death line
 height_delta_counter=0
+horizontal_delta_counter=0
 effect_line_y=0   ///death line
 MAX_GROWTH_DEPTH=600
 grow_rate=0.5
+block_syphon_effects_counter=0
+BLOCK_SYPHON_EFFECTS_COUNTER_MAX=30
 
 pushed_speed=7
 min_speed=2

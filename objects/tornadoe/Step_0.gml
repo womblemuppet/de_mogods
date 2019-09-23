@@ -1,3 +1,18 @@
+var check_blocks_this_step;
+check_blocks_this_step=true
+
+//if horizontal_delta_counter>10 
+//{
+//	horizontal_delta_counter-=10
+//	check_blocks_this_step=true
+//}
+//else if horizontal_delta_counter<-10
+//{
+//	horizontal_delta_counter+=10
+//	check_blocks_this_step=true
+//}
+
+
 if active
 {
 	var effect_line_yy,xmin,xmax
@@ -11,23 +26,29 @@ if active
 		height_delta_counter+=grow_rate
 		effect_line_y=y-TOTAL_HEIGHT+height
 		
-		if height_delta_counter>10                    //////////destroy blocks above effect line every 10 moves
+		if height_delta_counter>20                    //////////destroy blocks above effect line every 10 moves
 		{
-			height_delta_counter-=10
-			
+			height_delta_counter-=20
+			//check_blocks_this_step=true
+		}
+
+		//if check_blocks_this_step==true
+		//{
 			ds_list_clear(make_effect_blocks)
 			
 			var make_effect_blocks_ref;
-			make_effect_blocks_ref=make_effect_blocks;
-			
+			make_effect_blocks_ref=make_effect_blocks
+		
+		
 			with block
 			{
-				if y<effect_line_yy-30 && x>xmin && x<max
+				if y < effect_line_yy+100 && x>xmin-37 && x<xmax+38
 					ds_list_add(make_effect_blocks_ref,self.id)
+					
 				if y<effect_line_yy && x>xmin && x<xmax
 					block_take_damage()
 			}
-		}
+		//}
 	}
 
 	
@@ -49,6 +70,38 @@ if active
 	}
 }
 
+if block_syphon_effects_counter==BLOCK_SYPHON_EFFECTS_COUNTER_MAX || block_syphon_effects_counter==ceil(BLOCK_SYPHON_EFFECTS_COUNTER_MAX/4)  || block_syphon_effects_counter==2*ceil(BLOCK_SYPHON_EFFECTS_COUNTER_MAX/4)  || block_syphon_effects_counter==3*ceil(BLOCK_SYPHON_EFFECTS_COUNTER_MAX/4)
+{
+	var a;    ///left
+	a=effect_aniend(tornado_wind_sides_spr,0.2,-2)
+	a.x=xmin
+	a.y=effect_line_y
+	
+	var a;    ///right
+	a=effect_aniend(tornado_wind_sides_spr,0.2,-2)
+	a.x=xmax
+	a.image_xscale=-1
+	a.y=effect_line_y
+}
+
+block_syphon_effects_counter++
+if block_syphon_effects_counter>BLOCK_SYPHON_EFFECTS_COUNTER_MAX
+{
+	block_syphon_effects_counter=0
+	for (var i = 0; i < ds_list_size(make_effect_blocks);i++)
+	{
+		if !instance_exists(make_effect_blocks[| i])
+			continue;
+
+		var a;
+		a=effect_aniend(tornado_syphon_block_effect_spr,0.2,-1)
+		a.x=make_effect_blocks[| i].x
+		a.y=make_effect_blocks[| i].y
+		a.image_index=irandom(5)
+	}
+	
+
+}
 
 /// friction
 if hspd>min_speed
@@ -61,10 +114,17 @@ if hspd<-min_speed
 if hspd>0
 {
 	if x+hspd+WIDTH/2<kouchou.room_right_border_x
+	{
 		x+=hspd
+		horizontal_delta_counter+=hspd
+	}
 }
-else if hspd<0
+else //if hspd<0 will always be moving horizontally
 {
 	if x-hspd-WIDTH/2>kouchou.room_left_border_x
+	{
 		x+=hspd
+		horizontal_delta_counter+=hspd
+	}
 }
+

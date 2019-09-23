@@ -2490,7 +2490,7 @@
             "Key": "4f64edcf-31be-4c2a-b298-71dc4b9d7723",
             "Value": {
                 "id": "fb65ec04-1c70-4a90-a805-89dfa8e0b96f",
-                "resourcePath": "sprites\\spiralpower_base_in_zone\\spiralpower_base_in_zone.yy",
+                "resourcePath": "sprites\\tornado_syphon_block_effect_spr\\tornado_syphon_block_effect_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5075,6 +5075,14 @@
             "Value": {
                 "id": "cd2650fe-9a66-4af2-b7ae-5916bd9b96da",
                 "resourcePath": "sprites\\Vet_3H_rocketjump\\Vet_3H_rocketjump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b45951a-8a13-49e7-a297-dcac2ca32d87",
+            "Value": {
+                "id": "8734feb4-f151-4418-894a-5ff462ab4886",
+                "resourcePath": "sprites\\tornado_wind_sides_spr\\tornado_wind_sides_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8314,7 +8322,7 @@
             "Key": "fbe59fc0-7ec7-4624-a0dc-92af138ea04e",
             "Value": {
                 "id": "9c5dcedc-58ee-4590-baeb-43f3893a65bd",
-                "resourcePath": "sprites\\spiralpower_base\\spiralpower_base.yy",
+                "resourcePath": "sprites\\tornado_main_spr\\tornado_main_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
