@@ -177,4 +177,6 @@ switch txt
 	break;
 }
 
+
+
 keyboard_string=""

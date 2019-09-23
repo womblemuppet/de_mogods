@@ -1,0 +1,1 @@
+keyboard_string=log[| log_pos_last-2]
