@@ -1,3 +1,5 @@
+/// @description die
+
 if kouchou.map=="multiplayer"
     stack_call_next()
   

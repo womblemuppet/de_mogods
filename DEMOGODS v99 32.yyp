@@ -3298,7 +3298,7 @@
             "Key": "6381e76c-9ea8-4b62-bbc4-a36b7df728d7",
             "Value": {
                 "id": "c2217c02-07af-4d01-937f-42601a83cb4d",
-                "resourcePath": "scripts\\STACK_call_next\\STACK_call_next.yy",
+                "resourcePath": "scripts\\stack_call_next\\stack_call_next.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7747,6 +7747,14 @@
             "Value": {
                 "id": "d0c70299-9e22-447f-a9e9-bc87991f7ac0",
                 "resourcePath": "sprites\\Bait_rjump_effect_spr\\Bait_rjump_effect_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6a80352-62d9-4528-92c9-d042e9945075",
+            "Value": {
+                "id": "509d32d0-7d21-435b-92b0-b9ef9a593e8e",
+                "resourcePath": "sprites\\storm_top_layer_spr\\storm_top_layer_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
