@@ -3527,6 +3527,14 @@
             }
         },
         {
+            "Key": "6bc8c163-dc14-4da4-be96-a54d63a9cc5c",
+            "Value": {
+                "id": "6ac6681b-9991-4d7b-aec0-2c3ee91d89a4",
+                "resourcePath": "sprites\\animation_cancel_effect_spr\\animation_cancel_effect_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6c1a722c-e954-4c9e-b23a-a7dd46c2679b",
             "Value": {
                 "id": "411d6cdb-afed-447e-bc60-89fa3fd45ec1",
