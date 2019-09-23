@@ -1,5 +1,4 @@
-if pocket_orb[0]==-1
-{
+if number_of_pockets==0
 	return true	
-}
+
 return false

@@ -111,10 +111,11 @@ chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 
 NUMBER_OF_POCKET_SPACES=4
-pocket_orb[NUMBER_OF_POCKET_SPACES-1]=-1    ///type of pocketed orb
+number_of_pockets=0    ///type of pocketed orb
 player_empty_pockets()
 pocket_super_mode_stored=false ///if true, super_mode is stored in current pocket
 pocket_light_heavy_held_counter=0
+
 canbounce_counter=0  ///bounce counter
 canbounce_show_bounced_effect_counter=0   ///effect trail after bouncing off wall
 CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME=10

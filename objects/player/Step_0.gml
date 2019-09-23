@@ -352,9 +352,9 @@ if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 if checkkey(lightbutton) && checkkey(heavybutton)                                               /////// pocket event
 {
 	pocket_light_heavy_held_counter+=1
-	if pocket_light_heavy_held_counter>3
+	if pocket_light_heavy_held_counter>2
 	{
-		if !player_no_pockets()
+		if !player_has_no_pockets()
 		{
 			player_use_pocket()
 		}

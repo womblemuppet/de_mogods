@@ -1,12 +1,4 @@
-for (var i=0;i<NUMBER_OF_POCKET_SPACES;i++)
-{
-	if pocket_orb[i]==-1
-	{
-		pocket_orb[i]=argument0
-		exit;
-	}
-}
-
-
+if number_of_pockets<NUMBER_OF_POCKET_SPACES
+	number_of_pockets+=1
 
 //[finaledit] what to do if pockets are full?

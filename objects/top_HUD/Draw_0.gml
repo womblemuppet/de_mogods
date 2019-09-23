@@ -37,8 +37,9 @@ for (var v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 
 		for (var i=0;i<4;i++)
 		{
-			if player_pocket_orb_sprite[v,i]!=-1
-				draw_sprite(player_pocket_orb_sprite[v,i],0,xx+pocket_mask_xoffset+i*pocket_mask_gap_width,player_hud_start_y+pocket_mask_yoffset)
+			if i<player_number_of_pockets[v]
+				draw_sprite(orb_in_hud_spr,0,xx+pocket_mask_xoffset+i*pocket_mask_gap_width,player_hud_start_y+pocket_mask_yoffset)
+			//else draw no_orb_sprite
 		}
 	}
 }
