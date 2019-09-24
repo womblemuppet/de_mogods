@@ -3,7 +3,7 @@ if ready[argument0]==0
     switch selected_character_id[argument0]
     {
         case 0:
-        selected_character_id[argument0]=5 break;
+        selected_character_id[argument0]=3 break;
         case 1:
         selected_character_id[argument0]=0 break;
         case 2:

@@ -166,7 +166,7 @@ character_portraits_array[0]=character_portraits_ooga
 character_portraits_array[1]=character_portraits_vet
 character_portraits_array[2]=character_portraits_slinger
 character_portraits_array[3]=character_portraits_bait
-character_portraits_array[4]=character_portraits_bert
+character_portraits_array[4]=character_portraits_spiderguy
 character_portraits_array[5]=character_portraits_jermy
 
 selected_character_id[3]=-1

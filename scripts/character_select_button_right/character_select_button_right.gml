@@ -11,7 +11,7 @@ if ready[argument0]==0
         case 3:
         selected_character_id[argument0]=4 break;
         case 4:
-        selected_character_id[argument0]=5 break;
+        selected_character_id[argument0]=0 break;
         case 5:
         selected_character_id[argument0]=0 break;            
     }
