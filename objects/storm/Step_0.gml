@@ -33,11 +33,6 @@ if mode==0 || mode==1
 if mode==0 && image_index>23
     image_index=0
 
-storm_offset_x++
-if storm_offset_x>STORM_TOP_LAYER_SPRITE_WIDTH
-	storm_offset_x=0
-
-
 
 /***************************************************
   0=highest competition

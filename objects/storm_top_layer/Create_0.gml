@@ -1,0 +1,4 @@
+storm_top_layer_offset_x_counter=0
+storm_top_layer_offset_x=0
+STORM_TOP_LAYER_SPRITE_WIDTH=194
+image_speed=0.2

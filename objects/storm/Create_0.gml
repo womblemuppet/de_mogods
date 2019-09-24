@@ -5,9 +5,7 @@ mode=0
 highest=-1
 y=kouchou.room_top_border_y  ///origin is just above top of sprite
 
-
-storm_offset_x=0
-STORM_TOP_LAYER_SPRITE_WIDTH=194
+my_top_layer=instance_create_depth(0,0,1,storm_top_layer)
 
 /***************************************************
   0=highest competition
