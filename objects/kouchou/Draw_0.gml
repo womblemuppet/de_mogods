@@ -353,7 +353,7 @@ else if room==multiplayermenu
 			t="1"
 		else
 			t="start"
-		draw_text(room_width/2,room_height/2,t)
+		draw_text(room_width/2,room_height/2+150,t)
 	}
     
 

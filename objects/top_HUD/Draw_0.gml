@@ -73,7 +73,7 @@ for (var i = 0; i < ds_list_size(aizen.UPCOMING_STACK_DISPLAY_NUMBER); i++)
 	var orb_sprite;
 	orb_sprite=ds_list_find_value(aizen.STACK_ORB_SPRITES,ds_list_find_value(aizen.upcoming_stack,i))
 	
-	draw_sprite_ext(orb_sprite,0,upcoming_stack_hud_start_x,upcoming_stack_hud_start_y+i*upcoming_stack_mask_interval_height,0.8,0.8,0,c_white,1)
+	draw_sprite_ext(orb_sprite,0,upcoming_stack_hud_start_x,upcoming_stack_hud_start_y+i*upcoming_stack_mask_interval_height,0.7,0.7,0,c_white,1)
 }
 
 //if last_stack_sprite!=-1

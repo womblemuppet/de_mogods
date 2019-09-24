@@ -89,6 +89,5 @@ else if room==multiplayermenu
 		a=create_menupart_basic(cupppp,0.01,room_width/2,room_height/2,-4,cup_hover_movement)
 		a.vspeed=0.5
 		a.gravity=0.1
-		
 	}
 }
