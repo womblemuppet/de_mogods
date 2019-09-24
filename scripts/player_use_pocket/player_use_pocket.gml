@@ -1,4 +1,4 @@
-stack_add_orb(0,true)
+stack_add_orb(undefined,true)
 
 
 number_of_pockets-=1

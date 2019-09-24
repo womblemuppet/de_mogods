@@ -3,7 +3,13 @@
 ****************************************************/
 
 ///add type to stack
-ds_list_add(aizen.STACK,argument0)
+
+var orb_to_add;
+orb_to_add=argument0
+if orb_to_add==undefined
+	orb_to_add=take_from_upcoming_stack()
+	
+ds_list_add(aizen.STACK,orb_to_add)
 
 with aizen
 {

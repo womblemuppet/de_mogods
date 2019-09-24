@@ -19,8 +19,14 @@ fossil_surface_redraw_needed=false
 
 
 STACK=ds_list_create() //not a stack. but, the stack. hence the caps. oh well.
-STACK_SHITCALL_NUMBER=3  /// [finaledit] probably can delete this variable
+STACK_SHITCALL_NUMBER=3  /// shitcalls at this many orbs on stack
 last_stack_sprite=-1
+
+upcoming_stack=ds_list_create()
+UPCOMING_STACK_DISPLAY_NUMBER=3   ///number of upcoming orbs to be shown
+repeat(UPCOMING_STACK_DISPLAY_NUMBER+1)
+	generate_upcoming_stack_next()
+
 debug_show_hitboxes=false
 debug=false
 
