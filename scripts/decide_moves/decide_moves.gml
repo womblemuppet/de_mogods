@@ -69,6 +69,7 @@ switch (character)
 	uniques_parachute_enabled=true
 	uniques_mines_enabled=true
 	uniques_sticky_mine_enabled=true
+	uniques_uga_delayable_gp_enabled=true
 	mines_ammo=3   ///starting mines
 	uniques_vet_dig_enabled=true
 	super_mode_duration=1000
@@ -94,6 +95,7 @@ switch (character)
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
 	
      uniques_phase_enabled=true
+	uniques_uga_delayable_gp_enabled=true
 	super_mode_duration=1000
 	break;
 
@@ -119,6 +121,7 @@ switch (character)
 	//running_startup_frames=1  ///[finaledit] add to every character
 	uniques_super_ooga_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
+	uniques_uga_delayable_gp_enabled=true
 	uniques_teleport_enabled=true
 	uniques_teleport=0
 	super_mode_duration=1000
