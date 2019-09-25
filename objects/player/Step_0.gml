@@ -149,7 +149,14 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 				else if octdir==180 || octdir==225 || octdir ==135
 					throw_direction=180
 				else if octdir==270
+				{
 					throw_direction=270
+					if sprite_index!=sprites[? "airslam"] && sprite_index!=sprites[? "airslam_u"]
+						image_index=0
+					sprite_index=sprites[? "airslam"]
+					if super_mode
+						sprite_index=sprites[? "airslam_u"]
+				}
 				else
 				{
 					if right
@@ -157,9 +164,6 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					else
 						throw_direction=180
 				}
-					
-					
-				
 				
 
 				var at;
