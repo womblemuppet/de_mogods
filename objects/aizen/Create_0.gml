@@ -25,7 +25,7 @@ last_stack_sprite=-1
 upcoming_stack=ds_list_create()
 UPCOMING_STACK_DISPLAY_NUMBER=3   ///number of upcoming orbs to be shown
 repeat(UPCOMING_STACK_DISPLAY_NUMBER+1)
-	generate_upcoming_stack_next()
+	generate_upcoming_stack_next(self.id)
 
 debug_show_hitboxes=false
 debug=false
