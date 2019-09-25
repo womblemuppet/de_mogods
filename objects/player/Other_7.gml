@@ -12,12 +12,12 @@ else if sprite_index==sprites[? "jump_u"]    ///jump super
 	sprite_index=sprites[? "air_u"]    ///air super
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "airgrab"]  ///airgrab
+else if sprite_index==sprites[? "airgrab"] || sprites[? "uniques_airgrab_slam_down"]  ///airgrab
 {
 	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "airgrab_u"]    ///airgrab super
+else if sprite_index==sprites[? "airgrab_u"]   || sprite_index==sprites[? "uniques_airgrab_slam_down_u"]   ///airgrab super
 {
 	sprite_index=sprites[? "air_u"]    ///air super
 	 image_speed=FRAME_SPEED_SLOW
@@ -44,26 +44,6 @@ else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack
 	hspd=0
 	//mild_slowed_counter=8
 	brutal_slowed_counter=4
-	player_set_idle()
-}
-else if sprite_index==sprites[? "uniques_airgrab_slam_down"] || sprite_index==sprites[? "uniques_airgrab_slam_down_u"]   //uga airgrab slam
-{
-	uniques_slam_airgrab_slam_lockdown=2
-	sprite_index=sprites[? "uniques_airgrab_slam_down"]
-	if super_mode
-		sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
-	vspd=UNIQUES_SLAM_AIRGRAB_VSPD
-
-	if instance_exists(uniques_slam_airgrab_target) && uniques_slam_airgrab_target!=noone
-	{
-		if uniques_slam_airgrab_target.airgrab_mode=="being_airgrabbed"
-			uniques_slam_airgrab_target.airgrab_mode="cannot_airgrab"
-	}
-	
-	attack_create_hitbox(40,0,true,true,"uga_air_slam",uga_airgrab_slam_fake_hitbox,0.2,99,0,-20)
-
-	uniques_slam_airgrab_target=noone
-	airgrab_decidedir_time=0
 	player_set_idle()
 }
 else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine

@@ -18,6 +18,5 @@ if uniques_fpunch_lockdown==0
 && uniques_airbolt_lockdown==0 
 && uniques_sticky_mine_lockdown==0 
 && uniques_dashgpblinkattack_lockdown==0 
-&& uniques_slam_airgrab_slam_lockdown==0
 	return true
 return false

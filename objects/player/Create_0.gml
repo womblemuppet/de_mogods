@@ -122,7 +122,7 @@ CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME=10
 BOUNCE_HORIZONTAL_VELOCITY=12
 BOUNCE_HORIZONTAL_MINOR_VELOCITY=1
 BOUNCE_VERTICAL_SKIM_VELOCITY=4  //positive, gets minused
-BOUNCE_VERTICAL_ONLY_VELOCITY=17  //positive, gets minused
+BOUNCE_VERTICAL_ONLY_VELOCITY=14  //positive, gets minused
 iframes=0 //cant be hit while this is >0
 armouredframes=0  //can't be knocked back during this time
 FRAME_SPEED_NORMAL=0.2
@@ -148,12 +148,6 @@ uniques_my_teleport_id=noone
 uniques_uga_delayable_gp_enabled=false
 GROUND_POUND_EXTRA_DELAY_MAX=40
 ground_pound_extra_delay_counter=0
-
-//UGA AIRGRAB SLAM
-uniques_slam_airgrab_slam_enabled=false
-uniques_slam_airgrab_slam_lockdown=0 //0 can do 1 freeze 2 slamming down
-uniques_slam_airgrab_target=noone
-UNIQUES_SLAM_AIRGRAB_VSPD=22
 
 //OOGA FPUNCH
 uniques_fpunch_cd_counter=0
@@ -259,8 +253,7 @@ airgrab_mode="can_airgrab"   ///"can_airgrab" "attempting" "is_grabbing" "cannot
 airgrab_decidedir_time=0
 AIRGRAB_TIME_TO_DECIDE=45
 airgrab_target=-1
-AIRGRAB_RANGE_VERTICAL=90
-AIRGRAB_RANGE_HORIZONTAL=80
+airgrab_slam_on=false
 MAX_CANBOUNCE_COUNTER=20
 AIRGRAB_STUN_TIME=65
 

@@ -63,28 +63,28 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 {
 	if instance_exists(airgrab_target) && airgrab_target!=noone    /// position grabbed target infront of character
 	{
-		if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==0 && checkkey(dashbutton) && checkkey(downbutton)
-		{///UGA unique airgrab slam
-			uniques_slam_airgrab_slam_lockdown=1
-			sprite_index=sprites[? "uniques_airgrab_slam_down"]
-			if super_mode
-				sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
-			image_index=0
-			image_speed=0.2
-			uniques_slam_airgrab_target=airgrab_target
-			uniques_slam_airgrab_target.x=x
-			uniques_slam_airgrab_target.y=y
+		//if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==0 && checkkey(dashbutton) && checkkey(downbutton)
+		//{///UGA unique airgrab slam
+		//	uniques_slam_airgrab_slam_lockdown=1
+		//	sprite_index=sprites[? "uniques_airgrab_slam_down"]
+		//	if super_mode
+		//		sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
+		//	image_index=0
+		//	image_speed=0.2
+		//	uniques_slam_airgrab_target=airgrab_target
+		//	uniques_slam_airgrab_target.x=x
+		//	uniques_slam_airgrab_target.y=y
 			
-			with airgrab_target
-			{
-				vspd=0
-				hspd=0
-			}
+		//	with airgrab_target
+		//	{
+		//		vspd=0
+		//		hspd=0
+		//	}
 				
-			airgrab_decidedir_time=0
-			airgrab_target=noone
+		//	airgrab_decidedir_time=0
+		//	airgrab_target=noone
 			
-		}
+		//}
 		
 		
 		var tx,ty,steps_to_try_move;
@@ -139,8 +139,29 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 			case "standard_airgrab_effect":
 			if instance_exists(airgrab_target) && airgrab_target!=noone   ///if airgrab target exists, apply throw
 			{
-				var throw_to_right;   ///whether throwing left or right, to be passed to airgrab target
-				throw_to_right=right
+				var throw_direction,bounce;
+				bounce=0
+				
+				////decide throw direction right left or down (up=use 'right' variable)
+				aim_octilinear()
+				if octdir==0 || octdir ==315 || octdir ==45
+					throw_direction=0
+				else if octdir==180 || octdir==225 || octdir ==135
+					throw_direction=180
+				else if octdir==270
+					throw_direction=270
+				else
+				{
+					if right
+						throw_direction=0
+					else
+						throw_direction=180
+				}
+					
+					
+				
+				
+
 				var at;
 				at=AIRGRAB_STUN_TIME;
 
@@ -150,12 +171,21 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					canbounce_counter=at
 					stunned_groundpound=at
 					airgrab_mode="cannot_airgrab"
-					if throw_to_right==true
-						hspd=7.5
-					else
-						hspd=-7.5
-						
+					
 					vspd=18
+					if throw_direction==0
+						hspd=7.5
+					else if throw_direction==180
+						hspd=-7.5
+					else if throw_direction==270
+					{
+						airgrab_slam_on=true
+						canbounce_counter=40
+						vspd=24
+					}
+					
+						
+					
 					float_counter=10
 					
 					if player_is_hittable("standard_airgrab_effect")
@@ -197,14 +227,7 @@ player_add_gravity()
 if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downward block collision  (don't count as landed if launching rocket jump)
 {
 	airgrab_mode="can_airgrab"   ///reset airgrab antispam penalty
-	
-	if uniques_slam_airgrab_slam_enabled && uniques_slam_airgrab_slam_lockdown==2
-	{
-		create_terrain_cutter(uga_airgrab_slam_terrain_cut,"hit",270,6)
-		effect_aniend(uga_airgrab_slam_effect,FRAME_SPEED_SLOW,-4)
-		uniques_slam_airgrab_slam_lockdown=0
-		player_set_idle()
-	}
+	airgrab_slam_on=false
 
 	if uniques_whirlwind_active
 	{
