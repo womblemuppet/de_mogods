@@ -2575,6 +2575,14 @@
             }
         },
         {
+            "Key": "524834a4-ea63-49c6-b0ee-1792fb038002",
+            "Value": {
+                "id": "c3722642-3482-437e-b497-09c484264079",
+                "resourcePath": "sprites\\sky_meteor_tex\\sky_meteor_tex.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52799e92-aaa5-424e-9f8e-72deb4ee5ab4",
             "Value": {
                 "id": "77d62a69-6f9a-403c-bf39-f3bd8db5859d",
@@ -5756,6 +5764,14 @@
                 "id": "1abdc276-600f-4e8a-b288-f810d032edb3",
                 "resourcePath": "sprites\\vet_3H_sticky_mine_connect_effect\\vet_3H_sticky_mine_connect_effect.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ae1e7801-88f6-4924-934c-75a22dbb7f28",
+            "Value": {
+                "id": "d5827395-4ebb-43f3-a135-3bd6f4f1c32b",
+                "resourcePath": "objects\\red_sky_effect\\red_sky_effect.yy",
+                "resourceType": "GMObject"
             }
         },
         {

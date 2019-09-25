@@ -1,4 +1,3 @@
-alarm[1]=30
 ammo-=1
 
 if ammo>0
@@ -10,3 +9,5 @@ if ammo>0
 else
 	instance_destroy()
 
+
+alarm[1]=30

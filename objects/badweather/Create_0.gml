@@ -20,9 +20,17 @@ for (var i = 0; i < numberofmeteors/2;i++)
     instance_create_depth(kouchou.room_right_border_x-gap_width*i,-20-i*gap_height,0,meteor)
 }
 
+var previously_existed;
+previously_existed=false
 
+if instance_exists(red_sky_effect)
+{
+	with red_sky_effect
+		instance_destroy()
+	previously_existed=true
+}
 
-meteor_wave="start"   ///0=wave to right 1=wave to left 2=freethrow
-
-
+myskyeffect=instance_create_depth(0,0,0,red_sky_effect)
+if previously_existed
+	myskyeffect.image_index=image_number
 
