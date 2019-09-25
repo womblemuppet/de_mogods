@@ -154,6 +154,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 						hspd=7.5
 					else
 						hspd=-7.5
+						
 					vspd=18
 					float_counter=10
 					

@@ -257,7 +257,7 @@ uniques_honeybadger_enabled=false
 // AIRGRAB
 airgrab_mode="can_airgrab"   ///"can_airgrab" "attempting" "is_grabbing" "cannot_airgrab" "being_airgrabbed"
 airgrab_decidedir_time=0
-AIRGRAB_TIME_TO_DECIDE=30
+AIRGRAB_TIME_TO_DECIDE=45
 airgrab_target=-1
 AIRGRAB_RANGE_VERTICAL=90
 AIRGRAB_RANGE_HORIZONTAL=80
