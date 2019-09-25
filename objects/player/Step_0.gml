@@ -617,14 +617,18 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
 			airgrab_mode="attempting"   /// airgrab thrown out (doesn't mean connected, just that attack has been created)
 
 			aim_octilinear()
-			var xx,yy;
-			xx=lengthdir_x(AIRGRAB_RANGE_VERTICAL,octdir)
-			yy=lengthdir_y(AIRGRAB_RANGE_HORIZONTAL,octdir)
+			var x_offset;
+			x_offset=40
+			if !right
+				x_offset=-40
+			
 			var a;
-			a=instance_create(x+xx,y+yy+15,airgrab)
+			a=instance_create(x+x_offset,y,airgrab)
 			a.creator=self.id
-			a.xx=xx
-			a.yy=yy+15
+			a.x_offset=x_offset    ///airgrab is follower
+			a.y_offset=0
+			if !right
+				a.image_xscale=-1
 			
             
 			sprite_index=sprites[? "airgrab"]
