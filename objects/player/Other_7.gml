@@ -12,12 +12,12 @@ else if sprite_index==sprites[? "jump_u"]    ///jump super
 	sprite_index=sprites[? "air_u"]    ///air super
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "airgrab"] || sprites[? "uniques_airgrab_slam_down"]  ///airgrab
+else if sprite_index==sprites[? "airgrab"] || sprites[? "airslam"]  ///airgrab
 {
 	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "airgrab_u"]   || sprite_index==sprites[? "uniques_airgrab_slam_down_u"]   ///airgrab super
+else if sprite_index==sprites[? "airgrab_u"]   || sprite_index==sprites[? "airslam_u"]   ///airgrab super
 {
 	sprite_index=sprites[? "air_u"]    ///air super
 	 image_speed=FRAME_SPEED_SLOW
