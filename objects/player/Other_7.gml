@@ -195,7 +195,7 @@ else if sprite_index==sprites[? "phase"] || sprite_index==sprites[? "phase_u"]
 	attack_slinger_phase_move()
 	player_set_idle()
 }
-else if sprite_index==sprite_index=sprites[? "uniques_superblast"]
+else if sprite_index==sprites[? "uniques_superblast"]
 {
 	uniques_slinger_superblast_lockdown=0
 	player_set_idle()	

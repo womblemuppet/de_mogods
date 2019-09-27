@@ -219,7 +219,16 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 {
 	if uniques_slinger_superblast_has_made_hitbox==false
 	{
-		attack_create_hitbox(100,1,false,true,"slinger_superblast",HITBOX,0.2,99,0,0)	
+		with attack_create_hitbox(100,1,false,true,"slinger_superblast",superblast_hitbox_spr,0.2,99,0,0)
+		{
+			image_xscale=sign(image_xscale)
+			image_yscale=sign(image_yscale)
+		}
+		var a;
+		a=effect_aniend(superblast_blast_spr,0.2,-2)
+		if !right
+			a.image_xscale=-1
+		create_terrain_cutter(superblast_hitbox_spr,"disintegrated",270,2)
 	}
 	
 	uniques_slinger_superblast_has_made_hitbox=true
