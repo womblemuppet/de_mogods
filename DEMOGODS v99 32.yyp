@@ -4471,6 +4471,14 @@
             }
         },
         {
+            "Key": "878f8b0f-0fbb-4175-b298-3f23654a97e5",
+            "Value": {
+                "id": "bc8f16a5-112d-4fb5-8f7d-f9404a69bebb",
+                "resourcePath": "sprites\\Vet_3H_super_charge\\Vet_3H_super_charge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "87f712d2-6ae7-4d11-8309-819e9ca6b4a1",
             "Value": {
                 "id": "27ca3904-27c0-44fd-a091-8afb63423f93",
@@ -5159,14 +5167,6 @@
             }
         },
         {
-            "Key": "99dcbeb1-c410-4c9b-a68a-926358eb71dd",
-            "Value": {
-                "id": "f6958c0e-84fe-437f-869d-061c47d97d6e",
-                "resourcePath": "sprites\\vet_upfowarddash_hitbox\\vet_upfowarddash_hitbox.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "9a3b07b9-5d03-4233-9c0f-d59df9e2f633",
             "Value": {
                 "id": "755250fa-7ce2-4d31-b6d2-b718a36c9327",
@@ -5660,6 +5660,14 @@
                 "id": "2240df70-3741-4bc9-b09c-6936b86a6ff9",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a91b9cf8-533d-427d-badc-a95524e2bc59",
+            "Value": {
+                "id": "1ec9e0be-2df6-4d89-92e6-b85c69f3201a",
+                "resourcePath": "sprites\\Vet_3H_super_charge_hitbox\\Vet_3H_super_charge_hitbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

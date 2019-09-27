@@ -202,6 +202,11 @@ UNIQUES_PARACHUTE_MINIMUM_TIME=30
 uniques_vet_dig_enabled=false
 uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontally 3 = digging up 
 
+//VETERAN SUPER CHARGE-IN
+uniques_vet_kamikaze_lockdown=0
+uniques_vet_kamikaze_dash_current_hitbox_object=noone
+UNIQUES_VET_KAMIKAZE_HSPEED=10
+
 //SLINGER PHASE
 uniques_phase_enabled=false
 uniques_phase_counter=0

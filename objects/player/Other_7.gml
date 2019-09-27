@@ -75,6 +75,15 @@ else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprite
 			sprite_index=sprites[? "uniques_dig_u"]
 	}
 }
+else if sprite_index==sprites[? "uniques_kamikaze"]
+{
+	if uniques_vet_kamikaze_lockdown==2
+	{
+		uniques_vet_kamikaze_lockdown=0
+		player_set_idle()
+	}
+	
+}
 else if sprite_index==sprites[? "uniques_place_teleport"]  ///bait teleport place
 {
 	player_set_idle()

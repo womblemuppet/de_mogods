@@ -11,6 +11,7 @@ uniques_spinner_attack_hitbox_id=noone
 uniques_sticky_mine_lockdown=0
 uniques_sunblast_lockdown=0
 uniques_airbolt_lockdown=0
+uniques_vet_kamikaze_lockdown=0
 airgrab_mode="can_airgrab"
 cangroundpound=0
 dash_rocket_jump=0

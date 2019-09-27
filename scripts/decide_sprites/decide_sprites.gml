@@ -95,6 +95,7 @@ switch character
 			sprites[? "uniques_parachute"]=Vet_3H_fall_parachute
 			sprites[? "uniques_spinattack"]=Vet_3H_spinattack  ///super version (to be changed)
 			sprites[? "uniques_spinattack_u"]=Vet_3H_spinattack
+			sprites[? "uniques_kamikaze"]=Vet_3H_super_charge
 			sprites[? "dizzy_u"]=Vet_3H_dizzy  //super version
 			sprites[? "dizzy"]=Vet_3H_dizzy
 			sprites[? "light_attack_u"]=Vet_3H_uppercut  //super version

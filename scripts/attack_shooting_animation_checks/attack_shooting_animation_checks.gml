@@ -167,6 +167,20 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 	uniques_spinner_attack_lockdown=3
 	uniques_spinner_attack_has_made_shockwave_hitbox=true
 }
+
+if uniques_vet_kamikaze_lockdown==1 && image_index>4
+{
+	uniques_vet_kamikaze_lockdown=2
+	hspd=UNIQUES_VET_KAMIKAZE_HSPEED
+	if !right
+		hspd=-UNIQUES_VET_KAMIKAZE_HSPEED
+		
+	uniques_vet_kamikaze_dash_current_hitbox_object=attack_create_hitbox(30,1,true,true,"veteran_kamikaze",Vet_3H_super_charge_hitbox,0.2,99,0,0)
+	if !right
+		uniques_vet_kamikaze_dash_current_hitbox_object.direction=180
+	//(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
+}
+
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {
 	if uniques_sunblast_has_made_hitbox==false

@@ -404,12 +404,21 @@ if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && 
 {
 	switch attacks[? "super attack"]
 	{
-		case "slinger superblast":
+		case "slinger_superblast":
 		image_speed=FRAME_SPEED_FAST
 		sprite_index=sprites[? "uniques_superblast"]
 		image_index=0
 		uniques_slinger_superblast_lockdown=1
 		uniques_slinger_superblast_has_made_hitbox=false  //[finaledit] all step attack starts should include hitbox var reset
+		break;
+		
+		case "vet_kamikaze":
+		if (uniques_vet_kamikaze_lockdown!=0) break;
+		
+		uniques_vet_kamikaze_lockdown=1
+		image_index=0
+		image_speed=FRAME_SPEED_NORMAL
+		sprite_index=Vet_3H_super_charge
 		break;
 	}
 }

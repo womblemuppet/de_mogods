@@ -59,7 +59,7 @@ switch (character)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "veteran_mine_throw");  
 	ds_map_add(attacks, "ult get trigger", "vet_get_ult");
-	ds_map_add(attacks, "super attack", "vet super attack")
+	ds_map_add(attacks, "super attack", "vet_kamikaze")
 	ds_map_add(attacks, "special hold down","vet_place_mine");
 	ds_map_add(attacks, "special2", -1);
 	//not set
@@ -88,7 +88,7 @@ switch (character)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "slinger_air_sunbolt");
 	ds_map_add(attacks, "ult get trigger", "slinger_get_ult");
-	ds_map_add(attacks, "super attack", "slinger superblast")
+	ds_map_add(attacks, "super attack", "slinger_superblast")
 	ds_map_add(attacks, "special hold down", "no_effect");
 	ds_map_add(attacks, "special2", -1);
 	//not set
