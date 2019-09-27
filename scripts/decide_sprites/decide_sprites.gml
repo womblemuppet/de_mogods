@@ -133,6 +133,7 @@ switch character
 			sprites[? "uniques_airsunbolt"]=Slinger_3H_airsunbolt
 			sprites[? "uniques_sunbolt_u"]=Slinger_3H_sunbolt  ///super version (to be changed)
 			sprites[? "uniques_sunbolt"]=Slinger_3H_sunbolt 
+			sprites[? "uniques_superblast"]=Slinger_3H_superblast
 			sprites[? "rocketjump"]=Slinger_3H_rocketjump
 			sprites[? "rocketjump_u"]=Slinger_3H_rocketjump
 			sprites[? "rocketjump_charge"]=Slinger_3H_rocketjump_charge
@@ -172,6 +173,7 @@ switch character
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  ///super version (to be changed)
 			sprites[? "envoke"]=Slinger_3H_envoke
+			
 		}
 	} break;
 	

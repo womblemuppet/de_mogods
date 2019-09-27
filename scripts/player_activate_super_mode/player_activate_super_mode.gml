@@ -23,7 +23,7 @@ switch attacks[? "ult get trigger"]
 	break;
 	case "bait_get_ult":
 		//iframes=super_mode_duration
-		armouredframes=super_mode_duration
+		//armouredframes=super_mode_duration
 	break;
 	default:
 	show_error(" beopop, unknown ult get trigger attack id",true)
