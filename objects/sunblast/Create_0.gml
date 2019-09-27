@@ -5,3 +5,4 @@ for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
 }
 
 alarm[0]=1
+can_collide_with_terrain=false

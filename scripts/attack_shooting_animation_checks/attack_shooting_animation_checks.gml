@@ -171,6 +171,12 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 {
 	if uniques_sunblast_has_made_hitbox==false
 	{//josh bertwhistle
+		//with create_terrain_cutter(sunblast_terrain_cut_mask,"disintegrated",270,0)
+		//{
+		//	image_xscale=1
+		//	image_yscale=1	
+		//}
+
 		var a;
 		a=instance_create_depth(x,y,-1,sunblast)
 		a.right=right
