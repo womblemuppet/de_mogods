@@ -221,7 +221,9 @@ uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
 UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=14
 
-
+//SLINGER SUPERBLAST
+uniques_slinger_superblast_lockdown=0
+uniques_slinger_superblast_has_made_hitbox=false
 
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150
@@ -244,8 +246,7 @@ UNIQUES_WHIRLWIND_SELFSTUN_AMOUNT=30
 uniques_sharkattack_lockdown=0
 uniques_sharkattack_has_made_hitbox=false
 uniques_sharkattack_feet_counter=-1
-uniques_sharkattack_cd_counter=0
-UNIQUES_SHARKATTACK_COOLDOWN=50
+
 
 //BAIT SUPER MODE
 uniques_honeybadger_enabled=false

@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "17bb7aa7-f5bd-4b82-9934-d6fb2322aea7",
+            "Value": {
+                "id": "68cc2e51-2aba-41fc-b61d-f61cbdbc8436",
+                "resourcePath": "sprites\\superblast_hitbox_spr\\superblast_hitbox_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1807580d-0d26-47df-959c-5b565b635863",
             "Value": {
                 "id": "2c71392f-aa74-40d5-9d87-c967e2e70183",
@@ -8223,6 +8231,14 @@
             }
         },
         {
+            "Key": "f1e5d3a1-9686-4422-81f4-1bed42f7e27d",
+            "Value": {
+                "id": "fbda6c59-f2f0-423c-8fc4-d5c8ead7555f",
+                "resourcePath": "sprites\\superblast_blast_spr\\superblast_blast_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f26511a9-cc12-47f5-b91f-8867c22f5b1b",
             "Value": {
                 "id": "b8c43cd4-75f1-4df5-ab10-7f1b69ec5a66",
@@ -8323,14 +8339,6 @@
             "Value": {
                 "id": "8fc7b4ed-4128-4f77-a62b-abd61a9c598c",
                 "resourcePath": "sprites\\lava3\\lava3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f61bc27c-d726-483b-9ebd-43dd1c2854f4",
-            "Value": {
-                "id": "49b12469-cd61-4b7a-b7b0-10f80af30c24",
-                "resourcePath": "sprites\\Slinger_3H_superattack\\Slinger_3H_superattack.yy",
                 "resourceType": "GMSprite"
             }
         },

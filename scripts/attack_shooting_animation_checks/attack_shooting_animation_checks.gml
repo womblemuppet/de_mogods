@@ -215,6 +215,18 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 	uniques_airbolt_has_made_hitbox=true
 }
 
+if uniques_slinger_superblast_lockdown==1 && image_index>5
+{
+	if uniques_slinger_superblast_has_made_hitbox==false
+	{
+		attack_create_hitbox(100,1,false,true,"slinger_superblast",HITBOX,0.2,99,0,0)	
+	}
+	
+	uniques_slinger_superblast_has_made_hitbox=true
+	uniques_slinger_superblast_lockdown=2
+}
+
+
 if uniques_sharkattack_lockdown==1 && image_index>3
 {
 	if uniques_sharkattack_has_made_hitbox==false 

@@ -409,6 +409,7 @@ if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && 
 		sprite_index=sprites[? "uniques_superblast"]
 		image_index=0
 		uniques_slinger_superblast_lockdown=1
+		uniques_slinger_superblast_has_made_hitbox=false  //[finaledit] all step attack starts should include hitbox var reset
 		break;
 	}
 }
@@ -600,7 +601,6 @@ if checkkey_pushed(heavybutton) && player_may_attack() && uniques_fpunch_cd_coun
 				sprite_index=sprites[? "uniques_heavyswing_u"]
 			image_index=0
 			uniques_sharkattack_lockdown=1 
-			uniques_sharkattack_cd_counter=UNIQUES_SHARKATTACK_COOLDOWN
 			uniques_sharkattack_feet_counter=0
 			uniques_sharkattack_has_made_hitbox=false
 			break;

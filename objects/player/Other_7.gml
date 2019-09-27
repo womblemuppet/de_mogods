@@ -195,6 +195,11 @@ else if sprite_index==sprites[? "phase"] || sprite_index==sprites[? "phase_u"]
 	attack_slinger_phase_move()
 	player_set_idle()
 }
+else if sprite_index==sprite_index=sprites[? "uniques_superblast"]
+{
+	uniques_slinger_superblast_lockdown=0
+	player_set_idle()	
+}
 else if sprite_index==sprites[? "uniques_heavyswing"] || sprite_index==sprites[? "uniques_heavyswing_u"]  ///bait shark attack heavy attack
 {
 	if uniques_sharkattack_lockdown==2
