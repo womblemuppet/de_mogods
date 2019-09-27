@@ -174,7 +174,7 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 		var a;
 		a=instance_create_depth(x,y,-1,sunblast)
 		a.right=right
-		a.scale=scale
+		a.scale=1
 		a.creator=self.id
 		
 		if right

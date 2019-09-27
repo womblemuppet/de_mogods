@@ -1639,6 +1639,14 @@
             }
         },
         {
+            "Key": "32086237-43bc-456b-a749-540549371ebf",
+            "Value": {
+                "id": "ddffa53f-31e8-487b-9a1f-b899e30f09b8",
+                "resourcePath": "sprites\\Slinger_3H_superblast\\Slinger_3H_superblast.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "321b0fc9-af9c-4c97-93df-085887b32976",
             "Value": {
                 "id": "cc15af6b-a1de-42a8-8876-39fbf2c96b62",
