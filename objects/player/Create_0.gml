@@ -221,6 +221,8 @@ uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
 UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=14
 
+
+
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150
 BAITCHAIN_CHAIN_RANGE=75

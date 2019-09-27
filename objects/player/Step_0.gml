@@ -400,8 +400,18 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && checkkey(rightbutton)) || (checkkey_released(rightbutton) && checkkey(leftbutton))    )
 	can_activate_super_mode=true
 
-
-
+if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1   ////super
+{
+	switch attacks[? "super attack"]
+	{
+		case "slinger superblast":
+		image_speed=FRAME_SPEED_FAST
+		sprite_index=sprites[? "uniques_superblast"]
+		image_index=0
+		uniques_slinger_superblast_lockdown=1
+		break;
+	}
+}
 
 if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack
 {

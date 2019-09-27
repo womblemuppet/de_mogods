@@ -143,6 +143,7 @@ if room==gameroom
 			lightbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"lightbutton")
 			heavybutton=ds_map_find_value(kouchou.keybinding_map_array[P],"heavybutton")
 			startbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"startbutton")
+			superbutton=ds_map_find_value(kouchou.keybinding_map_array[P],"superbutton")
 			if gamepad
 				padnumber=ds_map_find_value(kouchou.keybinding_map_array[P],"padnumber")
 

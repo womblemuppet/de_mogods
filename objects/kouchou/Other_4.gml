@@ -26,7 +26,8 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"dashbutton",ord("B"))
 			ds_map_add(keybinding_map_array[i],"lightbutton",ord("N"))
 			ds_map_add(keybinding_map_array[i],"heavybutton",ord("M"))
-			ds_map_add(keybinding_map_array[i],"startbutton",ord("R")) break;
+			ds_map_add(keybinding_map_array[i],"startbutton",ord("R"))
+			ds_map_add(keybinding_map_array[i],"superbutton",ord("E"))break;
             
 			case "kb_left":
 			ds_map_add(keybinding_map_array[i],"gamepad",false)
@@ -37,7 +38,8 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"dashbutton",ord("C"))
 			ds_map_add(keybinding_map_array[i],"lightbutton",ord("V"))
 			ds_map_add(keybinding_map_array[i],"heavybutton",ord("B"))
-			ds_map_add(keybinding_map_array[i],"startbutton",ord("R")) break; 
+			ds_map_add(keybinding_map_array[i],"startbutton",ord("R"))
+			ds_map_add(keybinding_map_array[i],"superbutton",ord("E"))break; 
             
             
 			case "kb_right":
@@ -49,7 +51,8 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"dashbutton",$BE)
 			ds_map_add(keybinding_map_array[i],"lightbutton",$BF)
 			ds_map_add(keybinding_map_array[i],"heavybutton",vk_shift)
-			ds_map_add(keybinding_map_array[i],"startbutton",vk_enter) break;          
+			ds_map_add(keybinding_map_array[i],"startbutton",vk_enter)
+			ds_map_add(keybinding_map_array[i],"superbutton",ord("O")) break;          
             
 			case "controller_default":
 			ds_map_add(keybinding_map_array[i],"gamepad",true)
@@ -61,7 +64,8 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"dashbutton",gp_face2)
 			ds_map_add(keybinding_map_array[i],"lightbutton",gp_face3)
 			ds_map_add(keybinding_map_array[i],"heavybutton",gp_face4)
-			ds_map_add(keybinding_map_array[i],"startbutton",gp_start) break;              
+			ds_map_add(keybinding_map_array[i],"startbutton",gp_start)
+			ds_map_add(keybinding_map_array[i],"superbutton",gp_shoulderr)break;              
 		}
 	}
 }
