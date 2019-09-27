@@ -261,6 +261,7 @@ AIRGRAB_STUN_TIME=65
 sprites_below_run_priority=ds_list_create()   ///sprites on these lists can get replaced by run,idle and recoil sprites in events
 sprites_below_idle_priority=ds_list_create()
 sprites_below_recoil_priority=ds_list_create()
+recoiling_sprites=ds_list_create()
 FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this swap from jumped sprite to falling sprite
 
 

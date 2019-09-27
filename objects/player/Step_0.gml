@@ -339,7 +339,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 player_block_above_check()
 
 
-//set to idle sprite if on ground and not pushing left or right
+//set to idle sprite if on ground and not pushing left or right, and not in important animation
 if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
 {
 	var pass;

@@ -5,7 +5,7 @@ if recoil_sprite_counter>0      /// RECOILING
 		sprite_index=sprites[? "recoiling_u"]  //recoiling super
 	exit
 }
-if !place_meeting(x,y+1,block)    /// IN AIR
+if !place_meeting(x,y+1,block)    /// IN AIR       //[finaledit] could use groundcheck?
 {
 	if vspd>FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN
 	{

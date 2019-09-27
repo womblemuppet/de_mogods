@@ -24,8 +24,6 @@ switch character
 				sprites[? "rocketjump_effect"]=Ooga_rjump_effect_spr
 				sprites[? "airgrab"]=Ooga_4H_airgrab_slam
 				sprites[? "airgrab_u"]=Ooga_4H_airgrab_slam //super version (to be changed)
-				sprites[? "airslam"]=Ooga_4H_airgrab_slam_down
-				sprites[? "airslam_u"]=Ooga_4H_airgrab_slam_down //super version (to be changed)
 				sprites[? "death_acid"]=Ooga_death_by_acid
 				sprites[? "death_zap"]=Ooga_death_by_zap
 				sprites[? "death_ice"]=Ooga_death_by_ice

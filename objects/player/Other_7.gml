@@ -12,7 +12,7 @@ else if sprite_index==sprites[? "jump_u"]    ///jump super
 	sprite_index=sprites[? "air_u"]    ///air super
 	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "airgrab"] || sprites[? "airslam"]  ///airgrab
+else if sprite_index==sprites[? "airgrab"] || sprite_index==sprites[? "airslam"]  ///airgrab
 {
 	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
@@ -104,7 +104,7 @@ else if sprite_index==sprites[? "uniques_use_teleport"]  ///bait teleport use
 				instance_destroy()
 			attack_bait_reset_teleport()
 		}
-	}	
+	}
 	
 }
 else if sprite_index==sprites[? "uniques_blinkjump_windup"] ||sprite_index==sprites[? "uniques_blinkjump_windup_u"]  ///bait blink gp attack
@@ -171,7 +171,7 @@ else if sprite_index==sprites[? "uniques_spinattack"] || sprite_index=sprites[? 
 		uniques_spinner_attack_has_made_shockwave_hitbox=false
 		uniques_spinner_attack_lockdown=0  
 		player_set_idle()
-	}    
+	}
 }
 else if sprite_index==sprites[? "uniques_sunbolt"] || sprite_index==sprites[? "uniques_sunbolt_u"]  ///slinger sunblast
 {
@@ -219,4 +219,5 @@ else if sprite_index==sprites[? "envoke"]
 	player_set_idle()	
 }
 
-
+//if P==0
+//show_debug_message("animation changed, new sprite is "+sprite_get_name(sprite_index))
