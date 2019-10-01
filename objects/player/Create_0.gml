@@ -207,6 +207,7 @@ uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontal
 uniques_vet_kamikaze_lockdown=0
 uniques_vet_kamikaze_dash_current_hitbox_object=noone
 UNIQUES_VET_KAMIKAZE_HSPEED=10
+uniques_vet_kamikaze_number_of_mines=0
 
 //SLINGER PHASE
 uniques_phase_enabled=false

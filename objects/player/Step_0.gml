@@ -416,6 +416,7 @@ if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && 
 		case "vet_kamikaze":
 		if (uniques_vet_kamikaze_lockdown!=0) break;
 		
+		uniques_vet_kamikaze_number_of_mines=0
 		uniques_vet_kamikaze_lockdown=1
 		image_index=0
 		image_speed=FRAME_SPEED_NORMAL
