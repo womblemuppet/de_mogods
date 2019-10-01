@@ -3,12 +3,13 @@
 *//////////////////////////////////////////////
 
 player_vertical_bounce_check()
+playerintersectioncheck=instance_place(x,y,player)
+edgeofroomcheck=false
 
 //////////////////////////////////////////     groundcheck
 
-
 groundcheck=instance_place(x,y+1,block) 
-playerintersectioncheck=instance_place(x,y,player)
+
 
 if groundcheck!=noone
 {
@@ -1136,7 +1137,16 @@ player_falldown_sprite_check()
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL MOVEMENT
 
 player_move_horizontal()
-player_bait_end_whirlwind_if_at_screen_edge()
+
+
+////////////////////  end specials when hitting screen edge
+if edgeofroomcheck
+{
+	if uniques_whirlwind_active
+		player_bait_end_whirlwind_if_at_screen_edge()
+	if uniques_vet_kamikaze_lockdown==2
+		uniques_vet_kamikaze_lockdown=3
+}
 
 ////////////// CHARGE ATTACKS/MOVEMENTS AND ANIMATION LOOP
 attack_shooting_animation_checks()
@@ -1207,6 +1217,27 @@ if uniques_vet_digging==2
 	}
 	
 }
+if uniques_vet_kamikaze_lockdown==2 
+{
+	if image_index>7
+		image_index=6
+	
+	if right
+		hspd=UNIQUES_VET_KAMIKAZE_HSPEED
+	else
+		hspd=-UNIQUES_VET_KAMIKAZE_HSPEED
+		
+	if instance_exists(uniques_vet_kamikaze_dash_current_hitbox_object)
+	{
+		uniques_vet_kamikaze_dash_current_hitbox_object.image_index=0
+		if right
+			uniques_vet_kamikaze_dash_current_hitbox_object.image_xscale=1
+		else
+			uniques_vet_kamikaze_dash_current_hitbox_object.image_xscale=-1
+	}
+	
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////// TOP SCREEN DEATH
 player_check_if_off_top_of_screen()

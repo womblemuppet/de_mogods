@@ -3,6 +3,7 @@ vspd=0
 groundcheck=noone
 groundcheck_prev=noone
 playerintersectioncheck=noone
+edgeofroomcheck=-1
 
 JUMPSPEED=12
 DOUBLEJUMPSPEED=12

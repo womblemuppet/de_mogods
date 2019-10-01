@@ -56,4 +56,6 @@ if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" &
 	{
 		attack_bait_whirlwind_selfstun()
 	}
+	if uniques_vet_kamikaze_lockdown==2
+		uniques_vet_kamikaze_lockdown=3
 }

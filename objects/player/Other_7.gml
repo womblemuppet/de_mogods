@@ -77,7 +77,7 @@ else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprite
 }
 else if sprite_index==sprites[? "uniques_kamikaze"]
 {
-	if uniques_vet_kamikaze_lockdown==2
+	if uniques_vet_kamikaze_lockdown==3
 	{
 		uniques_vet_kamikaze_lockdown=0
 		player_set_idle()

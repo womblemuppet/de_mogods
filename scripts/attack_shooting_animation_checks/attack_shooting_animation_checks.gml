@@ -168,7 +168,7 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 	uniques_spinner_attack_has_made_shockwave_hitbox=true
 }
 
-if uniques_vet_kamikaze_lockdown==1 && image_index>4
+if uniques_vet_kamikaze_lockdown==1 && image_index>5
 {
 	uniques_vet_kamikaze_lockdown=2
 	hspd=UNIQUES_VET_KAMIKAZE_HSPEED
