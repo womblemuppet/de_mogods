@@ -1244,7 +1244,7 @@ if uniques_vet_kamikaze_lockdown==2
 	{
 		uniques_vet_kamikaze_victim.x=x
 		uniques_vet_kamikaze_victim.y=y-30
-		uniques_vet_kamikaze_victim.stunned=5
+		uniques_vet_kamikaze_victim.stunned_groundpound=75
 	}
 }
 

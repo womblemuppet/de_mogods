@@ -9,6 +9,7 @@ else
 		with creator
 		{
 			hothands+=1                         //// ONE HH DAMAGE
+			stunned_groundpound=30
 			player_has_taken_hh_damage()
 			effect_aniend(vet_3h_kamikaze_mine_explosion,0.2,-2)
 		}
@@ -18,11 +19,13 @@ else
 	{
 		with victim
 		{
+			stunned_groundpound=30
 			hothands+=1                         //// ONE HH DAMAGE
 			player_has_taken_hh_damage()
 			effect_aniend(vet_3h_kamikaze_mine_explosion,0.2,-2)
 		}
 	}
 }
+		
 
 number_of_mines-=1

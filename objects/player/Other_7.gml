@@ -82,11 +82,20 @@ else if sprite_index==sprites[? "uniques_kamikaze"]
 		var a;
 		a=instance_create_depth(x,y,0,vet_kamikaze_end_damager)
 		a.creator=self.id
-		a.victim=uniques_vet_kamikaze_victim
 		a.number_of_mines=uniques_vet_kamikaze_number_of_mines
+		a.victim=uniques_vet_kamikaze_victim
 		uniques_vet_kamikaze_victim=noone
 		uniques_vet_kamikaze_lockdown=0
 		player_set_idle()
+		
+		stunned_groundpound=5
+		
+		if uniques_vet_kamikaze_victim!=noone && instance_exists(uniques_vet_kamikaze_victim)
+		{
+			uniques_vet_kamikaze_victim.stunned_groundpound=50
+			stunned_groundpound=50
+		}
+		
 	}
 	
 }
