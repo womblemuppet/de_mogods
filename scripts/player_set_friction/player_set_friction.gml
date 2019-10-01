@@ -4,12 +4,14 @@ if canbounce_counter<1 && float_counter<1   ///disable horizontal friction if bo
 	{ 
 		var fir;
 		fir=FRICTION
+		
 		if groundcheck==noone
 			fir=AIR_FRICTION
-		if !player_not_locked_down()
-		{
-			fir/=3
-		}
+		//if !player_not_locked_down()   ///if player locked down, third the friction
+		//{
+		//	fir/=3
+		//}
+		
 		if hspd>0
 		{
 			hspd-=fir
