@@ -170,6 +170,7 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 
 if uniques_vet_kamikaze_lockdown==1 && image_index>5
 {
+	iframes=15
 	uniques_vet_kamikaze_lockdown=2
 	hspd=UNIQUES_VET_KAMIKAZE_HSPEED
 	if !right

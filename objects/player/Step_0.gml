@@ -1224,6 +1224,7 @@ if uniques_vet_kamikaze_lockdown==2
 {
 	if image_index>7
 		image_index=6
+	iframes=5
 	
 	if right
 		hspd=UNIQUES_VET_KAMIKAZE_HSPEED
