@@ -206,8 +206,9 @@ uniques_vet_digging=0   ///0 = not in use  1 = in windup  2 = digging horizontal
 //VETERAN SUPER CHARGE-IN
 uniques_vet_kamikaze_lockdown=0
 uniques_vet_kamikaze_dash_current_hitbox_object=noone
-UNIQUES_VET_KAMIKAZE_HSPEED=10
+UNIQUES_VET_KAMIKAZE_HSPEED=14
 uniques_vet_kamikaze_number_of_mines=0
+uniques_vet_kamikaze_victim=noone
 
 //SLINGER PHASE
 uniques_phase_enabled=false

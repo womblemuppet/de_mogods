@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "21962069-adde-4ef5-9ecb-3aee0a343743",
+            "Value": {
+                "id": "bbcbe96a-f68f-449b-858d-8d418d73670a",
+                "resourcePath": "sprites\\vet_3h_kamikaze_mine_explosion\\vet_3h_kamikaze_mine_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "21ab2980-cea1-44fd-a481-4fde0e0dc2fc",
             "Value": {
                 "id": "132fa0ce-15af-48cd-a4ed-5591993d7b94",
@@ -2660,6 +2668,14 @@
                 "id": "364bc1fa-c682-485d-8e85-7b5c57d522f1",
                 "resourcePath": "sprites\\Bait_3H_blinkjump_windup\\Bait_3H_blinkjump_windup.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "53cb3b19-02fb-47e0-bbed-e21f381b3e05",
+            "Value": {
+                "id": "f5c1d783-04f9-4be8-adb3-36e9124c5f0b",
+                "resourcePath": "objects\\vet_kamikaze_end_damager\\vet_kamikaze_end_damager.yy",
+                "resourceType": "GMObject"
             }
         },
         {

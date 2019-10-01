@@ -1,0 +1,2 @@
+INTERVAL=15
+alarm[0]=INTERVAL

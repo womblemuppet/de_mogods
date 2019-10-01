@@ -416,6 +416,7 @@ if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && 
 		case "vet_kamikaze":
 		if (uniques_vet_kamikaze_lockdown!=0) break;
 		
+		uniques_vet_kamikaze_victim=noone
 		uniques_vet_kamikaze_number_of_mines=0
 		uniques_vet_kamikaze_lockdown=1
 		image_index=0
@@ -1218,6 +1219,7 @@ if uniques_vet_digging==2
 	}
 	
 }
+
 if uniques_vet_kamikaze_lockdown==2 
 {
 	if image_index>7
@@ -1237,6 +1239,12 @@ if uniques_vet_kamikaze_lockdown==2
 			uniques_vet_kamikaze_dash_current_hitbox_object.image_xscale=-1
 	}
 	
+	if instance_exists(uniques_vet_kamikaze_victim)
+	{
+		uniques_vet_kamikaze_victim.x=x
+		uniques_vet_kamikaze_victim.y=y-30
+		uniques_vet_kamikaze_victim.stunned=5
+	}
 }
 
 

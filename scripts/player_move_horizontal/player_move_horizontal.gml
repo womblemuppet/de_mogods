@@ -6,7 +6,7 @@ if hspd>0
 			x+=1
 		else
 		{
-			if x<kouchou.room_right_border_x-HORIZONTAL_BOUNDARY_WIDTH+2
+			if x>kouchou.room_right_border_x-HORIZONTAL_BOUNDARY_WIDTH-2
 				edgeofroomcheck=true
 			break;
 		}
@@ -20,7 +20,7 @@ else if hspd<0
 			x-=1
 		else
 		{
-			if x>kouchou.room_left_border_x+HORIZONTAL_BOUNDARY_WIDTH-2
+			if x<kouchou.room_left_border_x+HORIZONTAL_BOUNDARY_WIDTH+2
 				edgeofroomcheck=true
 			break;
 		}

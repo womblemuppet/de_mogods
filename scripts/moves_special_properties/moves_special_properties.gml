@@ -73,6 +73,11 @@ switch incoming_attack_name
 		attacker.uniques_vet_la_target=self.id
 	}
 	break;
+	case "veteran_kamikaze":
+	if attacker!=noone
+		attacker.uniques_vet_kamikaze_victim=self.id
+		
+	break;
 	case "falconpunch" :
 	if stunned_groundpound>0
 	{

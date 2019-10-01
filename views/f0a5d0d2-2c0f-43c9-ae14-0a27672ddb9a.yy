@@ -60,7 +60,8 @@
         "3d39ee8f-4a9c-4cdd-870c-5879a55553d6",
         "9009f449-0a41-47b9-9f19-aacc6b71ee7f",
         "fc0cda92-e423-4ab2-81ca-82ee9be80691",
-        "ae177c82-2745-4a9a-b58b-ffe24714168d"
+        "ae177c82-2745-4a9a-b58b-ffe24714168d",
+        "21962069-adde-4ef5-9ecb-3aee0a343743"
     ],
     "filterType": "GMSprite",
     "folderName": "Vet",
