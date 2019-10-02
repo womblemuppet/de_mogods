@@ -84,18 +84,20 @@ else if sprite_index==sprites[? "uniques_kamikaze"]
 		a.creator=self.id
 		a.number_of_mines=uniques_vet_kamikaze_number_of_mines
 		a.victim=uniques_vet_kamikaze_victim
-		uniques_vet_kamikaze_victim=noone
 		uniques_vet_kamikaze_lockdown=0
 		player_set_idle()
 		
 		stunned_groundpound=5
 		
+		
+		///stun victim and vet if vet hit someone, otherwise vet will just wait for animation to end.
 		if uniques_vet_kamikaze_victim!=noone && instance_exists(uniques_vet_kamikaze_victim)
 		{
 			uniques_vet_kamikaze_victim.stunned_groundpound=50
 			stunned_groundpound=50
 		}
 		
+		uniques_vet_kamikaze_victim=noone
 	}
 	
 }
