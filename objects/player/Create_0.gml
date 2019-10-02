@@ -118,7 +118,6 @@ pocket_super_mode_stored=false ///if true, super_mode is stored in current pocke
 pocket_light_heavy_held_counter=0
 
 canbounce_counter=0  ///bounce counter
-canbounce_show_bounced_effect_counter=0   ///effect trail after bouncing off wall
 CANBOUNCE_SHOW_BOUNCED_EFFECT_TIME=10
 BOUNCE_HORIZONTAL_VELOCITY=12
 BOUNCE_HORIZONTAL_MINOR_VELOCITY=1
