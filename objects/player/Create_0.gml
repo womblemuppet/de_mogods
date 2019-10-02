@@ -111,7 +111,7 @@ chained_debuff_x_pos=0     ///x pos of chain
 chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 
-NUMBER_OF_POCKET_SPACES=4
+NUMBER_OF_POCKET_SPACES=1
 number_of_pockets=0    ///type of pocketed orb
 player_empty_pockets()
 pocket_super_mode_stored=false ///if true, super_mode is stored in current pocket

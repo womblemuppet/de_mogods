@@ -456,7 +456,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 	}
 	
 	//if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
-	//{
+	//{                 ///////////   kept for chain reference if ever needed
 	//	exception=true
 	//	uniques_forwardpunch_has_made_hitbox=false
 	//	uniques_forwardpunch_lockdown=1
@@ -522,7 +522,7 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 				sprite_index=sprites[? "light_attack_u"]
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
-            
+
 			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,8+extrahkb,11)
 		}
 	}

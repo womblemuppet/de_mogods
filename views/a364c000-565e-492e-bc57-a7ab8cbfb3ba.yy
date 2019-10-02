@@ -11,7 +11,7 @@
         "0435927e-0ac0-4542-a013-94c71e1b3912"
     ],
     "filterType": "GMScript",
-    "folderName": "deprecated",
+    "folderName": "backup and unused",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
