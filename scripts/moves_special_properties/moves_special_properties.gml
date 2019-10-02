@@ -81,16 +81,15 @@ switch incoming_attack_name
 	case "falconpunch" :
 	if stunned_groundpound>0
 	{
+		canbounce_counter=40
 		impact_debuff_counter=40
-		//cripple_debuff_counter=120
-		vspd-=1
 		repeat(5)
 		{
 			with effect_aniend(spr_gp_combo_fpunch,0.2,-2)
 			{
-			vspeed=-8
-			hspeed=-2+random(4)
-			gravity=0.2
+				vspeed=-8
+				hspeed=-2+random(4)
+				gravity=0.2
 			}
 		}
 	}

@@ -179,7 +179,7 @@ if canbounce_counter>0
 {
 	canbounce_counter-=1
 	show_debug_message(string(canbounce_counter)+" vspd="+string(vspd))
-	effect_aniend(bounce_debuff_effect,0.15,-3)
+	effect_aniend(bounce_debuff_effect,0.15,0)
 }
 if canbounce_show_bounced_effect_counter>0
 {

@@ -3295,14 +3295,6 @@
             }
         },
         {
-            "Key": "626001a5-04d3-44f3-867b-38dcbbb7e863",
-            "Value": {
-                "id": "37bf9fde-8680-44b8-a250-11f86878eb92",
-                "resourcePath": "views\\626001a5-04d3-44f3-867b-38dcbbb7e863.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
             "Value": {
                 "id": "dabd1819-4c5f-421d-b0c5-325e781ba42a",
@@ -8271,6 +8263,14 @@
             }
         },
         {
+            "Key": "f12c3d24-962f-431d-a08e-4a3c2ff465a2",
+            "Value": {
+                "id": "fd4796d2-bb98-4d2d-879a-119099f891a8",
+                "resourcePath": "views\\f12c3d24-962f-431d-a08e-4a3c2ff465a2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f19f447e-8011-4590-bf58-bd178e36e2cb",
             "Value": {
                 "id": "0a73953a-30e7-43ce-b609-c2fe3e0bcd92",
@@ -8291,14 +8291,6 @@
             "Value": {
                 "id": "52033a0d-fb94-4901-9a40-03f6b405d6e8",
                 "resourcePath": "sprites\\icicle_sprite_attached\\icicle_sprite_attached.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f1d25513-83e0-4e3a-a393-f0f2a9475f97",
-            "Value": {
-                "id": "9d97993b-8ff8-4cf3-b117-e66af20cbe48",
-                "resourcePath": "sprites\\uga_airgrab_slam_fake_hitbox\\uga_airgrab_slam_fake_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },

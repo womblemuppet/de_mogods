@@ -4,7 +4,7 @@ if argument0=="left"
 	sgn=-1
 
 //if you collide with a wall
-if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" && place_meeting(x+hspd,y,block))
+if place_meeting(x+hspd,y,block) //if (argument0=="left" && place_meeting(x+hspd,y,block)) || (argument0=="right" && place_meeting(x+hspd,y,block))
 {
 	///if you have momentum torwards that wall
 	if (argument0=="left" && hspd<0) || (argument0=="right" && hspd>0)

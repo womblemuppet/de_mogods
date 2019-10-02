@@ -1,4 +1,4 @@
-if canbounce_counter<1 && float_counter<1   ///disable horizontal friction if bouncing or floating
+if float_counter<1   ///disable horizontal friction if bouncing or floating
 {
 	if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
 	{ 
@@ -7,6 +7,9 @@ if canbounce_counter<1 && float_counter<1   ///disable horizontal friction if bo
 		
 		if groundcheck==noone
 			fir=AIR_FRICTION
+			
+		if canbounce_counter>0   ///be more slidey if bouncing
+			fir/=2
 		//if !player_not_locked_down()   ///if player locked down, third the friction
 		//{
 		//	fir/=3
