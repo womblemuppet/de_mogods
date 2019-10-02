@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "0b097d10-a6cd-4bba-8521-a690df44bb6c",
+            "Value": {
+                "id": "c2af7cb2-efd6-4ced-819c-c6d81ccdb8dd",
+                "resourcePath": "views\\0b097d10-a6cd-4bba-8521-a690df44bb6c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0b4d821f-dee5-4433-993b-5f9fb45c3a68",
             "Value": {
                 "id": "fd13483c-75a4-439f-8356-ba24a92e0957",
@@ -3484,6 +3492,14 @@
                 "id": "ce7790ec-5bd3-465d-a93a-08d5f5f30ce4",
                 "resourcePath": "objects\\dangerous\\dangerous.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "65574ba0-c719-4ab9-80d0-762ccd0ab096",
+            "Value": {
+                "id": "8c82c19f-080f-41d4-9cfb-e6da9b37f8ae",
+                "resourcePath": "views\\65574ba0-c719-4ab9-80d0-762ccd0ab096.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -6975,6 +6991,14 @@
             }
         },
         {
+            "Key": "cae09812-9f28-4b1b-ae53-e813bd414890",
+            "Value": {
+                "id": "fde3813c-de98-4bb0-a83d-43c6afc83b59",
+                "resourcePath": "views\\cae09812-9f28-4b1b-ae53-e813bd414890.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cb0cb273-a134-4357-8226-ba6a9a00ad4f",
             "Value": {
                 "id": "92d32d93-1c5e-4817-a8d7-bd1347a94eb2",
@@ -7607,6 +7631,14 @@
             }
         },
         {
+            "Key": "db7fe541-bc8a-4ae4-a7a7-ffe763fbe38b",
+            "Value": {
+                "id": "e4dbec5c-e233-4d3b-ace2-9cee6a7cc9e4",
+                "resourcePath": "views\\db7fe541-bc8a-4ae4-a7a7-ffe763fbe38b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "db9dea37-fb89-4962-b3b9-14c879bc9d52",
             "Value": {
                 "id": "a926419e-0400-4f77-beb4-ad93f58bd3ba",
@@ -8044,6 +8076,14 @@
                 "id": "e8d71f95-df39-4557-b55b-dcfaaa5e135f",
                 "resourcePath": "sprites\\Slinger_3H_run\\Slinger_3H_run.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e9006116-e46f-4339-b0ef-4766709bc8ba",
+            "Value": {
+                "id": "8f683bc9-aebe-4ae0-8fda-64791617f11e",
+                "resourcePath": "views\\e9006116-e46f-4339-b0ef-4766709bc8ba.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
