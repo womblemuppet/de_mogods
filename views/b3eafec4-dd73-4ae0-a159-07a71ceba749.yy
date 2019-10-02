@@ -15,7 +15,9 @@
         "6132bda0-76a2-4312-8e7c-45ab201fc9ed",
         "cbd40611-58a7-4285-afb1-ebdea114e17b",
         "4d9aff83-cacd-4bdc-8fd7-d254cfe9ecdb",
-        "84cb497a-6ff7-498c-b0bd-e3b58621f1af"
+        "84cb497a-6ff7-498c-b0bd-e3b58621f1af",
+        "4715f580-e6d3-4742-b05a-5730e641360c",
+        "0a974753-1c17-4cd5-a2e2-28adc68f7cd5"
     ],
     "filterType": "GMSprite",
     "folderName": "orbs and orb effects",

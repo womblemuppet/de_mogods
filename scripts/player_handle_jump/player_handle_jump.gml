@@ -27,7 +27,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 					}
 					if doublejump==1     ///double jump
 					{
-						effect_aniend(whooshbigjump,0.2,-2)
+						effect_aniend(player_double_jump_effect_spr,0.2,-2)
 						vspd=-DOUBLEJUMPSPEED*water_jump_factor 
 					}
 					set_jump_sprites=true         

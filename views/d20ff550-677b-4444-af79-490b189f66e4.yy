@@ -6,14 +6,9 @@
     "children": [
         "626001a5-04d3-44f3-867b-38dcbbb7e863",
         "2a1bfeb7-6bca-4dcc-84ab-f4a8a4e567ad",
-        "a1e0dade-9f98-4526-8358-e184a1801c49",
-        "d98712f7-5dd5-424d-9cdb-d5894e40381a",
-        "76dd8b5c-c000-4ebb-8482-5f6dce109cbb",
-        "5a98319f-ce4c-4b6e-871d-6327dd87f886",
         "eb40f6f3-d222-4710-b5b8-f336c3edce65",
         "23e0141a-d7b8-4e40-9221-42f1cdedabe8",
-        "0562a67a-62fa-487b-ba59-b51b5fb23463",
-        "d692275b-fd45-46fb-8845-0de36e0a6fdf",
+        "4bf4dbe4-7dab-4e6b-8926-a4023ac85074",
         "5006d02e-1a7d-41a0-9bf4-7e80b25e9212",
         "ef72aab2-90f1-416c-b8db-5d987a08ab68",
         "4abacc61-70ad-410a-92b5-08be311adea7",
@@ -27,7 +22,9 @@
         "c6ea115b-830a-4313-bcba-f010ac8c524b",
         "f1d25513-83e0-4e3a-a393-f0f2a9475f97",
         "6e5f1128-1f6d-418f-a4e6-8ff12c6f1aa7",
-        "37b2a079-4d72-46a9-90e5-7a438398907e"
+        "37b2a079-4d72-46a9-90e5-7a438398907e",
+        "55203941-57d9-4f13-b7e8-4a6ae7ed5e76",
+        "a029b2b6-609d-4a1c-904f-0384d967e321"
     ],
     "filterType": "GMSprite",
     "folderName": "Uga",
