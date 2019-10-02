@@ -10,6 +10,6 @@ if instance_exists(other.creator) || other.creator==noone                  /////
 		if attack_should_crush(other.attack_name)
 			exit
 		player_dashed_into(other.my_stunamount,other.my_hknockback,other.my_vknockback)
-		apply_special_attack_properties(other.attack_name)
+		attack_apply_special_properties(other.attack_name)
 	}
 }

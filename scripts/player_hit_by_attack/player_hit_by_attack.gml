@@ -11,7 +11,7 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 		{
 			player_generic_knockback(other.my_hknockback,other.my_vknockback)
 			player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
-			apply_special_attack_properties(other.attack_name)
+			attack_apply_special_properties(other.attack_name)
 		}
 	}
 	//if other.hit[P]==false && other.creator==self.id   ///hit by own attack
