@@ -1,0 +1,33 @@
+{
+    "id": "cb7feb06-ce93-45d7-85d7-25db878ae268",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "cb7feb06-ce93-45d7-85d7-25db878ae268",
+    "children": [
+        "83b42feb-7603-4c23-b84e-43b5e7cdb7b8",
+        "a1988c9b-1c95-42d9-99c6-b768a730e8be",
+        "a1229d93-4d18-4945-812d-1d9d3305a5c9",
+        "ea305e21-d29d-4f5f-aaa1-6ade9a48f0d5",
+        "1ca4c01b-f403-4c29-9df5-92db6ee9a4f0",
+        "273d7eff-e9bb-4ca5-888e-ad70ad03b82b",
+        "7b4f5d03-5231-447c-a54d-f8d4e571bd01",
+        "57c85d18-f346-4965-90dd-d162cddc08eb",
+        "832263f9-df33-4da1-9977-1c729336c929",
+        "cde68ee2-0590-44da-b9d2-10c631bbc686",
+        "e5f158be-9ed8-4b8f-b254-7002a13a5785",
+        "1ff2332e-92e7-4f50-900d-7c553638ab6d",
+        "878f8b0f-0fbb-4175-b298-3f23654a97e5",
+        "a91b9cf8-533d-427d-badc-a95524e2bc59",
+        "21962069-adde-4ef5-9ecb-3aee0a343743",
+        "1aade843-22dd-4418-9631-e780b8cdd4e2",
+        "9b2a6ee2-0a65-41dc-90d7-dc1d95c758f1",
+        "3d39ee8f-4a9c-4cdd-870c-5879a55553d6",
+        "bf005fed-5378-4a99-803b-dd98a1debdf8",
+        "e23f2e6a-70bf-4d29-9dc9-3d70e47086e5",
+        "82611820-9b19-4ae4-8f2a-fa47106f438e"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "attacks",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
