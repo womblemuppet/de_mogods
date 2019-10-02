@@ -13,7 +13,8 @@
         "2f2778df-0ba8-4873-9e65-8f9073290126",
         "fd0322e8-bede-448d-8be1-a7f2e29cd37d",
         "dd08b342-6e20-4ba5-8b86-614903d728cb",
-        "9009f449-0a41-47b9-9f19-aacc6b71ee7f"
+        "9009f449-0a41-47b9-9f19-aacc6b71ee7f",
+        "a1229d93-4d18-4945-812d-1d9d3305a5c9"
     ],
     "filterType": "GMSprite",
     "folderName": "todelete",
