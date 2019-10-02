@@ -1626,7 +1626,7 @@
             "Key": "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
             "Value": {
                 "id": "bc34e8ab-0f5a-49d6-879f-969182541f8b",
-                "resourcePath": "scripts\\moves_special_properties\\moves_special_properties.yy",
+                "resourcePath": "scripts\\apply_special_attack_properties\\apply_special_attack_properties.yy",
                 "resourceType": "GMScript"
             }
         },
