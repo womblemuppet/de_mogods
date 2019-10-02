@@ -22,7 +22,7 @@ switch ds_list_find_value(STACK,0)
 	case 4:
 		instance_create(0,0,freakyfishtime) break;
 	case 5:
-		instance_create_depth(0,0,-5,tornadoe) break;
+		instance_create_depth(0,0,-3,tornadoe) break;
     
 	default: show_error("unknown in stack",true)
 }
