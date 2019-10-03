@@ -33,6 +33,7 @@ switch txt
 	ds_list_clear(log)
 	log_pos=0
 	log_pos_last=0
+	
 	break;
 	
 	case "practice":
@@ -42,6 +43,21 @@ switch txt
 	console_log("infinite hp mode")
 	
 	break;
+	
+	case "slow":
+	case "slow mode":
+	
+	room_speed=10
+	
+	break;
+	
+	case "slow off":
+	case "slow mode off":
+	
+	room_speed=60
+	
+	break;	
+	
 	
 	case "hitbox":
 	case "hitboxes":
