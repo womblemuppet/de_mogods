@@ -6,10 +6,10 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 293,
+    "bbox_bottom": 269,
     "bbox_left": 14,
     "bbox_right": 395,
-    "bbox_top": 30,
+    "bbox_top": 6,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -188,6 +188,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 400,
-    "xorig": 46,
-    "yorig": 202
+    "xorig": 80,
+    "yorig": 60
 }

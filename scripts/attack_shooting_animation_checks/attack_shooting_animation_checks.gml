@@ -244,12 +244,17 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 		{
 			image_xscale=sign(image_xscale)
 			image_yscale=sign(image_yscale)
+			target=noone
 		}
 		var a;
 		a=effect_aniend(superblast_blast_spr,0.2,-2)
 		if !right
 			a.image_xscale=-1
-		create_terrain_cutter(superblast_hitbox_spr,"disintegrated",270,2)
+		with create_terrain_cutter(superblast_hitbox_spr,"disintegrated",270,2)
+		{
+			image_xscale=sign(image_xscale)
+			image_yscale=sign(image_yscale)
+		}
 	}
 	
 	uniques_slinger_superblast_has_made_hitbox=true

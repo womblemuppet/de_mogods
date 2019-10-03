@@ -1,4 +1,4 @@
-if target!=-1
+if target!=noone
 {
 	if instance_exists(target)
 	{

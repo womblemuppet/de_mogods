@@ -401,11 +401,17 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && checkkey(rightbutton)) || (checkkey_released(rightbutton) && checkkey(leftbutton))    )
 	can_activate_super_mode=true
 
-if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1   ////super
+if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event super event
 {
 	switch attacks[? "super attack"]
 	{
 		case "slinger_superblast":
+		if groundcheck==noone
+		{
+			vspd=-5
+			if !place_meeting(x,y-1,block)
+				y-=1
+		}
 		image_speed=FRAME_SPEED_FAST
 		sprite_index=sprites[? "uniques_superblast"]
 		image_index=0
@@ -415,6 +421,7 @@ if checkkey_pushed(superbutton) && groundcheck!=noone && player_may_attack() && 
 		
 		case "vet_kamikaze":
 		if (uniques_vet_kamikaze_lockdown!=0) break;
+		if groundcheck!=noone break;
 		
 		uniques_vet_kamikaze_victim=noone
 		uniques_vet_kamikaze_number_of_mines=0
