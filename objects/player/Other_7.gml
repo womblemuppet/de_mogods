@@ -189,6 +189,14 @@ else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[
 		player_set_idle()
 	}
 }
+else if sprite_index==sprites[? "uniques_supersmash"] || sprite_index==sprites[? "uniques_supersmash_u"]
+{
+	if uniques_supersmash_lockdown==2
+	{
+		uniques_supersmash_lockdown=0
+		player_set_idle()
+	}
+}
 else if sprite_index==sprites[? "uniques_spinattack"] || sprite_index=sprites[? "uniques_spinattack_u"]    ///aa punch
 {
 	if uniques_spinner_attack_lockdown==3

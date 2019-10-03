@@ -401,8 +401,13 @@ if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event 
 	switch attacks[? "super attack"]
 	{
 		case "uga_supersmash":
-		uniques_uga_supersmash_lockdown=1
+		uniques_supersmash_lockdown=1
+		uniques_supersmash_has_made_hitbox=false
+		image_speed=FRAME_SPEED_FAST
+		sprite_index=sprites[? "uniques_supersmash"]
+		image_index=0
 		break;
+		
 		case "uniques_superblast":
 
 		//// sets slinger to be a minimum height above the ground ////////////////////////////////////////

@@ -62,9 +62,12 @@ if uniques_fpunch_feet_counter!=-1 && groundcheck!=noone
 }
 
 //UGA super smash
-if uniques_uga_supersmash_lockdown==1
+if uniques_supersmash_lockdown==1 && image_index>3
 {
-	attack_ooga_ultimate()
+	if uniques_supersmash_has_made_hitbox==false
+		attack_ooga_ultimate()
+	uniques_supersmash_has_made_hitbox=true
+	uniques_supersmash_lockdown=2
 }
 
 ///////// SHARKATTACK PUNCH FEET STEPS
