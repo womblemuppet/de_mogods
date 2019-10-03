@@ -406,12 +406,31 @@ if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event 
 	switch attacks[? "super attack"]
 	{
 		case "slinger_superblast":
-		if groundcheck==noone
+
+		//// sets slinger to be a minimum height above the ground ////////////////////////////////////////
+		var STEP_DISTANCE,NUMBER_OF_STEPS;
+		STEP_DISTANCE=35
+		NUMBER_OF_STEPS=5
+			
+		for (var steps_from_ground = 0; steps_from_ground < NUMBER_OF_STEPS;steps_from_ground++)
 		{
-			vspd=-5
-			if !place_meeting(x,y-1,block)
-				y-=1
+			if place_meeting(x,y+steps_from_ground*STEP_DISTANCE,block)
+				break;
 		}
+			
+		for (var i = 0; i < NUMBER_OF_STEPS - steps_from_ground; i++)
+		{
+			if !place_meeting(x,y-STEP_DISTANCE,block)
+			{
+				effect_aniend(superblast_jump_up_trail_effect_spr,0.2,-1)
+				y-=STEP_DISTANCE
+			}
+		}
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		vspd=0
+		float_counter=15
+		
 		image_speed=FRAME_SPEED_FAST
 		sprite_index=sprites[? "uniques_superblast"]
 		image_index=0

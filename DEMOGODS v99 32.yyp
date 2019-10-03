@@ -6495,6 +6495,14 @@
             }
         },
         {
+            "Key": "be22e868-b83d-457f-9708-3095e04cf83b",
+            "Value": {
+                "id": "aa749652-8134-4c54-aff1-4e54bfaf2f25",
+                "resourcePath": "sprites\\superblast_jump_up_trail_effect_spr\\superblast_jump_up_trail_effect_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "be6f2ce6-2839-48b7-b626-4a7930faa82d",
             "Value": {
                 "id": "69fe974d-7266-4f15-84a6-5d7b54a69932",
