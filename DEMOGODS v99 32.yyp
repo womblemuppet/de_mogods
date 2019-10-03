@@ -7559,6 +7559,14 @@
             }
         },
         {
+            "Key": "d890ec12-d01e-4b1b-9856-9550795640c8",
+            "Value": {
+                "id": "690a5a5a-a9fc-4228-b797-9a9054a7b257",
+                "resourcePath": "sprites\\Ooga_4H_super_smash\\Ooga_4H_super_smash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8b36847-78a2-4c4b-a76f-e05db359f11b",
             "Value": {
                 "id": "dbf4c5fc-715f-4ca5-8d73-d7ff97bb1e41",
@@ -8842,9 +8850,9 @@
         "6c702e2a-2603-4e19-8c09-8b1902866d44",
         "8f2497f9-ad09-4416-b04a-7931992aa8fb",
         "61ee04b1-d091-4125-bec3-0a16c24a8357",
+        "48b4d9a1-4239-4fb1-9ed3-f0faa4b172bf",
         "82967fe2-a899-4eb5-a9f5-7dd42146d74e",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
-        "48b4d9a1-4239-4fb1-9ed3-f0faa4b172bf",
         "353a867e-8cc9-4c04-843b-334f14b56d9c",
         "4ed56efa-0618-4f87-95cd-ef18be167773",
         "a1657ff5-6d48-4f17-9e40-e832ec54d84c",
@@ -8952,6 +8960,12 @@
         "0af909a9-439b-496d-86df-b98998dc919e",
         "4146b1d2-6974-4c17-8af4-e08c47f11aaf",
         "0d6d09e9-9534-4c47-b1b5-9459457ecd4a",
+        "6a297808-eab2-47ef-b2df-fa77bd655484",
+        "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
+        "dbf4b51b-f443-4495-9b75-0bd0302c16b2",
+        "2127dd53-8c61-443d-abca-358437011297",
+        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
+        "95958abb-9c94-4b53-9692-ee2858a88243",
         "debd4ce9-633b-4bd2-ae12-35a00e62845c",
         "098671bf-e159-4f49-92a5-f5b12557e2e6",
         "29beeb26-9b14-4dd6-ad37-8fdca832a28b",
@@ -8963,13 +8977,7 @@
         "4513e3db-a9fa-4864-8988-20651de425ab",
         "8aede115-b9c0-40e8-9e46-3b4f87f0cf6c",
         "269c9d81-38b3-4b63-a99f-9af285206699",
-        "f19f447e-8011-4590-bf58-bd178e36e2cb",
-        "6a297808-eab2-47ef-b2df-fa77bd655484",
-        "c705e5a9-bd24-4c54-ba72-2167ca4c90ae",
-        "dbf4b51b-f443-4495-9b75-0bd0302c16b2",
-        "2127dd53-8c61-443d-abca-358437011297",
-        "2e7a75cc-9ec2-4e60-9bff-232f24c954ae",
-        "95958abb-9c94-4b53-9692-ee2858a88243"
+        "f19f447e-8011-4590-bf58-bd178e36e2cb"
     ],
     "tutorial": ""
 }

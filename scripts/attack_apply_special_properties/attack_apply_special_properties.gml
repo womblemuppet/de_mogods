@@ -15,8 +15,6 @@ switch incoming_attack_name
 	{
 		if cangroundpound==2  ///if gping
 		{
-			if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true 
-				attack_ooga_ultimate()
 			cangroundpound=3
 			var d;
 			d=other.id

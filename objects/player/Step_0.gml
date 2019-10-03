@@ -253,11 +253,6 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		
 		var exception;
 		exception=false
-		if unique_ooga_gp_charges>0 && uniques_super_ooga_gp_enabled==true    ///////////////////////////ooga super gp
-		{
-			exception=true
-			attack_ooga_ultimate()
-		}
 		
 		if !exception
 		{

@@ -27,7 +27,6 @@ switch (character)
 	ds_map_add(attacks, "airdash", 0);
 	ds_map_add(attacks, "gp", "ground pound");
 	ds_map_add(attacks, "gp_hit_ground_effect", "no_effect");
-	//no gp effect (uga super mode gp doesn't use this system for some reason)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "no_effect");
 	ds_map_add(attacks, "ult get trigger", "uga_get_ult");
@@ -40,7 +39,6 @@ switch (character)
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
 
 	running_startup_frames=1  ///[finaledit] add to every character
-	uniques_super_ooga_gp_enabled=true
 	ground_pound_freeze_time-=4
 	uniques_uga_delayable_gp_enabled=true
 	uniques_gpcombo_cripples_enabled=true
@@ -122,8 +120,6 @@ switch (character)
 	ds_map_add(attacks, "air grab effect", "standard_airgrab_effect");
     
 	//running_startup_frames=1  ///[finaledit] add to every character
-	uniques_super_ooga_gp_enabled=true
-	uniques_gpcombo_cripples_enabled=true
 	uniques_uga_delayable_gp_enabled=true
 	uniques_teleport_enabled=true
 	uniques_teleport=0

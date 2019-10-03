@@ -12,8 +12,6 @@ switch attacks[? "ult get trigger"]
 {
 	case "uga_get_ult":
 		orb_count_meter=0
-		if uniques_super_ooga_gp_enabled==true
-			unique_ooga_gp_charges=1
 	break;
 	case "vet_get_ult":
 		//vetult
