@@ -3,5 +3,5 @@ image_index=random(image_number)
 
 alarm[0]=20
 
-if aizen.debug_show_hitboxes
+if aizen.debug_show_hitboxes==true
 	visible=true
