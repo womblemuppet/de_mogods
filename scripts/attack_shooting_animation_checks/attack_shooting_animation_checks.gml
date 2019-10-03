@@ -240,7 +240,7 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 {
 	if uniques_slinger_superblast_has_made_hitbox==false
 	{
-		with attack_create_hitbox(100,1,false,true,"slinger_superblast",superblast_hitbox_spr,0.2,99,0,0)
+		with attack_create_hitbox(100,1,false,true,"uniques_superblast",superblast_hitbox_spr,0.2,99,0,0)
 		{
 			image_xscale=sign(image_xscale)
 			image_yscale=sign(image_yscale)

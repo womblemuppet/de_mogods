@@ -20,5 +20,6 @@ if !stunned_groundpound
 && uniques_sticky_mine_lockdown==0 
 && uniques_dashgpblinkattack_lockdown==0 
 && uniques_vet_kamikaze_lockdown==0
+&& uniques_slinger_superblast_lockdown==0
 	return true
 return false

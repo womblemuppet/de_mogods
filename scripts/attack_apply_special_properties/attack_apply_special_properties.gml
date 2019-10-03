@@ -177,6 +177,7 @@ switch incoming_attack_name
 	case "ground pound with phase":
 	case "sunbolt":
 	case "sunblast":
+	case "uniques_superblast":
 	case "slingeruppercut" :
 	{
 		if attacker!=noone

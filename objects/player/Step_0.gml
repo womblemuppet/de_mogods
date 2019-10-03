@@ -405,7 +405,7 @@ if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event 
 {
 	switch attacks[? "super attack"]
 	{
-		case "slinger_superblast":
+		case "uniques_superblast":
 
 		//// sets slinger to be a minimum height above the ground ////////////////////////////////////////
 		var STEP_DISTANCE,NUMBER_OF_STEPS;
@@ -428,6 +428,7 @@ if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event 
 		}
 		////////////////////////////////////////////////////////////////////////////////////////////////////
 		
+		hspd=0
 		vspd=0
 		float_counter=15
 		
