@@ -62,7 +62,7 @@ if uniques_fpunch_feet_counter!=-1 && groundcheck!=noone
 }
 
 //UGA super smash
-if uniques_supersmash_lockdown==1 && image_index>4
+if uniques_supersmash_lockdown==1 && image_index>6
 {
 	if uniques_supersmash_has_made_hitbox==false
 		attack_ooga_ultimate()
