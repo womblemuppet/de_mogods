@@ -61,25 +61,11 @@ if uniques_fpunch_feet_counter!=-1 && groundcheck!=noone
 	}
 }
 
-/////////// FORWARDPUNCH FEET STEPS
-//if uniques_forwardpunch_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
-//{
-//	if uniques_forwardpunch_feet_counter==0 || uniques_forwardpunch_feet_counter==1
-//	{
-//		if uniques_forwardpunch_feet_counter==0
-//		{
-//			b=22
-//			uniques_forwardpunch_feet_counter+=1
-//		}
-//		else
-//		{
-//			b=16
-//			uniques_forwardpunch_feet_counter=-1   
-//		}
-    
-//		punch_step_in(b)
-//	}
-//}
+//UGA super smash
+if uniques_uga_supersmash_lockdown==1
+{
+	attack_ooga_ultimate()
+}
 
 ///////// SHARKATTACK PUNCH FEET STEPS
 if uniques_sharkattack_feet_counter!=-1 && groundcheck!=noone   // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)

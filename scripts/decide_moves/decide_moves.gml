@@ -30,7 +30,7 @@ switch (character)
 	ds_map_add(attacks, "air light attack", "standard_airgrab");
 	ds_map_add(attacks, "air heavy attack", "no_effect");
 	ds_map_add(attacks, "ult get trigger", "uga_get_ult");
-	ds_map_add(attacks, "super attack", "uga super attack")
+	ds_map_add(attacks, "super attack", "uga_supersmash")
 	ds_map_add(attacks, "special hold down", "no_effect");
 	ds_map_add(attacks, "special2", -1);
 	//not set

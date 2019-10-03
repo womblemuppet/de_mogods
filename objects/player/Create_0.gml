@@ -160,7 +160,7 @@ uniques_fpunch_feet_counter=-1   /// -1 = not in use 0= please start 1/2 steps b
 uniques_fpunch_has_made_hitbox=false
 
 //OOGA ULT
-uniques_super_uga_gp_lockdown=0
+uniques_uga_supersmash_lockdown=0
 
 //VETERAN STANDARD PUNCH
 uniques_vet_la_target_counter=0

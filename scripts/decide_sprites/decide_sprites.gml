@@ -35,6 +35,8 @@ switch character
 				sprites[? "airgrab"]=Ooga_4H_airgrab 
 				sprites[? "uniques_falconpunch_u"]=Ooga_4H_falconpunch  ///super version (to be changed)
 				sprites[? "uniques_falconpunch"]=Ooga_4H_falconpunch
+				sprites[? "uniques_supersmash"]=Ooga_4H_super_smash
+				sprites[? "uniques_supersmash_u"]=Ooga_4H_super_smash
 				sprites[? "dizzy_u"]=Ooga_4H_dizzy   ///superversion (to be chnageD)
 				sprites[? "dizzy"]=Ooga_4H_dizzy
 				sprites[? "light_attack_u"]=Ooga_U_uppercut
