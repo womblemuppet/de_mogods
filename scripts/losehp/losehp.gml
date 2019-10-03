@@ -16,6 +16,11 @@ if immune==false && safe==false
 	player_make_immune(80)
 	hothands=0
 	H-=1
+	if H<1
+	{
+		playerdie()
+		return "died"
+	}
 	
 	if !player_has_no_pockets()
 		set_hud_pocket_circle_orb_lost_animation()
@@ -35,9 +40,6 @@ if immune==false && safe==false
 	player_flinch()
 	player_update_health_hud()
 	cc_reset_clean()
-	if H<1
-	{
-		playerdie()
-	}
+
     
 }
