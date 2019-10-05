@@ -33,7 +33,5 @@ last_stack_sprite=ds_list_find_value(STACK_ORB_SPRITES,ds_list_find_value(STACK,
 ds_list_delete(STACK,0)
 
 
-instance_create_depth(kouchou.room_x_halfway,kouchou.room_top_border_y,0,pineapple)
-
 
 

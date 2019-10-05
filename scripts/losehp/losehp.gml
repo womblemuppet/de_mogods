@@ -45,5 +45,6 @@ if immune==false && safe==false
 	player_set_idle()
 	is_proned=true
 	sprite_index=sprites[? "prone"]
+	stunned_groundpound=20
     
 }

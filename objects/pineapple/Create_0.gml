@@ -14,4 +14,7 @@ image_index=image_number-1
 invuln=true
 alarm[2]=40
 
+image_xscale=2
+image_yscale=2
+
 
