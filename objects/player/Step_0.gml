@@ -380,7 +380,7 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if checkkey(lightbutton) && checkkey(heavybutton)                                               /////// pocket event
+if button_scrape[? lightbutton] && button_scrape[? heavybutton]                                            /////// pocket event
 {
 	pocket_light_heavy_held_counter+=1
 	if pocket_light_heavy_held_counter>2
@@ -395,15 +395,17 @@ if checkkey(lightbutton) && checkkey(heavybutton)                               
 
 //if pocket_light_heavy_held_counter>0    //////pocket keys release event
 {   ///checks counter first for optimisation
-	if checkkey_released(lightbutton) || checkkey_released(heavybutton) || checkkey(leftbutton) || checkkey(rightbutton) || checkkey(upbutton) 
+	if button_scrape_released[? lightbutton] || button_scrape_released[? heavybutton] || button_scrape[? leftbutton] || button_scrape[? rightbutton] || button_scrape[? upbutton] 
 	{
 		pocket_light_heavy_held_counter=0
 	}
 }
-if can_activate_super_mode==false && (    (checkkey_released(lightbutton) && checkkey(rightbutton)) || (checkkey_released(rightbutton) && checkkey(leftbutton))    )
+
+if can_activate_super_mode==false && (  (button_scrape_released[? leftbutton] && button_scrape[? rightbutton]) || (button_scrape_released[? rightbutton] && button_scrape[? leftbutton])  )
 	can_activate_super_mode=true
 
-if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event super event
+
+if button_scrape_pushed[? superbutton] && player_may_attack()   ////super attack event super event
 {
 	switch attacks[? "super attack"]
 	{
@@ -463,7 +465,9 @@ if checkkey_pushed(superbutton) && player_may_attack()   ////super attack event 
 	}
 }
 
-if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack
+
+
+if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack
 {
 	var exception;
 	exception=false
@@ -566,7 +570,8 @@ if checkkey_pushed(lightbutton) && groundcheck!=noone && player_may_attack() && 
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// heavy attack
-if checkkey_pushed(heavybutton) && player_may_attack() && uniques_fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
+
+if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
 {
 	var exception;
 	exception=false
@@ -662,9 +667,10 @@ if checkkey_pushed(heavybutton) && player_may_attack() && uniques_fpunch_cd_coun
 	}
 }
 
+
 if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release/max time    [finaledit] way to optimise maybe
 {
-	if uniques_fpunch_lockdown==1 && (   (!checkkey(heavybutton) && uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MIN ) || uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
+	if uniques_fpunch_lockdown==1 && (   (!button_scrape[? heavybutton]  && uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MIN ) || uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
 		image_speed=FRAME_SPEED_NORMAL
 		image_index=4
@@ -674,7 +680,7 @@ if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button 
 }
 else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button release/max time    [finaledit] way to optimise maybe
 {
-	if uniques_spinner_attack_lockdown==1 && (   (!checkkey(heavybutton) && uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MIN ) || uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
+	if uniques_spinner_attack_lockdown==1 && (   (!button_scrape[? heavybutton]  && uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MIN ) || uniques_spinner_attack_charge>UNIQUES_SPINNER_ATTACK_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
 		image_speed=FRAME_SPEED_NORMAL
 		image_index=11
@@ -684,7 +690,7 @@ else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button 
 }
 
 
-if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
+if button_scrape_pushed[? lightbutton]  && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {
 	var exception;
 	exception=false
@@ -731,7 +737,8 @@ if checkkey_pushed(lightbutton) && groundcheck==noone && player_may_attack()////
     
 }
 
-if checkkey_pushed(heavybutton) && groundcheck==noone && player_may_attack()       ///    air heavy attack
+
+if button_scrape_pushed[? heavybutton] && groundcheck==noone && player_may_attack()       ///    air heavy attack
 {
 	var exception;
 	exception=false
@@ -815,9 +822,9 @@ rocketjumped=false
 
 
 
-if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) ) ///[finaledit] could happen with counters to free up check, optimisation.
+if (rocket_jump_input_time_counter_from_dash>0  || button_scrape_pushed[? dashbutton]  ) ///[finaledit] could happen with counters to free up check, optimisation.
 {
-	if (checkkey_pushed(upbutton) || rocket_jump_input_time_counter_from_jump>0) && !checkkey(downbutton)
+	if (button_scrape_pushed[? upbutton]  || rocket_jump_input_time_counter_from_jump>0) && !button_scrape[? downbutton] 
 	{
 		if player_may_attack()
 		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
@@ -839,12 +846,12 @@ if (rocket_jump_input_time_counter_from_dash>0  || checkkey_pushed(dashbutton) )
 }
 
 
-if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////////////////////////////                        events for groundpound, and dash 
+if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////////////////////////////////////                        events for groundpound, and dash 
 {
 	var exception;
 	exception=false
-
-	if uniques_dashgpblinkattack_enabled && !player_is_dashing() && groundcheck!=noone && checkkey(downbutton)  && uniques_baitchain_last_chained!=noone
+																
+	if uniques_dashgpblinkattack_enabled && !player_is_dashing() && groundcheck!=noone && button_scrape[? downbutton]  && uniques_baitchain_last_chained!=noone
 	{ 
 		uniques_dashgpblinkattack_lockdown=1
 		image_speed=0.2
@@ -856,7 +863,7 @@ if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////
 	}
 	
 
-	if !exception && player_may_attack() && checkkey(downbutton) && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
+	if !exception && player_may_attack() && button_scrape[? downbutton] && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
 	{///                                                                                                                                                    groundpound
 		var dropcrabok;
 		dropcrabok=true    ///if player can't gp then this stops crab being dropped
@@ -888,7 +895,7 @@ if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////
 		}
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-	if !exception && !checkkey(downbutton) && !player_is_dashing() && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
+	if !exception && !button_scrape[? downbutton]  && !player_is_dashing() && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
 	{
 		if cripple_debuff_counter<1
 		{
@@ -1029,7 +1036,8 @@ if checkkey_pushed(dashbutton) && rocketjumped==false              /////////////
 }
 
 ////hold dash button event
-if checkkey(dashbutton)
+
+if button_scrape[? dashbutton] 
 {
 	if dash_button_currently_held && dash_has_lifted_off_ground==false    ////continues momentum of ground dash
 	{
@@ -1064,8 +1072,8 @@ if checkkey(dashbutton)
 }
 //////end ground dash
 if dash_button_currently_held 
-{
-	if (checkkey_released(dashbutton) || (ground_dash_counter>GROUND_DASH_MAX))  && dash_has_lifted_off_ground==false
+{ 
+	if (button_scrape_released[? dashbutton] || (ground_dash_counter>GROUND_DASH_MAX))  && dash_has_lifted_off_ground==false
 	{
 		if dash_current_hitbox_object!=noone
 		{
@@ -1083,12 +1091,10 @@ if dash_button_currently_held
 	}
 }
 
-var down_pushed;
-down_pushed=checkkey_pushed(downbutton)
 
 
 ////////////////////////////////////////////// slinger phase on downkey (separate because of HA exception
-if down_pushed
+if button_scrape_pushed[? downbutton]
 {
 	if uniques_phase_enabled && uniques_phase_counter>0
 	{ 	
@@ -1104,9 +1110,8 @@ if down_pushed
 }
 
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
-if down_pushed && player_may_attack() && !checkkey(leftbutton) && !checkkey(rightbutton)
+if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[? leftbutton] && !button_scrape[? rightbutton]
 {
-
 	if groundcheck!=noone
 	{
 		switch attacks[? "special hold down"] 
@@ -1212,8 +1217,8 @@ player_set_friction()
 
 
 if uniques_vet_digging==2
-{
-	if checkkey_pushed(heavybutton) && mines_ammo-instance_number(drillmine) >0 && uniques_drill_mine_place_animation_lock==false
+{	
+	if button_scrape_pushed[? heavybutton] && mines_ammo-instance_number(drillmine) >0 && uniques_drill_mine_place_animation_lock==false
 	{
 		uniques_drill_mine_place_animation_lock=true
 		sprite_index=sprites[? "uniques_dig_place_mine"]
