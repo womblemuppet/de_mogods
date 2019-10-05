@@ -93,8 +93,8 @@ if lowest_player_y>=SCROLL_THRESHOLD // && !instance_exists(ice_block)   // [fin
 
 bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
 total_baseline_movement+=player_baseline_difference
-if player_baseline_difference!=0
-	show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
+//if player_baseline_difference!=0
+	//show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
 	
 surface_redraw_counter+=player_baseline_difference
 if surface_redraw_counter>SURFACE_REDRAW_INTERVAL

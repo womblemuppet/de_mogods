@@ -34,6 +34,8 @@ BRUTAL_SLOW_PERCENTAGE=0.2 ///speed timesed by this number
 slowed_show_trail=false   ///is set when slow effect applied
 
 is_proned=false
+ROLL_HSPEED=12
+roll_lockdown=0        ///0 = not rolling 1 = rolling
 
 ground_pound_freeze_counter=0
 ground_pound_freeze_time=13              ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)

@@ -60,6 +60,7 @@ switch character
 				sprites[? "fall_u"]=Ooga_U_fall
 				sprites[? "envoke"]=Ooga_4H_envoke
 				sprites[? "prone"]=Ooga_4H_prone
+				sprites[? "roll"]=Ooga_4H_roll
 			}
 		}
 /*        else if palette==1

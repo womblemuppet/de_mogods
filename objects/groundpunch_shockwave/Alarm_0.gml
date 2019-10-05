@@ -9,7 +9,7 @@ a.x+=GAP*n
 a.image_xscale=image_xscale
 a.hit_collector=self.id
 
-show_debug_message("shockwave"+string(n)+" x="+string(a.x)+" y="+string(a.y))
+//show_debug_message("shockwave"+string(n)+" x="+string(a.x)+" y="+string(a.y))
 
 
 for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)

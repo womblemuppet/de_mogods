@@ -1066,7 +1066,7 @@ if button_scrape[? dashbutton]
 		{
 			ground_pound_extra_delay_counter+=1
 			ground_pound_freeze_counter+=1
-			show_debug_message("gptime = "+string(ground_pound_freeze_counter))
+			//show_debug_message("gptime = "+string(ground_pound_freeze_counter))
 		}
 	}
 }
@@ -1215,6 +1215,28 @@ if player_not_digging()
 ///////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL FRICTION AND HSPD LIMIT
 player_set_friction()
 
+if is_proned
+{
+	if button_scrape[? leftbutton] || button_scrape[? rightbutton]
+	{
+		is_proned=false
+		sprite_index=sprites[? "roll"]
+		image_index=0
+		image_speed=0.2
+		roll_lockdown=1
+		
+		if button_scrape[? leftbutton]
+		{
+			hspd=-ROLL_HSPEED
+			right=false
+		}
+		else
+		{
+			hspd=ROLL_HSPEED
+			right=true
+		}
+	}
+}
 
 if uniques_vet_digging==2
 {	

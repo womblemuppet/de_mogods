@@ -15,8 +15,8 @@ with a
 	gamepad=ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester_id],"gamepad")
 	if gamepad
 		padnumber=ds_map_find_value(kouchou.keybinding_map_array[pausescreen_requester_id],"padnumber")
-	show_debug_message("GAMEPAD")
-	show_debug_message(gamepad)
+	//show_debug_message("GAMEPAD")
+	//show_debug_message(gamepad)
 }
 
 

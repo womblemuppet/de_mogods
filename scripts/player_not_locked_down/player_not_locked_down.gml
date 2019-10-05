@@ -22,5 +22,6 @@ if !stunned_groundpound
 && uniques_vet_kamikaze_lockdown==0
 && uniques_slinger_superblast_lockdown==0
 && uniques_supersmash_lockdown==0
+&& roll_lockdown==0
 	return true
 return false

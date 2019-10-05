@@ -7919,6 +7919,14 @@
             }
         },
         {
+            "Key": "e35a39ab-bc4a-4e7e-aed2-84f07e1521c8",
+            "Value": {
+                "id": "808dd01b-d16f-442e-906e-47e3e3404409",
+                "resourcePath": "sprites\\Ooga_4H_roll\\Ooga_4H_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e35d562e-0eb8-4c3f-b8cd-b49e86bd306c",
             "Value": {
                 "id": "d6593de1-99e3-4ee1-aee8-27a636814c04",

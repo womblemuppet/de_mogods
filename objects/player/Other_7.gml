@@ -181,6 +181,11 @@ else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocket
 		dash_rocket_jump=3
 	}
 }
+else if sprite_index==sprites[? "roll"]
+{
+	roll_lockdown=0
+	player_set_idle()	
+}
 else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"]  ///falc punch
 {
 	if uniques_fpunch_lockdown==3
@@ -225,7 +230,7 @@ else if sprite_index==sprites[? "uniques_airsunbolt_u"] || sprite_index==sprites
 }
 else if sprite_index==sprites[? "phase"] || sprite_index==sprites[? "phase_u"]
 {
-	show_debug_message("slinger phase target = "+string(uniques_phase_target))
+	//show_debug_message("slinger phase target = "+string(uniques_phase_target))
 	attack_slinger_phase_move()
 	player_set_idle()
 }
