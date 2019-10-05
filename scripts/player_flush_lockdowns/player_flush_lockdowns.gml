@@ -16,6 +16,7 @@ uniques_airbolt_lockdown=0
 uniques_vet_kamikaze_lockdown=0
 airgrab_mode="can_airgrab"
 cangroundpound=0
+ground_pound_freeze_counter=0
 dash_rocket_jump=0
 uniques_parachute=0
 dash_rocket_jump=0
