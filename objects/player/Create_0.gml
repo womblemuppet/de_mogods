@@ -84,7 +84,7 @@ recoil_sprite_counter=0    ///time left where idle sprite becomes flinching anim
 canpush=true   //// cooldown for uppercut (archaic...)
 push_other_attacks_timer=0 ///counter for below (archaic)
 PUSH_OTHER_ATTACKS_TIME=12 ////other attacks allowed after this time after an uppercut (archaic)
-PUSH_COOLDOWN=40  ///uppercut cooldown timer (archaic as well...)
+PUSH_COOLDOWN=30  ///uppercut cooldown timer (archaic as well...)
 
 LOONEYTUNE_TIME=4 ///after jumping off ledge you have this much time to still jump
 ltt=0 //(looneytune time) counter for above
