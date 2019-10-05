@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "093bd802-1341-4130-ae02-985a5ed48ac5",
+            "Value": {
+                "id": "97558996-3b3f-487c-812d-2ef25bb384c4",
+                "resourcePath": "sprites\\Bait_3H_prone\\Bait_3H_prone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0976c84c-b40b-4b3c-813b-4596cdb07486",
             "Value": {
                 "id": "ca77e086-dfd7-41e5-8dc0-3982dd47734a",
@@ -2631,6 +2639,14 @@
             }
         },
         {
+            "Key": "50aba84e-23e4-4169-9721-a23d79c32f95",
+            "Value": {
+                "id": "420ef8f0-b961-4032-ad6c-390d13a9d57f",
+                "resourcePath": "sprites\\Vet_3H_roll\\Vet_3H_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "512a7269-c0a1-4368-8089-98fe2f99d018",
             "Value": {
                 "id": "436c546b-7c4c-4bbe-8aa7-542f8446db0b",
@@ -3235,6 +3251,14 @@
             "Value": {
                 "id": "b01b7f4e-e7fe-4557-a816-420f86e14a16",
                 "resourcePath": "sprites\\forest13\\forest13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "608c6bf1-5d05-46b7-bc92-3b29a92cd9f9",
+            "Value": {
+                "id": "d08c2274-9134-4374-ae8f-259611665b1d",
+                "resourcePath": "sprites\\Bait_3H_roll\\Bait_3H_roll.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5623,6 +5647,14 @@
             }
         },
         {
+            "Key": "a2b81bc9-da59-44fc-ac34-892c560dc9c6",
+            "Value": {
+                "id": "bbf0bf9e-4b73-4b36-abe6-9b31f93542db",
+                "resourcePath": "sprites\\Slinger_3H_prone\\Slinger_3H_prone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a364c000-565e-492e-bc57-a7ab8cbfb3ba",
             "Value": {
                 "id": "0801e622-16cb-4b3a-96d2-2cfe12f8ad88",
@@ -6451,6 +6483,14 @@
             "Value": {
                 "id": "f2bb0209-b3c6-481d-b2e7-95b3597bc197",
                 "resourcePath": "sprites\\lava4\\lava4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bc6afb86-7bc0-4af4-b35b-fa86d9950297",
+            "Value": {
+                "id": "723163f3-89d4-4296-9d2f-77f5234c21c2",
+                "resourcePath": "sprites\\Slinger_3H_roll\\Slinger_3H_roll.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7348,6 +7388,14 @@
                 "id": "0c9bd23d-4235-4e34-9531-0ddf2b78b9b7",
                 "resourcePath": "scripts\\player_checkkey\\player_checkkey.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d337b2d1-173a-4467-b0f5-de60a2a83077",
+            "Value": {
+                "id": "237cd346-0fe4-4b34-abba-e8144e8d1a40",
+                "resourcePath": "sprites\\Vet_3H_prone\\Vet_3H_prone.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

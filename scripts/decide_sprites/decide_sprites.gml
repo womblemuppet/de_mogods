@@ -127,6 +127,8 @@ switch character
 			sprites[? "death_zap"]=Vet_death_by_zap
 			sprites[? "death_ice"]=Vet_death_by_ice
 			sprites[? "envoke"]=Vet_3H_envoke
+			sprites[? "prone"]=Vet_3H_prone
+			sprites[? "roll"]=Vet_3H_roll
 		}
 	}break;
     
@@ -180,7 +182,8 @@ switch character
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  ///super version (to be changed)
 			sprites[? "envoke"]=Slinger_3H_envoke
-			
+			sprites[? "prone"]=Slinger_3H_prone
+			sprites[? "roll"]=Slinger_3H_roll
 		}
 	} break;
 	
@@ -232,6 +235,8 @@ switch character
 		sprites[? "death_zap"]=Bait_death_by_zap
 		sprites[? "death_ice"]=Bait_death_by_ice
 		sprites[? "envoke"]=Bait_3H_envoke
+		sprites[? "prone"]=Bait_3H_prone
+		sprites[? "roll"]=Bait_3H_roll
 	} break;
     
 	default:
