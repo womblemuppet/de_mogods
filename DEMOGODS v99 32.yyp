@@ -2231,6 +2231,14 @@
             }
         },
         {
+            "Key": "448137b3-ac83-4ed9-8bac-a194374acd8b",
+            "Value": {
+                "id": "158a1bf9-8051-4e7d-a42a-42e24bcf076e",
+                "resourcePath": "sprites\\Ooga_4H_prone\\Ooga_4H_prone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "448c84b2-8c80-4732-b46e-5da67670e94d",
             "Value": {
                 "id": "bec516b6-4f97-4a63-a6b9-c561f102a7e8",
@@ -4042,7 +4050,7 @@
             "Key": "77f41f7b-d34c-47de-af19-9bc9c0c7ad8f",
             "Value": {
                 "id": "c70e0103-f8ce-481f-8b2f-2da83989c642",
-                "resourcePath": "scripts\\player_set_horizontal_movement\\player_set_horizontal_movement.yy",
+                "resourcePath": "scripts\\player_set_horizontal_movement_and_facingdir\\player_set_horizontal_movement_and_facingdir.yy",
                 "resourceType": "GMScript"
             }
         },

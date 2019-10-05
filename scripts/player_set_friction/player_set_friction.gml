@@ -1,7 +1,7 @@
-if float_counter<1   ///disable horizontal friction if bouncing or floating
+if float_counter<1   ///disable horizontal friction if floating
 {
 	if ( (!checkkey(leftbutton) && !checkkey(rightbutton) ) || !player_not_locked_down()  )          //     horizontal friction     if not holding left nor right, 
-	{ 
+	{              ////disable horizontal friction if player is holding a button or is locked down
 		var fir;
 		fir=FRICTION
 		
@@ -28,7 +28,7 @@ if float_counter<1   ///disable horizontal friction if bouncing or floating
 				hspd=0
 		}    
 	}
-	else                                                ///                                     else limit hspd if running 
+	else                                                ///                                     else limit hspd if running or locked down?
 	{
 		var fir;
 		fir=FRICTION

@@ -33,6 +33,8 @@ brutal_slowed_counter=0 /// 'large' slow counter for time remaining
 BRUTAL_SLOW_PERCENTAGE=0.2 ///speed timesed by this number
 slowed_show_trail=false   ///is set when slow effect applied
 
+is_proned=false
+
 ground_pound_freeze_counter=0
 ground_pound_freeze_time=13              ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)
 cangroundpound=0                         /// -1 jump delay 0 can 1 freeze 2 down 3 bounced

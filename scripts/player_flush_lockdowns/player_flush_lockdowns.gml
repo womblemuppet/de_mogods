@@ -27,6 +27,7 @@ uniques_dashgpblinkattack_lockdown=0
 dash_rocket_top_collision_safety_on=false
 recovery_groundpound_active=false
 airgrab_slam_on=false
+is_proned=false
 
 if uniques_phase_counter>0
 	attack_slinger_phase_cancelled()

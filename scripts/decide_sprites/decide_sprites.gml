@@ -59,6 +59,7 @@ switch character
 				sprites[? "air_u"]=Ooga_U_air
 				sprites[? "fall_u"]=Ooga_U_fall
 				sprites[? "envoke"]=Ooga_4H_envoke
+				sprites[? "prone"]=Ooga_4H_prone
 			}
 		}
 /*        else if palette==1
