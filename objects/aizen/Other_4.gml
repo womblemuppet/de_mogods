@@ -147,6 +147,15 @@ if room==gameroom
 			if gamepad
 				padnumber=ds_map_find_value(kouchou.keybinding_map_array[P],"padnumber")
 
+
+			USABLE_KEY_NAMES=[leftbutton,rightbutton,upbutton,downbutton,dashbutton,lightbutton,heavybutton,startbutton,superbutton]
+			USABLE_KEY_NAMES_SIZE=9
+
+			button_scrape_pushed=ds_map_create()
+			button_scrape=ds_map_create()
+			button_scrape_released=ds_map_create()
+
+
 			var b;
 			b=instance_create_depth(x,y,-4,ef_timed_indicator)
 			b.targ=id

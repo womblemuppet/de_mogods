@@ -273,7 +273,3 @@ FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this sw
 lastdamagetype=""  ///last type of damage taken (string) for corpse
 
 attacks=ds_map_create()   //[finaledit] to be deleted on game end
-
-
-
-

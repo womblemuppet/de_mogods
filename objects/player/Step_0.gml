@@ -2,6 +2,13 @@
 /*step event///////////////////////////////////
 *//////////////////////////////////////////////
 
+for (var i = 0; i < USABLE_KEY_NAMES_SIZE; i++)
+{
+	ds_map_set(button_scrape,USABLE_KEY_NAMES[i],checkkey(USABLE_KEY_NAMES[i]))
+	ds_map_set(button_scrape_pushed,USABLE_KEY_NAMES[i],checkkey_pushed(USABLE_KEY_NAMES[i]))
+	ds_map_set(button_scrape_released,USABLE_KEY_NAMES[i],checkkey_released(USABLE_KEY_NAMES[i]))
+}
+
 player_vertical_bounce_check()
 playerintersectioncheck=instance_place(x,y,player)
 edgeofroomcheck=false
@@ -336,7 +343,7 @@ player_block_above_check()
 
 
 //set to idle sprite if on ground and not pushing left or right, and not in important animation
-if !checkkey(leftbutton) && !checkkey(rightbutton) && groundcheck!=noone
+if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!=noone
 {
 	var pass;
 	pass=false
