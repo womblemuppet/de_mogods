@@ -23,12 +23,12 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 					{
 						rocket_jump_input_time_counter_from_jump=ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_JUMP
 						doublejumptimer=DOUBLEJUMPTIME
-						vspd=-JUMPSPEED*water_jump_factor
+						vspd=-JUMPSPEED
 					}
 					if doublejump==1     ///double jump
 					{
 						effect_aniend(player_double_jump_effect_spr,0.2,-2)
-						vspd=-DOUBLEJUMPSPEED*water_jump_factor 
+						vspd=-DOUBLEJUMPSPEED
 					}
 					set_jump_sprites=true         
 				}

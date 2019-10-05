@@ -1,6 +1,6 @@
-if instance_exists(wave)
+if instance_exists(freakyfishtime) //[finaledit] optimise?
 {
-	if wave.y+20<y
+	if freakyfishtime.y+20<y
 	{
 		if sprite_index!=meteor_sprite_cold
 			effect_aniend(splash_effect1,0.2,0)

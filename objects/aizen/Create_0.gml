@@ -1,7 +1,5 @@
 room=gameroom
 
-global.fft=1   ///testing variable for flood orb parents
-
 
 to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
 to_draw_size=0
@@ -25,7 +23,7 @@ last_stack_sprite=-1
 upcoming_stack=ds_list_create()
 UPCOMING_STACK_DISPLAY_NUMBER=3   ///number of upcoming orbs to be shown
 repeat(UPCOMING_STACK_DISPLAY_NUMBER+1)
-	generate_upcoming_stack_next(self.id)
+	generate_upcoming_stack_next()
 
 debug_show_hitboxes=false
 debug=false

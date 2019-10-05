@@ -7,15 +7,6 @@ if aizen.debug
 var surface_sprite,fill_sprite;
 surface_sprite=waveline
 fill_sprite=waterfill
-if frozen
-{
-    surface_sprite=waveline_frozen
-    fill_sprite=waterfill_frozen
-}
-
-
-
-
 
 
 for (var i=(kouchou.room_left_border_x/sprite_width)-1; i<(kouchou.room_right_border_x-kouchou.room_left_border_x)/sprite_width; i+=1)

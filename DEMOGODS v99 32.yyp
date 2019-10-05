@@ -7591,14 +7591,6 @@
             }
         },
         {
-            "Key": "d965c922-6e16-4ca6-8d6b-365ce5d239a9",
-            "Value": {
-                "id": "fd24c407-ff6d-48a0-a782-2b7febe0ee3b",
-                "resourcePath": "objects\\wave\\wave.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d96928d4-64b8-497f-bc6a-1ed6d8ae77c6",
             "Value": {
                 "id": "48cd894e-11e3-4bb6-8054-4ccd38890399",

@@ -54,7 +54,7 @@ else ///( if groundcheck==noone)
 	dash_has_lifted_off_ground=true
 }
 
-player_handle_water_physics()
+
 player_emitters()
 player_counters()
 

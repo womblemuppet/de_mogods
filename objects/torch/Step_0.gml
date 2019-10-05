@@ -7,18 +7,18 @@ if y>12000
     show_error("torch bottomless bug has occured",false)
     instance_destroy()
 }
-if instance_exists(wave)    ///[finaledit] optimise! this is bad
-{
-    if wave.y<y
-    {
-        if sprite_index==torchBLOO
-            sprite_index=torchBLOO_dead
-        if sprite_index=torch_sprite
-            sprite_index=torch_sprite_dead
+//if instance_exists(wave)    ///[finaledit] optimise! this is bad
+//{
+//    if wave.y<y
+//    {
+//        if sprite_index==torchBLOO
+//            sprite_index=torchBLOO_dead
+//        if sprite_index=torch_sprite
+//            sprite_index=torch_sprite_dead
             
-        alarm[1]=60
-        active=false
-    }
-}
+//        alarm[1]=60
+//        active=false
+//    }
+//}
 
 

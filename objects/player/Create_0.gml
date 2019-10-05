@@ -10,10 +10,6 @@ DOUBLEJUMPSPEED=12
 doublejump=0        ///what jump the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
 DOUBLEJUMPTIME=60  //time to double tap up for double jump
 doublejumptimer=0   ///the counter for the above
-water_jump_factor=1       ///(changed every step)
-water_gravity_factor=1     ///(changed every step)
-WATER_JUMP_FACTOR_IN_WATER=0.75 ///jump timesed by this number underwater 
-WATER_GRAVITY_FACTOR_IN_WATER=2 ///gravity divided by this number underwater 
 HOR_RUNSPEED=7.5
 HOR_SHUFFLESPEED=6   ///shuffling is the small movement when you tap a key but release before holding
 hor_running_counter=0  //4 = pressed r  8+ = holding r  -4 = pressed l  -8< = holding l
@@ -131,7 +127,6 @@ FRAME_SPEED_SLOW=0.1
 image_speed=FRAME_SPEED_NORMAL
 
 
-has_made_splash_effect=false
 
 ////SPECIAL INTERACTIONS //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //[finaledit] instead of player class holding baggage for all characters make them only hold/check relevant vars
