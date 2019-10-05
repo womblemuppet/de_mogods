@@ -1,21 +1,26 @@
+//////////////////////////   LAVA COLLISION   ///////////////////////////////////
 var lowest,lowesty;
 lowest=noone
 lowesty=-100
 
-with player
+
+///finds lowest player below lava line (random if tied)
+for (var i = 0; i < instance_number(player);i++)
 {
-	if y>freakyfishtime.y-50 && y>=lowesty
+	with instance_find(player,i)
 	{
-		if y>lowesty || (y==lowesty && choose(0,1)==1)  //[finaledit] untested...
+		if y>freakyfishtime.y-50 && y>=lowesty
 		{
-			lowest=self.id
-			lowesty=y
-		}
-            
-	}   
+			if y>lowesty || (y==lowesty && choose(0,1)==1)
+			{
+				lowest=self.id
+				lowesty=y
+			}
+		} 
+	}
 }
 
-
+///lava damage event
 if lowest!=noone
 {
 	with lowest
@@ -24,3 +29,4 @@ if lowest!=noone
 	effect_aniend(splash_effect1,0.2,-1)
 	
 }
+//////////////////////////////////////////////////////////////////
