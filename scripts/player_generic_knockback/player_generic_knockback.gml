@@ -19,7 +19,7 @@ victim=self.id
 
 
 
-with flower   /////transfer pineapple
+with pineapple   /////transfer pineapple
 {                   
 	if attacker!=owner && owner!=-1 && attacker!=noone
 	{

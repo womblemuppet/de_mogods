@@ -15,7 +15,9 @@
         "70071206-fd7a-4e01-8bd3-94b0842691bc",
         "0d3de0f1-2b8e-4e25-89d2-32a2a93a7236",
         "8b0d90c1-df1f-4791-bf8e-4c0fe8abfa35",
-        "9e42be21-8481-48ea-959a-679b3a8d0d64"
+        "9e42be21-8481-48ea-959a-679b3a8d0d64",
+        "ca052d1c-cd49-4715-99f2-46f79b521697",
+        "a01d418f-6924-44da-b280-0c684b94826e"
     ],
     "filterType": "GMObject",
     "folderName": "obsolete (will be deleted)",

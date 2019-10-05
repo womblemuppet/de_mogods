@@ -2,7 +2,7 @@
     "id": "ba5d327a-5331-4b27-9551-9349a4c55c6b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "flower",
+    "name": "pineapple",
     "eventList": [
         {
             "id": "c5afbaa5-c931-45e9-847e-f31acca85d28",

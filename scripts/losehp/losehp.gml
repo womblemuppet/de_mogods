@@ -37,9 +37,13 @@ if immune==false && safe==false
 	
 	
 	player_update_pocket_hud()
-	player_flinch()
+	//player_flinch()
 	player_update_health_hud()
 	cc_reset_clean()
-
+	
+	player_flush_lockdowns()
+	player_set_idle()
+	is_proned=true
+	sprite_index=sprites[? "prone"]
     
 }

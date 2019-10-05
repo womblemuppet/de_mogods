@@ -18,7 +18,7 @@ switch incoming_attack_name
 			cangroundpound=3
 			var d;
 			d=other.id
-			with flower
+			with pineapple
 			{
 				if owner==d
 				{
