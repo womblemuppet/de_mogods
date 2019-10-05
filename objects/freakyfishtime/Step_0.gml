@@ -1,4 +1,7 @@
 //////////////////////////   LAVA COLLISION   ///////////////////////////////////
+if hit==true
+exit
+
 var lowest,lowesty;
 lowest=noone
 lowesty=-100
@@ -16,7 +19,7 @@ for (var i = 0; i < instance_number(player);i++)
 				lowest=self.id
 				lowesty=y
 			}
-		} 
+		}
 	}
 }
 
@@ -24,9 +27,13 @@ for (var i = 0; i < instance_number(player);i++)
 if lowest!=noone
 {
 	with lowest
+	{
 		losehp(false,"lava")
+		effect_aniend(splash_effect1,0.2,-1)
+	}
 		
-	effect_aniend(splash_effect1,0.2,-1)
 	
+	hit=true
+	alarm[1]=30
 }
 //////////////////////////////////////////////////////////////////

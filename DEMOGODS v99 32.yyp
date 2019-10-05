@@ -7007,6 +7007,14 @@
             }
         },
         {
+            "Key": "cb02df5f-44b2-46f2-b218-7f10ca7b039d",
+            "Value": {
+                "id": "0da43818-56c1-4b45-b077-e174906c4d77",
+                "resourcePath": "sprites\\lava_disperse_tile_effect\\lava_disperse_tile_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb0cb273-a134-4357-8226-ba6a9a00ad4f",
             "Value": {
                 "id": "92d32d93-1c5e-4817-a8d7-bd1347a94eb2",
