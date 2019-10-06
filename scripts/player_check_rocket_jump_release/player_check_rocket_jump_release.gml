@@ -1,6 +1,6 @@
 if dash_rocket_jump==1
-{
-	if !checkkey(upbutton)
+{ 
+	if !button_scrape[? upbutton]
 	{ ////early release of rocket jump
 		if dash_rocket_jump==1 && (sprite_index=sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"])
 		{

@@ -6,8 +6,8 @@ if uniques_parachute==1     ////parachute floating effect
 		sprite_index=sprites[? "uniques_parachute"] ///parachute sprite
 	if sprite_index==sprites[? "fall_u"] ///fall super sprite
 		sprite_index=sprites[? "uniques_parachute_u"] ///parachute super sprite
-	if !checkkey(upbutton)        ////release parachute
-	{
+	if !button_scrape[? upbutton]        ////release parachute
+	{ 
 		uniques_parachute=2
 		if sprite_index==sprites[? "uniques_parachute"] || sprite_index==sprites[? "uniques_parachute_u"]
 		{

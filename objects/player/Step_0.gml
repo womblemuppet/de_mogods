@@ -2,11 +2,14 @@
 /*step event///////////////////////////////////
 *//////////////////////////////////////////////
 
-for (var i = 0; i < USABLE_KEY_NAMES_SIZE; i++)
+if !aizen.debug
 {
-	ds_map_set(button_scrape,USABLE_KEY_NAMES[i],checkkey(USABLE_KEY_NAMES[i]))
-	ds_map_set(button_scrape_pushed,USABLE_KEY_NAMES[i],checkkey_pushed(USABLE_KEY_NAMES[i]))
-	ds_map_set(button_scrape_released,USABLE_KEY_NAMES[i],checkkey_released(USABLE_KEY_NAMES[i]))
+	for (var i = 0; i < USABLE_KEY_NAMES_SIZE; i++)
+	{
+		ds_map_set(button_scrape,USABLE_KEY_NAMES[i],checkkey(USABLE_KEY_NAMES[i]))
+		ds_map_set(button_scrape_pushed,USABLE_KEY_NAMES[i],checkkey_pushed(USABLE_KEY_NAMES[i]))
+		ds_map_set(button_scrape_released,USABLE_KEY_NAMES[i],checkkey_released(USABLE_KEY_NAMES[i]))
+	}
 }
 
 player_vertical_bounce_check()

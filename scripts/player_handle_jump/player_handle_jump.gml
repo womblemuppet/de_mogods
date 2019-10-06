@@ -4,7 +4,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 	var set_jump_sprites;
 	set_jump_sprites=false  
     
-	if checkkey_pushed(upbutton) && !place_meeting(x,y-10,block)
+	if button_scrape_pushed[? upbutton] && !place_meeting(x,y-10,block)
 	{
 		var exception;
 		exception=false  ///[finaledit not in use
