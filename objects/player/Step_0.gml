@@ -1229,14 +1229,14 @@ player_set_friction()
 
 if is_proned
 {
-	if button_scrape[? leftbutton] || button_scrape[? rightbutton]
+	if button_scrape[? leftbutton] || button_scrape[? rightbutton]      /////ROLL EVENT
 	{
 		is_proned=false
 		sprite_index=sprites[? "roll"]
 		image_index=0
 		image_speed=0.2
 		roll_lockdown=1
-		
+		isteps=18
 		if button_scrape[? leftbutton]
 		{
 			hspd=-ROLL_HSPEED
