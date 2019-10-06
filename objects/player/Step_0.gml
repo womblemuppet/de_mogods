@@ -576,7 +576,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 
-			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,8+extrahkb,11)
+			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,10+extrahkb,11)
 		}
 	}
 }
