@@ -7,7 +7,8 @@
         "bd3195fe-ac2b-40ea-94af-e0c710f3d820",
         "d27de49d-07c0-484e-b524-a96be4b07b32",
         "9058a5e8-0a42-4c2b-8754-a7cd3a6ebd90",
-        "67862e88-a150-418a-aece-8e596089b655"
+        "67862e88-a150-418a-aece-8e596089b655",
+        "c18da944-472a-4d89-b39e-b460973a6589"
     ],
     "filterType": "GMSprite",
     "folderName": "pineapple",

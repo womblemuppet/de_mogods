@@ -17,4 +17,10 @@ alarm[2]=40
 image_xscale=2
 image_yscale=2
 
+with effect_aniend(pineapple_holy_light_tiled_effect,0.01,-1)
+{
+	y=kouchou.room_top_border_y
+	image_yscale=10
+}
+
 

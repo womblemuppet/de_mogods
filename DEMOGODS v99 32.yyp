@@ -6687,6 +6687,14 @@
             }
         },
         {
+            "Key": "c18da944-472a-4d89-b39e-b460973a6589",
+            "Value": {
+                "id": "100823ca-c9fd-4307-82ea-776d330ae208",
+                "resourcePath": "sprites\\pineapple_holy_light_tiled_effect\\pineapple_holy_light_tiled_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c1a1182e-e994-4125-9504-7b86fb31b469",
             "Value": {
                 "id": "265e457a-ae7d-4d7c-9028-61c7a511d69f",
