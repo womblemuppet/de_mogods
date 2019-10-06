@@ -6,6 +6,8 @@
 4 whether to gain meter or not
 */
 
+last_hit_knocked_down=false
+
 audio_play_sound(bam,5,false)
 
 if armouredframes<1
@@ -37,9 +39,12 @@ if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 player_flinch()
 player_has_taken_hh_damage()
 
-if argument3     /// knocks player out of current animation
+if !last_hit_knocked_down  ///if didn't lose hp
 {
-	player_flush_lockdowns()
+	if argument3     /// knocks player out of current animation
+	{
+		player_flush_lockdowns()
+	}
 }
 
 

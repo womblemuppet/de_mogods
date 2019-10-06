@@ -1,0 +1,3 @@
+player_flush_lockdowns()
+player_set_idle()
+before_prone_falling_lockdown=true

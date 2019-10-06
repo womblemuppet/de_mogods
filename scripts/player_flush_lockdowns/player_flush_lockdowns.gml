@@ -29,6 +29,7 @@ recovery_groundpound_active=false
 airgrab_slam_on=false
 is_proned=false
 roll_lockdown=0
+before_prone_falling_lockdown=false
 
 if uniques_phase_counter>0
 	attack_slinger_phase_cancelled()

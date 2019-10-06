@@ -251,10 +251,14 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		else
 			hspd=-UNIQUES_WHIRLWIND_SPEED
 	}
-		
 
+	if before_prone_falling_lockdown
+	{
+		player_set_prone()
+		before_prone_falling_lockdown=false
+	}
 
-	if cangroundpound==2   ////GP HITS GROUND EFFECT EVENT
+	if cangroundpound==2   //////////GP HITS GROUND EFFECT EVENT
 	{
 		effect_aniend(sprites[? "gp_hit_ground_effect"],0.4,-2)
 		
@@ -289,7 +293,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		attack_clear_groundpound_current_hitbox_object()
 	}
 
-	if jumped                            ///////////after landing from a jump , slow the player for a bit
+	if jumped                            ////////////////////after landing from a jump , slow the player for a bit
 	{
 		mild_slowed_counter=16
 		if cangroundpound!=0  
@@ -298,29 +302,33 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 			brutal_slowed_counter=7
 		}
 	}
+	
+	//////////////////////////////////////////////////////////////reset jumping/air variables
 	cangroundpound=0
 	dash_rocket_jump=0
 	jumped=false
-	if groundcheck!=groundcheck_prev
-		instance_create(x,y,jump_vibration)
 	vspd=0
 	doublejump=0
 	dash_rocket_top_collision_safety_on=false
 	
-	//////vet parachute turn off
+	////////////////////////////////////////////////////////////jump vibration mask
+	if groundcheck!=groundcheck_prev
+		instance_create(x,y,jump_vibration)
+	
+	///////////////////////////////////////////////////////////vet parachute turn off
 	if uniques_parachute>0
 	{
 		uniques_parachute=0 
 		if sprite_index==sprites[? "uniques_parachute"] || sprite_index==sprites[? "uniques_parachute_u"]
 		{
-			sprite_index=sprites[? "fall"]  //fall sprite
+			sprite_index=sprites[? "fall"]  //////////////fall sprite
 			if super_mode
-				sprite_index=sprites[? "fall_u"] //fall super sprite
+				sprite_index=sprites[? "fall_u"] /////////fall super sprite
 		}
 	}
     
-	////////////////////////////////////////////////if falling sprite, set sprite back to idle
-	if sprite_index==sprites[? "fall"]   ///fall sprite
+	////////////////////////////////////////////////////////if falling sprite, set sprite back to idle
+	if sprite_index==sprites[? "fall"]   ///////////////////fall sprite
 	{
 		sprite_index=sprites[? "idle"]
 		if recoil_sprite_counter>0
@@ -329,9 +337,9 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		}
 	}
 	
-	if sprite_index==sprites[? "fall_u"]  ///fall super sprite
+	if sprite_index==sprites[? "fall_u"]  //////////////////fall super sprite
 	{
-		sprite_index=sprites[? "idle_u"]   ///idle super sprite
+		sprite_index=sprites[? "idle_u"]   /////////////////idle super sprite
 		if recoil_sprite_counter>0
 		{
 			sprite_index=sprites[? "recoiling_u"]
