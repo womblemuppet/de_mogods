@@ -3,7 +3,7 @@ var hp_xoffset,hp_yoffset;
 var pocket_mask_scale,pocket_mask_xoffset,pocket_mask_yoffset,pocket_mask_gap_width;
 var pocket_area_xoffset,pocket_area_yoffset;
 var stack_hud_start_x,stack_hud_start_y,stack_mask_gap_width;
-var upcoming_stack_hud_start_x,upcoming_stack_hud_start_y,upcoming_stack_mask_interval_height;
+//var upcoming_stack_hud_start_x,upcoming_stack_hud_start_y,upcoming_stack_mask_interval_height;
 
 
 
@@ -51,14 +51,14 @@ for (var v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 
 stack_hud_start_x=kouchou.room_x_halfway-300
 stack_hud_start_y=55
-stack_mask_gap_width=75
+stack_mask_gap_width=125
 
 for (var i=0; i<ds_list_size(aizen.STACK); i+=1)
 {
 	var orb_sprite;
 	orb_sprite=ds_list_find_value(aizen.STACK_ORB_SPRITES,ds_list_find_value(aizen.STACK,i))
 	
-	draw_sprite_ext(orb_sprite,0,stack_hud_start_x+stack_mask_gap_width*i,stack_hud_start_y,1.5,1.5,0,c_white,1)
+	draw_sprite_ext(orb_sprite,0,stack_hud_start_x+stack_mask_gap_width*i,stack_hud_start_y,3.5,3.5,0,c_white,1)
 };
 
 
