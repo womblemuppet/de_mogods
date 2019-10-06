@@ -21,7 +21,7 @@ else
 
 if instance_exists(payday)==false           ////////add to hothands and do first blood (if not payday)
 {
-	hothands+=argument1
+	hothands+=argument1*3
 	if attacker!=noone
 	{
 		cc_land_hit(self.id,attacker)

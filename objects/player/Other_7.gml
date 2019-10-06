@@ -263,5 +263,5 @@ else if sprite_index==sprites[? "envoke"]
 	player_set_idle()	
 }
 
-//if P==0
-//show_debug_message("animation changed, new sprite is "+sprite_get_name(sprite_index))
+if P==0
+	show_debug_message("animation changed, new sprite is "+sprite_get_name(sprite_index))
