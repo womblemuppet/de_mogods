@@ -3935,6 +3935,14 @@
             }
         },
         {
+            "Key": "73a6a8d1-fc24-4498-8f48-4834ccb8b02d",
+            "Value": {
+                "id": "4817a027-9097-4e68-8900-dd25bf2bbd0c",
+                "resourcePath": "scripts\\player_allow_move_through_opponent\\player_allow_move_through_opponent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "73e6d4b8-38c1-44e5-ab63-e429320b3c8c",
             "Value": {
                 "id": "33c724e2-7492-4129-af91-a121afe2b282",
@@ -8926,6 +8934,7 @@
         "a250fa66-efde-4ce6-9576-6aaebc7a6916",
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
+        "73a6a8d1-fc24-4498-8f48-4834ccb8b02d",
         "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
         "1b99099c-f82e-4e8d-962d-5a3b757f592f",
