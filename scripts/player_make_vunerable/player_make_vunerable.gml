@@ -1,2 +1,2 @@
-iframes=0
+isteps=0
 armouredframes=0

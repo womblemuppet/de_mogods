@@ -1,4 +1,4 @@
-if !attack_should_crush(argument0) && iframes<1
+if !attack_should_crush(argument0) && isteps<1
 	return true
 
 return false

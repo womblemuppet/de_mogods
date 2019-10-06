@@ -232,8 +232,8 @@ if uniques_phase_counter>0
 if float_counter>0
 	float_counter-=1
 
-if iframes>0
-	iframes-=1
+if isteps>0
+	isteps-=1
 	
 if armouredframes>0
 	armouredframes-=1

@@ -130,6 +130,7 @@ switch character
 			sprites[? "envoke"]=Vet_3H_envoke
 			sprites[? "prone"]=Vet_3H_prone
 			sprites[? "roll"]=Vet_3H_roll
+			sprites[? "knockdown_air"]=Vet_3H_knockdown_air
 		}
 	}break;
     
@@ -185,6 +186,7 @@ switch character
 			sprites[? "envoke"]=Slinger_3H_envoke
 			sprites[? "prone"]=Slinger_3H_prone
 			sprites[? "roll"]=Slinger_3H_roll
+			sprites[? "knockdown_air"]=Slinger_3H_knockdown_air
 		}
 	} break;
 	
@@ -238,6 +240,7 @@ switch character
 		sprites[? "envoke"]=Bait_3H_envoke
 		sprites[? "prone"]=Bait_3H_prone
 		sprites[? "roll"]=Bait_3H_roll
+		sprites[? "knockdown_air"]=Bait_3H_knockdown_air
 	} break;
     
 	default:

@@ -9,7 +9,7 @@ safe=false
 TESTING_PLACEHOLDER=argument0   ///[finaledit] to be deleted
 lastdamagetype=argument1
 
-if iframes>0
+if isteps>0
 	safe=true
 
 if immune==false && safe==false

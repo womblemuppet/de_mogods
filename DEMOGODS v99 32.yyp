@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "0af79c10-4a88-47d6-96a9-c0eb1289b6b8",
+            "Value": {
+                "id": "382bccba-60b3-47d1-9fbd-678dc061f450",
+                "resourcePath": "sprites\\Bait_3H_knockdown_air\\Bait_3H_knockdown_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0af909a9-439b-496d-86df-b98998dc919e",
             "Value": {
                 "id": "6aa46e1a-5e75-416d-b969-75c19349e0a7",
@@ -3527,6 +3535,14 @@
             }
         },
         {
+            "Key": "65528599-5a6c-49c9-a8b7-2dd0a05a2888",
+            "Value": {
+                "id": "cb8770c2-4cde-4241-99cf-2a69c5c9bddc",
+                "resourcePath": "sprites\\Slinger_3H_knockdown_air\\Slinger_3H_knockdown_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65574ba0-c719-4ab9-80d0-762ccd0ab096",
             "Value": {
                 "id": "8c82c19f-080f-41d4-9cfb-e6da9b37f8ae",
@@ -6364,6 +6380,14 @@
                 "id": "9c1dd9a4-24f5-4e8f-88e0-212abc4b5174",
                 "resourcePath": "objects\\weaksand\\weaksand.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b861280b-6841-460a-bab8-4cef7ccd04e9",
+            "Value": {
+                "id": "8b08bf89-59a8-46b9-bcc6-021e890247b5",
+                "resourcePath": "sprites\\Vet_3H_knockdown_air\\Vet_3H_knockdown_air.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

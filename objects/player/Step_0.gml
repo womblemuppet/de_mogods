@@ -246,7 +246,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 
 	if uniques_whirlwind_active
 	{
-		iframes+=1
+		isteps+=1
 		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
 		
 		if right
@@ -1116,7 +1116,7 @@ if button_scrape_pushed[? downbutton]
 				image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[? "phase"]
-			iframes=10
+			isteps=10
 		}
 	}	
 }
@@ -1300,7 +1300,7 @@ if uniques_vet_kamikaze_lockdown==2
 {
 	if image_index>7
 		image_index=6
-	iframes=5
+	isteps=5
 	
 	if right
 		hspd=UNIQUES_VET_KAMIKAZE_HSPEED

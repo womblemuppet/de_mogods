@@ -20,7 +20,7 @@ switch attacks[? "ult get trigger"]
 		//slingerult
 	break;
 	case "bait_get_ult":
-		//iframes=super_mode_duration
+		//isteps=super_mode_duration
 		//armouredframes=super_mode_duration
 	break;
 	default:

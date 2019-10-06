@@ -13,7 +13,8 @@
         "3e585090-93a5-4aa3-bec2-53fc1f6e338b",
         "47d78bd8-9aed-456e-9ce7-f55d223b0ac3",
         "d337b2d1-173a-4467-b0f5-de60a2a83077",
-        "50aba84e-23e4-4169-9721-a23d79c32f95"
+        "50aba84e-23e4-4169-9721-a23d79c32f95",
+        "b861280b-6841-460a-bab8-4cef7ccd04e9"
     ],
     "filterType": "GMSprite",
     "folderName": "movement",
