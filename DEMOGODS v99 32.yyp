@@ -8223,6 +8223,14 @@
             }
         },
         {
+            "Key": "ea4cab8d-b271-46ea-8849-c889bdee9c6e",
+            "Value": {
+                "id": "f823b027-3ec6-4673-ad7e-e7dd86c72fdd",
+                "resourcePath": "sprites\\Ooga_4H_knockdown_air\\Ooga_4H_knockdown_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eacac16a-a723-4c3f-bc4b-7ecec449178e",
             "Value": {
                 "id": "89927a17-4f92-47ba-be26-4c8af466f33c",

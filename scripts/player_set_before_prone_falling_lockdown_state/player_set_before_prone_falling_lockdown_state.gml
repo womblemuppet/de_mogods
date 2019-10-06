@@ -1,5 +1,4 @@
 player_flush_lockdowns()
-player_set_idle()
 stunned_groundpound=0
-sprite_index=mask40
+sprite_index=sprites[? "knockdown_air"]
 before_prone_falling_lockdown=true

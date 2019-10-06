@@ -61,6 +61,7 @@ switch character
 				sprites[? "envoke"]=Ooga_4H_envoke
 				sprites[? "prone"]=Ooga_4H_prone
 				sprites[? "roll"]=Ooga_4H_roll
+				sprites[? "knockdown_air"]=Ooga_4H_knockdown_air
 			}
 		}
 /*        else if palette==1
