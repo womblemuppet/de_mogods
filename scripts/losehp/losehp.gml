@@ -11,12 +11,14 @@ lastdamagetype=argument1
 
 if isteps>0
 	safe=true
+if immune_counter>0
+	safe=true
 
-if immune==false && safe==false
+if safe==false
 {                                                                 //////////////take damage ///////////////////////////////////////////////////////////
-	player_make_immune(80)
 	hothands=0
 	H-=1
+	player_make_immune(20)
 	if H<1
 	{
 		playerdie()

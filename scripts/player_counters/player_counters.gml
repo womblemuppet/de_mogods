@@ -235,7 +235,10 @@ if float_counter>0
 if isteps>0
 	isteps-=1
 	
-if armouredframes>0
-	armouredframes-=1
+if immune_counter>0
+	immune_counter-=1
+	
+if armouredsteps>0
+	armouredsteps-=1
 	
 

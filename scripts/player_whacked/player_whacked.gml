@@ -10,7 +10,7 @@ last_hit_knocked_down=false
 
 audio_play_sound(bam,5,false)
 
-if armouredframes<1
+if armouredsteps<1
 	stunned=argument0
 
 var attacker

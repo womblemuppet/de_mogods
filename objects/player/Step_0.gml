@@ -1249,6 +1249,10 @@ if is_proned
 		}
 	}
 }
+else if before_prone_falling_lockdown
+{
+	player_make_immune(2)
+}
 
 if uniques_vet_digging==2
 {	

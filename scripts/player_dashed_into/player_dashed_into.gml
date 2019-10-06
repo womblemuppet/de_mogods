@@ -1,4 +1,4 @@
-if armouredframes>0
+if armouredsteps>0
 {
 	effect_aniend(armoured_get_hit_spr,0.2,-4)
 	exit

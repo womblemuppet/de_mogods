@@ -54,7 +54,7 @@ if active
 	
 	with player /////////////if player in effect area above effect line, get sucked up ///[finaledit] can maybe optimise
 	{
-		if y<effect_line_yy && x>xmin && x<xmax && armouredframes<1
+		if y<effect_line_yy && x>xmin && x<xmax && armouredsteps<1
 		{
 			var a=effect_aniend(sprite_index,0.2,depth)
 			a.vspeed=-50

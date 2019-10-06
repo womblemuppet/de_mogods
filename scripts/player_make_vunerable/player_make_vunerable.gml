@@ -1,2 +1,2 @@
 isteps=0
-armouredframes=0
+armouredsteps=0
