@@ -1,3 +1,4 @@
 player_flush_lockdowns()
 player_set_idle()
+sprite_index=mask40
 before_prone_falling_lockdown=true
