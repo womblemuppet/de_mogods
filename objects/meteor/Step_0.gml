@@ -1,6 +1,8 @@
-smoketicker+=1
-if smoketicker mod 4 ==0
+smoke_effect_counter-=1
+if smoke_effect_counter==0
 {
+	smoke_effect_counter=4
+	
 	var a;
 	a=effect_aniend(meteor_smoke,0.20,-1)  //[finaledit] depth ??
 	a.y-=48
