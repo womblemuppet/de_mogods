@@ -251,12 +251,13 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 }
 
 
-if uniques_sharkattack_lockdown==1 && image_index>3
+if uniques_sharkattack_lockdown==1 && image_index>4
 {
 	if uniques_sharkattack_has_made_hitbox==false 
 	{
 		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,0.2,99,9,3)
-		create_terrain_cutter(bait_sharkattack_htibox,"hit",right_to_dir(),5)
+		with create_terrain_cutter(bait_sharkattack_htibox,"hit",right_to_dir(),5)
+			image_index=1
 	} 
     
 	uniques_sharkattack_has_made_hitbox=true
