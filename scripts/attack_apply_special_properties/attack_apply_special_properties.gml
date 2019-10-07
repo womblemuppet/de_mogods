@@ -136,6 +136,12 @@ switch incoming_attack_name
 		}
 	} 
 	break;
+	case "forwardpunch":
+		impact_debuff_counter=40
+	break;
+	case "sunblast":
+		impact_debuff_counter=40
+	break;
 	case "whirlwind" :
 	{
 		if attacker!=noone
