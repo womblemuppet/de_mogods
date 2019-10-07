@@ -6,7 +6,7 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 941,
+    "bbox_bottom": 978,
     "bbox_left": 0,
     "bbox_right": 1079,
     "bbox_top": 0,
@@ -121,6 +121,94 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "798f0801-8022-467e-b139-6a539b19acbc",
+                    "LayerId": "b081ba3c-f6f2-4c60-9f4f-c7febc3fe765"
+                }
+            ]
+        },
+        {
+            "id": "f75113d2-7dbd-429b-a64c-46e55e2d39e2",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "524834a4-ea63-49c6-b0ee-1792fb038002",
+            "compositeImage": {
+                "id": "7f63aa77-881c-43fe-9c3c-159239135e47",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "f75113d2-7dbd-429b-a64c-46e55e2d39e2",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "0536b54e-f702-453d-bac6-fb0c655282f8",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "f75113d2-7dbd-429b-a64c-46e55e2d39e2",
+                    "LayerId": "b081ba3c-f6f2-4c60-9f4f-c7febc3fe765"
+                }
+            ]
+        },
+        {
+            "id": "ae750a82-554e-40fc-8264-fae18c74fc0e",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "524834a4-ea63-49c6-b0ee-1792fb038002",
+            "compositeImage": {
+                "id": "7f6d34bf-1ee9-4b99-84de-70a5ba53bee6",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "ae750a82-554e-40fc-8264-fae18c74fc0e",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "00235575-1d70-46d4-beda-ff90ada60e0d",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "ae750a82-554e-40fc-8264-fae18c74fc0e",
+                    "LayerId": "b081ba3c-f6f2-4c60-9f4f-c7febc3fe765"
+                }
+            ]
+        },
+        {
+            "id": "5b06661f-e972-4648-9399-73f7e5c39187",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "524834a4-ea63-49c6-b0ee-1792fb038002",
+            "compositeImage": {
+                "id": "fff5b2eb-d24f-4dcd-b2f8-4067cdb8ebee",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "5b06661f-e972-4648-9399-73f7e5c39187",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "f2433427-1c49-4f0e-94a9-5b6bcb1f09b2",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "5b06661f-e972-4648-9399-73f7e5c39187",
+                    "LayerId": "b081ba3c-f6f2-4c60-9f4f-c7febc3fe765"
+                }
+            ]
+        },
+        {
+            "id": "2ad27cb9-6ce1-480d-bb00-c67b7c7475a9",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "524834a4-ea63-49c6-b0ee-1792fb038002",
+            "compositeImage": {
+                "id": "ed6e2fc7-50c0-481f-818b-c09bd436cd7c",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "2ad27cb9-6ce1-480d-bb00-c67b7c7475a9",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "37ed540f-fb9a-4855-9540-cff9e4c8dca7",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "2ad27cb9-6ce1-480d-bb00-c67b7c7475a9",
                     "LayerId": "b081ba3c-f6f2-4c60-9f4f-c7febc3fe765"
                 }
             ]

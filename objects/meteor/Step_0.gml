@@ -1,13 +1,3 @@
-if instance_exists(freakyfishtime) //[finaledit] optimise?
-{
-	if freakyfishtime.y+20<y
-	{
-		if sprite_index!=meteor_sprite_cold
-			effect_aniend(splash_effect1,0.2,0)
-		sprite_index=meteor_sprite_cold
-	}
-}
-
 smoketicker+=1
 if smoketicker mod 4 ==0
 {

@@ -7,7 +7,7 @@ if other.hit==false
 	var a;
 	a=instance_create_depth(x,y,-3,ef_follower)
 	a.image_speed=0.02
-	a.sprite_index=hit_by_meteor_effect
+	a.sprite_index=player_hit_by_meteor_effect
 	a.targ=self.id
 	a.offsetx=0
 	a.offsety=0

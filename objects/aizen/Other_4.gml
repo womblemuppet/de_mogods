@@ -89,8 +89,8 @@ if room==gameroom
 	groundlevel=600
 	var playerspawnheight;
 	playerspawnheight=200
-	instance_create(0,0,sky)
-	instance_create(0,0,lighting)    
+	instance_create_depth(0,0,8,sky)
+	instance_create_depth(0,0,-8,lighting)    
 	
 	find_starting_spawn_locations()
 		
