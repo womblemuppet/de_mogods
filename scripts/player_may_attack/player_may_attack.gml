@@ -1,5 +1,8 @@
 if player_not_locked_down()
 {
+	if uniques_phase_landing_attack_disable_counter>0
+		return false
+	
 	if push_other_attacks_timer<1 && dash_attacks_allowed_counter<1 && stunned<1 && stunned_groundpound<1 && is_proned==false
 		return true
 	else 

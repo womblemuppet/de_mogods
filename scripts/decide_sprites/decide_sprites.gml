@@ -183,6 +183,7 @@ switch character
 			sprites[? "death_ice"]=Slinger_death_by_ice
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  ///super version (to be changed)
+			sprites[? "phase_land"]=Slinger_3H_phaseblink_land
 			sprites[? "envoke"]=Slinger_3H_envoke
 			sprites[? "prone"]=Slinger_3H_prone
 			sprites[? "roll"]=Slinger_3H_roll

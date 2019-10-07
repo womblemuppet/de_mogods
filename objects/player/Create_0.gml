@@ -214,6 +214,8 @@ uniques_phase_enabled=false
 uniques_phase_counter=0
 uniques_phase_target=noone
 UNIQUES_SLINGER_TIME_IN_PHASE=150
+uniques_phase_landing_attack_disable_counter=0
+UNIQUES_PHASE_LANDING_ATTACK_DISABLE_STEPS=24
 
 
 //SLINGER SUNBLAST
@@ -221,12 +223,12 @@ uniques_sunblast_lockdown=0 //0 = nothing 1 = charging 2 = shot/recovery
 uniques_sunblast_cd_counter=0
 UNIQUES_SUNBLAST_COOLDOWN=80
 uniques_sunblast_has_made_hitbox=false
-UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT=14
+UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT=12
 
 //SLINGER AIRBOLT
 uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery
 uniques_airbolt_has_made_hitbox=false
-UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=14
+UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=12
 
 //SLINGER SUPERBLAST
 uniques_slinger_superblast_lockdown=0

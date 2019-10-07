@@ -230,9 +230,13 @@ else if sprite_index==sprites[? "uniques_airsunbolt_u"] || sprite_index==sprites
 }
 else if sprite_index==sprites[? "phase"] || sprite_index==sprites[? "phase_u"]
 {
-	//show_debug_message("slinger phase target = "+string(uniques_phase_target))
-	attack_slinger_phase_move()
 	player_set_idle()
+	attack_slinger_phase_move()  ///if successful sets sprite to phase_land
+	
+}
+else if sprite_index==sprites[? "phase_land"]
+{
+	player_set_idle()	
 }
 else if sprite_index==sprites[? "uniques_superblast"]
 {

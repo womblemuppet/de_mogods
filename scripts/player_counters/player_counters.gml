@@ -229,6 +229,9 @@ if uniques_phase_counter>0
 		attack_slinger_phase_cancelled()
 	}
 }
+
+if uniques_phase_landing_attack_disable_counter>0
+	uniques_phase_landing_attack_disable_counter-=1
 if float_counter>0
 	float_counter-=1
 
