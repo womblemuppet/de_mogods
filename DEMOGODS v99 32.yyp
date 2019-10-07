@@ -5314,7 +5314,7 @@
             "Key": "998974f8-d157-40c2-8cf5-4ba681a29a1c",
             "Value": {
                 "id": "48407ae7-61f3-41f9-a451-81b37a22fbad",
-                "resourcePath": "sprites\\hit_by_meteor_effect\\hit_by_meteor_effect.yy",
+                "resourcePath": "sprites\\player_hit_by_meteor_effect\\player_hit_by_meteor_effect.yy",
                 "resourceType": "GMSprite"
             }
         },

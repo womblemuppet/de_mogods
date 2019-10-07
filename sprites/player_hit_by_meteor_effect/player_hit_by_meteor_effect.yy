@@ -2,7 +2,7 @@
     "id": "998974f8-d157-40c2-8cf5-4ba681a29a1c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "hit_by_meteor_effect",
+    "name": "player_hit_by_meteor_effect",
     "For3D": false,
     "HTile": false,
     "VTile": false,
