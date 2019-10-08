@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "0c7b47da-f6eb-4f73-8d2a-1409d4efa638",
+            "Value": {
+                "id": "a2584fe6-d9c9-4e8c-b298-99010771fc2d",
+                "resourcePath": "sprites\\number_of_games_cup_3_spr\\number_of_games_cup_3_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0cad08bb-fbab-4d9a-ac5b-d64d33db8aa1",
             "Value": {
                 "id": "e32063e4-7ef9-44f1-9cf6-7513ac6f1ad8",
@@ -556,6 +564,14 @@
                 "id": "c0817407-c249-4eaa-b3c8-2096d8532c14",
                 "resourcePath": "scripts\\start_trial\\start_trial.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0ddab20f-201e-48e2-a128-d2206daa404a",
+            "Value": {
+                "id": "19c559d9-fcf9-48c6-846b-836996902f8e",
+                "resourcePath": "sprites\\number_of_games_cup_5_spr\\number_of_games_cup_5_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2019,14 +2035,6 @@
             "Value": {
                 "id": "9e27f99f-854d-4eca-836c-9da701ec12ab",
                 "resourcePath": "sprites\\lightning_shrine\\lightning_shrine.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "3de09114-fb8c-4c24-9200-547e7e7340d5",
-            "Value": {
-                "id": "432335b0-3e10-4b0e-93c5-9b5e75908279",
-                "resourcePath": "sprites\\cupppp\\cupppp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3495,6 +3503,14 @@
             }
         },
         {
+            "Key": "63df928b-42c4-4e3c-8855-bfc7962f4481",
+            "Value": {
+                "id": "b585047f-1764-4eb1-8018-cb266dca76e6",
+                "resourcePath": "views\\63df928b-42c4-4e3c-8855-bfc7962f4481.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "63e26396-cd49-444d-8c23-4bfc7cacf29c",
             "Value": {
                 "id": "2aa4af75-bfe1-4912-a68c-ccace6022259",
@@ -4635,6 +4651,14 @@
             "Value": {
                 "id": "84cee449-d6e8-4d54-8058-7f1e092c4323",
                 "resourcePath": "sprites\\Bait_3H_use_teleport\\Bait_3H_use_teleport.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87476f13-6007-4394-8d44-0e6f49ddde64",
+            "Value": {
+                "id": "fa8b84f6-c562-4b69-ab33-c9e9cfe1feec",
+                "resourcePath": "sprites\\number_of_games_cup_7_spr\\number_of_games_cup_7_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7647,6 +7671,14 @@
             }
         },
         {
+            "Key": "d73b3648-e955-4bbf-a1de-d7d882dd7013",
+            "Value": {
+                "id": "47cabccc-952e-4958-8153-a6606353f851",
+                "resourcePath": "sprites\\number_of_games_cup_1_spr\\number_of_games_cup_1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d82a9bd3-306f-4488-8853-433ee5f44b97",
             "Value": {
                 "id": "2af1c0d8-2617-43f3-9161-8562876c121c",
@@ -8307,6 +8339,14 @@
             "Value": {
                 "id": "1c6cb32a-bad8-461b-a8af-34b1078fd2be",
                 "resourcePath": "sprites\\orb_flood\\orb_flood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eb24316a-9165-4994-9f11-a01637b9bc38",
+            "Value": {
+                "id": "2c684643-b3b2-4e77-bbae-4cda8192a148",
+                "resourcePath": "sprites\\number_of_games_cup_9_spr\\number_of_games_cup_9_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

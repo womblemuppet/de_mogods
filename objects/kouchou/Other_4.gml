@@ -89,7 +89,7 @@ else if room==multiplayermenu
 {
 	if competitive_mode==true
 	{
-		number_of_games_cup=create_menupart_basic(cupppp,0.01,room_width/2,room_height/2,-4,cup_hover_movement)
+		number_of_games_cup=create_menupart_basic(number_of_games_cup_5_spr,0.01,room_width/2,room_height/2,-4,cup_hover_movement)
 		number_of_games_cup.vspeed=0.5
 		number_of_games_cup.gravity=0.1
 		

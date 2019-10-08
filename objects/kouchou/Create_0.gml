@@ -158,11 +158,12 @@ MENU_CRAB_SUBSPR_LIMIT=7
 kouchou_set_select_menu_positions()
 
 selecting_number_of_games=false
-number_of_games_index=0
+number_of_games_index=2
 possible_number_of_games_array=[1,3,5,7,9]
 AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES=array_length_1d(possible_number_of_games_array)
-number_of_games=5
+number_of_games=possible_number_of_games_array[number_of_games_index]
 number_of_games_cup=noone
+NUMBER_OF_GAMES_CUP_SPRITES=[number_of_games_cup_1_spr,number_of_games_cup_3_spr,number_of_games_cup_5_spr,number_of_games_cup_7_spr,number_of_games_cup_9_spr]
 
 menu_letterbox_colour=make_colour_hsv(138,218,128)       //[finaledit]
 menu_letterbox_colour=make_colour_rgb(45,126,234)

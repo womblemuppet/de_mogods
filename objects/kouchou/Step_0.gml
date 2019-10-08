@@ -32,6 +32,7 @@ if room==multiplayermenu
 				number_of_games_index=0
 				
 			number_of_games=possible_number_of_games_array[number_of_games_index]
+			number_of_games_cup.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
 		}
 		else if menu_any_player_down_button_check()
 		{
@@ -40,6 +41,7 @@ if room==multiplayermenu
 				number_of_games_index=AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
 				
 			number_of_games=possible_number_of_games_array[number_of_games_index]
+			number_of_games_cup.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
 		}
 	}
 	
