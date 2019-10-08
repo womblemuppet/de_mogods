@@ -21,7 +21,30 @@ if room==multiplayermenu
 		}
 	}
 	
-
+	
+	///////////  choose number of rounds  //////////////////////////////////////////
+	if selecting_number_of_games==true
+	{
+		if menu_any_player_up_button_check()
+		{
+			number_of_games_index++
+			if number_of_games_index>AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
+				number_of_games_index=0
+				
+			number_of_games=possible_number_of_games_array[number_of_games_index]
+		}
+		else if menu_any_player_down_button_check()
+		{
+			number_of_games_index--
+			if number_of_games_index<1
+				number_of_games_index=AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
+				
+			number_of_games=possible_number_of_games_array[number_of_games_index]
+		}
+	}
+	
+	
+	///////////  add new players   ////////////////////////////////////////////
 	var keyboard_added_this_step;
 	keyboard_added_this_step=false
     
