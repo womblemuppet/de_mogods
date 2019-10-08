@@ -47,6 +47,7 @@ if room==multiplayermenu
 		{
 			selecting_number_of_games=false
 		}
+		exit
 	}
 	
 	
