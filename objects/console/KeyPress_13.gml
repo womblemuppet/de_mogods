@@ -142,6 +142,7 @@ switch txt
 		case "icicles":
 		case "winter":
 		case "cold":
+		case "snowball":
 		orb_type="snowball"
 		break
 		

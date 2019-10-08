@@ -1,18 +1,14 @@
 switch (argument0)
 {
-	case 0: 
+	case "meteors": 
 		return badweather break;
-	case 1: 
+	case "snowball": 
 		return winter break;
-	case 2: 
+	case "lightning": 
 		return storm break;
-	case 3: 
-		show_error("case 3 called from orb type conversion",true) break;
-	case 4: 
+	case "lava": 
 		return freakyfishtime break;
-	case 5: 
+	case "tornado": 
 		return tornadoe break;
-	case 6: 
-		show_error("case 6 called from orb type conversion",true) break;
 	default: show_error("sprite for instrument type unknown, arg is "+string(argument0),true)
 }
