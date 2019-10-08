@@ -135,20 +135,20 @@ switch txt
 	{
 		case "meteor":
 		case "meteors":
-		orb_type=0
+		orb_type="meteors"
 		break;
 		
 		case "ice":
 		case "icicles":
 		case "winter":
 		case "cold":
-		orb_type=1
+		orb_type="snowball"
 		break
 		
 		case "storm":
 		case "zap":
 		case "lightning":
-		orb_type=2
+		orb_type="lightning"
 		break;
 		
 		case "fish":
@@ -156,12 +156,13 @@ switch txt
 		case "wave":
 		case "waves":
 		case "freakyfishtime":
-		orb_type=4
+		case "lava":
+		orb_type="lava"
 		break;
 		
 		case "tornado":
 		case "tornadoe":
-		orb_type=5
+		orb_type="tornado"
 		break;
 	}
 
