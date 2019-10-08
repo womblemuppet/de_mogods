@@ -28,7 +28,7 @@ if room==multiplayermenu
 		if menu_any_player_up_button_check()
 		{
 			number_of_games_index++
-			if number_of_games_index>AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
+			if number_of_games_index==AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
 				number_of_games_index=0
 				
 			number_of_games=possible_number_of_games_array[number_of_games_index]
@@ -37,11 +37,15 @@ if room==multiplayermenu
 		else if menu_any_player_down_button_check()
 		{
 			number_of_games_index--
-			if number_of_games_index<1
-				number_of_games_index=AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES
+			if number_of_games_index==-1
+				number_of_games_index=AMOUNT_OF_POSSIBLE_NUMBER_OF_GAMES-1
 				
 			number_of_games=possible_number_of_games_array[number_of_games_index]
 			number_of_games_cup.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
+		}
+		else if menu_any_player_start_button_check()
+		{
+			selecting_number_of_games=false
 		}
 	}
 	

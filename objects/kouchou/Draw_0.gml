@@ -180,6 +180,13 @@ else if room==settings
 }
 else if room==multiplayermenu
 {
+	if selecting_number_of_games
+	{
+		draw_set_colour(c_black)
+		draw_rectangle(0,0,room_width,room_height,false)
+		exit
+	}
+		
 	draw_set_halign(fa_left)
 	draw_set_alpha(1)    
 	draw_set_font(font_charselect)    
