@@ -157,6 +157,8 @@ MENU_CRAB_SUBSPR_LIMIT=7
 // CHARACTER LARGE BACKGROUNDS (QUADRANTS)
 kouchou_set_select_menu_positions()
 
+selecting_number_of_games=false
+number_of_games_cup=noone
 
 menu_letterbox_colour=make_colour_hsv(138,218,128)       //[finaledit]
 menu_letterbox_colour=make_colour_rgb(45,126,234)
