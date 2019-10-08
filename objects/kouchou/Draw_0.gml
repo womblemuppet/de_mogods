@@ -184,6 +184,8 @@ else if room==multiplayermenu
 	{
 		draw_set_colour(c_black)
 		draw_rectangle(0,0,room_width,room_height,false)
+		draw_sprite(selecting_number_of_games_background,0,number_of_games_cup.x,number_of_games_cup.y)
+		
 		exit
 	}
 		

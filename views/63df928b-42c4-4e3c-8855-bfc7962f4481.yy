@@ -8,7 +8,8 @@
         "0c7b47da-f6eb-4f73-8d2a-1409d4efa638",
         "0ddab20f-201e-48e2-a128-d2206daa404a",
         "87476f13-6007-4394-8d44-0e6f49ddde64",
-        "eb24316a-9165-4994-9f11-a01637b9bc38"
+        "eb24316a-9165-4994-9f11-a01637b9bc38",
+        "5496da2c-16f8-4548-971c-6ed748ac3813"
     ],
     "filterType": "GMSprite",
     "folderName": "cups",

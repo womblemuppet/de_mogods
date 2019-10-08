@@ -2807,6 +2807,14 @@
             }
         },
         {
+            "Key": "5496da2c-16f8-4548-971c-6ed748ac3813",
+            "Value": {
+                "id": "921641b1-3f87-46d4-8960-6a5438ddeaea",
+                "resourcePath": "sprites\\selecting_number_of_games_background\\selecting_number_of_games_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "54a63b5a-6cf9-4547-a7e1-75f6e4ba5767",
             "Value": {
                 "id": "b8955524-0f3b-42c2-b750-ebf224ac58a5",
