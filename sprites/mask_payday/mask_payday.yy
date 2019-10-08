@@ -2,7 +2,7 @@
     "id": "553884ec-a45d-41a2-a5c8-052e0f50c2f3",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "orb_sprite8",
+    "name": "mask_payday",
     "For3D": false,
     "HTile": false,
     "VTile": false,

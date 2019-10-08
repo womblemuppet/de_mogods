@@ -2,7 +2,7 @@
     "id": "41898f57-de1a-4394-b4d5-bd7582903797",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "orb_sprite4",
+    "name": "mask_snowball",
     "For3D": false,
     "HTile": false,
     "VTile": false,

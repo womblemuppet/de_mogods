@@ -2,7 +2,7 @@
     "id": "15c0eefd-9af2-40de-b0e4-0c93784febd8",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "orb_sprite2",
+    "name": "mask_meteors",
     "For3D": false,
     "HTile": false,
     "VTile": false,

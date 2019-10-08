@@ -56,7 +56,7 @@ stack_mask_gap_width=125
 for (var i=0; i<ds_list_size(aizen.STACK); i+=1)
 {
 	var orb_sprite;
-	orb_sprite=ds_list_find_value(aizen.STACK_ORB_SPRITES,ds_list_find_value(aizen.STACK,i))
+	orb_sprite=STACK_ORB_SPRITES[? ds_list_find_value(aizen.STACK,i)]
 	
 	draw_sprite_ext(orb_sprite,0,stack_hud_start_x+stack_mask_gap_width*i,stack_hud_start_y,3.5,3.5,0,c_white,1)
 };

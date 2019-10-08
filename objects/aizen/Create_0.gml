@@ -109,12 +109,17 @@ IMGSPEED_SPARKY   //double of important
 
 terrain_block_sprite_lists_init()
 
-STACK_ORB_SPRITES=ds_list_create()
-STACK_ORB_SPRITES_DIE=ds_list_create()
-STACK_ORB_SPRITES_BIRTH=ds_list_create()
-ds_list_add(STACK_ORB_SPRITES,orb_sprite2,orb_sprite4,orb_sprite7,orb_sprite8,orb_flood,tornadoe_orbsprite,moonlight_orbsprite)
-ds_list_add(STACK_ORB_SPRITES_DIE,orb_sprite2_die,orb_sprite4_die,orb_sprite7_die,orb_sprite8_die,orb_flood_die,tornadoe_orbsprite_die,moonlight_orbsprite_die)
-ds_list_add(STACK_ORB_SPRITES_BIRTH,orb_sprite2_spawn,orb_sprite4_spawn,orb_sprite7_spawn,orb_sprite8_spawn,orb_flood_spawn,tornadoe_orbsprite_spawn,moonlight_orbsprite_spawn)
+STACK_ORB_SPRITES=ds_map_create()
+STACK_ORB_SPRITES[? "meteors"]=mask_meteors
+STACK_ORB_SPRITES[? "snowball"]=mask_snowball
+STACK_ORB_SPRITES[? "lightning"]=mask_lightning
+STACK_ORB_SPRITES[? "lava"]=mask_lava
+STACK_ORB_SPRITES[? "tornado"]=mask_tornado
+STACK_ORB_SPRITES[? "payday"]=mask_payday
+//STACK_ORB_SPRITES_DIE=ds_list_create()
+//STACK_ORB_SPRITES_BIRTH=ds_list_create()
+//ds_list_add(STACK_ORB_SPRITES_DIE,orb_sprite2_die,orb_sprite4_die,orb_sprite7_die,orb_sprite8_die,orb_flood_die,tornadoe_orbsprite_die,moonlight_orbsprite_die)
+//ds_list_add(STACK_ORB_SPRITES_BIRTH,orb_sprite2_spawn,orb_sprite4_spawn,orb_sprite7_spawn,orb_sprite8_spawn,orb_flood_spawn,tornadoe_orbsprite_spawn,moonlight_orbsprite_spawn)
 
 chunkery_init()
 

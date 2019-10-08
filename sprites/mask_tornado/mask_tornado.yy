@@ -2,7 +2,7 @@
     "id": "b682e2f7-5c3f-4fea-b5b6-0aec05261541",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "tornadoe_orbsprite",
+    "name": "mask_tornado",
     "For3D": false,
     "HTile": false,
     "VTile": false,

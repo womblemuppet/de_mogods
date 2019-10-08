@@ -834,7 +834,7 @@
             "Key": "15c0eefd-9af2-40de-b0e4-0c93784febd8",
             "Value": {
                 "id": "4c25272c-82b4-483f-9b52-2d7a5b8dd439",
-                "resourcePath": "sprites\\orb_sprite2\\orb_sprite2.yy",
+                "resourcePath": "sprites\\mask_meteors\\mask_meteors.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1543,6 +1543,14 @@
             }
         },
         {
+            "Key": "2d6d8422-ddf4-4dae-a710-c174ab121e0a",
+            "Value": {
+                "id": "c13f695b-43ba-4685-975d-d3c640606712",
+                "resourcePath": "views\\2d6d8422-ddf4-4dae-a710-c174ab121e0a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2d8db044-85f8-4811-9900-c85ed86d990a",
             "Value": {
                 "id": "5737b6b9-b1ea-4de6-a0eb-8cfc2ffa19fe",
@@ -2154,7 +2162,7 @@
             "Key": "41898f57-de1a-4394-b4d5-bd7582903797",
             "Value": {
                 "id": "668c3745-d464-46a6-97f7-3407b9a5f8ad",
-                "resourcePath": "sprites\\orb_sprite4\\orb_sprite4.yy",
+                "resourcePath": "sprites\\mask_snowball\\mask_snowball.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2834,7 +2842,7 @@
             "Key": "553884ec-a45d-41a2-a5c8-052e0f50c2f3",
             "Value": {
                 "id": "fe0c8782-8aa3-4420-b015-4377652343b9",
-                "resourcePath": "sprites\\orb_sprite8\\orb_sprite8.yy",
+                "resourcePath": "sprites\\mask_payday\\mask_payday.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4026,7 +4034,7 @@
             "Key": "74862e50-8bff-458a-b76d-81808ba88983",
             "Value": {
                 "id": "ff5d47a1-d30d-4df8-9e0e-b96d0c4fbc2e",
-                "resourcePath": "sprites\\orb_sprite7\\orb_sprite7.yy",
+                "resourcePath": "sprites\\mask_lightning\\mask_lightning.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6362,7 +6370,7 @@
             "Key": "b682e2f7-5c3f-4fea-b5b6-0aec05261541",
             "Value": {
                 "id": "93a5b6ff-b24b-421c-adb7-bdb8cd962e29",
-                "resourcePath": "sprites\\tornadoe_orbsprite\\tornadoe_orbsprite.yy",
+                "resourcePath": "sprites\\mask_tornado\\mask_tornado.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7743,6 +7751,14 @@
             }
         },
         {
+            "Key": "d8c8c6eb-b9db-483d-ba7f-f1c0a810817a",
+            "Value": {
+                "id": "77ad1131-243c-4d9b-b852-b98e9fa0c59a",
+                "resourcePath": "views\\d8c8c6eb-b9db-483d-ba7f-f1c0a810817a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d9039e32-fbeb-460e-9d07-75fe7909a450",
             "Value": {
                 "id": "c5d9c7de-e60c-4470-a768-a36d62dc914c",
@@ -8346,7 +8362,7 @@
             "Key": "eaf14873-0b88-49fb-a3e6-399de1bad269",
             "Value": {
                 "id": "1c6cb32a-bad8-461b-a8af-34b1078fd2be",
-                "resourcePath": "sprites\\orb_flood\\orb_flood.yy",
+                "resourcePath": "sprites\\mask_lava\\mask_lava.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -2,7 +2,7 @@
     "id": "74862e50-8bff-458a-b76d-81808ba88983",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "orb_sprite7",
+    "name": "mask_lightning",
     "For3D": false,
     "HTile": false,
     "VTile": false,

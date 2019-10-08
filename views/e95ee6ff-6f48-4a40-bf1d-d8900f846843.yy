@@ -10,17 +10,10 @@
         "14ff4087-2c45-4ed5-9390-cc77bbef0563",
         "7ebf8b1f-ffae-46d9-9b10-79083d2ffd5e",
         "cb02df5f-44b2-46f2-b218-7f10ca7b039d",
-        "013ace7f-9177-4ba4-92ec-805399c24f46",
-        "95e36f39-1c53-4d40-a9ca-48b31daad92c",
-        "157bd692-79f9-45a1-8f2e-b3fa23d071e4",
-        "623634a5-deef-4ac7-b8e3-a31992e81890",
-        "eaf14873-0b88-49fb-a3e6-399de1bad269",
-        "48e67d00-3415-4aa6-a8f6-a6405532e608",
-        "70f52363-0152-4893-899d-81210af23621",
         "7928b44a-bb9c-48be-954e-b5a48cffc7ec"
     ],
     "filterType": "GMSprite",
-    "folderName": "water",
+    "folderName": "lava",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

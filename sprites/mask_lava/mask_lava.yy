@@ -2,7 +2,7 @@
     "id": "eaf14873-0b88-49fb-a3e6-399de1bad269",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "orb_flood",
+    "name": "mask_lava",
     "For3D": false,
     "HTile": false,
     "VTile": false,
