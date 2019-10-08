@@ -13,6 +13,7 @@ else if uniques_fpunch_lockdown==2
 		if uniques_fpunch_has_made_hitbox==false
 		{            
 			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
+			create_terrain_cutter(fpunchhitbox,"hit",right_to_dir(),7)
 		}
         
 		uniques_fpunch_has_made_hitbox=true
