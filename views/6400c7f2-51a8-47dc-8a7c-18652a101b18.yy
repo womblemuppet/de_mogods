@@ -17,10 +17,13 @@
         "8b0d90c1-df1f-4791-bf8e-4c0fe8abfa35",
         "9e42be21-8481-48ea-959a-679b3a8d0d64",
         "ca052d1c-cd49-4715-99f2-46f79b521697",
-        "a01d418f-6924-44da-b280-0c684b94826e"
+        "a01d418f-6924-44da-b280-0c684b94826e",
+        "335fd619-9fcc-4e82-be34-0ba2c0eecf51",
+        "9f187418-fe24-459a-9c8d-db1e263aa164",
+        "35f213fd-e2eb-447f-a134-2e56667c4391"
     ],
     "filterType": "GMObject",
-    "folderName": "obsolete (will be deleted)",
+    "folderName": "backup (removed)",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

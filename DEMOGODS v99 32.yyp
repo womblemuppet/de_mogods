@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "127897de-8c99-4f48-b706-a54d425dae05",
+            "Value": {
+                "id": "c7ffcf82-ea05-4801-9870-7dcb915e802e",
+                "resourcePath": "objects\\snowball\\snowball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "127f0d37-9bf6-4984-b6a0-559ac2c6f764",
             "Value": {
                 "id": "d1204487-685b-482f-b327-4e76e00a8318",
@@ -5543,6 +5551,14 @@
             }
         },
         {
+            "Key": "9ed1cd78-ea3e-4ddf-845f-7154f48332a3",
+            "Value": {
+                "id": "53b3fe5e-4360-47f4-9dc1-29fdbd6f4572",
+                "resourcePath": "sprites\\snowball_terrain_cutter_mask\\snowball_terrain_cutter_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9f187418-fe24-459a-9c8d-db1e263aa164",
             "Value": {
                 "id": "cba7ba67-7837-4799-b880-4516bb7e5ae7",
@@ -5948,6 +5964,14 @@
                 "id": "6beaffe4-6e38-44f9-89fe-7f1bdf424223",
                 "resourcePath": "sprites\\cctextspr_clean_p1\\cctextspr_clean_p1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aaca2e0c-a528-427f-9f28-3316bba1d283",
+            "Value": {
+                "id": "9a25b9ad-9efd-4136-8a48-314716815223",
+                "resourcePath": "views\\aaca2e0c-a528-427f-9f28-3316bba1d283.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
