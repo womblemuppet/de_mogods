@@ -7,7 +7,7 @@
         "68b37084-7de1-44a1-a4c4-ffd026bd5db1"
     ],
     "filterType": "GMObject",
-    "folderName": "HUD",
+    "folderName": "splash",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
