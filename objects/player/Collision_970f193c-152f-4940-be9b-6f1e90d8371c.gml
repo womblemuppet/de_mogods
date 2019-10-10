@@ -1,4 +1,4 @@
-if other.hit==false
+if other.hit==false && player_can_be_hit_by_hazard()
 {
 	losehp(false,"fire")
 	with other

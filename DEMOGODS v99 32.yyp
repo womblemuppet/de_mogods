@@ -1959,6 +1959,14 @@
             }
         },
         {
+            "Key": "3a701449-aba2-4c4b-b91f-baed3df44e71",
+            "Value": {
+                "id": "5123f206-08cd-4551-a7b9-dafbfad7b4dd",
+                "resourcePath": "scripts\\player_can_be_hit_by_hazard\\player_can_be_hit_by_hazard.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a9c00bb-f55a-4933-a645-d6fcbdc2e432",
             "Value": {
                 "id": "d3c9e3a2-d2f3-4edb-8880-8aa360e026e4",
@@ -9156,6 +9164,7 @@
         "6609906a-4b19-4d9f-b111-e8d34f4c982a",
         "9948ffe7-b72a-4faa-a239-6876aee79f95",
         "acbe5ce7-dd26-4b9d-8d7d-0543f2f7dcf0",
+        "3a701449-aba2-4c4b-b91f-baed3df44e71",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",
