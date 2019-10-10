@@ -35,6 +35,8 @@ slowed_show_trail=false   ///is set when slow effect applied
 
 before_prone_falling_lockdown=false
 is_proned=false
+cannot_roll_counter=0 ////set once proned
+CANNOT_ROLL_COUNTER_AMOUNT=30
 ROLL_HSPEED=12
 roll_lockdown=0        ///0 = not rolling 1 = rolling
 last_hit_knocked_down=false

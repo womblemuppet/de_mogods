@@ -1227,29 +1227,33 @@ if player_not_digging()
 ///////////////////////////////////////////////////////////////////////////////////////////////// HORIZONTAL FRICTION AND HSPD LIMIT
 player_set_friction()
 
-if is_proned
+
+if is_proned           /////ROLL EVENT 
 {
-	if button_scrape[? leftbutton] || button_scrape[? rightbutton]      /////ROLL EVENT
+	if cannot_roll_counter<1
 	{
-		is_proned=false
-		sprite_index=sprites[? "roll"]
-		image_index=0
-		image_speed=0.2
-		roll_lockdown=1
-		isteps=18
-		if button_scrape[? leftbutton]
+		if button_scrape[? leftbutton] || button_scrape[? rightbutton]      
 		{
-			hspd=-ROLL_HSPEED
-			right=false
-		}
-		else
-		{
-			hspd=ROLL_HSPEED
-			right=true
+			is_proned=false
+			sprite_index=sprites[? "roll"]
+			image_index=0
+			image_speed=0.2
+			roll_lockdown=1
+			isteps=18
+			if button_scrape[? leftbutton]
+			{
+				hspd=-ROLL_HSPEED
+				right=false
+			}
+			else
+			{
+				hspd=ROLL_HSPEED
+				right=true
+			}
 		}
 	}
 }
-else if before_prone_falling_lockdown
+else if before_prone_falling_lockdown                     /////REMAIN IMMUNE WHILE IN BEFORE_PRONE STATE
 {
 	player_make_immune(2)
 }
