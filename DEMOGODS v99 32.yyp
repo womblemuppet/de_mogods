@@ -1287,14 +1287,6 @@
             }
         },
         {
-            "Key": "211809b8-b744-4b83-b3f6-1455713b697c",
-            "Value": {
-                "id": "7d34bc18-f806-4e57-9fed-629dde4d6a4b",
-                "resourcePath": "sprites\\snowflake2\\snowflake2.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2127dd53-8c61-443d-abca-358437011297",
             "Value": {
                 "id": "7433785d-e09d-49d7-90c6-aa514c127a29",
@@ -3551,14 +3543,6 @@
             }
         },
         {
-            "Key": "635ffdb7-934c-4450-893a-dea7f675b05c",
-            "Value": {
-                "id": "a321b7dd-fed2-407e-858c-59d68abe3c4e",
-                "resourcePath": "sprites\\snowflake3\\snowflake3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "637d745c-7897-4db0-9a27-2bfe2272b364",
             "Value": {
                 "id": "981d1a58-8b57-4055-8559-7a4b0bbf0718",
@@ -4835,14 +4819,6 @@
             "Value": {
                 "id": "02684dfb-5a7e-41be-af60-92cec1ec0136",
                 "resourcePath": "sprites\\volcanicrock_backgroundani\\volcanicrock_backgroundani.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "8a9d92b1-27ff-4b2f-a28a-a60a763a8e06",
-            "Value": {
-                "id": "39ff2334-7963-4e66-88de-3a6e97b95b0e",
-                "resourcePath": "sprites\\snowflake1\\snowflake1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8076,14 +8052,6 @@
                 "id": "1a2ea8e3-5756-4bd1-be50-13288094769d",
                 "resourcePath": "scripts\\@__view_get\\__view_get.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "dee04c27-4c77-4a47-a9f8-5d3390b5e6d5",
-            "Value": {
-                "id": "9df3cb5e-acf3-4fa8-943e-8dee313dc7bb",
-                "resourcePath": "views\\dee04c27-4c77-4a47-a9f8-5d3390b5e6d5.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
