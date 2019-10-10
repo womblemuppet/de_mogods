@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "12925e84-3751-4c83-ac6e-68fc7d3e4fec",
+            "Value": {
+                "id": "2965b266-2cfb-420b-87a8-1f2e80d3b5ff",
+                "resourcePath": "sprites\\snowball_die\\snowball_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12a534ba-7e27-4954-a5bd-77c831b91f76",
             "Value": {
                 "id": "a4b1beb1-50eb-4428-8b80-8e8406adc66b",

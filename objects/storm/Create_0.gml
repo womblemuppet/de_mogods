@@ -5,6 +5,8 @@ mode=0
 highest=-1
 y=kouchou.room_top_border_y  ///origin is just above top of sprite
 
+with storm_top_layer
+	instance_destroy()
 my_top_layer=instance_create_depth(0,0,1,storm_top_layer)
 
 /***************************************************
