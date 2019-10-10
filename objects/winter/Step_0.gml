@@ -9,7 +9,7 @@ if targeting
 	
 	
 	var closest_distance_to_edge;
-	closest_distance_to_edge=0
+	closest_distance_to_edge=9999
 
 	for (var i = 0; i < instance_number(player);i++)
 	{
@@ -27,16 +27,28 @@ if targeting
 		else
 			dist=xx-kouchou.room_left_border_x
 		
-		if dist>closest_distance_to_edge
+		if dist<closest_distance_to_edge
 		{
 			closest_distance_to_edge=dist
 			side=newside
-		
-			if side=="right"
-				sky.snow_hspd=-sky.SNOW_WINDY_HSPD
-			else
-				sky.snow_hspd=sky.SNOW_WINDY_HSPD
 		}
 	}
 
+	if sky.snow_effect_disable_side_change_counter<1
+	{
+		if side=="right"
+		{
+			if sky.snow_previous_side!="right"
+				sky.snow_effect_disable_side_change_counter=20
+			sky.snow_hspd=-sky.SNOW_WINDY_HSPD
+			sky.snow_previous_side=side
+		}
+		else
+		{
+			if sky.snow_previous_side!="left"
+				sky.snow_effect_disable_side_change_counter=20
+			sky.snow_hspd=sky.SNOW_WINDY_HSPD
+			sky.snow_previous_side=side
+		}
+	}
 }

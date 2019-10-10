@@ -30,6 +30,8 @@ snow_x_offset=0
 snow_y_offset=0
 SNOW_TILE_SIZE=256
 
+snow_previous_side="no_side"
+snow_effect_disable_side_change_counter=0
 
 
 convergence=7000

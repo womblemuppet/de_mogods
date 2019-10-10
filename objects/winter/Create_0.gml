@@ -1,9 +1,10 @@
-alarm[0]=450   ///die
+alarm[0]=550   ///die
+alarm[4]=alarm[0]-10  ///lessen snow effects just before end
 
-alarm[1]=150   ///start targeting
-alarm[2]=350   ///end targeting
-alarm[3]=370   ///make snowball
-alarm[4]=430   ///lessen snow effects
+alarm[1]=50   ///start targeting
+alarm[2]=200   ///end targeting
+alarm[3]=470   ///make snowball
+
 
 with sky
 {
