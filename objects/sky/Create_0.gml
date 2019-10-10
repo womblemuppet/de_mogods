@@ -12,8 +12,10 @@ rain_make_block_effect_counter=0
 RAIN_MAKE_BLOCK_EFFECT_COUNTER_MAX=10
 
 snow_on=false
-snow_offset=0
-SNOW_OFFSET_MAX=300
+snow_x_offset=0
+snow_y_offset=0
+snow_sprite=snow_tile_spr
+SNOW_TILE_SIZE=256
 
 
 
@@ -69,3 +71,4 @@ image_speed=0.04  ///sea sparkle speed
 
 /* */
 /*  */
+
