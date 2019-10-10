@@ -5,11 +5,18 @@ horizon_2=horizon_2_start   ///sea meets ground
 
 rain_on=false
 rain_offset=0
-RAIN_OFFSET_MAX=275
-TORNADO_RAIN_TILE_SIZE=275
+RAIN_OFFSET_MAX=275         //steps before resetting rain_offset,
+TORNADO_RAIN_TILE_SIZE=RAIN_OFFSET_MAX //size for tiling rain sprite in draw event (renamed from above)
 
 rain_make_block_effect_counter=0
 RAIN_MAKE_BLOCK_EFFECT_COUNTER_MAX=10
+
+snow_on=false
+snow_offset=0
+SNOW_OFFSET_MAX=300
+
+
+
 
 
 convergence=7000

@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "0e3739fd-af4c-484f-a15c-e6de2e8698c5",
+            "Value": {
+                "id": "03db0178-b4fb-4aac-a2cb-ff802219fcf4",
+                "resourcePath": "sprites\\snow_tile_moving_spr\\snow_tile_moving_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e7fc145-e678-4039-8798-7d233e0b13af",
             "Value": {
                 "id": "89d2f4f9-a720-4dcc-8877-33cfc7e6dc9b",
@@ -1100,6 +1108,14 @@
                 "id": "d10b2833-963f-4d1f-b210-72fb39b79780",
                 "resourcePath": "scripts\\redraw_fossil_surface\\redraw_fossil_surface.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1c83509a-6d28-4ca0-b07c-b48ff299906d",
+            "Value": {
+                "id": "cad3ef21-955b-49ef-a830-467bd3f89c82",
+                "resourcePath": "sprites\\snow_tile_spr\\snow_tile_spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
