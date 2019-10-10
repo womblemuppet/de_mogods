@@ -16,14 +16,15 @@ if rain_on   ///[finaledit] could be optimised
 
 if snow_on
 {
-
-	snow_x_offset+=10
-	snow_y_offset+=10
+	snow_x_offset+=snow_hspd
+	snow_y_offset+=snow_vspd
 	
 	if snow_x_offset>SNOW_TILE_SIZE
-		snow_x_offset=0
+		snow_x_offset-=SNOW_TILE_SIZE
+	if snow_x_offset<1
+		snow_x_offset+=SNOW_TILE_SIZE
 	if snow_y_offset>SNOW_TILE_SIZE
-		snow_y_offset=0
+		snow_y_offset-=SNOW_TILE_SIZE
 }
 
 

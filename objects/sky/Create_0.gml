@@ -12,12 +12,23 @@ rain_make_block_effect_counter=0
 RAIN_MAKE_BLOCK_EFFECT_COUNTER_MAX=10
 
 snow_on=false
+
+SNOW_CALM_HSPD=0.5
+SNOW_CALM_VSPD=5
+SNOW_CALM_SPR=snow_tile_spr
+
+SNOW_WINDY_HSPD=10
+SNOW_WINDY_VSPD=12
+SNOW_WINDY_SPR=snow_tile_moving_spr
+
+snow_sprite=SNOW_CALM_SPR
+
+snow_hspd=SNOW_CALM_HSPD
+snow_vspd=SNOW_CALM_VSPD
+
 snow_x_offset=0
 snow_y_offset=0
-snow_sprite=snow_tile_spr
 SNOW_TILE_SIZE=256
-
-
 
 
 

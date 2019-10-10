@@ -25,7 +25,6 @@ if rain_on
 			draw_sprite(tornado_rain_tile,0,i*TORNADO_RAIN_TILE_SIZE+rain_offset,ii*TORNADO_RAIN_TILE_SIZE+rain_offset)
 		}
 	}	
-	
 }
 
 if snow_on
@@ -37,5 +36,4 @@ if snow_on
 			draw_sprite(snow_sprite,0,i*SNOW_TILE_SIZE+snow_x_offset,ii*SNOW_TILE_SIZE+snow_y_offset)
 		}
 	}	
-	
 }
