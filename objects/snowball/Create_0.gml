@@ -1,3 +1,7 @@
 terrain_cutter_counter=1
-(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
-hitbox=attack_create_hitbox(75,
+
+hit[kouchou.MAX_PLAYER_COUNT]=false
+for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
+{
+	hit[i]=false
+}

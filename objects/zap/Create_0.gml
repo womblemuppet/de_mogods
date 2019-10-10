@@ -6,6 +6,12 @@ image_index=random(image_number)
 screenflash(c_white,0.5,0,2)
 create_terrain_cutter(lightning_test_mask,"disintegrated",-1,-1)
 
+hit[kouchou.MAX_PLAYER_COUNT]=false
+for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
+{
+	hit[i]=false
+}
+
 /*
 var a;
 a=instance_create(x,y,ef_fossil)
