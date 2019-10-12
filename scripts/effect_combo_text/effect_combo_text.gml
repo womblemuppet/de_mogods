@@ -13,80 +13,15 @@ a.type=argument1
 
 
 
-if argument1=="clean"
+if argument1=="combo"
 {
-	switch target_player.P
-	{
-		case 0:
-		a.sprite_index=cctextspr_clean_p1
-		break;
-		case 1:
-		a.sprite_index=cctextspr_clean_p2
-		break;
-		case 2:
-		a.sprite_index=cctextspr_clean_p3
-		break;
-		case 3:
-		a.sprite_index=cctextspr_clean_p4
-		break;
-		default:
-		show_error("unknown P for cctextspr",true)
-	}
-	
-}
-else if argument1=="clean4"
-{
-	switch target_player.P
-	{
-		case 0:
-		a.sprite_index=cctextspr_clean4_p1
-		break;
-		case 1:
-		a.sprite_index=cctextspr_clean4_p2
-		break;
-		case 2:
-		a.sprite_index=cctextspr_clean4_p3
-		break;
-		case 3:
-		a.sprite_index=cctextspr_clean4_p4
-		break;
-		default:
-		show_error("unknown P for cctextspr",true)
-	}
+	a.sprite_index=combo_sprites[target_player.P]
 }
 else if argument1=="volley"
 {
-	switch target_player.P
-	{
-		case 0:
-		a.sprite_index=cctextspr_volley_p1
-		break;
-		case 1:
-		a.sprite_index=cctextspr_volley_p2
-		break;
-		case 2:
-		a.sprite_index=cctextspr_volley_p3
-		break;
-		case 3:
-		a.sprite_index=cctextspr_volley_p4
-		break;
-	}
+	a.sprite_index=volley_sprites[target_player.P]
 }
 else if argument1=="cucked"
 {
-	switch target_player.P
-	{
-		case 0:
-		a.sprite_index=cctextspr_cucked_p1
-		break;
-		case 1:
-		a.sprite_index=cctextspr_cucked_p2
-		break;
-		case 2:
-		a.sprite_index=cctextspr_cucked_p3
-		break;
-		case 3:
-		a.sprite_index=cctextspr_cucked_p4
-		break;
-	}
+	a.sprite_index=denied_sprites[target_player.P]
 }

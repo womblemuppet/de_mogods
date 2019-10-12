@@ -6,7 +6,8 @@
     "children": [
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
-        "be076a66-7e3d-48cc-b375-fed62a475709"
+        "be076a66-7e3d-48cc-b375-fed62a475709",
+        "65f6f02b-a601-47d3-a217-3f54e57d1472"
     ],
     "filterType": "GMScript",
     "folderName": "combo controller",

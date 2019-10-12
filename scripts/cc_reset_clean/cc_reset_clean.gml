@@ -1,1 +1,1 @@
-combo_text_controller.clean_hit_count[P]=0
+combo_text_controller.combo_hit_count[P]=0
