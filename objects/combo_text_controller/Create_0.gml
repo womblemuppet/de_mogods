@@ -1,4 +1,3 @@
-COMBO_TEXT_Y_VALUE=100
 last_hit_timer[0]=0
 for (var i = 0; i < kouchou.MAX_PLAYER_COUNT;i++) 
 {

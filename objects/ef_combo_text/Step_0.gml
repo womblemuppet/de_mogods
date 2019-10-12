@@ -1,7 +1,3 @@
-if instance_exists(targ)
-{
-	x=targ.x
-}
 if fading
 {
 	image_alpha-=0.1
@@ -9,5 +5,8 @@ if fading
 		instance_destroy()
 }
 
-if y>30
-	y-=3
+if moveleft>1
+{
+	moveleft-=3
+	x+=3
+}

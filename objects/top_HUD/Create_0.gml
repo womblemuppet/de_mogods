@@ -66,3 +66,4 @@ for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	if i<kouchou.players_in
 		player_HUD_enabled[i]=true
 };
+
