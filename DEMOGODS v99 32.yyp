@@ -6490,7 +6490,7 @@
             "Key": "b8aeffe8-a8a7-43e0-b412-94c29526c57f",
             "Value": {
                 "id": "96aec715-383c-41e0-ab3e-d3c91176482f",
-                "resourcePath": "scripts\\player_set_up_HUD\\player_set_up_HUD.yy",
+                "resourcePath": "scripts\\player_set_personalised_HUD_vars\\player_set_personalised_HUD_vars.yy",
                 "resourceType": "GMScript"
             }
         },

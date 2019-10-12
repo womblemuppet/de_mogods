@@ -168,7 +168,7 @@ if room==gameroom
 			b.image_xscale=0.9
 			b.image_yscale=0.9
 			
-			player_set_up_HUD()
+			player_set_personalised_HUD_vars()
 			attack_start_groundpound_descent("ground pound")
 			vspd=7
 			sprite_index=sprites[? "gpfall"]
