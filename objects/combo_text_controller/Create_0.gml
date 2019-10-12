@@ -23,6 +23,12 @@ for (var i =0; i <kouchou.MAX_PLAYER_COUNT; i++)
 	last_got_hit_by[i]=noone
 }
 
+all_characters_hit_by_in_combo[0]=undefined
+for (var i = 0; i < kouchou.MAX_PLAYER_COUNT;i++)
+{
+	all_characters_hit_by_in_combo[i]=ds_list_create()
+}
+
 TIMER_START=500
 CLEAN_CUTOFF_TIME=325
 VOLLEY_CUTOFF_TIME=450

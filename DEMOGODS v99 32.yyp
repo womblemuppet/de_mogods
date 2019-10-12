@@ -7226,7 +7226,7 @@
             "Key": "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
             "Value": {
                 "id": "f78949f5-b247-4545-a938-b3c91570300c",
-                "resourcePath": "scripts\\cc_reset_clean\\cc_reset_clean.yy",
+                "resourcePath": "scripts\\cc_reset_combo_counter\\cc_reset_combo_counter.yy",
                 "resourceType": "GMScript"
             }
         },

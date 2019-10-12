@@ -35,7 +35,6 @@ last_hit_knocked_down=true   ///for use in player_whacked resetting prone
 player_update_pocket_hud()
 //player_flinch()
 player_update_health_hud()
-cc_reset_clean()
 player_set_before_prone_falling_lockdown_state()
 
 return "damage_taken"

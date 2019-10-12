@@ -17,12 +17,16 @@ if dashcd>0
 if stunned>0
 {
 	stunned-=1
+	if stunned==0 && stunned_groundpound<2
+		cc_reset_combo_counter()
 }
 if stunned_groundpound>0
 {
 	stunned_groundpound-=1
 	if stunned_groundpound==0
 	{
+		if stunned==0
+			cc_reset_combo_counter()
 		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
 			sprite_index=sprites[? "recoiling"]

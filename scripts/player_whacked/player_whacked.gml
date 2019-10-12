@@ -25,7 +25,6 @@ if instance_exists(payday)==false           ////////add to hothands and do first
 	if attacker!=noone
 	{
 		cc_land_hit(self.id,attacker)
-		cc_reset_clean()
 		if argument2!=0 //whether to reset hh (melee/ranged)
 			other.creator.hothands=0
 	}
