@@ -3,15 +3,20 @@
 1 number of hh
 2 whether to reset attacker's hh (so false for ranged attacks)
 3 whether to reset or not
-4 whether to gain meter or not
 */
+
+var arg_stun_amount,arg_number_of_hh,arg_reset_attackers_hh,arg_reset_opp,arg_gain_meter;
+arg_stun_amount=argument0
+arg_number_of_hh=argument1
+arg_reset_attackers_hh=argument2
+arg_reset_opp=argument3
 
 last_hit_knocked_down=false
 
 audio_play_sound(bam,5,false)
 
 if armouredsteps<1
-	stunned=argument0
+	stunned=arg_stun_amount
 
 var attacker
 if instance_exists(other.creator)
@@ -21,11 +26,11 @@ else
 
 if instance_exists(payday)==false           ////////add to hothands and do first blood (if not payday)
 {
-	hothands+=argument1
+	hothands+=arg_number_of_hh
 	if attacker!=noone
 	{
 		cc_land_hit(self.id,attacker)
-		if argument2!=0 //whether to reset hh (melee/ranged)
+		if arg_reset_attackers_hh!=0 //whether to reset hh (melee/ranged)
 			other.creator.hothands=0
 	}
 
@@ -40,10 +45,8 @@ player_has_taken_hh_damage()
 
 if !last_hit_knocked_down  ///if didn't lose hp
 {
-	if argument3     /// knocks player out of current animation
-	{
+	if arg_reset_opp     /// knocks player out of current animation
 		player_flush_lockdowns()
-	}
 }
 
 
