@@ -1,3 +1,4 @@
+/////apply gravity
 if owner==-1 
 {
 		if y<aizen.player_baseline+aizen.CREATIONDELAY-aizen.bh
@@ -11,7 +12,7 @@ if owner==-1
 
 
 }
-else
+else ///attach to owner
 {
 	if instance_exists(owner)   //[finaledit] optimize
 	{
@@ -20,6 +21,9 @@ else
 	}
 }
 
+
+
+/// apply horizontal movement if in moving state
 if !breaking
 {
 	if right

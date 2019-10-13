@@ -2767,6 +2767,14 @@
             }
         },
         {
+            "Key": "531ad230-024b-4a6c-a0c7-32b9c67739a5",
+            "Value": {
+                "id": "6aaed508-2c8c-463f-a859-d20863a2bfd9",
+                "resourcePath": "sprites\\goat_stand_sprite\\goat_stand_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "533cfaf9-464e-4a11-be8b-fd4184a335e3",
             "Value": {
                 "id": "3beccee5-4bdb-4244-8c69-3fe17022c9f3",
@@ -3691,14 +3699,6 @@
             "Value": {
                 "id": "579286e0-7116-4881-9f49-f79025de6207",
                 "resourcePath": "sprites\\pineapple_fall\\pineapple_fall.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6786d2bf-7b22-441a-b6a5-22c4c093d978",
-            "Value": {
-                "id": "981383f1-02e4-4db2-9369-31df4d9f8a07",
-                "resourcePath": "sprites\\goat_squish_sprite\\goat_squish_sprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6743,6 +6743,14 @@
             }
         },
         {
+            "Key": "bf6de9ba-9b58-46f6-8652-3a682bfcbf67",
+            "Value": {
+                "id": "25c19716-b159-4324-824a-5876dece07eb",
+                "resourcePath": "sprites\\goat_turn_sprite\\goat_turn_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c06c54c9-4596-4f7d-a52f-a358ecc64e97",
             "Value": {
                 "id": "c29a71f0-9d5f-476a-aba9-77fd791170ae",
@@ -6796,6 +6804,14 @@
                 "id": "16a56c91-3a62-4c63-96f4-65fb5b032960",
                 "resourcePath": "objects\\combo_text_controller\\combo_text_controller.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c15a15ab-00bd-43e3-93e1-caadde47868d",
+            "Value": {
+                "id": "c0c816ec-f1a5-459c-acdd-b59e23ede201",
+                "resourcePath": "sprites\\crab_stand_sprite\\crab_stand_sprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8035,6 +8051,14 @@
             "Value": {
                 "id": "aba9180c-f2e9-42d5-9acc-c0500bb1b911",
                 "resourcePath": "sprites\\tornadoe_orbsprite_die\\tornadoe_orbsprite_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df44641a-6ba0-46f3-a13c-951b10c3f94f",
+            "Value": {
+                "id": "cfeb18c1-ee03-4fe0-89ae-fceb621b087f",
+                "resourcePath": "sprites\\crab_turn_sprite\\crab_turn_sprite.yy",
                 "resourceType": "GMSprite"
             }
         },

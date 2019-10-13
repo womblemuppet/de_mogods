@@ -7,7 +7,8 @@
         "728c9259-c7fb-4933-ade3-38c50ca5b911",
         "b695b91b-c36f-46f0-ab1d-a1354e687fd9",
         "477adcef-31c7-462b-97c1-29451227a29a",
-        "6786d2bf-7b22-441a-b6a5-22c4c093d978"
+        "531ad230-024b-4a6c-a0c7-32b9c67739a5",
+        "bf6de9ba-9b58-46f6-8652-3a682bfcbf67"
     ],
     "filterType": "GMSprite",
     "folderName": "goat",

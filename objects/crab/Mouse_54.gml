@@ -1,2 +1,0 @@
-///[finaledit]
-instance_destroy()
