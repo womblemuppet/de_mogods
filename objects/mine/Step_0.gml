@@ -36,9 +36,7 @@ if vspd>0
 	repeat(vspd)
 	{
 		if !place_meeting(x,y+1,block)
-		{
 			y+=1
-		}
 	}
 }
 else if vspd<0
@@ -46,9 +44,7 @@ else if vspd<0
 	repeat(-vspd)
 	{
 		if !place_meeting(x,y-1,block)
-		{
 			y-=1
-		}
 	}
 }
 
@@ -86,6 +82,7 @@ if triggered   /// >:O
 			show_debug_message("right: "+string(right))
 			b=attack_create_hitbox(60,1,false,true,"mineexplosion_big",hitboxspr,0.2,99,15,7)
 			b.creator=noone
+			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale
 		}
 		else
@@ -94,6 +91,7 @@ if triggered   /// >:O
 			
 			b=attack_create_hitbox(60,1,false,true,"mineexplosion",hitboxspr,0.2,99,0,6)
 			b.creator=noone
+			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale
 		}
 
@@ -102,7 +100,7 @@ if triggered   /// >:O
 	}
 }
 
-//////     set sprite   /////
+//////     set sprite   ///// [finaledit] optimise...
 if vspd<0
 	sprite_index=mine_spinning_sprite
 else if vspd>0
