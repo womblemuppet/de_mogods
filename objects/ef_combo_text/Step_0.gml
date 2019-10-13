@@ -1,12 +1,12 @@
 if fading
 {
-	y-=4
-	if y<ystart-40
+	if x<xstart+START_MOVE_RIGHT_AMOUNT+END_MOVE_RIGHT_AMOUNT
+		x+=3
+	else
 		instance_destroy()
 }
-
-if moveleft>1
+else
 {
-	moveleft-=3
-	x+=3
+	if x<xstart+START_MOVE_RIGHT_AMOUNT
+		x+=3
 }

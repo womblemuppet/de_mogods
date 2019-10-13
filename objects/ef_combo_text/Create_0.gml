@@ -1,3 +1,4 @@
 fading=false
 alarm[0]=200
-moveleft=30
+START_MOVE_RIGHT_AMOUNT=30
+END_MOVE_RIGHT_AMOUNT=30

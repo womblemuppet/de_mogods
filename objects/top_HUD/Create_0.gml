@@ -1,4 +1,5 @@
 PLAYER_HUD_AREA_WIDTH=260
+
 setup_player_huds(kouchou.MAX_PLAYER_COUNT)
 
 

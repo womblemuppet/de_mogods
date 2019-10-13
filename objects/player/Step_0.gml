@@ -176,6 +176,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 						throw_direction=180
 				}
 				
+				cc_land_hit(self.id,airgrab_target)
 
 				var at;
 				at=AIRGRAB_STUN_TIME;
@@ -207,6 +208,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					{
 						hothands+=1                         //// ONE HH DAMAGE
 						player_has_taken_hh_damage()
+						
 					}
 				}
 				hothands=0                              //// RESETS THROWERS HH

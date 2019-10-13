@@ -14,7 +14,7 @@ switch n
 	HUDx[0]=0
 	HUDx[1]=kouchou.room_right_border_x-w
 	cc_text_location_combo_x[0]=HUDx[0]+200
-	cc_text_location_combo_x[1]=HUDx[1]-200
+	cc_text_location_combo_x[1]=HUDx[1]-300
 	
 	cc_text_location_combo_numbers_x[0]=cc_text_location_combo_x[0]+225
 	cc_text_location_combo_numbers_x[1]=cc_text_location_combo_x[1]+225

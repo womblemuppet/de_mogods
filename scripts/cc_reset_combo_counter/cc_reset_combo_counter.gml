@@ -15,9 +15,7 @@ for (var i = 0; i < ds_list_size(combo_text_controller.all_characters_hit_by_in_
 				if type=="combo"
 					sprite_index=combo_text_controller.combo_sprites_faded[attacker_P]
 				else if type=="number"
-				{
-					sprite_index=combo_text_controller.combo_sprites_faded[attacker_P]
-				}
+					sprite_index=combo_text_controller.combo_number_faded_sprites[attacker_P,number]
 				image_index=0
 			}
 		}

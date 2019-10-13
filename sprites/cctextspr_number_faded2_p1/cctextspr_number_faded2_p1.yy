@@ -2,7 +2,7 @@
     "id": "8f189f05-f787-4ddb-b41e-f74baf1c5813",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "cctextspr_number_faded1_p1",
+    "name": "cctextspr_number_faded2_p1",
     "For3D": false,
     "HTile": false,
     "VTile": false,
