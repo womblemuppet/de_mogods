@@ -42,6 +42,11 @@ combo_sprites[1]=cctextspr_combo_p1
 combo_sprites[2]=cctextspr_combo_p1
 combo_sprites[3]=cctextspr_combo_p1
 
+combo_sprites_faded[0]=cctextspr_combo_faded_p1
+combo_sprites_faded[1]=cctextspr_combo_faded_p1
+combo_sprites_faded[2]=cctextspr_combo_faded_p1
+combo_sprites_faded[3]=cctextspr_combo_faded_p1
+
 
 ///[ player, combo]
 combo_number_sprites[0,0]=cctextspr_number2_p1

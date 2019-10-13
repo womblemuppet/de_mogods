@@ -1,7 +1,7 @@
 if fading
 {
-	image_alpha-=0.1
-	if image_alpha<0.1
+	y-=4
+	if y<ystart-40
 		instance_destroy()
 }
 
