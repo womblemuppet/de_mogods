@@ -140,7 +140,7 @@ image_speed=FRAME_SPEED_NORMAL
 //[finaledit] instead of player class holding baggage for all characters make them only hold/check relevant vars
 
 running_startup_frames=0   ///number of startup frames in running animation (currently only implemented with uga)
-dash_attacks_allowed_counter=0
+dash_delay_before_can_attack_counter=0
 uniques_mines_enabled=false
 uniques_gpcombo_cripples_enabled=false
 uniques_teleport_enabled=false

@@ -101,10 +101,10 @@ if rocket_jump_input_time_counter_from_dash>0
 }
 
 
-if dash_attacks_allowed_counter>0
+if dash_delay_before_can_attack_counter>0
 {
 	//effect_create_above(ef_firework,x,y-20,0,c_red)
-	dash_attacks_allowed_counter-=1
+	dash_delay_before_can_attack_counter-=1
 }
 
 if recoil_sprite_counter>0                                           //recoil sprite end check

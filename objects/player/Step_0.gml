@@ -858,12 +858,13 @@ if (rocket_jump_input_time_counter_from_dash>0  || button_scrape_pushed[? dashbu
 	}	
 }
 
-
-if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////////////////////////////////////                        events for groundpound, and dash 
+///////////////////        events for groundpound, and dash               /////////////
+if button_scrape_pushed[? dashbutton]  && rocketjumped==false 
 {
 	var exception;
 	exception=false
-																
+	
+	///bait unique gp attack
 	if uniques_dashgpblinkattack_enabled && !player_is_dashing() && groundcheck!=noone && button_scrape[? downbutton]  && uniques_baitchain_last_chained!=noone
 	{ 
 		uniques_dashgpblinkattack_lockdown=1
@@ -875,9 +876,9 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 		exception=true
 	}
 	
-
-	if !exception && player_may_attack() && button_scrape[? downbutton] && groundcheck==noone && cangroundpound==0   //////////////////////////////////////////////////////////////////////////////////////     
-	{///                                                                                                                                                    groundpound
+	///groundpound
+	if !exception && player_may_attack() && button_scrape[? downbutton] && groundcheck==noone && cangroundpound==0  
+	{
 		var dropcrabok;
 		dropcrabok=true    ///if player can't gp then this stops crab being dropped
 		switch attacks[? "gp"]
@@ -907,53 +908,43 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 			player_drop_crab()
 		}
 	}
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-	if !exception && !button_scrape[? downbutton]  && !player_is_dashing() && player_may_attack()                       /////////////////////////////////////////////////////////DASH EVENT 
+	
+	
+	
+	///dash 
+	if !exception && !button_scrape[? downbutton] && !player_is_dashing() && player_may_attack()
 	{
 		if cripple_debuff_counter<1
 		{
 			if holding_a_crab
-			{
 				player_drop_crab()
-			}
+				
 			var player_dashed;
 			player_dashed=false
-            
-			switch attacks[? "dash"]    ///specific dash stuff
-			{ 
-
-				case 2:   ///slinger nobunt dash  (disabled)
-
-				if dash_attacks_allowed_counter<1
-					dash_attacks_allowed_counter=12
-                    
-				dash_current_hitbox_object=attack_create_dash_hitbox(false,0,0,0,"slingerjumpresetdash",dasheroo,0.33,false)
-				if !right
-					dash_current_hitbox_object.direction=180
-				player_dashed=true
-				ground_dash_speed=0
+			
+               ///set specific dash attributes and make hitbox
+			switch attacks[? "dash"]   
+			{                      
+				case "bunt_dash":   ///classic dash
                 
-				break;                          
-				case "bunt_dash":   ///bunt dash
-                
-				if dash_attacks_allowed_counter<1
-					dash_attacks_allowed_counter=20
+					if dash_delay_before_can_attack_counter<1
+						dash_delay_before_can_attack_counter=20
                     
-				dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true)
-				if !right
-					dash_current_hitbox_object.direction=180
-				player_dashed=true
-				ground_dash_speed=14
-				
+					dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true)
+					if !right
+						dash_current_hitbox_object.direction=180
+					player_dashed=true
+					ground_dash_speed=14
+					
 				break;
 
-				case -1:
-				/*nandemonai*/  break;
 				default:
 				show_error("booop, unknown dash attack called",true)
 			}
-            
-			if player_dashed    ///generic dash stuff
+			
+			
+               ///if dash button perfoms a normal dash, set dash sprite, hspd, cooldown and effect
+			if player_dashed   
 			{
 				sprite_index=sprites[? "dash"]                     ///////////////////   dash  sprite
 				if super_mode
@@ -964,7 +955,9 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 				rocket_jump_input_time_counter_from_dash = ROCKET_JUMP_INPUT_TIME_ALLOWED_FROM_DASH
 				//show_debug_message(choose(" ","  ")+"rocket jump input time counter from dash set to 5")
 				
-				if right                                       //////////////////    dash initial movement
+				
+				///set initial horizontal movement (continually reset as player holds down button)
+				if right 
 					hspd=ground_dash_speed
 				else
 					hspd=-ground_dash_speed
@@ -984,9 +977,9 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 				dash_button_currently_held=true
 
 				
-				
+				///   dash trail effect
 				var a;
-				a=effect_aniend(dash_no_ULT,0.2,1)               //////////////   dash trail effect
+				a=effect_aniend(dash_no_ULT,0.2,1)              
 				if super_mode
 				{
 					if P==0 || P==2
@@ -1013,10 +1006,13 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 						a.image_angle=315
 				}
                 
+				//cancel parachute
 				if uniques_parachute==1
-					uniques_parachute=2   //dash cancels parachute
+					uniques_parachute=2  
 					
-				if instance_exists(tornadoe)    ////'push' tornado if under it
+					
+				 ////'push' tornado if under it
+				if instance_exists(tornadoe)   
 				{
 					for (var i = 0; i < instance_number(tornadoe); i++)
 					{
@@ -1049,7 +1045,6 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false              /////
 }
 
 ////hold dash button event
-
 if button_scrape[? dashbutton] 
 {
 	if dash_button_currently_held && dash_has_lifted_off_ground==false    ////continues momentum of ground dash
@@ -1062,14 +1057,12 @@ if button_scrape[? dashbutton]
 		else
 			hspd=-ground_dash_speed
 		ground_dash_counter+=1
+		
 		var a;
 		a=effect_aniend(dash_dirt_particle,0.5+random(0.3),-2)
 		a.y+=random(3)
 		if !right
 			a.image_xscale=-1
-		
-		//show_debug_message(string(ground_dash_counter))
-		//effect_create_above(ef_firework,x,y,0,c_aqua)
 	}
 
 
@@ -1079,10 +1072,10 @@ if button_scrape[? dashbutton]
 		{
 			ground_pound_extra_delay_counter+=1
 			ground_pound_freeze_counter+=1
-			//show_debug_message("gptime = "+string(ground_pound_freeze_counter))
 		}
 	}
 }
+
 //////end ground dash
 if dash_button_currently_held 
 { 
@@ -1091,16 +1084,12 @@ if dash_button_currently_held
 		if dash_current_hitbox_object!=noone
 		{
 			if instance_exists(dash_current_hitbox_object)
-			{
 				dash_current_hitbox_object.image_speed=0.3   ///kills it
-			}
 		}
+		
 		dash_current_hitbox_object=noone
 		ground_dash_counter=0
 		dash_button_currently_held=false
-		//show_debug_message("dash_button_currently_held set to false")
-
-		//effect_create_above(ef_firework,x,y,1,c_red)
 	}
 }
 
