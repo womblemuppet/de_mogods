@@ -1847,6 +1847,14 @@
             }
         },
         {
+            "Key": "35ea0ddd-5776-4fe7-ab2d-8ff9de3481ec",
+            "Value": {
+                "id": "ba107ebc-28fd-4051-a14d-32b47fe323b8",
+                "resourcePath": "scripts\\player_check_climb_roll_spacing\\player_check_climb_roll_spacing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35f213fd-e2eb-447f-a134-2e56667c4391",
             "Value": {
                 "id": "33d237e8-6553-4ff0-8ff4-97ca5ca165bf",
@@ -9165,6 +9173,7 @@
         "9948ffe7-b72a-4faa-a239-6876aee79f95",
         "acbe5ce7-dd26-4b9d-8d7d-0543f2f7dcf0",
         "3a701449-aba2-4c4b-b91f-baed3df44e71",
+        "35ea0ddd-5776-4fe7-ab2d-8ff9de3481ec",
         "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
         "42fe752d-c7e3-45c5-a6a4-c0655fc5c64e",
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",

@@ -86,6 +86,9 @@ dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT=100  ///if whacked during rocket jump 
 dash_rocket_top_collision_safety_on=false //player can't die from going off top, and will limit vspd near top while this is true
 DASH_ROCKET_TOP_COLLISION_MAXY=8
 
+CLIMB_ROLL_1_BLOCK_VSPD=-10
+CLIMB_ROLL_2_BLOCKS_VSPD=-14
+CLIMB_ROLL_3_BLOCKS_VSPD=-16
 
 
 recoil_sprite_counter=0    ///time left where idle sprite becomes flinching animation (shouldn't be called recoil)

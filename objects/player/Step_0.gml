@@ -903,13 +903,27 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 			default:
 			show_error("boop beep, unknown gp attack id",true)
 		}
+		
 		if holding_a_crab && dropcrabok
-		{
 			player_drop_crab()
-		}
 	}
 	
-	
+	///climb roll
+	if !exception && groundcheck==noone && player_not_locked_down()
+	{
+		var check_result;
+		if right
+			check_result=player_check_climb_roll_spacing("right")
+		else
+			check_result=player_check_climb_roll_spacing("left")
+			
+		if check_result!="do_not_roll"
+		{
+			exception=true
+			show_debug_message(check_result)
+			vspd=CLIMB_ROLL_1_BLOCK_VSPD
+		}
+	}
 	
 	///dash 
 	if !exception && !button_scrape[? downbutton] && !player_is_dashing() && player_may_attack()
