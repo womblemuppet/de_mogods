@@ -940,14 +940,26 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 			switch attacks[? "dash"]   
 			{                      
 				case "bunt_dash":   ///classic dash
-                
+				
+                		player_dashed=true
+					
+					//set dash delay counter
 					if dash_delay_before_can_attack_counter<1
 						dash_delay_before_can_attack_counter=20
                     
-					dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true)
+
+					///make dash hitbox
+					var cut_through_terrain;
+					cut_through_terrain=true
+					if groundcheck==noone
+						cut_through_terrain=false
+
+					dash_current_hitbox_object=attack_create_dash_hitbox(true,15,7,4,"dash",dasheroo,0.33,true,cut_through_terrain)
 					if !right
 						dash_current_hitbox_object.direction=180
-					player_dashed=true
+					dash_current_hitbox_object.image_speed=0.05    ///means dash hitbox won't timeout (but will die when whacked or dash end)
+
+					//set dash specific speed
 					ground_dash_speed=14
 					
 				break;
@@ -977,10 +989,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 					hspd=-ground_dash_speed
 				
 				if groundcheck!=noone
-				{
 					dash_has_lifted_off_ground=false
-					dash_current_hitbox_object.image_speed=0.05    ///means dash hitbox won't timeout (but will die when whacked or dash end)
-				}
 				else
 					dash_has_lifted_off_ground=true
 
