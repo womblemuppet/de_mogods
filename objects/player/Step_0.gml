@@ -300,7 +300,6 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 
 	if jumped                            ////////////////////after landing from a jump , slow the player for a bit
 	{
-		mild_slowed_counter=16
 		if cangroundpound!=0  
 		{
 			mild_slowed_counter=0
