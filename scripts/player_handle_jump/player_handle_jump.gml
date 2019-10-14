@@ -25,11 +25,11 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 						doublejumptimer=DOUBLEJUMPTIME
 						vspd=-JUMPSPEED
 					}
-					if doublejump==1     ///double jump
-					{
-						effect_aniend(player_double_jump_effect_spr,0.2,-2)
-						vspd=-DOUBLEJUMPSPEED
-					}
+					//if doublejump==1     ///double jump (DISABLED)
+					//{
+					//	effect_aniend(player_double_jump_effect_spr,0.2,-2)
+					//	vspd=-DOUBLEJUMPSPEED
+					//}
 					set_jump_sprites=true         
 				}
                 

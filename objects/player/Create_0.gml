@@ -5,7 +5,7 @@ groundcheck_prev=noone
 playerintersectioncheck=noone
 edgeofroomcheck=-1
 
-JUMPSPEED=12
+JUMPSPEED=15
 DOUBLEJUMPSPEED=12
 doublejump=0        ///what jump the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
 DOUBLEJUMPTIME=60  //time to double tap up for double jump
