@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "014ea7d0-b12d-48bf-9260-0d40c9c8eab3",
+            "Value": {
+                "id": "7dfc12c6-8828-44ee-b564-ec484c5ac97f",
+                "resourcePath": "sprites\\super_bar_line_normal\\super_bar_line_normal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0161eb11-116c-4e07-bbb5-05d89a9c6fb0",
             "Value": {
                 "id": "85f22af0-3c96-4328-bcc8-2d3b60b78df6",
@@ -435,6 +443,14 @@
             "Value": {
                 "id": "c2af7cb2-efd6-4ced-819c-c6d81ccdb8dd",
                 "resourcePath": "views\\0b097d10-a6cd-4bba-8521-a690df44bb6c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0b28a69b-423e-4ba9-8b52-e2a852d4b024",
+            "Value": {
+                "id": "73e118ec-23c8-466d-87dd-34562fef5b9e",
+                "resourcePath": "views\\0b28a69b-423e-4ba9-8b52-e2a852d4b024.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2375,14 +2391,6 @@
             }
         },
         {
-            "Key": "470f4fcc-7fa3-4fa6-9aa2-2b917dd3802a",
-            "Value": {
-                "id": "488f1ea7-1c3b-4df4-8076-90278efb3d2f",
-                "resourcePath": "objects\\ef_steam\\ef_steam.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4715f580-e6d3-4742-b05a-5730e641360c",
             "Value": {
                 "id": "7a73b84a-5e0b-445e-8884-ebbaec0c6e3e",
@@ -2663,6 +2671,14 @@
             }
         },
         {
+            "Key": "4e746848-8bef-4e33-afef-4a661fd8db70",
+            "Value": {
+                "id": "7e0cc33b-7b8f-432c-8bc9-22f0366d388e",
+                "resourcePath": "sprites\\super_bar_full_size\\super_bar_full_size.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e94ef91-10cc-416c-ae8f-2a04e9944ccf",
             "Value": {
                 "id": "21095e2a-319e-455e-86fe-e2bf42ce23b5",
@@ -2900,6 +2916,14 @@
                 "id": "fe0c8782-8aa3-4420-b015-4377652343b9",
                 "resourcePath": "sprites\\mask_payday\\mask_payday.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "557fc4fe-71b0-4df7-8f8e-bc8e5e77deb8",
+            "Value": {
+                "id": "79b8fce9-b164-4d50-9e7e-5ec87e09e2d5",
+                "resourcePath": "objects\\superbar_line\\superbar_line.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -6655,6 +6679,14 @@
             }
         },
         {
+            "Key": "bceb8eca-9741-4c9c-bd09-d475e3fa1751",
+            "Value": {
+                "id": "a6169ce5-5214-47b5-9077-26d0086c7989",
+                "resourcePath": "sprites\\super_bar_line_stopping\\super_bar_line_stopping.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bcf1c758-0a63-413a-8b33-5e2b8ed1df98",
             "Value": {
                 "id": "86473f67-05c5-46b5-9f88-b22bb9234e3f",
@@ -7767,6 +7799,14 @@
             }
         },
         {
+            "Key": "d7082c82-d338-46b0-94b1-1d12a9f14748",
+            "Value": {
+                "id": "063a9fe2-cb63-4108-bf08-3d3de58f49c7",
+                "resourcePath": "objects\\superbar\\superbar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d735ed4e-cfa8-41cb-9cbf-961be1f4eb71",
             "Value": {
                 "id": "91d976f6-88c6-49df-9503-beedbb63ae71",
@@ -8571,6 +8611,14 @@
             "Value": {
                 "id": "bccd5c85-86ab-4748-a267-7b839838e958",
                 "resourcePath": "sprites\\block_pineapple\\block_pineapple.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ee482993-4e91-4b5b-aaf2-a411fd2bbb5c",
+            "Value": {
+                "id": "fc04aaab-4236-4594-8ec5-17f23830f850",
+                "resourcePath": "sprites\\super_bar_line_moving\\super_bar_line_moving.yy",
                 "resourceType": "GMSprite"
             }
         },
