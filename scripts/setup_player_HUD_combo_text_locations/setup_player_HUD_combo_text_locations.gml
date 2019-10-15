@@ -1,12 +1,18 @@
 var n,w;
 n=argument0 //number of players
-w=PLAYER_HUD_AREA_WIDTH
 
-cc_text_location_combo_x[n-1]=0
+w=PLAYER_HUD_AREA_FULL_WIDTH
+if n>2
+	w=PLAYER_HUD_AREA_HALF_WIDTH
+
+
 cc_text_location_combo_y=15
-cc_text_location_combo_numbers_x[n-1]=0
-cc_text_location_secondary_x[n-1]=0
 cc_text_location_secondary_y=65
+
+cc_text_location_combo_x[n-1]=undefined
+cc_text_location_combo_numbers_x[n-1]=undefined
+cc_text_location_secondary_x[n-1]=undefined
+
 
 switch n
 {

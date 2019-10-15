@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "superbar",
     "eventList": [
-        {
-            "id": "e7d1032a-a7c9-4b01-b7fb-ff9d6b2d4881",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "d7082c82-d338-46b0-94b1-1d12a9f14748"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

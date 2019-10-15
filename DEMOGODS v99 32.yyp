@@ -3522,7 +3522,7 @@
             "Key": "633fe73c-8167-4e56-84f9-348791ddcee8",
             "Value": {
                 "id": "0b048f09-6edc-4c6d-b869-2669e8e243cc",
-                "resourcePath": "scripts\\setup_player_huds\\setup_player_huds.yy",
+                "resourcePath": "scripts\\setup_player_HUD_combo_text_locations\\setup_player_HUD_combo_text_locations.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6519,6 +6519,14 @@
             }
         },
         {
+            "Key": "b83653e6-b2da-4ada-8bdd-75969be027e2",
+            "Value": {
+                "id": "54a02fd2-336e-4bf3-916b-10ac695f3a15",
+                "resourcePath": "scripts\\create_super_bar\\create_super_bar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b861280b-6841-460a-bab8-4cef7ccd04e9",
             "Value": {
                 "id": "8b08bf89-59a8-46b9-bcc6-021e890247b5",
@@ -9315,6 +9323,7 @@
         "839dd084-46c6-41b7-963e-bdfc83d6c05c",
         "32bee222-a7cd-4554-bf72-0ac9249e41d4",
         "184a41d6-fc8f-4082-a377-b5e69bf8b047",
+        "b83653e6-b2da-4ada-8bdd-75969be027e2",
         "cce0eae3-4d22-4cb6-b8f9-9674dd338976",
         "3265cb24-873c-4278-8a95-5397b8d0ce32",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",

@@ -1,4 +1,4 @@
-var xx,player_hud_start_y,area_height,area_width,area_xend,area_xstart;
+var xx,player_hud_start_y,area_xend,area_xstart;
 var hp_xoffset,hp_yoffset;
 var pocket_mask_scale,pocket_mask_xoffset,pocket_mask_yoffset,pocket_mask_gap_width;
 var pocket_area_xoffset,pocket_area_yoffset;
@@ -11,8 +11,7 @@ var stack_hud_start_x,stack_hud_start_y,stack_mask_gap_width;
 player_hud_start_y=50
 area_xend=kouchou.room_left_border_x   ///absolute
 area_xstart=5  ////plus
-area_width=PLAYER_HUD_AREA_WIDTH
-area_height=250
+
 
 hp_xoffset=20
 hp_yoffset=20

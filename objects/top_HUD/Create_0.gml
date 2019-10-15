@@ -1,7 +1,9 @@
-PLAYER_HUD_AREA_WIDTH=260
+PLAYER_HUD_AREA_FULL_WIDTH=260
+PLAYER_HUD_AREA_HALF_WIDTH=PLAYER_HUD_AREA_FULL_WIDTH/2
 
-setup_player_huds(kouchou.MAX_PLAYER_COUNT)
-
+setup_player_HUD_combo_text_locations(kouchou.MAX_PLAYER_COUNT)
+setup_player_HUD_super_bar_locations(kouchou.MAX_PLAYER_COUNT)
+//create_super_bar(x,y,ID,width)
 
 floating_masks_subimage=0
 FLOATINGMASKS_IMAGE_NUMBER=22
@@ -19,7 +21,10 @@ POCKET_CIRCLE_AREA_IMAGE_NUMBER=1
 POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER=6
 POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   GUI   /////////
+
+///////////////////////////////
+////  HUD-SIDE VARIABLES //////
+///////////////////////////////
 
 player_is_in_super_mode[kouchou.MAX_PLAYER_COUNT-1]=false
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
