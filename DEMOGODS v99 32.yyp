@@ -2199,6 +2199,14 @@
             }
         },
         {
+            "Key": "40fca927-7c0f-4013-9b6c-0ccc465a421a",
+            "Value": {
+                "id": "3ddcc251-9e6b-4b51-9132-f409a0a94aeb",
+                "resourcePath": "scripts\\setup_player_HUD_locations\\setup_player_HUD_locations.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "413173e9-28a0-4558-8c0a-e8db2d8dd1b8",
             "Value": {
                 "id": "d1467fda-2fc8-47f1-901f-7a44b3eb5cd6",
@@ -9318,6 +9326,7 @@
         "1a349010-23f7-4fbc-b948-1989cb1ce882",
         "8084dd92-86f0-4b61-8ce1-2e8e116ae995",
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",
+        "40fca927-7c0f-4013-9b6c-0ccc465a421a",
         "633fe73c-8167-4e56-84f9-348791ddcee8",
         "f64f9f6d-8be3-4a35-ac13-d8247383e76f",
         "839dd084-46c6-41b7-963e-bdfc83d6c05c",

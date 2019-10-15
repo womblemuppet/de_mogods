@@ -1,8 +1,13 @@
 PLAYER_HUD_AREA_FULL_WIDTH=260
 PLAYER_HUD_AREA_HALF_WIDTH=PLAYER_HUD_AREA_FULL_WIDTH/2
 
-setup_player_HUD_combo_text_locations(kouchou.MAX_PLAYER_COUNT)
-setup_player_HUD_super_bar_locations(kouchou.MAX_PLAYER_COUNT)
+hud_area_width=PLAYER_HUD_AREA_FULL_WIDTH
+if kouchou.players_in>2
+	hud_area_width=PLAYER_HUD_AREA_HALF_WIDTH
+
+setup_player_HUD_locations(kouchou.players_in)
+setup_player_HUD_combo_text_locations(kouchou.players_in)
+setup_player_HUD_super_bar_locations(kouchou.players_in)
 //create_super_bar(x,y,ID,width)
 
 floating_masks_subimage=0

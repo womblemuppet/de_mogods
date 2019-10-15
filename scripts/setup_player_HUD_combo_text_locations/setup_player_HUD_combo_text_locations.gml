@@ -1,9 +1,6 @@
-var n,w;
+var n;
 n=argument0 //number of players
 
-w=PLAYER_HUD_AREA_FULL_WIDTH
-if n>2
-	w=PLAYER_HUD_AREA_HALF_WIDTH
 
 
 cc_text_location_combo_y=15
@@ -17,8 +14,6 @@ cc_text_location_secondary_x[n-1]=undefined
 switch n
 {
 	case 2:
-	HUDx[0]=0
-	HUDx[1]=kouchou.room_right_border_x-w
 	cc_text_location_combo_x[0]=HUDx[0]+200
 	cc_text_location_combo_x[1]=HUDx[1]-300
 	
