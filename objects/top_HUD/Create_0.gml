@@ -1,4 +1,4 @@
-PLAYER_HUD_AREA_FULL_WIDTH=460
+PLAYER_HUD_AREA_FULL_WIDTH=625
 PLAYER_HUD_AREA_HALF_WIDTH=PLAYER_HUD_AREA_FULL_WIDTH/2
 
 hud_area_width=PLAYER_HUD_AREA_FULL_WIDTH
@@ -16,7 +16,7 @@ if kouchou.players_in>2
 	super_bar_width=250
 
 for (var i = 0; i < kouchou.players_in; i++)
-	setup_HUD_create_super_bar(super_bar_x[i],super_bar_y,i,super_bar_width)
+	setup_HUD_create_super_bar(super_bar_x[i],SUPER_BAR_Y,i,super_bar_width)
 
 
 

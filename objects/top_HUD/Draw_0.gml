@@ -1,4 +1,4 @@
-var xx,player_hud_start_y,area_xend,area_xstart;
+var xx,player_hud_start_x_offset,player_hud_start_y_offset;
 var hp_xoffset,hp_yoffset;
 var pocket_mask_scale,pocket_mask_xoffset,pocket_mask_yoffset,pocket_mask_gap_width;
 var pocket_area_xoffset,pocket_area_yoffset;
@@ -7,14 +7,11 @@ var stack_hud_start_x,stack_hud_start_y,stack_mask_gap_width;
 
 
 
+player_hud_start_x_offset=15
+player_hud_start_y_offset=15
 
-player_hud_start_y=50
-area_xend=kouchou.room_left_border_x   ///absolute
-area_xstart=5  ////plus
-
-
-hp_xoffset=20
-hp_yoffset=20
+hp_xoffset=20  //relative to HUDx[v]
+hp_yoffset=20  //relative from player_hud_start_y_offset
 
 pocket_area_xoffset=62  ////plus
 pocket_area_yoffset=1  ///plus
@@ -32,15 +29,15 @@ for (var v=0; v<kouchou.MAX_PLAYER_COUNT; v+=1)
 {
 	if player_HUD_enabled[v]==true
 	{
-		xx=HUDx[v]
-		draw_sprite(arcade_cabinet_scorebar,0,xx,player_hud_start_y)   
-		draw_text(xx+hp_xoffset,player_hud_start_y+hp_yoffset,player_hp[v])
-		draw_sprite(pocket_circle_sprite[v],pocket_circle_subimage[v],xx+pocket_area_xoffset,player_hud_start_y+pocket_area_yoffset)
+		xx=HUDx[v]+player_hud_start_x_offset
+		draw_sprite(arcade_cabinet_scorebar,0,xx,player_hud_start_y_offset)   
+		draw_text(xx+hp_xoffset,player_hud_start_y_offset+hp_yoffset,player_hp[v])
+		draw_sprite(pocket_circle_sprite[v],pocket_circle_subimage[v],xx+pocket_area_xoffset,player_hud_start_y_offset+pocket_area_yoffset)
 
 		for (var i=0;i<4;i++)
 		{
 			if i<player_number_of_pockets[v]
-				draw_sprite(orb_in_hud_spr,0,xx+pocket_mask_xoffset+i*pocket_mask_gap_width,player_hud_start_y+pocket_mask_yoffset)
+				draw_sprite(orb_in_hud_spr,0,xx+pocket_mask_xoffset+i*pocket_mask_gap_width,player_hud_start_y_offset+pocket_mask_yoffset)
 			//else draw no_orb_sprite
 		}
 	}

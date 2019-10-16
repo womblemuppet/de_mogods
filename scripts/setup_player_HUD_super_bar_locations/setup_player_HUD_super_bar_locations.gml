@@ -2,7 +2,7 @@ var n;
 n=argument0 //number of players
 
 
-super_bar_y=175
+SUPER_BAR_Y=75
 
 
 switch n
