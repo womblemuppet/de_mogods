@@ -1,5 +1,3 @@
-value++
-
 var w;
 w=SEGMENT_WIDTH
 
