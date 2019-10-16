@@ -1,0 +1,2 @@
+value=0
+FILL_TEXTURE_WIDTH=40
