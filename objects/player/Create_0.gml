@@ -53,7 +53,7 @@ recovery_groundpound_active=false        ///the player has ceiling-kill protecti
 disable_next_groundpound_effect=true
 
 super_meter=0   ///charge towards super attack
-can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call
+can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call [seems useless atm]
 
 super_mode=false
 super_mode_time_remaining=0   ///time remaining until super mode times out
