@@ -65,12 +65,6 @@ for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 	PLAYER_SUPER_TIME_TOTAL[i]=0
 };
 
-	
-pocket_has_super_mode[kouchou.MAX_PLAYER_COUNT-1]=0
-for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-{
-	pocket_has_super_mode[i]=0
-};
 
 
 player_hp[kouchou.MAX_PLAYER_COUNT-1]=0

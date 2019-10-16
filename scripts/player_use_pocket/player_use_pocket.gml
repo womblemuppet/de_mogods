@@ -3,12 +3,6 @@ stack_add_orb(undefined,true)
 
 number_of_pockets-=1
 
-if pocket_super_mode_stored
-{
-	player_activate_super_mode()
-	pocket_super_mode_stored=false
-}
-
 player_update_pocket_hud()
 
 

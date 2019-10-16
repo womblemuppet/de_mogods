@@ -21,12 +21,8 @@ if H<1
 if !player_has_no_pockets()
 	set_hud_pocket_circle_orb_lost_animation()
 else
-{
-	if pocket_super_mode_stored
-		set_hud_pocket_circle_orb_super_mode()
-	else
-		set_hud_pocket_circle_orb_normal()
-}
+	set_hud_pocket_circle_orb_normal()
+
 	
 player_empty_pockets()                               ///reset pocket orb
 pocket_super_mode_stored=false
