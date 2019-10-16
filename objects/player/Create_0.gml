@@ -52,7 +52,7 @@ groundpound_current_hitbox_object=noone
 recovery_groundpound_active=false        ///the player has ceiling-kill protection if this is active
 disable_next_groundpound_effect=true
 
-orb_count_meter=0   ///charge towards super mode, gained by activating orbs
+super_meter=0   ///charge towards super attack
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call
 
 super_mode=false

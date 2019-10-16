@@ -5,6 +5,9 @@ number_of_pockets-=1
 
 player_update_pocket_hud()
 
+super_meter++
+
+HUD_increment_super_bar(P)
 
 //prevent player from inputting LA+HA again
 pocket_light_heavy_held_counter=-1000

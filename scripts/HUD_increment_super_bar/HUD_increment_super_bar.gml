@@ -1,7 +1,10 @@
+
+
+
 var player_P;
 player_P=argument0
 
-with super_bars_array[player_P]
+with top_HUD.super_bars_array[player_P]
 {
 	value++
 

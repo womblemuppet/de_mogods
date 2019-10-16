@@ -11,7 +11,7 @@ sprite_index=sprites[? "super_activate"]   ///super activate animation
 switch attacks[? "ult get trigger"]
 {
 	case "uga_get_ult":
-		orb_count_meter=0
+		//ugault
 	break;
 	case "vet_get_ult":
 		//vetult
