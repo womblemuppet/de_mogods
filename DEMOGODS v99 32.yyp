@@ -2015,6 +2015,14 @@
             }
         },
         {
+            "Key": "3ae7dcd7-892d-41f1-8501-5fb503416d60",
+            "Value": {
+                "id": "4faba612-13a6-4806-ae4c-60b981c196e5",
+                "resourcePath": "scripts\\setup_player_HUD_super_bar_locations\\setup_player_HUD_super_bar_locations.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3b4ee5ac-5152-4ef4-bdcb-3076ffdbd0b5",
             "Value": {
                 "id": "d3cca19c-b8fd-49b5-b3d7-0bc43d0ca6c2",
@@ -6530,7 +6538,7 @@
             "Key": "b83653e6-b2da-4ada-8bdd-75969be027e2",
             "Value": {
                 "id": "54a02fd2-336e-4bf3-916b-10ac695f3a15",
-                "resourcePath": "scripts\\create_super_bar\\create_super_bar.yy",
+                "resourcePath": "scripts\\setup_HUD_create_super_bar\\setup_HUD_create_super_bar.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -9328,6 +9336,7 @@
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",
         "40fca927-7c0f-4013-9b6c-0ccc465a421a",
         "633fe73c-8167-4e56-84f9-348791ddcee8",
+        "3ae7dcd7-892d-41f1-8501-5fb503416d60",
         "f64f9f6d-8be3-4a35-ac13-d8247383e76f",
         "839dd084-46c6-41b7-963e-bdfc83d6c05c",
         "32bee222-a7cd-4554-bf72-0ac9249e41d4",

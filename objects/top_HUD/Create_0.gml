@@ -1,13 +1,26 @@
-PLAYER_HUD_AREA_FULL_WIDTH=260
+PLAYER_HUD_AREA_FULL_WIDTH=460
 PLAYER_HUD_AREA_HALF_WIDTH=PLAYER_HUD_AREA_FULL_WIDTH/2
 
 hud_area_width=PLAYER_HUD_AREA_FULL_WIDTH
 if kouchou.players_in>2
 	hud_area_width=PLAYER_HUD_AREA_HALF_WIDTH
+	
+
 
 setup_player_HUD_locations(kouchou.players_in)
 setup_player_HUD_combo_text_locations(kouchou.players_in)
 setup_player_HUD_super_bar_locations(kouchou.players_in)
+
+super_bar_width=500
+if kouchou.players_in>2
+	super_bar_width=250
+
+for (var i = 0; i < kouchou.players_in; i++)
+	setup_HUD_create_super_bar(super_bar_x[i],super_bar_y,i,super_bar_width)
+
+
+
+
 //create_super_bar(x,y,ID,width)
 
 floating_masks_subimage=0
