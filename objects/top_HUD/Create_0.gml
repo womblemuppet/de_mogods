@@ -18,7 +18,7 @@ if kouchou.players_in>2
 
 for (var i = 0; i < kouchou.players_in; i++)
 {
-	super_bars_array[kouchou.MAX_PLAYER_COUNT]=setup_HUD_create_super_bar(super_bar_x[i],SUPER_BAR_Y,i,super_bar_width,12)
+	super_bars_array[i]=setup_HUD_create_super_bar(super_bar_x[i],SUPER_BAR_Y,i,super_bar_width,12)
 }
 
 

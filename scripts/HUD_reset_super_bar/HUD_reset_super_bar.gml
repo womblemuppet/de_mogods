@@ -3,16 +3,14 @@ player_P=argument0
 
 with super_bars_array[player_P]
 {
-	value++
-
-	var w;
-	w=SEGMENT_WIDTH
+	value=0
 
 	with myline
 	{
-		sprite_index=MOVING_SPRITE
+		sprite_index=NORMAL_SPRITE
 		image_index=0
-		mode="moving"
-		to_move+=w/SPEED
+		mode="normal"
+		to_move=0
+		x=xstart
 	}
 }

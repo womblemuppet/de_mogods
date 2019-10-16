@@ -3439,6 +3439,14 @@
             }
         },
         {
+            "Key": "619c7335-ab36-4f6f-942c-45bebf3f448d",
+            "Value": {
+                "id": "96baacb8-677a-4398-9f32-e973b2b938ed",
+                "resourcePath": "scripts\\HUD_reset_super_bar\\HUD_reset_super_bar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "61a34fa8-499e-4218-b556-cc5c642ad8fd",
             "Value": {
                 "id": "200a0215-6664-4575-9d85-1274ed13b9a2",
@@ -9375,6 +9383,7 @@
         "184a41d6-fc8f-4082-a377-b5e69bf8b047",
         "b83653e6-b2da-4ada-8bdd-75969be027e2",
         "b4c6686b-38b3-44ce-831c-acaf38a6f508",
+        "619c7335-ab36-4f6f-942c-45bebf3f448d",
         "cce0eae3-4d22-4cb6-b8f9-9674dd338976",
         "3265cb24-873c-4278-8a95-5397b8d0ce32",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
