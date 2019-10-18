@@ -34,21 +34,21 @@ if targeting
 		}
 	}
 
-	if sky.snow_effect_disable_side_change_counter<1
+	if weather.snow_effect_disable_side_change_counter<1
 	{
 		if side=="right"
 		{
-			if sky.snow_previous_side!="right"
-				sky.snow_effect_disable_side_change_counter=20
-			sky.snow_hspd=-sky.SNOW_WINDY_HSPD
-			sky.snow_previous_side=side
+			if weather.snow_previous_side!="right"
+				weather.snow_effect_disable_side_change_counter=20
+			weather.snow_hspd=-weather.SNOW_WINDY_HSPD
+			weather.snow_previous_side=side
 		}
 		else
 		{
-			if sky.snow_previous_side!="left"
-				sky.snow_effect_disable_side_change_counter=20
-			sky.snow_hspd=sky.SNOW_WINDY_HSPD
-			sky.snow_previous_side=side
+			if weather.snow_previous_side!="left"
+				weather.snow_effect_disable_side_change_counter=20
+			weather.snow_hspd=weather.SNOW_WINDY_HSPD
+			weather.snow_previous_side=side
 		}
 	}
 }

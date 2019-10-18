@@ -1,5 +1,5 @@
 /// @description lessen snowball effects
-with sky
+with weather
 {
 	snow_on=true
 	snow_hspd=SNOW_CALM_HSPD

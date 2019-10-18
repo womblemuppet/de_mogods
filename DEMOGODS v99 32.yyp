@@ -2991,6 +2991,14 @@
             }
         },
         {
+            "Key": "56382178-9bb2-485e-8ae4-e979607280b7",
+            "Value": {
+                "id": "dd81fa2e-32e5-4885-a86e-d74b0c1389fb",
+                "resourcePath": "objects\\weather\\weather.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "56422115-df27-4f3c-b1e7-0e411a986670",
             "Value": {
                 "id": "fb4ff311-402c-4a71-81a8-95ff8e839b1f",

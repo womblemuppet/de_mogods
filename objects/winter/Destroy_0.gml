@@ -1,5 +1,5 @@
 /// @description call stack
-with sky
+with weather
 {
 	snow_on=false
 	snow_hspd=SNOW_CALM_HSPD

@@ -6,7 +6,7 @@ alarm[2]=200   ///end targeting
 alarm[3]=470   ///make snowball
 
 
-with sky
+with weather
 {
 	snow_on=true
 	snow_hspd=SNOW_CALM_HSPD

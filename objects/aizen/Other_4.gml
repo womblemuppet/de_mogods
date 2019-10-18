@@ -47,10 +47,10 @@ if room==gameroom
 	//bottomhud_cam=camera_create_view(kouchou.room_left_border_x,kouchou.room_bottom_border_y,kouchou.rw,room_height-kouchou.room_bottom_border_y)
 	//view_set_camera(4,bottomhud_cam)
 
-	instance_create_depth(0,0,-4,borderviews)
+	instance_create_depth(0,0,-6,borderviews)
 	instance_create_depth(0,0,0,combo_text_controller)
-	instance_create_depth(0,0,-5,console)
-	instance_create_depth(0,0,-6,top_HUD)
+	instance_create_depth(0,0,-7,console)
+	instance_create_depth(0,0,-8,top_HUD)
 
 		
 
@@ -90,7 +90,8 @@ if room==gameroom
 	var playerspawnheight;
 	playerspawnheight=200
 	instance_create_depth(0,0,8,sky)
-	instance_create_depth(0,0,-8,lighting)    
+	instance_create_depth(0,0,-6,weather)
+	instance_create_depth(0,0,-6,lighting)    
 	
 	find_starting_spawn_locations()
 		
