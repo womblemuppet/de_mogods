@@ -97,6 +97,9 @@ switch (character)
      uniques_phase_enabled=true
 	uniques_uga_delayable_gp_enabled=true
 	super_mode_duration=1000
+	air_dash_speed+=4
+	air_dash_vspeed+=4.5
+	
 	break;
 
 	case "bait":

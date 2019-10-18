@@ -67,8 +67,8 @@ dash_button_currently_held=false
 ground_dash_speed=-9999    ///speed of the current dash (if grounded).             WARNING             gets changed when attack happens so this value here means nothing
 ground_dash_counter=0 ///counter for length of dash
 GROUND_DASH_MAX=20  /// when ground_dash_amount reaches this amount the dash ends
-AIR_DASH_SPEED=15   ///speed of dash when in air
-AIR_DASH_VSPEED=3.5    ///(minused when dashing in air)
+air_dash_speed=15   ///speed of dash when in air (custom speeds set in decide_moves)
+air_dash_vspeed=3.5    ///minused when dashing in air (custom speeds set in decide_moves)
 DASH_LOCKDOWN_TIME=20 ///time you can't move after dashing
 dash_wallbreak_forgive=false //set to true if the dash breaks a wall, stopping the dash lockdown
 

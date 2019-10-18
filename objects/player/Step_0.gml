@@ -1016,11 +1016,11 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 
 				if groundcheck==noone           ////////dashing in air
 				{
-					vspd=-AIR_DASH_VSPEED
+					vspd=-air_dash_vspeed
 					if right
-						hspd=AIR_DASH_SPEED
+						hspd=air_dash_speed
 					else
-						hspd=-AIR_DASH_SPEED
+						hspd=-air_dash_speed
 						
 					alarm[5]=5              ////hspd gets slowed 2 steps later    
 					if right
