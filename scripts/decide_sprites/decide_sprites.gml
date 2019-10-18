@@ -30,6 +30,8 @@ switch character
 				sprites[? "airslam"]=Ooga_4H_airgrab_slam
 				sprites[? "airslam_u"]=Ooga_4H_airgrab_slam //super version (to be changed)
 				sprites[? "recoiling_u"]=Ooga_4H_recoiling_super
+				sprites[? "recoiling_air"]=Ooga_4H_recoiling_air
+				sprites[? "recoiling_fall"]=Ooga_4H_recoiling_fall
 				sprites[? "recoiling"]=Ooga_4H_recoiling
 				sprites[? "airgrab_u"]=Ooga_4H_airgrab  ///super version (to be changed)
 				sprites[? "airgrab"]=Ooga_4H_airgrab 

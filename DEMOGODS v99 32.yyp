@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "01e5bdde-2f3d-4306-8d2f-03c869de75e0",
+            "Value": {
+                "id": "eb259205-21e2-4288-a1ce-20efb0833298",
+                "resourcePath": "sprites\\Ooga_4H_recoiling_air\\Ooga_4H_recoiling_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "022f1e8f-00ec-44e5-8c0b-85993f250ba5",
             "Value": {
                 "id": "c0502352-1334-4aef-a976-afc298264fc1",
@@ -235,6 +243,14 @@
             "Value": {
                 "id": "4e8b39dd-e48e-44b1-b355-0d5c864b0269",
                 "resourcePath": "sprites\\ooga_ultimate_groundpoundboom\\ooga_ultimate_groundpoundboom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "05df8201-d31e-4d82-82de-c36d304eb1ff",
+            "Value": {
+                "id": "103a8798-44eb-4179-a6a2-b9140b77295d",
+                "resourcePath": "sprites\\Ooga_4H_recoiling_fall\\Ooga_4H_recoiling_fall.yy",
                 "resourceType": "GMSprite"
             }
         },
