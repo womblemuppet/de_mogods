@@ -11,7 +11,8 @@ if armouredsteps>0
 
 hspd=0
 stunned=0
-stunned_groundpound=argument0 
+stunned_groundpound=argument0
+player_flinch(argument0)
 player_flush_lockdowns()
 
 sprite_index=sprites[? "dizzy"]

@@ -1,7 +1,5 @@
-if groundcheck==noone
-	cars2=0
-	
-recoil_sprite_counter=argument0
+if recoil_sprite_counter<argument0
+	recoil_sprite_counter=argument0
 
 var pass;
 pass=false
