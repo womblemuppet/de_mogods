@@ -311,9 +311,7 @@ else if room==multiplayermenu
 	for (var i=0; i<chargrid_numberofcolumns; i+=1)
 	{   
 		for (ii=0; ii<chargrid_numberofrows; ii+=1)
-		{
 			draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
-		}
 	}
     
 	/*draw_set_colour(c_white)

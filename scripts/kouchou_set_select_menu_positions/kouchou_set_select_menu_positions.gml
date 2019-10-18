@@ -49,7 +49,7 @@ else
 ///     0 | 1 | 2 | 3 | 4 | 5
 ///     current layout  
 
-chargrid_numberofcolumns=6
+chargrid_numberofcolumns=10
 var smallportrait_w,chargrid_w;
 smallportrait_w=70
 chargrid_w=chargrid_numberofcolumns*smallportrait_w
