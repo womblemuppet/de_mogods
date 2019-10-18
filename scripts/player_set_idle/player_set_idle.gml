@@ -1,19 +1,6 @@
 if recoil_sprite_counter>0      /// RECOILING
 {
-	if groundcheck==noone
-	{
-		sprite_index=sprites[? "recoiling"]  //recoiling
-		if super_mode
-			sprite_index=sprites[? "recoiling_u"]  //recoiling super
-	}
-	else
-	{
-		if vspd>FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN
-			sprite_index=sprites[? "recoiling_air"]
-		else
-			sprite_index=sprites[? "recoiling_fall"]
-
-	}
+	player_set_flinch_sprites()
 	exit
 }
 

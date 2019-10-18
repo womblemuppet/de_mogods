@@ -124,9 +124,7 @@ if recoil_sprite_counter>0                                           //recoil sp
 			}
 		};
 		if pass
-		{  
 			player_set_idle()
-		}
 	}
 }
 if cripple_debuff_counter>0

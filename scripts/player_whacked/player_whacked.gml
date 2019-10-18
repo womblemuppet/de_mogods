@@ -49,7 +49,7 @@ if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
 	cripple_debuff_counter=dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT
 
 
-player_flinch()
+player_flinch(arg_stun_amount)
 player_has_taken_hh_damage()
 
 if !last_hit_knocked_down  ///if didn't lose hp

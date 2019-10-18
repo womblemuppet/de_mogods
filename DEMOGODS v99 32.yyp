@@ -2623,6 +2623,14 @@
             }
         },
         {
+            "Key": "4b5a62c0-325d-4d78-a5f7-5fa86b9bc2ec",
+            "Value": {
+                "id": "78fefe1d-58b8-4f28-b3c2-493de8d58e6a",
+                "resourcePath": "scripts\\player_set_flinch_sprites\\player_set_flinch_sprites.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4bb22725-a795-4ef5-9189-203495506dfa",
             "Value": {
                 "id": "78c83fd5-5639-4fab-84f9-260afe3ca0a8",
@@ -9261,8 +9269,8 @@
         "13fdfdf2-32de-4baf-9965-9a507374c341",
         "4e94ef91-10cc-416c-ae8f-2a04e9944ccf",
         "e554999d-3404-43ec-adcb-5e026400b6c7",
-        "7c78568f-09b8-4ed9-a475-4db91c97d187",
         "16f91af5-117a-4539-9940-d122b45bc1f6",
+        "4b5a62c0-325d-4d78-a5f7-5fa86b9bc2ec",
         "da90fa10-9d4b-4bf6-84c7-fe5845097649",
         "dbf2e1dc-7535-4dea-97b6-0c8bd01fd392",
         "8c4e5695-877e-49e3-84b1-7837bdd95edb",
@@ -9284,6 +9292,7 @@
         "6e0d417b-877c-49ee-a112-6dba5a4912f1",
         "93f06e74-05f6-4dc9-9d7d-844f37650bb3",
         "78d0e6a3-dcb3-46c0-bcd6-8020ebd7fc87",
+        "7c78568f-09b8-4ed9-a475-4db91c97d187",
         "89d33241-9d12-491a-8c03-00a870b09271",
         "a87ab99b-53d5-4f8a-974a-5a6b6576019f",
         "243a6b01-242a-4348-b5a2-bf5770f89fd4",
