@@ -3,6 +3,9 @@
 	use whole numbers for stun amount, non-integer stun amounts will never count to 0
 */
 
+var stun_amount;
+stun_amount=argument0
+
 if armouredsteps>0
 {
 	effect_aniend(armoured_get_hit_spr,0.2,-4)
@@ -11,8 +14,8 @@ if armouredsteps>0
 
 hspd=0
 stunned=0
-stunned_groundpound=argument0
-player_flinch(argument0)
+stunned_groundpound=stun_amount
+player_flinch(stun_amount)
 player_flush_lockdowns()
 
 sprite_index=sprites[? "dizzy"]
