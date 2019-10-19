@@ -3,21 +3,17 @@
   changes player direction and sets/increases hspd
 */
 
-var button,reverse_button,sgn
+var sgn;
 
 if argument0=="left"
-{
 	sgn=-1
-}
 else
-{
 	sgn=1
-}
-	
 	
 
+//increase movespeed if allowed to run
 if stunned==0 && player_not_locked_down()
-{   //increase movespeed if allowed to run
+{
 	var slow_ratio;
 	slow_ratio=1
 	if mild_slowed_counter>0
