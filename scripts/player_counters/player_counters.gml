@@ -142,13 +142,6 @@ if uniques_fpunch_cd_counter>0
 	uniques_fpunch_cd_counter-=1
 }
 
-if uniques_vet_la_target_counter>0
-{
-	uniques_vet_la_target_counter-=1
-	if uniques_vet_la_target_counter==0
-		uniques_vet_la_target=noone
-}
-
 if uniques_vet_targeted_mine_counter>0
 {
 	uniques_vet_targeted_mine_counter-=1

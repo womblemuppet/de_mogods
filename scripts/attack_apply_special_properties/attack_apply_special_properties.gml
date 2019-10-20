@@ -64,13 +64,6 @@ switch incoming_attack_name
 	case "uga_gp_ult_shockwave":
 		player_get_gp_stunned(other.stunamount)
 	break;
-	case "veteranuppercut":
-	if attacker!=noone
-	{
-		attacker.uniques_vet_la_target_counter=UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME
-		attacker.uniques_vet_la_target=self.id
-	}
-	break;
 	case "veteran_kamikaze":
 	if attacker!=noone
 		attacker.uniques_vet_kamikaze_victim=self.id

@@ -175,10 +175,6 @@ uniques_supersmash_has_made_hitbox=false
 uniques_vet_targeted_mine_counter=0
 uniques_vet_targeted_mine_last_hit=noone
 
-//VETERAN STANDARD PUNCH
-uniques_vet_la_target_counter=0
-uniques_vet_la_target=noone
-UNIQUES_VET_LA_TARGET_COUNTER_RESET_TIME=35
 
 //VETERAN SPINNER ATTACK
 uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre shockwave attack 3 = recovery

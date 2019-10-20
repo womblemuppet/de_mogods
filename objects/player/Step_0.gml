@@ -595,31 +595,25 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 		player_throw_crab()
 	}
 	
-	if !exception && uniques_sticky_mine_enabled && uniques_vet_la_target_counter>0 && mines_ammo>0   ///// sticky mine
+	if !exception && uniques_sticky_mine_enabled && mines_ammo>0   ///// sticky mine
 	{
-		if uniques_vet_la_target!=noone && instance_exists(uniques_vet_la_target)
-		{
-			image_speed=FRAME_SPEED_SLOW
-			image_index=0
-			sprite_index=sprites[? "uniques_place_sticky_mine"]
-			if super_mode
-				sprite_index=sprites[? "uniques_place_sticky_mine_u"]
-			uniques_sticky_mine_lockdown=1
-			var a;
-			a=instance_create_depth(x,y,-1,ef_connector)
-			a.targ1=self.id
-			a.targ2=uniques_vet_la_target
-			a.sprite_index=vet_3H_sticky_mine_connect_effect
-			a.image_speed=FRAME_SPEED_NORMAL
+		//if uniques_vet_la_target!=noone && instance_exists(uniques_vet_la_target)
+		//{
+		//	image_speed=FRAME_SPEED_SLOW
+		//	image_index=0
+		//	sprite_index=sprites[? "uniques_place_sticky_mine"]
+		//	if super_mode
+		//		sprite_index=sprites[? "uniques_place_sticky_mine_u"]
+		//	uniques_sticky_mine_lockdown=1
 		
-			mines_ammo-=1
-			a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
-			a.creator=self.id
-			a.targ=uniques_vet_la_target
-			a.right=right
-			a.scale=1
-			exception=true
-		}
+		//	mines_ammo-=1
+		//	a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
+		//	a.creator=self.id
+		//	a.targ=uniques_vet_la_target
+		//	a.right=right
+		//	a.scale=1
+		//	exception=true
+		//}
 	}
 	
 	if !exception
