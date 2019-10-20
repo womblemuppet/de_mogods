@@ -12,11 +12,3 @@ if sprite_index==sprites[? "air"] || sprite_index==sprites[? "air_u"]
 		sprite_index=sprites[? "fall_u"]
 	return true
 }
-else if sprite_index==sprites[? "recoiling_air"]
-{
-	image_index=0
-	sprite_index=sprites[? "recoiling_fall"]   //falldown sprite
-	if super_mode
-		sprite_index=sprites[? "recoiling_fall"]   //super mode (to be changed)
-	return true
-}

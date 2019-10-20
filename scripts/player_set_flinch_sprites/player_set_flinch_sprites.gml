@@ -1,5 +1,5 @@
 image_index=0
-if groundcheck==noone
+if vspd>CONSIDERED_AIRBOURNE_THESHOLD_VSPD_LARGER_THAN//groundcheck==noone
 {
 	sprite_index=sprites[? "recoiling"]  //recoiling
 	if super_mode
@@ -7,9 +7,11 @@ if groundcheck==noone
 }
 else
 {
-	if vspd>FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN
-		sprite_index=sprites[? "recoiling_fall"]
-	else
+	if vspd<=RECOILING_AIR_FLIP_SPRITE_THRESHOLD_VSPD_LARGER_THAN
 		sprite_index=sprites[? "recoiling_air"]
-
+	//if vspd>RECOILING_AIR_FLIP_SPRITE_THRESHOLD_VSPD_LARGER_THAN && sprite_index!=sprites[? "recoiling_air_flip"]
+	//{
+	//	sprite_index=sprites[? "recoiling_air_flip"]
+	//	image_index=0
+	//}
 }
