@@ -2223,6 +2223,14 @@
             }
         },
         {
+            "Key": "40095ad1-51cb-4598-8c77-c312ede0769c",
+            "Value": {
+                "id": "79a17e1b-0b47-43ce-844c-96d22d036f53",
+                "resourcePath": "sprites\\Bait_3H_recoiling_fall\\Bait_3H_recoiling_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4037ce6e-9f42-40c5-b927-468db4bd59dd",
             "Value": {
                 "id": "65c4644b-cba4-43ba-aa54-9f7384c16832",
@@ -8395,6 +8403,14 @@
             "Value": {
                 "id": "ba9a9fa8-eb98-4ed1-b4c3-5ff526034a23",
                 "resourcePath": "sprites\\Vet_3H_charge\\Vet_3H_charge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2451727-8ef8-4b68-9af9-bd697ea9c3af",
+            "Value": {
+                "id": "b642fd46-bf6d-4daa-817f-6d11079fb913",
+                "resourcePath": "sprites\\Bait_3H_recoiling_air\\Bait_3H_recoiling_air.yy",
                 "resourceType": "GMSprite"
             }
         },

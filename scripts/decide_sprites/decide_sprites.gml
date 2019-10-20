@@ -159,6 +159,9 @@ switch character
 			sprites[? "gp_hit_ground_effect"]=Slinger_groundpound_effect
 			sprites[? "recoiling_u"]=Slinger_3H_recoiling  ///super version (to be changed)
 			sprites[? "recoiling"]=Slinger_3H_recoiling
+			sprites[? "recoiling_air"]=Slinger_3H_recoiling_air
+			sprites[? "recoiling_air_flip"]=Slinger_3H_recoiling_air_flip
+			sprites[? "recoiling_fall"]=Slinger_3H_recoiling_fall
 			sprites[? "airgrab_u"]=Slinger_3H_airgrab  ///super version (to be changed)
 			sprites[? "airgrab"]=Slinger_3H_airgrab  
 			sprites[? "airslam"]=Slinger_3H_airslam ///super version (to be changed)
@@ -216,6 +219,9 @@ switch character
 		sprites[? "gp_hit_ground_effect"]=Bait_groundpound_effect
 		sprites[? "recoiling_u"]=Bait_3H_recoiling  ///super version (to be changed)
 		sprites[? "recoiling"]=Bait_3H_recoiling
+		sprites[? "recoiling_air"]=Bait_3H_recoiling_air
+		sprites[? "recoiling_air_flip"]=Bait_3H_recoiling_air_flip
+		sprites[? "recoiling_fall"]=Bait_3H_recoiling_fall
 		sprites[? "airgrab_u"]=Bait_3H_airgrab  ///super version (to be changed)
 		sprites[? "airgrab"]=Bait_3H_airgrab 
 		sprites[? "airslam"]=Bait_3H_airslam ///super version (to be changed)
