@@ -1,19 +1,35 @@
-if !place_meeting(x,y+1,block)
+groundcheck=place_meeting(x,y+1,block)
+
+
+//////     set sprite   ///// [finaledit] optimise...
+if groundcheck==false
 {
-	vspd+=0.5   ///gravity
-}
-if place_meeting(x,y-1,block)
-{
-	vspd=1
-}
-if place_meeting(x,y+1,block)
-{
-	if vspd<-5
-		vspd=-6
+	if vspd<0
+		sprite_index=mine_spinning_sprite
 	else
-		vspd=0
-    
-	////////horizontal friction if touching ground
+		sprite_index=mine_sprite
+}
+else
+{
+	if !ready
+		sprite_index=mine_sprite_priming
+	else
+		sprite_index=mine_sprite
+}
+
+
+
+
+///gravity
+
+
+if groundcheck==false
+	vspd+=0.5
+else
+{
+	vspd=0
+
+	///horizontal friction if touching ground
 	var horfriction;
 	horfriction=0.5
 	if hspd>horfriction
@@ -26,17 +42,25 @@ if place_meeting(x,y+1,block)
 		hspd=0
 }
 
+///check ceiling
+if place_meeting(x,y-1,block)
+	vspd=1
+
+///limit vspd
 if vspd>7
 	vspd=7
 if vspd<-18
 	vspd=-18
-    
+
+//vertical movement
 if vspd>0
 {
 	repeat(vspd)
 	{
 		if !place_meeting(x,y+1,block)
 			y+=1
+		else
+			break;
 	}
 }
 else if vspd<0
@@ -45,15 +69,21 @@ else if vspd<0
 	{
 		if !place_meeting(x,y-1,block)
 			y-=1
+		else
+			break;
 	}
 }
 
+
+///horizontal movement
 if hspd>0
 {
 	repeat(hspd)
 	{
-	if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x
-		x+=1
+		if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x
+			x+=1
+		else
+			break;
 	}
 }
 else if hspd<0
@@ -62,6 +92,8 @@ else if hspd<0
 	{
 		if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x
 			x-=1
+		else
+			break;
 	}
 }
 
@@ -99,14 +131,3 @@ if triggered   /// >:O
 		instance_destroy()
 	}
 }
-
-//////     set sprite   ///// [finaledit] optimise...
-if vspd<0
-	sprite_index=mine_spinning_sprite
-else if vspd>0
-	sprite_index=mine_falling_sprite
-else if !ready
-	sprite_index=mine_sprite_priming
-else
-	sprite_index=mine_sprite
-

@@ -6,4 +6,4 @@ triggered=false
 bigexplosion=false
 bigexplosion_xscale=1
 life=5
-
+groundcheck=false
