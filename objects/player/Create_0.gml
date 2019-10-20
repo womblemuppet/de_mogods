@@ -132,6 +132,7 @@ BOUNCE_VERTICAL_SKIM_VELOCITY=4  //positive, gets minused
 BOUNCE_VERTICAL_ONLY_VELOCITY=14  //positive, gets minused
 isteps=0 //cant be hit while this is >0
 armouredsteps=0  //can't be knocked back during this time
+
 FRAME_SPEED_NORMAL=0.2
 FRAME_SPEED_FAST=0.4
 FRAME_SPEED_SLOW=0.1
