@@ -200,7 +200,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 						vspd=24
 					}
 					
-						
+
 					
 					float_counter=10
 					

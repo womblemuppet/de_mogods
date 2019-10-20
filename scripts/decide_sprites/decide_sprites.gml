@@ -89,6 +89,9 @@ switch character
 			sprites[? "rocketjump_effect"]=Vet_rjump_effect_spr
 			sprites[? "recoiling_u"]=Vet_3H_recoiling  ///super version (to be changed)
 			sprites[? "recoiling"]=Vet_3H_recoiling
+			sprites[? "recoiling_air"]=Vet_3H_recoiling_air
+			sprites[? "recoiling_air_flip"]=Vet_3H_recoiling_air_flip
+			sprites[? "recoiling_fall"]=Vet_3H_recoiling_fall
 			sprites[? "airgrab_u"]=Vet_3H_airgrab  ///super version (to be changed)
 			sprites[? "airgrab"]=Vet_3H_airgrab
 			sprites[? "airslam"]=Vet_3H_airslam

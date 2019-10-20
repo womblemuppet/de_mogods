@@ -173,7 +173,9 @@ uniques_supersmash_has_made_hitbox=false
 
 //VET GENERAL
 uniques_vet_targeted_mine_counter=0
+UNIQUES_VET_TARGETED_MINE_COUNTER_AMOUNT=80
 uniques_vet_targeted_mine_last_hit=noone
+
 
 
 //VETERAN SPINNER ATTACK

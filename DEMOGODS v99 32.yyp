@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "004dcd70-6a7a-4a58-93c8-89793a29184f",
-            "Value": {
-                "id": "92b05987-8603-4c53-a24c-9f1f82962bcf",
-                "resourcePath": "sprites\\Slinger_3H_recoiling\\Slinger_3H_recoiling.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "00aa205e-b08d-409a-ba41-ff0b247512fc",
             "Value": {
                 "id": "2fce8426-9710-4357-aef5-36e249b1e4da",
@@ -660,6 +652,14 @@
                 "id": "6db43209-f5bf-4054-8062-2997b18a7025",
                 "resourcePath": "objects\\storm_top_layer\\storm_top_layer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0f60924c-80c8-4100-a5ce-b341a74df818",
+            "Value": {
+                "id": "88ad9bf7-db0d-476e-9db7-66fc0aa8923b",
+                "resourcePath": "views\\0f60924c-80c8-4100-a5ce-b341a74df818.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1423,6 +1423,14 @@
             }
         },
         {
+            "Key": "24c1c664-e2a9-46fc-bb6f-9867e61cf9de",
+            "Value": {
+                "id": "df1b3a09-6748-407a-b589-9ff004018ec2",
+                "resourcePath": "sprites\\Bait_3H_recoiling_air_flip\\Bait_3H_recoiling_air_flip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "24cb13dc-de44-4fe7-946f-1a15f305cc1f",
             "Value": {
                 "id": "f2908e06-be7e-4215-a189-9041b5df9011",
@@ -1636,6 +1644,14 @@
                 "id": "06961f10-4a3b-495f-a3c7-cccec9b283c3",
                 "resourcePath": "scripts\\convert_orb_type_to_sprite\\convert_orb_type_to_sprite.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2ea3e2f9-9d0b-4811-b4a0-9ad14cba8665",
+            "Value": {
+                "id": "97f38fde-5f28-498b-8a0b-5e70bf528b56",
+                "resourcePath": "sprites\\Slinger_3H_recoiling_air\\Slinger_3H_recoiling_air.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3351,6 +3367,14 @@
             }
         },
         {
+            "Key": "5e8bdde5-93e9-4b64-88c9-c6f99a5f3926",
+            "Value": {
+                "id": "1130c1db-83f5-411b-85ab-566d8604eac2",
+                "resourcePath": "sprites\\Slinger_3H_recoiling\\Slinger_3H_recoiling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e8da612-3a5f-465c-b60b-939ff0e96dbe",
             "Value": {
                 "id": "2629a27a-82bb-4e22-a594-638a04b73e74",
@@ -3847,6 +3871,14 @@
             }
         },
         {
+            "Key": "690c348e-3063-40a3-bee4-3dfb6a1fa88b",
+            "Value": {
+                "id": "c6eab9e2-3d07-4140-b76a-dd0bff4b77b6",
+                "resourcePath": "views\\690c348e-3063-40a3-bee4-3dfb6a1fa88b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "69517475-7bcd-4163-a4b4-1c5e94c5941c",
             "Value": {
                 "id": "f96d7b20-acae-43a9-9037-d0ea5746dc8c",
@@ -4204,6 +4236,14 @@
                 "id": "4c01ba21-52d5-48a6-a24c-fdc4725633e1",
                 "resourcePath": "views\\75442d10-c7c0-46db-ab9a-5bc6464409d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "759f6676-3836-4467-810f-79c3443611d9",
+            "Value": {
+                "id": "66df8a7f-a68f-4114-9a43-0e49dc77c8ef",
+                "resourcePath": "sprites\\Slinger_3H_recoiling_air_flip\\Slinger_3H_recoiling_air_flip.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5919,6 +5959,14 @@
             }
         },
         {
+            "Key": "a375c989-35f1-4922-8758-6541c239cae2",
+            "Value": {
+                "id": "15d36c5b-b0bf-4168-ab59-324373a55f99",
+                "resourcePath": "views\\a375c989-35f1-4922-8758-6541c239cae2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a38ee4ac-f0c7-490b-85a2-e892a325489e",
             "Value": {
                 "id": "c45fdc55-d921-42dd-85af-31474d9ed1ed",
@@ -6007,6 +6055,14 @@
             }
         },
         {
+            "Key": "a62ecbd9-ceb1-4dd3-b854-4b6db8861ff7",
+            "Value": {
+                "id": "e4459457-1160-4b71-9a6b-4078bd9e9c64",
+                "resourcePath": "sprites\\Slinger_3H_recoiling_fall\\Slinger_3H_recoiling_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a63b9193-856f-4a2b-88af-632a02b0a9f8",
             "Value": {
                 "id": "bcc55451-8b95-4420-bed5-871bf9d942ef",
@@ -6084,6 +6140,14 @@
                 "id": "b5d85668-b194-4bca-9d51-38cacaad4318",
                 "resourcePath": "views\\a94d27ee-e298-4484-9a2a-3190be53e9a3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a95a2311-2a72-495d-9794-456483600a06",
+            "Value": {
+                "id": "8d2fc105-da85-40f1-ad52-e683d7528dc7",
+                "resourcePath": "sprites\\Vet_3H_recoiling_fall\\Vet_3H_recoiling_fall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8391,6 +8455,14 @@
             }
         },
         {
+            "Key": "e35707d3-a2af-4ad2-98c7-1d2a615add34",
+            "Value": {
+                "id": "90106aa7-e0ec-4920-a582-0771f4dfd5db",
+                "resourcePath": "sprites\\Vet_3H_recoiling_air_flip\\Vet_3H_recoiling_air_flip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e35a39ab-bc4a-4e7e-aed2-84f07e1521c8",
             "Value": {
                 "id": "808dd01b-d16f-442e-906e-47e3e3404409",
@@ -9124,6 +9196,14 @@
                 "id": "0fa51409-06ea-48f8-8841-29a93e325fe4",
                 "resourcePath": "scripts\\console_log\\console_log.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f9b94c23-99dd-4062-883d-4293e37a248b",
+            "Value": {
+                "id": "b4870528-74ab-4909-a3b4-171be6865343",
+                "resourcePath": "sprites\\Vet_3H_recoiling_air\\Vet_3H_recoiling_air.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

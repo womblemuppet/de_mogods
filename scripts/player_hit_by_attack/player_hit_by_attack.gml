@@ -13,6 +13,17 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 			player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
 			if !last_hit_knocked_down  ///getting knocked down takes priority over special effects
 				attack_apply_special_properties(other.attack_name)
+				
+			if other.creator!=noone
+			{
+				var me;
+				me=self.id
+				with other.creator
+				{
+					if on_any_hit_script!=undefined
+						script_execute(on_any_hit_script,me)
+				}
+			}
 		}
 	}
 	//if other.hit[P]==false && other.creator==self.id   ///hit by own attack
