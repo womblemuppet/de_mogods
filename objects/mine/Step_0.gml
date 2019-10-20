@@ -3,12 +3,7 @@ groundcheck=place_meeting(x,y+1,block)
 
 //////     set sprite   ///// [finaledit] optimise...
 if groundcheck==false
-{
-	if vspd<0
-		sprite_index=mine_spinning_sprite
-	else
-		sprite_index=mine_sprite
-}
+	sprite_index=mine_spinning_sprite
 else
 {
 	if !ready
@@ -21,17 +16,17 @@ else
 
 
 ///gravity
-
-
-if groundcheck==false
-	vspd+=0.5
+if floatcounter>0
+	floatcounter-=1
+else if groundcheck==false
+	vspd+=grav_amount
 else
 {
 	vspd=0
 
 	///horizontal friction if touching ground
 	var horfriction;
-	horfriction=0.5
+	horfriction=1
 	if hspd>horfriction
 		hspd-=horfriction
 	else if hspd>0
@@ -47,9 +42,9 @@ if place_meeting(x,y-1,block)
 	vspd=1
 
 ///limit vspd
-if vspd>7
-	vspd=7
-if vspd<-18
+if vspd>12
+	vspd=12
+else if vspd<-18
 	vspd=-18
 
 //vertical movement

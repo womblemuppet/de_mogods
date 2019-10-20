@@ -784,24 +784,28 @@ if button_scrape_pushed[? heavybutton] && groundcheck==noone && player_may_attac
 					if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315
 					{
 						if direction>90
-							hspd=-6
+							hspd=-10
 						else
-							hspd=6
+							hspd=10
                             
-						vspd=-5
+						vspd=0
+						floatcounter=9
 					}
 					else if direction==90
 					{
 						hspd=0
-						vspd=-7
+						vspd=-12
+						grav_amount=1
 					}
 					else if direction==270
 					{
 						hspd=0
-						vspd=8
+						vspd=0
+						grav_amount=1
 					}
  
 				}
+				
                 
 			}
 			break;

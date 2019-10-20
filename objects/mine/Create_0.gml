@@ -7,3 +7,5 @@ bigexplosion=false
 bigexplosion_xscale=1
 life=5
 groundcheck=false
+floatcounter=0
+grav_amount=2
