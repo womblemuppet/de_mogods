@@ -184,7 +184,8 @@ UNIQUES_SPINNER_ATTACK_CHARGE_MAX=50
 uniques_spinner_attack_hitbox_id=noone
 
 //VETERAN FORWARD PUNCH
-//uniques_forwardpunch_feet_counter=-1 // -1  = not in use 0 = please start 1/2 steps forward (1 resets to -1)
+UNIQUES_FORWARD_PUNCH_HKB=12
+UNIQUES_FORWARD_PUNCH_VKB=7
 
 
 //VETERAN MINES

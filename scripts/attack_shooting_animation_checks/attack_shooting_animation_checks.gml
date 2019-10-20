@@ -116,6 +116,10 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 {
 	if uniques_spinner_attack_has_made_shockwave_hitbox==false
 	{
+		var HKB,VKB;
+		HKB=UNIQUES_FORWARD_PUNCH_HKB
+		VKB=UNIQUES_FORWARD_PUNCH_VKB
+		
 		var a,me;
 		me=self.id
 		a=instance_create(x,y,groundpunch_shockwave)       ///create object that will make chain of shockwave hitboxes
@@ -123,6 +127,8 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 		a.target=me
 		a.right=right
 		a.scale=sign(scale)
+		a.hkb=HKB
+		a.vkb=VKB
 		
 		if !right
 		{
@@ -138,13 +144,12 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 		with a                                                                       ////create the first shockwave hitbox here (changes here should also change groundpunch_shockwave alarm[0]
 		{
 			var b
-			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,7,3)
+			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,HKB,VKB)
 			b.creator=me
 			b.target=me
 			b.image_xscale=image_xscale
 			b.hit_collector=self.id
-			show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
-
+			//show_debug_message("shockwave"+string(n)+" x="+string(b.x)+" y="+string(b.y))
 		}
 
 

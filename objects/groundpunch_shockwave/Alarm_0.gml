@@ -2,7 +2,7 @@ shockwaves-=1
 n+=1
 
 var a;
-a=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,12,7)
+a=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,hkb,vkb)
 a.creator=creator
 a.target=noone
 a.x+=GAP*n
