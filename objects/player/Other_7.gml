@@ -46,6 +46,10 @@ else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack
 	brutal_slowed_counter=4
 	player_set_idle()
 }
+else if sprite_index==sprites[? "recoiling_air_flip"]   ///recoiling air flip
+{
+	sprite_index=sprites[? "recoiling_fall"]	
+}
 else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 {
 	player_set_idle()

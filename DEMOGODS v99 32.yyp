@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "0de51e43-3839-4e4a-a44c-e4f9280f0c47",
+            "Value": {
+                "id": "0f094932-72dd-4fc5-8bc1-235d437a78f7",
+                "resourcePath": "sprites\\Ooga_4H_recoiling\\Ooga_4H_recoiling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e3739fd-af4c-484f-a15c-e6de2e8698c5",
             "Value": {
                 "id": "03db0178-b4fb-4aac-a2cb-ff802219fcf4",
@@ -5695,6 +5703,14 @@
             }
         },
         {
+            "Key": "9f876c11-9924-43a3-9f61-604a01714208",
+            "Value": {
+                "id": "3b312067-bbc5-4280-b441-fdc3a8c0ed51",
+                "resourcePath": "views\\9f876c11-9924-43a3-9f61-604a01714208.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9fca5d50-2469-4a76-8d1b-a169d545fad9",
             "Value": {
                 "id": "c242b916-d7ae-4ce1-bcaf-5d04471c7ba2",
@@ -7298,7 +7314,7 @@
             "Key": "c9875fab-1900-4d08-ae7f-a7238787a645",
             "Value": {
                 "id": "480f3f25-6297-49b8-9cc1-97fd340e56ba",
-                "resourcePath": "sprites\\Ooga_4H_recoiling\\Ooga_4H_recoiling.yy",
+                "resourcePath": "sprites\\Ooga_4H_recoiling_air_flip\\Ooga_4H_recoiling_air_flip.yy",
                 "resourceType": "GMSprite"
             }
         },

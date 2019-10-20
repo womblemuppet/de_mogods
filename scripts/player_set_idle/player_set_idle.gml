@@ -5,7 +5,7 @@ if recoil_sprite_counter>0      /// RECOILING
 }
 
 
-if groundcheck==noone    /// IN AIR       //[finaledit] could use groundcheck?
+if groundcheck==noone    /// IN AIR 
 {
 	if vspd>FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN
 	{

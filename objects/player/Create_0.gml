@@ -281,6 +281,7 @@ sprites_below_idle_priority=ds_list_create()
 sprites_below_recoil_priority=ds_list_create()
 recoiling_sprites=ds_list_create()
 FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this swap from jumped sprite to falling sprite
+RECOILING_AIR_FLIP_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-1  ///if vspd larger than this swap from recoiling air sprite to recoiling air flip
 
 
 lastdamagetype=""  ///last type of damage taken (string) for corpse
