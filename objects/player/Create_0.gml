@@ -150,6 +150,7 @@ uniques_gpcombo_cripples_enabled=false
 uniques_teleport_enabled=false
 uniques_teleport=-1   ///-1 not enabled    0 = placeable 1 = placed 
 uniques_my_teleport_id=noone
+on_any_hit_script=undefined
 
 //UGA GP
 uniques_uga_delayable_gp_enabled=false
@@ -169,6 +170,10 @@ uniques_fpunch_has_made_hitbox=false
 //OOGA ULT
 uniques_supersmash_lockdown=0
 uniques_supersmash_has_made_hitbox=false
+
+//VET GENERAL
+uniques_vet_targeted_mine_counter=0
+uniques_vet_targeted_mine_last_hit=noone
 
 //VETERAN STANDARD PUNCH
 uniques_vet_la_target_counter=0

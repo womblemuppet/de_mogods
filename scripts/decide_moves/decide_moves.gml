@@ -72,6 +72,7 @@ switch (character)
 	mines_ammo=3   ///starting mines
 	uniques_vet_dig_enabled=true
 	super_mode_duration=1000
+	on_any_hit_script=on_any_hit_vet_set_mine_followup_target
     
 	break;
     

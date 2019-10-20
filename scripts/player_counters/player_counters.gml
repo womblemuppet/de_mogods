@@ -41,26 +41,6 @@ if stunned_groundpound>0
 		}
 	}
 }
-//else                                                   ////////////health blending
-//{
-//	//////HP   [finaledit]
-//	if H==3
-//	{
-//		image_blend=c_white
-//	}
-//	if H==2
-//	{
-//		image_blend=make_colour_rgb(183, 245, 115)
-//		if P>2
-//			image_blend=make_colour_rgb(183, 245, 215)
-//	}
-//	if H==1
-//	{
-//		image_blend=make_colour_rgb(229, 172, 0)
-//		if P>2
-//			image_blend=make_colour_rgb(229, 172, 100)
-//	}
-//}
 
 if ground_pound_freeze_counter>0
 {
@@ -161,36 +141,47 @@ if uniques_fpunch_cd_counter>0
 {
 	uniques_fpunch_cd_counter-=1
 }
+
 if uniques_vet_la_target_counter>0
 {
 	uniques_vet_la_target_counter-=1
 	if uniques_vet_la_target_counter==0
-	{
 		uniques_vet_la_target=noone
-	}
 }
+
+if uniques_vet_targeted_mine_counter>0
+{
+	uniques_vet_targeted_mine_counter-=1
+	if uniques_vet_targeted_mine_counter==0
+		uniques_vet_targeted_mine_last_hit=noone
+}
+
 if uniques_sunblast_cd_counter>0
 {
 	uniques_sunblast_cd_counter-=1
 }
+
 if mild_slowed_counter>0
 {
 	mild_slowed_counter-=1
 	if slowed_show_trail
 		effect_aniend(slow_debuff_effect,0.25,-3)
 }
+
 if brutal_slowed_counter>0
 {
 	brutal_slowed_counter-=1
 	if slowed_show_trail
 		effect_aniend(mightyannoying_slow_debuff_effect,0.25,-3)    
 }
+
 if canbounce_counter>0
 {
 	canbounce_counter-=1
 	show_debug_message(string(canbounce_counter)+" vspd="+string(vspd))
 	effect_aniend(bounce_debuff_effect,0.15,0)
 }
+
 if uniques_parachute_minimum_time_counter>0
 {
 	uniques_parachute_minimum_time_counter-=1
@@ -209,6 +200,7 @@ if chained_debuff_counter>0
 		effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
 	}
 }
+
 if uniques_baitchain_last_chained_timer>0
 {
 	uniques_baitchain_last_chained_timer-=1
@@ -242,6 +234,7 @@ if uniques_phase_counter>0
 
 if uniques_phase_landing_attack_disable_counter>0
 	uniques_phase_landing_attack_disable_counter-=1
+	
 if float_counter>0
 	float_counter-=1
 
