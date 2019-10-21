@@ -54,11 +54,7 @@ else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 {
 	player_set_idle()
 	var a;
-	a=instance_create(x,y+5,mine)
-	a.creator=a.id
-	a.player_who_placed_mine=self.id
-	a.right=right
-	a.scale=1
+	a=attack_vet_create_mine()
 	mines_ammo-=1
 }
 else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sprites[? "uniques_place_sticky_mine_u"] //vet sticky mine

@@ -767,12 +767,9 @@ if button_scrape_pushed[? heavybutton] && groundcheck==noone && player_may_attac
 				vspd=0
 				aim_octilinear()   ///changes octdir variable.
 				var a;
-				a=instance_create(x,y-10,mine)
-				a.right=right
-				a.scale=1
-				a.creator=a.id
-				a.player_who_placed_mine=self.id
-				a.direction=octdir
+				a=attack_vet_create_mine()
+				
+				//set hspd/vspd
 				with a
 				{
 					if direction==135 || direction==180 || direction==45 || direction==0 ||  direction==225 || direction==315

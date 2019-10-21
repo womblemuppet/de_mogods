@@ -5279,6 +5279,14 @@
             }
         },
         {
+            "Key": "925fbba9-7668-4946-878f-c3c7c3bfe016",
+            "Value": {
+                "id": "3ab4e96f-4345-4505-943a-21df3a8eaba6",
+                "resourcePath": "scripts\\attack_vet_create_mine\\attack_vet_create_mine.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "92a60d12-9da0-4919-827c-757c4fee658a",
             "Value": {
                 "id": "dd3422f5-e9b8-4165-99ad-9ff570441c1f",
@@ -9498,6 +9506,7 @@
         "d645af01-a535-4e88-9b06-051d4fe6d7ff",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
+        "925fbba9-7668-4946-878f-c3c7c3bfe016",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "10a73dde-2a75-47ff-990a-59bab479319f",
