@@ -116,7 +116,7 @@ if triggered   /// >:O
 		{
 			effect_aniend(mine_sprite_explosion,0.2,-1)
 			
-			b=attack_create_hitbox(60,1,false,true,"mineexplosion",hitboxspr,0.2,99,0,6)
+			b=attack_create_hitbox(60,1,false,true,"mineexplosion",hitboxspr,0.2,99,0,12)
 			b.creator=noone
 			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale

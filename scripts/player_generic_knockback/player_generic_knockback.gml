@@ -47,7 +47,7 @@ with coco                     ///////////////// transfer fish
 	}
 }
 
-
+//set knockback
 vspd=-vknockback
 show_debug_message("vspd="+string(vspd))
 if other.direction==0             //////////pushed to right
