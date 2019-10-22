@@ -197,7 +197,6 @@ mines_ammo=0
 
 //VET STICKY MINE
 uniques_sticky_mine_enabled=false
-uniques_sticky_mine_lockdown=0
 
 //VET DRILL MINE
 uniques_drill_mine_place_animation_lock=false

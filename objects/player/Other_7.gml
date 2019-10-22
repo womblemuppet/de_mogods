@@ -42,7 +42,6 @@ else if sprite_index==sprites[? "super_activate"]  ///super activate
 else if sprite_index==sprites[? "dash"] || sprite_index==sprites[? "light_attack"]   ///dash
 {
 	hspd=0
-	//mild_slowed_counter=8
 	brutal_slowed_counter=4
 	player_set_idle()
 }
@@ -57,13 +56,22 @@ else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 	a=attack_vet_create_mine()
 	mines_ammo-=1
 }
-else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sprites[? "uniques_place_sticky_mine_u"] //vet sticky mine
+else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sprites[? "uniques_place_sticky_mine_u"]  ///vet place mine
 {
-	if uniques_sticky_mine_lockdown==1
+	player_set_idle()
+	if instance_exists(uniques_vet_targeted_mine_last_hit)
 	{
-		uniques_sticky_mine_lockdown=0
-		player_set_idle()
+		var a;
+		a=instance_create_depth(x,y,-1,target_thrown_mine)
+		a.target_x=uniques_vet_targeted_mine_last_hit.x
+		a.target_y=uniques_vet_targeted_mine_last_hit.y
+		a.direction=point_direction(x,y,a.target_x,a.target_y)
+		a.timer=ceil(point_distance(x,y,a.target_x,a.target_y)/7)
+		mines_ammo-=1
+		a.creator=self.id
 	}
+
+
 }
 else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprites[? "uniques_dig_channel"]  ///vet dig
 {

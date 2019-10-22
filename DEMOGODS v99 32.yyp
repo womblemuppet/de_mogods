@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "0883d6ee-0ed7-4115-90cf-cc2efa6b8f74",
+            "Value": {
+                "id": "bb0bd81d-610e-406a-8dd0-f4daa6aa5747",
+                "resourcePath": "objects\\target_thrown_mine\\target_thrown_mine.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "088838cb-5948-473b-87ef-9a22fbaae006",
             "Value": {
                 "id": "01af3563-b240-4edc-b5f2-fe3ddba5ad93",

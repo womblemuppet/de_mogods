@@ -595,27 +595,6 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 		player_throw_crab()
 	}
 	
-	if !exception && uniques_sticky_mine_enabled && mines_ammo>0   ///// sticky mine
-	{
-		//if uniques_vet_la_target!=noone && instance_exists(uniques_vet_la_target)
-		//{
-		//	image_speed=FRAME_SPEED_SLOW
-		//	image_index=0
-		//	sprite_index=sprites[? "uniques_place_sticky_mine"]
-		//	if super_mode
-		//		sprite_index=sprites[? "uniques_place_sticky_mine_u"]
-		//	uniques_sticky_mine_lockdown=1
-		
-		//	mines_ammo-=1
-		//	a=instance_create_depth(uniques_vet_la_target.x,uniques_vet_la_target.y,-2,stickymine)
-		//	a.creator=self.id
-		//	a.targ=uniques_vet_la_target
-		//	a.right=right
-		//	a.scale=1
-		//	exception=true
-		//}
-	}
-	
 	if !exception
 	{
 		switch attacks[? "heavy attack"]
@@ -829,14 +808,14 @@ rocketjumped=false
 
 
 
-
+////////////////////// rocket jump
 if (rocket_jump_input_time_counter_from_dash>0  || button_scrape_pushed[? dashbutton]  ) ///[finaledit] could happen with counters to free up check, optimisation.
 {
 	if (button_scrape_pushed[? upbutton]  || rocket_jump_input_time_counter_from_jump>0) && !button_scrape[? downbutton] 
 	{
 		if player_may_attack()
-		{                                                           //////////////////////////////////////////////////////////////////////////////////////  
-			if (groundcheck!=noone || rocket_jump_input_time_counter_from_jump>0) && dash_rocket_jump==0                                                        ////rocket jump
+		{
+			if (groundcheck!=noone || rocket_jump_input_time_counter_from_jump>0) && dash_rocket_jump==0
 			{
 				exception=true
 				vspd=0
@@ -1147,12 +1126,26 @@ if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[?
 				{
 					if mines_ammo>0                ///start place mine animation
 					{
-						if sprite_index!=sprites[? "uniques_place_mine"]
-							image_index=0
-						image_speed=FRAME_SPEED_NORMAL
-						sprite_index=sprites[? "uniques_place_mine"]
+						if uniques_vet_targeted_mine_last_hit==noone
+						{
+							if sprite_index!=sprites[? "uniques_place_mine"]
+								image_index=0
+							image_speed=FRAME_SPEED_NORMAL
+							sprite_index=sprites[? "uniques_place_mine"]
+						}
+						else
+						{
+							if sprite_index!=sprites[? "uniques_place_sticky_mine"] && sprite_index!=sprites[? "uniques_place_sticky_mine_u"]
+								image_index=0
+							image_speed=FRAME_SPEED_NORMAL
+							sprite_index=sprites[? "uniques_place_sticky_mine"]
+							if super_mode
+								sprite_index=sprites[? "uniques_place_sticky_mine_u"]
+						}
 					}
 				} 
+
+
 			}
 			break;
         
