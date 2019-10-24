@@ -14,7 +14,6 @@ else
 
 
 
-
 ///gravity
 if floatcounter>0
 	floatcounter-=1
