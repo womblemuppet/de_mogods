@@ -30,13 +30,13 @@ if stunned_groundpound>0
 		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
 			sprite_index=sprites[? "recoiling"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "recoiling_u"]
 		}
 		else
 		{
 			sprite_index=sprites[? "idle"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "idle_u"]
 		}
 	}

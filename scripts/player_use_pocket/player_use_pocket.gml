@@ -5,7 +5,10 @@ number_of_pockets-=1
 
 player_update_pocket_hud()
 
-super_meter++
+if super_meter>=super_meter_max
+	player_activate_super_mode()
+else
+	super_meter++
 
 HUD_increment_super_bar(P)
 

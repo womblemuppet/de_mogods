@@ -9,7 +9,7 @@ if y<kouchou.room_top_border_y-20
 	else if recovery_groundpound_active==false
 	{
 		sprite_index=sprites[? "gpfall"]   ///gp
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "gpfall_u"]
 		y-=1550
 		player_flush_lockdowns()

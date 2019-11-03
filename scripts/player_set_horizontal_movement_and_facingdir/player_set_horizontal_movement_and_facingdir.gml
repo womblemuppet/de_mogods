@@ -71,7 +71,7 @@ if player_not_locked_down()
 	if pass
 	{
 		sprite_index=sprites[? "run"]   
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "run_u"]
 		image_speed=FRAME_SPEED_SLOW
 	}

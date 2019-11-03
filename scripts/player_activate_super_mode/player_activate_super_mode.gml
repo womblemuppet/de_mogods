@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////// GET ULT
+super_meter=0
 
 player_flush_lockdowns() ///be careful with this
-super_mode=true
+super_mode_available=true
 super_mode_time_remaining=super_mode_duration
 
 image_index=0

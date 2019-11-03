@@ -53,9 +53,10 @@ recovery_groundpound_active=false        ///the player has ceiling-kill protecti
 disable_next_groundpound_effect=true
 
 super_meter=0   ///charge towards super attack
-can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call [seems useless atm]
+can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call //[finaledit] seems useless atm
 
-super_mode=false
+super_meter_max=5
+super_mode_available=false
 super_mode_time_remaining=0   ///time remaining until super mode times out
 
 
@@ -122,7 +123,7 @@ chain_effect_id_to_delete=noone   ///id of chain effect instance
 NUMBER_OF_POCKET_SPACES=1
 number_of_pockets=0    ///type of pocketed orb
 player_empty_pockets()
-pocket_super_mode_stored=false ///if true, super_mode is stored in current pocket
+pocket_super_mode_stored=false ///if true, super_mode_available is stored in current pocket
 pocket_light_heavy_held_counter=0
 
 canbounce_counter=0  ///bounce counter

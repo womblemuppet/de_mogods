@@ -8,7 +8,7 @@ if sprite_index==sprites[? "air"] || sprite_index==sprites[? "air_u"]
 {
 	image_index=0
 	sprite_index=sprites[? "fall"]   //falldown sprite
-	if super_mode
+	if super_mode_available
 		sprite_index=sprites[? "fall_u"]
 	return true
 }

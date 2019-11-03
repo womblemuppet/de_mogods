@@ -2,7 +2,7 @@ image_index=0
 if vspd>CONSIDERED_AIRBOURNE_THESHOLD_VSPD_LARGER_THAN//groundcheck==noone
 {
 	sprite_index=sprites[? "recoiling"]  //recoiling
-	if super_mode
+	if super_mode_available
 		sprite_index=sprites[? "recoiling_u"]  //recoiling super
 }
 else

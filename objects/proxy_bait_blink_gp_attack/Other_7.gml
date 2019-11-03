@@ -5,7 +5,7 @@ creator.uniques_dashgpblinkattack_lockdown=0
 with creator
 {
 	sprite_index=sprites[? "gpfall"]   ///groundpound freeze sprite
-	if super_mode
+	if super_mode_available
 		sprite_index=sprites[? "gpfall_u"]
 	attack_start_groundpound_descent("ground pound")
 }

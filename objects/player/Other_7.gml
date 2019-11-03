@@ -79,7 +79,7 @@ else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprite
 	{
 		uniques_vet_digging=2
 		sprite_index=sprites[? "uniques_dig"]
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "uniques_dig_u"]
 	}
 }
@@ -267,7 +267,7 @@ else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprit
 {
 	uniques_drill_mine_place_animation_lock=false
 	sprite_index=sprites[? "uniques_dig"]
-	if super_mode
+	if super_mode_available
 		sprite_index=sprites[? "uniques_dig_u"]
 }
 else if sprite_index==sprites[? "envoke"]

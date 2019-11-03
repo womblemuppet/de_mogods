@@ -2,7 +2,7 @@ if !place_meeting(x,y-1,block)
 	y-=1
            
 sprite_index=sprites[? "rocketjump"]
-if super_mode
+if super_mode_available
 	sprite_index=sprites[? "rocketjump_u"]
 image_index=0
 image_speed=FRAME_SPEED_NORMAL

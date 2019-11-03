@@ -19,7 +19,7 @@ player_flinch(stun_amount)
 player_flush_lockdowns()
 
 sprite_index=sprites[? "dizzy"]
-if super_mode
+if super_mode_available
 	sprite_index=sprites[? "dizzy_u"]
 	
 image_speed=0.08

@@ -12,7 +12,7 @@ if uniques_parachute==1     ////parachute floating effect
 		if sprite_index==sprites[? "uniques_parachute"] || sprite_index==sprites[? "uniques_parachute_u"]
 		{
 			sprite_index=sprites[? "fall"]  //fall sprite
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "fall_u"] //fall super sprite       
 		}        
 	}

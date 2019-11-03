@@ -78,7 +78,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 		//{///UGA unique airgrab slam
 		//	uniques_slam_airgrab_slam_lockdown=1
 		//	sprite_index=sprites[? "uniques_airgrab_slam_down"]
-		//	if super_mode
+		//	if super_mode_available
 		//		sprite_index=sprites[? "uniques_airgrab_slam_down_u"]
 		//	image_index=0
 		//	image_speed=0.2
@@ -165,7 +165,7 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 					if sprite_index!=sprites[? "airslam"] && sprite_index!=sprites[? "airslam_u"]
 						image_index=0
 					sprite_index=sprites[? "airslam"]
-					if super_mode
+					if super_mode_available
 						sprite_index=sprites[? "airslam_u"]
 				}
 				else
@@ -326,7 +326,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		if sprite_index==sprites[? "uniques_parachute"] || sprite_index==sprites[? "uniques_parachute_u"]
 		{
 			sprite_index=sprites[? "fall"]  //////////////fall sprite
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "fall_u"] /////////fall super sprite
 		}
 	}
@@ -374,13 +374,13 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 		if recoil_sprite_counter>0
 		{
 			sprite_index=sprites[? "recoiling"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "recoiling_u"]
 		}
 		else
 		{
 			sprite_index=sprites[? "idle"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "idle_u"]
 		}
 		image_speed=FRAME_SPEED_NORMAL
@@ -393,15 +393,13 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if button_scrape[? lightbutton] && button_scrape[? heavybutton]                                            /////// pocket event
+if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available                                            /////// pocket event
 {
 	pocket_light_heavy_held_counter+=1
 	if pocket_light_heavy_held_counter>2
 	{
 		if !player_has_no_pockets()
-		{
 			player_use_pocket()
-		}
 	}
 
 }
@@ -519,7 +517,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 		
 	//	image_speed=FRAME_SPEED_NORMAL
 	//	sprite_index=sprites[? "uniques_forwardpunch"]
-	//	if super_mode
+	//	if super_mode_available
 	//		sprite_index=sprites[? "uniques_forwardpunch_u"]
 	//	image_index=0
 	//}
@@ -572,7 +570,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 			push_other_attacks_timer=PUSH_OTHER_ATTACKS_TIME
 			alarm[1]=PUSH_COOLDOWN   
 			sprite_index=sprites[? "light_attack"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "light_attack_u"]
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
@@ -602,7 +600,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			case "uga_falconpunch":
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[? "uniques_falconpunch"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "uniques_falconpunch_u"]
 			image_index=0
 			uniques_fpunch_lockdown=1
@@ -614,7 +612,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			case "vet_armspin":
 			image_speed=FRAME_SPEED_FAST
 			sprite_index=sprites[? "uniques_spinattack"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "uniques_spinattack_u"]
 			image_index=0
 			uniques_spinner_attack_lockdown=1
@@ -624,7 +622,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[? "uniques_sunbolt"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "uniques_sunbolt_u"]
 			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
 			uniques_sunblast_lockdown=1
@@ -637,7 +635,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			case "bait_haymaker":
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[? "uniques_heavyswing"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "uniques_heavyswing_u"]
 			image_index=0
 			uniques_sharkattack_lockdown=1 
@@ -711,7 +709,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck==noone && player_may_atta
 			
             
 			sprite_index=sprites[? "airgrab"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "airgrab_u"]
 			image_speed=FRAME_SPEED_FAST                                   break;
 			case -1:
@@ -784,7 +782,7 @@ if button_scrape_pushed[? heavybutton] && groundcheck==noone && player_may_attac
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 			sprite_index=sprites[? "uniques_airsunbolt"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "uniques_airsunbolt_u"]
 			uniques_airbolt_lockdown=1
 			uniques_airbolt_has_made_hitbox=false
@@ -822,7 +820,7 @@ if (rocket_jump_input_time_counter_from_dash>0  || button_scrape_pushed[? dashbu
 				dash_rocket_jump=1
 				hspd=0
 				sprite_index=sprites[? "rocketjump_charge"]    ///rocketjump freeze sprite
-				if super_mode
+				if super_mode_available
 					sprite_index=sprites[? "rocketjump_charge_u"]   ///rocketjump freeze super sprite
 				image_speed=FRAME_SPEED_FAST
 				image_index=0
@@ -845,7 +843,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 		image_speed=0.2
 		image_index=0
 		sprite_index=sprites[? "uniques_blinkjump_windup"]
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "uniques_blinkjump_windup_u"]
 		exception=true
 	}
@@ -864,7 +862,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 			cangroundpound=1
 			hspd=0
 			sprite_index=sprites[? "gpfall"]
-			if super_mode
+			if super_mode_available
 				sprite_index=sprites[? "gpfall_u"]
 			image_speed=FRAME_SPEED_FAST
 			image_index=0
@@ -947,7 +945,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 			if player_dashed   
 			{
 				sprite_index=sprites[? "dash"]                     ///////////////////   dash  sprite
-				if super_mode
+				if super_mode_available
 					sprite_index=sprites[? "dash_u"]
 				image_index=0
 				image_speed=FRAME_SPEED_NORMAL
@@ -977,7 +975,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 				///   dash trail effect
 				var a;
 				a=effect_aniend(dash_no_ULT,0.2,1)              
-				if super_mode
+				if super_mode_available
 				{
 					if P==0 || P==2
 						a.sprite_index=p1_dash_ULT  //[finaledit] sprites for p2/3/4
@@ -1139,7 +1137,7 @@ if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[?
 								image_index=0
 							image_speed=FRAME_SPEED_NORMAL
 							sprite_index=sprites[? "uniques_place_sticky_mine"]
-							if super_mode
+							if super_mode_available
 								sprite_index=sprites[? "uniques_place_sticky_mine_u"]
 						}
 					}
@@ -1258,9 +1256,8 @@ if is_proned           /////ROLL EVENT
 	}
 }
 else if before_prone_falling_lockdown                     /////REMAIN IMMUNE WHILE IN BEFORE_PRONE STATE
-{
 	player_make_immune(2)
-}
+
 
 if uniques_vet_digging==2
 {	
@@ -1268,7 +1265,7 @@ if uniques_vet_digging==2
 	{
 		uniques_drill_mine_place_animation_lock=true
 		sprite_index=sprites[? "uniques_dig_place_mine"]
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "uniques_dig_place_mine_u"]
 		var a;
 		a=instance_create_depth(x,y,-1,drillmine)

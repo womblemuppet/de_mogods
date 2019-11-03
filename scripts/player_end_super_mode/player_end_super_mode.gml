@@ -1,4 +1,4 @@
-super_mode=false
+super_mode_available=false
 
 player_update_super_meter_hud()
 set_hud_pocket_circle_orb_normal()

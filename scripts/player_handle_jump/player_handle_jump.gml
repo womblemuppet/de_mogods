@@ -50,7 +50,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 	if set_jump_sprites==true   ///do sprites at end
 	{
 		sprite_index=sprites[? "jump"]    ///jump windup sprite
-		if super_mode
+		if super_mode_available
 			sprite_index=sprites[? "jump_u"]
 		image_speed=FRAME_SPEED_FAST
 		image_index=0

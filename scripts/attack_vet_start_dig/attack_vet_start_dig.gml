@@ -5,7 +5,7 @@ if uniques_vet_dig_enabled && uniques_vet_chain_counter>0 && checkkey(lightbutto
 	uniques_vet_digging=1
 	y+=aizen.bh
 	sprite_index=sprites[? "uniques_dig_channel_u"]
-	if super_mode
+	if super_mode_available
 		sprite_index=sprites[? "uniques_dig_channel"]
 }
 	
