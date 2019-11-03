@@ -239,14 +239,14 @@ else if ltt>-2
 /*  gravity && landing/ceiling collision    +    idle sprite setting  */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 
-player_add_gravity()
+player_add_gravity() 
 
 if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downward block collision  (don't count as landed if launching rocket jump)
 {
 	airgrab_mode="can_airgrab"   ///reset airgrab antispam penalty
 	airgrab_slam_on=false
 
-	if uniques_whirlwind_active
+	if uniques_whirlwind_active   ///bait whirlwind continue hitbox and invuln
 	{
 		isteps+=1
 		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
@@ -315,7 +315,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	doublejump=0
 	dash_rocket_top_collision_safety_on=false
 	
-	////////////////////////////////////////////////////////////jump vibration mask
+	////////////////////////////////////////////////////////////jump vibration mask [finaledit] remove if no icicles
 	if groundcheck!=groundcheck_prev
 		instance_create(x,y,jump_vibration)
 	
@@ -334,7 +334,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	////////////////////////////////////////////////////////if falling sprite, set sprite back to idle
 	if sprite_index==sprites[? "fall"]   ///////////////////fall sprite
 	{
-		sprite_index=sprites[? "idle"]
+		sprite_index=sprites[? "landing"]
 		if recoil_sprite_counter>0
 		{
 			sprite_index=sprites[? "recoiling"]
@@ -343,10 +343,10 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	
 	if sprite_index==sprites[? "fall_u"]  //////////////////fall super sprite
 	{
-		sprite_index=sprites[? "idle_u"]   /////////////////idle super sprite
+		sprite_index=sprites[? "landing_u"]   /////////////////idle super sprite
 		if recoil_sprite_counter>0
 		{
-			sprite_index=sprites[? "recoiling_u"]
+			sprite_index=sprites[? "landing_u"]
 		}
 	}
 }

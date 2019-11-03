@@ -3,13 +3,18 @@ if sprite_index==sprites[? "jump"]    ///when finished jump ani, go to air
 	sprite_index=sprites[? "air"]   ////air
 	image_speed=FRAME_SPEED_SLOW
 }
+else if sprite_index==sprites[? "jump_u"]    ///jump super
+{
+	sprite_index=sprites[? "air_u"]    ///air super
+	image_speed=FRAME_SPEED_SLOW
+}
 else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]   ///loop running animations
 {
 	image_index=running_startup_frames
 }
-else if sprite_index==sprites[? "jump_u"]    ///jump super
+else if sprite_index==sprites[? "landing"]   ///landing
 {
-	sprite_index=sprites[? "air_u"]    ///air super
+	player_set_idle()
 	image_speed=FRAME_SPEED_SLOW
 }
 else if sprite_index==sprites[? "airgrab"] || sprite_index==sprites[? "airslam"]  ///airgrab
@@ -20,11 +25,11 @@ else if sprite_index==sprites[? "airgrab"] || sprite_index==sprites[? "airslam"]
 else if sprite_index==sprites[? "airgrab_u"]   || sprite_index==sprites[? "airslam_u"]   ///airgrab super
 {
 	sprite_index=sprites[? "air_u"]    ///air super
-	 image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_SLOW
 }
-else if sprite_index==sprites[? "gpfall"] || sprite_index==sprites[? "gpfall_u"]  ///gp fall or gp fall super
+else if sprite_index==sprites[? "gpfall"] || sprite_index==sprites[? "gpfall_u"]  ///loop last frames of gp animation
 {
-	image_speed=FRAME_SPEED_FAST    ///loop last frames of gp animation
+	image_speed=FRAME_SPEED_FAST    
 	image_index=image_number-2
 }
 else if sprite_index==sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"]  ///rocket jump or rocket jump super
@@ -70,8 +75,6 @@ else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sp
 		mines_ammo-=1
 		a.creator=self.id
 	}
-
-
 }
 else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprites[? "uniques_dig_channel"]  ///vet dig
 {
@@ -107,7 +110,6 @@ else if sprite_index==sprites[? "uniques_kamikaze"]
 		
 		uniques_vet_kamikaze_victim=noone
 	}
-	
 }
 else if sprite_index==sprites[? "uniques_place_teleport"]  ///bait teleport place
 {
@@ -263,14 +265,14 @@ else if sprite_index==sprites[? "dash_u"] || sprite_index==sprites[? "light_atta
 {
 	player_set_idle() 
 }
-else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprites[? "uniques_dig_place_mine_u"]
+else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprites[? "uniques_dig_place_mine_u"]  ///vet dig
 {
 	uniques_drill_mine_place_animation_lock=false
 	sprite_index=sprites[? "uniques_dig"]
 	if super_mode_available
 		sprite_index=sprites[? "uniques_dig_u"]
 }
-else if sprite_index==sprites[? "envoke"]
+else if sprite_index==sprites[? "envoke"]  //use pocket (envoke)
 {
 	player_set_idle()	
 }

@@ -2,14 +2,14 @@
     "id": "a038d67e-0d67-43eb-bdd7-93946b373c58",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Ooga_4H_land",
+    "name": "Ooga_4H_landing",
     "For3D": false,
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 99,
     "bbox_left": 0,
     "bbox_right": 48,
-    "bbox_top": 50,
+    "bbox_top": 51,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -33,6 +33,28 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "f2c85b71-26a6-4a12-81be-6c8c795b4a38",
+                    "LayerId": "c70acbf0-7306-4465-87f9-cbc87aa4f7ae"
+                }
+            ]
+        },
+        {
+            "id": "6277d131-b682-40f6-a3ac-0c5614854b1b",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "a038d67e-0d67-43eb-bdd7-93946b373c58",
+            "compositeImage": {
+                "id": "b8065167-2927-4109-b8ca-5571ee66e7ad",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "6277d131-b682-40f6-a3ac-0c5614854b1b",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "28601d85-fcff-4da4-abf2-834aded5f7db",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "6277d131-b682-40f6-a3ac-0c5614854b1b",
                     "LayerId": "c70acbf0-7306-4465-87f9-cbc87aa4f7ae"
                 }
             ]

@@ -3839,14 +3839,6 @@
             }
         },
         {
-            "Key": "66d132d7-d9e9-4d46-b812-f3e2cc83220f",
-            "Value": {
-                "id": "141062c7-6c88-48b3-8184-f9da31a0e251",
-                "resourcePath": "sprites\\Ooga_4H_landed\\Ooga_4H_landed.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "67862e88-a150-418a-aece-8e596089b655",
             "Value": {
                 "id": "579286e0-7116-4881-9f49-f79025de6207",
@@ -5842,7 +5834,7 @@
             "Key": "a038d67e-0d67-43eb-bdd7-93946b373c58",
             "Value": {
                 "id": "737f3aac-236d-40a6-b566-be5984e699a3",
-                "resourcePath": "sprites\\Ooga_4H_land\\Ooga_4H_land.yy",
+                "resourcePath": "sprites\\Ooga_4H_landing\\Ooga_4H_landing.yy",
                 "resourceType": "GMSprite"
             }
         },

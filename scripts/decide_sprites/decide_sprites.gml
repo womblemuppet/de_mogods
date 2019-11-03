@@ -51,8 +51,10 @@ switch character
 				sprites[? "idle"]=Ooga_4H_idle
 				sprites[? "run"]=Ooga_4H_run
 				sprites[? "jump"]=Ooga_4H_jump
-				sprites[? "air"]=Ooga_4H_air 
+				sprites[? "air"]=Ooga_4H_air
 				sprites[? "fall"]=Ooga_4H_fall
+				sprites[? "landing"]=Ooga_4H_landing
+				sprites[? "landing_u"]=Ooga_4H_landing
 				sprites[? "gpfall"]=Ooga_4H_gpfall
 				sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 				sprites[? "gpfall_u"]=Ooga_U_gpfall
