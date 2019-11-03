@@ -2,7 +2,7 @@
     "id": "ddd643f5-11d0-4640-9293-17a3c975d08f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "Slinger_3H_phaseblink_land",
+    "name": "Slinger_3H_phaseblink_entry",
     "For3D": false,
     "HTile": false,
     "VTile": false,

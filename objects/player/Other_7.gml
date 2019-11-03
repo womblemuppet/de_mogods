@@ -244,7 +244,7 @@ else if sprite_index==sprites[? "phase"] || sprite_index==sprites[? "phase_u"]
 	attack_slinger_phase_move()  ///if successful sets sprite to phase_land
 	
 }
-else if sprite_index==sprites[? "phase_land"]
+else if sprite_index==sprites[? "phase_entry"]
 {
 	player_set_idle()	
 }

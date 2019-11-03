@@ -45,7 +45,7 @@ if uniques_phase_target!=noone
 			y=ty
 			
 			image_index=0
-			sprite_index=sprites[? "phase_land"]
+			sprite_index=sprites[? "phase_entry"]
 			uniques_phase_landing_attack_disable_counter=UNIQUES_PHASE_LANDING_ATTACK_DISABLE_STEPS
 		}
 		show_debug_message("last_accepted_offset_factor="+string(last_accepted_offset_factor))

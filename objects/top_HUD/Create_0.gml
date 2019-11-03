@@ -11,9 +11,9 @@ setup_player_HUD_locations(kouchou.players_in)
 setup_player_HUD_combo_text_locations(kouchou.players_in)
 setup_player_HUD_super_bar_locations(kouchou.players_in)
 
-super_bar_width=500
+super_bar_width=400
 if kouchou.players_in>2
-	super_bar_width=250
+	super_bar_width=200
 
 
 for (var i = 0; i < kouchou.players_in; i++)

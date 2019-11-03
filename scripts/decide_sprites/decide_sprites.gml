@@ -124,6 +124,8 @@ switch character
 			sprites[? "jump"]=Vet_3H_jump
 			sprites[? "air"]=Vet_3H_air 
 			sprites[? "fall"]=Vet_3H_fall
+			sprites[? "landing"]=Vet_3H_landing
+			sprites[? "landing_u"]=Vet_3H_landing
 			sprites[? "gpfall"]=Vet_3H_gpfall
 			sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 			sprites[? "gpfall_u"]=Vet_3H_gpfall  //super version
@@ -181,6 +183,8 @@ switch character
 			sprites[? "jump"]=Slinger_3H_jump
 			sprites[? "air"]=Slinger_3H_air 
 			sprites[? "fall"]=Slinger_3H_fall
+			sprites[? "landing"]=Slinger_3H_landing
+			sprites[? "landing_u"]=Slinger_3H_landing
 			sprites[? "gpfall"]=Slinger_3H_gpfall
 			sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 			sprites[? "gpfall_u"]=Slinger_3H_gpfall  ///super version (to be changed)
@@ -194,7 +198,7 @@ switch character
 			sprites[? "death_ice"]=Slinger_death_by_ice
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  ///super version (to be changed)
-			sprites[? "phase_land"]=Slinger_3H_phaseblink_land
+			sprites[? "phase_entry"]=Slinger_3H_phaseblink_entry
 			sprites[? "envoke"]=Slinger_3H_envoke
 			sprites[? "prone"]=Slinger_3H_prone
 			sprites[? "roll"]=Slinger_3H_roll
@@ -241,6 +245,8 @@ switch character
 		sprites[? "jump"]=Bait_3H_jump
 		sprites[? "air"]=Bait_3H_air 
 		sprites[? "fall"]=Bait_3H_fall
+		sprites[? "landing"]=Bait_3H_landing
+		sprites[? "landing_u"]=Bait_3H_landing
 		sprites[? "gpfall"]=Bait_3H_gpfall
 		sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 		sprites[? "gpfall_u"]=Bait_3H_gpfall  //super version
