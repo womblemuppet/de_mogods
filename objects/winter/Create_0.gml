@@ -1,4 +1,4 @@
-alarm[0]=550   ///die
+alarm[0]=670   ///die
 alarm[4]=alarm[0]-10  ///lessen snow effects just before end
 
 alarm[1]=50   ///start targeting
