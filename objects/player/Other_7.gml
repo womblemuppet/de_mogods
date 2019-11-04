@@ -1,12 +1,12 @@
 if sprite_index==sprites[? "jump"]    ///when finished jump ani, go to air
 {
 	sprite_index=sprites[? "air"]   ////air
-	image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_NORMAL //s
 }
 else if sprite_index==sprites[? "jump_u"]    ///jump super
 {
 	sprite_index=sprites[? "air_u"]    ///air super
-	image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_NORMAL //s
 }
 else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]   ///loop running animations
 {
@@ -15,21 +15,21 @@ else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]   ///
 else if sprite_index==sprites[? "landing"]   ///landing
 {
 	player_set_idle()
-	image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_NORMAL
 }
 else if sprite_index==sprites[? "airgrab"] || sprite_index==sprites[? "airslam"]  ///airgrab
 {
 	sprite_index=sprites[? "air"]   ////air
-	image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_NORMAL  //s
 }
 else if sprite_index==sprites[? "airgrab_u"]   || sprite_index==sprites[? "airslam_u"]   ///airgrab super
 {
 	sprite_index=sprites[? "air_u"]    ///air super
-	image_speed=FRAME_SPEED_SLOW
+	image_speed=FRAME_SPEED_NORMAL //s
 }
 else if sprite_index==sprites[? "gpfall"] || sprite_index==sprites[? "gpfall_u"]  ///loop last frames of gp animation
 {
-	image_speed=FRAME_SPEED_FAST    
+	image_speed=FRAME_SPEED_NORMAL    
 	image_index=image_number-2
 }
 else if sprite_index==sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"]  ///rocket jump or rocket jump super
