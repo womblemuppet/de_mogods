@@ -9367,6 +9367,14 @@
             }
         },
         {
+            "Key": "fc375081-f44e-4833-bddb-d68cd13a6783",
+            "Value": {
+                "id": "9af487dc-15fb-4d3d-9a69-3998d1a352dd",
+                "resourcePath": "scripts\\attack_apply_pocket_property\\attack_apply_pocket_property.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc46c4e9-0112-4509-8f74-d29127139276",
             "Value": {
                 "id": "34aee8e6-e35b-47bb-960a-44c00bf8e831",
@@ -9508,6 +9516,7 @@
         "822149a6-8c5b-41f7-9b78-c0284a8dc865",
         "a528cead-32f2-4b6e-9813-d941fe720b0c",
         "316c0dfb-34b0-4fb9-aeed-d1c6ef558fd4",
+        "fc375081-f44e-4833-bddb-d68cd13a6783",
         "8610f531-282e-40f2-844a-d6990619427e",
         "f5986e91-cd6d-47a6-a335-eed9e446e214",
         "418f6ce5-eef3-4018-bff5-b27e4acbf60f",

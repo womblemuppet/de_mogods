@@ -154,18 +154,6 @@ switch incoming_attack_name
 	break;
 }
 
-//HA's add orb
-switch incoming_attack_name
-{
-	case "sharkattack":
-	case "sunblast":
-	case "spinattack":
-	case "forwardpunch":
-	case "falconpunch":
-		with attacker
-			move_that_adds_pocket()
-	break;
-}
 
 
 //Phase stance
