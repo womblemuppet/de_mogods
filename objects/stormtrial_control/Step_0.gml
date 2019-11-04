@@ -1,7 +1,7 @@
 if timer<1
 {
     with player
-        playerdie() 
+        player_die() 
 }
 else
     timer-=1

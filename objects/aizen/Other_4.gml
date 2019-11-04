@@ -112,6 +112,7 @@ if room==gameroom
 			
 			character=aizen.tempcharstrings[P]
 			palette=kouchou.palette[P]
+			
 			H=kouchou.starting_hp
 			H+=kouchou.playerhandicap[P]
 			player_update_hh_indicator()

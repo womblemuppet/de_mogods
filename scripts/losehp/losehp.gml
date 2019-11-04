@@ -14,7 +14,7 @@ H-=1
 player_make_immune(20)
 if H<1
 {
-	playerdie()
+	player_die()
 	return "died"
 }
 	

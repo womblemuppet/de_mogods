@@ -8570,7 +8570,7 @@
             "Key": "e554999d-3404-43ec-adcb-5e026400b6c7",
             "Value": {
                 "id": "d2e68920-ff84-4398-8b4e-29d327eb3dfc",
-                "resourcePath": "scripts\\playerdie\\playerdie.yy",
+                "resourcePath": "scripts\\player_die\\player_die.yy",
                 "resourceType": "GMScript"
             }
         },

@@ -4,16 +4,16 @@
  
  
  /***************************************************
-                   sprites[? "death_acid"]=Ooga_death_by_acid
+                sprites[? "death_acid"]=Ooga_death_by_acid
                 sprites[? "death_zap"]=Ooga_death_by_zap
                 sprites[? "death_ice"]=Ooga_death_by_ice
   ***************************************************/
 
 var a;
-a=instance_create(x,y+20,corpse)
+a=instance_create_depth(x,y+20,-5,corpse)
 a.scale=true
 
-a.image_speed=0.1
+a.image_speed=0.2
 switch lastdamagetype 
 {
     case "icespike":
@@ -28,7 +28,7 @@ switch lastdamagetype
     a.sprite_index=sprites[? "death_fall"]
     a.hspeed=hspd/2
     a.vspeed=-7
-    a.gravity=0.2
+    a.gravity=0.5
     a.image_speed=1
 }
 
