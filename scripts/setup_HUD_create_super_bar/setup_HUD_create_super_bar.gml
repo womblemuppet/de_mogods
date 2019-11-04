@@ -1,5 +1,5 @@
 /*
-  create_super_bar(x,y,ID,width)
+  create_super_bar(x,y,ID,width,number of segments)
 */
 
 var startx,starty,ID,width,number_of_segments;
@@ -21,8 +21,7 @@ with new_super_bar
 	
 	myline=instance_create_depth(x+1,y+1,-10,superbar_line)
 	myline.creator=self.id
-	myline.SEGMENT_WIDTH=SEGMENT_WIDTH
-	
+	myline.SEGMENT_WIDTH=SEGMENT_WIDTH	
 }
 
 return new_super_bar
