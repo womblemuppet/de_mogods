@@ -1,3 +1,3 @@
-stack_call_next()
+//stack_call_next()
 instance_destroy()
 

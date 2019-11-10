@@ -6,18 +6,6 @@ if object_index==gunpowder
 	exit
 }
 
-//[continue]  ///shit this wont work with tornadoe's will it.
-if object_index==instrument
-{
-	instrument_die_event()   
-	exit
-}
-
-if object_index==tree_block
-{
-	instance_destroy()
-	exit
-}
 
 switch other.type
 {
@@ -130,13 +118,6 @@ switch other.type
 
 
 
-with icespike
-{
-	if  !place_meeting(x,y-10,block)
-	{
-		icicle_fall_code(0)
-	}
-}  //[finaledit]????what am I talking about =>optimise, could put in setup sprites script or something
 
 instance_destroy()
 

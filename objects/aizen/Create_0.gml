@@ -16,15 +16,6 @@ fossil_surface=surface_create(kouchou.rw,kouchou.rh+SURFACE_REDRAW_INTERVAL)   /
 fossil_surface_redraw_needed=false
 
 
-STACK=ds_list_create() //not a stack. but, the stack. hence the caps. oh well.
-STACK_SHITCALL_NUMBER=3  /// shitcalls at this many orbs on stack
-last_stack_sprite=-1
-
-upcoming_stack=ds_list_create()
-UPCOMING_STACK_DISPLAY_NUMBER=3   ///number of upcoming orbs to be shown
-repeat(UPCOMING_STACK_DISPLAY_NUMBER+1)
-	generate_upcoming_stack_next()
-
 debug_show_hitboxes=false
 debug=false
 
@@ -80,12 +71,6 @@ hothandspaydaycolour=c_white
 
 
 
-
-//hud_pocket_circle_orb_lost
-stackframe_sprite=arcade_cabinet_maskbar_inactive
-stackframe_subimage=0
-stackframe_image_number=0
-
 lastplayerx=0
 scoer=0
 
@@ -108,18 +93,6 @@ IMGSPEED_SPARKY   //double of important
 
 
 terrain_block_sprite_lists_init()
-
-STACK_ORB_SPRITES=ds_map_create()
-STACK_ORB_SPRITES[? "meteors"]=mask_meteors
-STACK_ORB_SPRITES[? "snowball"]=mask_snowball
-STACK_ORB_SPRITES[? "lightning"]=mask_lightning
-STACK_ORB_SPRITES[? "lava"]=mask_lava
-STACK_ORB_SPRITES[? "tornado"]=mask_tornado
-STACK_ORB_SPRITES[? "payday"]=mask_payday
-//STACK_ORB_SPRITES_DIE=ds_list_create()
-//STACK_ORB_SPRITES_BIRTH=ds_list_create()
-//ds_list_add(STACK_ORB_SPRITES_DIE,orb_sprite2_die,orb_sprite4_die,orb_sprite7_die,orb_sprite8_die,orb_flood_die,tornadoe_orbsprite_die,moonlight_orbsprite_die)
-//ds_list_add(STACK_ORB_SPRITES_BIRTH,orb_sprite2_spawn,orb_sprite4_spawn,orb_sprite7_spawn,orb_sprite8_spawn,orb_flood_spawn,tornadoe_orbsprite_spawn,moonlight_orbsprite_spawn)
 
 chunkery_init()
 

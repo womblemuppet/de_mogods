@@ -29,11 +29,3 @@ for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 
 ds_list_clear(destroy_proximity_coods_x)
 ds_list_clear(destroy_proximity_coods_y)
-
-with instrument_spawner
-{
-	if dont_trigger_reset==false && !instance_exists(targ)
-	{
-		instance_destroy()
-	}
-}

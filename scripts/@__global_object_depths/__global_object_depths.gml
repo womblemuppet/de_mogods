@@ -23,7 +23,6 @@ global.__objectDepths[15] = -20; // winsplash
 global.__objectDepths[16] = 0; // scrolls
 global.__objectDepths[17] = -1; // player
 global.__objectDepths[19] = 0; // block
-global.__objectDepths[20] = 0; // instrument
 global.__objectDepths[21] = 1; // orbb
 global.__objectDepths[22] = 0; // ore_block
 global.__objectDepths[23] = 0; // meteor_block

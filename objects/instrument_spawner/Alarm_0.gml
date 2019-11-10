@@ -1,2 +1,0 @@
-sprite_index=block_bubbler_end_spr
-image_index=0

@@ -11,7 +11,6 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 		{
 			player_generic_knockback(other.my_hknockback,other.my_vknockback)
 			player_whacked(other.stunamount,other.numberofhh,other.reset_attacker_hh,other.reset_opponent)
-			attack_apply_pocket_property(other.attack_name)
 			if !last_hit_knocked_down  ///getting knocked down takes priority over special effects
 				attack_apply_special_properties(other.attack_name)
 				

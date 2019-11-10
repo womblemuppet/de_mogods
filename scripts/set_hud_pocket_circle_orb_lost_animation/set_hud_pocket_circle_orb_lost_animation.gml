@@ -1,3 +1,0 @@
-top_HUD.pocket_circle_sprite[P]=hud_pocket_circle_area_orb_lost
-top_HUD.pocket_circle_subimage[P]=0
-top_HUD.pocket_circle_image_number[P]=top_HUD.POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER

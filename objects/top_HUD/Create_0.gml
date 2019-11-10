@@ -29,18 +29,6 @@ for (var i = 0; i < kouchou.players_in; i++)
 floating_masks_subimage=0
 FLOATINGMASKS_IMAGE_NUMBER=22
 
-pocket_circle_subimage[kouchou.MAX_PLAYER_COUNT-1]=0
-pocket_circle_image_number[kouchou.MAX_PLAYER_COUNT-1]=1
-for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
-{
-	pocket_circle_subimage[i]=0
-	pocket_circle_image_number[i]=1
-	pocket_circle_sprite[i]=hud_pocket_circle_area
-}
-
-POCKET_CIRCLE_AREA_IMAGE_NUMBER=1
-POCKET_CIRCLE_AREA_HAS_SUPER_MODE_IMAGE_NUMBER=6
-POCKET_CIRCLE_AREA_ORB_LOST_IMAGE_NUMBER=8
 
 
 ///////////////////////////////

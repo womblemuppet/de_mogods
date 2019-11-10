@@ -120,11 +120,7 @@ chained_debuff_x_pos=0     ///x pos of chain
 chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 
-NUMBER_OF_POCKET_SPACES=1
-number_of_pockets=0    ///type of pocketed orb
-player_empty_pockets()
-pocket_super_mode_stored=false ///if true, super_mode_available is stored in current pocket
-pocket_light_heavy_held_counter=0
+light_heavy_held_counter=0
 
 canbounce_counter=0  ///bounce counter
 BOUNCE_HORIZONTAL_VELOCITY=12

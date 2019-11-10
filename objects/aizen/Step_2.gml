@@ -51,13 +51,7 @@ if lowest_player_y>=SCROLL_THRESHOLD // && !instance_exists(ice_block)   // [fin
 			instance_destroy()
 		}
 	}
-	with icespike
-	{
-		if y<0
-			icicle_fall_code(0)
-		if falling && y<40
-			y+=scrollspeed   //negates scroll up if falling, hopefully keeping icicles at top of screen
-	}
+
 	
 	will_update_blocks_to_draw_list=true	
 	travelled+=scrollspeed             ///add to travelled, total distance scrolled downward

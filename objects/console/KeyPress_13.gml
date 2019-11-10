@@ -1,29 +1,14 @@
-var txt,stacktype;
+var txt;
 txt=keyboard_string
 
 if txt==""
 	exit
 
-stacktype=""
 
 txt=string_replace_all(txt,"_"," ")
 txt=string_lower(txt)
 
 console_log(txt)
-
-if string_count("stack",txt)>0
-{
-	stacktype=txt
-	stacktype=string_delete(stacktype,1,6)
-	
-	txt="stack"
-}
-else if string_count("call",txt)>0
-{
-	stacktype=txt
-	stacktype=string_delete(stacktype,1,5)
-	txt="call"
-}
 
 
 switch txt
@@ -102,19 +87,6 @@ switch txt
 		player_activate_super_mode()
 		
 	break;
-
-	//case "slinger phase":
-	//case "phase":
-	//case "stance phase":
-	
-	//console_log("slinger phase forced")
-	//with player
-	//{
-	//	if character=="slinger"
-	//		attack_slinger_enter_phase()
-	//}	
-		
-	//break;
 	
 	case "restart":
 		game_restart()
@@ -124,71 +96,7 @@ switch txt
 	case "exit":
 		game_end()
 	break;
-	
-	case "stack":
-	case "call":
-	
-	var orb_type;
-	orb_type=undefined
-	
-	switch stacktype
-	{
-		case "meteor":
-		case "meteors":
-		orb_type="meteors"
-		break;
-		
-		case "ice":
-		case "icicles":
-		case "winter":
-		case "cold":
-		case "snowball":
-		orb_type="snowball"
-		break
-		
-		case "storm":
-		case "zap":
-		case "lightning":
-		orb_type="lightning"
-		break;
-		
-		case "fish":
-		case "water":
-		case "wave":
-		case "waves":
-		case "freakyfishtime":
-		case "lava":
-		orb_type="lava"
-		break;
-		
-		case "tornado":
-		case "tornadoe":
-		orb_type="tornado"
-		break;
-	}
 
-	
-	if orb_type==undefined
-		console_log("unknown orb type "+stacktype)
-	else
-	{
-		if txt=="stack"
-		{
-			stack_add_orb(orb_type,true)
-			console_log(stacktype+" added to stack")
-		}
-		else if txt=="call"
-		{
-			instance_create(0,0,convert_orb_type_to_orb_parent(orb_type))
-			console_log(stacktype+" called")
-		}
-		else
-			show_error("stack call case has neither stack or call effect",true)
-	}
-	
-
-	break;
-	
 	//console_log(object_get_name(convert_orb_type_to_orb_parent(orb_type))
 	default:
 		console_log("unknown command")

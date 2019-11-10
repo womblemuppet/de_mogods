@@ -4,15 +4,9 @@ if object_index==ice_block
     exit
 if object_index=ore_block
     exit
-if object_index=meteor_block
-    exit
 if object_index==weaksand
     exit
-if object_index==tree_block
-    exit
 if object_index==turret_block
-    exit
-if object_index==instrument
     exit
 
 

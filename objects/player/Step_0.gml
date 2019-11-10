@@ -393,22 +393,19 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available                                            /////// pocket event
+if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available
 {
-	pocket_light_heavy_held_counter+=1
-	if pocket_light_heavy_held_counter>2
-	{
-		if !player_has_no_pockets()
-			player_use_pocket()
-	}
+	light_heavy_held_counter+=1
+	if light_heavy_held_counter>2
+		player_start_ritual()
 
 }
 
-//if pocket_light_heavy_held_counter>0    //////pocket keys release event
+//if light_heavy_held_counter>0    //////LA+HA release event
 {   ///checks counter first for optimisation
 	if button_scrape_released[? lightbutton] || button_scrape_released[? heavybutton] || button_scrape[? leftbutton] || button_scrape[? rightbutton] || button_scrape[? upbutton] 
 	{
-		pocket_light_heavy_held_counter=0
+		light_heavy_held_counter=0
 	}
 }
 
@@ -478,7 +475,7 @@ if button_scrape_pushed[? superbutton] && player_may_attack()   ////super attack
 
 
 
-if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_attack() && pocket_light_heavy_held_counter<1  ////light attack
+if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_attack() && light_heavy_held_counter<1  ////light attack
 {
 	var exception;
 	exception=false
@@ -582,7 +579,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// heavy attack
 
-if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch_cd_counter<1 && groundcheck!=noone   && pocket_light_heavy_held_counter<1  ///heavy attack button press
+if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch_cd_counter<1 && groundcheck!=noone   && light_heavy_held_counter<1  ///heavy attack button press
 {
 	var exception;
 	exception=false

@@ -1,7 +1,5 @@
 player_end_super_mode()
 
-set_hud_pocket_circle_orb_normal()
-
 player_update_super_meter_hud()
 
 ////explosion effect

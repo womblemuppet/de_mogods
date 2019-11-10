@@ -7,5 +7,5 @@ with weather
 	snow_sprite=SNOW_CALM_SPR
 }
 
-stack_call_next()
+//stack_call_next()
 

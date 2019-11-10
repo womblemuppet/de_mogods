@@ -33,14 +33,6 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		//	typeofblock="payday ore"      ////payday
 		if biome=="sand" && rand>=0.02 && rand<0.04
 			typeofblock="weaksand"      ////dissolve block (weaksand)
-		//if rand>=0.04 && rand<0.045
-		//	typeofblock="instrument"
-		//if biome!="summit" && random(1)>0.999
-		//	typeofblock=3     ////gunpowder
-		//if random(1)>0.995
-		//	typeofblock=4   ///pineapple
-		//if random(1)>0.995 && terrain_special_block_ok()      TURRET BLOCKS DISABLED
-		//	typeofblock=5   ///sentinel    
      
 
 		switch typeofblock
@@ -56,13 +48,8 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 			//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,y_position,0)
 			//	ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
 			//	instance_create(kouchou.room_left_border_x+i*40,y_position,gunnysnake) break;
-			//case 4:
-			//	a=spawn_tree_block(kouchou.room_left_border_x+i*40,y_position) break;
 			//case 5:
 			//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,y_position) break;
-			//case "instrument":
-			//	//show_message("i="+string(i))
-			//	a=spawn_instrument_block(kouchou.room_left_border_x+i*aizen.bw,y_position,false) break;
 			default:
 				show_error("unhandled typeofblock case",true)
 		}

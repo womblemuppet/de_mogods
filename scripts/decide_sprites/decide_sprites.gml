@@ -63,7 +63,7 @@ switch character
 				sprites[? "jump_u"]=Ooga_U_jump
 				sprites[? "air_u"]=Ooga_U_air
 				sprites[? "fall_u"]=Ooga_U_fall
-				sprites[? "envoke"]=Ooga_4H_envoke
+				sprites[? "ritual"]=Ooga_4H_envoke
 				sprites[? "prone"]=Ooga_4H_prone
 				sprites[? "roll"]=Ooga_4H_roll
 				sprites[? "knockdown_air"]=Ooga_4H_knockdown_air
@@ -137,7 +137,7 @@ switch character
 			sprites[? "death_acid"]=Vet_death_by_acid
 			sprites[? "death_zap"]=Vet_death_by_zap
 			sprites[? "death_ice"]=Vet_death_by_ice
-			sprites[? "envoke"]=Vet_3H_envoke
+			sprites[? "ritual"]=Vet_3H_envoke
 			sprites[? "prone"]=Vet_3H_prone
 			sprites[? "roll"]=Vet_3H_roll
 			sprites[? "knockdown_air"]=Vet_3H_knockdown_air
@@ -199,7 +199,7 @@ switch character
 			sprites[? "phase"]=Slinger_3H_phaseblink
 			sprites[? "phase_u"]=Slinger_3H_phaseblink  ///super version (to be changed)
 			sprites[? "phase_entry"]=Slinger_3H_phaseblink_entry
-			sprites[? "envoke"]=Slinger_3H_envoke
+			sprites[? "ritual"]=Slinger_3H_envoke
 			sprites[? "prone"]=Slinger_3H_prone
 			sprites[? "roll"]=Slinger_3H_roll
 			sprites[? "knockdown_air"]=Slinger_3H_knockdown_air
@@ -258,7 +258,7 @@ switch character
 		sprites[? "death_acid"]=Bait_death_by_acid
 		sprites[? "death_zap"]=Bait_death_by_zap
 		sprites[? "death_ice"]=Bait_death_by_ice
-		sprites[? "envoke"]=Bait_3H_envoke
+		sprites[? "ritual"]=Bait_3H_envoke
 		sprites[? "prone"]=Bait_3H_prone
 		sprites[? "roll"]=Bait_3H_roll
 		sprites[? "knockdown_air"]=Bait_3H_knockdown_air

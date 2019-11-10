@@ -5,7 +5,7 @@ player_flush_lockdowns() ///be careful with this
 super_mode_available=true
 super_mode_time_remaining=super_mode_duration
 
-set_hud_pocket_circle_orb_super_mode()
+
 player_update_super_meter_hud()
 HUD_reset_super_bar(P)
 

@@ -272,7 +272,7 @@ else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprit
 	if super_mode_available
 		sprite_index=sprites[? "uniques_dig_u"]
 }
-else if sprite_index==sprites[? "envoke"]  //use pocket (envoke)
+else if sprite_index==sprites[? "ritual"]  //ritual
 {
 	player_set_idle()	
 }
