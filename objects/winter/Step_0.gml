@@ -34,19 +34,26 @@ if targeting
 		}
 	}
 
-	if weather.snow_effect_disable_side_change_counter<1
+	///change snow effect direction
+	if weather.snow_effect_disable_side_change_counter<1   ///restriction stops side flickering when on middle line of screen
 	{
 		if side=="right"
 		{
 			if weather.snow_previous_side!="right"
+			{
 				weather.snow_effect_disable_side_change_counter=20
+				weather.snow_alpha=0
+			}
 			weather.snow_hspd=-weather.SNOW_WINDY_HSPD
 			weather.snow_previous_side=side
 		}
 		else
 		{
 			if weather.snow_previous_side!="left"
+			{
 				weather.snow_effect_disable_side_change_counter=20
+				weather.snow_alpha=0
+			}
 			weather.snow_hspd=weather.SNOW_WINDY_HSPD
 			weather.snow_previous_side=side
 		}

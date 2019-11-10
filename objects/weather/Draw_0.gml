@@ -1,6 +1,6 @@
 if rain_on
 {
-	draw_set_alpha(0.5)
+	draw_set_alpha(rain_alpha)
 	for (var i = -1; i <1+ kouchou.room_right_border_x/TORNADO_RAIN_TILE_SIZE;i++)
 	{
 		for (var ii = -1; ii <1+ kouchou.room_bottom_border_y/TORNADO_RAIN_TILE_SIZE;ii++) 
@@ -13,7 +13,7 @@ if rain_on
 
 if snow_on
 {
-	draw_set_alpha(0.5)
+	draw_set_alpha(snow_alpha)
 	for (var i = -1; i <1+ kouchou.room_right_border_x/SNOW_TILE_SIZE;i++)
 	{
 		for (var ii = -1; ii <1+ kouchou.room_bottom_border_y/SNOW_TILE_SIZE;ii++) 

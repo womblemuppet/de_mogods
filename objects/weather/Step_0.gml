@@ -14,6 +14,9 @@ if rain_on   ///[finaledit] could be optimised
 
 if snow_on
 {
+	if snow_alpha<0.5
+		snow_alpha+=0.01
+		
 	if snow_effect_disable_side_change_counter>0
 		snow_effect_disable_side_change_counter-=1
 

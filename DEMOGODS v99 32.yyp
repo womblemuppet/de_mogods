@@ -8935,6 +8935,14 @@
             }
         },
         {
+            "Key": "eeff085a-3e72-4c92-ba71-52368377a66a",
+            "Value": {
+                "id": "de75dedb-1f28-49de-afb5-dd4e69a1ff70",
+                "resourcePath": "objects\\shitcall_event\\shitcall_event.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ef670d7b-0304-4f95-9e41-a7679373b2e1",
             "Value": {
                 "id": "38309dc9-921c-45b8-8841-b186940c6a36",
