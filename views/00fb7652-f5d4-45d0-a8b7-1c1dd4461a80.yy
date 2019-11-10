@@ -5,15 +5,11 @@
     "name": "00fb7652-f5d4-45d0-a8b7-1c1dd4461a80",
     "children": [
         "c505f448-e31f-41ca-9290-f6c324bed9f4",
-        "21ab2980-cea1-44fd-a481-4fde0e0dc2fc",
-        "c79e2ab9-7532-4532-8351-02fc2316ab93",
-        "1ed484b6-c81a-4055-a2cf-7d03cd737979",
-        "58a7e927-cb9a-4413-b93b-4fa7b7bd3ac8",
-        "d5824359-995a-4d89-9d3a-d7e04cf7d834",
         "b822dd81-02cf-416d-b091-3159269ed31e",
         "0f6b0091-dd40-448d-8813-3693bdd18841",
         "888e4898-07f4-4d51-9101-47c0b455c660",
-        "ba5d327a-5331-4b27-9551-9349a4c55c6b"
+        "ba5d327a-5331-4b27-9551-9349a4c55c6b",
+        "668a9570-978c-441a-96e8-c85a687c0e04"
     ],
     "filterType": "GMObject",
     "folderName": "special blocks and objects",

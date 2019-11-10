@@ -615,14 +615,6 @@
             }
         },
         {
-            "Key": "0e8f9ebd-8bcd-4f68-98d2-0009a06201c3",
-            "Value": {
-                "id": "5c7eef06-4471-4553-bb7b-006504b8d8ec",
-                "resourcePath": "scripts\\spawn_meteor_block\\spawn_meteor_block.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "0f02aaca-b221-417b-a88c-bedfe8e4f041",
             "Value": {
                 "id": "2b2883b9-8674-43a1-86e1-1915d29658f0",
@@ -1127,14 +1119,6 @@
             }
         },
         {
-            "Key": "1ed484b6-c81a-4055-a2cf-7d03cd737979",
-            "Value": {
-                "id": "e7a59027-72e1-4696-b62d-e68233b7d59f",
-                "resourcePath": "objects\\turret_block\\turret_block.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1ef0f589-3d81-443e-8b42-426e181efe3c",
             "Value": {
                 "id": "f323c575-317a-4b1a-92fd-301e1573d618",
@@ -1260,14 +1244,6 @@
                 "id": "bbcbe96a-f68f-449b-858d-8d418d73670a",
                 "resourcePath": "sprites\\vet_3h_kamikaze_mine_explosion\\vet_3h_kamikaze_mine_explosion.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "21ab2980-cea1-44fd-a481-4fde0e0dc2fc",
-            "Value": {
-                "id": "132fa0ce-15af-48cd-a4ed-5591993d7b94",
-                "resourcePath": "objects\\orbb\\orbb.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1511,14 +1487,6 @@
             }
         },
         {
-            "Key": "2b352702-a734-410a-a3c7-f2dc4857b20d",
-            "Value": {
-                "id": "21ee2b95-afab-43a8-8020-5d5c9ae403af",
-                "resourcePath": "scripts\\spawn_ore_block\\spawn_ore_block.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "2c2a5b48-a4b3-4a96-a8b6-4df077dd0eab",
             "Value": {
                 "id": "26f9e1c2-452d-48be-bc1f-8911086a049a",
@@ -1751,14 +1719,6 @@
             }
         },
         {
-            "Key": "33a9f3c6-b981-42b8-8016-98edb8444589",
-            "Value": {
-                "id": "d76d31b0-b024-4461-9adc-94ad0dc7cb62",
-                "resourcePath": "scripts\\spawn_turret_block\\spawn_turret_block.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "33e2ee04-903e-4f57-a5e2-6b57c71f9750",
             "Value": {
                 "id": "afc60a87-7bb2-4fe5-9a15-981435782cb2",
@@ -1892,14 +1852,6 @@
                 "id": "07b0fb99-7443-4779-b028-3a7de7f136e3",
                 "resourcePath": "sprites\\grassy1\\grassy1.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "39c08622-a7ec-41bf-9c38-e63ccc38c3d0",
-            "Value": {
-                "id": "7e819bd0-a343-4edc-86d7-633c01b3eb45",
-                "resourcePath": "scripts\\terrain_special_block_draw_ok\\terrain_special_block_draw_ok.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -2970,7 +2922,7 @@
             "Key": "58a7e927-cb9a-4413-b93b-4fa7b7bd3ac8",
             "Value": {
                 "id": "6067316d-125a-4703-acec-5d2ac49f0984",
-                "resourcePath": "objects\\gunnysnake\\gunnysnake.yy",
+                "resourcePath": "objects\\tunneler\\tunneler.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3612,6 +3564,14 @@
                 "id": "cdc03ef7-78b1-46b2-a14b-060ecc09318c",
                 "resourcePath": "sprites\\Vet_3H_dig_h\\Vet_3H_dig_h.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "668a9570-978c-441a-96e8-c85a687c0e04",
+            "Value": {
+                "id": "5b291ba0-9846-4f97-a977-9566435af763",
+                "resourcePath": "views\\668a9570-978c-441a-96e8-c85a687c0e04.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4567,14 +4527,6 @@
             }
         },
         {
-            "Key": "853649c8-b452-4c0c-bf8d-4058340009c1",
-            "Value": {
-                "id": "64864d2b-5801-40f6-a6b4-5e4f4a94a9ce",
-                "resourcePath": "scripts\\spawn_tree_block\\spawn_tree_block.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "8594ab84-01d1-46e1-bede-16e419cc3a95",
             "Value": {
                 "id": "5eefc793-d295-4ef2-9106-5c51d9bc68e9",
@@ -4988,14 +4940,6 @@
                 "id": "54d9066c-71e9-46c0-84ad-89c8e03fd4f2",
                 "resourcePath": "sprites\\crab_squish_sprite\\crab_squish_sprite.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "93513e38-e6bb-4f7c-bc2f-16dd5a8a6923",
-            "Value": {
-                "id": "6e63f047-d60c-4aba-aac1-e270728a632c",
-                "resourcePath": "scripts\\terrain_special_block_ok\\terrain_special_block_ok.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -5420,14 +5364,6 @@
                 "id": "3b312067-bbc5-4280-b441-fdc3a8c0ed51",
                 "resourcePath": "views\\9f876c11-9924-43a3-9f61-604a01714208.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9fca5d50-2469-4a76-8d1b-a169d545fad9",
-            "Value": {
-                "id": "c242b916-d7ae-4ce1-bcaf-5d04471c7ba2",
-                "resourcePath": "scripts\\spawn_ice_block\\spawn_ice_block.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -6903,14 +6839,6 @@
             }
         },
         {
-            "Key": "c79e2ab9-7532-4532-8351-02fc2316ab93",
-            "Value": {
-                "id": "928b598e-012c-4bf6-861f-564736fc590b",
-                "resourcePath": "objects\\ore_block\\ore_block.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c7af5b38-1c0b-41a0-ab67-99f0dc2f70e7",
             "Value": {
                 "id": "d799c870-7b10-488d-89fd-a28d1bf6caac",
@@ -7452,14 +7380,6 @@
                 "id": "d017838f-dc9d-4870-8e8b-73cd6be0198c",
                 "resourcePath": "scripts\\travelled_tick_biome_threshold_check\\travelled_tick_biome_threshold_check.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d5824359-995a-4d89-9d3a-d7e04cf7d834",
-            "Value": {
-                "id": "25ff696b-a5c3-4dee-881c-1f70b46fb24a",
-                "resourcePath": "objects\\gunpowder\\gunpowder.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -8311,14 +8231,6 @@
             }
         },
         {
-            "Key": "ee2a16f4-d8ac-49e5-acda-0b7008be82ae",
-            "Value": {
-                "id": "13c0ae9c-8bc8-4612-9692-878fb2683295",
-                "resourcePath": "scripts\\spawn_gunpowder_block\\spawn_gunpowder_block.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "ee3c10ce-f0b3-4c8c-a662-d707fe00ec98",
             "Value": {
                 "id": "bccd5c85-86ab-4748-a267-7b839838e958",
@@ -8981,15 +8893,7 @@
         "536bc997-c975-4647-9a40-f5898fadca6f",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
-        "9fca5d50-2469-4a76-8d1b-a169d545fad9",
-        "2b352702-a734-410a-a3c7-f2dc4857b20d",
-        "0e8f9ebd-8bcd-4f68-98d2-0009a06201c3",
-        "33a9f3c6-b981-42b8-8016-98edb8444589",
-        "853649c8-b452-4c0c-bf8d-4058340009c1",
-        "ee2a16f4-d8ac-49e5-acda-0b7008be82ae",
         "0c52ca6b-34c8-443f-9f33-18916703fc30",
-        "93513e38-e6bb-4f7c-bc2f-16dd5a8a6923",
-        "39c08622-a7ec-41bf-9c38-e63ccc38c3d0",
         "7a50cadb-657c-4f28-8f67-31d58a19d0c7",
         "62a72bd0-efd9-4fe2-acf0-86037e7035f8",
         "68bb8401-c82c-4fdb-8250-257d20b76714",

@@ -2,7 +2,7 @@
     "id": "58a7e927-cb9a-4413-b93b-4fa7b7bd3ac8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "gunnysnake",
+    "name": "tunneler",
     "eventList": [
         {
             "id": "95d53dc8-e84f-4e39-8599-e04088ddbdff",

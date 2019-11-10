@@ -19,7 +19,7 @@ player_baseline_difference=player_baseline-player_baseline_prev
 player_baseline_prev=player_baseline
 
 
-if lowest_player_y>=SCROLL_THRESHOLD // && !instance_exists(ice_block)   // [finaledit] don't like doing this iceblock check in step　(でもしょうがないね)
+if lowest_player_y>=SCROLL_THRESHOLD 
 {	//////////////////////////////////////// CAMERA SCROLL
 	var scrollspeed;
 	scrollspeed=5

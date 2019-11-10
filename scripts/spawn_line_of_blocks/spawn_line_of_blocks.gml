@@ -10,9 +10,6 @@ numberofblocks_horizontal=kouchou.rw/aizen.bw
 	
 for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
 {
-	//if position_meeting(kouchou.room_left_border_x+i*aizen.bw,y_position,block)   //[finaledit] it pains me to do this check just for gunpowder.
-	//	makeok=false
-       
 	var block_column_number;
 	block_column_number=i
 	  
@@ -28,9 +25,7 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		typeofblock="block"   ///normal
 		var rand;
 		rand=random(1)
-			
-		//if biome!="summit" && terrain_special_block_ok() && rand<0.02
-		//	typeofblock="payday ore"      ////payday
+		
 		if biome=="sand" && rand>=0.02 && rand<0.04
 			typeofblock="weaksand"      ////dissolve block (weaksand)
      
@@ -40,16 +35,8 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 			case "block":
 				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,y_position,0)
 				ds_list_add(blockstosprite_prevlayer,a)   break;
-			//case "payday ore":
-			//	a=spawn_ore_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;
 			case "weaksand":
 				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;
-			//case 3:
-			//	a=spawn_gunpowder_block(kouchou.room_left_border_x+i*40,y_position,0)
-			//	ds_list_add(blockstosprite,a)       ///gunnysnake itself doesn't make a block so this makes one for the initial position
-			//	instance_create(kouchou.room_left_border_x+i*40,y_position,gunnysnake) break;
-			//case 5:
-			//	a=spawn_turret_block(kouchou.room_left_border_x+i*40,y_position) break;
 			default:
 				show_error("unhandled typeofblock case",true)
 		}

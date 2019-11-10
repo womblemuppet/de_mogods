@@ -20,7 +20,7 @@ repeat(length)
 		xx-=aizen.bw
 	else if D==270
 		yy+=aizen.bh
-	ds_list_add(aizen.blockstosprite_prevlayer,spawn_gunpowder_block(xx,yy,0))   
+	//ds_list_add(aizen.blockstosprite_prevlayer,spawn_gunpowder_block(xx,yy,0))   
     
 }
 instance_destroy()

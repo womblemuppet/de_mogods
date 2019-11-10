@@ -3,9 +3,6 @@
 ****************************************************/
  
 
-// if updating this also update spawn_gunpowder_block *****************************************
-//   *********************************************  ///////
-
  
 var a;
 a=instance_create(argument0,argument1,block)   //if change this change room spawn blocks

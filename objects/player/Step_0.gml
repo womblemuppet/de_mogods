@@ -23,29 +23,7 @@ groundcheck=instance_place(x,y+1,block)
 
 if groundcheck!=noone
 {
-	if groundcheck.object_index==turret_block
-	{
-		var me,mycol;
-		me=self.id
-		mycol=sentinel_colour
-		if me!=instance_place(x,y+1,turret_block).owner
-		{
-			with instance_place(x,y+1,turret_block)
-			{
-				owner=me
-				alarm[0]=TAKEOVERTIME
-				sprite_index=block_turret
-				image_blend=mycol
-				alarm[1]=UPGRADETIME
-			}
-			with sentinel
-			{
-				effect_create_above(ef_firework,x,y,0,c_red)
-				instance_destroy()
-			}
-		}
-	}
-	else if groundcheck.object_index==weaksand
+	if groundcheck.object_index==weaksand
 	{
 		with instance_place(x,y+1,weaksand)
 		{

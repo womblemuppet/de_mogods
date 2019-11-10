@@ -1,12 +1,3 @@
-if object_index==ice_block
-	exit
-if object_index==gunpowder
-{
-	instance_destroy()
-	exit
-}
-
-
 switch other.type
 {
 	case "hit":

@@ -1,20 +1,11 @@
-
 //exclude blocks that don't split
-if object_index==ice_block
-    exit
-if object_index=ore_block
-    exit
 if object_index==weaksand
     exit
-if object_index==turret_block
-    exit
+
 
 
 sprite_list=aizen.chunkery_sprite_list[? blockchunktype]
 
-
-if object_index==gunpowder
-	sprite_list=aizen.BLOCK_SPRITE_GUNNY_FULL
 
 //var left,right,up,down;
 left=false
