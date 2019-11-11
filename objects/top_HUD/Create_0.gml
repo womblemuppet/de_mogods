@@ -22,9 +22,8 @@ for (var i = 0; i < kouchou.players_in; i++)
 }
 
 
+my_rage_bar=instance_create_depth(room_width/2-300,70,-9,ragebar)
 
-
-//create_super_bar(x,y,ID,width)
 
 floating_masks_subimage=0
 FLOATINGMASKS_IMAGE_NUMBER=22
@@ -54,19 +53,11 @@ for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
 };
 
 
-
 player_hp[kouchou.MAX_PLAYER_COUNT-1]=0
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT;i++)
 {
 	player_hp[i]=kouchou.starting_hp
 }
-
-player_orb_count[kouchou.MAX_PLAYER_COUNT-1]=-1
-for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
-{
-	player_orb_count[i]=0
-};
-
 
 player_HUD_enabled[kouchou.MAX_PLAYER_COUNT-1]=false
 for (var i=0; i<kouchou.MAX_PLAYER_COUNT; i+=1)
