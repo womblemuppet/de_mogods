@@ -8,7 +8,7 @@ will_update_blocks_to_draw_list=false
 call_a_block_has_been_destroyed=false
 destroy_proximity_coods_x=ds_list_create()
 destroy_proximity_coods_y=ds_list_create()
-
+current_shitcall=noone
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_INTERVAL
 SURFACE_REDRAW_INTERVAL=400  ///surface will be redrawn every x travelled

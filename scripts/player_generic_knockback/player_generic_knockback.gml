@@ -35,17 +35,6 @@ with pineapple   /////transfer pineapple
     
 
 }
-with coco                     ///////////////// transfer fish
-{
-	if owner==attacker && cd<1 
-	{
-		owner=victim
-		cd=20
-		passes+=1
-		if passes>2
-			instance_destroy()
-	}
-}
 
 //set knockback
 vspd=-vknockback

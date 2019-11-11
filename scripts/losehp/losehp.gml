@@ -1,13 +1,12 @@
 /***************************************************
-  losehp(gets around coconuke invuln,lastdamagetype)
+  losehp(lastdamagetype)
   returns "died" "damage_taken" or "safe"
  ***************************************************/
 var me,safe;
 me=self.id
 safe=false
 
-TESTING_PLACEHOLDER=argument0   ///[finaledit] to be deleted
-lastdamagetype=argument1
+lastdamagetype=argument0
                                                     //////////////take damage ///////////////////////////////////////////////////////////
 hothands=0
 H-=1

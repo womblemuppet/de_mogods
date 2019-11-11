@@ -5,7 +5,7 @@
 
 if hothands>3                        //////////// hothands proc on 4
 {
-	losehp(false,"small attack")   
+	losehp("small attack")   
 	hothands=0
 	var a;
 	a=instance_create(x,y,ef_follower)

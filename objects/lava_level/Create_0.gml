@@ -1,6 +1,5 @@
 image_speed=0.15
 image_alpha=0.75
-y=room_height
 SPEED=2
 UP_TIME=60   ///wave moves up for this amount at start
 hit=false

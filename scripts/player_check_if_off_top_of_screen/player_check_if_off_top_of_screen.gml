@@ -14,7 +14,7 @@ if y<kouchou.room_top_border_y-20
 		y-=1550
 		player_flush_lockdowns()
 		hspd=0
-		losehp(false,"falling")
+		losehp("falling")
 		recovery_groundpound_active=true
 		player_make_vunerable()
 		player_make_immune(150)

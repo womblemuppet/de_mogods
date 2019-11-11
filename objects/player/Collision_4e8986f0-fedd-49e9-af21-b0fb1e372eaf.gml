@@ -9,6 +9,6 @@ if other.hit[P]==false && player_can_be_hit_by_hazard()
 	a.offsetx=0
 	a.offsety=0
 
-	losehp(false,"zap")
+	losehp("zap")
 }
 

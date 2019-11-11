@@ -1,8 +1,8 @@
 {
-    "id": "be076a66-7e3d-48cc-b375-fed62a475709",
+    "id": "db311da0-5e97-4f68-a6f2-db29eabad08e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "cc_hit_by_orb_effect_event",
+    "name": "end_shitcall",
     "IsCompatibility": false,
     "IsDnD": false
 }

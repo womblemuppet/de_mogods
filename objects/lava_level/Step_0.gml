@@ -12,7 +12,7 @@ for (var i = 0; i < instance_number(player);i++)
 {
 	with instance_find(player,i)
 	{
-		if y>freakyfishtime.y-50 && y>=lowesty
+		if y>lava_level.y-50 && y>=lowesty
 		{
 			if y>lowesty || (y==lowesty && choose(0,1)==1)
 			{
@@ -28,7 +28,7 @@ if lowest!=noone
 {
 	with lowest
 	{
-		losehp(false,"lava")
+		losehp("lava")
 		effect_aniend(splash_effect1,0.2,-1)
 	}
 		

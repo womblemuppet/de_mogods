@@ -268,9 +268,6 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 			}
 		}
 		
-		var a;
-		a=instance_create(x,y,bop_hitbox)
-		a.creator=self.id
 
 		//delete groundpound hitbox
 		attack_clear_groundpound_current_hitbox_object()

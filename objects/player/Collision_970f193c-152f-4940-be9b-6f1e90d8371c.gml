@@ -1,6 +1,6 @@
 if other.hit[P]==false && player_can_be_hit_by_hazard()
 {
-	losehp(false,"fire")
+	losehp("fire")
 	other.hit[P]=true
 	
 	var a;
@@ -11,6 +11,6 @@ if other.hit[P]==false && player_can_be_hit_by_hazard()
 	a.offsetx=0
 	a.offsety=0
 	
-	cc_hit_by_orb_effect_event(self.id)
+	cc_hit_by_hazard(self.id)
 }
 

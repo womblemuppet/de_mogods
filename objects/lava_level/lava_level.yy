@@ -2,7 +2,7 @@
     "id": "58cbd3bb-7a97-4c1b-8292-8799db1270dc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "freakyfishtime",
+    "name": "lava_level",
     "eventList": [
         {
             "id": "3608d837-a806-42a9-b0aa-70d1881b8ad0",

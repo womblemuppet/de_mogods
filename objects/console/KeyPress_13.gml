@@ -97,7 +97,6 @@ switch txt
 		game_end()
 	break;
 
-	//console_log(object_get_name(convert_orb_type_to_orb_parent(orb_type))
 	default:
 		console_log("unknown command")
 	break;

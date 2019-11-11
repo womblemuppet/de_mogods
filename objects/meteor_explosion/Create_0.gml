@@ -3,9 +3,9 @@ image_xscale=2
 image_yscale=2
 image_speed=0.2  ///0.45 LOOKS GOOD
 
-if instance_exists(freakyfishtime)
+if instance_exists(lava_level)
 {
-	if y>freakyfishtime.y-20
+	if y>lava_level.y-20
 		image_blend=c_dkgray //[finaledit]
 }
 
