@@ -2,10 +2,10 @@ var n;
 n=argument0
 
 switch n
-{	
+{
 	case 2:
-		HUDx[0]=0
-		HUDx[1]=kouchou.room_right_border_x-hud_area_width
+		HUDx[0]=PLAYER_HUD_AREA_SIDE_OFFSET_X
+		HUDx[1]=room_width-hud_area_width-PLAYER_HUD_AREA_SIDE_OFFSET_X
 	break;
 	
 	default:

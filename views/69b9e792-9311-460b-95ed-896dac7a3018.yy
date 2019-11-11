@@ -9,7 +9,7 @@
         "bceb8eca-9741-4c9c-bd09-d475e3fa1751"
     ],
     "filterType": "GMSprite",
-    "folderName": "line",
+    "folderName": "super_bar_line",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
