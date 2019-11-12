@@ -106,7 +106,6 @@ jumped=false  //after jump set to true so when landing can give superjump (but n
 stunned=0   
 stunned_groundpound=0   //gp stunned has dizzy animation and prevents changing direction
 immune_counter=0 ///inability to take further damage while flickering
-sidezap=false
 hothands=0
 hhspr=mask_index
 hothandimageindex=0      ///hothands indicator image index

@@ -1,11 +1,3 @@
-alarm[0]=250    ///stack call
-
-if ds_list_empty(aizen.STACK)
-{
-	if ds_list_find_value(aizen.STACK,0)==2   ///if stacking meteors, stop stacking
-		alarm[0]=700
-}
-
 alarm[1]=180     ///stack calling meteors
 ammo=10
 

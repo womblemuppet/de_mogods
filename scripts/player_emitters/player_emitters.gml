@@ -17,14 +17,3 @@ if super_mode_available && random(1)>0.6      ///////////super effect
 	a.image_xscale=1.25
 	a.image_yscale=1.25
 }
-if sidezap && random(1)>0.8        /////////////kanehameha effect
-{
-	var a;
-	a=effect_aniend(flameofsidezap,0.25,-1)
-	a.x+=6-random(12)
-	a.vspeed=choose(0,-1,-2)
-	a.image_alpha=0.8
-	if a.vspeed==-2
-		a.image_alpha=0.5
-}
-

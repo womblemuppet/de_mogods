@@ -2095,14 +2095,6 @@
             }
         },
         {
-            "Key": "42841a5c-db2a-4b1f-9580-8bfd2c2832b6",
-            "Value": {
-                "id": "939e1305-98b3-4891-9815-787c9e43ce7f",
-                "resourcePath": "objects\\magicbolt\\magicbolt.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "42ebfff4-20cd-4be9-8222-7089277d798a",
             "Value": {
                 "id": "aab16608-ed60-4520-8b6c-e7e2f86b3719",

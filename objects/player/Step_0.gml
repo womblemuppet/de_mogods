@@ -998,14 +998,7 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 					
 				}
                 
-				if sidezap==true                              ////////////////////     kanehameha
-				{
-					sidezap=false
-					var a;
-					a=instance_create(x,y,magicbolt)
-					create_terrain_cutter(magicbolt, "gilded", right*180, -1)
-					a.creator=self.id
-				}
+
 			}
 		}
 	}

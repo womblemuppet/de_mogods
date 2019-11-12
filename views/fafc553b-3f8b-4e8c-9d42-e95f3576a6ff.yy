@@ -12,7 +12,7 @@
         "2cdf022e-dfe0-42b6-9d16-abe7046953ed"
     ],
     "filterType": "GMObject",
-    "folderName": "hazard control",
+    "folderName": "hazards",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
