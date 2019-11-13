@@ -12,3 +12,6 @@ if smoke_effect_counter==0
 
 image_angle=direction  //necessary to have in step for push arc
 
+life++
+if life>3000
+	instance_destroy()
