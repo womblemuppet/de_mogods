@@ -31,7 +31,9 @@ if lowest!=noone
 		losehp("lava")
 		effect_aniend(splash_effect1,0.2,-1)
 	}
-		
+	
+	with aizen
+		end_shitcall()
 	
 	hit=true
 	alarm[1]=30

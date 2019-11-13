@@ -11,6 +11,9 @@ if other.hit[P]==false && player_can_be_hit_by_hazard()
 	a.offsetx=0
 	a.offsety=0
 	
-	cc_hit_by_hazard(self.id)
+	cc_hit_by_hazard(self.id)	
+	with aizen
+		end_shitcall()
+
 }
 

@@ -1,28 +1,13 @@
-alarm[1]=180     ///stack calling meteors
-ammo=10
+low_side=choose("right","left")   ///alternates between left and right side having the lower meteor per wave
+meteor_number=0
+WAVE_START_DELAY=180
+TIME_BETWEEN_WAVES=600
+TIME_BETWEEN_METEORS=20
+wave_timer=WAVE_START_DELAY
+meteor_timer=0
 
-var numberofmeteors,gap_width,gap_height;
-numberofmeteors=6
-gap_width=180
-gap_height=100
 
-for (var i = 0; i < numberofmeteors/2;i++)
-{
-    instance_create_depth(kouchou.room_left_border_x+gap_width*i,-20-i*gap_height,-1,meteor)
-    instance_create_depth(kouchou.room_right_border_x-gap_width*i,-20-i*gap_height,-1,meteor)
-}
-
-var previously_existed;
-previously_existed=false
-
-if instance_exists(red_sky_effect)
-{
-	with red_sky_effect
-		instance_destroy()
-	previously_existed=true
-}
 
 myskyeffect=instance_create_depth(0,0,0,red_sky_effect)
-if previously_existed
-	myskyeffect.image_index=image_number
+
 
