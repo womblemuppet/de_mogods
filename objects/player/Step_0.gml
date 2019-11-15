@@ -866,6 +866,9 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 			exception=true
 			show_debug_message(check_result)
 			vspd=CLIMB_ROLL_1_BLOCK_VSPD
+			sprite_index=sprites[? "climb"]
+			image_index=0
+			image_speed=FRAME_SPEED_NORMAL
 		}
 	}
 	
