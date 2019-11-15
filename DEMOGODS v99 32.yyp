@@ -2519,6 +2519,14 @@
             }
         },
         {
+            "Key": "4f08e8b9-a0ba-471a-bd1a-2a5fbc157d47",
+            "Value": {
+                "id": "7a770413-0dd1-41da-afff-1f0720ca4708",
+                "resourcePath": "scripts\\lava_check_collision\\lava_check_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4f56df09-4fe6-41aa-9e3c-b0ab134eeef9",
             "Value": {
                 "id": "ef8bec80-ee58-4c35-9e31-a1bdd2a847ed",
@@ -8792,6 +8800,7 @@
         "8e758c42-c6ba-4a19-8d72-8a7cd4440cc6",
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "db311da0-5e97-4f68-a6f2-db29eabad08e",
+        "4f08e8b9-a0ba-471a-bd1a-2a5fbc157d47",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
         "3b61dd23-d7a9-4c23-86f6-43a03bb3207c",
