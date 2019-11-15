@@ -10,7 +10,8 @@
         "14ff4087-2c45-4ed5-9390-cc77bbef0563",
         "7ebf8b1f-ffae-46d9-9b10-79083d2ffd5e",
         "cb02df5f-44b2-46f2-b218-7f10ca7b039d",
-        "7928b44a-bb9c-48be-954e-b5a48cffc7ec"
+        "7928b44a-bb9c-48be-954e-b5a48cffc7ec",
+        "24237593-13d1-46bb-a14b-01817abfd9ab"
     ],
     "filterType": "GMSprite",
     "folderName": "lava",

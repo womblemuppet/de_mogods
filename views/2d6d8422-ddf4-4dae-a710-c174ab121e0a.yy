@@ -9,10 +9,11 @@
         "eaf14873-0b88-49fb-a3e6-399de1bad269",
         "74862e50-8bff-458a-b76d-81808ba88983",
         "553884ec-a45d-41a2-a5c8-052e0f50c2f3",
-        "b682e2f7-5c3f-4fea-b5b6-0aec05261541"
+        "b682e2f7-5c3f-4fea-b5b6-0aec05261541",
+        "bc8661eb-af81-4536-a390-ae840baa9439"
     ],
     "filterType": "GMSprite",
-    "folderName": "MASKS_NEW",
+    "folderName": "OLD_MASKS",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

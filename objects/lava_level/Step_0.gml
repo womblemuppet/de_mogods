@@ -3,6 +3,7 @@ if damaging
 else
 {
 	damaging_timer--
+	
 	if damaging_timer<1
 	{
 		damaging=true

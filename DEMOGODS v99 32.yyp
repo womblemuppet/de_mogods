@@ -1295,6 +1295,14 @@
             }
         },
         {
+            "Key": "24237593-13d1-46bb-a14b-01817abfd9ab",
+            "Value": {
+                "id": "76144be1-1abf-4e09-b88e-4bbdd04b375b",
+                "resourcePath": "sprites\\spr_lava_spawning\\spr_lava_spawning.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "243a6b01-242a-4348-b5a2-bf5770f89fd4",
             "Value": {
                 "id": "d4d2b1fe-ab9a-42a9-aa4e-65e3f420ce77",
@@ -7356,6 +7364,14 @@
                 "id": "063a9fe2-cb63-4108-bf08-3d3de58f49c7",
                 "resourcePath": "objects\\superbar\\superbar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d71994ee-2674-4079-81fa-b7bfc31af42c",
+            "Value": {
+                "id": "df2668a1-955a-470a-9cf4-7d8a4379948a",
+                "resourcePath": "views\\d71994ee-2674-4079-81fa-b7bfc31af42c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
