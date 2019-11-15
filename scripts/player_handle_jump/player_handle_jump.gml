@@ -35,6 +35,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
                 
 				doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
 			}
+			
 			///////////VETERAN PARACHUTE
 			if doublejump==2 && uniques_parachute_enabled==true && uniques_parachute==0 && set_jump_sprites==false
 			{

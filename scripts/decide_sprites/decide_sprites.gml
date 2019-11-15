@@ -67,6 +67,7 @@ switch character
 				sprites[? "prone"]=Ooga_4H_prone
 				sprites[? "roll"]=Ooga_4H_roll
 				sprites[? "knockdown_air"]=Ooga_4H_knockdown_air
+				sprites[? "climb"]=Ooga_4H_climb
 			}
 		}
 /*        else if palette==1
@@ -141,6 +142,7 @@ switch character
 			sprites[? "prone"]=Vet_3H_prone
 			sprites[? "roll"]=Vet_3H_roll
 			sprites[? "knockdown_air"]=Vet_3H_knockdown_air
+			sprites[? "climb"]=Ooga_4H_climb
 		}
 	}break;
     
@@ -203,6 +205,7 @@ switch character
 			sprites[? "prone"]=Slinger_3H_prone
 			sprites[? "roll"]=Slinger_3H_roll
 			sprites[? "knockdown_air"]=Slinger_3H_knockdown_air
+			sprites[? "climb"]=Ooga_4H_climb
 		}
 	} break;
 	
@@ -262,6 +265,7 @@ switch character
 		sprites[? "prone"]=Bait_3H_prone
 		sprites[? "roll"]=Bait_3H_roll
 		sprites[? "knockdown_air"]=Bait_3H_knockdown_air
+		sprites[? "climb"]=Ooga_4H_climb
 	} break;
     
 	default:

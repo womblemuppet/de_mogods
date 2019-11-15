@@ -6943,6 +6943,14 @@
             }
         },
         {
+            "Key": "cc09f8e9-7ed8-409f-a71c-c5bcbb89a1d0",
+            "Value": {
+                "id": "26a9aa59-8e8e-47f6-9329-58acbf01b0c9",
+                "resourcePath": "sprites\\Ooga_4H_climb\\Ooga_4H_climb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc47d9fe-4fd9-4b9c-a7f7-a30b4c13c92c",
             "Value": {
                 "id": "3ec6dbff-1452-423e-94b4-8c87afae2501",
