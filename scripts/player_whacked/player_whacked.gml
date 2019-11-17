@@ -45,7 +45,7 @@ if instance_exists(payday)==false           ////////add to hothands and do first
 	}
 }
 
-if dash_rocket_jump==1   ///if hit during rocket jump charge, get crippled
+if dash_rocket_jump==1 || ritual_lockdown==1  ///if hit during rocket jump charge or ritual, get crippled
 	cripple_debuff_counter=dash_rocket_jump_VUNERABLE_CRIPPLE_AMOUNT
 
 
