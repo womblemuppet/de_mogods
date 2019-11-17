@@ -6,7 +6,7 @@ var a;
 a=instance_create(x,y,aizen)    ///the birth of a monster
 
 if argument0==-1
-a.player_priority=irandom(kouchou.players_in-1)+1
+	a.player_priority=irandom(kouchou.players_in-1)+1
 else
 {
 	a.player_priority=player_priority+1

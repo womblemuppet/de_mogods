@@ -2271,6 +2271,14 @@
             }
         },
         {
+            "Key": "48cda545-a786-4ea2-aaaa-b0f66ff2ef02",
+            "Value": {
+                "id": "f9d4c427-a6f7-46bb-917c-17310f3ffa03",
+                "resourcePath": "scripts\\HUD_increment_rage_bar\\HUD_increment_rage_bar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "48e67d00-3415-4aa6-a8f6-a6405532e608",
             "Value": {
                 "id": "3fa66cc4-605c-4591-9585-45456ae24e03",
@@ -2412,6 +2420,14 @@
                 "id": "78fefe1d-58b8-4f28-b3c2-493de8d58e6a",
                 "resourcePath": "scripts\\player_set_flinch_sprites\\player_set_flinch_sprites.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4b907745-4525-4c18-8533-1817f8939e3e",
+            "Value": {
+                "id": "9156fe2d-6fe1-423e-9bd6-d2c7e785cf81",
+                "resourcePath": "views\\4b907745-4525-4c18-8533-1817f8939e3e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3844,6 +3860,14 @@
                 "id": "33c724e2-7492-4129-af91-a121afe2b282",
                 "resourcePath": "sprites\\hothand_boom\\hothand_boom.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "73ebc3d4-2f84-4426-9fd5-a4dc9c35ef37",
+            "Value": {
+                "id": "7f1c9b2f-ec11-4869-aa10-d7fcd08b4d61",
+                "resourcePath": "scripts\\HUD_reset_rage_bar\\HUD_reset_rage_bar.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8865,6 +8889,8 @@
         "619c7335-ab36-4f6f-942c-45bebf3f448d",
         "deb8895b-5f28-429a-9ba1-4b3ed7615cd0",
         "aedbbf26-2e44-4ad3-aaa4-16f6edab75fe",
+        "48cda545-a786-4ea2-aaaa-b0f66ff2ef02",
+        "73ebc3d4-2f84-4426-9fd5-a4dc9c35ef37",
         "cce0eae3-4d22-4cb6-b8f9-9674dd338976",
         "3265cb24-873c-4278-8a95-5397b8d0ce32",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",

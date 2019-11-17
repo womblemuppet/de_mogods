@@ -8,7 +8,11 @@ will_update_blocks_to_draw_list=false
 call_a_block_has_been_destroyed=false
 destroy_proximity_coods_x=ds_list_create()
 destroy_proximity_coods_y=ds_list_create()
+
 current_shitcall=noone
+RAGE_TRIGGER_AMOUNT=20
+RAGE_RITUAL_LEVEL=18
+rage=0
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_INTERVAL
 SURFACE_REDRAW_INTERVAL=400  ///surface will be redrawn every x travelled
@@ -22,8 +26,7 @@ debug=false
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
 temp_volc_spawn_possibles_list=ds_list_create()
 
-//rename this to withindrawtimethreshold
-candraw=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
+round_draw_potential=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
 healthcap=5   ///max health value
 bedrockcounter=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
@@ -70,7 +73,7 @@ hothandspaydaycolour=c_white
 
 
 
-
+//trial stuff
 lastplayerx=0
 scoer=0
 
@@ -80,7 +83,7 @@ pausescreen_requester_id=-4
 
 BLOCK_DESTRUCTION_FIDELITY=5
 
-//[future] variable that adds to round cd timer when player takes dmg or after large amount of meteors
+
 
 /*
 IMGSPEED_AMBIENT //slowish, should be able to see frame by frame

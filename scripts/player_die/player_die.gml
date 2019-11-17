@@ -35,7 +35,7 @@ switch lastdamagetype
 aizen.lastplayerx=x
 if kouchou.map=="multiplayer"
 {
-	if instance_number(player)==1 && aizen.candraw==true    ///draw
+	if instance_number(player)==1 && aizen.round_draw_potential==true    ///draw
 	{
 		with winsplash
 			instance_destroy()
@@ -47,7 +47,7 @@ if kouchou.map=="multiplayer"
 	}
 	if instance_number(player)==2                         ///player wins
 	{
-		aizen.alarm[9]=5   ///candraw alarm (hikiwake)
+		aizen.alarm[9]=5   ///round_draw_potential alarm (hikiwake)
 		var a;
 		a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
         

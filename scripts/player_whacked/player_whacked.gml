@@ -24,15 +24,26 @@ if instance_exists(other.creator) || other.creator==noone
 else
 	attacker="does_not_exist"
 
-if instance_exists(payday)==false           ////////add to hothands and do first blood (if not payday)
+if instance_exists(payday)==false           ////////increment hothands (if not in payday)
 {
 	///do the damage
 	hothands+=arg_number_of_hh
 	
+	//add rage
+	aizen.rage++
+	if aizen.rage<RAGE_TRIGGER_AMOUNT
+		HUD_increment_rage_bar()
+	else
+	{
+		start_shitcall()
+		HUD_reset_rage_bar()
+	}
+	
 	///register the hit
 	if attacker!="does_not_exist"
 	{
-		show_debug_message(other.object_index)
+		//show_debug_message(other.object_index)
+		
 		//add to combo count
 		if attacker!=noone
 			cc_land_hit(self.id,attacker)
