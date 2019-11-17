@@ -46,6 +46,11 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 		//reset hh if attacker exists and isn't self (noone)
 		if attacker!=noone && arg_reset_attackers_hh!=0 
 			attacker.hothands=0
+			
+		if attacker!=noone
+		{
+			
+		}
 	}
 }
 
