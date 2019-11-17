@@ -30,7 +30,7 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 	hothands+=arg_number_of_hh
 	
 	//increment rage
-	increase_rage()
+	increase_rage(1)
 	
 	///register the hit
 	if attacker!="does_not_exist"

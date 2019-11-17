@@ -54,8 +54,14 @@ else if sprite_index==sprites[? "climb"]
 {
 	player_set_idle()
 }
-else if sprite_index==sprites[? "envoke"]
+else if sprite_index==sprites[? "ritual"]
 {
+	///if still in ritual rage threshold
+	if aizen.can_ritual
+	{
+		increase_rage(2)
+		player_add_super(4)
+	}
 	player_set_idle()
 	ritual_lockdown=0
 }
@@ -280,10 +286,6 @@ else if sprite_index==sprites[? "uniques_dig_place_mine"] || sprite_index==sprit
 	sprite_index=sprites[? "uniques_dig"]
 	if super_mode_available
 		sprite_index=sprites[? "uniques_dig_u"]
-}
-else if sprite_index==sprites[? "ritual"]  //ritual
-{
-	player_set_idle()	
 }
 
 if P==0

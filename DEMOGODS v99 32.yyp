@@ -5111,14 +5111,6 @@
             }
         },
         {
-            "Key": "96ca38a5-0325-4a7a-bfd5-2b328930b276",
-            "Value": {
-                "id": "09d4914b-afb8-41f6-9c0f-0fc5d8e52674",
-                "resourcePath": "scripts\\player_start_ritual\\player_start_ritual.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "9756f5ad-7ba4-46eb-a08f-a9896138100a",
             "Value": {
                 "id": "15ac9e7b-9dc5-4799-834c-fc9ecc75f553",
@@ -8782,7 +8774,6 @@
         "e57de6f1-e552-4005-9acd-a9a134675480",
         "c96b3fb5-60ab-4dcb-ab7c-34094ef5162f",
         "73a6a8d1-fc24-4498-8f48-4834ccb8b02d",
-        "96ca38a5-0325-4a7a-bfd5-2b328930b276",
         "e96b130e-e567-44e2-8518-b227898ce887",
         "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
         "76695978-2a82-44cb-af20-86b05ba05185",
