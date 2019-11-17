@@ -26,6 +26,7 @@ if instance_exists(other.creator) || other.creator==noone                   ////
 			}
 		}
 	}
+	
 	//if other.hit[P]==false && other.creator==self.id   ///hit by own attack
 	//{
 	//	switch other.attack_name

@@ -1,4 +1,7 @@
-super_meter+=argument0
+var amount;
+amount=argument0
+
+super_meter+=amount
 
 if super_meter>=super_meter_max
 {
@@ -8,5 +11,5 @@ if super_meter>=super_meter_max
 }
 else
 {
-	HUD_increment_super_bar(P)
+	HUD_increment_super_bar(P,amount)
 }

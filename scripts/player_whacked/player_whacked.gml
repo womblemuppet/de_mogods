@@ -35,8 +35,6 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 	///register the hit
 	if attacker!="does_not_exist"
 	{
-		//show_debug_message(other.object_index)
-		
 		//add to combo count
 		if attacker!=noone
 			cc_land_hit(self.id,attacker)
@@ -49,7 +47,8 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 			
 		if attacker!=noone
 		{
-			
+			with attacker
+				player_add_super(1)
 		}
 	}
 }
