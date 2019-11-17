@@ -54,6 +54,11 @@ else if sprite_index==sprites[? "climb"]
 {
 	player_set_idle()
 }
+else if sprite_index==sprites[? "envoke"]
+{
+	player_set_idle()
+	ritual_lockdown=0
+}
 else if sprite_index==sprites[? "recoiling_air_flip"]   ///recoiling air flip
 {
 	sprite_index=sprites[? "recoiling_fall"]	

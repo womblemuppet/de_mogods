@@ -120,6 +120,7 @@ chained_debuff_y_pos=0     ///y pos of chain
 chain_effect_id_to_delete=noone   ///id of chain effect instance
 
 light_heavy_held_counter=0
+ritual_lockdown=0 //1 = in animation
 
 canbounce_counter=0  ///bounce counter
 BOUNCE_HORIZONTAL_VELOCITY=12

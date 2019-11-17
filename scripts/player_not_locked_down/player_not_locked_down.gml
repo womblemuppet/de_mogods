@@ -22,6 +22,7 @@ if !stunned_groundpound
 && uniques_slinger_superblast_lockdown==0
 && uniques_supersmash_lockdown==0
 && roll_lockdown==0
+&& ritual_lockdown==0
 && is_proned==false
 && before_prone_falling_lockdown==0
 	return true

@@ -368,10 +368,10 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available
+if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available 
 {
 	light_heavy_held_counter+=1
-	if light_heavy_held_counter>2
+	if light_heavy_held_counter>2 && player_may_attack()
 		player_start_ritual()
 
 }
