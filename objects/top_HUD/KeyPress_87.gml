@@ -1,1 +1,0 @@
-HUD_reset_super_bar(1)

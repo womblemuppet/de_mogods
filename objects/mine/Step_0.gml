@@ -106,7 +106,7 @@ if triggered   /// >:O
 			b.image_xscale=bigexplosion_xscale
 			hitboxspr=mine_groundpunch_combo_shockwave_hitbox
 			show_debug_message("right: "+string(right))
-			b=attack_create_hitbox(60,1,false,true,"mineexplosion_big",hitboxspr,0.2,99,15,7)
+			b=attack_create_hitbox(60,1,false,true,"mineexplosion_big",hitboxspr,0.2,99,15,7,1)
 			b.creator=noone
 			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale
@@ -115,7 +115,7 @@ if triggered   /// >:O
 		{
 			effect_aniend(mine_sprite_explosion,0.2,-1)
 			
-			b=attack_create_hitbox(60,1,false,true,"mineexplosion",hitboxspr,0.2,99,0,12)
+			b=attack_create_hitbox(60,1,false,true,"mineexplosion",hitboxspr,0.2,99,0,12,2)
 			b.creator=noone
 			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale

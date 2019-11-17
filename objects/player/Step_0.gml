@@ -227,7 +227,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	if uniques_whirlwind_active   ///bait whirlwind continue hitbox and invuln
 	{
 		isteps+=1
-		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5)
+		attack_create_hitbox(30,1,true,true,"whirlwind",spr_whirlwind_hitbox,1,99,4,5,2)
 		
 		if right
 			hspd=UNIQUES_WHIRLWIND_SPEED
@@ -547,7 +547,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
 
-			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,10+extrahkb,11)
+			attack_create_hitbox(30,1,true,true,la_attack_name,uc_hitbox_shape,1,99,10+extrahkb,11,1)
 		}
 	}
 }

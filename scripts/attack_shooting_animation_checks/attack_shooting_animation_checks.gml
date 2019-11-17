@@ -12,7 +12,7 @@ else if uniques_fpunch_lockdown==2
 	{
 		if uniques_fpunch_has_made_hitbox==false
 		{            
-			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2)
+			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2,2)
 			create_terrain_cutter(fpunchhitbox,"hit",right_to_dir(),7)
 		}
         
@@ -97,7 +97,7 @@ if uniques_spinner_attack_lockdown==1 && image_index>5
 {
 	if uniques_spinner_attack_has_made_aa_hitbox==false 
 	{
-		uniques_spinner_attack_hitbox_id=attack_create_hitbox(25,1,true,true,"spinattack",vet_upwardpunch_hitbox,0.2,99,0,9)
+		uniques_spinner_attack_hitbox_id=attack_create_hitbox(25,1,true,true,"spinattack",vet_upwardpunch_hitbox,0.2,99,0,9,2)
 	} 
     
 	uniques_spinner_attack_has_made_aa_hitbox=true
@@ -144,7 +144,7 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 		with a                                                                       ////create the first shockwave hitbox here (changes here should also change groundpunch_shockwave alarm[0]
 		{
 			var b
-			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,HKB,VKB)
+			b=attack_create_hitbox(25,1,true,true,"forwardpunch",vet_groundpunch_shockwave,0.8,99,HKB,VKB,2)
 			b.creator=me
 			b.target=me
 			b.image_xscale=image_xscale
@@ -171,7 +171,7 @@ if uniques_vet_kamikaze_lockdown==1 && image_index>5
 	if !right
 		hspd=-UNIQUES_VET_KAMIKAZE_HSPEED
 		
-	uniques_vet_kamikaze_dash_current_hitbox_object=attack_create_hitbox(30,1,true,true,"veteran_kamikaze",Vet_3H_super_charge_hitbox,0.2,99,0,0)
+	uniques_vet_kamikaze_dash_current_hitbox_object=attack_create_hitbox(30,1,true,true,"veteran_kamikaze",Vet_3H_super_charge_hitbox,0.2,99,0,0,0)
 	if !right
 		uniques_vet_kamikaze_dash_current_hitbox_object.direction=180
 	//(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
@@ -235,7 +235,7 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 {
 	if uniques_slinger_superblast_has_made_hitbox==false
 	{
-		with attack_create_hitbox(100,1,false,true,"uniques_superblast",superblast_hitbox_spr,0.2,99,0,0)
+		with attack_create_hitbox(100,1,false,true,"uniques_superblast",superblast_hitbox_spr,0.2,99,0,0,0)
 		{
 			image_xscale=sign(image_xscale)
 			image_yscale=sign(image_yscale)
@@ -261,7 +261,7 @@ if uniques_sharkattack_lockdown==1 && image_index>4
 {
 	if uniques_sharkattack_has_made_hitbox==false 
 	{
-		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,0.2,99,9,3)
+		attack_create_hitbox(25,1,true,true,"sharkattack",bait_sharkattack_htibox,0.2,99,9,3,2)
 		create_terrain_cutter(bait_sharkattack_htibox,"hit",right_to_dir(),5)
 	} 
     

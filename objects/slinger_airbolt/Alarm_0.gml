@@ -4,7 +4,7 @@ if collided
 	exit
 
 var a;
-a=attack_create_hitbox(30,1,false,true,"sunbolt",slinger_airsunbolt_spr,0.7,1,4,8)   ///only one active frame, fast img speed
+a=attack_create_hitbox(30,1,false,true,"sunbolt",slinger_airsunbolt_spr,0.7,1,4,8,2)   ///only one active frame, fast img speed
 a.creator=creator
 a.image_blend=c_red
 a.hit_collector=self.id

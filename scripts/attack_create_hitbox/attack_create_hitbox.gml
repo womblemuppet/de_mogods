@@ -1,5 +1,5 @@
 /***************************************************
-  attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
+  attack_create_hitbox(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb,super)
 ****************************************************/
 
 var a;
@@ -35,7 +35,7 @@ a.alarm[0]=argument7
 a.my_hknockback=argument8   ///knockback hspeed
 a.my_vknockback=argument9
 
-
+a.super_amount=argument10
 
 
 with a
