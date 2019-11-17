@@ -388,8 +388,10 @@ if can_activate_super_mode==false && (  (button_scrape_released[? leftbutton] &&
 	can_activate_super_mode=true
 
 
-if button_scrape_pushed[? superbutton] && player_may_attack()   ////super attack event super event
+if super_mode_available && button_scrape_pushed[? superbutton] && player_may_attack()    ////super attack event super event
 {
+	super_mode_available=false
+	
 	switch attacks[? "super attack"]
 	{
 		case "uga_supersmash":
