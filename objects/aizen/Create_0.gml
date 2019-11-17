@@ -12,6 +12,7 @@ destroy_proximity_coods_y=ds_list_create()
 current_shitcall=noone
 RAGE_TRIGGER_AMOUNT=20
 RAGE_RITUAL_LEVEL=18
+can_ritual=false
 rage=0
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_INTERVAL

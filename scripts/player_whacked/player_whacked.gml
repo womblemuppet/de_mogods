@@ -29,15 +29,8 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 	///do the damage
 	hothands+=arg_number_of_hh
 	
-	//add rage
-	aizen.rage++
-	if aizen.rage<RAGE_TRIGGER_AMOUNT
-		HUD_increment_rage_bar()
-	else
-	{
-		start_shitcall()
-		HUD_reset_rage_bar()
-	}
+	//increment rage
+	increase_rage()
 	
 	///register the hit
 	if attacker!="does_not_exist"

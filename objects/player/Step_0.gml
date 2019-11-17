@@ -368,7 +368,7 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_available 
+if button_scrape[? lightbutton] && button_scrape[? heavybutton] && aizen.can_ritual
 {
 	light_heavy_held_counter+=1
 	if light_heavy_held_counter>2 && player_may_attack()
@@ -376,7 +376,7 @@ if button_scrape[? lightbutton] && button_scrape[? heavybutton] && !super_mode_a
 
 }
 
-//if light_heavy_held_counter>0    //////LA+HA release event
+if light_heavy_held_counter>0    //////LA+HA release event
 {   ///checks counter first for optimisation
 	if button_scrape_released[? lightbutton] || button_scrape_released[? heavybutton] || button_scrape[? leftbutton] || button_scrape[? rightbutton] || button_scrape[? upbutton] 
 	{

@@ -2463,6 +2463,14 @@
             }
         },
         {
+            "Key": "4c5177f8-8d63-48f4-bc8a-f09af0132604",
+            "Value": {
+                "id": "31c62b30-82fe-469b-a060-34ec85a0a445",
+                "resourcePath": "scripts\\increase_rage\\increase_rage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4cbfd096-7ae3-40bc-86f1-5bd950fc46f0",
             "Value": {
                 "id": "976eda8b-7794-4a84-a3cc-1e395484633b",
@@ -8849,6 +8857,7 @@
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "db311da0-5e97-4f68-a6f2-db29eabad08e",
         "4f08e8b9-a0ba-471a-bd1a-2a5fbc157d47",
+        "4c5177f8-8d63-48f4-bc8a-f09af0132604",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
         "3b61dd23-d7a9-4c23-86f6-43a03bb3207c",
