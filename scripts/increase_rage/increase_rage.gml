@@ -14,6 +14,7 @@ with aizen
 	else
 	{
 		start_shitcall()
+		rage=0
 		HUD_reset_rage_bar()
 	}
 }
