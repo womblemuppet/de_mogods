@@ -817,7 +817,7 @@ if (rocket_jump_input_time_counter_from_dash>0  || button_scrape_pushed[? dashbu
 	}	
 }
 
-///////////////////        events for groundpound, and dash               /////////////
+///////////////////        events for groundpound, climb roll and dash               /////////////
 if button_scrape_pushed[? dashbutton]  && rocketjumped==false 
 {
 	var exception;
@@ -870,21 +870,8 @@ if button_scrape_pushed[? dashbutton]  && rocketjumped==false
 	///climb roll
 	if !exception && groundcheck==noone && player_not_locked_down()
 	{
-		var check_result;
-		if right
-			check_result=player_check_climb_roll_spacing("right")
-		else
-			check_result=player_check_climb_roll_spacing("left")
-			
-		if check_result!="do_not_roll"
-		{
+		if player_attempt_climb_roll()
 			exception=true
-			show_debug_message(check_result)
-			vspd=CLIMB_ROLL_1_BLOCK_VSPD
-			sprite_index=sprites[? "climb"]
-			image_index=0
-			image_speed=FRAME_SPEED_NORMAL
-		}
 	}
 	
 	///dash 

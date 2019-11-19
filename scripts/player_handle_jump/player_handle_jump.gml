@@ -7,7 +7,14 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 	if button_scrape_pushed[? upbutton] && !place_meeting(x,y-10,block)  //check prevents jittering if in 1 high tunnel
 	{
 		var exception;
-		exception=false  ///[finaledit not in use
+		exception=false 
+
+		///climb roll
+		if !exception && groundcheck==noone && player_not_locked_down()
+		{
+			if player_attempt_climb_roll()
+				exception=true
+		}
 
 		if !exception
 		{

@@ -25,7 +25,8 @@
         "576cdc22-0722-4ea0-b799-e521b4b8f980",
         "318c2dde-cc48-4b59-91d8-2ba5977afba4",
         "b8932d3e-4abe-4891-b57b-4b3665f8e8a8",
-        "8b65de97-8f83-42b3-b3ec-0b80edcc4ea3"
+        "8b65de97-8f83-42b3-b3ec-0b80edcc4ea3",
+        "8d6943dd-3b3f-4673-80d1-116fa50786f5"
     ],
     "filterType": "GMScript",
     "folderName": "step",

@@ -4759,6 +4759,14 @@
             }
         },
         {
+            "Key": "8d6943dd-3b3f-4673-80d1-116fa50786f5",
+            "Value": {
+                "id": "6e71a702-d052-4fce-a608-39a9e509bace",
+                "resourcePath": "scripts\\player_attempt_climb_roll\\player_attempt_climb_roll.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d7aa1a8-fe15-4f6b-9151-a56e273a0762",
             "Value": {
                 "id": "dec4534c-f2d6-409e-bbcf-935bffb83082",
@@ -8799,6 +8807,7 @@
         "318c2dde-cc48-4b59-91d8-2ba5977afba4",
         "b8932d3e-4abe-4891-b57b-4b3665f8e8a8",
         "8b65de97-8f83-42b3-b3ec-0b80edcc4ea3",
+        "8d6943dd-3b3f-4673-80d1-116fa50786f5",
         "9948ffe7-b72a-4faa-a239-6876aee79f95",
         "acbe5ce7-dd26-4b9d-8d7d-0543f2f7dcf0",
         "3a701449-aba2-4c4b-b91f-baed3df44e71",
