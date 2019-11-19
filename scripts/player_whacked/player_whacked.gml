@@ -5,11 +5,12 @@
 3 whether to reset or not
 */
 
-var arg_stun_amount,arg_number_of_hh,arg_reset_attackers_hh,arg_reset_opp;
+var arg_stun_amount,arg_number_of_hh,arg_reset_attackers_hh,arg_reset_opp,super_amount;
 arg_stun_amount=argument0
 arg_number_of_hh=argument1
 arg_reset_attackers_hh=argument2
 arg_reset_opp=argument3
+super_amount=argument4
 
 last_hit_knocked_down=false
 
@@ -48,7 +49,7 @@ if instance_exists(payday)==false           ////////increment hothands (if not i
 		if attacker!=noone
 		{
 			with attacker
-				player_add_super(1)
+				player_add_super(super_amount)
 		}
 	}
 }

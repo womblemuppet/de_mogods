@@ -20,7 +20,7 @@ setup_player_HUD_super_bar_locations(kouchou.players_in)
 
 for (var i = 0; i < kouchou.players_in; i++)
 {
-	super_bars_array[i]=setup_HUD_create_super_bar(super_bar_x[i],SUPER_BAR_Y,i,super_bar_width,5)
+	super_bars_array[i]=setup_HUD_create_super_bar(super_bar_x[i],SUPER_BAR_Y,i,super_bar_width,10)
 }
 
 

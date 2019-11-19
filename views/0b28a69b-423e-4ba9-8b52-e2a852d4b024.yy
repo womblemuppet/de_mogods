@@ -8,7 +8,8 @@
         "f054788c-2cb8-4de2-9e1d-d97d20238d83",
         "d7082c82-d338-46b0-94b1-1d12a9f14748",
         "6b1e3180-aec0-4f10-9f5d-46bd664d7ba4",
-        "557fc4fe-71b0-4df7-8f8e-bc8e5e77deb8"
+        "557fc4fe-71b0-4df7-8f8e-bc8e5e77deb8",
+        "77cd78b9-73b2-4cb5-b659-72157370c115"
     ],
     "filterType": "GMObject",
     "folderName": "HUD",

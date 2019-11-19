@@ -6,7 +6,7 @@ playerintersectioncheck=noone
 edgeofroomcheck=-1
 
 JUMPSPEED=15
-DOUBLEJUMPSPEED=12
+//DOUBLEJUMPSPEED=12 [finaledit] not currently in use
 doublejump=0        ///what jump the player is on (0 or 1)    - (when resetting double jump, make sure to give a number to doublejumptimer too)
 DOUBLEJUMPTIME=60  //time to double tap up for double jump
 doublejumptimer=0   ///the counter for the above
@@ -55,7 +55,7 @@ disable_next_groundpound_effect=true
 super_meter=0   ///charge towards super attack
 can_activate_super_mode=true //set to false until releasing both attack buttons after an orb call //[finaledit] seems useless atm
 
-super_meter_max=5
+super_meter_max=10
 super_mode_available=false
 super_mode_time_remaining=0   ///time remaining until super mode times out
 

@@ -5,7 +5,7 @@ WIDTH=600
 NUMBER_OF_SEGMENTS=aizen.RAGE_TRIGGER_AMOUNT
 SEGMENT_WIDTH=WIDTH/NUMBER_OF_SEGMENTS
 
-
+create_hud_bar_markers(NUMBER_OF_SEGMENTS,SEGMENT_WIDTH,spr_rage_bar_marker)
 	
 myline=instance_create_depth(x+1,y+1,-10,hud_bar_line)
 myline.creator=self.id

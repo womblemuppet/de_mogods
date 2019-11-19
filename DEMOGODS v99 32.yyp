@@ -2231,6 +2231,14 @@
             }
         },
         {
+            "Key": "48139999-d870-4b58-b4ec-ac3733dc5a12",
+            "Value": {
+                "id": "96e247b1-70a1-4b3c-8e0b-dde9392f0f76",
+                "resourcePath": "scripts\\create_hud_bar_markers\\create_hud_bar_markers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4820b96b-acab-4c78-83a7-fba45004b520",
             "Value": {
                 "id": "f6ba65f4-e8e3-4c7e-b9a8-9bfb05a63c03",
@@ -2260,6 +2268,14 @@
                 "id": "ee30f2cf-e16c-415c-b90e-04f0fc752202",
                 "resourcePath": "scripts\\attack_start_groundpound_descent\\attack_start_groundpound_descent.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "48ba133a-62c6-4cd6-b91a-e249b9203afc",
+            "Value": {
+                "id": "70120efb-5210-4440-bf1c-fd94527523b7",
+                "resourcePath": "views\\48ba133a-62c6-4cd6-b91a-e249b9203afc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3791,6 +3807,14 @@
             }
         },
         {
+            "Key": "718ecf03-1a1d-4651-8d29-0e3938eb2d4e",
+            "Value": {
+                "id": "31926cf2-8db4-492d-a9fb-49737b952a05",
+                "resourcePath": "sprites\\spr_rage_bar_marker\\spr_rage_bar_marker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71b243a7-9349-413d-9bc6-477d3402fba4",
             "Value": {
                 "id": "0c73746b-0d3d-4650-b21c-295e289634ba",
@@ -4028,6 +4052,14 @@
                 "id": "a3a6eb56-5dc7-4b88-af79-ebb466d7a1f8",
                 "resourcePath": "sprites\\sunblast_blast_spr\\sunblast_blast_spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "77cd78b9-73b2-4cb5-b659-72157370c115",
+            "Value": {
+                "id": "1d89f082-9a81-49c9-8264-44a80eccc531",
+                "resourcePath": "objects\\hud_bar_marker\\hud_bar_marker.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4364,6 +4396,14 @@
                 "id": "44eef56c-4b21-4c62-b5cc-197d6333ff8a",
                 "resourcePath": "fonts\\font_menu\\font_menu.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "81df19aa-5881-471b-b9d6-65b0669e4dda",
+            "Value": {
+                "id": "a9b25d1d-91bc-4900-8441-c982e1830859",
+                "resourcePath": "sprites\\spr_super_bar_marker\\spr_super_bar_marker.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8907,6 +8947,7 @@
         "619c7335-ab36-4f6f-942c-45bebf3f448d",
         "deb8895b-5f28-429a-9ba1-4b3ed7615cd0",
         "aedbbf26-2e44-4ad3-aaa4-16f6edab75fe",
+        "48139999-d870-4b58-b4ec-ac3733dc5a12",
         "48cda545-a786-4ea2-aaaa-b0f66ff2ef02",
         "73ebc3d4-2f84-4426-9fd5-a4dc9c35ef37",
         "cce0eae3-4d22-4cb6-b8f9-9674dd338976",

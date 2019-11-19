@@ -96,14 +96,13 @@ if room==gameroom
 	find_starting_spawn_locations()
 		
 		
-	////////////////////////////////////////////////////// SPAWNS	
+	///spawn player
 	var a;
-    
 	for (var i=0; i<kouchou.players_in; i+=1)
 	{
 		var ii;
 		ii=i
-		a=instance_create(spawn_positions_x[i],playerspawnheight,player)   //   -----------------SPAWN PLAYER-------------------
+		a=instance_create_depth(spawn_positions_x[i],playerspawnheight,-1,player) 
 		with a
 		{
 			P=ii
@@ -149,7 +148,7 @@ if room==gameroom
 			if gamepad
 				padnumber=ds_map_find_value(kouchou.keybinding_map_array[P],"padnumber")
 
-
+			///to be looped through in player key scrape at step start
 			USABLE_KEY_NAMES=[leftbutton,rightbutton,upbutton,downbutton,dashbutton,lightbutton,heavybutton,startbutton,superbutton]
 			USABLE_KEY_NAMES_SIZE=9
 

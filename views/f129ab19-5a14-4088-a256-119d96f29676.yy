@@ -6,7 +6,8 @@
     "children": [
         "4e746848-8bef-4e33-afef-4a661fd8db70",
         "aee57efd-d7c4-4c09-8b99-85507afc093d",
-        "69b9e792-9311-460b-95ed-896dac7a3018"
+        "69b9e792-9311-460b-95ed-896dac7a3018",
+        "81df19aa-5881-471b-b9d6-65b0669e4dda"
     ],
     "filterType": "GMSprite",
     "folderName": "super bar",
