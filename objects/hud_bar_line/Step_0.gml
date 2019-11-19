@@ -1,4 +1,4 @@
-if to_move>0
+if mode=="moving"
 {
 	repeat(SPEED)
 	{
