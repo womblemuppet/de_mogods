@@ -16,6 +16,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 				exception=true
 		}
 
+		//jump
 		if !exception
 		{
 			if (      (doublejump==0)   ||  (doublejumptimer>0 && doublejump==1)    )   //// if you push up and either its your first jump, or the timer for double jump is ok
@@ -40,7 +41,7 @@ if stunned_groundpound<1 && player_not_locked_down() && cripple_debuff_counter<1
 					set_jump_sprites=true         
 				}
                 
-				doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
+				//doublejump+=1    ///bizzarely, increment doublejump variable whether or not you jumped. [finaledit] probs should be in above brackets
 			}
 			
 			///////////VETERAN PARACHUTE
