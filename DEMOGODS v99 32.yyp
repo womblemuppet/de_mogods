@@ -2183,6 +2183,14 @@
             }
         },
         {
+            "Key": "461a553c-903b-4e1c-9ea3-85789a71da5a",
+            "Value": {
+                "id": "4f01d0dc-70bd-4d35-8a7c-504c0c040b8b",
+                "resourcePath": "sprites\\spr_rage_bar_marker_ritual_threshold\\spr_rage_bar_marker_ritual_threshold.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "465fd941-3d10-4546-b947-597f24e0c39a",
             "Value": {
                 "id": "d732d2c7-c0ea-426d-a306-5ffc1a0484e4",
@@ -2234,7 +2242,7 @@
             "Key": "48139999-d870-4b58-b4ec-ac3733dc5a12",
             "Value": {
                 "id": "96e247b1-70a1-4b3c-8e0b-dde9392f0f76",
-                "resourcePath": "scripts\\create_hud_bar_markers\\create_hud_bar_markers.yy",
+                "resourcePath": "scripts\\create_super_bar_markers\\create_super_bar_markers.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -7959,6 +7967,14 @@
             }
         },
         {
+            "Key": "e5749b0a-102a-4d73-be2f-9e02474fb054",
+            "Value": {
+                "id": "4b4e51d6-5c5f-44b3-8617-91c8b7619f66",
+                "resourcePath": "scripts\\create_rage_bar_markers\\create_rage_bar_markers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e57de6f1-e552-4005-9acd-a9a134675480",
             "Value": {
                 "id": "3409ee6d-e008-4fc5-9d7d-fb7166d26209",
@@ -8948,6 +8964,7 @@
         "deb8895b-5f28-429a-9ba1-4b3ed7615cd0",
         "aedbbf26-2e44-4ad3-aaa4-16f6edab75fe",
         "48139999-d870-4b58-b4ec-ac3733dc5a12",
+        "e5749b0a-102a-4d73-be2f-9e02474fb054",
         "48cda545-a786-4ea2-aaaa-b0f66ff2ef02",
         "73ebc3d4-2f84-4426-9fd5-a4dc9c35ef37",
         "cce0eae3-4d22-4cb6-b8f9-9674dd338976",

@@ -10,10 +10,11 @@ destroy_proximity_coods_x=ds_list_create()
 destroy_proximity_coods_y=ds_list_create()
 
 current_shitcall=noone
-RAGE_TRIGGER_AMOUNT=20
-RAGE_RITUAL_LEVEL=18
-can_ritual=false
 rage=0
+RAGE_TRIGGER_AMOUNT=20  ///triggers at this amount
+RAGE_RITUAL_LEVEL=17
+can_ritual=false
+
 
 surface_redraw_counter=0   ///counter for SURFACE_REDRAW_INTERVAL
 SURFACE_REDRAW_INTERVAL=400  ///surface will be redrawn every x travelled

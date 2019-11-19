@@ -59,7 +59,7 @@ else if sprite_index==sprites[? "ritual"]
 	///if still in ritual rage threshold
 	if aizen.can_ritual
 	{
-		increase_rage(2)
+		increase_rage(4)
 		player_add_super(4)
 	}
 	player_set_idle()

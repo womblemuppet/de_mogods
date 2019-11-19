@@ -1,10 +1,11 @@
 //add rage
 with aizen
 {
+	//add rage
 	rage+=argument0
 	
-	
-	if rage > RAGE_RITUAL_LEVEL
+	//update can_ritual
+	if rage >= RAGE_RITUAL_LEVEL
 		can_ritual=true
 	else
 		can_ritual=false

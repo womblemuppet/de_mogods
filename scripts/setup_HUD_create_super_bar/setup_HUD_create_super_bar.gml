@@ -19,7 +19,7 @@ with new_super_bar
 	NUMBER_OF_SEGMENTS=number_of_segments
 	SEGMENT_WIDTH=WIDTH/NUMBER_OF_SEGMENTS
 	
-	create_hud_bar_markers(NUMBER_OF_SEGMENTS,SEGMENT_WIDTH,spr_super_bar_marker)
+	create_super_bar_markers(NUMBER_OF_SEGMENTS,SEGMENT_WIDTH,spr_super_bar_marker)
 	
 	myline=instance_create_depth(x+1,y+1,-10,hud_bar_line)
 	myline.creator=self.id
