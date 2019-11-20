@@ -243,7 +243,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 
 	if cangroundpound==2   //////////GP HITS GROUND EFFECT EVENT
 	{
-		effect_aniend(sprites[? "gp_hit_ground_effect"],0.4,-2)
+		effect_aniend(sprites[? "gp_effect_sprite"],0.4,-2)
 		
 		var exception;
 		exception=false
@@ -264,6 +264,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 					image_speed=FRAME_SPEED_FAST
 					sprite_index=sprites[? "uniques_whirlwind"]
 					uniques_whirlwind_active=true
+					break;
 				}
 			}
 		}

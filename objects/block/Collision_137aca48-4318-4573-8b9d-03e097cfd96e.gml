@@ -1,1 +1,1 @@
-sprite_index=block_mask75
+sprite_index=block_mask75  //[finaledit] does removing this cause block spriting issues?

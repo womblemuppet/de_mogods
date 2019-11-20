@@ -16,7 +16,7 @@ switch character
             
 			if H==3 || H==4 || H==5
 			{
-				sprites[? "gp_hit_ground_effect"]=Ooga_gp_effect
+				sprites[? "gp_effect_sprite"]=Ooga_gp_effect
 				sprites[? "rocketjump"]=Ooga_4H_rocketjump
 				sprites[? "rocketjump_u"]=Ooga_U_rocketjump
 				sprites[? "rocketjump_charge"]=Ooga_4H_rocketjump_charge
@@ -57,6 +57,8 @@ switch character
 				sprites[? "gpfall"]=Ooga_4H_gpfall
 				sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 				sprites[? "gpfall_u"]=Ooga_U_gpfall
+				sprites[? "gpland_whiff"]=Ooga_4H_gp_landing_whiff
+				sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 				sprites[? "run_u"]=Ooga_U_run
 				sprites[? "idle_u"]=Ooga_U_idle
 				sprites[? "jump_u"]=Ooga_U_jump
@@ -83,7 +85,7 @@ switch character
 			supersparkle_sprite=P1_saiyanaura 
 			sentinel_colour=c_purple     
 			sprites[? "uniques_place_mine"]=Vet_3H_place_mine
-			sprites[? "gp_hit_ground_effect"]=Vet_groundpound_effect
+			sprites[? "gp_effect_sprite"]=Vet_groundpound_effect
 			sprites[? "rocketjump"]=Vet_3H_rocketjump
 			sprites[? "rocketjump_u"]=Vet_3H_rocketjump   ///super version (to be changed)
 			sprites[? "rocketjump_charge"]=Vet_3H_rocketjump_charge
@@ -128,6 +130,8 @@ switch character
 			sprites[? "gpfall"]=Vet_3H_gpfall
 			sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 			sprites[? "gpfall_u"]=Vet_3H_gpfall  //super version
+			sprites[? "gpland_whiff"]=Ooga_4H_gp_landing_whiff
+			sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 			sprites[? "run_u"]=Vet_3H_run    //super version
 			sprites[? "idle_u"]=Vet_3H_idle_E //super version
 			sprites[? "jump_u"]=Vet_3H_jump  //super version
@@ -160,7 +164,7 @@ switch character
 			sprites[? "rocketjump_charge"]=Slinger_3H_rocketjump_charge
 			sprites[? "rocketjump_charge_u"]=Slinger_3H_rocketjump_charge  ///super version (to be changed)
 			sprites[? "rocketjump_effect"]=Slinger_rjump_effect_spr
-			sprites[? "gp_hit_ground_effect"]=Slinger_groundpound_effect
+			sprites[? "gp_effect_sprite"]=Slinger_groundpound_effect
 			sprites[? "recoiling_u"]=Slinger_3H_recoiling  ///super version (to be changed)
 			sprites[? "recoiling"]=Slinger_3H_recoiling
 			sprites[? "recoiling_air"]=Slinger_3H_recoiling_air
@@ -187,6 +191,8 @@ switch character
 			sprites[? "gpfall"]=Slinger_3H_gpfall
 			sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 			sprites[? "gpfall_u"]=Slinger_3H_gpfall  ///super version (to be changed)
+			sprites[? "gpland_whiff"]=Ooga_4H_gp_landing_whiff
+			sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 			sprites[? "run_u"]=Slinger_3H_run  ///super version (to be changed)
 			sprites[? "idle_u"]=Slinger_3H_idle  ///super version (to be changed)
 			sprites[? "jump_u"]=Slinger_3H_jump  ///super version (to be changed)
@@ -222,7 +228,7 @@ switch character
 		sprites[? "rocketjump_charge"]=Bait_3H_rocketjump_charge
 		sprites[? "rocketjump_charge_u"]=Bait_3H_rocketjump_charge  ///super version (to be changed)
 		sprites[? "rocketjump_effect"]=Bait_rjump_effect_spr
-		sprites[? "gp_hit_ground_effect"]=Bait_groundpound_effect
+		sprites[? "gp_effect_sprite"]=Bait_groundpound_effect
 		sprites[? "recoiling_u"]=Bait_3H_recoiling  ///super version (to be changed)
 		sprites[? "recoiling"]=Bait_3H_recoiling
 		sprites[? "recoiling_air"]=Bait_3H_recoiling_air
@@ -249,6 +255,8 @@ switch character
 		sprites[? "gpfall"]=Bait_3H_gpfall
 		sprites[? "super_activate"]=Ooga_pal1_ult_actiavte
 		sprites[? "gpfall_u"]=Bait_3H_gpfall  //super version
+		sprites[? "gpland_whiff"]=Ooga_4H_gp_landing_whiff
+		sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 		sprites[? "run_u"]=Bait_3H_run_super_mode  //super version
 		sprites[? "idle_u"]=Bait_3H_idle_super_mode  //super version
 		sprites[? "jump_u"]=Bait_3H_jump  //super version

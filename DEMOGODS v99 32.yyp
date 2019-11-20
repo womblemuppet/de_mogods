@@ -1071,6 +1071,14 @@
             }
         },
         {
+            "Key": "1d15d5fc-dd18-4d6e-97a8-2054930bd8bb",
+            "Value": {
+                "id": "1d5f816f-40c7-4b85-b3f2-97748f8e0693",
+                "resourcePath": "sprites\\Ooga_4H_gp_landing_whiff\\Ooga_4H_gp_landing_whiff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1da8f04e-4cfa-4816-affe-b1a7584571c9",
             "Value": {
                 "id": "d2c6c267-77ac-4ea4-a8da-a6e2449daa22",
