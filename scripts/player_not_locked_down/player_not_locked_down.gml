@@ -25,5 +25,6 @@ if !stunned_groundpound
 && ritual_lockdown==0
 && is_proned==false
 && before_prone_falling_lockdown==0
+&& groundpound_whiff_lockdown==0
 	return true
 return false

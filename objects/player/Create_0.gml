@@ -48,6 +48,7 @@ cangroundpound=0                         /// -1 jump delay 0 can 1 freeze 2 down
 GROUNDPOUND_UNAVAILABLE_TIME=5           //prevents groundpound after jumping for this long
 GROUND_POUND_STUN_AMOUNT=70              ///steps to be staggered for ///payday stun is set to twice this
 GROUND_POUND_SPEED=15
+groundpound_whiff_lockdown=0  //1 in lockdown
 groundpound_current_hitbox_object=noone
 recovery_groundpound_active=false        ///the player has ceiling-kill protection if this is active
 disable_next_groundpound_effect=true

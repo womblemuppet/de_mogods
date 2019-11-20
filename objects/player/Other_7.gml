@@ -32,6 +32,11 @@ else if sprite_index==sprites[? "gpfall"] || sprite_index==sprites[? "gpfall_u"]
 	image_speed=FRAME_SPEED_NORMAL    
 	image_index=image_number-2
 }
+else if sprite_index==sprites[? "gpland_whiff"]
+{
+	groundpound_whiff_lockdown=0
+	player_set_idle()
+}
 else if sprite_index==sprites[? "rocketjump_charge"] || sprite_index==sprites[? "rocketjump_charge_u"]  ///rocket jump or rocket jump super
 {
 	if dash_rocket_jump==1

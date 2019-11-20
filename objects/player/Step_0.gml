@@ -256,8 +256,11 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 			{
 				switch attacks[? "gp_hit_ground_effect"]
 				{
-					case 0:
-					//nandemonai
+					case "no_effect":
+					sprite_index=sprites[? "gpland_whiff"]
+					image_index=0
+					image_speed=FRAME_SPEED_NORMAL
+					groundpound_whiff_lockdown=1
 					break;
 					case "bait_whirlwind":
 					image_index=0
