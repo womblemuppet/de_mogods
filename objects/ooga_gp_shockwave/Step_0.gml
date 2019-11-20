@@ -1,5 +1,5 @@
 var b;
-b=create_terrain_cutter(sprite_index, "pushed", direction,6)
+b=create_terrain_cutter(ooga_ultimate_groundpound_shockwave_cutter, "pushed", direction,6)
 b.alarm[0]=1
 
 life-=1

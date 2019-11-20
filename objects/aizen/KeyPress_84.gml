@@ -1,4 +1,4 @@
-start_shitcall()
+//start_shitcall()
 
 //var b;
 //b=find_a_diggable_block()

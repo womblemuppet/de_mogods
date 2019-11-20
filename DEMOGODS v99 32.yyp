@@ -8767,6 +8767,14 @@
             }
         },
         {
+            "Key": "fe528dd7-83d7-478a-98c1-4ed1f096b60c",
+            "Value": {
+                "id": "8038ace2-7686-41a4-99dc-6df197311776",
+                "resourcePath": "sprites\\ooga_ultimate_groundpound_shockwave_cutter\\ooga_ultimate_groundpound_shockwave_cutter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fe60d4c7-f40b-4227-9a40-686c16f005d1",
             "Value": {
                 "id": "83981231-9b65-40a4-a343-98270444d075",
