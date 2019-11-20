@@ -16,8 +16,7 @@ if argument2==0
 {
 	 a.blockchunktype=aizen.chunk_type
 }
-//else
-//	a.blockchunktype=blockchunktype
+
 
 with a
 {

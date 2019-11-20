@@ -21,7 +21,14 @@
         "48ada762-336d-4160-8be1-61a22524e996",
         "ba24f45d-0505-49bc-bb13-62e3f0a0058f",
         "c795c5e4-c2a2-4977-ad24-819dea5bd10f",
-        "2c2a5b48-a4b3-4a96-a8b6-4df077dd0eab"
+        "2c2a5b48-a4b3-4a96-a8b6-4df077dd0eab",
+        "14c69cc2-2bd9-44b2-b0f8-527045986430",
+        "5a885711-6042-4e2a-bb0d-38fdeba362a6",
+        "fa56d02f-930d-41c3-a7cf-bceaf040307b",
+        "c306eb38-4c10-467f-8c78-c9eb07fcc1b9",
+        "84af62a1-8651-4047-bedd-df0a46b29871",
+        "a9445bd0-6c01-4aa7-a644-91341c01f9c3",
+        "92e95a22-de41-4ada-be82-791dde2313e2"
     ],
     "filterType": "GMSprite",
     "folderName": "temple",
