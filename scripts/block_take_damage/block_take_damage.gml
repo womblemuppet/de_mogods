@@ -24,9 +24,6 @@ switch other.type
 	};
 
 	break;
-	case "gilded":
-	//effect_create_above(ef_firework,x,y,2,c_olive)
-	break;
 	case "disintegrated":
 	//effect_create_above(ef_firework,x,y,2,c_blue)
 	break;
@@ -57,52 +54,31 @@ switch other.type
     
     
 	break;
-	case "ritual":
+	//case "funnel":
+    
+	//var noblocks;
+	//noblocks=20
         
-	var noblocks;
-	noblocks=10
-        
-	for (var i=0; i<aizen.bw; i+=noblocks)
-	{
-		for (var ii=0; ii<aizen.bh; ii+=noblocks)
-		{
-			a=instance_create(x+i,y+ii,ef_rubble)
-			a.sprite_index=sprite_index
-			a.image_xscale=0.25
-			a.image_yscale=0.25
-			a.image_angle=random(360)
-			a.dir=85+random(10)
-			a.spd=4
-			a.alarm[0]=6
-		}
+	//for (var i=0; i<aizen.bw; i+=noblocks)
+	//{
+	//	for (var ii=0; ii<aizen.bh; ii+=noblocks)
+	//	{
+	//		a=instance_create(x+i,y+ii,ef_rubble)
+	//		a.sprite_index=sprite_index
+	//		a.image_xscale=0.4
+	//		a.image_yscale=0.4
+	//		a.image_angle=choose(0,45)
+	//		a.dir=85+random(10)
+	//		a.spd=choose(12,14)
+	//		a.direction=90
+	//		a.speed=1
+	//		a.alarm[0]=5
+	//		a.hitgroundaction=choose("fall")
+	//	};
     
-	}
-	break;
-	case "funnel":
+	//};
     
-	var noblocks;
-	noblocks=20
-        
-	for (var i=0; i<aizen.bw; i+=noblocks)
-	{
-		for (var ii=0; ii<aizen.bh; ii+=noblocks)
-		{
-			a=instance_create(x+i,y+ii,ef_rubble)
-			a.sprite_index=sprite_index
-			a.image_xscale=0.4
-			a.image_yscale=0.4
-			a.image_angle=choose(0,45)
-			a.dir=85+random(10)
-			a.spd=choose(12,14)
-			a.direction=90
-			a.speed=1
-			a.alarm[0]=5
-			a.hitgroundaction=choose("fall")
-		};
-    
-	};
-    
-	break;
+	//break;
 		default:
 	show_error("gender fluid rubble. other.id = "+string(other.id)+ "my id="+string(id),true)
 }

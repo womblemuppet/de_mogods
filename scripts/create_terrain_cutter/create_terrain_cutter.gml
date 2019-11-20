@@ -3,7 +3,6 @@
   type is a string
   current types   (list may not be up to date, check block_take_damage)  :
   "hit"
-  "gilded"
   "disintegrated"
   "pushed"
 ****************************************************/

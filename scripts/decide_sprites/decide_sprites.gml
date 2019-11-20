@@ -46,7 +46,6 @@ switch character
 				sprites[? "light_attack"]=Ooga_4H_uppercut
 				sprites[? "dash_u"]=Ooga_U_charge 
 				sprites[? "dash"]=Ooga_4H_charge
-				//sprites[? "gilded"]=goldboi
 				sprites[? "death_fall"]=Uga_death_by_fall
 				sprites[? "idle"]=Ooga_4H_idle
 				sprites[? "run"]=Ooga_4H_run
@@ -118,7 +117,6 @@ switch character
 			sprites[? "light_attack"]=Vet_3H_uppercut
 			sprites[? "dash_u"]=Vet_3H_charge    ////super version (to be changed) 
 			sprites[? "dash"]=Vet_3H_charge
-			sprites[? "gilded"]=goldboi
 			sprites[? "death_fall"]=Vet_death_by_fall
 			sprites[? "idle"]=Vet_3H_idle_E
 			sprites[? "run"]=Vet_3H_run
@@ -178,7 +176,6 @@ switch character
 			sprites[? "light_attack"]=Vet_3H_uppercut
 			sprites[? "dash_u"]=Slinger_3H_charge    ////super version (to be changed) 
 			sprites[? "dash"]=Slinger_3H_charge
-			sprites[? "gilded"]=goldboi
 			sprites[? "death_fall"]=Slinger_death_by_fall
 			sprites[? "idle"]=Slinger_3H_idle
 			sprites[? "run"]=Slinger_3H_run
@@ -241,7 +238,6 @@ switch character
 		sprites[? "light_attack"]=Bait_3H_uppercut
 		sprites[? "dash_u"]=Bait_3H_dash    ////super version (to be changed) 
 		sprites[? "dash"]=Bait_3H_dash
-		sprites[? "gilded"]=goldboi
 		sprites[? "death_fall"]=Bait_death_by_fall
 		sprites[? "idle"]=Bait_3H_idle
 		sprites[? "run"]=Bait_3H_run
