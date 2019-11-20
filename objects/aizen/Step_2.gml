@@ -1,5 +1,4 @@
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   scrolling and terrain gen
+/// scrolling and terrain gen
 var lowest_player_y;
 lowest_player_y=0
 
@@ -23,6 +22,8 @@ if lowest_player_y>=SCROLL_THRESHOLD
 {	//////////////////////////////////////// CAMERA SCROLL
 	var scrollspeed;
 	scrollspeed=5
+	
+	timeSinceLastScrolled=0
 	
 	with scrolls     ///scroll objects down with the 'view'
 		y-=scrollspeed
@@ -83,7 +84,8 @@ if lowest_player_y>=SCROLL_THRESHOLD
 		travelled_tick_biome_threshold_check()
 	}
 }
-
+else
+	timeSinceLastScrolled++
 
 bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
 total_baseline_movement+=player_baseline_difference

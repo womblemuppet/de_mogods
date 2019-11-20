@@ -183,6 +183,7 @@ if room==gameroom
 	
 	biomeswitch=false   ///true when cutting gap between biomes
 	travelled=0      ////total distance in pixels that the screen has scrolled down
+	timeSinceLastScrolled=0
 	
 	debug_amount_scrolled_since_last_tergen=0
 	

@@ -1,4 +1,4 @@
-if time_alive>LAVA_THRESHOLD
+if time_alive>LAVA_THRESHOLD && aizen.timeSinceLastScrolled>100
 {
 	if my_lava==noone
 		my_lava=instance_create_depth(0,room_height,-4,lava_level)

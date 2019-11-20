@@ -7,6 +7,6 @@ else
 	if damaging_timer<1
 	{
 		damaging=true
-		vspeed=-1
+		vspeed=-0.25
 	}
 }
