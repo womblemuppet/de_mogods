@@ -12,7 +12,7 @@ else
 	
 
 //increase movespeed if allowed to run
-if stunned==0 && player_not_locked_down()
+if staggered==0 && player_not_locked_down()
 {
 	var slow_ratio;
 	slow_ratio=1

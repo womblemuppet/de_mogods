@@ -5,7 +5,7 @@ if armouredsteps>0
 }
 
 var stun_amount,hknockback,vknockback,airmulti,airvmulti,aircheck1;
-stun_amount=argument0   ///time to be stunned
+stun_amount=argument0   ///time to be staggered
 hknockback=argument1   ///knockback hspeed
 vknockback=argument2
 airmulti=1 //multiplier when getting combod
@@ -33,7 +33,7 @@ if other.bunts==true
 		hspd=-hknockback*airmulti
     
 	vspd=-vknockback*airvmulti
-	stunned=stun_amount
+	staggered=stun_amount
 	if !place_meeting(x,y-1,block)
 		y-=1
 
@@ -79,7 +79,7 @@ else    /// if clash object exists created by pusher, clash, deleting clash obje
 	else
 		clasher.gothit.hspd=-hknockback*airmulti
 	clasher.gothit.vspd=-vknockback*airvmulti
-	clasher.gothit.stunned=stun_amount
+	clasher.gothit.staggered=stun_amount
 	effect_create_above(ef_firework,x,y,2,c_orange)
 	with clasher
 		instance_destroy()

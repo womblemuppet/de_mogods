@@ -13,7 +13,7 @@ if armouredsteps>0
 }
 
 hspd=0
-stunned=0
+staggered=0
 stunned_groundpound=stun_amount
 player_flinch(stun_amount)
 player_flush_lockdowns()

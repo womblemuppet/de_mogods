@@ -17,7 +17,7 @@ last_hit_knocked_down=false
 audio_play_sound(bam,5,false)
 
 if armouredsteps<1
-	stunned=arg_stun_amount
+	staggered=arg_stun_amount
 
 var attacker;
 if instance_exists(other.creator) || other.creator==noone

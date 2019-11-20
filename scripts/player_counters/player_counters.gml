@@ -14,10 +14,10 @@ if dashcd>0
 	if dashcd==0
 		dash_wallbreak_forgive=false
 }
-if stunned>0
+if staggered>0
 {
-	stunned-=1
-	if stunned==0 && stunned_groundpound<2
+	staggered-=1
+	if staggered==0 && stunned_groundpound<2
 		cc_reset_combo_counter()
 }
 if stunned_groundpound>0
@@ -25,7 +25,7 @@ if stunned_groundpound>0
 	stunned_groundpound-=1
 	if stunned_groundpound==0
 	{
-		if stunned==0
+		if staggered==0
 			cc_reset_combo_counter()
 		if flinch_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
