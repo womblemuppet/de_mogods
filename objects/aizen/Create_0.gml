@@ -1,7 +1,7 @@
 room=gameroom
 
 
-to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
+blocks_to_draw=ds_list_create()     ////list of block ids to be drawn in draw_blocks_and_fossils during draw event
 to_draw_size=0
 will_update_blocks_to_draw_list=false
 

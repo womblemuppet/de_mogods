@@ -1,7 +1,7 @@
 
 //[finaledit]
 show_message(string(id)+" "+sprite_get_name(sprite_index))
-/*
+
 if position_meeting(x+aizen.bw,y,block) 
     show_message("should be right")
 //if position_meeting(x+20,y,block) 

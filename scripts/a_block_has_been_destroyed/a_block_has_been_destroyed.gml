@@ -1,13 +1,9 @@
-/*
-  called once per step max, will be called if a block was destroyed last step.
-*/
-
+// called once per step max, will be called if a block was destroyed last step.
 
 will_update_blocks_to_draw_list=true
 
 var xx,yy;
 
-//show_debug_message(string(ds_list_size(destroy_proximity_coods_x))+" is length of dpcx")
 for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 {
 	xx=destroy_proximity_coods_x[| i]	
@@ -15,12 +11,10 @@ for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 	
 	for  (ii = 0; ii < aizen.to_draw_size; ii++)
 	{
-		with aizen.to_draw[| ii]
+		with aizen.blocks_to_draw[| ii]
 		{
-			if distance_to_point(xx,yy)<125
-			{
+			if distance_to_point(xx,yy)<160
 				ds_list_add(aizen.blockstosprite,self.id)
-			}
 		}
 	}
 	

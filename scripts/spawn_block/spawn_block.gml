@@ -9,10 +9,6 @@ a=instance_create(argument0,argument1,block)   //if change this change room spaw
 a.visible=true
 a.variant=choose(5,17)
 a.divisible=true
-a.image_xscale=aizen.bw/40
-a.image_yscale=aizen.bh/40
-
-
 a.chunk_name_at_spawn_time=aizen.current_chunk_name
 
 

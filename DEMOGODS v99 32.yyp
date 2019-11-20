@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "064e8ae6-f46b-4819-9815-0ab6c193786e",
+            "Value": {
+                "id": "22d2ff87-9f44-403f-b588-abbeb350c930",
+                "resourcePath": "sprites\\block_mask75\\block_mask75.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0690bd6d-ed82-442b-92a1-393575a2686b",
             "Value": {
                 "id": "087d8f53-c559-4127-9430-b8271563a5e9",
@@ -347,14 +355,6 @@
             "Value": {
                 "id": "97558996-3b3f-487c-812d-2ef25bb384c4",
                 "resourcePath": "sprites\\Bait_3H_prone\\Bait_3H_prone.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "0976c84c-b40b-4b3c-813b-4596cdb07486",
-            "Value": {
-                "id": "ca77e086-dfd7-41e5-8dc0-3982dd47734a",
-                "resourcePath": "sprites\\block_mask20\\block_mask20.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -539,14 +539,6 @@
             "Value": {
                 "id": "e32063e4-7ef9-44f1-9cf6-7513ac6f1ad8",
                 "resourcePath": "sprites\\Vet_3H_run\\Vet_3H_run.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "0cb41793-4277-4dbd-9d84-f19353ec914b",
-            "Value": {
-                "id": "6109650f-ffa2-43ef-97f3-f7a208faa8a6",
-                "resourcePath": "sprites\\lava2\\lava2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1047,14 +1039,6 @@
             }
         },
         {
-            "Key": "1c28f636-01f0-4f8b-a06a-b07d010e49bc",
-            "Value": {
-                "id": "5ca9ed91-5870-4ecc-95bc-ffbcb2eb95da",
-                "resourcePath": "sprites\\lava16\\lava16.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "1c8105cf-2773-4691-8a2f-bdbc1167d143",
             "Value": {
                 "id": "d10b2833-963f-4d1f-b210-72fb39b79780",
@@ -1115,14 +1099,6 @@
             "Value": {
                 "id": "103896bf-d847-44df-a576-1983dbc295a2",
                 "resourcePath": "sprites\\editor_tornado\\editor_tornado.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "1ef0f589-3d81-443e-8b42-426e181efe3c",
-            "Value": {
-                "id": "f323c575-317a-4b1a-92fd-301e1573d618",
-                "resourcePath": "sprites\\lava10\\lava10.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2075,14 +2051,6 @@
             "Value": {
                 "id": "668c3745-d464-46a6-97f7-3407b9a5f8ad",
                 "resourcePath": "sprites\\mask_snowball\\mask_snowball.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "41899f83-e2b0-4270-bd2b-8e1e6864e234",
-            "Value": {
-                "id": "2ea4da08-2276-4a40-8cbe-aecad66d173f",
-                "resourcePath": "sprites\\lava9\\lava9.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4023,14 +3991,6 @@
             }
         },
         {
-            "Key": "762bd31f-5df8-40ad-b627-7a7aac22348a",
-            "Value": {
-                "id": "6e531bc6-5470-40e9-89c6-c01bb3693d43",
-                "resourcePath": "sprites\\lava14\\lava14.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "76695978-2a82-44cb-af20-86b05ba05185",
             "Value": {
                 "id": "b1b5b442-897a-449c-a0e5-5f8cd5ba42ee",
@@ -4103,14 +4063,6 @@
             }
         },
         {
-            "Key": "7808e22c-e662-451d-a740-6b916d04e5cf",
-            "Value": {
-                "id": "82889591-4b8e-41f5-b399-284f51d6e8ae",
-                "resourcePath": "sprites\\lava8\\lava8.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "785e3efb-f69f-4223-875f-7881b20e9b32",
             "Value": {
                 "id": "c0b852c0-b9f1-4954-ac3c-55c87950fa78",
@@ -4156,14 +4108,6 @@
                 "id": "86c4e54e-3320-4601-8412-ed1201f9b75d",
                 "resourcePath": "scripts\\player_vet_parachute_sprite_check\\player_vet_parachute_sprite_check.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7918896e-af0d-4ca3-9aef-cd34504bf641",
-            "Value": {
-                "id": "577c2884-c544-4f43-bfb2-b1b452f5ec80",
-                "resourcePath": "sprites\\lava_grass\\lava_grass.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -4395,14 +4339,6 @@
             "Value": {
                 "id": "7065c548-7d9b-490c-ae22-a27a5643506b",
                 "resourcePath": "sprites\\cctextspr_number5_p1\\cctextspr_number5_p1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "81197839-4550-43df-85bf-3a78390c12f9",
-            "Value": {
-                "id": "77343f4e-d59f-44b4-b35f-240f440ec75f",
-                "resourcePath": "sprites\\lava13\\lava13.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6463,14 +6399,6 @@
             }
         },
         {
-            "Key": "bc2a6acf-8c37-4b5a-accc-31ed5bd24c5c",
-            "Value": {
-                "id": "f2bb0209-b3c6-481d-b2e7-95b3597bc197",
-                "resourcePath": "sprites\\lava4\\lava4.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bc6afb86-7bc0-4af4-b35b-fa86d9950297",
             "Value": {
                 "id": "723163f3-89d4-4296-9d2f-77f5234c21c2",
@@ -6707,14 +6635,6 @@
             "Value": {
                 "id": "e0431cf5-da46-4d84-bddb-cb813fb585da",
                 "resourcePath": "sprites\\Ooga_4H_airgrab_slam\\Ooga_4H_airgrab_slam.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c2c782bf-82b2-4751-a907-441009b7a26e",
-            "Value": {
-                "id": "61e1118b-02f1-4bdb-922c-9495d91a115d",
-                "resourcePath": "sprites\\lava_full\\lava_full.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7287,14 +7207,6 @@
             }
         },
         {
-            "Key": "d163e2af-45be-4ee5-8440-c98a80e15ec8",
-            "Value": {
-                "id": "80e73d95-b598-4513-abc1-329017c5e04a",
-                "resourcePath": "sprites\\lava6\\lava6.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "d1807f0b-8718-4aab-ab98-2a9c8c153761",
             "Value": {
                 "id": "e1468350-3c0c-4a1a-8e83-2f0cc201c01c",
@@ -7380,14 +7292,6 @@
                 "id": "8fc41993-a0f5-4d29-ace6-ab07f34951fd",
                 "resourcePath": "objects\\corpse\\corpse.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d4689ab2-15ea-443a-99bf-3f025b57b1fb",
-            "Value": {
-                "id": "23f90a45-a618-4a52-8d89-04622a39cef4",
-                "resourcePath": "sprites\\lava15\\lava15.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -7636,14 +7540,6 @@
                 "id": "e487a0e4-7966-4922-a69b-40e66c51b832",
                 "resourcePath": "scripts\\player_set_before_prone_falling_lockdown_state\\player_set_before_prone_falling_lockdown_state.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "db2819ac-5eb0-43e5-b882-605de8bc36b6",
-            "Value": {
-                "id": "99e8b853-3c13-49a3-b287-414482eb3bf5",
-                "resourcePath": "sprites\\lava12\\lava12.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -7924,14 +7820,6 @@
                 "id": "cb5c66f0-7ff3-4b13-b27b-f4e8892c75ff",
                 "resourcePath": "sprites\\Vet_3H_fall\\Vet_3H_fall.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "e31e32c6-4d7b-43f9-b500-50334aec061a",
-            "Value": {
-                "id": "6cf9925d-20d6-4632-af46-d60dc7caf7b6",
-                "resourcePath": "views\\e31e32c6-4d7b-43f9-b500-50334aec061a.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -8263,14 +8151,6 @@
             }
         },
         {
-            "Key": "ec659093-13a2-4054-919d-c2e3ab5242c6",
-            "Value": {
-                "id": "59a03e84-d1f2-4553-bb6f-83c9dca5aeaf",
-                "resourcePath": "sprites\\lava1\\lava1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "ec9c12de-abb3-4f1a-884c-14037984c4cd",
             "Value": {
                 "id": "28c810c6-9ea1-4257-8414-2db784ea7da5",
@@ -8391,14 +8271,6 @@
             }
         },
         {
-            "Key": "efcdc254-245e-4395-ac1f-f2a0733468f4",
-            "Value": {
-                "id": "5afae355-dbba-4798-9084-75cf10b188dd",
-                "resourcePath": "sprites\\lava5\\lava5.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f0244d26-3f03-456e-af9f-4c8b2ec5ca5b",
             "Value": {
                 "id": "54b5fb21-083d-42c9-bbf9-83c8dbc63096",
@@ -8511,27 +8383,11 @@
             }
         },
         {
-            "Key": "f2f425ce-9c72-41b2-a121-d05cd92e9fe1",
-            "Value": {
-                "id": "3394651c-729f-46f2-acde-25a2afcd2292",
-                "resourcePath": "sprites\\lava7\\lava7.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f3fdd1bd-1c8b-4c85-baaf-f2c7a4e9cc54",
             "Value": {
                 "id": "98abdc13-e87e-495e-9e13-43750968a9cb",
                 "resourcePath": "objects\\drillmine\\drillmine.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f4099da0-9590-4d74-9504-23d73489b6fd",
-            "Value": {
-                "id": "43560e55-8eb3-4074-ba1c-25849974751b",
-                "resourcePath": "sprites\\block_mask40\\block_mask40.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -8564,14 +8420,6 @@
                 "id": "58527ad3-4703-4f88-8406-d9ca8fbcafa4",
                 "resourcePath": "scripts\\player_is_hittable\\player_is_hittable.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f5c62a5b-07f7-4bbc-abb8-ba11b341c03a",
-            "Value": {
-                "id": "8fc7b4ed-4128-4f77-a62b-abd61a9c598c",
-                "resourcePath": "sprites\\lava3\\lava3.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -8739,14 +8587,6 @@
             "Value": {
                 "id": "6d7029ff-4fd1-42cc-be44-88183599d5e6",
                 "resourcePath": "sprites\\OogaR_4H_air\\OogaR_4H_air.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fb80fcdc-d4af-495b-a762-f48b9880071b",
-            "Value": {
-                "id": "b7c5dea8-ae29-40fa-940e-ee506d79072c",
-                "resourcePath": "sprites\\lava11\\lava11.yy",
                 "resourceType": "GMSprite"
             }
         },

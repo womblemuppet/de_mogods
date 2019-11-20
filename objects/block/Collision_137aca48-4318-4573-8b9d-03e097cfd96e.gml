@@ -1,0 +1,1 @@
+sprite_index=block_mask75

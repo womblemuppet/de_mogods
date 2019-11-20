@@ -46,7 +46,7 @@ switch (terraintype)
 	case "rectangle" :
 	if block_column_number*aizen.bw+kouchou.room_left_border_x<rectx1 || block_column_number*aizen.bw+kouchou.room_left_border_x>rectx2+aizen.bw
 		makeok=false
-	//if terrain_ammo==1 && (block_column_number*40-40==round(rectx1/40)*40 || block_column_number*40+40==round(rectx2/40)*40  || block_column_number*40==round(rectx1/40)*40 || block_column_number*40==round(rectx2/40)*40 )
+
 	if terrain_ammo==1 && random(1)>0.75 || terrain_ammo==2 
 		makeok=true                 break;
                 
@@ -54,7 +54,7 @@ switch (terraintype)
 	case "rectanglebumpy" :
 	if block_column_number*aizen.bw+kouchou.room_left_border_x<rectx1 || block_column_number*aizen.bw+kouchou.room_left_border_x>rectx2+aizen.bw
 		makeok=false
-	//if terrain_ammo==1 && (block_column_number*40-40==round(rectx1/40)*40 || block_column_number*40+40==round(rectx2/40)*40  || block_column_number*40==round(rectx1/40)*40 || block_column_number*40==round(rectx2/40)*40 )
+
 	if terrain_ammo==1 && random(1)>0.75 || terrain_ammo==2 
 		makeok=true                 
 	if block_column_number>platform_singleblob_startxi && block_column_number<platform_singleblob_endxi  && terrain_ammo==platform_singleblob_ya     ///random platform
@@ -65,16 +65,7 @@ switch (terraintype)
 	case "reverserectangle" :
 	makeok=false
 	if block_column_number*aizen.bw+kouchou.room_left_border_x<rectx1 || block_column_number*aizen.bw+kouchou.room_left_border_x>rectx2
-		makeok=true
-
-	/*
-	if block_column_number*40<rectx1+40*(1-(terrain_ammo mod 3)) || block_column_number*40>rectx2-40*(terrain_ammo mod 3)
-	makeok=true
-	if terrain_ammo==1
-	{
-	if block_column_number*40==round(rectx1/40)*40 || block_column_number*40==round(rectx2/40)*40 
-		makeok=false
-	}     */                          break;
+		makeok=true                    break;
             
             
 	case "singleplatform" :

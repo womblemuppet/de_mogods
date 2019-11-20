@@ -47,13 +47,13 @@ if file_exists("options.txt")
 	readgrab=file_text_read_string(OPT)
 	
 	setmenu_block_width=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
-	setmenu_block_width=real(setmenu_block_width)
+	setmenu_block_width=75  // (setmenu_block_width)
 	
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
 	
 	setmenu_block_height=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
-	setmenu_block_height=real(setmenu_block_height)	
+	setmenu_block_height=75  // real(setmenu_block_height)	
 	
 	file_text_readln(OPT)
 	readgrab=file_text_read_string(OPT)
