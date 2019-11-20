@@ -123,7 +123,7 @@ light_heavy_held_counter=0
 ritual_lockdown=0 //1 = in animation
 
 canbounce_counter=0  ///bounce counter
-BOUNCE_HORIZONTAL_VELOCITY=12
+BOUNCE_HORIZONTAL_VELOCITY=10
 BOUNCE_HORIZONTAL_MINOR_VELOCITY=1
 BOUNCE_VERTICAL_SKIM_VELOCITY=4  //positive, gets minused
 BOUNCE_VERTICAL_ONLY_VELOCITY=14  //positive, gets minused
