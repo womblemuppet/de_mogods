@@ -36,7 +36,7 @@ cavelevel=biome_length*3+CREATIONDELAY+200
 mountainlevel=biome_length*2+CREATIONDELAY-4400
 mountains_have_spawned=false
 
-terraintype=chunkery_chunk_type[? chunk_type]    ///type of chunk being created
+terraintype=chunkery_chunk_shape[? current_chunk_name]    ///type of chunk being created
 terrain_ammo=5      /// number of rows left on current chunk
 
 pitlist=ds_list_create()  //where the pits are

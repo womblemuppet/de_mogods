@@ -12,10 +12,8 @@ a.divisible=true
 a.image_xscale=aizen.bw/40
 a.image_yscale=aizen.bh/40
 
-if argument2==0
-{
-	 a.blockchunktype=aizen.chunk_type
-}
+
+a.chunk_name_at_spawn_time=aizen.current_chunk_name
 
 
 with a

@@ -11,6 +11,6 @@ a.divisible=false
 
 with a
 {
-    blockchunktype=aizen.chunk_type
+    chunk_name_at_spawn_time=aizen.current_chunk_name
 }
 return a

@@ -33,7 +33,7 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		switch typeofblock
 		{
 			case "block":
-				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,y_position,0)
+				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,y_position)
 				ds_list_add(blockstosprite_prevlayer,a)   break;
 			case "weaksand":
 				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;

@@ -3,8 +3,8 @@ if object_index==weaksand
     exit
 
 
-
-sprite_list=aizen.chunkery_sprite_list[? blockchunktype]
+///grab the sprite list of the chunk currently being used
+sprite_list=aizen.chunkery_sprite_list[? chunk_name_at_spawn_time]
 
 
 //var left,right,up,down;
