@@ -86,9 +86,15 @@ else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sp
 		a.target_x=uniques_vet_targeted_mine_last_hit.x
 		a.target_y=uniques_vet_targeted_mine_last_hit.y
 		a.direction=point_direction(x,y,a.target_x,a.target_y)
-		a.timer=ceil(point_distance(x,y,a.target_x,a.target_y)/7)
-		mines_ammo-=1
+		var dist,spd;
+		spd=15
+		dist=point_distance(x,y,a.target_x,a.target_y)
+		a.speed=spd
+		a.timer=ceil(dist/spd)
 		a.creator=self.id
+		
+		mines_ammo-=1
+		
 	}
 }
 else if sprite_index==sprites[? "uniques_dig_channel_u"] || sprite_index==sprites[? "uniques_dig_channel"]  ///vet dig

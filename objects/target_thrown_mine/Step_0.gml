@@ -1,6 +1,6 @@
 timer-=1
 
-if timer==0
+if timer<1
 {
 	if instance_exists(creator)
 	{
