@@ -27,7 +27,7 @@ if stunned_groundpound>0
 	{
 		if stunned==0
 			cc_reset_combo_counter()
-		if recoil_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
+		if flinch_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
 			sprite_index=sprites[? "recoiling"]
 			if super_mode_available
@@ -87,11 +87,12 @@ if dash_delay_before_can_attack_counter>0
 	dash_delay_before_can_attack_counter-=1
 }
 
-if recoil_sprite_counter>0                                           //recoil sprite end check
+//flinch sprite end check
+if flinch_sprite_counter>0    
 {
-	recoil_sprite_counter-=1
+	flinch_sprite_counter-=1
     
-	if recoil_sprite_counter==0
+	if flinch_sprite_counter==0
 	{
 		var pass;
 		pass=false

@@ -92,7 +92,7 @@ CLIMB_ROLL_2_BLOCKS_VSPD=-14
 CLIMB_ROLL_3_BLOCKS_VSPD=-16
 
 
-recoil_sprite_counter=0    ///time left where idle sprite becomes flinching animation (shouldn't be called recoil)
+flinch_sprite_counter=0    ///time left where idle sprite becomes flinching animation
 
 canpush=true   //// cooldown for uppercut (archaic...)
 push_other_attacks_timer=0 ///counter for below (archaic)
@@ -277,9 +277,9 @@ MAX_CANBOUNCE_COUNTER=20
 AIRGRAB_STUN_TIME=65
 
 
-sprites_below_run_priority=ds_list_create()   ///sprites on these lists can get replaced by run,idle and recoil sprites in events
+sprites_below_run_priority=ds_list_create()   ///sprites on these lists can get replaced by run,idle and flinch sprites in events
 sprites_below_idle_priority=ds_list_create()
-sprites_below_recoil_priority=ds_list_create()
+sprites_below_flinch_priority=ds_list_create()
 recoiling_sprites=ds_list_create()
 FALLING_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-0.25   ///if vspd larger than this swap from jumped sprite to falling sprite
 RECOILING_AIR_FLIP_SPRITE_THRESHOLD_VSPD_LARGER_THAN=-1  ///if vspd larger than this swap from recoiling air sprite to recoiling air flip

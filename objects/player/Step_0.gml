@@ -310,7 +310,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	if sprite_index==sprites[? "fall"]   ///////////////////fall sprite
 	{
 		sprite_index=sprites[? "landing"]
-		if recoil_sprite_counter>0
+		if flinch_sprite_counter>0
 		{
 			sprite_index=sprites[? "recoiling"]
 		}
@@ -319,7 +319,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 	if sprite_index==sprites[? "fall_u"]  //////////////////fall super sprite
 	{
 		sprite_index=sprites[? "landing_u"]   /////////////////idle super sprite
-		if recoil_sprite_counter>0
+		if flinch_sprite_counter>0
 		{
 			sprite_index=sprites[? "landing_u"]
 		}
@@ -346,7 +346,7 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
         
 	if pass
 	{
-		if recoil_sprite_counter>0
+		if flinch_sprite_counter>0
 		{
 			sprite_index=sprites[? "recoiling"]
 			if super_mode_available
@@ -1154,7 +1154,7 @@ player_handle_jump()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 player_vet_parachute_sprite_check()
-if recoil_sprite_counter<1
+if flinch_sprite_counter<1
 	player_falldown_sprite_check()
 else
 	player_falldown_sprite_check_recoiling()

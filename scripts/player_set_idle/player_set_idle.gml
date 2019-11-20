@@ -1,4 +1,4 @@
-if recoil_sprite_counter>0      /// RECOILING
+if flinch_sprite_counter>0      /// RECOILING
 {
 	player_set_flinch_sprites()
 	exit

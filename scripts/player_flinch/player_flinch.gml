@@ -1,12 +1,12 @@
-if recoil_sprite_counter<argument0
-	recoil_sprite_counter=argument0
+if flinch_sprite_counter<argument0
+	flinch_sprite_counter=argument0
 
 var pass;
 pass=false
 
-for (var i=0; i<ds_list_size(sprites_below_recoil_priority); i+=1)
+for (var i=0; i<ds_list_size(sprites_below_flinch_priority); i+=1)
 {
-	if ds_map_find_value(sprites,sprites_below_recoil_priority[| i])==sprite_index
+	if ds_map_find_value(sprites,sprites_below_flinch_priority[| i])==sprite_index
 	{
 		pass=true
 		break;
