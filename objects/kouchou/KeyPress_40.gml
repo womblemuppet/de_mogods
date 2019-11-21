@@ -3,6 +3,9 @@ if game_start_countdown>0
 
 if room==menu
 {
+	with ds_map_find_value(main_menu_option_components,main_menu_select)
+		main_menu_option_components_get_unselected()
+	
 	main_menu_select_number+=1
 	if main_menu_select_number>MAIN_MENU_SELECT_NUMBER_MAX
 		main_menu_select_number=0
@@ -18,6 +21,9 @@ if room==menu
 			
 		main_menu_select=main_menu_select_options[main_menu_select_number]
 	}
+	
+	with ds_map_find_value(main_menu_option_components,main_menu_select)
+		main_menu_option_components_get_selected()
 }
 else if room==settings
 {

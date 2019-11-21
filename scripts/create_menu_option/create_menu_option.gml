@@ -9,3 +9,5 @@ a.TEXT=argument2
 a.sprite_index=a.NORMAL_SPRITE
 a.x-=a.sprite_width
 a.to_move_right=a.sprite_width
+
+return a

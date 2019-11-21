@@ -3,13 +3,17 @@ if game_start_countdown>0
         
 if room==menu
 {
+	with ds_map_find_value(main_menu_option_components,main_menu_select)
+		main_menu_option_components_get_unselected()
+	
 	main_menu_select_number-=1
 	if main_menu_select_number==-1
 		main_menu_select_number=MAIN_MENU_SELECT_NUMBER_MAX
 
 	main_menu_select=main_menu_select_options[main_menu_select_number]
 
-	while main_menu_select=="single_player" || main_menu_select=="party_mode" || main_menu_select=="lore"   ///disabled options
+	//skip through disabled options
+	while main_menu_select=="single_player" || main_menu_select=="party_mode" || main_menu_select=="lore"
 	{
 		main_menu_select_number-=1
 		
@@ -18,6 +22,9 @@ if room==menu
 		
 		main_menu_select=main_menu_select_options[main_menu_select_number]
 	}
+	
+	with ds_map_find_value(main_menu_option_components,main_menu_select)
+		main_menu_option_components_get_selected()
 	
 }
 if room==settings

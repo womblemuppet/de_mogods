@@ -215,11 +215,11 @@ else if room==menu
 
 	if menu_any_player_start_button_check()
 	{
-		switch main_menu_select_number
+		switch main_menu_select
 		{
-			case 0:
+			case "singleplayer":
 			room=preoverworld           break;
-			case 1:
+			case "competitive_mode":
 			competitive_mode=true   
 			map="multiplayer"
 			MAX_PLAYER_COUNT=2
@@ -228,7 +228,7 @@ else if room==menu
 
                 
 			room=multiplayermenu    break;
-			case 2:
+			case "party_mode":
 			competitive_mode=false
 			map="multiplayer"
 			MAX_PLAYER_COUNT=4
@@ -236,14 +236,14 @@ else if room==menu
 			kouchou_set_select_menu_positions()
                 
 			room=multiplayermenu    break;
-			case 3:
+			case "lore":
 				room=loremenu           break;
-			case 4:
+			case "settings":
 				room=settings           break;
-			case 5:
+			case "exit":
 				game_end()              break;
 			default:
-				show_error("unknown main_menu_select_number destination",true) break;
+				show_error("unknown main_menu_select destination",true) break;
 		}
 	}
 }

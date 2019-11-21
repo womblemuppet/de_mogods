@@ -5799,6 +5799,14 @@
             }
         },
         {
+            "Key": "a947b0eb-90c4-4984-8fd6-917c9ba675db",
+            "Value": {
+                "id": "428348a4-4257-463b-8825-02abd521bc16",
+                "resourcePath": "scripts\\main_menu_option_components_get_selected\\main_menu_option_components_get_selected.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a94d27ee-e298-4484-9a2a-3190be53e9a3",
             "Value": {
                 "id": "b5d85668-b194-4bca-9d51-38cacaad4318",
@@ -8239,6 +8247,14 @@
             }
         },
         {
+            "Key": "eb7f1e31-2940-4c1c-900a-3b02c3ace000",
+            "Value": {
+                "id": "176d63de-1228-456a-a8ce-32250f540f47",
+                "resourcePath": "scripts\\main_menu_option_components_get_unselected\\main_menu_option_components_get_unselected.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ebbed6f1-93ff-476a-bee0-2ad1ebe5fcf6",
             "Value": {
                 "id": "1a5e2991-257f-458e-882e-61cd7fdbe410",
@@ -8575,6 +8591,14 @@
             }
         },
         {
+            "Key": "f719f6e2-5e89-4e6d-bd84-f45b53c53136",
+            "Value": {
+                "id": "b6f03e74-422a-4d1b-a3a6-52c19930a1d4",
+                "resourcePath": "views\\f719f6e2-5e89-4e6d-bd84-f45b53c53136.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f7b1d583-a33b-4ebc-830d-315c8d525540",
             "Value": {
                 "id": "5d8aa857-24b0-4c24-b98f-31125c29bf04",
@@ -8861,6 +8885,8 @@
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "8ac8e116-be57-4655-ac0d-6f9dc69728cf",
         "48bb7837-89f5-4be3-a9d5-ab688fbef33e",
+        "a947b0eb-90c4-4984-8fd6-917c9ba675db",
+        "eb7f1e31-2940-4c1c-900a-3b02c3ace000",
         "5c592a5d-f232-42c3-8650-d5d9aa8d1487",
         "ffdfdcd0-fb2c-4bf3-ac33-fe50b68d7fe6",
         "078ae249-2430-4b2e-88fd-42be5294cab8",
