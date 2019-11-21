@@ -130,14 +130,12 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 competitive_mode=false
 
 main_menu_select_number=1
-MAIN_MENU_SELECT_NUMBER_MAX=5
+MAIN_MENU_SELECT_NUMBER_MAX=3  //starting at 0
 main_menu_select_options[MAIN_MENU_SELECT_NUMBER_MAX]=""
-main_menu_select_options[0]="single_player"
-main_menu_select_options[1]="competitive_mode"
-main_menu_select_options[2]="party_mode"
-main_menu_select_options[3]="lore"
-main_menu_select_options[4]="settings"
-main_menu_select_options[5]="exit"
+main_menu_select_options[0]="competitive_mode"
+main_menu_select_options[1]="party_mode"
+main_menu_select_options[2]="settings"
+main_menu_select_options[3]="exit"
 
 main_menu_select=main_menu_select_options[main_menu_select_number]
 
