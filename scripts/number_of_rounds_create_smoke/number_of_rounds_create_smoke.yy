@@ -1,8 +1,8 @@
 {
-    "id": "cf124625-d8fd-4fa2-8f44-7af6cc99cf28",
+    "id": "7145b942-db25-4730-b490-dec398ea4086",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "create_menupart_basic",
+    "name": "number_of_rounds_create_smoke",
     "IsCompatibility": false,
     "IsDnD": false
 }

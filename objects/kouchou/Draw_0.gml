@@ -1,12 +1,4 @@
-if room==menu
-{
-	draw_clear(menu_letterbox_colour)
-	draw_sprite(menu_background_1,menu_background_subspr,midx+275,midy)
-	draw_set_font(font_menu)
-	draw_set_halign(fa_middle)
-	draw_set_colour(c_gray)
-}
-else if room==loremenu
+if room==loremenu
 {
 	var lorelistx,lorelisty,lorelistinterval;    
 	lorelistx=97
@@ -138,8 +130,6 @@ else if room==multiplayermenu && !selecting_number_of_games
 	//// if competitive, draw backgrounds and props
 	if competitive_mode
 	{
-		draw_clear(c_navy)
-		draw_sprite_ext(menu_competitive_groundback,0,0,0,room_width/1199,1,0,c_white,1)
 		draw_sprite(menu_first_to,0,room_width/2,60)
 	}
     

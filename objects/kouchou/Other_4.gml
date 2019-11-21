@@ -84,23 +84,37 @@ else if room==menu
 	ready[2]=-1
 	ready[3]=-1
 	player_join_update_controller_variables()
-	main_menu_logo=create_menupart_basic(logo_spr,0.05,room_width/3,125,-50,undefined)
-	main_menu_logo.image_xscale=3
+	main_menu_logo=create_menupart_generic(logo_spr,0.05,room_width/2,125,-50,undefined)
+	main_menu_logo.image_xscale=5
 	main_menu_logo.image_yscale=3
 
+	main_menu_background=create_menupart_generic(menu_background_1,0.05,0,0,0,undefined)
 	spawn_main_menu_options()
 }
 else if room==multiplayermenu
 {
 	if competitive_mode==true
-	{
-		number_of_games_cup_id=create_menupart_basic(number_of_games_cup_5_spr,0.01,room_width/2,room_height/2,-4,cup_step_event)
+	{  ///number of rounds setup
+		with main_menu_background
+			instance_destroy()
+		
+		number_of_games_cup_id=create_menupart_generic(number_of_games_cup_5_spr,0.01,room_width/2,room_height/2,-4,cup_step_event)
 		number_of_games_cup_id.vspeed=0.5
 		number_of_games_cup_id.gravity=0.1
 		
 		selecting_number_of_games=true
-		number_of_games_background=create_menupart_basic(number_of_games_background_spr,0,0,0,5,undefined)
+		number_of_games_background=create_menupart_generic(number_of_games_background_spr,0,0,0,5,undefined)
 		number_of_games_cup_glow_id=instance_create_depth(number_of_games_cup_id.x,number_of_games_cup_id.y,-3,number_of_games_cup_glow)
+		
+		for (var i = 0; i < 6;i++)
+		{
+			repeat(5)
+			{
+				with number_of_rounds_create_smoke()
+					y-=i*room_height/5-random(100)
+			}
+		}
+
 	}
 	else
 		selecting_number_of_games=false

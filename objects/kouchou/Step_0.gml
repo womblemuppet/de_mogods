@@ -25,6 +25,14 @@ if room==multiplayermenu
 	///////////  choose number of rounds  //////////////////////////////////////////
 	if selecting_number_of_games==true
 	{
+		
+		if rch_smoke_timer>0
+			rch_smoke_timer--
+		else  ///create smoke
+		{
+			number_of_rounds_create_smoke()
+			rch_smoke_timer=RCH_SMOKE_TIMER_MAX
+		}
 		if menu_any_player_up_button_check()
 		{
 			number_of_games_index++
@@ -44,14 +52,31 @@ if room==multiplayermenu
 			number_of_games_cup_id.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
 		}
 		else if menu_any_player_start_button_check()
-		{
+		{  ///go to character select
 			selecting_number_of_games=false
+			
+			//disperse smoke
+			with menu_component_generic
+			{
+				if step_script==number_of_rounds_smoke_step_event
+				{
+						mode="dying"
+						sprite_index=rch_smoke1_die
+						image_index=0
+						image_speed=0.02
+				}
+			}
+			
+			//destroy old components
 			with number_of_games_background
 				instance_destroy()
 			with number_of_games_cup_glow_id
 				instance_destroy()
 			with number_of_games_cup_id
 				instance_destroy()
+				
+			//create new components
+			create_menupart_generic(character_select_background_spr,0,0,0,5,undefined)
 		}
 		exit
 	}
@@ -205,11 +230,7 @@ if room==multiplayermenu
 	
 }
 else if room==menu
-{
-	menu_background_subspr+=0.05
-	if menu_background_subspr>floor(MENU_BACKGROUND_SUBSPR_LIMIT)
-		menu_background_subspr=0     
-	
+{ 	
 	menu_crab_subspr+=0.2
 	if menu_crab_subspr>MENU_CRAB_SUBSPR_LIMIT
 		menu_crab_subspr=0
@@ -225,7 +246,7 @@ else if room==menu
 			competitive_mode=true   
 			map="multiplayer"
 			MAX_PLAYER_COUNT=2
-                
+			
 			kouchou_set_select_menu_positions()
 
                 

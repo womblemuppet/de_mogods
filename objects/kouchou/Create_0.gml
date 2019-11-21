@@ -139,14 +139,17 @@ main_menu_select_options[3]="exit"
 
 main_menu_select=main_menu_select_options[main_menu_select_number]
 
-menu_background_subspr=0
-MENU_BACKGROUND_SUBSPR_LIMIT=17
 char_selectbox_subspr=0
 CHAR_SELECTBOX_SUBSPR_LIMIT=2
 character_portraits_subspr=0
 CHARACTER_PORTRAITS_SUBSPR_LIMIT=10
 menu_crab_subspr=0
 MENU_CRAB_SUBSPR_LIMIT=7
+
+RCH_SMOKE_TIMER_MAX=35
+rch_smoke_timer=0
+smokepos=0
+SMOKE_X_GAP=400
 
 /////////////////////////CHARACTER SELECT
 
