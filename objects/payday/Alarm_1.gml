@@ -27,7 +27,7 @@ if winning!=-1
     };
     if tie<2 
     {
-        screenflash(make_colour_rgb(207,181,59),0.3,0,8)
+        screenflash(make_colour_rgb(207,181,59),0.3,"fade after timer",8)
         with player
         {
             if P==winning       

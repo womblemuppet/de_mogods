@@ -1,7 +1,7 @@
-if fade==1
+if fade=="fade"
 {
-    image_alpha-=0.05
-    if image_alpha<0.05
+    alpha-=0.05
+    if alpha<0.05
         instance_destroy()
 }
 

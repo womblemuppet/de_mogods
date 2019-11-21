@@ -1,5 +1,5 @@
-if fade==0
-    fade=1
+if fade=="fade after timer"
+    fade="fade"
 else
     instance_destroy()
 

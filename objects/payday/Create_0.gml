@@ -10,6 +10,6 @@ purse[3]=0
 purse[0]=0
 purse[1]=0
 purse[2]=0
-screenflash(make_colour_rgb(207,181,59),0.2,0,4)
+screenflash(make_colour_rgb(207,181,59),0.2,"fade after timer",4)
 aizen.hothandspaydaycolour=c_yellow
 
