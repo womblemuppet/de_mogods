@@ -2290,7 +2290,7 @@
             "Key": "48bb7837-89f5-4be3-a9d5-ab688fbef33e",
             "Value": {
                 "id": "74f2324d-0400-4d7b-b306-2cbaa8a785c2",
-                "resourcePath": "scripts\\spawn_main_menu_selects\\spawn_main_menu_selects.yy",
+                "resourcePath": "scripts\\spawn_main_menu_options\\spawn_main_menu_options.yy",
                 "resourceType": "GMScript"
             }
         },

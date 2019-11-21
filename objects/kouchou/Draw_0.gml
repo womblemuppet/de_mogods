@@ -1,4 +1,3 @@
-
 if room==menu
 {
 	draw_clear(menu_letterbox_colour)
@@ -7,53 +6,6 @@ if room==menu
 	draw_set_font(font_menu)
 	draw_set_halign(fa_middle)
 	draw_set_colour(c_gray)
-    
-	/////////////////////////////////////////////////////////////////////draw main menu options
-	var vgap;
-	vgap=50
-
-	for (var i=0; i<MAIN_MENU_SELECT_NUMBER_MAX+1; i++)
-	{
-		draw_set_colour(c_black)
-		
-		var t;
-		switch main_menu_select_options[i]          ///// determine main menu text options
-		{
-			case "single_player":
-				t="SINGLEPLAYER" break;
-			case "competitive_mode":
-				t="COMPETITVE" break;
-			case "party_mode":
-				t="4P CHAOS" break;
-			case "lore":
-				t="LORE" break;
-			case "settings":
-				t="OPTIONS" break;
-			case "exit":
-				t="QUIT" break;
-			default:
-				show_error("unhandled main menu select option",true);
-		}
-		
-		if main_menu_select_number==i     ////draw selected menu item in white and draw crabs
-		{
-			draw_set_colour(c_white)  ///c_white
-			
-			var crabxoffset;
-			crabxoffset=40+string_width(t)/2
-			
-			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2-crabxoffset,room_height-375+50*i)
-			draw_sprite(crab_select_icon_gray,menu_crab_subspr,room_width/2+crabxoffset,room_height-375+50*i)
-		}
-		
-		if main_menu_select_options[i]=="single_player" || main_menu_select_options[i]=="party_mode" ||  main_menu_select_options[i]=="lore" ///// draw non selectable menu options in silver
-			draw_set_colour(c_silver)
-			
-
-				
-		draw_text(room_width/2,room_height-375+vgap*i,t)          ////////draw menu option
-	};
-    
 }
 else if room==loremenu
 {
