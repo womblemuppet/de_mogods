@@ -141,23 +141,7 @@ else if room==multiplayermenu && !selecting_number_of_games
 		/// if not competitive, draw coloured player backgrounds (temp)
 		if !competitive_mode
 			draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
-		
-        
-		//player join slot prompts
-		draw_set_colour(c_silver) 
-		draw_set_halign(fa_center)
-		if ready[i]==-1 && i==next_open_slot
-		{
-			draw_sprite_ext(menu_join_game_prompt_box,0,menu_player_join_prompt_x[i],menu_player_join_prompt_y[i]-100,1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
-			var t;
-				t="press [space] to add \na keyboard player \npress [start] on a controller\n to join"
-			if number_of_keyboards_in_use==1
-				t="press [enter] to add \na keyboard player\npress [start] on a controller\n to join"
-			if number_of_keyboards_in_use>1
-				t="press [start]\n on a controller to join"
-
-			draw_text(menu_player_join_prompt_middle_x[i],menu_player_join_prompt_y[i]+50,t)
-		}
+	
 		draw_set_halign(fa_left)
         
 		var flip,flipextra_x;     ///flips character select portrait for p1 and p3
@@ -172,26 +156,9 @@ else if room==multiplayermenu && !selecting_number_of_games
 		if ready[i]!=-1
 		{
 			//draw character portrait
-			if ready[i]!=2
-				draw_sprite_ext(character_portraits_array[selected_character_id[i]],character_portraits_subspr,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
-			else
-				draw_sprite_ext(character_portraits_array[selected_character_id[i]],0,charpor_x[i]+flipextra_x,charpor_y[i],flip,1,0,c_white,1)
-				
-			//draw options frame
-			if ready[i]==0 || ready[i]==1
-				draw_sprite_ext(menu_player_options_frame,0,menu_player_options_x[i],menu_player_options_y[i],1,1,0,CHARACTER_SELECT_OPTIONS_COLOUR[i],1)
 		}
-		if ready[i]==0     /// selecting character, draw character bio
-		{
-			for (ii = 0; ii < ds_list_size(lore_character_select_bio_array[selected_character_id[i]]); ++ii) 
-			{
-				draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+50+(ii*35),ds_list_find_value(lore_character_select_bio_array[selected_character_id[i]],ii)   )
-			}
-			
-			draw_sprite(character_titles_spr,selected_character_id[i],menu_player_character_title_x[i],menu_player_character_title_y[i])
-			//draw_text(menu_player_options_x[i]+50,menu_player_options_y[i]+70,lore_character_select_bio[selected_character_id[i]]) [continue] lore_character_select_bio_0
-		}
-		else if ready[i]==1                                                                   ////// player options setup 
+
+		if ready[i]==1                                                                   ////// player options setup 
 		{
 			var normalcol,hovercol;
 			normalcol=c_silver
@@ -232,19 +199,17 @@ else if room==multiplayermenu && !selecting_number_of_games
             
 			draw_text(menu_player_options_x[i]+150,menu_player_options_y[i]+150,"palette")
 			draw_text(menu_player_options_x[i]+350,menu_player_options_y[i]+150,string(palette[i]))               
-            
-            			draw_sprite(character_titles_spr_selected,selected_character_id[i],menu_player_character_title_x[i],menu_player_character_title_y[i])
 		}
 	}
     
 	if !competitive_mode
 		draw_sprite(mock_character_grid_background,0,midx,midy)
         
-	for (var i=0; i<chargrid_numberofcolumns; i+=1)
-	{   
-		for (ii=0; ii<chargrid_numberofrows; ii+=1)
-			draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
-	}
+	//for (var i=0; i<chargrid_numberofcolumns; i+=1)
+	//{   
+	//	for (ii=0; ii<chargrid_numberofrows; ii+=1)
+	//		draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
+	//}
     
     
 
@@ -269,7 +234,7 @@ else if room==multiplayermenu && !selecting_number_of_games
 	for (var i=0; i<4; i+=1)
 	{
 		if ready[i]==0
-			draw_sprite(selectbox_sprites[i],char_selectbox_subspr+i,chargrid_x[convert_chargrid_char_to_column(selected_character_id[i])],chargrid_y[convert_chargrid_char_to_row(selected_character_id[i])])
+			draw_sprite(selectbox_sprites[i],0,chargrid_x[convert_chargrid_char_to_column(selected_character_id[i])],chargrid_y[convert_chargrid_char_to_row(selected_character_id[i])])
 	};
     
 	///draw game start countdown

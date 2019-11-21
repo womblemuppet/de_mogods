@@ -8,7 +8,7 @@
         "cf327767-4e76-4b35-b3d0-455772886099"
     ],
     "filterType": "GMSprite",
-    "folderName": "roundschoice_smoke",
+    "folderName": "smoke",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

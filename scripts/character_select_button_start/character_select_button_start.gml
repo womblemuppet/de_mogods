@@ -1,14 +1,13 @@
-/*
-	argument0 = slot
-*/
+var playerid;
+playerid=argument0
 
-if ready[argument0]==0       
+if ready[playerid]==0       
 {
-	ready[argument0]+=1
+	ready[playerid]=1
 }
-else if ready[argument0]==1                                                                                        /// lock in P1
+else if ready[playerid]==1                                                                                        /// lock in P1
 {
-	ready[argument0]=2
+	ready[playerid]=2
 	if player_check_all_ready()
 	{
 		effect_create_above(ef_firework,room_width/2,room_height/2,2,c_white)

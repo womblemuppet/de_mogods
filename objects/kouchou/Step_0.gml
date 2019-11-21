@@ -1,16 +1,5 @@
 if room==multiplayermenu
 {
-	/////sprites
-	character_portraits_subspr+=0.15
-	if character_portraits_subspr>CHARACTER_PORTRAITS_SUBSPR_LIMIT
-		character_portraits_subspr=0
-
-	char_selectbox_subspr+=0.1
-	if char_selectbox_subspr>CHAR_SELECTBOX_SUBSPR_LIMIT
-		char_selectbox_subspr=0
-
-
-
 	/////start game countdown
 	if game_start_countdown>0
 	{
@@ -60,10 +49,10 @@ if room==multiplayermenu
 			{
 				if step_script==number_of_rounds_smoke_step_event
 				{
-						mode="dying"
-						sprite_index=rch_smoke1_die
-						image_index=0
-						image_speed=0.02
+					mode="dying"
+					sprite_index=rch_smoke1_die
+					image_index=0
+					image_speed=0.02
 				}
 			}
 			
@@ -77,12 +66,33 @@ if room==multiplayermenu
 				
 			//create new components
 			create_menupart_generic(character_select_background_spr,0,0,0,5,undefined)
+			
+			var a,xx,yy;
+			for (var i = 0; i < chargrid_numberofcolumns; i++)
+			{
+				for (ii=0; ii<chargrid_numberofrows; ii+=1)
+				{
+					xx=chargrid_x[convert_chargrid_char_to_column(i)]
+					yy=chargrid_y[convert_chargrid_char_to_row(i)]
+					a=create_menupart_generic(character_smallportraits,0,xx,yy,-60,undefined)
+					a.image_index=convert_chargrid_columnrow_to_char(i,ii)
+				}
+			}
+			
+			for (var i = 0; i < 2;i++)  ///for number of players [finaledit]
+			{
+				///slab
+				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[i],0,menu_player_options_x[i],menu_player_options_y[i],-70,undefined)
+			}
+			
+			
+			
 		}
 		exit
 	}
 	
 	
-	///////////  add new players   ////////////////////////////////////////////
+	///////////  add new keyboard players   ////////////////////////////////////////////
 	var keyboard_added_this_step;
 	keyboard_added_this_step=false
     
@@ -91,6 +101,7 @@ if room==multiplayermenu
 		if  (keyboard_check_pressed(kb1_start_button) || keyboard_check_pressed(kb2_start_button) )   //////// keyboard start button (first kb player)
 		{
 			set_next_open_slot()
+			create_player_entered_components(next_open_slot)
 			if game_start_countdown<1
 			{
 				if players_in<MAX_PLAYER_COUNT  /// keyboard entry player 1
@@ -114,7 +125,8 @@ if room==multiplayermenu
 				set_next_open_slot()
 				ready[next_open_slot]=0
 				control_setup[next_open_slot]="kb_right"
-                
+				create_player_entered_components(next_open_slot)
+				
 				//change full keyboard setup to 1/2 version
 				///safer to just search for it than to save variable that could be changed?[finaledit]
 				for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
@@ -143,8 +155,10 @@ if room==multiplayermenu
 			controller_added_this_step=true
 			controller_player_slot[i]=next_open_slot
 			ready[next_open_slot]=0
+			create_player_entered_components(next_open_slot)
 			control_setup[next_open_slot]="controller_default"
 			player_join_update_controller_variables()
+
 		}
 	}
            

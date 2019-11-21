@@ -46,7 +46,7 @@ else
 
 ////chargrid_x and chargrid_y are the positions of the small portraits
 
-///     0 | 1 | 2 | 3 | 4 | 5
+///     0 | 1 | 2 | 3 | 4 | 5 etc
 ///     current layout  
 
 chargrid_numberofcolumns=10
@@ -103,12 +103,14 @@ if !competitive_mode
 }
 else
 {
-	menu_player_options_x[0]=-20
-	menu_player_options_x[1]=room_width-635
-	menu_player_options_y[0]=room_height-300
-	menu_player_options_y[1]=room_height-300
+	menu_player_options_x[0]=225
+	menu_player_options_x[1]=room_width-225
+	menu_player_options_y[0]=100
+	menu_player_options_y[1]=100
 }
 
+
+//[finaledit] in use?
 menu_player_join_prompt_x[MAX_PLAYER_COUNT]=-1
 menu_player_join_prompt_y[MAX_PLAYER_COUNT]=-1
 menu_player_join_prompt_middle_x[MAX_PLAYER_COUNT]=-1
@@ -120,8 +122,8 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	
 	menu_player_join_prompt_middle_x[i]=menu_player_join_prompt_x[i]+327
 	
-	menu_player_character_title_x[i]=menu_player_options_x[i]+300
-	menu_player_character_title_y[i]=menu_player_options_y[i]-15
+	menu_player_character_title_x[i]=menu_player_options_x[i]
+	menu_player_character_title_y[i]=menu_player_options_y[i]+500
 };
 
 

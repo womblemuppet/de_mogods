@@ -8,7 +8,8 @@
         "7ae846be-f4b5-467f-b903-2cfe052241da",
         "97e8ce91-5bbb-41d1-a328-a5f79e527406",
         "a37843e4-5ff8-473d-a397-42f0977d5d1c",
-        "5958b88f-f442-4f5f-bd63-31f19b6f39fa"
+        "5958b88f-f442-4f5f-bd63-31f19b6f39fa",
+        "bf392bc3-dc6f-44ad-a3b9-7304513818f6"
     ],
     "filterType": "GMObject",
     "folderName": "menu_props",

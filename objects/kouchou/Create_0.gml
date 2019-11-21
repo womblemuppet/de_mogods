@@ -139,10 +139,6 @@ main_menu_select_options[3]="exit"
 
 main_menu_select=main_menu_select_options[main_menu_select_number]
 
-char_selectbox_subspr=0
-CHAR_SELECTBOX_SUBSPR_LIMIT=2
-character_portraits_subspr=0
-CHARACTER_PORTRAITS_SUBSPR_LIMIT=10
 menu_crab_subspr=0
 MENU_CRAB_SUBSPR_LIMIT=7
 
@@ -184,10 +180,16 @@ selectbox_sprites[0]=character_selectboxP1
 selectbox_sprites[1]=character_selectboxP2
 selectbox_sprites[2]=character_selectboxP3
 
-CHARACTER_SELECT_OPTIONS_COLOUR[3]=c_yellow
-CHARACTER_SELECT_OPTIONS_COLOUR[0]=c_red
-CHARACTER_SELECT_OPTIONS_COLOUR[1]=c_blue
-CHARACTER_SELECT_OPTIONS_COLOUR[2]=c_purple
+CHARACTER_SELECT_SLAB_SPRITES[0]=character_select_stone_slab_p1
+CHARACTER_SELECT_SLAB_SPRITES[1]=character_select_stone_slab_p2
+
+character_names[0]="UGA"
+character_names[1]="VETERAN"
+character_names[2]="SLINGER"
+character_names[3]="BAIT"
+character_names[4]="CUSZCO"
+character_names[5]="UGA AGAIN"
+
 
 
 /////////////////////////////////////////////////LORE MENU

@@ -10,10 +10,11 @@
         "87476f13-6007-4394-8d44-0e6f49ddde64",
         "eb24316a-9165-4994-9f11-a01637b9bc38",
         "99356da8-1df2-45d4-a851-c4c5020c8dbc",
-        "5496da2c-16f8-4548-971c-6ed748ac3813"
+        "5496da2c-16f8-4548-971c-6ed748ac3813",
+        "9c954c63-439b-4f78-bd37-e9c636c2eba3"
     ],
     "filterType": "GMSprite",
-    "folderName": "number of games chooser",
+    "folderName": "number of games choice screen",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

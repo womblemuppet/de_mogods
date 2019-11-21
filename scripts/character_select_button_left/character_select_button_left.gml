@@ -1,32 +1,42 @@
-if ready[argument0]==0
+var playerid;
+playerid=argument0
+
+if ready[playerid]==0
 {
-    switch selected_character_id[argument0]
+    switch selected_character_id[playerid]
     {
         case 0:
-        selected_character_id[argument0]=3 break;
+        selected_character_id[playerid]=3 break;
         case 1:
-        selected_character_id[argument0]=0 break;
+        selected_character_id[playerid]=0 break;
         case 2:
-        selected_character_id[argument0]=1 break;
+        selected_character_id[playerid]=1 break;
         case 3:
-        selected_character_id[argument0]=2 break;
+        selected_character_id[playerid]=2 break;
         case 4:
-        selected_character_id[argument0]=3 break;
+        selected_character_id[playerid]=3 break;
         case 5:
-        selected_character_id[argument0]=4 break;            
+        selected_character_id[playerid]=4 break;            
     }
+    
+    with current_character_name_drawer[playerid]
+    {
+	    mode="dying"
+	    hspeed=-6
+    }
+    create_character_name_drawer(playerid)
 }
-if ready[argument0]==1
+if ready[playerid]==1
 {
-    if readymenuselect[argument0]==1
+    if readymenuselect[playerid]==1
     {
-        playerhandicap[argument0]-=1
-        if playerhandicap[argument0]==-1
-            playerhandicap[argument0]=2
+        playerhandicap[playerid]-=1
+        if playerhandicap[playerid]==-1
+            playerhandicap[playerid]=2
     }
-    else if readymenuselect[argument0]==2
+    else if readymenuselect[playerid]==2
     {
-        if palette[argument0]>0
-            palette[argument0]-=1
+        if palette[playerid]>0
+            palette[playerid]-=1
     }
 }
