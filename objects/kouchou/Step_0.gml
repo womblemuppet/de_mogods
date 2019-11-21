@@ -202,11 +202,7 @@ else if room==menu
 {
 	menu_background_subspr+=0.05
 	if menu_background_subspr>floor(MENU_BACKGROUND_SUBSPR_LIMIT)
-		menu_background_subspr=0
-
-	menu_logo_subspr+=0.05
-	if menu_logo_subspr>MENU_LOGO_SUBSPR_LIMIT
-		menu_logo_subspr=0        
+		menu_background_subspr=0     
 	
 	menu_crab_subspr+=0.2
 	if menu_crab_subspr>MENU_CRAB_SUBSPR_LIMIT

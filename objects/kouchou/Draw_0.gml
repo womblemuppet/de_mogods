@@ -1,8 +1,7 @@
 if room==menu
 {
 	draw_clear(menu_letterbox_colour)
-	draw_sprite(menu_background_1,menu_background_subspr,midx,midy)
-	draw_sprite_ext(logo_spr,menu_logo_subspr,room_width/2,225,4,4,0,c_white,1)
+	draw_sprite(menu_background_1,menu_background_subspr,midx+275,midy)
 	draw_set_font(font_menu)
 	draw_set_halign(fa_middle)
 	draw_set_colour(c_gray)

@@ -84,6 +84,10 @@ else if room==menu
 	ready[2]=-1
 	ready[3]=-1
 	player_join_update_controller_variables()
+	main_menu_logo=create_menupart_basic(logo_spr,0.05,room_width/3,125,-50,undefined)
+	main_menu_logo.image_xscale=3
+	main_menu_logo.image_yscale=3
+
 	spawn_main_menu_options()
 }
 else if room==multiplayermenu

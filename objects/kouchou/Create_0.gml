@@ -141,8 +141,6 @@ main_menu_select=main_menu_select_options[main_menu_select_number]
 
 menu_background_subspr=0
 MENU_BACKGROUND_SUBSPR_LIMIT=17
-menu_logo_subspr=0
-MENU_LOGO_SUBSPR_LIMIT=6
 char_selectbox_subspr=0
 CHAR_SELECTBOX_SUBSPR_LIMIT=2
 character_portraits_subspr=0
