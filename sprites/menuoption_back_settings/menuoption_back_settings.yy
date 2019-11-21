@@ -2,7 +2,7 @@
     "id": "46fbac46-8534-45a4-8b80-9486a94d961b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "menuoption_back_options",
+    "name": "menuoption_back_settings",
     "For3D": false,
     "HTile": false,
     "VTile": false,

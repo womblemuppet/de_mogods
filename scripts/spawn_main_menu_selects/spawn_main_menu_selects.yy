@@ -1,8 +1,8 @@
 {
-    "id": "8ac8e116-be57-4655-ac0d-6f9dc69728cf",
+    "id": "48bb7837-89f5-4be3-a9d5-ab688fbef33e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "create_menuoption",
+    "name": "spawn_main_menu_selects",
     "IsCompatibility": false,
     "IsDnD": false
 }

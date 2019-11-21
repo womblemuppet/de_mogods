@@ -5,7 +5,7 @@
  ***************************************************/
  
 var a;
-a=instance_create(0,0,ef_screenflash)
+a=instance_create_depth(0,0,-100,ef_screenflash)
 a.colour=argument0
 a.alpha=argument1
 a.fade=argument2
