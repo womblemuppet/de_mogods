@@ -3151,14 +3151,6 @@
             }
         },
         {
-            "Key": "5e17bfac-08dd-4b99-8f4e-5f785e8e01b9",
-            "Value": {
-                "id": "d9b3335c-3842-4120-b880-3768e80cb385",
-                "resourcePath": "fonts\\font_score\\font_score.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "5e18a68d-8769-494f-b35b-703427e4d778",
             "Value": {
                 "id": "4b8dddc9-9a48-4753-a1f1-a2c1bca737a8",
@@ -3284,14 +3276,6 @@
                 "id": "d08c2274-9134-4374-ae8f-259611665b1d",
                 "resourcePath": "sprites\\Bait_3H_roll\\Bait_3H_roll.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "60955e08-49b3-442f-a00a-2f8f7a49ff2c",
-            "Value": {
-                "id": "6ca580ed-fd71-4427-b50f-925f8255e99c",
-                "resourcePath": "fonts\\font_scoreboard\\font_scoreboard.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -7548,14 +7532,6 @@
                 "id": "2af1c0d8-2617-43f3-9161-8562876c121c",
                 "resourcePath": "sprites\\hh_stack_yellow3\\hh_stack_yellow3.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d836c62f-1fde-4912-a89d-597fe1dc642d",
-            "Value": {
-                "id": "d88b747c-dea0-48c2-8b91-9ca2bc3439be",
-                "resourcePath": "fonts\\font_buglist\\font_buglist.yy",
-                "resourceType": "GMFont"
             }
         },
         {

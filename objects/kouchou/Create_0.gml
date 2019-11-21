@@ -211,7 +211,7 @@ starting_hp=3
 trial=0
 test_numberoftrials=2
 /***************************************************
-  trial
+  trialF
 0=fire
 1=ice
 2=lightning
@@ -225,8 +225,6 @@ map="nothinginparticular"
 "bosstrial" 
 ****************************************************/
 
-
-buglist_text="Known bugs##"
 
 
 /* */

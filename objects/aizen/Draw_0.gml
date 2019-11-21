@@ -13,11 +13,11 @@
 //}
 
 
-if kouchou.map=="firetrial" || kouchou.map=="icetrial"
-{
-	draw_set_font(font_score)
-	draw_text(60,60,string_hash_to_newline(string(scoer)))
-}
+//if kouchou.map=="firetrial" || kouchou.map=="icetrial"
+//{
+//	draw_set_font(font_score)
+//	draw_text(60,60,string_hash_to_newline(string(scoer)))
+//}
 
 
 if fossil_surface_redraw_needed

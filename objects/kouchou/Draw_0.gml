@@ -265,10 +265,6 @@ else if room==multiplayermenu
 			draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
 	}
     
-	/*draw_set_colour(c_white)
-	draw_set_font(font_buglist)
-	draw_set_halign(fa_center)
-	draw_text(room_width/2,room_height*(4/5),buglist_text)  */ 
     
 
 	draw_set_font(font_menu)
