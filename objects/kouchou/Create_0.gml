@@ -129,7 +129,7 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 
 competitive_mode=false
 
-main_menu_select_number=1
+main_menu_select_number=0
 MAIN_MENU_SELECT_NUMBER_MAX=3  //starting at 0
 main_menu_select_options[MAIN_MENU_SELECT_NUMBER_MAX]=""
 main_menu_select_options[0]="competitive_mode"

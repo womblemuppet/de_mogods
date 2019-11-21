@@ -6,8 +6,12 @@ with kouchou
 	        game_end()
 	    else
 	    {
+		    	with ds_map_find_value(main_menu_option_components,main_menu_select)
+				main_menu_option_components_get_unselected()
 			main_menu_select_number=MAIN_MENU_SELECT_NUMBER_MAX
 			main_menu_select=main_menu_select_options[main_menu_select_number]
+			with ds_map_find_value(main_menu_option_components,main_menu_select)
+				main_menu_option_components_get_selected()
 	    }
 	}
 	else if room==multiplayermenu
