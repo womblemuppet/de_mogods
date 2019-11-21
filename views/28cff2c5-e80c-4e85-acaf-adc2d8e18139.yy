@@ -6,7 +6,8 @@
     "children": [
         "d96928d4-64b8-497f-bc6a-1ed6d8ae77c6",
         "7ae846be-f4b5-467f-b903-2cfe052241da",
-        "97e8ce91-5bbb-41d1-a328-a5f79e527406"
+        "97e8ce91-5bbb-41d1-a328-a5f79e527406",
+        "a37843e4-5ff8-473d-a397-42f0977d5d1c"
     ],
     "filterType": "GMObject",
     "folderName": "menu_props",
