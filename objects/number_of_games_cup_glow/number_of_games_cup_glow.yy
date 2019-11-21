@@ -1,19 +1,10 @@
 {
-    "id": "d96928d4-64b8-497f-bc6a-1ed6d8ae77c6",
+    "id": "5958b88f-f442-4f5f-bd63-31f19b6f39fa",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ef_menupart",
+    "name": "number_of_games_cup_glow",
     "eventList": [
-        {
-            "id": "73b22e4e-adc2-4346-98e8-7564db6d2f34",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "d96928d4-64b8-497f-bc6a-1ed6d8ae77c6"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -28,13 +19,11 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "5496da2c-16f8-4548-971c-6ed748ac3813",
     "visible": true
 }

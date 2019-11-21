@@ -9,10 +9,11 @@
         "0ddab20f-201e-48e2-a128-d2206daa404a",
         "87476f13-6007-4394-8d44-0e6f49ddde64",
         "eb24316a-9165-4994-9f11-a01637b9bc38",
+        "99356da8-1df2-45d4-a851-c4c5020c8dbc",
         "5496da2c-16f8-4548-971c-6ed748ac3813"
     ],
     "filterType": "GMSprite",
-    "folderName": "cups",
+    "folderName": "number of games chooser",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

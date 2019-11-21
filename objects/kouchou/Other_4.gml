@@ -94,11 +94,13 @@ else if room==multiplayermenu
 {
 	if competitive_mode==true
 	{
-		number_of_games_cup=create_menupart_basic(number_of_games_cup_5_spr,0.01,room_width/2,room_height/2,-4,cup_hover_movement)
-		number_of_games_cup.vspeed=0.5
-		number_of_games_cup.gravity=0.1
+		number_of_games_cup_id=create_menupart_basic(number_of_games_cup_5_spr,0.01,room_width/2,room_height/2,-4,cup_step_event)
+		number_of_games_cup_id.vspeed=0.5
+		number_of_games_cup_id.gravity=0.1
 		
 		selecting_number_of_games=true
+		number_of_games_background=create_menupart_basic(number_of_games_background_spr,0,0,0,5,undefined)
+		number_of_games_cup_glow_id=instance_create_depth(number_of_games_cup_id.x,number_of_games_cup_id.y,-3,number_of_games_cup_glow)
 	}
 	else
 		selecting_number_of_games=false
