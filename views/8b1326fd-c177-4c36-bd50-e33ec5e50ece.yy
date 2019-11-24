@@ -18,9 +18,7 @@
         "8e758c42-c6ba-4a19-8d72-8a7cd4440cc6",
         "00fa6be9-ee0e-4f42-b315-21bb962fe82d",
         "cf30f801-6dc6-4906-a02d-133392aea718",
-        "7145b942-db25-4730-b490-dec398ea4086",
-        "69fac7de-f56d-4b69-a844-af2b55cb3e81",
-        "c85cea67-489d-474b-8ad9-1254a386750d"
+        "7145b942-db25-4730-b490-dec398ea4086"
     ],
     "filterType": "GMScript",
     "folderName": "menu",

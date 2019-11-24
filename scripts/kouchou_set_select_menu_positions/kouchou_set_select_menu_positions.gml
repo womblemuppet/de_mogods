@@ -47,7 +47,9 @@ else
 ////chargrid_x and chargrid_y are the positions of the small portraits
 
 ///     0 | 1 | 2 | 3 | 4 | 5 etc
-///     current layout  
+///     current layout
+
+
 
 chargrid_numberofcolumns=10
 var smallportrait_w,chargrid_w;

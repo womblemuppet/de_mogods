@@ -1,0 +1,4 @@
+var playerid;
+playerid=argument0
+
+create_character_select_options_box(playerid)

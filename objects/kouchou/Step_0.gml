@@ -117,7 +117,7 @@ if room==multiplayermenu
 	
 	if number_of_keyboards_in_use==1
 	{  
-		if keyboard_check_pressed(kb2_start_button)  && keyboard_added_this_step==false
+		if keyboard_check_pressed(kb2_start_button) && keyboard_added_this_step==false
 		{
 			if players_in<MAX_PLAYER_COUNT                                                                                           /// keyboard entry player 2
 			{
