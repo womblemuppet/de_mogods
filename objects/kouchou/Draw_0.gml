@@ -138,12 +138,10 @@ else if room==multiplayermenu && !selecting_number_of_games
 
 	for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	{    
-		/// if not competitive, draw coloured player backgrounds (temp)
-		if !competitive_mode
-			draw_sprite(character_grid_selected_back,i,menu_player_options_x[i],menu_player_options_y[i]) 
-	
+		/// if not competitive, draw coloured player backgrounds (temp)//[finaledit]
+
 		draw_set_halign(fa_left)
-        
+
 		var flip,flipextra_x;     ///flips character select portrait for p1 and p3
 		flip=-1
 		flipextra_x=600

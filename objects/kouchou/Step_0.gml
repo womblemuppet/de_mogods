@@ -82,7 +82,7 @@ if room==multiplayermenu
 			for (var i = 0; i < 2;i++)  ///for number of players [finaledit]
 			{
 				///slab
-				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[i],0,menu_player_options_x[i],menu_player_options_y[i],-70,undefined)
+				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[i],0,menu_player_slab_x[i],menu_player_slab_y[i],-70,undefined)
 			}
 			
 			

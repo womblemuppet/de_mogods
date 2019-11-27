@@ -91,41 +91,40 @@ if competitive_mode
 }
 
 
-menu_player_options_x[MAX_PLAYER_COUNT]=0
-menu_player_options_y[MAX_PLAYER_COUNT]=0
-
-
+//set options box positions
 if !competitive_mode
 {
 	for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	{
-		menu_player_options_x[i]=charpor_x[i]
-		menu_player_options_y[i]=charpor_y[i]
+		menu_player_options_box_x[i]=charpor_x[i]
+		menu_player_options_box_y[i]=charpor_y[i]
 	};
 }
 else
 {
-	menu_player_options_x[0]=225
-	menu_player_options_x[1]=room_width-225
-	menu_player_options_y[0]=100
-	menu_player_options_y[1]=100
+	menu_player_slab_x[0]=225
+	menu_player_slab_x[1]=room_width-225
+	menu_player_slab_y[0]=100
+	menu_player_slab_y[1]=100
+	
+	menu_player_options_box_x[0]=menu_player_slab_x[0]
+	menu_player_options_box_x[1]=menu_player_slab_x[1]
+	menu_player_options_box_y[0]=menu_player_slab_y[0]+400
+	menu_player_options_box_y[1]=menu_player_slab_y[1]+400
 }
 
 
 //[finaledit] in use?
-menu_player_join_prompt_x[MAX_PLAYER_COUNT]=-1
-menu_player_join_prompt_y[MAX_PLAYER_COUNT]=-1
-menu_player_join_prompt_middle_x[MAX_PLAYER_COUNT]=-1
-
+//set join prompt positions
 for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 {
-	menu_player_join_prompt_x[i]=menu_player_options_x[i]
-	menu_player_join_prompt_y[i]=menu_player_options_y[i]+100
+	menu_player_join_prompt_x[i]=menu_player_options_box_x[i]
+	menu_player_join_prompt_y[i]=menu_player_options_box_y[i]+100
 	
 	menu_player_join_prompt_middle_x[i]=menu_player_join_prompt_x[i]+327
 	
-	menu_player_character_title_x[i]=menu_player_options_x[i]
-	menu_player_character_title_y[i]=menu_player_options_y[i]+500
+	menu_player_character_title_x[i]=menu_player_options_box_x[i]
+	menu_player_character_title_y[i]=menu_player_options_box_y[i]+500
 };
 
 
