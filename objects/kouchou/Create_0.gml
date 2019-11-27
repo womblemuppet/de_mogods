@@ -185,6 +185,8 @@ character_smallportraits_array[8]=character_smallportraits_unknown
 character_smallportraits_array[9]=character_smallportraits_unknown
 character_smallportraits_array[10]=character_smallportraits_unknown
 
+select_spirit_sprite[0]=character_select_player_spirit_p1
+select_spirit_sprite[1]=character_select_player_spirit_p2
 
 selected_character_id[3]=-1
 selected_character_id[1]=-1

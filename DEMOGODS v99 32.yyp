@@ -3759,6 +3759,14 @@
             }
         },
         {
+            "Key": "6ba0d7f0-3748-4716-8881-0ddfb3ee4ded",
+            "Value": {
+                "id": "431bbfa2-d369-49e8-8d42-648b55d1d3b1",
+                "resourcePath": "sprites\\character_select_player_spirit_p2\\character_select_player_spirit_p2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6bc8c163-dc14-4da4-be96-a54d63a9cc5c",
             "Value": {
                 "id": "6ac6681b-9991-4d7b-aec0-2c3ee91d89a4",
@@ -7519,6 +7527,14 @@
             }
         },
         {
+            "Key": "d2d0aaca-9846-42fd-a26d-1cdde2ce4e4d",
+            "Value": {
+                "id": "c7d32359-8e76-4526-b21e-5daed6d62b47",
+                "resourcePath": "sprites\\character_select_player_spirit_p1\\character_select_player_spirit_p1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d3108ac9-a250-4841-9058-19804fcb0b9d",
             "Value": {
                 "id": "0c9bd23d-4235-4e34-9531-0ddf2b78b9b7",
@@ -8179,6 +8195,14 @@
             "Value": {
                 "id": "d1076646-92a8-4a98-bfe2-05874dc54b4b",
                 "resourcePath": "sprites\\menu_competitive_groundback\\menu_competitive_groundback.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5630e3b-ff0c-4a79-b572-a3d66e465752",
+            "Value": {
+                "id": "7dc933e4-5061-47d8-9b68-284ac7d8c856",
+                "resourcePath": "sprites\\character_select_player_spirit_spr\\character_select_player_spirit_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
