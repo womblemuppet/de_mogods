@@ -11,7 +11,8 @@
         "5958b88f-f442-4f5f-bd63-31f19b6f39fa",
         "bf392bc3-dc6f-44ad-a3b9-7304513818f6",
         "d258df0e-13bb-4c7f-ba1d-b1acbe28aefe",
-        "b4d66033-aa64-4281-b3d7-d889d23f57b8"
+        "b4d66033-aa64-4281-b3d7-d889d23f57b8",
+        "9b43938e-558e-4462-959a-fc7881c8ddf7"
     ],
     "filterType": "GMObject",
     "folderName": "menu_props",

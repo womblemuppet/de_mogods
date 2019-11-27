@@ -1943,6 +1943,14 @@
             }
         },
         {
+            "Key": "3bea7951-5531-4e3f-a35d-6f4dfc82a718",
+            "Value": {
+                "id": "3d5e60aa-d4a9-4c67-9622-bc9d903b24dc",
+                "resourcePath": "scripts\\create_player_locked_in_components\\create_player_locked_in_components.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3c0c45ae-dc59-492a-a94f-0a4172a15f84",
             "Value": {
                 "id": "6225d224-67b7-4282-968d-0c4a83dcd463",
@@ -4719,6 +4727,14 @@
             }
         },
         {
+            "Key": "876c55d4-4c52-4792-aba3-c05471f6266b",
+            "Value": {
+                "id": "9e486986-5eec-405f-b491-808c05cc0c6e",
+                "resourcePath": "scripts\\create_select_spirit\\create_select_spirit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "878f8b0f-0fbb-4175-b298-3f23654a97e5",
             "Value": {
                 "id": "bc8f16a5-112d-4fb5-8f7d-f9404a69bebb",
@@ -5436,6 +5452,14 @@
                 "id": "cd2650fe-9a66-4af2-b7ae-5916bd9b96da",
                 "resourcePath": "sprites\\Vet_3H_rocketjump\\Vet_3H_rocketjump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b43938e-558e-4462-959a-fc7881c8ddf7",
+            "Value": {
+                "id": "99144ed2-76e0-4609-b571-2017677a5a92",
+                "resourcePath": "objects\\select_spirit\\select_spirit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -9083,11 +9107,13 @@
         "eb69e51e-243d-4419-9747-3d74a61f0616",
         "c85cea67-489d-474b-8ad9-1254a386750d",
         "5a7622b9-ec2d-43c6-84af-1d83c036a528",
+        "3bea7951-5531-4e3f-a35d-6f4dfc82a718",
         "69fac7de-f56d-4b69-a844-af2b55cb3e81",
         "8997cc81-fa26-4f22-a752-b1234216543e",
         "79a57118-bc14-4a4d-90c1-83cab49cd71e",
         "037a91d5-6169-48ba-9b30-68d0f21e3cb7",
         "40a6b39f-2a84-4b87-991c-0352a6e61790",
+        "876c55d4-4c52-4792-aba3-c05471f6266b",
         "9672053d-63c5-4ddf-bb99-51d9a2dcebff",
         "14ae9649-1ac5-4402-a578-e454101aeda3",
         "60dfb10c-1920-4899-8c2e-c4b5e06dafe1",

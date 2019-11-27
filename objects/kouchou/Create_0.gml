@@ -188,6 +188,7 @@ character_smallportraits_array[10]=character_smallportraits_unknown
 select_spirit_sprite[0]=character_select_player_spirit_p1
 select_spirit_sprite[1]=character_select_player_spirit_p2
 
+
 selected_character_id[3]=-1
 selected_character_id[1]=-1
 selected_character_id[2]=-1
@@ -235,24 +236,26 @@ setmenu_codetxt=""
 
 starting_hp=3
 
-trial=0
-test_numberoftrials=2
-/***************************************************
-  trialF
-0=fire
-1=ice
-2=lightning
-3=boss
-****************************************************/
-map="nothinginparticular"
-/***************************************************
-"firetrial"
-"icetrial"
-"lightningtrial"
-"bosstrial" 
-****************************************************/
+
+//[finaledit]
+//trial=0
+//test_numberoftrials=2
+///***************************************************
+//  trialF
+//0=fire
+//1=ice
+//2=lightning
+//3=boss
+//****************************************************/
+//map="nothinginparticular"
+///***************************************************
+//"firetrial"
+//"icetrial"
+//"lightningtrial"
+//"bosstrial" 
+//****************************************************/
 
 
 
-/* */
-/*  */
+///* */
+///*  */

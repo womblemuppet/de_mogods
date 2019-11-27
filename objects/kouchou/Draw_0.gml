@@ -169,7 +169,7 @@ else if room==multiplayermenu && !selecting_number_of_games
 	//for (var i=0; i<4; i+=1)
 	//{
 	//	if ready[i]==0
-	//		draw_sprite(selectbox_sprites[i],0,smallportrait_x[convert_chargrid_char_to_column(selected_character_id[i])],smallportrait_y[convert_chargrid_char_to_row(selected_character_id[i])])
+	//		draw_sprite(selectbox_sprites[i],0,small_portrait_x[convert_chargrid_char_to_column(selected_character_id[i])],small_portrait_y[convert_chargrid_char_to_row(selected_character_id[i])])
 	//};
     
 	///draw game start countdown

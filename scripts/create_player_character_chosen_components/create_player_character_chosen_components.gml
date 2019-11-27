@@ -1,4 +1,4 @@
-var playerid;
-playerid=argument0
+var playerId;
+playerId=argument0
 
-create_character_select_options_box(playerid)
+character_select_options_box_id=create_character_select_options_box(playerId)

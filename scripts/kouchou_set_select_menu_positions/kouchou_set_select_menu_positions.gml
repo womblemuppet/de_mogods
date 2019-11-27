@@ -44,32 +44,32 @@ else
 }
 
 
-////smallportrait_x and smallportrait_y are the positions of the small portrait slots
+////small_portrait_x and small_portrait_y are the positions of the small portrait slots
 
 //set character select grid x positions
 small_portraits_number_of_columns=10
-var smallportrait_w,small_portraits_total_width;
-smallportrait_w=70
-small_portraits_total_width=small_portraits_number_of_columns*smallportrait_w
+var small_portraits_total_width;
+small_portrait_w=70
+small_portraits_total_width=small_portraits_number_of_columns*small_portrait_w
 
-small_portraits_xstart=(room_width/2)-(small_portraits_total_width/2)+(smallportrait_w/2)
+small_portraits_xstart=(room_width/2)-(small_portraits_total_width/2)+(small_portrait_w/2)
 
 for (var i=0; i<number_of_characters; i++)
 {
-	smallportrait_x[i]=small_portraits_xstart+i*smallportrait_w
+	small_portrait_x[i]=small_portraits_xstart+i*small_portrait_w
 };
 
 //set character select grid y positions
 small_portraits_number_of_rows=1
-var smallportrait_h,chargrid_h;
-smallportrait_h=78
-chargrid_h=small_portraits_number_of_rows*smallportrait_h
+var small_portrait_h,chargrid_h;
+small_portrait_h=78
+chargrid_h=small_portraits_number_of_rows*small_portrait_h
 
-small_portraits_ystart=(room_height/2)-(chargrid_h/2)+(smallportrait_h/2)
+small_portraits_ystart=670
 
 for (var i=0; i<number_of_characters; i++)
 {
-	smallportrait_y[i]=small_portraits_ystart
+	small_portrait_y[i]=small_portraits_ystart
 };
 
 
