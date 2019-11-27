@@ -1,10 +1,10 @@
 draw_self()
 
 var xx,yy;
-xx=x+90
+xx=x+110
 yy=y+30
 draw_text(xx,yy,"Control scheme: ")
-draw_text(xx,yy+20,"  "+control_setup_text)
+draw_text(xx,yy+20,"    "+control_setup_text)
 
 var y_offset;
 y_offset=100

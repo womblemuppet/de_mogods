@@ -44,51 +44,33 @@ else
 }
 
 
-////chargrid_x and chargrid_y are the positions of the small portraits
+////smallportrait_x and smallportrait_y are the positions of the small portrait slots
 
-///     0 | 1 | 2 | 3 | 4 | 5 etc
-///     current layout
-
-
-
-chargrid_numberofcolumns=10
-var smallportrait_w,chargrid_w;
+//set character select grid x positions
+small_portraits_number_of_columns=10
+var smallportrait_w,small_portraits_total_width;
 smallportrait_w=70
-chargrid_w=chargrid_numberofcolumns*smallportrait_w
+small_portraits_total_width=small_portraits_number_of_columns*smallportrait_w
 
-chargrid_xstart=(room_width/2)-(chargrid_w/2)+(smallportrait_w/2)
+small_portraits_xstart=(room_width/2)-(small_portraits_total_width/2)+(smallportrait_w/2)
 
-for (var i=0; i<chargrid_numberofcolumns; i+=1)
+for (var i=0; i<number_of_characters; i++)
 {
-	chargrid_x[i]=chargrid_xstart+i*smallportrait_w
+	smallportrait_x[i]=small_portraits_xstart+i*smallportrait_w
 };
 
-
-chargrid_numberofrows=1
+//set character select grid y positions
+small_portraits_number_of_rows=1
 var smallportrait_h,chargrid_h;
 smallportrait_h=78
-chargrid_h=chargrid_numberofrows*smallportrait_h
+chargrid_h=small_portraits_number_of_rows*smallportrait_h
 
-chargrid_ystart=(room_height/2)-(chargrid_h/2)+(smallportrait_h/2)
+small_portraits_ystart=(room_height/2)-(chargrid_h/2)+(smallportrait_h/2)
 
-for (var i=0; i<chargrid_numberofrows; i+=1)
+for (var i=0; i<number_of_characters; i++)
 {
-	chargrid_y[i]=chargrid_ystart+i*smallportrait_h
+	smallportrait_y[i]=small_portraits_ystart
 };
-
-
-
-
-if competitive_mode
-{
-	for (var i=0; i<chargrid_numberofrows; i+=1)
-	{
-		var c;
-		c=290
-		chargrid_y[i]+=c
-		charpormid_y[i]+=c
-	};
-}
 
 
 //set options box positions

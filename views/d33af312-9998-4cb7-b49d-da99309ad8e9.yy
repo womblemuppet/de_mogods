@@ -18,7 +18,8 @@
         "69fac7de-f56d-4b69-a844-af2b55cb3e81",
         "8997cc81-fa26-4f22-a752-b1234216543e",
         "79a57118-bc14-4a4d-90c1-83cab49cd71e",
-        "037a91d5-6169-48ba-9b30-68d0f21e3cb7"
+        "037a91d5-6169-48ba-9b30-68d0f21e3cb7",
+        "40a6b39f-2a84-4b87-991c-0352a6e61790"
     ],
     "filterType": "GMScript",
     "folderName": "character_select",

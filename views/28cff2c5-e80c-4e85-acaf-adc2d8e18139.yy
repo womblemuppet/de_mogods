@@ -10,7 +10,8 @@
         "a37843e4-5ff8-473d-a397-42f0977d5d1c",
         "5958b88f-f442-4f5f-bd63-31f19b6f39fa",
         "bf392bc3-dc6f-44ad-a3b9-7304513818f6",
-        "d258df0e-13bb-4c7f-ba1d-b1acbe28aefe"
+        "d258df0e-13bb-4c7f-ba1d-b1acbe28aefe",
+        "b4d66033-aa64-4281-b3d7-d889d23f57b8"
     ],
     "filterType": "GMObject",
     "folderName": "menu_props",

@@ -161,37 +161,16 @@ else if room==multiplayermenu && !selecting_number_of_games
 	if !competitive_mode
 		draw_sprite(mock_character_grid_background,0,midx,midy)
 
-	//for (var i=0; i<chargrid_numberofcolumns; i+=1)
-	//{   
-	//	for (ii=0; ii<chargrid_numberofrows; ii+=1)
-	//		draw_sprite(character_smallportraits,convert_chargrid_columnrow_to_char(i,ii),chargrid_x[i],chargrid_y[ii])
-	//}
-    
-    
 
-	draw_set_font(font_menu)
-	draw_set_valign(fa_middle)
-	draw_set_colour(c_black)
-    
-	/*var p1x,p1y,p2x,p2y;   [finaledit] remember to draw handicap in the select menu
-    
-	draw_text(p1x,p1y,"Player 1")
-	if playerhandicap[0]>0
-	draw_sprite(handicapicon,image_index,p1x+200,p1y)
-	if playerhandicap[0]>1
-	draw_sprite(handicapicon,image_index,p1x+230,p1y)
-        
-	draw_text(p2x,p2y,"Player 2")    
-	if playerhandicap[1]>0
-	draw_sprite(handicapicon,image_index,p2x+200,p2y)
-	if playerhandicap[1]>1
-	draw_sprite(handicapicon,image_index,p2x+230,p2y)*/
+	//draw_set_font(font_menu)
+	//draw_set_valign(fa_middle)
+	//draw_set_colour(c_black)
 
-	for (var i=0; i<4; i+=1)
-	{
-		if ready[i]==0
-			draw_sprite(selectbox_sprites[i],0,chargrid_x[convert_chargrid_char_to_column(selected_character_id[i])],chargrid_y[convert_chargrid_char_to_row(selected_character_id[i])])
-	};
+	//for (var i=0; i<4; i+=1)
+	//{
+	//	if ready[i]==0
+	//		draw_sprite(selectbox_sprites[i],0,smallportrait_x[convert_chargrid_char_to_column(selected_character_id[i])],smallportrait_y[convert_chargrid_char_to_row(selected_character_id[i])])
+	//};
     
 	///draw game start countdown
 	if game_start_countdown>0

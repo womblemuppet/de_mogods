@@ -149,6 +149,8 @@ SMOKE_X_GAP=400
 
 /////////////////////////CHARACTER SELECT
 
+number_of_characters=10
+
 // CHARACTER LARGE BACKGROUNDS (QUADRANTS)
 kouchou_set_select_menu_positions()
 
@@ -171,6 +173,19 @@ character_portraits_array[3]=character_portraits_bait
 character_portraits_array[4]=character_portraits_spiderguy
 character_portraits_array[5]=character_portraits_jermy
 
+character_smallportraits_array[0]=character_smallportraits_uga
+character_smallportraits_array[1]=character_smallportraits_vet
+character_smallportraits_array[2]=character_smallportraits_slinger
+character_smallportraits_array[3]=character_smallportraits_bait
+character_smallportraits_array[4]=character_smallportraits_cusczo
+character_smallportraits_array[5]=character_smallportraits_unknown
+character_smallportraits_array[6]=character_smallportraits_unknown
+character_smallportraits_array[7]=character_smallportraits_unknown
+character_smallportraits_array[8]=character_smallportraits_unknown
+character_smallportraits_array[9]=character_smallportraits_unknown
+character_smallportraits_array[10]=character_smallportraits_unknown
+
+
 selected_character_id[3]=-1
 selected_character_id[1]=-1
 selected_character_id[2]=-1
@@ -188,7 +203,12 @@ character_names[1]="VETERAN"
 character_names[2]="SLINGER"
 character_names[3]="BAIT"
 character_names[4]="CUSZCO"
-character_names[5]="UGA AGAIN"
+character_names[5]="UNKNOWN"
+character_names[6]="UNKNOWN"
+character_names[7]="UNKNOWN"
+character_names[8]="UNKNOWN"
+character_names[9]="UNKNOWN"
+character_names[10]="UNKNOWN"
 
 
 

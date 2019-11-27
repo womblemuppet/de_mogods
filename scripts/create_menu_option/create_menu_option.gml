@@ -1,6 +1,6 @@
 //create_menuoption(normal_sprite,selected_animation,text,x,y)
 var a;
-a=instance_create_depth(argument3,argument4,-50,mainmenuoption)
+a=instance_create_depth(argument3,argument4,-50,main_menu_option_component)
 
 a.NORMAL_SPRITE=argument0
 a.SELECTED_SPRITE=argument1

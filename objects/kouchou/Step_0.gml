@@ -67,21 +67,31 @@ if room==multiplayermenu
 			//create new components
 			create_menupart_generic(character_select_background_spr,0,0,0,5,undefined)
 			
-			var a,xx,yy;
-			for (var i = 0; i < chargrid_numberofcolumns; i++)
+			
+			for (var i = 0; i < number_of_characters;i++)
 			{
-				for (ii=0; ii<chargrid_numberofrows; ii+=1)
+				create_small_portrait(smallportrait_x[i],smallportrait_y[i],character_smallportraits_array[i])
+			}
+			
+			
+			var char_number,a,xx,yy;
+			char_number=0
+			
+			for (var i = 0; i < small_portraits_number_of_columns; i++)
+			{
+				for (ii=0; ii<small_portraits_number_of_rows; ii+=1)
 				{
-					xx=chargrid_x[convert_chargrid_char_to_column(i)]
-					yy=chargrid_y[convert_chargrid_char_to_row(i)]
-					a=create_menupart_generic(character_smallportraits,0,xx,yy,-60,undefined)
-					a.image_index=convert_chargrid_columnrow_to_char(i,ii)
+					xx=smallportrait_x[convert_chargrid_char_to_column(char_number)]
+					yy=smallportrait_y[convert_chargrid_char_to_row(char_number)]
+					a=create_menupart_generic(character_smallportraits_array[char_number],0,xx,yy,-60,undefined)
+					
+					char_number++
 				}
 			}
 			
 			for (var i = 0; i < 2;i++)  ///for number of players [finaledit]
 			{
-				///slab
+				///create slab
 				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[i],0,menu_player_slab_x[i],menu_player_slab_y[i],-70,undefined)
 			}
 			
