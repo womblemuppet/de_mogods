@@ -1946,7 +1946,7 @@
             "Key": "3bea7951-5531-4e3f-a35d-6f4dfc82a718",
             "Value": {
                 "id": "3d5e60aa-d4a9-4c67-9622-bc9d903b24dc",
-                "resourcePath": "scripts\\create_player_locked_in_components\\create_player_locked_in_components.yy",
+                "resourcePath": "scripts\\player_locked_in_components_event\\player_locked_in_components_event.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4380,6 +4380,14 @@
                 "id": "5ad4d361-19c5-49c0-8809-e0b68bd66096",
                 "resourcePath": "scripts\\player_falldown_sprite_check\\player_falldown_sprite_check.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7cef58c7-6aa4-4b0e-bd6d-7b38571b9d7d",
+            "Value": {
+                "id": "9b5bb191-0c16-44c5-b4ac-92c6e9af7603",
+                "resourcePath": "sprites\\character_select_options_box_die\\character_select_options_box_die.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -7916,6 +7924,14 @@
                 "id": "2d9db5c4-d500-4b76-82b5-5840fb1c8817",
                 "resourcePath": "scripts\\@__init_global\\__init_global.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dc05e718-0c21-495f-8533-4c45a6299f03",
+            "Value": {
+                "id": "d545ef1e-f31d-4515-aa2d-5fdee51212a3",
+                "resourcePath": "sprites\\character_select_player_spirit_die\\character_select_player_spirit_die.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

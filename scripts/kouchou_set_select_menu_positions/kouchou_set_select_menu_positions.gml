@@ -91,8 +91,8 @@ else
 	
 	menu_player_options_box_x[0]=menu_player_slab_x[0]
 	menu_player_options_box_x[1]=menu_player_slab_x[1]
-	menu_player_options_box_y[0]=menu_player_slab_y[0]+400
-	menu_player_options_box_y[1]=menu_player_slab_y[1]+400
+	menu_player_options_box_y[0]=menu_player_slab_y[0]+270
+	menu_player_options_box_y[1]=menu_player_slab_y[1]+270
 }
 
 
