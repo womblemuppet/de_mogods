@@ -2679,6 +2679,14 @@
             }
         },
         {
+            "Key": "4fb90dfd-1214-442b-8570-23b8a1b99de8",
+            "Value": {
+                "id": "a8e89d98-fdaa-4e5d-ad4c-0c79754dc3f5",
+                "resourcePath": "views\\4fb90dfd-1214-442b-8570-23b8a1b99de8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5006d02e-1a7d-41a0-9bf4-7e80b25e9212",
             "Value": {
                 "id": "33b3d4fa-571d-43b1-ae75-2ca36bdf6eea",
@@ -5903,6 +5911,14 @@
             }
         },
         {
+            "Key": "a77b7b17-0aff-4d57-bbfc-682c944da451",
+            "Value": {
+                "id": "690a3d28-a97f-4f91-8a3e-a2d9f6a640a6",
+                "resourcePath": "sprites\\tikidude_normal\\tikidude_normal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7d1a08c-863f-4ef9-893a-086acaad8200",
             "Value": {
                 "id": "5093a467-4f67-4c21-80f1-5160a8b1d38f",
@@ -6619,6 +6635,14 @@
             "Value": {
                 "id": "a580aecf-5dc1-4b77-942d-c5428484849c",
                 "resourcePath": "sprites\\temple14\\temple14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba4b34a6-7854-4bfc-8f36-847615b8a4a1",
+            "Value": {
+                "id": "bd73a68e-9e04-438d-a848-88426af18849",
+                "resourcePath": "sprites\\tikidude_rage\\tikidude_rage.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7531,6 +7555,14 @@
             "Value": {
                 "id": "283cbe4d-1273-4898-b2d8-8255f441d47b",
                 "resourcePath": "sprites\\spr_gp_combo_uppercut\\spr_gp_combo_uppercut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d1a9c91b-1cbb-4cc1-b8b0-7d4503a0e153",
+            "Value": {
+                "id": "c38bad3b-1e65-4f4d-97cb-4b84a1876ffd",
+                "resourcePath": "sprites\\tikidude_ritual_threshold\\tikidude_ritual_threshold.yy",
                 "resourceType": "GMSprite"
             }
         },
