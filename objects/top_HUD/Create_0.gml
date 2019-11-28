@@ -26,6 +26,9 @@ for (var i = 0; i < kouchou.players_in; i++)
 
 my_rage_bar=instance_create_depth(room_width/2-300,10,-9,ragebar)
 
+bookend_tiki_left=instance_create_depth(my_rage_bar.x,my_rage_bar.y,-10,ragebar_bookend_tiki)
+bookend_tiki_right=instance_create_depth(my_rage_bar.x+my_rage_bar.WIDTH,my_rage_bar.y,-10,ragebar_bookend_tiki)
+bookend_tiki_right.image_xscale=-1
 
 floating_masks_subimage=0
 FLOATINGMASKS_IMAGE_NUMBER=22
@@ -33,7 +36,7 @@ FLOATINGMASKS_IMAGE_NUMBER=22
 
 
 ///////////////////////////////
-////  HUD-SIDE VARIABLES //////
+////  HUD-SIDE VARIABLES ///////////////////////////////////////////////////
 ///////////////////////////////
 
 player_is_in_super_mode[kouchou.MAX_PLAYER_COUNT-1]=false

@@ -1,0 +1,6 @@
+mode="normal"
+image_speed=0.1
+
+NORMAL_SPRITE=tikidude_normal
+SHITCALL_SPRITE=tikidude_rage
+RITUAL_THRESHOLD_SPRITE=tikidude_ritual_threshold

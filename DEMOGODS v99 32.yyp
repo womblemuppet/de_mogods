@@ -1399,6 +1399,14 @@
             }
         },
         {
+            "Key": "27164738-385f-4d98-a701-b7d38da1f574",
+            "Value": {
+                "id": "7046761c-3af4-43ab-a543-4fadede2ecc5",
+                "resourcePath": "scripts\\tiki_bookend_enter_ritual_threshold\\tiki_bookend_enter_ritual_threshold.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "273d7eff-e9bb-4ca5-888e-ad70ad03b82b",
             "Value": {
                 "id": "b4475cf4-85b1-4751-a55c-616fca844a76",
@@ -2756,6 +2764,14 @@
                 "id": "c3722642-3482-437e-b497-09c484264079",
                 "resourcePath": "sprites\\sky_meteor_tex\\sky_meteor_tex.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "526b2072-3676-439b-a158-4889c0906e7f",
+            "Value": {
+                "id": "81c03aac-6c14-477f-a0bc-c0adb7c57fa0",
+                "resourcePath": "scripts\\tiki_bookend_leave_shitcall\\tiki_bookend_leave_shitcall.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7415,6 +7431,14 @@
             }
         },
         {
+            "Key": "ce26418a-64de-4a2c-8827-229c9f161c50",
+            "Value": {
+                "id": "b15720c0-390b-4542-8e9b-383e9b4f84e3",
+                "resourcePath": "objects\\ragebar_bookend_tiki\\ragebar_bookend_tiki.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ce4f9d18-b1ef-4dd8-8e54-b750dce630b1",
             "Value": {
                 "id": "b0838015-1293-4f36-b6e5-b8c79c2b9cd6",
@@ -8124,6 +8148,14 @@
                 "id": "89ebb7ba-23c3-43ea-a83e-046b87f7162f",
                 "resourcePath": "sprites\\forest3\\forest3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e210b179-e419-44fc-8578-68b6d3aaf9bd",
+            "Value": {
+                "id": "ee4d22e5-e7f8-4bfd-b540-6dce348c2b4a",
+                "resourcePath": "scripts\\tiki_bookend_enter_shitcall\\tiki_bookend_enter_shitcall.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9296,6 +9328,9 @@
         "e5749b0a-102a-4d73-be2f-9e02474fb054",
         "48cda545-a786-4ea2-aaaa-b0f66ff2ef02",
         "73ebc3d4-2f84-4426-9fd5-a4dc9c35ef37",
+        "e210b179-e419-44fc-8578-68b6d3aaf9bd",
+        "526b2072-3676-439b-a158-4889c0906e7f",
+        "27164738-385f-4d98-a701-b7d38da1f574",
         "d1807f0b-8718-4aab-ab98-2a9c8c153761",
         "cb83d8a8-3ff9-4506-822a-5487b7b87d48",
         "be076a66-7e3d-48cc-b375-fed62a475709",

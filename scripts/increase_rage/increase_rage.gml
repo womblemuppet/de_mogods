@@ -6,12 +6,18 @@ with aizen
 	
 	//update can_ritual
 	if rage >= RAGE_RITUAL_LEVEL
+	{
 		can_ritual=true
+		with top_HUD.bookend_tiki_left
+			tiki_bookend_enter_ritual_threshold()
+		with top_HUD.bookend_tiki_right
+			tiki_bookend_enter_ritual_threshold()
+	}
 	else
 		can_ritual=false
 
 	if aizen.rage<RAGE_TRIGGER_AMOUNT
-		HUD_increment_rage_bar(1)
+		HUD_increment_rage_bar(argument0)
 	else
 	{
 		start_shitcall()
