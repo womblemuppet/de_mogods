@@ -5055,6 +5055,14 @@
             }
         },
         {
+            "Key": "8f38efb4-7f12-4c17-b4f3-cbe0f515c9fe",
+            "Value": {
+                "id": "dafa3d35-e7e3-4539-9b15-b856252f0a24",
+                "resourcePath": "scripts\\spawn_lava_brewing_effects\\spawn_lava_brewing_effects.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8f505034-5483-4e1a-b6bf-ed9d89253ef3",
             "Value": {
                 "id": "b02da70a-db92-469e-87bf-edaa0f9154ab",
@@ -9312,6 +9320,7 @@
         "db311da0-5e97-4f68-a6f2-db29eabad08e",
         "4f08e8b9-a0ba-471a-bd1a-2a5fbc157d47",
         "4c5177f8-8d63-48f4-bc8a-f09af0132604",
+        "8f38efb4-7f12-4c17-b4f3-cbe0f515c9fe",
         "b8aeffe8-a8a7-43e0-b412-94c29526c57f",
         "1a349010-23f7-4fbc-b948-1989cb1ce882",
         "1ff9514b-ff55-40c6-8228-856a753fb0a6",

@@ -1,4 +1,6 @@
 my_meteor_spawner=instance_create_depth(0,0,0,meteor_spawner)
 my_lava=noone
 time_alive=0
+LAVA_SHOW_BREWING_THRESHOLD=400
 LAVA_THRESHOLD=600
+lava_brewing_effect_timer=0

@@ -26,8 +26,11 @@ for (var i = 0; i < kouchou.players_in; i++)
 
 my_rage_bar=instance_create_depth(room_width/2-300,10,-9,ragebar)
 
-bookend_tiki_left=instance_create_depth(my_rage_bar.x,my_rage_bar.y,-10,ragebar_bookend_tiki)
-bookend_tiki_right=instance_create_depth(my_rage_bar.x+my_rage_bar.WIDTH,my_rage_bar.y,-10,ragebar_bookend_tiki)
+var bookend_offset_x;
+bookend_offset_x=35
+
+bookend_tiki_left=instance_create_depth(my_rage_bar.x-bookend_offset_x,my_rage_bar.y,-14,ragebar_bookend_tiki)
+bookend_tiki_right=instance_create_depth(my_rage_bar.x+my_rage_bar.WIDTH+bookend_offset_x,my_rage_bar.y,-14,ragebar_bookend_tiki)
 bookend_tiki_right.image_xscale=-1
 
 floating_masks_subimage=0
