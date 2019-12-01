@@ -21,7 +21,7 @@ if H<1
 
 last_hit_knocked_down=true   ///for use in player_whacked resetting prone
 
-player_update_health_hud()
+player_update_health_hud(P)
 player_set_before_prone_falling_lockdown_state()
 
 return "damage_taken"
