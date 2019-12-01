@@ -3146,7 +3146,7 @@
             "Key": "5a7622b9-ec2d-43c6-84af-1d83c036a528",
             "Value": {
                 "id": "eff3afbf-e654-48b2-8cf0-db17af22db76",
-                "resourcePath": "scripts\\create_player_character_chosen_components\\create_player_character_chosen_components.yy",
+                "resourcePath": "scripts\\player_character_chosen_event\\player_character_chosen_event.yy",
                 "resourceType": "GMScript"
             }
         },

@@ -4,7 +4,7 @@ playerId=argument0
 if ready[playerId]==0       
 {
 	ready[playerId]=1
-	create_player_character_chosen_components(playerId)
+	player_character_chosen_event(playerId)
 }
 else if ready[playerId]==1                                                                                        /// lock in P1
 {
