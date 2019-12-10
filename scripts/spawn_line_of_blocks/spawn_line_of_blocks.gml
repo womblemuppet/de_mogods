@@ -69,7 +69,7 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////props,critters,crabs won't spawn on startingflat
 	if terraintype!="startingflat"
 	{
-		if random(1)>0.999                                                           /////props
+		if random(1)>0.99                                                       /////props
 		{
 			spawn_prop(y_position,block_column_number)
 		}

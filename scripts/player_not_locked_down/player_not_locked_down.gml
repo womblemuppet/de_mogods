@@ -4,7 +4,7 @@
 
 //// keep adding to it it'll be fine
 
-if !stunned_groundpound
+if stunned_groundpound<1
 && uniques_fpunch_lockdown==0 
 && uniques_spinner_attack_lockdown==0 
 && uniques_sunblast_lockdown==0 

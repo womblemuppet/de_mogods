@@ -1,16 +1,22 @@
-var p_type,p_type_die;
+var p_sprite,p_sprite_die;
 
 
-var block_column_number;
+var yy,block_column_number;
+yy=argument0
 block_column_number=argument1
 
 
+var p_sprite,p_sprite_die,p_name,p_isFlag,p_cutTerrain;
 switch biome
 {
 	case "summit":       ///decide the type of prop here
 	default:
-	p_type=prop_sprite_statue_1
-	p_type_die=prop_sprite_statue_1_die
+	
+	p_sprite=prop_sprite_statue_1
+	p_sprite_die=prop_sprite_statue_1_die
+	p_name="statue1"
+	p_isFlag=false
+	p_cutTerrain=false
 	break;
 }
-prop_create(kouchou.room_left_border_x+block_column_number*aizen.bw,argument0,prop_sprite_statue_1,prop_sprite_statue_1_die)
+prop_create(kouchou.room_left_border_x+block_column_number*aizen.bw,yy,p_sprite,p_sprite_die,p_name,p_isFlag,p_cutTerrain)

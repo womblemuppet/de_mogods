@@ -13,7 +13,7 @@
         "668a9570-978c-441a-96e8-c85a687c0e04"
     ],
     "filterType": "GMObject",
-    "folderName": "special blocks and objects",
+    "folderName": "objects and special blocks",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

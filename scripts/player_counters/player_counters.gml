@@ -27,6 +27,7 @@ if stunned_groundpound>0
 	{
 		if staggered==0
 			cc_reset_combo_counter()
+
 		if flinch_sprite_counter>0   ///[finaledit] could give this the groundcheck treatment and only check once
 		{
 			sprite_index=sprites[? "recoiling"]

@@ -156,14 +156,14 @@ if airgrab_mode=="is_grabbing" && airgrab_decidedir_time>0
 				
 				cc_land_hit(self.id,airgrab_target)
 
-				var at;
-				at=AIRGRAB_STUN_TIME;
+				var airgrab_stun_time;
+				airgrab_stun_time=AIRGRAB_STUN_TIME;
 
 				with airgrab_target
 				{
 					player_flush_lockdowns()
-					canbounce_counter=at
-					stunned_groundpound=at
+					canbounce_counter=airgrab_stun_time
+					stunned_groundpound=airgrab_stun_time
 					airgrab_mode="cannot_airgrab"
 					
 					vspd=18
