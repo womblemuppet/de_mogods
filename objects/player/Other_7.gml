@@ -81,7 +81,7 @@ else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 	a=attack_vet_create_mine()
 	mines_ammo-=1
 }
-else if sprite_index==sprites[? "uniques_place_sticky_mine"] || sprite_index==sprites[? "uniques_place_sticky_mine_u"]  ///vet place mine
+else if sprite_index==sprites[? "uniques_throw_targetted_mine"] || sprite_index==sprites[? "uniques_throw_targetted_mine_u"]  ///vet place mine
 {
 	player_set_idle()
 	if instance_exists(uniques_vet_targeted_mine_last_hit)

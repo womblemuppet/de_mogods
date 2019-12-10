@@ -100,8 +100,8 @@ switch character
 			sprites[? "airgrab"]=Vet_3H_airgrab
 			sprites[? "airslam"]=Vet_3H_airslam
 			sprites[? "airslam_u"]=Vet_3H_airslam ///super version (to be changed)
-			sprites[? "uniques_place_sticky_mine"]=Vet_3H_attach_sticky_mine
-			sprites[? "uniques_place_sticky_mine_u"]=Vet_3H_attach_sticky_mine //super version (to be changed)
+			sprites[? "uniques_throw_targetted_mine"]=Vet_3H_attach_sticky_mine
+			sprites[? "uniques_throw_targetted_mine_u"]=Vet_3H_attach_sticky_mine //super version (to be changed)
 			sprites[? "uniques_dig_place_mine"]=Vet_3H_dig_placed
 			sprites[? "uniques_dig_place_mine_u"]=Vet_3H_dig_placed //super version (to be changed)
 			sprites[? "uniques_dig_u"]=Vet_3H_dig_h  ////super version (to be changed)

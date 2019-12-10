@@ -1064,7 +1064,7 @@ if dash_button_currently_held
 
 
 
-////////////////////////////////////////////// slinger phase on downkey (separate because of HA exception
+////////////////////////////////////////////// slinger phase on downkey (separate because of HA exception)
 if button_scrape_pushed[? downbutton]
 {
 	if uniques_phase_enabled && uniques_phase_counter>0
@@ -1077,13 +1077,20 @@ if button_scrape_pushed[? downbutton]
 			sprite_index=sprites[? "phase"]
 			isteps=10
 		}
-	}	
+	}
 }
 
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
 if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[? leftbutton] && !button_scrape[? rightbutton]
 {
-	if groundcheck!=noone
+	var dropped_crab;
+	dropped_crab=false
+	if holding_a_crab
+	{
+		player_drop_crab()
+		dropped_crab=true
+	}
+	if dropped_crab==false && groundcheck!=noone
 	{
 		switch attacks[? "special hold down"] 
 		{
@@ -1092,32 +1099,24 @@ if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[?
 			break;
 		
 			case "vet_place_mine":
-			if uniques_vet_digging==0
+			if uniques_vet_digging==0 && uniques_mines_enabled && groundcheck!=noone && mines_ammo>0 ///start place mine animation
 			{
-				if uniques_mines_enabled  && groundcheck!=noone
+				if uniques_vet_targeted_mine_last_hit==noone   //normal mine place
 				{
-					if mines_ammo>0                ///start place mine animation
-					{
-						if uniques_vet_targeted_mine_last_hit==noone
-						{
-							if sprite_index!=sprites[? "uniques_place_mine"]
-								image_index=0
-							image_speed=FRAME_SPEED_NORMAL
-							sprite_index=sprites[? "uniques_place_mine"]
-						}
-						else
-						{
-							if sprite_index!=sprites[? "uniques_place_sticky_mine"] && sprite_index!=sprites[? "uniques_place_sticky_mine_u"]
-								image_index=0
-							image_speed=FRAME_SPEED_NORMAL
-							sprite_index=sprites[? "uniques_place_sticky_mine"]
-							if super_mode_available
-								sprite_index=sprites[? "uniques_place_sticky_mine_u"]
-						}
-					}
-				} 
-
-
+					if sprite_index!=sprites[? "uniques_place_mine"]
+						image_index=0
+					image_speed=FRAME_SPEED_NORMAL
+					sprite_index=sprites[? "uniques_place_mine"]
+				}
+				else   //thrown mine
+				{
+					if sprite_index!=sprites[? "uniques_throw_targetted_mine"] && sprite_index!=sprites[? "uniques_throw_targetted_mine_u"]
+						image_index=0
+					image_speed=FRAME_SPEED_NORMAL
+					sprite_index=sprites[? "uniques_throw_targetted_mine"]
+					if super_mode_available
+						sprite_index=sprites[? "uniques_throw_targetted_mine_u"]
+				}
 			}
 			break;
         
