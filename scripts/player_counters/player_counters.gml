@@ -14,13 +14,13 @@ if dashcd>0
 	if dashcd==0
 		dash_wallbreak_forgive=false
 }
-if staggered>0
+if player_is_staggered()
 {
 	staggered-=1
 	if staggered==0 && stunned_groundpound<2
 		cc_reset_combo_counter()
 }
-if stunned_groundpound>0
+if player_is_stunned()
 {
 	stunned_groundpound-=1
 	if stunned_groundpound==0

@@ -1,0 +1,1 @@
+return (stunned_groundpound>0)

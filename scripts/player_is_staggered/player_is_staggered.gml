@@ -1,0 +1,1 @@
+return (staggered>0)

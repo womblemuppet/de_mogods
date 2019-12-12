@@ -46,7 +46,7 @@ switch incoming_attack_name
 	
 	break;
 	case "oogauppercut" :   ////ooga's
-	if stunned_groundpound>0
+	if player_is_stunned()
 	{
 		impact_debuff_counter=40
 		vspd-=6
@@ -70,7 +70,7 @@ switch incoming_attack_name
 		
 	break;
 	case "falconpunch" :
-	if stunned_groundpound>0
+	if player_is_stunned()
 	{
 		canbounce_counter=40
 		impact_debuff_counter=40
