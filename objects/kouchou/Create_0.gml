@@ -8,6 +8,7 @@ testers I've heard of:
 po's coworker couple
 po's japanese student
 po's fighting game friend that likes projectiles
+josh bertwhistle? idk who this is
 simon
 cody slater
 lars hopman

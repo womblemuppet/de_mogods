@@ -2,7 +2,7 @@
     "id": "86217071-223f-40a7-bacf-9c666e796507",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "sunblast",
+    "name": "gen_projectile",
     "eventList": [
         {
             "id": "0f61ca79-b42a-46cc-8509-8b8e971ca090",
@@ -63,6 +63,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
+    "spriteId": "4d1a9687-5190-4700-bcd0-766a43e40912",
     "visible": true
 }

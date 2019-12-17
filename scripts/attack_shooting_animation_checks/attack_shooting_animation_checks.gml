@@ -186,15 +186,12 @@ if uniques_vet_kamikaze_lockdown==1 && image_index>5
 if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
 {
 	if uniques_sunblast_has_made_hitbox==false
-	{//josh bertwhistle
-		//with create_terrain_cutter(sunblast_terrain_cut_mask,"disintegrated",270,0)
-		//{
-		//	image_xscale=1
-		//	image_yscale=1	
-		//}
+	{
 
 		var a;
-		a=instance_create_depth(x,y,-1,sunblast)
+		a=instance_create_depth(x,y,-1,gen_projectile)
+		a.hitbox_properties_script=projectile_create_hitbox_sunblast
+		a.sprite_index=sunblast_sprite
 		a.right=right
 		a.scale=1
 		a.creator=self.id

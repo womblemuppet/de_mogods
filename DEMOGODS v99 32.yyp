@@ -4770,7 +4770,7 @@
             "Key": "86217071-223f-40a7-bacf-9c666e796507",
             "Value": {
                 "id": "69595eb9-2dea-49e0-85d2-e5a090fa4718",
-                "resourcePath": "objects\\sunblast\\sunblast.yy",
+                "resourcePath": "objects\\gen_projectile\\gen_projectile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -8055,6 +8055,14 @@
             }
         },
         {
+            "Key": "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
+            "Value": {
+                "id": "c504bef0-b870-4e88-836f-32fb7ff27971",
+                "resourcePath": "scripts\\projectile_create_hitbox_sunblast\\projectile_create_hitbox_sunblast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dbf2e1dc-7535-4dea-97b6-0c8bd01fd392",
             "Value": {
                 "id": "233b84e0-b28f-4185-b89f-c4e453d9b8e9",
@@ -9079,6 +9087,14 @@
             }
         },
         {
+            "Key": "f9f66953-4952-4d2b-91c0-936cb4586938",
+            "Value": {
+                "id": "387328bc-8a4a-42e1-ba2e-49773b544f45",
+                "resourcePath": "views\\f9f66953-4952-4d2b-91c0-936cb4586938.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fa413f79-9a70-46c1-81a1-8375853777a4",
             "Value": {
                 "id": "98109eed-bac4-4ed7-88cc-fbde885db205",
@@ -9409,6 +9425,7 @@
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
+        "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
