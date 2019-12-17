@@ -9,7 +9,7 @@
         "fb618e5a-f51a-4060-a593-8ed25f23f941"
     ],
     "filterType": "GMSprite",
-    "folderName": "props and fossils",
+    "folderName": "props",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -65,13 +65,16 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 	}
         
         
-	////spawn extras (props, critters, throwable critters
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////props,critters,crabs won't spawn on startingflat
-	if terraintype!="startingflat"
+	////spawn props
+	if makeok
 	{
-		if random(1)>0.99                                                       /////props
+		if terraintype!="startingflat" ////don't spawn on starting flat
 		{
-			spawn_prop(y_position,block_column_number)
+			if random(1)>0.9                                                   /////props
+			{
+				show_debug_message("spawned prop")
+				spawn_prop(y_position,block_column_number)
+			}
 		}
 	}
 	

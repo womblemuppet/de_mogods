@@ -4,7 +4,7 @@
 
 
 var a;
-a=instance_create(argument0,argument1,prop)
+a=instance_create_depth(argument0,argument1,0,prop)
 a.sprite_index=argument2
 a.death_sprite=argument3
 a.name=argument4
@@ -15,17 +15,21 @@ cutTerrain=argument6
 
 with a
 {
-    y-=sprite_height
-    
-    if cutTerrain
-    {
-	    var fuse;
-	    fuse=0
-	    while (    fuse<500 && collision_rectangle(x,y,x+sprite_width,y+sprite_height,block,false,true)!=noone     )
-	    {
-	        fuse+=1
-	        with collision_rectangle(x,y,x+sprite_width,y+sprite_height,block,false,true)
-	            instance_destroy()
-	    }
-    }
+	x+=sprite_width/2
+	//y-=sprite_height
+	connector=instance_position(x,y+5,block)
+	if connector==noone
+		show_debug_message("no connector for "+name)
+
+	if cutTerrain
+	{
+		var fuse;
+		fuse=0
+		while (    fuse<500 && collision_rectangle(x,y,x+sprite_width,y+sprite_height,block,false,true)!=noone     )
+		{
+		     fuse+=1
+		     with collision_rectangle(x,y,x+sprite_width,y+sprite_height,block,false,true)
+		          instance_destroy()
+		}
+	}
 }
