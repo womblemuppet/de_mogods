@@ -654,7 +654,7 @@ if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button 
 		
 		if !uniques_fpunch_fireball && uniques_fpunch_charge>=UNIQUES_FPUNCH_CHARGE_FIREBALL
 		{
-			effect_create_above(ef_firework,x,y,2,c_red)
+			effect_create_above(ef_firework,x,y,1,c_red)
 			uniques_fpunch_fireball=true
 			sprite_index=sprites[? "uniques_falconpunch_fullcharge"]
 			if super_mode_available
@@ -1286,7 +1286,7 @@ if uniques_vet_digging==2
 		uniques_vet_digging=0
 		dash_rocket_jump_charge=1
 		attack_rocket_jump()
-		effect_create_above(ef_firework,x,y,c_red,2)
+		effect_create_above(ef_firework,x,y,2,c_red)
 	}
 	
 }

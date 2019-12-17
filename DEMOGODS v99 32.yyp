@@ -4431,6 +4431,14 @@
             }
         },
         {
+            "Key": "7cb613be-a469-4abb-bf5b-201d22820a7e",
+            "Value": {
+                "id": "52e633e2-7938-48ed-9a61-7da35e691f50",
+                "resourcePath": "sprites\\fireball_spr\\fireball_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7cef58c7-6aa4-4b0e-bd6d-7b38571b9d7d",
             "Value": {
                 "id": "9b5bb191-0c16-44c5-b4ac-92c6e9af7603",
@@ -8647,6 +8655,14 @@
             }
         },
         {
+            "Key": "ebb11d95-e670-427c-a18c-11edb9140a1e",
+            "Value": {
+                "id": "48a472ae-d8c8-46c1-92c1-d052bf849d8a",
+                "resourcePath": "scripts\\projectile_create_hitbox_fireball\\projectile_create_hitbox_fireball.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ebbed6f1-93ff-476a-bee0-2ad1ebe5fcf6",
             "Value": {
                 "id": "1a5e2991-257f-458e-882e-61cd7fdbe410",
@@ -9426,6 +9442,7 @@
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
         "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
+        "ebb11d95-e670-427c-a18c-11edb9140a1e",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",
