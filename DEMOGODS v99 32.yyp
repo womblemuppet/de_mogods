@@ -4895,14 +4895,6 @@
             }
         },
         {
-            "Key": "8a60ada2-1fd6-45b2-9fa5-c7ecfeb80c31",
-            "Value": {
-                "id": "02684dfb-5a7e-41be-af60-92cec1ec0136",
-                "resourcePath": "sprites\\volcanicrock_backgroundani\\volcanicrock_backgroundani.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "8ab32323-baa3-459e-a2e9-2ea382e980c6",
             "Value": {
                 "id": "9bcf062b-feea-4c37-8b6c-9b08958cc5ef",
@@ -7195,6 +7187,14 @@
             "Value": {
                 "id": "403c1db6-05cb-4f58-986b-c30049e812ea",
                 "resourcePath": "sprites\\OogaR_4H_run\\OogaR_4H_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c74b3793-e43c-42f6-b5c6-f690ae18e246",
+            "Value": {
+                "id": "ef810e7e-8efe-4198-b06a-398219ab5dc9",
+                "resourcePath": "sprites\\Ooga_4H_falconpunch_fullcharge\\Ooga_4H_falconpunch_fullcharge.yy",
                 "resourceType": "GMSprite"
             }
         },

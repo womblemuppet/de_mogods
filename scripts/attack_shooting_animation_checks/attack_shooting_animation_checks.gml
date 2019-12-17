@@ -11,14 +11,20 @@ else if uniques_fpunch_lockdown==2
 	if image_index>5
 	{
 		if uniques_fpunch_has_made_hitbox==false
-		{            
+		{
 			attack_create_hitbox(30,1,true,true,"falconpunch",fpunchhitbox,3,99,14,2,2)
 			create_terrain_cutter(fpunchhitbox,"hit",right_to_dir(),7)
 		}
-        
+
 		uniques_fpunch_has_made_hitbox=true
 		uniques_fpunch_lockdown=3
-        
+		
+		if uniques_fpunch_fireball==true
+		{
+			show_debug_message("fireball!!!!")
+			uniques_fpunch_fireball=false
+		}
+
 	}
 
 	if uniques_fpunch_feet_counter==2

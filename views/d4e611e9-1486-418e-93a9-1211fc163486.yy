@@ -13,7 +13,7 @@
         "204d6501-427e-42d2-be7c-a856d48188b2"
     ],
     "filterType": "GMSprite",
-    "folderName": "player",
+    "folderName": "characters",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -598,6 +598,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			uniques_fpunch_cd_counter=UNIQUES_FPUNCH_COOLDOWN
 			uniques_fpunch_feet_counter=0
 			uniques_fpunch_has_made_hitbox=false
+			uniques_fpunch_fireball=false
 			break;
             
 			case "vet_armspin":
@@ -643,14 +644,24 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 }
 
 
-if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release/max time    [finaledit] way to optimise maybe
+if attacks[? "heavy attack"]=="uga_falconpunch"     ///ooga heavy attack button release/max time    [finaledit] way to optimise maybe, swap button scrape/lockdown check and attacks[?] check
 {
 	if uniques_fpunch_lockdown==1 && (   (!button_scrape[? heavybutton]  && uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MIN ) || uniques_fpunch_charge>UNIQUES_FPUNCH_CHARGE_MAX)   ///heavy attack   button-release/charge-timeout
 	{
 		image_speed=FRAME_SPEED_NORMAL
 		image_index=4
-		uniques_fpunch_charge=0
 		uniques_fpunch_lockdown=2
+		
+		if !uniques_fpunch_fireball && uniques_fpunch_charge>=UNIQUES_FPUNCH_CHARGE_FIREBALL
+		{
+			effect_create_above(ef_firework,x,y,2,c_red)
+			uniques_fpunch_fireball=true
+			sprite_index=sprites[? "uniques_falconpunch_fullcharge"]
+			if super_mode_available
+				sprite_index=sprites[? "uniques_falconpunch_fullcharge_u"]
+		}
+		uniques_fpunch_charge=0
+
 	}
 }
 else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button release/max time    [finaledit] way to optimise maybe

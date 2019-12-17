@@ -162,6 +162,8 @@ uniques_fpunch_lockdown=0   //0 = nothing 1 = charging 2 = locked in
 uniques_fpunch_charge=0   ///charge counter of fpunch
 UNIQUES_FPUNCH_CHARGE_MIN=10
 UNIQUES_FPUNCH_CHARGE_MAX=50
+UNIQUES_FPUNCH_CHARGE_FIREBALL=42
+uniques_fpunch_fireball=false
 uniques_fpunch_feet_counter=-1   /// -1 = not in use 0= please start 1/2 steps back 3= please start 4/5 steps forward (4 resets to -1)
 uniques_fpunch_has_made_hitbox=false
 
@@ -169,12 +171,13 @@ uniques_fpunch_has_made_hitbox=false
 uniques_supersmash_lockdown=0
 uniques_supersmash_has_made_hitbox=false
 
+
+
+
 //VET GENERAL
 uniques_vet_targeted_mine_counter=0
 UNIQUES_VET_TARGETED_MINE_COUNTER_AMOUNT=80
 uniques_vet_targeted_mine_last_hit=noone
-
-
 
 //VETERAN SPINNER ATTACK
 uniques_spinner_attack_lockdown=0    ///0 = nothing 1 = pre spin windup 2 = pre shockwave attack 3 = recovery

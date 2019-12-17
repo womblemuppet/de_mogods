@@ -222,11 +222,11 @@ else if sprite_index==sprites[? "roll"]
 	roll_lockdown=0
 	player_set_idle()	
 }
-else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"]  ///falc punch
+else if sprite_index==sprites[? "uniques_falconpunch"] || sprite_index==sprites[? "uniques_falconpunch_u"] || sprite_index==sprites[? "uniques_falconpunch_fullcharge"] || sprite_index==sprites[? "uniques_falconpunch_fullcharge_u"]   ///falc punch
 {
 	if uniques_fpunch_lockdown==3
 	{
-		uniques_fpunch_lockdown=0  
+		uniques_fpunch_lockdown=0
 		player_set_idle()
 	}
 }

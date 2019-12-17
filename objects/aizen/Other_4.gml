@@ -177,9 +177,9 @@ if room==gameroom
 	};
 	
 	var a;
-	a=effect_aniend(starting_text_spr,0.2,-5)
-	a.x=kouchou.room_x_halfway
-	a.y=kouchou.room_top_border_y+100
+	a=effect_aniend(starting_text_spr,0.01,-5)
+	a.x=kouchou.room_x_halfway-a.sprite_width/2
+	a.y=kouchou.room_top_border_y+300
 	
 	biomeswitch=false   ///true when cutting gap between biomes
 	travelled=0      ////total distance in pixels that the screen has scrolled down
