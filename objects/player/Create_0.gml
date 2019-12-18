@@ -230,6 +230,9 @@ UNIQUES_PHASE_LANDING_ATTACK_DISABLE_STEPS=24
 
 //SLINGER CRACKLING BEAM
 uniques_cracklingbeam_lockdown=0   //0 = nothing 1 = in animation 2 = recovery
+uniques_cracklingbeam_cancellable_counter=0
+UNIQUES_CRACKLINGBEAM_CANCELLABLE_TIME=20
+[continue]
 uniques_cracklingbeam_has_made_hitbox=false
 uniques_cracklingbeam_hitboxobject=noone
 uniques_cracklingbeam_effectobject=noone

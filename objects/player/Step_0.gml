@@ -673,6 +673,18 @@ else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button 
 		uniques_spinner_attack_lockdown=2
 	}
 }
+else if attacks[? "heavy attack"]=="slinger_cracklingbeam"
+{
+	if uniques_cracklingbeam_lockdown==1 && !button_scrape[? heavybutton] && uniques_cracklingbeam_cancellable_counter>UNIQUES_CRACKLINGBEAM_CANCELLABLE_TIME //[finaledit] should change to release scrapes
+	{
+		image_index=13
+		with uniques_cracklingbeam_effectobject
+			instance_destroy()
+		with uniques_cracklingbeam_hitboxobject
+			instance_destroy()
+		uniques_cracklingbeam_lockdown=2
+	}
+}
 
 
 if button_scrape_pushed[? lightbutton]  && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
