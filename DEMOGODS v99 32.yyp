@@ -7647,6 +7647,14 @@
             }
         },
         {
+            "Key": "d08df01f-f395-4a3c-af45-7800b6417a6f",
+            "Value": {
+                "id": "c2b52f52-4b46-4cf7-9972-d7e213469a1e",
+                "resourcePath": "sprites\\slinger_crackling_beam_spr\\slinger_crackling_beam_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d0a06af4-7b4b-4cdd-b7b3-983bc8282492",
             "Value": {
                 "id": "88eb7f80-9106-48ea-8863-c47a5c0ce6d9",

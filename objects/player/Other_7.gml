@@ -248,11 +248,11 @@ else if sprite_index==sprites[? "uniques_spinattack"] || sprite_index=sprites[? 
 		player_set_idle()
 	}
 }
-else if sprite_index==sprites[? "uniques_sunbolt"] || sprite_index==sprites[? "uniques_sunbolt_u"]  ///slinger sunblast
+else if sprite_index==sprites[? "uniques_cracklingbeam"] || sprite_index==sprites[? "uniques_cracklingbeam_u"]  ///slinger cracklingbeam
 {
-	if uniques_sunblast_lockdown==2
+	if uniques_cracklingbeam_lockdown==2
 	{
-		uniques_sunblast_lockdown=0
+		uniques_cracklingbeam_lockdown=0
 		player_set_idle()   
 	}
 }

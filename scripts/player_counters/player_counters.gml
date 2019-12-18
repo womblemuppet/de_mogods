@@ -151,10 +151,6 @@ if uniques_vet_targeted_mine_counter>0
 		uniques_vet_targeted_mine_last_hit=noone
 }
 
-if uniques_sunblast_cd_counter>0
-{
-	uniques_sunblast_cd_counter-=1
-}
 
 if mild_slowed_counter>0
 {

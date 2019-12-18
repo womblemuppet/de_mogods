@@ -7,7 +7,7 @@
 if !player_is_stunned()
 && uniques_fpunch_lockdown==0 
 && uniques_spinner_attack_lockdown==0 
-&& uniques_sunblast_lockdown==0 
+&& uniques_cracklingbeam_lockdown==0
 && uniques_sharkattack_lockdown==0 
 && airgrab_mode=="can_airgrab" 
 && cangroundpound!=1 

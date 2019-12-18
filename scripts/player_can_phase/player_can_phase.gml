@@ -6,9 +6,9 @@
 if player_may_attack()
 	return true
 	
-if uniques_sunblast_lockdown==1 || uniques_sunblast_lockdown==2
+if uniques_cracklingbeam_lockdown==1 || uniques_cracklingbeam_lockdown==2
 {
-	uniques_sunblast_lockdown=0
+	uniques_cracklingbeam_lockdown=0
 	return true
 }
 	

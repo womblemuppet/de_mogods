@@ -196,35 +196,18 @@ if uniques_vet_kamikaze_lockdown==1 && image_index>5
 	//(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
 }
 
-if image_index>7 && uniques_sunblast_lockdown==1                             //////////FIRE SUNBLAST
+if image_index>5 && uniques_cracklingbeam_lockdown==1
 {
-	if uniques_sunblast_has_made_hitbox==false
+	if uniques_cracklingbeam_has_made_hitbox==false
 	{
-
-		var a;
-		a=instance_create_depth(x,y,-1,sunblast)
-		a.hitbox_properties_script=projectile_create_hitbox_sunblast
-		a.sprite_index=sunblast_sprite
-		a.right=right
-		a.scale=1
-		a.creator=self.id
-		
-		if right
-		{
-			a.x+=40
-			a.hspeed=40
-		}
-		else
-		{
-			a.x-=40
-			a.hspeed=-40
-		}
-		
+		uniques_cracklingbeam_hitboxobject=attack_create_hitbox(10,1,false,true,"cracklingbeam",slinger_crackling_beam_spr,0.2,999,6,3,2)
+		uniques_cracklingbeam_effectobject=effect_aniend(slinger_crackling_beam_spr,0.2,-3)
 	}
 	
-	uniques_sunblast_lockdown=2
-	uniques_sunblast_has_made_hitbox=true
+	uniques_cracklingbeam_lockdown=2
+	uniques_cracklingbeam_has_made_hitbox=true
 }
+
 if image_index>3 && uniques_airbolt_lockdown==1                             //////////FIRE AIR SUNBOLT
 {
 	if uniques_airbolt_has_made_hitbox==false

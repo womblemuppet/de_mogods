@@ -79,7 +79,7 @@ switch (character)
 	case "slinger":
     
 	ds_map_add(attacks, "light attack", "slinger_uppercut");
-	ds_map_add(attacks, "heavy attack", "slinger_sunblast");
+	ds_map_add(attacks, "heavy attack", "slinger_cracklingbeam");
 	ds_map_add(attacks, "dash","bunt_dash");
 	ds_map_add(attacks, "airdash", 0);
 	ds_map_add(attacks, "gp", "ground pound with phase");

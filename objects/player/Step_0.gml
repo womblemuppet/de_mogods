@@ -609,20 +609,19 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 			image_index=0
 			uniques_spinner_attack_lockdown=1
 			break;
-               
-			case "slinger_sunblast":
+			
+			case "slinger_cracklingbeam":
 			image_index=0
 			image_speed=FRAME_SPEED_NORMAL
-			sprite_index=sprites[? "uniques_sunbolt"]
+			sprite_index=sprites[? "uniques_cracklingbeam"]
 			if super_mode_available
-				sprite_index=sprites[? "uniques_sunbolt_u"]
-			uniques_sunblast_cd_counter=UNIQUES_SUNBLAST_COOLDOWN
-			uniques_sunblast_lockdown=1
-			uniques_sunblast_has_made_hitbox=false
+				sprite_index=sprites[? "uniques_cracklingbeam_u"]
+				
+			uniques_cracklingbeam_lockdown=1
+			uniques_cracklingbeam_has_made_hitbox=false
 			
-			float_counter=UNIQUES_SUNBLAST_FLOAT_COUNTER_AMOUNT
-			vspd=min(vspd,0)   //if falling, stop fall
 			break;
+               
             
 			case "bait_haymaker":
 			image_speed=FRAME_SPEED_NORMAL

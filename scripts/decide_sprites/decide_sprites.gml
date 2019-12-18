@@ -158,8 +158,8 @@ switch character
 			sentinel_colour=c_purple    
 			sprites[? "uniques_airsunbolt_u"]=Slinger_3H_airsunbolt  ///super version (to be changed)
 			sprites[? "uniques_airsunbolt"]=Slinger_3H_airsunbolt
-			sprites[? "uniques_sunbolt_u"]=Slinger_3H_sunbolt  ///super version (to be changed)
-			sprites[? "uniques_sunbolt"]=Slinger_3H_sunbolt 
+			sprites[? "uniques_cracklingbeam_u"]=Slinger_3H_sunbolt  ///super version (to be changed)
+			sprites[? "uniques_cracklingbeam"]=Slinger_3H_sunbolt 
 			sprites[? "uniques_superblast"]=Slinger_3H_superblast
 			sprites[? "rocketjump"]=Slinger_3H_rocketjump
 			sprites[? "rocketjump_u"]=Slinger_3H_rocketjump
