@@ -22,7 +22,7 @@ else if uniques_fpunch_lockdown==2
 		if uniques_fpunch_fireball==true
 		{
 			var a;
-			a=instance_create_depth(x,y,-1,gen_projectile)
+			a=instance_create_depth(x,y,-1,fireball)
 			a.hitbox_properties_script=projectile_create_hitbox_fireball
 			a.sprite_index=fireball_spr
 			a.right=right
@@ -202,7 +202,7 @@ if image_index>7 && uniques_sunblast_lockdown==1                             ///
 	{
 
 		var a;
-		a=instance_create_depth(x,y,-1,gen_projectile)
+		a=instance_create_depth(x,y,-1,sunblast)
 		a.hitbox_properties_script=projectile_create_hitbox_sunblast
 		a.sprite_index=sunblast_sprite
 		a.right=right
