@@ -223,8 +223,8 @@ if uniques_phase_counter>0
 	}
 }
 
-if uniques_cracklingbeam_cancellable_counter>0
-	uniques_cracklingbeam_cancellable_counter-=1
+if uniques_cracklingbeam_lockdown!=0
+	uniques_cracklingbeam_time_since_start+=1
 
 if uniques_phase_landing_attack_disable_counter>0
 	uniques_phase_landing_attack_disable_counter-=1

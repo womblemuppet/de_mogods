@@ -619,6 +619,7 @@ if button_scrape_pushed[? heavybutton]  && player_may_attack() && uniques_fpunch
 				
 			uniques_cracklingbeam_lockdown=1
 			uniques_cracklingbeam_has_made_hitbox=false
+			uniques_cracklingbeam_time_since_start=0
 			
 			break;
                
@@ -673,16 +674,16 @@ else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button 
 		uniques_spinner_attack_lockdown=2
 	}
 }
-else if attacks[? "heavy attack"]=="slinger_cracklingbeam"
+else if attacks[? "heavy attack"]=="slinger_cracklingbeam"  //release HA cracklingbeam
 {
-	if uniques_cracklingbeam_lockdown==1 && !button_scrape[? heavybutton] && uniques_cracklingbeam_cancellable_counter>UNIQUES_CRACKLINGBEAM_CANCELLABLE_TIME //[finaledit] should change to release scrapes
+	if uniques_cracklingbeam_lockdown==2 && !button_scrape[? heavybutton] && uniques_cracklingbeam_time_since_start>UNIQUES_CRACKLINGBEAM_TIME_CANCELLABLE_AFTER //[finaledit] should change to release scrapes
 	{
 		image_index=13
 		with uniques_cracklingbeam_effectobject
 			instance_destroy()
 		with uniques_cracklingbeam_hitboxobject
 			instance_destroy()
-		uniques_cracklingbeam_lockdown=2
+		uniques_cracklingbeam_lockdown=3
 	}
 }
 

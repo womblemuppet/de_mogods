@@ -195,21 +195,28 @@ if uniques_vet_kamikaze_lockdown==1 && image_index>5
 		uniques_vet_kamikaze_dash_current_hitbox_object.direction=180
 	//(stun amount, number of hh, reset attacker hh, reset opponent,attack name,sprite,image speed,active steps,hkb,vkb)
 }
-
-if image_index>5 && uniques_cracklingbeam_lockdown==1
+if uniques_cracklingbeam_lockdown==1
 {
-	if uniques_cracklingbeam_has_made_hitbox==false
+	if image_index>5
 	{
-		uniques_cracklingbeam_hitboxobject=attack_create_hitbox(10,1,false,true,"cracklingbeam",slinger_crackling_beam_spr,0.2,999,6,3,2)
-		uniques_cracklingbeam_hitboxobject.image_xscale=sign(image_xscale) //[finaledit]
-		uniques_cracklingbeam_effectobject=effect_aniend(slinger_crackling_beam_spr,0.2,-3)
-		if !right
-			uniques_cracklingbeam_effectobject.image_xscale=-1
+		if uniques_cracklingbeam_has_made_hitbox==false
+		{
+			uniques_cracklingbeam_hitboxobject=attack_create_hitbox(10,1,false,true,"cracklingbeam",slinger_crackling_beam_spr,0.2,999,6,3,2)
+			uniques_cracklingbeam_hitboxobject.image_xscale=sign(image_xscale) //[finaledit]
+			uniques_cracklingbeam_hitboxobject.image_yscale=sign(image_yscale) //[finaledit]
+			uniques_cracklingbeam_effectobject=effect_aniend(slinger_crackling_beam_spr,0.2,-3)
+			if !right
+				uniques_cracklingbeam_effectobject.image_xscale=-1
+		}
+		uniques_cracklingbeam_lockdown=2
+		uniques_cracklingbeam_has_made_hitbox=true
 	}
-	
-	uniques_cracklingbeam_lockdown=2
-	uniques_cracklingbeam_has_made_hitbox=true
 }
+//else if uniques_cracklingbeam_lockdown==2  ///loop animation
+//{
+//	if image_index>9.9
+//		image_index=6
+//}
 
 if image_index>3 && uniques_airbolt_lockdown==1                             //////////FIRE AIR SUNBOLT
 {

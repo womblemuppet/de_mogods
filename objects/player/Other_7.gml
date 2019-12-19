@@ -250,7 +250,7 @@ else if sprite_index==sprites[? "uniques_spinattack"] || sprite_index=sprites[? 
 }
 else if sprite_index==sprites[? "uniques_cracklingbeam"] || sprite_index==sprites[? "uniques_cracklingbeam_u"]  ///slinger cracklingbeam
 {
-	if uniques_cracklingbeam_lockdown==2
+	if uniques_cracklingbeam_lockdown==3
 	{
 		uniques_cracklingbeam_lockdown=0
 		player_set_idle()   
