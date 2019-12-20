@@ -6,7 +6,7 @@ a=instance_create_depth(0,0,0,prop_properties)
 
 switch biome
 {
-	default:
+	default: 
 	prop_type=choose("rock_1","shrub_1","tree_1","tiki_torch_1","statue_1")
 	break;
 }

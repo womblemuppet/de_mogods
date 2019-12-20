@@ -18,7 +18,7 @@ with a
 	x+=sprite_width/2
 	connector=instance_position(x,y+5,block)
 	if connector==noone
-		show_debug_message("no connector for "+name)
+		show_debug_message("no connector for prop "+name)
 
 	if cutTerrain
 	{
