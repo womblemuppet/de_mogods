@@ -4,12 +4,10 @@ biome=argument0
 var a,prop_type;
 a=instance_create_depth(0,0,0,prop_properties)
 
-var p_sprite,p_sprite_die,p_name,p_isFlag,p_cutTerrain;
-
 switch biome
 {
 	default:
-	prop_type=choose("rock_1","shrub_1","tree_1","tiki_torch_1")
+	prop_type=choose("rock_1","shrub_1","tree_1","tiki_torch_1","statue_1")
 	break;
 }
 

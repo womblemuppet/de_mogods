@@ -7,12 +7,10 @@ y_position=argument0
 
 var numberofblocks_horizontal
 numberofblocks_horizontal=kouchou.rw/aizen.bw
-	
-for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizontal line
+
+///create blocks by horizontal line
+for (var block_column_number=0; block_column_number<numberofblocks_horizontal; block_column_number+=1)   
 {
-	var block_column_number;
-	block_column_number=i
-	  
 	makeok=terrain_type_spawn_block_pattern_logic(block_column_number)  //sets makeok if necessary
      
 	var a;
@@ -33,44 +31,44 @@ for (var i=0; i<numberofblocks_horizontal; i+=1)   ///create blocks by horizonta
 		switch typeofblock
 		{
 			case "block":
-				a=spawn_block(kouchou.room_left_border_x+i*aizen.bw,y_position)
+				a=spawn_block(kouchou.room_left_border_x+block_column_number*aizen.bw,y_position)
 				ds_list_add(blockstosprite_prevlayer,a)   break;
 			case "weaksand":
-				a=spawn_weaksand_block(kouchou.room_left_border_x+i*aizen.bw,y_position) break;
+				a=spawn_weaksand_block(kouchou.room_left_border_x+block_column_number*aizen.bw,y_position) break;
 			default:
 				show_error("unhandled typeofblock case",true)
 		}
 	}
 		
-	terrain_buffer_layer_newest[i]=a
+	terrain_buffer_layer_newest[block_column_number]=a
 
-			
-	if random(1)>0.995                                                            /////fossils
-	{
-		var a;
-		a=instance_create(kouchou.room_left_border_x+i*aizen.bw,y_position,ef_fossil)
-		a.image_xscale=choose(0.5,0.7,0.9)
-		a.image_yscale=a.image_xscale
-		a.image_xscale=choose(1,-1)
-		switch biome
-		{
-			case "summit":
-				image_index=choose(0,1,2)
-				image_angle=random(360) break;
-			case "sand":
-				image_index=choose(3) break;
-			case "cave":
-					image_index=choose(4) break;
-		}
-	}
+	//spawn fossils (disabled)
+	//if random(1)>0.995
+	//{
+	//	var a;
+	//	a=instance_create(kouchou.room_left_border_x+i*aizen.bw,y_position,ef_fossil)
+	//	a.image_xscale=choose(0.5,0.7,0.9)
+	//	a.image_yscale=a.image_xscale
+	//	a.image_xscale=choose(1,-1)
+	//	switch biome
+	//	{
+	//		case "summit":
+	//			image_index=choose(0,1,2)
+	//			image_angle=random(360) break;
+	//		case "sand":
+	//			image_index=choose(3) break;
+	//		case "cave":
+	//				image_index=choose(4) break;
+	//	}
+	//}
         
-        
+
 	////spawn props
-	if makeok
+	if makeok && space_for_spawn_exists(block_column_number)
 	{
 		if terraintype!="startingflat" ////don't spawn on starting flat
 		{
-			if random(1)>0.9                                                   /////props
+			if random(1)>0.9
 			{
 				show_debug_message("spawned prop")
 				spawn_prop(y_position,block_column_number)

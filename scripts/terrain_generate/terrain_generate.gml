@@ -11,10 +11,10 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	var y_position;
 	y_position=argument0
 
-	show_debug_message("GENERATED--------------------")
-	show_debug_message("bedrockcounter="+string(bedrockcounter));
-	show_debug_message("y_position="+string(y_position));
-	show_debug_message("absolute_y_position = "+ string(y_position+travelled));
+	//show_debug_message("GENERATED--------------------")
+	//show_debug_message("bedrockcounter="+string(bedrockcounter));
+	//show_debug_message("y_position="+string(y_position));
+	//show_debug_message("absolute_y_position = "+ string(y_position+travelled));
 
 	debug_amount_scrolled_since_last_tergen=0
 
@@ -82,14 +82,8 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	
 		for (var i = 0; i < numberofblocks_horizontal; i++) 
 		{
-			var block_newest=terrain_buffer_layer_newest[i]
-			var block_layer2=terrain_buffer_layer2[i]
-			
-			if block_newest>0 && block_layer2==-1
+			if space_for_spawn_exists(i)
 				ds_list_add(possibles,terrain_buffer_layer_newest[i])
-			
-			//if terrain_buffer_layer_newest[i]>0 && terrain_buffer_layer2[i]==-1
-				
 		}
 	
 		//show_debug_message("size of possibles"+string(ds_list_size(possibles)))
