@@ -235,6 +235,7 @@ UNIQUES_CRACKLINGBEAM_TIME_CANCELLABLE_AFTER=15
 uniques_cracklingbeam_has_made_hitbox=false
 uniques_cracklingbeam_hitboxobject=noone
 uniques_cracklingbeam_effectobject=noone
+uniques_cracklingbeam_terraincutter=noone
 
 //SLINGER AIRBOLT
 uniques_airbolt_lockdown=0  //0 = nothing 1 = in animation 2 = shot/recovery

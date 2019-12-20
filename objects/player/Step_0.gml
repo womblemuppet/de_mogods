@@ -678,10 +678,12 @@ else if attacks[? "heavy attack"]=="slinger_cracklingbeam"  //release HA crackli
 {
 	if uniques_cracklingbeam_lockdown==2 && !button_scrape[? heavybutton] && uniques_cracklingbeam_time_since_start>UNIQUES_CRACKLINGBEAM_TIME_CANCELLABLE_AFTER //[finaledit] should change to release scrapes
 	{
-		image_index=13
+		image_index=14
 		with uniques_cracklingbeam_effectobject
 			instance_destroy()
 		with uniques_cracklingbeam_hitboxobject
+			instance_destroy()
+		with uniques_cracklingbeam_terraincutter
 			instance_destroy()
 		uniques_cracklingbeam_lockdown=3
 	}
