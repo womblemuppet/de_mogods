@@ -213,6 +213,7 @@ if uniques_cracklingbeam_lockdown==1
 			uniques_cracklingbeam_terraincutter.image_xscale=sign(image_xscale)
 			uniques_cracklingbeam_terraincutter.image_yscale=sign(image_yscale)
 			uniques_cracklingbeam_terraincutter.image_speed=0.2
+			uniques_cracklingbeam_terraincutter.alarm[0]=150 //arbitrary large number
 
 		}
 		uniques_cracklingbeam_lockdown=2
