@@ -2239,6 +2239,14 @@
             }
         },
         {
+            "Key": "44aef128-4dd4-449f-9d35-c7cd8dc0ba56",
+            "Value": {
+                "id": "10054130-ca4c-433a-a82f-b85c6048860c",
+                "resourcePath": "sprites\\Bait_3H_supergrab_hitbox\\Bait_3H_supergrab_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44fb3854-d979-4525-a099-5d2b16cf6f8a",
             "Value": {
                 "id": "3a2950e4-14d2-4ff2-a0d2-ca3bda39ba32",
@@ -6452,6 +6460,14 @@
                 "id": "c0c24cd1-63d4-4ed9-8c6e-b024569007e1",
                 "resourcePath": "objects\\ef_fossil\\ef_fossil.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b35d7399-7608-433d-839e-179d4e435268",
+            "Value": {
+                "id": "09fa68ff-3421-43dd-873b-056afd3a429c",
+                "resourcePath": "sprites\\Bait_3H_supergrab\\Bait_3H_supergrab.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
