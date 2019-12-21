@@ -11,7 +11,6 @@ switch character
 		if palette==0
 		{
 			supersparkle_sprite=P1_saiyanaura 
-			sentinel_colour=c_purple
 
             
 			if H==3 || H==4 || H==5
@@ -75,8 +74,7 @@ switch character
 		}
 /*        else if palette==1
         {
-            supersparkle_sprite=P1_saiyanaura  
-            sentinel_colour=c_yellow   */
+            supersparkle_sprite=P1_saiyanaura  */
 
 	} break;
     
@@ -85,7 +83,6 @@ switch character
 		if palette==0
 		{
 			supersparkle_sprite=P1_saiyanaura 
-			sentinel_colour=c_purple     
 			sprites[? "uniques_place_mine"]=Vet_3H_place_mine
 			sprites[? "gp_effect_sprite"]=Vet_groundpound_effect
 			sprites[? "rocketjump"]=Vet_3H_rocketjump
@@ -155,7 +152,6 @@ switch character
 		if palette==0
 		{
 			supersparkle_sprite=P1_saiyanaura 
-			sentinel_colour=c_purple    
 			sprites[? "uniques_airsunbolt_u"]=Slinger_3H_airsunbolt  ///super version (to be changed)
 			sprites[? "uniques_airsunbolt"]=Slinger_3H_airsunbolt
 			sprites[? "uniques_cracklingbeam_u"]=Slinger_3H_sunbolt  ///super version (to be changed)
@@ -217,7 +213,7 @@ switch character
 	case "bait":
 	{
 		supersparkle_sprite=P1_saiyanaura 
-		sentinel_colour=c_purple
+		sprites[? "uniques_supergrab"]=Bait_3H_supergrab
 		sprites[? "uniques_blinkjump_windup"]=Bait_3H_blinkjump_windup
 		sprites[? "uniques_blinkjump_windup_u"]=Bait_3H_blinkjump_windup //super version (to be changed)
 		sprites[? "uniques_whirlwind"]=Bait_3H_spin

@@ -464,6 +464,11 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=Vet_3H_super_charge
 		break;
+		
+		case "bait_supergrab":
+		show_debug_message("SUPER GRABBBB")
+		[CONTINUE]
+		break;
 	}
 }
 
