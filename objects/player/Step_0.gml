@@ -1106,63 +1106,76 @@ if button_scrape_pushed[? downbutton]
 }
 
 ///////////////////////////////////////////// downkey while on ground (placeables etc)
-if button_scrape_pushed[? downbutton] && player_may_attack() && !button_scrape[? leftbutton] && !button_scrape[? rightbutton]
+if button_scrape_pushed[? downbutton] && !button_scrape[? leftbutton] && !button_scrape[? rightbutton]
 {
-	var dropped_crab;
-	dropped_crab=false
-	if holding_a_crab
+	var pass;
+	pass=false
+	
+	if player_may_attack()
+		pass=true
+	if uniques_whirlwind_active && uniques_teleport==1
+		pass=true
+	
+	if pass
 	{
-		player_drop_crab()
-		dropped_crab=true
-	}
-	if dropped_crab==false && groundcheck!=noone
-	{
-		switch attacks[? "special hold down"] 
+		var dropped_crab;
+		dropped_crab=false
+		if holding_a_crab
 		{
-			case "no_effect":
-			///whoop whoop
-			break;
+			player_drop_crab()
+			dropped_crab=true
+		}
 		
-			case "vet_place_mine":
-			if uniques_vet_digging==0 && uniques_mines_enabled && groundcheck!=noone && mines_ammo>0 ///start place mine animation
+		if dropped_crab==false && groundcheck!=noone
+		{
+			switch attacks[? "special hold down"] 
 			{
-				if uniques_vet_targeted_mine_last_hit==noone   //normal mine place
+				case "no_effect":
+				///whoop whoop
+				break;
+		
+				case "vet_place_mine":
+				if uniques_vet_digging==0 && uniques_mines_enabled && groundcheck!=noone && mines_ammo>0 ///start place mine animation
 				{
-					if sprite_index!=sprites[? "uniques_place_mine"]
+					if uniques_vet_targeted_mine_last_hit==noone   //normal mine place
+					{
+						if sprite_index!=sprites[? "uniques_place_mine"]
+							image_index=0
+						image_speed=FRAME_SPEED_NORMAL
+						sprite_index=sprites[? "uniques_place_mine"]
+					}
+					else   //thrown mine
+					{
+						if sprite_index!=sprites[? "uniques_throw_targetted_mine"] && sprite_index!=sprites[? "uniques_throw_targetted_mine_u"]
+							image_index=0
+						image_speed=FRAME_SPEED_NORMAL
+						sprite_index=sprites[? "uniques_throw_targetted_mine"]
+						if super_mode_available
+							sprite_index=sprites[? "uniques_throw_targetted_mine_u"]
+					}
+				}
+				break;
+        
+        
+        
+				case "bait_teleport":
+				if uniques_teleport_enabled==1      ////start place/use teleport animation
+				{
+					if sprite_index!=sprites[? "uniques_place_teleport"] && sprite_index!=sprites[? "uniques_use_teleport"]
+					{
+						image_speed=FRAME_SPEED_NORMAL
 						image_index=0
-					image_speed=FRAME_SPEED_NORMAL
-					sprite_index=sprites[? "uniques_place_mine"]
+						sprite_index=sprites[? "uniques_place_teleport"]
+						if uniques_teleport==1
+						{
+							sprite_index=sprites[? "uniques_use_teleport"]
+							if uniques_whirlwind_active
+								sprite_index=sprites[? "uniques_use_teleport_in_whirlwind"]
+						}
+					}
 				}
-				else   //thrown mine
-				{
-					if sprite_index!=sprites[? "uniques_throw_targetted_mine"] && sprite_index!=sprites[? "uniques_throw_targetted_mine_u"]
-						image_index=0
-					image_speed=FRAME_SPEED_NORMAL
-					sprite_index=sprites[? "uniques_throw_targetted_mine"]
-					if super_mode_available
-						sprite_index=sprites[? "uniques_throw_targetted_mine_u"]
-				}
+				break;
 			}
-			break;
-        
-        
-        
-			case "bait_teleport":
-			if uniques_teleport_enabled==1      ////start place/use teleport animation
-			{
-				if sprite_index!=sprites[? "uniques_place_teleport"] && sprite_index!=sprites[? "uniques_use_teleport"]
-				{
-					image_speed=FRAME_SPEED_NORMAL
-					image_index=0
-					sprite_index=sprites[? "uniques_place_teleport"]
-					if uniques_teleport==1
-						sprite_index=sprites[? "uniques_use_teleport"]
-				}
-
-			}
-
-        
-			break;
 		}
 	}
 }

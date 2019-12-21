@@ -214,6 +214,10 @@ if uniques_baitchain_update_pos_counter>0
 	//}
 }
 
+if uniques_whirlwind_teleport_direction_change_leeway_counter>0
+	uniques_whirlwind_teleport_direction_change_leeway_counter-=1
+
+
 if uniques_phase_counter>0
 {
 	uniques_phase_counter-=1

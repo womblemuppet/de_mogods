@@ -2807,6 +2807,14 @@
             }
         },
         {
+            "Key": "523e0e9f-742f-4767-aa2c-9e65dcb3fd75",
+            "Value": {
+                "id": "b95a4cbe-870b-422c-9f43-f0289c596c02",
+                "resourcePath": "sprites\\Bait_3H_spin_use_teleport\\Bait_3H_spin_use_teleport.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "524834a4-ea63-49c6-b0ee-1792fb038002",
             "Value": {
                 "id": "c3722642-3482-437e-b497-09c484264079",

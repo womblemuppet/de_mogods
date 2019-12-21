@@ -221,6 +221,7 @@ switch character
 		sprites[? "uniques_blinkjump_windup"]=Bait_3H_blinkjump_windup
 		sprites[? "uniques_blinkjump_windup_u"]=Bait_3H_blinkjump_windup //super version (to be changed)
 		sprites[? "uniques_whirlwind"]=Bait_3H_spin
+		sprites[? "uniques_use_teleport_in_whirlwind"]=Bait_3H_spin_use_teleport
 		sprites[? "uniques_use_teleport"]=Bait_3H_use_teleport
 		sprites[? "uniques_place_teleport"]=Bait_3H_place_teleport
 		sprites[? "uniques_heavyswing"]=Bait_3H_heavypunch
