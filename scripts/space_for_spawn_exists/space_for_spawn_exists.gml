@@ -1,10 +1,10 @@
 var block_number;
 block_number=argument0
 
-var block_newest=terrain_buffer_layer_newest[block_number]
-var block_layer2=terrain_buffer_layer2[block_number]
+var space_at_spawn=terrain_buffer_layer_newest[block_number]
+var space_above_at_spawn=terrain_buffer_layer2[block_number]
 			
-if block_newest>0 && block_layer2==-1
+if space_at_spawn>0 && space_above_at_spawn<0
 	return true
 	
 return false

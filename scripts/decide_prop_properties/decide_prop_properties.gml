@@ -4,13 +4,18 @@ biome=argument0
 var a,prop_type;
 a=instance_create_depth(0,0,0,prop_properties)
 
-switch biome
-{
-	default: 
-	prop_type=choose("rock_1","shrub_1","tree_1","tiki_torch_1","statue_1")
-	break;
-}
 
+//determine prop_type (name of prop which links to its properties)
+var prop_list;
+if terraintype=="startingflat"
+	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM)    //on starting flat disable cutting props
+else
+	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE)
+ds_list_shuffle(prop_list)
+prop_type=prop_list[| 0]
+
+
+//determine prop properties
 a.p_name=prop_type
 
 switch prop_type
@@ -45,6 +50,8 @@ switch prop_type
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	break;
+	default:
+	show_error("undef pname",true)
 }
 
 return a

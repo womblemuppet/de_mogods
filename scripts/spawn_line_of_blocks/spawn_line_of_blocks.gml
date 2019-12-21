@@ -66,13 +66,10 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 	////spawn props
 	if makeok && space_for_spawn_exists(block_column_number)
 	{
-		if terraintype!="startingflat" ////don't spawn on starting flat
+		if random(1)>0.9
 		{
-			if random(1)>0.9
-			{
-				show_debug_message("spawned prop")
-				spawn_prop(y_position,block_column_number)
-			}
+			show_debug_message("spawned prop")
+			spawn_prop(y_position,block_column_number)
 		}
 	}
 	

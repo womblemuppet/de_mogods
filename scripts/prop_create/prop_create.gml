@@ -15,7 +15,7 @@ cutTerrain=argument6
 
 with a
 {
-	x+=sprite_width/2
+	x+=irandom(aizen.bw)
 	connector=instance_position(x,y+5,block)
 	if connector==noone
 		show_debug_message("no connector for prop "+name)

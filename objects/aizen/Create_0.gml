@@ -101,3 +101,4 @@ terrain_block_sprite_lists_init()
 
 chunkery_init()
 
+prop_lists_init()
