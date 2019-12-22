@@ -293,6 +293,7 @@ if uniques_supergrab_lockdown==1 && image_index>0
 		a.image_yscale=sign(image_yscale) //[finaledit] scale bullshit
 	}
 	
+	uniques_supergrab_victim=noone
 	uniques_supergrab_has_made_hitbox=true
 	uniques_supergrab_lockdown=2
 }

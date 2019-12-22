@@ -152,6 +152,9 @@ switch incoming_attack_name
 			y-=1
 		canbounce_counter=25
 	break;
+	case "supergrab":
+	
+	break;
 }
 
 

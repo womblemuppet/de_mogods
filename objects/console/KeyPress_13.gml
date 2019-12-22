@@ -96,6 +96,11 @@ switch txt
 	case "exit":
 		game_end()
 	break;
+	
+	case "shitcall":
+		with aizen
+			start_shitcall()
+	break;
 
 	default:
 		console_log("unknown command")

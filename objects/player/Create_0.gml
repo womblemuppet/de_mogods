@@ -271,8 +271,12 @@ uniques_sharkattack_has_made_hitbox=false
 uniques_sharkattack_feet_counter=-1
 
 //BAIT SUPER MODE
-uniques_supergrab_lockdown=0
+uniques_supergrab_lockdown=0  //0 = not in use 1 = windup 2 = has shot  //set to 0 on grab hit
 uniques_supergrab_has_made_hitbox=false
+uniques_supergrab_victim=noone
+uniques_supergrab_pull_counter=0
+UNIQUES_SUPERGRAB_PULL_TIME=30
+
 
 // AIRGRAB
 airgrab_mode="can_airgrab"   ///"can_airgrab" "attempting" "is_grabbing" "cannot_airgrab" "being_airgrabbed"
