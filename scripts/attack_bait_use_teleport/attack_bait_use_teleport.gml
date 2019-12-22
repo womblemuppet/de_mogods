@@ -4,8 +4,16 @@ if uniques_teleport==1                                                          
 	{
 		if !place_meeting(uniques_my_teleport_id.x,uniques_my_teleport_id.y,block)
 		{
-			x=uniques_my_teleport_id.x   ///go to teleport position
-			y=uniques_my_teleport_id.y
+			if uniques_supergrab_teletrap_victim!=noone
+			{			
+				uniques_supergrab_teletrap_victim.x=uniques_my_teleport_id.x   ///go to teleport position
+				uniques_supergrab_teletrap_victim.y=uniques_my_teleport_id.y
+			}
+			else
+			{	
+				x=uniques_my_teleport_id.x   ///go to teleport position
+				y=uniques_my_teleport_id.y
+			}
 			effect_create_above(ef_firework,x,y,2,c_aqua)
 		}
 		with uniques_my_teleport_id        ////delete teleport
