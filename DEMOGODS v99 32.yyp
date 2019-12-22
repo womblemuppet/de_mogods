@@ -3831,6 +3831,14 @@
             }
         },
         {
+            "Key": "6a9d769e-7cf4-4cd3-af0b-36676ddb9f0c",
+            "Value": {
+                "id": "b35d8992-a7a3-4011-a218-a12141ea84ac",
+                "resourcePath": "scripts\\attack_bait_use_teleport\\attack_bait_use_teleport.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6ae00bfb-b2a6-4774-9ccd-fac858e6e9b3",
             "Value": {
                 "id": "49bc66f3-4fae-43fe-87e9-fee371dcb4a8",
@@ -9526,6 +9534,7 @@
         "17366ead-6abf-48e2-95b6-cc0a51813cce",
         "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
         "d645af01-a535-4e88-9b06-051d4fe6d7ff",
+        "6a9d769e-7cf4-4cd3-af0b-36676ddb9f0c",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
