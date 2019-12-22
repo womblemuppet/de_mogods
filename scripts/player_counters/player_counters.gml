@@ -218,7 +218,11 @@ if uniques_whirlwind_teleport_direction_change_leeway_counter>0
 	uniques_whirlwind_teleport_direction_change_leeway_counter-=1
 	
 if uniques_supergrab_teletrap_counter>0
+{
 	uniques_supergrab_teletrap_counter-=1
+	if uniques_supergraba_teletrap_counter==0
+		uniques_supergrab_teletrap_victim=noone
+}
 
 
 if uniques_phase_counter>0
