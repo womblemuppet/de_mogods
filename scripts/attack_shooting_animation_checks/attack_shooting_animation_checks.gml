@@ -283,18 +283,14 @@ if uniques_supergrab_lockdown==1 && image_index>0
 {
 	if uniques_supergrab_has_made_hitbox==false
 	{
-		var a;
-		a=attack_create_hitbox(60,1,true,true,"supergrab",Bait_3H_supergrab_hitbox,0.2,99,0,1,0)
-		a.image_xscale=sign(image_xscale)
-		a.image_yscale=sign(image_yscale) //[finaledit] scale bullshit
-		
-		a=create_terrain_cutter(Bait_3H_supergrab_hitbox,"hit",right_to_dir(),5)  //maybe could drag instead of terrain cut
-		a.image_xscale=sign(image_xscale)
-		a.image_yscale=sign(image_yscale) //[finaledit] scale bullshit
+		attack_create_hitbox(60,1,true,true,"supergrab",Bait_3H_supergrab_hitbox,0.2,99,0,1,0)
+		create_terrain_cutter(Bait_3H_supergrab_hitbox,"hit",right_to_dir(),5)  //maybe could drag instead of terrain cut
 	}
 	
 	uniques_supergrab_victim=noone
 	uniques_supergrab_has_made_hitbox=true
 	uniques_supergrab_lockdown=2
 }
+if uniques_supergrab_pull_counter>0
+	uniques_supergrab_pull_counter-=1
 

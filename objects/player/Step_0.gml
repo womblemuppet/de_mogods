@@ -476,6 +476,8 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 	}
 }
 
+if button_scrape_released[? superbutton] && uniques_supergrab_lockdown==2
+	uniques_supergrab_pull_counter=0
 
 
 if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_attack() && light_heavy_held_counter<1  ////light attack
@@ -1187,6 +1189,19 @@ if button_scrape_pushed[? downbutton] && !button_scrape[? leftbutton] && !button
 			}
 		}
 	}
+}
+if uniques_supergrab_pull_counter>0
+{
+	var xamount;
+	xamount=0
+	
+	if x < uniques_supergrab_target_x
+		xamount=UNIQUES_SUPERGRAB_PULL_SPEED
+	else if x > uniques_supergrab_target_x
+		xamount=-UNIQUES_SUPERGRAB_PULL_SPEED
+	
+	if xamount!=0 && !place_meeting(x+xamount,y,block)
+		x+=xamount
 }
 
 player_check_teleport_release()

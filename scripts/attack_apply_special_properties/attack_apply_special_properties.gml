@@ -153,7 +153,15 @@ switch incoming_attack_name
 		canbounce_counter=25
 	break;
 	case "supergrab":
-	
+	attacker.uniques_supergrab_target_x=x
+	attacker.uniques_supergrab_target_y=y
+	attacker.uniques_supergrab_teletrap_victim=self.id
+	with attacker
+	{
+		uniques_supergrab_teletrap_counter=UNIQUES_SUPERGRAB_TELETRAP_TIME
+		if button_scrape[? superbutton]
+			uniques_supergrab_pull_counter=UNIQUES_SUPERGRAB_PULL_TIME
+	}
 	break;
 }
 

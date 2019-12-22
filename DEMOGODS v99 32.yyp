@@ -2242,7 +2242,7 @@
             "Key": "44aef128-4dd4-449f-9d35-c7cd8dc0ba56",
             "Value": {
                 "id": "10054130-ca4c-433a-a82f-b85c6048860c",
-                "resourcePath": "sprites\\Bait_3H_supergrab_hitbox\\Bait_3H_supergrab_hitbox.yy",
+                "resourcePath": "sprites\\Bait_3H_supergrab_hitbox_old\\Bait_3H_supergrab_hitbox_old.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4539,6 +4539,14 @@
             "Value": {
                 "id": "8e135b2e-ae78-4e0c-ba17-62c5e76f2c6d",
                 "resourcePath": "sprites\\Ooga_U_falconpunch\\Ooga_U_falconpunch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7fa52448-9aed-46a7-bc92-4436d425dc54",
+            "Value": {
+                "id": "9f81ee7f-adfd-45a0-9c6d-a33a3ff17a62",
+                "resourcePath": "sprites\\Bait_3H_supergrab_hitbox\\Bait_3H_supergrab_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },
