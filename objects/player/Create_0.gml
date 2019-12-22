@@ -243,7 +243,7 @@ uniques_airbolt_has_made_hitbox=false
 UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT=12
 
 //SLINGER SUPERBLAST
-uniques_slinger_superblast_lockdown=0
+uniques_superblast_lockdown=0
 uniques_slinger_superblast_has_made_hitbox=false
 
 //BAIT CHAIN
@@ -270,9 +270,9 @@ uniques_sharkattack_lockdown=0
 uniques_sharkattack_has_made_hitbox=false
 uniques_sharkattack_feet_counter=-1
 
-
 //BAIT SUPER MODE
-uniques_honeybadger_enabled=false
+uniques_supergrab_lockdown=0
+uniques_supergrab_has_made_hitbox=false
 
 // AIRGRAB
 airgrab_mode="can_airgrab"   ///"can_airgrab" "attempting" "is_grabbing" "cannot_airgrab" "being_airgrabbed"

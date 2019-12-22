@@ -14,12 +14,13 @@ if !player_is_stunned()
 && cangroundpound!=2 
 && dash_rocket_jump!=1 
 && dash_rocket_jump!=2 
-&& uniques_whirlwind_active==false 
+&& uniques_whirlwind_active==false
+&& uniques_supergrab_lockdown==0
 && uniques_vet_digging==0 
 && uniques_airbolt_lockdown==0 
 && uniques_dashgpblinkattack_lockdown==0 
 && uniques_vet_kamikaze_lockdown==0
-&& uniques_slinger_superblast_lockdown==0
+&& uniques_superblast_lockdown==0
 && uniques_supersmash_lockdown==0
 && roll_lockdown==0
 && ritual_lockdown==0

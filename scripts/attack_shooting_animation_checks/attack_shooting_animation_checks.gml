@@ -220,12 +220,6 @@ if uniques_cracklingbeam_lockdown==1
 		uniques_cracklingbeam_has_made_hitbox=true
 	}
 }
-//else if uniques_cracklingbeam_lockdown==2  ///loop animation
-//{
-//	if image_index>9.9
-//		image_index=6
-//}
-
 if image_index>3 && uniques_airbolt_lockdown==1                             //////////FIRE AIR SUNBOLT
 {
 	if uniques_airbolt_has_made_hitbox==false
@@ -248,7 +242,7 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 	uniques_airbolt_has_made_hitbox=true
 }
 
-if uniques_slinger_superblast_lockdown==1 && image_index>5
+if uniques_superblast_lockdown==1 && image_index>5
 {
 	if uniques_slinger_superblast_has_made_hitbox==false
 	{
@@ -270,7 +264,7 @@ if uniques_slinger_superblast_lockdown==1 && image_index>5
 	}
 	
 	uniques_slinger_superblast_has_made_hitbox=true
-	uniques_slinger_superblast_lockdown=2
+	uniques_superblast_lockdown=2
 }
 
 
@@ -285,5 +279,21 @@ if uniques_sharkattack_lockdown==1 && image_index>4
 	uniques_sharkattack_has_made_hitbox=true
 	uniques_sharkattack_lockdown=2         
 }
-
+if uniques_supergrab_lockdown==1 && image_index>0
+{
+	if uniques_supergrab_has_made_hitbox==false
+	{
+		var a;
+		a=attack_create_hitbox(60,1,true,true,"supergrab",Bait_3H_supergrab_hitbox,0.2,99,0,1,0)
+		a.image_xscale=sign(image_xscale)
+		a.image_yscale=sign(image_yscale) //[finaledit] scale bullshit
+		
+		a=create_terrain_cutter(Bait_3H_supergrab_hitbox,"hit",right_to_dir(),5)  //maybe could drag instead of terrain cut
+		a.image_xscale=sign(image_xscale)
+		a.image_yscale=sign(image_yscale) //[finaledit] scale bullshit
+	}
+	
+	uniques_supergrab_has_made_hitbox=true
+	uniques_supergrab_lockdown=2
+}
 

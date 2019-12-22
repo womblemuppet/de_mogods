@@ -231,6 +231,11 @@ else if sprite_index==sprites[? "uniques_blinkjump_windup"] ||sprite_index==spri
 	
 	player_set_idle()
 }
+else if sprite_index==sprites[? "uniques_supergrab"]
+{
+	uniques_supergrab_lockdown=0
+	player_set_idle()
+}
 else if sprite_index==sprites[? "rocketjump"] || sprite_index==sprites[? "rocketjump_u"]  ///rocket jump end
 {
 	if dash_rocket_jump==2
@@ -299,7 +304,7 @@ else if sprite_index==sprites[? "phase_entry"]
 }
 else if sprite_index==sprites[? "uniques_superblast"]
 {
-	uniques_slinger_superblast_lockdown=0
+	uniques_superblast_lockdown=0
 	player_set_idle()	
 }
 else if sprite_index==sprites[? "uniques_heavyswing"] || sprite_index==sprites[? "uniques_heavyswing_u"]  ///bait shark attack heavy attack

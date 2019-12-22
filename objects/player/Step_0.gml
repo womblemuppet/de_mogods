@@ -449,7 +449,7 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		image_speed=FRAME_SPEED_FAST
 		sprite_index=sprites[? "uniques_superblast"]
 		image_index=0
-		uniques_slinger_superblast_lockdown=1
+		uniques_superblast_lockdown=1
 		uniques_slinger_superblast_has_made_hitbox=false  //[finaledit] all step attack starts should include hitbox var reset
 		break;
 		
@@ -466,8 +466,12 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		break;
 		
 		case "bait_supergrab":
-		show_debug_message("SUPER GRABBBB")
-		[CONTINUE]
+		image_speed=FRAME_SPEED_FAST
+		sprite_index=sprites[? "uniques_supergrab"]
+		image_index=0
+		uniques_supergrab_lockdown=1
+		uniques_supergrab_has_made_hitbox=false
+		
 		break;
 	}
 }

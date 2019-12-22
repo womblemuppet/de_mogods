@@ -129,7 +129,6 @@ switch (character)
 	uniques_teleport=0
 	super_mode_duration=1000
 	uniques_dashgpblinkattack_enabled=true
-	uniques_honeybadger_enabled=true
 	
 	break;
     
