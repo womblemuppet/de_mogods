@@ -4935,6 +4935,14 @@
             }
         },
         {
+            "Key": "89a61ea6-8c58-4fe4-891b-ad27fe9462cc",
+            "Value": {
+                "id": "9b29ad16-74e4-4ccd-b8a5-9ea8ffdcfd4b",
+                "resourcePath": "sprites\\spr_teleport_anchor_spawn\\spr_teleport_anchor_spawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89d33241-9d12-491a-8c03-00a870b09271",
             "Value": {
                 "id": "2c90ec72-cbca-4a7a-a883-eeb6ce21e878",

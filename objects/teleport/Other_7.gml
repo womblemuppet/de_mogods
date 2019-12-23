@@ -1,1 +1,1 @@
-image_index=3
+sprite_index=spr_teleport_anchor
