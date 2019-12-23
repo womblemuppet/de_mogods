@@ -1191,6 +1191,14 @@
             }
         },
         {
+            "Key": "1fca230b-58f0-4624-a2e3-f859de5f8631",
+            "Value": {
+                "id": "29f5e481-8a9f-4468-a802-36c9a06744cb",
+                "resourcePath": "sprites\\bait_supergrab_teletrap_spr\\bait_supergrab_teletrap_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1ff2332e-92e7-4f50-900d-7c553638ab6d",
             "Value": {
                 "id": "83e7c4f4-303a-483f-9949-13636f6a7275",
