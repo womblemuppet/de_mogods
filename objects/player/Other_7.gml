@@ -140,12 +140,16 @@ else if sprite_index==sprites[? "uniques_kamikaze"]
 else if sprite_index==sprites[? "uniques_place_teleport"]  ///bait teleport place
 {
 	player_set_idle()
-	if uniques_teleport==0 		////create teleport if there isn't one
+	
+	////create teleport if there isn't one
+	if uniques_teleport==0 		
 	{
 		uniques_teleport=1
 		uniques_my_teleport_id=instance_create(x,y-10,teleport)
 		uniques_my_teleport_id.creator=self.id
-		effect_create_above(ef_firework,x,y,2,c_red)
+		uniques_my_teleport_id.sprite_index=spr_teleport_anchor_spawn
+		uniques_my_teleport_id.main_sprite=spr_teleport_anchor
+		uniques_my_teleport_id.die_sprite=spr_teleport_anchor_die
 	}
 }
 else if sprite_index==sprites[? "uniques_use_teleport_in_whirlwind"]

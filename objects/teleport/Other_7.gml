@@ -1,1 +1,1 @@
-sprite_index=spr_teleport_anchor
+sprite_index=main_sprite

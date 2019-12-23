@@ -220,6 +220,9 @@ switch character
 		sprites[? "uniques_use_teleport_in_whirlwind"]=Bait_3H_spin_use_teleport
 		sprites[? "uniques_use_teleport"]=Bait_3H_use_teleport
 		sprites[? "uniques_place_teleport"]=Bait_3H_place_teleport
+		sprites[? "teleport_spawn"]=spr_teleport_anchor_spawn
+		sprites[? "teleport_placed"]=spr_teleport_anchor
+		sprites[? "teleport_die"]=spr_teleport_anchor_die
 		sprites[? "uniques_heavyswing"]=Bait_3H_heavypunch
 		sprites[? "uniques_heavyswing_u"]=Bait_3H_heavypunch   ///super version (to be changed)
 		sprites[? "rocketjump"]=Bait_3H_rocketjump

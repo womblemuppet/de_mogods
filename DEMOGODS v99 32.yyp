@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "22d8181f-4910-47c7-9b29-3c963a1f804b",
+            "Value": {
+                "id": "eb40ec4a-099b-4bd4-bd45-6d148cc744bd",
+                "resourcePath": "sprites\\spr_teleport_anchor_die\\spr_teleport_anchor_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23bed5a5-c700-4efb-8fd1-544c5f0b7f76",
             "Value": {
                 "id": "2cd6a002-810a-496f-bc98-7a6a1baf62a2",
