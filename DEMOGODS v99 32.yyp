@@ -4271,6 +4271,14 @@
             }
         },
         {
+            "Key": "778cbffc-9906-4cd0-bc22-9de19eaa9054",
+            "Value": {
+                "id": "c7079977-d47f-4b6e-b996-a35bb35ae912",
+                "resourcePath": "scripts\\attack_bait_create_chain_effect\\attack_bait_create_chain_effect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "77a98b63-228a-412d-8fe2-6014fe989b2d",
             "Value": {
                 "id": "a3a6eb56-5dc7-4b88-af79-ebb466d7a1f8",
@@ -6471,6 +6479,14 @@
             }
         },
         {
+            "Key": "b23b955a-acd3-4e2d-87a5-5c789a77ebd7",
+            "Value": {
+                "id": "94d0f843-9972-4e09-8fdb-378f33d6034d",
+                "resourcePath": "sprites\\sand15\\sand15.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b24dea6b-45a2-43d4-b360-a339373b9259",
             "Value": {
                 "id": "543269e4-7553-4659-8c24-bbec9606cdbd",
@@ -7723,14 +7739,6 @@
             "Value": {
                 "id": "c2b52f52-4b46-4cf7-9972-d7e213469a1e",
                 "resourcePath": "sprites\\slinger_crackling_beam_spr\\slinger_crackling_beam_spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "d0a06af4-7b4b-4cdd-b7b3-983bc8282492",
-            "Value": {
-                "id": "88eb7f80-9106-48ea-8863-c47a5c0ce6d9",
-                "resourcePath": "sprites\\sand15\\sand15.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9559,6 +9567,7 @@
         "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
         "d645af01-a535-4e88-9b06-051d4fe6d7ff",
         "6a9d769e-7cf4-4cd3-af0b-36676ddb9f0c",
+        "778cbffc-9906-4cd0-bc22-9de19eaa9054",
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
         "925fbba9-7668-4946-878f-c3c7c3bfe016",

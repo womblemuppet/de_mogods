@@ -6,7 +6,8 @@
     "children": [
         "58f5f72b-e32e-4bf0-8abf-5cea135474d9",
         "d645af01-a535-4e88-9b06-051d4fe6d7ff",
-        "6a9d769e-7cf4-4cd3-af0b-36676ddb9f0c"
+        "6a9d769e-7cf4-4cd3-af0b-36676ddb9f0c",
+        "778cbffc-9906-4cd0-bc22-9de19eaa9054"
     ],
     "filterType": "GMScript",
     "folderName": "bait",

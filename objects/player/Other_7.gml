@@ -141,11 +141,11 @@ else if sprite_index==sprites[? "uniques_place_teleport"]  ///bait teleport plac
 {
 	player_set_idle()
 	
-	////create teleport if there isn't one
+	////place teleport if one doesn't exist
 	if uniques_teleport==0 		
 	{
 		uniques_teleport=1
-		uniques_my_teleport_id=instance_create(x,y-10,teleport)
+		uniques_my_teleport_id=instance_create_depth(x,y-10,-1,teleport)
 		uniques_my_teleport_id.creator=self.id
 		uniques_my_teleport_id.sprite_index=spr_teleport_anchor_spawn
 		uniques_my_teleport_id.main_sprite=spr_teleport_anchor

@@ -91,6 +91,7 @@ switch incoming_attack_name
 	break;
 	case "baitchain" :
 	{
+		//delete old chain effect
 		if chained_debuff_counter>0
 		{
 			if  chain_effect_id_to_delete!=noone && instance_exists(chain_effect_id_to_delete)
@@ -101,26 +102,13 @@ switch incoming_attack_name
 			}
 		}
 		
-		chained_debuff_counter=BAITCHAIN_CHAIN_TIME   //failsafe, reset to attackers chain_time if attacker exists
+		chained_debuff_counter=BAITCHAIN_CHAIN_TIME   //(failsafe for if attacker doesn't exist)
 		chained_debuff_x_pos=x
 		chained_debuff_y_pos=y
 		uniques_baitchain_update_pos_counter=8  ///updates above positions in a few steps (feels better)
 		
-		var me;
-		me=self.id
-		chain_effect_id_to_delete=instance_create(x,y,ef_chain)
-		chain_effect_id_to_delete.target=-1
-		chain_effect_id_to_delete.tx=x
-		chain_effect_id_to_delete.ty=y
-		if instance_exists(me)
-		{
-			with chain_effect_id_to_delete
-			{
-				target=me
-				tx=me.x
-				ty=me.y
-			}
-		}
+		attack_bait_create_chain_effect()
+		
 		if attacker!=noone
 		{
 			chained_debuff_counter=attacker.BAITCHAIN_CHAIN_TIME

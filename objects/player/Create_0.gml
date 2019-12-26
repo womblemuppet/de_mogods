@@ -249,7 +249,7 @@ uniques_slinger_superblast_has_made_hitbox=false
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150
 BAITCHAIN_CHAIN_RANGE=75
-uniques_baitchain_last_chained=noone
+uniques_baitchain_last_chained=noone  //shoulda been list of players
 uniques_baitchain_last_chained_timer=0
 uniques_baitchain_update_pos_counter=0
 
