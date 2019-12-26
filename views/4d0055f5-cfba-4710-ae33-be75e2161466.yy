@@ -20,7 +20,8 @@
         "9d000f13-439c-4928-b7f0-537b4ff1a1b3",
         "2f143757-fbe6-412d-b735-02f64ac1d7b2",
         "6c7d080b-716a-475b-92ff-9f2a872d0fef",
-        "6edb1e18-34f0-4051-8a2e-c9c1404311fd"
+        "6edb1e18-34f0-4051-8a2e-c9c1404311fd",
+        "6d6d2732-8def-4a40-88c2-0f702a967a1f"
     ],
     "filterType": "GMSprite",
     "folderName": "cave",

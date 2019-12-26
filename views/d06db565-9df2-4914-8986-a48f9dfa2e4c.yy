@@ -4,11 +4,6 @@
     "mvc": "1.1",
     "name": "d06db565-9df2-4914-8986-a48f9dfa2e4c",
     "children": [
-        "2ed43c5e-fe5f-4561-bb3d-9a67aa4d459e",
-        "697018a0-868a-4a3b-b546-f0c9bb6ac94f",
-        "86219e19-a4e5-4f90-90cb-feadbc304dbd",
-        "ef813694-9dca-4004-9538-86c19cf21e9c",
-        "3476c984-031b-4d40-a27e-df7561cf5458",
         "38a1e748-2412-4d73-9625-c4b392340ac2",
         "5ec664d4-f94f-47b4-b818-97c87c488dfe",
         "8594ab84-01d1-46e1-bede-16e419cc3a95",
@@ -25,7 +20,8 @@
         "74598bdf-22e5-4c1d-a249-0b5ef8aba74f",
         "aa5799dd-53ba-4ca9-afa7-ebf3ff45a383",
         "634f4019-e94f-4e00-8c7e-8be946cf5514",
-        "0c4ef715-1268-4a1c-b8c8-2a4db9f12a27"
+        "0c4ef715-1268-4a1c-b8c8-2a4db9f12a27",
+        "f6cfea84-f6ec-4f93-add7-d65358bd08a7"
     ],
     "filterType": "GMSprite",
     "folderName": "grassy",

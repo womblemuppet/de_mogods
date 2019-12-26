@@ -20,8 +20,8 @@
         "33e2ee04-903e-4f57-a5e2-6b57c71f9750",
         "e4499a7d-7af3-4640-86e9-8eeb3e4de605",
         "b23b955a-acd3-4e2d-87a5-5c789a77ebd7",
-        "d0a06af4-7b4b-4cdd-b7b3-983bc8282492",
-        "637d745c-7897-4db0-9a27-2bfe2272b364"
+        "637d745c-7897-4db0-9a27-2bfe2272b364",
+        "e1e42447-4b00-4989-88df-6269e67e0e68"
     ],
     "filterType": "GMSprite",
     "folderName": "sand",

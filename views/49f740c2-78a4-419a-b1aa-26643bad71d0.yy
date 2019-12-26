@@ -27,7 +27,8 @@
         "c306eb38-4c10-467f-8c78-c9eb07fcc1b9",
         "84af62a1-8651-4047-bedd-df0a46b29871",
         "a9445bd0-6c01-4aa7-a644-91341c01f9c3",
-        "92e95a22-de41-4ada-be82-791dde2313e2"
+        "92e95a22-de41-4ada-be82-791dde2313e2",
+        "cacab152-6af6-481f-a790-73d55752afbe"
     ],
     "filterType": "GMSprite",
     "folderName": "temple",

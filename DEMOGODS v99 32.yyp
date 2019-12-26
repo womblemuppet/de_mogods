@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "154bb5b0-c8da-4db7-9958-0734377e1c1e",
+            "Value": {
+                "id": "69d82e89-f703-4e4b-80d5-6a170e674e94",
+                "resourcePath": "sprites\\forest_die_debris_die\\forest_die_debris_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "157bd692-79f9-45a1-8f2e-b3fa23d071e4",
             "Value": {
                 "id": "08eba6a4-497d-4fd1-90a7-28ece942f0d3",
@@ -1171,6 +1179,22 @@
             "Value": {
                 "id": "1d807fd9-96a1-49c6-95ee-3f02e08a0586",
                 "resourcePath": "sprites\\Slinger_3H_fall\\Slinger_3H_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1f40d1c9-871c-4795-b8b4-1207c9c29bad",
+            "Value": {
+                "id": "7cbcc312-a3cf-4962-9121-0214e1f4427d",
+                "resourcePath": "sprites\\sand_die_debris_die\\sand_die_debris_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1f659e44-1e9c-43d5-b640-9d2a803cfc68",
+            "Value": {
+                "id": "84c49959-9385-4611-a55f-220c242cd80e",
+                "resourcePath": "sprites\\sand_die_hit\\sand_die_hit.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1783,6 +1807,14 @@
             }
         },
         {
+            "Key": "34839d35-d9e5-4b3f-a79c-185eb99116f3",
+            "Value": {
+                "id": "add83f3c-592d-4c3e-9c57-85a1df015377",
+                "resourcePath": "sprites\\sand_die_disintegrated\\sand_die_disintegrated.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34b3b7f6-3332-4f5e-b2e1-a3d6107d56b6",
             "Value": {
                 "id": "2b98cfaf-5a80-4b81-a188-1ce7a7c0b9df",
@@ -2175,6 +2207,14 @@
             }
         },
         {
+            "Key": "426bfff8-c6dc-4557-b71c-27df63e77712",
+            "Value": {
+                "id": "317605db-9c3a-47a5-9719-41cd634b2ff1",
+                "resourcePath": "views\\426bfff8-c6dc-4557-b71c-27df63e77712.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "42ebfff4-20cd-4be9-8222-7089277d798a",
             "Value": {
                 "id": "aab16608-ed60-4520-8b6c-e7e2f86b3719",
@@ -2259,6 +2299,14 @@
             "Value": {
                 "id": "acd25229-d27c-457e-bae7-2dcfa85c123b",
                 "resourcePath": "sprites\\bait_blinkjump_effect\\bait_blinkjump_effect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "45cf6e8e-b591-44b5-83e5-14a1014e59b2",
+            "Value": {
+                "id": "7eb94665-2627-487d-925a-b2d41b00b470",
+                "resourcePath": "sprites\\newtemple_die_disintegrated\\newtemple_die_disintegrated.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2435,6 +2483,14 @@
             "Value": {
                 "id": "a8a77e2c-7327-4791-860b-44555b185fbb",
                 "resourcePath": "sprites\\Ooga_U_fall\\Ooga_U_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4984db87-fc5c-424e-8e11-8534bcc76451",
+            "Value": {
+                "id": "7ed0129e-f6c8-4448-82df-8d4381c64ae6",
+                "resourcePath": "sprites\\forest_die_hit\\forest_die_hit.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3127,6 +3183,14 @@
             }
         },
         {
+            "Key": "5942180b-6ccf-4861-acb6-f89dc87191b8",
+            "Value": {
+                "id": "a5f41d94-a57c-4d46-8694-f3202686f36a",
+                "resourcePath": "sprites\\cave_die_disintegrated\\cave_die_disintegrated.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59584861-7b77-4965-96fe-e57cfc3e29e6",
             "Value": {
                 "id": "8c157f1a-7cfb-4e1c-be7c-93b33ad4da39",
@@ -3444,6 +3508,14 @@
                 "id": "56c09f9a-24af-4b3a-abef-4bdebec930f2",
                 "resourcePath": "views\\5fda0284-b90d-4ada-ac32-f73c2b921faf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "60321939-2b86-49e8-b162-8228c02901b1",
+            "Value": {
+                "id": "0ef35034-5c60-482f-953e-93e0a7a6f85c",
+                "resourcePath": "sprites\\cave_die_pushed\\cave_die_pushed.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3791,6 +3863,14 @@
             }
         },
         {
+            "Key": "696f975e-e6ee-4a9b-9cbd-7d742e657b67",
+            "Value": {
+                "id": "e750a608-b01b-48f9-b5b9-fdf350e001b1",
+                "resourcePath": "sprites\\newtemple_die_debris\\newtemple_die_debris.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "697018a0-868a-4a3b-b546-f0c9bb6ac94f",
             "Value": {
                 "id": "66687604-7dff-41b5-aa89-8cdebb89a4bf",
@@ -3807,11 +3887,27 @@
             }
         },
         {
+            "Key": "69b87de5-da40-4531-bf5a-756241004be7",
+            "Value": {
+                "id": "dbc64648-d08c-40f0-a606-86988cfa1bfc",
+                "resourcePath": "sprites\\cave_die_hit\\cave_die_hit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "69b9e792-9311-460b-95ed-896dac7a3018",
             "Value": {
                 "id": "e03d888f-19cb-4eab-b8e4-0192b371c7ea",
                 "resourcePath": "views\\69b9e792-9311-460b-95ed-896dac7a3018.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "69eb0b56-6fd8-4ea9-b8bb-739718866389",
+            "Value": {
+                "id": "94781b4a-d1ce-4424-9cf4-50af63d8df20",
+                "resourcePath": "sprites\\cave_die_debris\\cave_die_debris.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3915,6 +4011,14 @@
             "Value": {
                 "id": "c6f1297f-bf64-42dd-9460-6c3696616119",
                 "resourcePath": "views\\6d463073-0703-416e-b9f4-d66c3eb7977a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6d6d2732-8def-4a40-88c2-0f702a967a1f",
+            "Value": {
+                "id": "05d4ff5f-cb85-41c3-bc3f-650238bce97e",
+                "resourcePath": "views\\6d6d2732-8def-4a40-88c2-0f702a967a1f.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -4195,6 +4299,14 @@
             "Value": {
                 "id": "66df8a7f-a68f-4114-9a43-0e49dc77c8ef",
                 "resourcePath": "sprites\\Slinger_3H_recoiling_air_flip\\Slinger_3H_recoiling_air_flip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "75ab4ac2-3e1f-451f-b43a-74ad5e35b717",
+            "Value": {
+                "id": "be3b7939-da10-4edf-83c5-1afd52c433e4",
+                "resourcePath": "sprites\\newtemple_die_pushed\\newtemple_die_pushed.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4623,6 +4735,14 @@
             }
         },
         {
+            "Key": "813a532e-5e7e-40ba-8c3c-445af5875cac",
+            "Value": {
+                "id": "daab31cc-3ab0-4505-86ca-d7a9a43b11d4",
+                "resourcePath": "sprites\\sand_die_pushed\\sand_die_pushed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "818d577f-a477-446d-b74c-5cc0365ae345",
             "Value": {
                 "id": "44eef56c-4b21-4c62-b5cc-197d6333ff8a",
@@ -4723,6 +4843,14 @@
             "Value": {
                 "id": "87a3d711-ed24-4377-85c9-ddfc34891815",
                 "resourcePath": "sprites\\lightning_test_mask\\lightning_test_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "83209c40-03b0-4eb1-bb25-6a23f2348cc6",
+            "Value": {
+                "id": "89491b5b-721d-460e-a894-e892656d7842",
+                "resourcePath": "sprites\\forest_die_pushed\\forest_die_pushed.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5375,6 +5503,14 @@
             }
         },
         {
+            "Key": "93f5acd8-b311-4d26-895a-bf722d76285b",
+            "Value": {
+                "id": "62d8a129-52f9-42e5-b013-a2306277cd0a",
+                "resourcePath": "sprites\\newtemple_die_debris_die\\newtemple_die_debris_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "94073843-ba65-469e-837d-048cd4456c24",
             "Value": {
                 "id": "fe2fd98b-ec6b-44ef-9268-3e53e9632748",
@@ -5843,6 +5979,14 @@
             "Value": {
                 "id": "ce35665a-18c1-4d9d-a775-58277fba7ffe",
                 "resourcePath": "sprites\\Vet_3H_forwardpunch\\Vet_3H_forwardpunch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a150ac7f-4bf3-409c-b66c-086278aad6db",
+            "Value": {
+                "id": "91a42c40-e6aa-4264-9d70-fe9e526294d9",
+                "resourcePath": "sprites\\forest_die_debris\\forest_die_debris.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7399,6 +7543,14 @@
             }
         },
         {
+            "Key": "cacab152-6af6-481f-a790-73d55752afbe",
+            "Value": {
+                "id": "90b18b3d-29cb-4126-a60c-b8d6aedff7c6",
+                "resourcePath": "views\\cacab152-6af6-481f-a790-73d55752afbe.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cacbc0d4-3bc6-471f-aa99-1bb2895c2c1d",
             "Value": {
                 "id": "e216a5f6-6fe7-4cd8-b1e4-093f5059e9d0",
@@ -7620,6 +7772,14 @@
                 "id": "b0838015-1293-4f36-b6e5-b8c79c2b9cd6",
                 "resourcePath": "objects\\ef_follower\\ef_follower.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cea2cbef-8232-42dd-a5f4-2a646f528934",
+            "Value": {
+                "id": "a43ffdfa-b430-491d-8afd-eb3d9c2cc598",
+                "resourcePath": "sprites\\sand_die_debris\\sand_die_debris.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8319,10 +8479,26 @@
             }
         },
         {
+            "Key": "dfc9a940-68cc-4155-99c0-06744871feb2",
+            "Value": {
+                "id": "ca3cb7ff-b496-45c0-a32e-efaf167b0e83",
+                "resourcePath": "sprites\\forest_die_disintegrated\\forest_die_disintegrated.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e055b166-8bba-4de3-909f-d89312a647ba",
             "Value": {
                 "id": "cf01d497-1e32-4130-9b03-88d99bd56169",
                 "resourcePath": "sprites\\cctextspr_number_faded4_p1\\cctextspr_number_faded4_p1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0d2be06-ef20-43b9-8443-6015e1351a4e",
+            "Value": {
+                "id": "0365b43e-408d-4aff-8aba-3feb57167557",
+                "resourcePath": "sprites\\newtemple_die_hit\\newtemple_die_hit.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8348,6 +8524,14 @@
                 "id": "89ebb7ba-23c3-43ea-a83e-046b87f7162f",
                 "resourcePath": "sprites\\forest3\\forest3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e1e42447-4b00-4989-88df-6269e67e0e68",
+            "Value": {
+                "id": "99da79ee-21d8-43e6-b64a-1687ea02ecef",
+                "resourcePath": "views\\e1e42447-4b00-4989-88df-6269e67e0e68.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -9071,6 +9255,14 @@
             }
         },
         {
+            "Key": "f3c71750-2dc9-4db2-add0-3369caf03aba",
+            "Value": {
+                "id": "9d2b206f-08d1-4c10-8e41-2fc67ed2ad2a",
+                "resourcePath": "sprites\\cave_die_debris_die\\cave_die_debris_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3fdd1bd-1c8b-4c85-baaf-f2c7a4e9cc54",
             "Value": {
                 "id": "98abdc13-e87e-495e-9e13-43750968a9cb",
@@ -9140,6 +9332,14 @@
                 "id": "ea699d51-4a3d-41bd-a128-8f3d071010e9",
                 "resourcePath": "sprites\\character_portraits_slinger\\character_portraits_slinger.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f6cfea84-f6ec-4f93-add7-d65358bd08a7",
+            "Value": {
+                "id": "4674639f-21b4-4b58-8083-9ce63350134d",
+                "resourcePath": "views\\f6cfea84-f6ec-4f93-add7-d65358bd08a7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
