@@ -4,8 +4,8 @@ switch other.type
 	//create block die effect
 	effect_aniend(die_hit_sprite,0.2,-1)
 	show_debug_message("HIT, spr="+sprite_get_name(die_hit_sprite))
-	
-	
+
+
 	//create rubble effects
 	var a,dir;
 	dir=other.dir //show_message("other.direction= "+string(dir))
@@ -23,6 +23,7 @@ switch other.type
 		a.dir=dir+25-random(50)
 		a.spd=choose(other.spd,other.spd,1,2)
 		a.alarm[0]=2
+		a.alarm[1]=30+random(20)  //max alive time
 	}
 
 	break;
@@ -54,6 +55,7 @@ switch other.type
 		a.dir=random(360)
 		a.spd=random(2)
 		a.alarm[0]=2
+		a.alarm[1]=30+random(20)  //max alive time
 		a.hitgroundaction=choose("fall")
 	}
 
