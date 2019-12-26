@@ -1479,22 +1479,6 @@
             }
         },
         {
-            "Key": "2925809d-2da4-4d07-9009-205af5fb0da2",
-            "Value": {
-                "id": "f96537d9-ad31-4b5c-9051-1e614c419a27",
-                "resourcePath": "sprites\\forest_full\\forest_full.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "29543529-7cbe-4e57-a924-a2bbe2a5455c",
-            "Value": {
-                "id": "e4ddd06a-e3f9-4378-800d-134408e4c0ca",
-                "resourcePath": "sprites\\sand_grass\\sand_grass.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2975943a-fd10-4c2a-954b-a0add5fb6cd0",
             "Value": {
                 "id": "7050e2f9-0db0-4e03-a266-23ac1abf324b",
@@ -1959,14 +1943,6 @@
             }
         },
         {
-            "Key": "3b6d91c2-c76c-44c4-aa34-f5344fc576b6",
-            "Value": {
-                "id": "08d23853-a9d5-4c80-b697-624685cee957",
-                "resourcePath": "sprites\\sand_full\\sand_full.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "3b97048e-7969-4d78-b8b0-b5aec08f4e7e",
             "Value": {
                 "id": "013d02a4-1f51-4ad3-bae0-28cded8eb2a6",
@@ -2067,14 +2043,6 @@
             "Value": {
                 "id": "73fdf84b-a150-4ebe-9628-c14c74973fa9",
                 "resourcePath": "sprites\\Ooga_U_idle\\Ooga_U_idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "3f7ef95b-c27f-4c04-8bc0-5f8282d02f31",
-            "Value": {
-                "id": "b4bf2aa4-9084-4b10-8f00-819cb2a8cf22",
-                "resourcePath": "sprites\\grassy_full_temp\\grassy_full_temp.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2859,14 +2827,6 @@
             "Value": {
                 "id": "77d62a69-6f9a-403c-bf39-f3bd8db5859d",
                 "resourcePath": "sprites\\Bait_3H_rocketjump_charge\\Bait_3H_rocketjump_charge.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "531305c2-eaa7-455b-b0a0-8c9b3b3e915a",
-            "Value": {
-                "id": "7ce78a10-e302-4e58-bbc6-70df70873e64",
-                "resourcePath": "sprites\\gunny_full\\gunny_full.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6551,14 +6511,6 @@
             }
         },
         {
-            "Key": "b499c007-96e3-41a8-8949-a5b186cacdbc",
-            "Value": {
-                "id": "7c850300-e201-4574-9d92-60121d772205",
-                "resourcePath": "sprites\\temple_full\\temple_full.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b4a80fae-97ec-48e6-b11c-37a431e001d9",
             "Value": {
                 "id": "0e9daae7-e309-46ea-bb29-6a091597c11e",
@@ -9404,14 +9356,6 @@
                 "id": "83981231-9b65-40a4-a343-98270444d075",
                 "resourcePath": "scripts\\menu_any_player_down_button_check\\menu_any_player_down_button_check.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "fe87e241-f564-4186-ba89-31b81ee03109",
-            "Value": {
-                "id": "4eca35d1-9dcf-44f3-a444-75a04f9babe0",
-                "resourcePath": "sprites\\cave_full\\cave_full.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -171,9 +171,10 @@ else if sprite_index==sprites[? "uniques_blinkjump_windup"] ||sprite_index==spri
 	
 	var skip=false;
 	if uniques_baitchain_last_chained==noone 
-		skip=true
+		skip=true;
 	if !skip && !instance_exists(uniques_baitchain_last_chained)
 		skip=true
+
 	if !skip && !place_meeting(uniques_baitchain_last_chained.x,uniques_baitchain_last_chained.y-UNIQUES_DASHGPBLINKATTACK_START_HEIGHT,block)
 	{
 		var a;

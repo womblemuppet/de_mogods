@@ -7,7 +7,7 @@ if object_index==weaksand
 sprite_list=aizen.chunkery_sprite_list[? chunk_name_at_spawn_time]
 
 
-//var left,right,up,down;
+//var left,right,up,down; [finaledit] swap back to vars when not debugging
 left=false
 right=false
 up=false
