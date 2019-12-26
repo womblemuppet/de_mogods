@@ -1,0 +1,1 @@
+effect_aniend(die_sprite,0.2,depth)

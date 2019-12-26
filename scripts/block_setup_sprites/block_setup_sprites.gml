@@ -27,7 +27,7 @@ if (left && right)
     if up
     {
         if down
-            num=variant
+            num=variant //5 or 17, chosen at block spawn
         else
             num=8
     }
@@ -78,6 +78,11 @@ if (!left && !right && !up && !down)
 
 
 sprite_index=ds_list_find_value(sprite_list,num)
+die_hit_sprite=sprite_list[| 18]
+die_pushed_sprite=sprite_list[| 19]
+die_disintegrated_sprite=sprite_list[| 20]
+die_debris_sprite=sprite_list[| 21]
+die_debris_sprite_die=sprite_list[| 22]
 mask_index=block_mask75
 
 

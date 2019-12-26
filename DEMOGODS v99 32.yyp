@@ -1775,6 +1775,14 @@
             }
         },
         {
+            "Key": "3476c984-031b-4d40-a27e-df7561cf5458",
+            "Value": {
+                "id": "f4518fe4-9012-4fe2-bfe4-950d1e95da66",
+                "resourcePath": "sprites\\grassy_die_debris_die\\grassy_die_debris_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34b3b7f6-3332-4f5e-b2e1-a3d6107d56b6",
             "Value": {
                 "id": "2b98cfaf-5a80-4b81-a188-1ce7a7c0b9df",
@@ -8891,6 +8899,14 @@
             "Value": {
                 "id": "9886fc28-bf74-47b3-a862-df34a7c290cb",
                 "resourcePath": "sprites\\ooga_ultimate_groundpound_shockwave_die\\ooga_ultimate_groundpound_shockwave_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef813694-9dca-4004-9538-86c19cf21e9c",
+            "Value": {
+                "id": "f5d200cd-f3bb-4d91-80ca-eeb812826b86",
+                "resourcePath": "sprites\\grassy_die_debris\\grassy_die_debris.yy",
                 "resourceType": "GMSprite"
             }
         },
