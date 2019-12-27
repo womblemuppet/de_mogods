@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "09a45b87-ec8e-46c0-9005-9d1471bf1a41",
+            "Value": {
+                "id": "b8f2e0bd-fc67-4200-8426-5263e0699191",
+                "resourcePath": "sprites\\statue_1_die\\statue_1_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "09ac4b8a-3292-4dd3-a637-46356531b56f",
             "Value": {
                 "id": "21c027f7-c9bb-4a23-9933-d5925a562802",
@@ -1236,14 +1244,6 @@
                 "id": "a98798d6-8476-4dab-9585-6aafd4af28ba",
                 "resourcePath": "scripts\\player_update_super_meter_hud\\player_update_super_meter_hud.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "203eae81-65bd-4855-ba15-5dd306199ef4",
-            "Value": {
-                "id": "efc49d05-1370-4523-8335-b290ebafb3d5",
-                "resourcePath": "sprites\\statue_1_die\\statue_1_die.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
