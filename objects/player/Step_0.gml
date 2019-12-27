@@ -407,7 +407,6 @@ if can_activate_super_mode==false && (  (button_scrape_released[? leftbutton] &&
 
 if super_mode_available && button_scrape_pushed[? superbutton] && player_may_attack()    ////super attack event super event
 {
-	super_mode_available=false
 	
 	switch attacks[? "super attack"]
 	{
@@ -417,6 +416,8 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		image_speed=FRAME_SPEED_FAST
 		sprite_index=sprites[? "uniques_supersmash"]
 		image_index=0
+		
+		super_mode_available=false
 		break;
 		
 		case "uniques_superblast":
@@ -451,11 +452,13 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		image_index=0
 		uniques_superblast_lockdown=1
 		uniques_slinger_superblast_has_made_hitbox=false  //[finaledit] all step attack starts should include hitbox var reset
+		
+		super_mode_available=false
 		break;
 		
 		case "vet_kamikaze":
 		if (uniques_vet_kamikaze_lockdown!=0) break;
-		if groundcheck!=noone break;
+		if (groundcheck==noone) break;
 		
 		uniques_vet_kamikaze_victim=noone
 		uniques_vet_kamikaze_number_of_mines=0
@@ -463,6 +466,8 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		image_index=0
 		image_speed=FRAME_SPEED_NORMAL
 		sprite_index=Vet_3H_super_charge
+		
+		super_mode_available=false
 		break;
 		
 		case "bait_supergrab":
@@ -472,6 +477,7 @@ if super_mode_available && button_scrape_pushed[? superbutton] && player_may_att
 		uniques_supergrab_lockdown=1
 		uniques_supergrab_has_made_hitbox=false
 		
+		super_mode_available=false
 		break;
 	}
 }
