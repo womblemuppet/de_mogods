@@ -160,7 +160,7 @@ switch incoming_attack_name
 {
 	case "ground pound with phase":
 	case "sunbolt":
-	case "sunblast":
+	case "cracklingbeam":
 	case "uniques_superblast":
 	case "slingeruppercut" :
 	{

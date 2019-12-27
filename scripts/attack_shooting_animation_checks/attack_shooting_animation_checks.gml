@@ -214,6 +214,18 @@ if uniques_cracklingbeam_lockdown==1
 			uniques_cracklingbeam_terraincutter.image_yscale=sign(image_yscale)
 			uniques_cracklingbeam_terraincutter.image_speed=0.2
 			uniques_cracklingbeam_terraincutter.alarm[0]=150 //arbitrary large number
+			
+			var a;
+			for (var i = 20; i <= 160; i+=70)
+			{
+			    	a=effect_aniend(slinger_crackling_beam_smoke,0.2,-1)
+				if right
+					a.x+=i
+				else
+					a.x-=i
+				a.vspeed=-1
+			}
+			
 
 		}
 		uniques_cracklingbeam_lockdown=2

@@ -1927,6 +1927,14 @@
             }
         },
         {
+            "Key": "386db41a-340f-4149-8c11-f90f3bcb909e",
+            "Value": {
+                "id": "68789dd5-e770-45d8-b54d-87bfcc86da32",
+                "resourcePath": "sprites\\slinger_crackling_beam_smoke\\slinger_crackling_beam_smoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "38977787-aaf9-4f3a-b042-1558a0e7833e",
             "Value": {
                 "id": "fbccf125-ff32-4adc-888c-22277cb548cc",

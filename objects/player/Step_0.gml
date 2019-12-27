@@ -693,16 +693,26 @@ else if attacks[? "heavy attack"]=="vet_armspin"     ///vet heavy attack button 
 }
 else if attacks[? "heavy attack"]=="slinger_cracklingbeam"  //release HA cracklingbeam
 {
-	if uniques_cracklingbeam_lockdown==2 && !button_scrape[? heavybutton] && uniques_cracklingbeam_time_since_start>UNIQUES_CRACKLINGBEAM_TIME_CANCELLABLE_AFTER //[finaledit] should change to release scrapes
+	if uniques_cracklingbeam_lockdown==2
 	{
-		image_index=14
-		with uniques_cracklingbeam_effectobject
-			instance_destroy()
-		with uniques_cracklingbeam_hitboxobject
-			instance_destroy()
-		with uniques_cracklingbeam_terraincutter
-			instance_destroy()
-		uniques_cracklingbeam_lockdown=3
+		var cancel;
+		cancel=false
+		if !button_scrape[? heavybutton] && uniques_cracklingbeam_time_since_start>UNIQUES_CRACKLINGBEAM_TIME_CANCELLABLE_AFTER //[finaledit] should change to release scrapes
+			cancel=true
+		if image_index>13
+			cancel=true
+		
+		if cancel==true
+		{
+			image_index=14
+			with uniques_cracklingbeam_effectobject
+				instance_destroy()
+			with uniques_cracklingbeam_hitboxobject
+				instance_destroy()
+			with uniques_cracklingbeam_terraincutter
+				instance_destroy()
+			uniques_cracklingbeam_lockdown=3
+		}
 	}
 }
 
