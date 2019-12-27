@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "08cac4c4-c9f4-4469-9d98-4244a225ffca",
+            "Value": {
+                "id": "daed2ad9-246a-4423-8a48-83e294829131",
+                "resourcePath": "sprites\\tree_1_die\\tree_1_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "093bd802-1341-4130-ae02-985a5ed48ac5",
             "Value": {
                 "id": "97558996-3b3f-487c-812d-2ef25bb384c4",
@@ -3539,6 +3547,14 @@
             "Value": {
                 "id": "aaf36b5d-80b8-4ac4-8298-679c1c4ce6b8",
                 "resourcePath": "sprites\\flameofsidezap\\flameofsidezap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "60c0e1a6-1ce9-4379-8c30-5b6a4797f6a9",
+            "Value": {
+                "id": "0debb867-aff3-4ad9-996b-9c7a9619d19b",
+                "resourcePath": "sprites\\tiki_torch_1_die\\tiki_torch_1_die.yy",
                 "resourceType": "GMSprite"
             }
         },

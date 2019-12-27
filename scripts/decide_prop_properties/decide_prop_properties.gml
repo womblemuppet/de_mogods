@@ -34,13 +34,13 @@ switch prop_type
 	break;
 	case "tree_1":
 	a.p_sprite=tree_1
-	a.p_sprite_die=tree_1
+	a.p_sprite_die=tree_1_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	break;
 	case "tiki_torch_1":
 	a.p_sprite=tiki_torch_1
-	a.p_sprite_die=tiki_torch_1
+	a.p_sprite_die=tiki_torch_1_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	break;
