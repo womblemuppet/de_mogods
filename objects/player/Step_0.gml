@@ -715,7 +715,18 @@ else if attacks[? "heavy attack"]=="slinger_cracklingbeam"  //release HA crackli
 		}
 	}
 }
-
+if uniques_cracklingbeam_lockdown==2 //|| uniques_cracklingbeam_lockdown==3
+{
+	var a,xoffset;
+	xoffset=random(20)*10
+	a=effect_aniend(slinger_crackling_beam_smoke,0.2,-1)
+	
+	if right
+		a.x+=xoffset
+	else
+		a.x-=xoffset
+	a.y-=uniques_cracklingbeam_time_since_start/1.75
+}
 
 if button_scrape_pushed[? lightbutton]  && groundcheck==noone && player_may_attack()//////////////////////////////////////////////  air light attack (air grab)
 {
