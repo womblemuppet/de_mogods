@@ -3599,6 +3599,14 @@
             }
         },
         {
+            "Key": "61c20237-6ffa-4908-be61-45ac15daab41",
+            "Value": {
+                "id": "5e435861-bf5e-4677-9519-bba299eec147",
+                "resourcePath": "sprites\\horizontal_block_volley_mask\\horizontal_block_volley_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "61d7f3e0-d513-47f8-bf6c-83e6e9858ec2",
             "Value": {
                 "id": "fef06a3b-4969-4897-983c-38a70fee9eb5",
@@ -5051,6 +5059,14 @@
             "Value": {
                 "id": "7f44aa62-a26f-4730-8d1f-fa9b1147a6a7",
                 "resourcePath": "sprites\\orb_sprite2_die\\orb_sprite2_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8841058b-e851-4eed-91d0-81a70a2f6f13",
+            "Value": {
+                "id": "817bc268-e18f-4230-b0c4-6939a21f622b",
+                "resourcePath": "sprites\\horizontal_block_volley\\horizontal_block_volley.yy",
                 "resourceType": "GMSprite"
             }
         },
