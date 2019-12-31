@@ -5066,7 +5066,7 @@
             "Key": "8841058b-e851-4eed-91d0-81a70a2f6f13",
             "Value": {
                 "id": "817bc268-e18f-4230-b0c4-6939a21f622b",
-                "resourcePath": "sprites\\horizontal_block_volley\\horizontal_block_volley.yy",
+                "resourcePath": "sprites\\horizontal_block_volley_spr\\horizontal_block_volley_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

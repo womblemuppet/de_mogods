@@ -1,4 +1,4 @@
-var attacker
+var attacker;
 if instance_exists(other.creator)
 	attacker=other.creator
 else
@@ -141,15 +141,22 @@ switch incoming_attack_name
 		canbounce_counter=25
 	break;
 	case "supergrab":
-	attacker.uniques_supergrab_target_x=x
-	attacker.uniques_supergrab_target_y=y
-	attacker.uniques_supergrab_teletrap_victim=self.id
-	with attacker
-	{
-		uniques_supergrab_teletrap_counter=UNIQUES_SUPERGRAB_TELETRAP_TIME
-		if button_scrape[? superbutton]
-			uniques_supergrab_pull_counter=UNIQUES_SUPERGRAB_PULL_TIME
-	}
+		attacker.uniques_supergrab_target_x=x
+		attacker.uniques_supergrab_target_y=y
+		attacker.uniques_supergrab_teletrap_victim=self.id
+		with attacker
+		{
+			uniques_supergrab_teletrap_counter=UNIQUES_SUPERGRAB_TELETRAP_TIME
+			if button_scrape[? superbutton]
+				uniques_supergrab_pull_counter=UNIQUES_SUPERGRAB_PULL_TIME
+		}
+	break;
+	case "horizontal block volley":
+		var a;
+		a=effect_aniend(horizontal_block_volley_spr,0.2,-5)
+		a.image_xscale=other.image_xscale
+		player_get_gp_stunned(other.stunamount)
+		show_debug_message("hit by horizontal block volley")
 	break;
 }
 

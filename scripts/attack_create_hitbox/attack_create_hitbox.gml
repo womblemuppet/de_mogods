@@ -3,7 +3,7 @@
 ****************************************************/
 
 var a;
-a=instance_create(x,y,hitbox)
+a=instance_create_depth(x,y,-10,hitbox)
 
 a.creator=self.id  
 a.target=self.id

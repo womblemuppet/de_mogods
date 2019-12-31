@@ -16,6 +16,7 @@ last_hit_knocked_down=false
 
 audio_play_sound(bam,5,false)
 
+//apply stagger
 if armouredsteps<1
 	staggered=arg_stun_amount
 
