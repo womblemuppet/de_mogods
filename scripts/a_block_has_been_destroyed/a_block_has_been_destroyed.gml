@@ -23,9 +23,18 @@ for (var i=0; i < ds_list_size(destroy_proximity_coods_x); i++)
 //delete props if the block they are connected to no longer exists
 with prop
 {
-	if !instance_exists(connector) || connector==undefined
+	var existing_connectors;
+	existing_connectors=0
+	
+	for (var i = 0; i < NOconnectors; i++)
 	{
-		show_debug_message("prop "+name+"destroyed, connector was "+string(connector))
+		if connectors[i]!=undefined && instance_exists(connectors[i])
+			existing_connectors++
+	}
+	
+	if existing_connectors<1
+	{
+		show_debug_message("prop "+name+"destroyed,no connectors")
 		instance_destroy()
 	}
 }

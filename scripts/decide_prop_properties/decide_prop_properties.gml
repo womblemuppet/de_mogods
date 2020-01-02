@@ -25,30 +25,35 @@ switch prop_type
 	a.p_sprite_die=rock_1
 	a.p_isFlag=false
 	a.p_cutTerrain=false
+	a.p_NOconnectors=1
 	break;
 	case "shrub_1":
 	a.p_sprite=shrub_1
 	a.p_sprite_die=shrub_1
 	a.p_isFlag=false
 	a.p_cutTerrain=false
+	a.p_NOconnectors=1
 	break;
 	case "tree_1":
 	a.p_sprite=tree_1
 	a.p_sprite_die=tree_1_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
+	a.p_NOconnectors=1
 	break;
 	case "tiki_torch_1":
 	a.p_sprite=tiki_torch_1
 	a.p_sprite_die=tiki_torch_1_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
+	a.p_NOconnectors=1
 	break;
 	case "statue_1":
 	a.p_sprite=statue_1
 	a.p_sprite_die=statue_1_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
+	a.p_NOconnectors=1
 	break;
 	default:
 	show_error("undef pname",true)

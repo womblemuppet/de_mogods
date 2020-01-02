@@ -13,12 +13,20 @@ a.isFlag=argument5
 var cutTerrain;
 cutTerrain=argument6
 
+a.NOconnectors=argument7
+
 with a
 {
+	connectors[0]=noone
 	x+=irandom(aizen.bw)
-	connector=instance_position(x,y+5,block)
-	if connector==noone
-		show_debug_message("no connector for prop "+name)
+	
+	for (var i = 0; i < NOconnectors; i++) 
+	{
+		connectors[i]=instance_position(x,y+5,block)
+		if connectors[i]==noone
+			show_debug_message("no connector "+string(i)+" prop "+name)
+	}
+
 
 	if cutTerrain
 	{
