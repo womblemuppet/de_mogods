@@ -1,5 +1,5 @@
 /***************************************************
-  prop_create(x,y,sprite,death sprite,name,isFlag,cutTerrain)
+  prop_create(x,y,sprite,death sprite,name,isFlag,cutTerrain,NOconnectors)
 ****************************************************/
 
 
@@ -69,3 +69,5 @@ with a
 		}
 	}
 }
+
+return a

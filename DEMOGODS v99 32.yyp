@@ -4407,6 +4407,14 @@
             }
         },
         {
+            "Key": "770f2bd2-6f83-40f5-8b0d-53b488f7d5a0",
+            "Value": {
+                "id": "d5daa005-2656-45a7-bce7-67077ead5ce0",
+                "resourcePath": "scripts\\prop_flag_piece_create\\prop_flag_piece_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "773a00b8-9d82-4388-8fbc-ae3fbc3b99c0",
             "Value": {
                 "id": "c12d412f-8696-4279-ad8e-c48a958b1aa5",
@@ -5940,6 +5948,14 @@
                 "id": "784198fe-dd42-40af-ae55-c6b8503d1ae4",
                 "resourcePath": "scripts\\draw_blocks_and_fossils\\draw_blocks_and_fossils.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9ec0578b-0823-4891-891d-bb5e0aa9ed26",
+            "Value": {
+                "id": "49eaf32d-0232-40e3-bdce-4acb7328d186",
+                "resourcePath": "sprites\\pflag_red\\pflag_red.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8231,6 +8247,14 @@
             }
         },
         {
+            "Key": "d7df3f2b-1111-406f-b0af-7b1985227dc9",
+            "Value": {
+                "id": "8d32e78a-1254-488a-9603-4c2788cb04f6",
+                "resourcePath": "objects\\prop_flag_piece\\prop_flag_piece.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d82a9bd3-306f-4488-8853-433ee5f44b97",
             "Value": {
                 "id": "2af1c0d8-2617-43f3-9161-8562876c121c",
@@ -8524,6 +8548,14 @@
                 "id": "f95aa969-1b27-4f3b-b835-a50d057d5f53",
                 "resourcePath": "sprites\\the_overseer_sprite\\the_overseer_sprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df4fd588-6e41-434a-ace4-0fff6939c73d",
+            "Value": {
+                "id": "d1f66665-c653-47f7-bd0b-c0a2cfb19bd8",
+                "resourcePath": "scripts\\prop_flag_create\\prop_flag_create.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9861,6 +9893,8 @@
         "b81c2c6d-2fb2-4136-adda-6f81903d7982",
         "a59e0892-0043-4cbf-9661-e07569fdfeeb",
         "c7c14d59-0241-4eb1-8522-49d3d2c7d242",
+        "df4fd588-6e41-434a-ace4-0fff6939c73d",
+        "770f2bd2-6f83-40f5-8b0d-53b488f7d5a0",
         "4037ce6e-9f42-40c5-b927-468db4bd59dd",
         "db311da0-5e97-4f68-a6f2-db29eabad08e",
         "4f08e8b9-a0ba-471a-bd1a-2a5fbc157d47",
