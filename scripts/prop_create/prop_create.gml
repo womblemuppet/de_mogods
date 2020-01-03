@@ -27,18 +27,29 @@ with a
 			if connectors[0]==noone
 				show_debug_message("no connector for prop "+name)		
 		break;
+		case 2:
+			var xoffset;
+			xoffset=(floor(sprite_width/aizen.bw)*aizen.bw)/2
+			connectors[0]=instance_position(x-xoffset,y+5,block)
+			if connectors[0]==noone
+				show_debug_message("no connector 0 for prop "+name)	
+
+			connectors[1]=instance_position(x+xoffset.bw,y+5,block)
+			if connectors[1]==noone
+				show_debug_message("no connector 1 for prop "+name)	
+		break;
 		case 3:
 			connectors[0]=instance_position(x,y+5,block)
 			if connectors[0]==noone
 				show_debug_message("no connector 0 for prop "+name)	
 				
 			var xoffset;
-			xoffset=floor(sprite_width/aizen.bw)*aizen.bw
-			connectors[1]=instance_position(x-aizen.bw,y+5,block)
+			xoffset=(floor(sprite_width/aizen.bw)*aizen.bw)/2
+			connectors[1]=instance_position(x-xoffset,y+5,block)
 			if connectors[1]==noone
 				show_debug_message("no connector 1 for prop "+name)	
 				
-			connectors[2]=instance_position(x+aizen.bw,y+5,block)
+			connectors[2]=instance_position(x+xoffset,y+5,block)
 			if connectors[2]==noone
 				show_debug_message("no connector 2 for prop "+name)		
 		break;
