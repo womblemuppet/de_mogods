@@ -7,16 +7,18 @@ a=instance_create_depth(0,0,0,prop_properties)
 
 //determine prop_type (name of prop which links to its properties)
 var prop_list;
-if terraintype=="startingflat"
-	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM)    //on starting flat disable cutting props
-else
-	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE)
+//if terraintype=="startingflat"
+	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE) 
+//else
+//	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE)
 ds_list_shuffle(prop_list)
 prop_type=prop_list[| 0]
 
 
 //determine prop properties
 a.p_name=prop_type
+
+prop_type="building_01"
 
 switch prop_type
 {
@@ -54,6 +56,13 @@ switch prop_type
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
+	break;
+	case "building_01":
+	a.p_sprite=building_01
+	a.p_sprite_die=building_01
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=3
 	break;
 	default:
 	show_error("undef pname",true)
