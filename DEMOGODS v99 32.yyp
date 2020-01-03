@@ -3511,6 +3511,14 @@
             }
         },
         {
+            "Key": "5f7ab3ed-0956-4c7a-ac1c-b8501b44a4ec",
+            "Value": {
+                "id": "df5247c0-4bb4-4c04-9231-10691e2491fc",
+                "resourcePath": "views\\5f7ab3ed-0956-4c7a-ac1c-b8501b44a4ec.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5fbddb8e-5a00-40e7-b000-55971bfcf0e5",
             "Value": {
                 "id": "3b939b9f-3f63-4cde-8410-ec88cd918758",
@@ -9492,6 +9500,14 @@
                 "id": "98109eed-bac4-4ed7-88cc-fbde885db205",
                 "resourcePath": "objects\\sky\\sky.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fa55bed6-6445-45ef-a431-bb700bb0a904",
+            "Value": {
+                "id": "515c57a9-88d8-45fe-a8a7-89ad1dc898c8",
+                "resourcePath": "sprites\\pflag_red_start\\pflag_red_start.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

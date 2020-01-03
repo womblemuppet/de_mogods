@@ -18,8 +18,6 @@ prop_type=prop_list[| 0]
 //determine prop properties
 a.p_name=prop_type
 
-prop_type="building_01"
-
 switch prop_type
 {
 	case "rock_1":

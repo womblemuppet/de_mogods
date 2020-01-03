@@ -34,7 +34,6 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 
 		
 	///shift buffer
-		
 	for (var i = 0; i < numberofblocks_horizontal; i++) 
 	{
 		terrain_buffer_layer3[i]=terrain_buffer_layer2[i]
@@ -58,7 +57,6 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	}
 
 	//////determine based on terraintype characteristics whether or not to spawn a block for each square left to right of the current layer
-
 	spawn_line_of_blocks(y_position)
 	
 	
@@ -78,12 +76,12 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 		
 	if spawn_a_throwable_critter || spawn_a_nonthrowable_critter
 	{
-		possibles=ds_list_create()   ///var at start
+		possibles=ds_list_create()  //ids of blocks with spawn space available
 	
 		for (var i = 0; i < numberofblocks_horizontal; i++) 
 		{
 			if space_for_spawn_exists(i)
-				ds_list_add(possibles,terrain_buffer_layer_newest[i])
+			 	ds_list_add(possibles,terrain_buffer_layer_newest[i])
 		}
 	
 		//show_debug_message("size of possibles"+string(ds_list_size(possibles)))
