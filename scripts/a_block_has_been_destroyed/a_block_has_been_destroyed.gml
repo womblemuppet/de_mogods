@@ -39,5 +39,11 @@ with prop
 	}
 }
 
+with prop_flag_piece //[finaledit] this is backwards, pole should have list of pieces not vv
+{
+	if !instance_exists(left_flag) || !instance_exists(right_flag)
+		instance_destroy()
+}
+
 ds_list_clear(destroy_proximity_coods_x)
 ds_list_clear(destroy_proximity_coods_y)
