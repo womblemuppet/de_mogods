@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "prop_flag_piece",
     "eventList": [
-        
+        {
+            "id": "ecdd74dc-df4d-4a46-a53c-b5fee29aef67",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d7df3f2b-1111-406f-b0af-7b1985227dc9"
+        },
+        {
+            "id": "21d9f6ff-ef67-4a07-ac9d-839626b97cd9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d7df3f2b-1111-406f-b0af-7b1985227dc9"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
