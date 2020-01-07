@@ -45,6 +45,10 @@ switch incoming_attack_name
 	player_get_gp_stunned(other.stunamount)
 	
 	break;
+	case "fireball":
+	case "fireball explosion":
+	player_get_gp_stunned(30)
+	break;
 	case "oogauppercut" :   ////ooga's
 	if player_is_stunned()
 	{
