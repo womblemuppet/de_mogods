@@ -33,7 +33,7 @@ else if uniques_fpunch_lockdown==2
 				a.direction=180
 			}
 			a.scale=1
-			a.speed=9.5
+			a.speed=8
 			
 			uniques_fpunch_fireball=false
 		}
