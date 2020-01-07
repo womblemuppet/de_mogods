@@ -9,7 +9,7 @@ BLOCK_SPRITE_GUNNY_FULL=ds_list_create()
 
 ds_list_add(BLOCK_SPRITE_SUMMIT_FULL,undefined,grassy1,grassy2,grassy3,grassy4,grassy5,grassy6,grassy7,grassy8,grassy9,grassy10,grassy11,grassy12,grassy13,grassy14,grassy15,grassy16)
 ds_list_add(BLOCK_SPRITE_SUMMIT_FULL,grassy5_2,grassy_die_hit,grassy_die_pushed,grassy_die_disintegrated,grassy_die_debris,grassy_die_debris_die)
-ds_list_add(BLOCK_SPRITE_TEMPLE_FULL,undefined,newtemple1,newtemple2,newtemple3,newtemple4,newtemple5,newtemple6,temple7,temple8,temple9,temple10,temple11,temple12,temple13,temple14,temple15,temple16)
+ds_list_add(BLOCK_SPRITE_TEMPLE_FULL,undefined,newtemple1,newtemple2,newtemple3,newtemple4,newtemple5,newtemple6,newtemple7,newtemple8,newtemple9,newtemple10,newtemple11,newtemple12,newtemple13,newtemple14,newtemple15,newtemple16)
 ds_list_add(BLOCK_SPRITE_TEMPLE_FULL,newtemple5_2,newtemple_die_hit,newtemple_die_pushed,newtemple_die_disintegrated,newtemple_die_debris,newtemple_die_debris_die)
 ds_list_add(BLOCK_SPRITE_SAND_FULL,undefined,sand1,sand2,sand3,sand4,sand5,sand6,sand7,sand8,sand9,sand10,sand11,sand12,sand13,sand14,sand15,sand16)
 ds_list_add(BLOCK_SPRITE_SAND_FULL,sand5_2,sand_die_hit,sand_die_pushed,sand_die_disintegrated,sand_die_debris,sand_die_debris_die)

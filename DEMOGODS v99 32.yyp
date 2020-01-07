@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "002f1edb-8c1e-4c04-82e1-07d8311fee22",
+            "Value": {
+                "id": "8b8cb10b-3385-47a4-84a4-3666591c0332",
+                "resourcePath": "sprites\\newtemple13\\newtemple13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "00aa205e-b08d-409a-ba41-ff0b247512fc",
             "Value": {
                 "id": "2fce8426-9710-4357-aef5-36e249b1e4da",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "042fb6b9-d64a-4851-9efc-a1bb76dd91c3",
+            "Value": {
+                "id": "d7c5a135-05e3-4f31-8c8f-9d4336d8f6b9",
+                "resourcePath": "sprites\\newtemple7\\newtemple7.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0435927e-0ac0-4542-a013-94c71e1b3912",
             "Value": {
                 "id": "7ea3acfe-245a-4ad1-922b-b299334c8315",
@@ -299,6 +315,14 @@
             "Value": {
                 "id": "22f70802-d7fc-48a7-9bcd-7a2e7605a1f2",
                 "resourcePath": "sprites\\slinger_airsunbolt_die_aoe_mask\\slinger_airsunbolt_die_aoe_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "06fabbab-091a-4d3d-965e-082e756ab724",
+            "Value": {
+                "id": "96c1e584-3198-41ca-b587-57cabbbd580c",
+                "resourcePath": "sprites\\newtemple8\\newtemple8.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -451,6 +475,14 @@
             "Value": {
                 "id": "4176d6ed-179c-429a-8b8b-983150471e06",
                 "resourcePath": "sprites\\meteor_smoke\\meteor_smoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0ac62736-0ea0-4fae-a46d-2bd00f41e8fe",
+            "Value": {
+                "id": "097a65d4-1dac-4ab1-a6f2-a0f4920daef4",
+                "resourcePath": "sprites\\newtemple11\\newtemple11.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1156,6 +1188,14 @@
                 "id": "597b7cde-bbce-4557-b0fd-073c17a85ff9",
                 "resourcePath": "scripts\\decide_prop_properties\\decide_prop_properties.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1d57f036-4cb0-4e7a-abbb-8aea3ebc6216",
+            "Value": {
+                "id": "afff8380-e090-4e69-8eef-a649a28fae97",
+                "resourcePath": "sprites\\newtemple16\\newtemple16.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2671,6 +2711,14 @@
             }
         },
         {
+            "Key": "4c5173ef-f4e9-4302-9c88-70df1c0ce748",
+            "Value": {
+                "id": "35bff839-4e96-412c-818c-337f4cb94d4b",
+                "resourcePath": "sprites\\newtemple10\\newtemple10.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c5177f8-8d63-48f4-bc8a-f09af0132604",
             "Value": {
                 "id": "31c62b30-82fe-469b-a060-34ec85a0a445",
@@ -4115,6 +4163,14 @@
             "Value": {
                 "id": "b24d835d-9d48-44d9-9c39-38a4e003bbf4",
                 "resourcePath": "sprites\\cave16\\cave16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f079a74-c6df-4787-b269-0fd993d7ceee",
+            "Value": {
+                "id": "2d7247e1-99b5-411d-ad83-bd8c15f85c8b",
+                "resourcePath": "sprites\\newtemple15\\newtemple15.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5727,6 +5783,14 @@
             }
         },
         {
+            "Key": "97b5f165-6758-4823-a3b1-addc82569950",
+            "Value": {
+                "id": "2b535363-2d62-4fd4-ba8f-21dbb866cfd0",
+                "resourcePath": "sprites\\newtemple14\\newtemple14.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97c5a380-bf44-407c-a447-fadf29a12b7b",
             "Value": {
                 "id": "e993ba63-4080-4313-add3-8a73a532eadf",
@@ -6187,6 +6251,14 @@
             "Value": {
                 "id": "8402197b-1af7-47ee-927c-a6518f141905",
                 "resourcePath": "sprites\\Bait_3H_jump\\Bait_3H_jump.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3c889d5-03f0-4b81-a5f5-260490663191",
+            "Value": {
+                "id": "4381725d-de6f-42c9-ad49-026b7ffbd158",
+                "resourcePath": "sprites\\newtemple9\\newtemple9.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7307,6 +7379,14 @@
             "Value": {
                 "id": "5d6d2f10-4b90-430a-8cc8-5b9c0feba507",
                 "resourcePath": "sprites\\gunpowder_explosion\\gunpowder_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c1dd2639-c462-4754-81b7-bf8788cab616",
+            "Value": {
+                "id": "6219ee92-f299-4f45-b5c7-960b48dcea62",
+                "resourcePath": "sprites\\newtemple12\\newtemple12.yy",
                 "resourceType": "GMSprite"
             }
         },
