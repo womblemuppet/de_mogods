@@ -6,6 +6,26 @@ breaking=!breaking
 //if moving, turn direction if hitting a block
 if !breaking
 {
+	if place_meeting(x,y,crab)
+	{
+		show_debug_message("crab-lision!!")
+		
+		instance_deactivate_object(self.id)
+		var otherCrab = instance_position(x,y,crab);
+		var otherX=otherCrab.x;
+		instance_activate_object(self.id)
+		
+		//if other crab is on right, move left   (if in exact same position direciton is based on higher id)
+		if x>otherX
+			right=false
+		else if x<otherX
+			right=true
+		else if id>otherCrab.id
+			right=true
+		else
+			right=false
+	}
+	
 	var turning;
 	turning=false
 	if right==true
@@ -31,5 +51,5 @@ if !breaking
 		sprite_index=turn_sprite
 	}
 }
-else
-	sprite_index=walk_sprite
+else //if breaking, set to walk sprite
+	sprite_index=stand_sprite

@@ -33,7 +33,10 @@ if !breaking
 			if !place_meeting(x+1,y,block) && x<kouchou.room_right_border_x+room_boundary_no_go_distance
 				x+=1
 			else
+			{
+				sprite_index=stand_sprite
 				break;
+			}
 		}
 	}
 	else
@@ -43,7 +46,10 @@ if !breaking
 			if !place_meeting(x-1,y,block) && x>kouchou.room_left_border_x-room_boundary_no_go_distance
 				x-=1
 			else
+			{
+				sprite_index=stand_sprite
 				break;
+			}
 		}
 	}
 }

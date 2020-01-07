@@ -1,7 +1,7 @@
 if other.creator!=self.id 
 {
 	var a;
-	a=instance_create(x,y,ef_follower)
+	a=instance_create_depth(x,y,-2,ef_follower)
 	a.image_speed=0.1
 	a.targ=self.id
 	a.sprite_index=other.corpse_sprite

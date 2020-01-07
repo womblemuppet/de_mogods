@@ -1,1 +1,1 @@
-effect_aniend(corpse_sprite,0.1,-1)
+//effect_aniend(corpse_sprite,0.1,-1)
