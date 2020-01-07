@@ -1,6 +1,6 @@
 owner=-1
 vspd=0
-right=false
+right=true
 spd=2
 STEPTIME=aizen.bw
 alarm[0]=STEPTIME
