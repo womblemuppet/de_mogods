@@ -98,7 +98,7 @@ switch (terraintype)
 	if terrain_ammo<5 || (lplatform_on_right && block_column_number<lplatform_xi) || (!lplatform_on_right && block_column_number>lplatform_xi)    ///lplatform
 		makeok=true
 	if terrain_ammo==6 && irandom(1)>0.4
-		makeok=true   //true
+		makeok=true
 	if block_column_number>platform_singleblob_startxi && block_column_number<platform_singleblob_endxi  && terrain_ammo==platform_singleblob_ya     ///random platform
 		makeok=true
 				          break;            

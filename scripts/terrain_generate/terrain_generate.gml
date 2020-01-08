@@ -47,7 +47,7 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 	if terrain_ammo<1   /// new terrain type
 		set_new_chunk()
 
-	/////////////////////////////////////////////////////////////////////////////////////////////biomeswitch event will overwrite all of the above switch 
+	///biomeswitch event will overwrite all of the above switch 
 	if biomeswitch   ///[finaledit] check if used...
 	{
 		terraintype="biomegap"
@@ -56,11 +56,12 @@ if bedrockcounter>=aizen.bh    ///create new blocks every x pixels moved down ( 
 		//call_block_setup()
 	}
 
-	//////determine based on terraintype characteristics whether or not to spawn a block for each square left to right of the current layer
+	///determine based on terraintype characteristics whether or not to spawn a block for each square left to right of the current layer
 	spawn_line_of_blocks(y_position)
 	
 	
-
+	
+	//spawn critters/crabs
 	
 	var spawn_a_throwable_critter;
 	spawn_a_throwable_critter=false

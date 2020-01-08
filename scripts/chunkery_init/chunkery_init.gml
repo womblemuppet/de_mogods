@@ -21,68 +21,77 @@ ds_list_add(list_of_chunk_styles_summit,"platgrassy","rectanglebumpygrassy","lpl
 
 
 
+var chunk_type_allowed_props_startingflat;
+chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.9)
+
+var chunk_type_allowed_props_grassy;
+chunk_type_allowed_props_grassy=create_chunk_type_allowed_props()
+
+var chunk_type_allowed_props_temple;
+chunk_type_allowed_props_temple=create_chunk_type_allowed_props()
+
 ////startingflat
 ds_map_add(chunkery_chunk_shape,"startingflat","solidline")
 ds_map_add(chunkery_sprite_list,"startingflat",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"startingflat",7)
 ds_map_add(chunkery_ammo_max,"startingflat",7)
-ds_map_add(chunkery_id_of_prop_list,"startingflat",0)    
-       
+ds_map_add(chunkery_id_of_prop_list,"startingflat",chunk_type_allowed_props_startingflat)
+
 ////platgrassy
 ds_map_add(chunkery_chunk_shape,"platgrassy","singleplatformbumpy")
 ds_map_add(chunkery_sprite_list,"platgrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"platgrassy",6)
 ds_map_add(chunkery_ammo_max,"platgrassy",10)
-ds_map_add(chunkery_id_of_prop_list,"platgrassy",0)
+ds_map_add(chunkery_id_of_prop_list,"platgrassy",chunk_type_allowed_props_grassy)
 
 ////lplatformbumpygrassy
 ds_map_add(chunkery_chunk_shape,"lplatformbumpygrassy","lplatformbumpy")
 ds_map_add(chunkery_sprite_list,"lplatformbumpygrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"lplatformbumpygrassy",6)
 ds_map_add(chunkery_ammo_max,"lplatformbumpygrassy",8)
-ds_map_add(chunkery_id_of_prop_list,"lplatformbumpygrassy",0)
+ds_map_add(chunkery_id_of_prop_list,"lplatformbumpygrassy",chunk_type_allowed_props_grassy)
 
 ////lplatformtemple
 ds_map_add(chunkery_chunk_shape,"lplatformtemple","lplatform")
 ds_map_add(chunkery_sprite_list,"lplatformtemple",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"lplatformtemple",6)
 ds_map_add(chunkery_ammo_max,"lplatformtemple",8)
-ds_map_add(chunkery_id_of_prop_list,"lplatformtemple",0)
+ds_map_add(chunkery_id_of_prop_list,"lplatformtemple",chunk_type_allowed_props_temple)
 
 ////doublewavesgrassy
 ds_map_add(chunkery_chunk_shape,"doublewavesgrassy","doublewaves")
 ds_map_add(chunkery_sprite_list,"doublewavesgrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"doublewavesgrassy",5)
 ds_map_add(chunkery_ammo_max,"doublewavesgrassy",7)
-ds_map_add(chunkery_id_of_prop_list,"doublewavesgrassy",0)
+ds_map_add(chunkery_id_of_prop_list,"doublewavesgrassy",chunk_type_allowed_props_grassy)
 
 ////rectanglebumpygrassy
 ds_map_add(chunkery_chunk_shape,"rectanglebumpygrassy","rectanglebumpy")
 ds_map_add(chunkery_sprite_list,"rectanglebumpygrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"rectanglebumpygrassy",5)
 ds_map_add(chunkery_ammo_max,"rectanglebumpygrassy",7)
-ds_map_add(chunkery_id_of_prop_list,"rectanglebumpygrassy",0)
+ds_map_add(chunkery_id_of_prop_list,"rectanglebumpygrassy",chunk_type_allowed_props_grassy)
 
 //sidestepstemple
 ds_map_add(chunkery_chunk_shape,"sidestepstemple","sidesteps")
 ds_map_add(chunkery_sprite_list,"sidestepstemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"sidestepstemple",5)
 ds_map_add(chunkery_ammo_max,"sidestepstemple",14)
-ds_map_add(chunkery_id_of_prop_list,"sidestepstemple",0)
+ds_map_add(chunkery_id_of_prop_list,"sidestepstemple",chunk_type_allowed_props_temple)
 
 //chamberspillartemple
 ds_map_add(chunkery_chunk_shape,"chamberspillartemple","chamberspillar")
 ds_map_add(chunkery_sprite_list,"chamberspillartemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"chamberspillartemple",4)
 ds_map_add(chunkery_ammo_max,"chamberspillartemple",12)
-ds_map_add(chunkery_id_of_prop_list,"chamberspillartemple",0)
+ds_map_add(chunkery_id_of_prop_list,"chamberspillartemple",chunk_type_allowed_props_temple)
 
 //secretboxtemple
 ds_map_add(chunkery_chunk_shape,"secretboxtemple","secretbox")
 ds_map_add(chunkery_sprite_list,"secretboxtemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"secretboxtemple",9)
 ds_map_add(chunkery_ammo_max,"secretboxtemple",11)
-ds_map_add(chunkery_id_of_prop_list,"secretboxtemple",0)
+ds_map_add(chunkery_id_of_prop_list,"secretboxtemple",chunk_type_allowed_props_temple)
 ////////////////////////////////////////////////////////////////////////////////////////// SAND
 
 

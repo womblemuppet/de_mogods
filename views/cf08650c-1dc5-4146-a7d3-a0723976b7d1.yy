@@ -18,7 +18,8 @@
         "3cfc5e4d-bb12-4cad-9f25-5b84e38087c7",
         "00aa205e-b08d-409a-ba41-ff0b247512fc",
         "204d26b8-16fc-4288-929b-1c949c4f5198",
-        "536bc997-c975-4647-9a40-f5898fadca6f"
+        "536bc997-c975-4647-9a40-f5898fadca6f",
+        "15e4bb5c-0f9a-432d-895f-994a7910ed91"
     ],
     "filterType": "GMScript",
     "folderName": "tergen",

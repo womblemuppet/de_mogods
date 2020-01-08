@@ -5,7 +5,7 @@ if !ds_map_exists(map_of_chunk_style_pools,biome)
 ds_list_shuffle(map_of_chunk_style_pools[? biome])
 current_chunk_name=ds_list_find_value(map_of_chunk_style_pools[? biome],0)   //eg "sandypits" "sandydots" "startingflat"
 terraintype=chunkery_chunk_shape[? current_chunk_name]   //eg "pits" , "rectangle"
-        
+
 if !ds_map_exists(chunkery_ammo_min,current_chunk_name)
 	show_error("nonexistant chunktype in chunkeryammo min. called="+string(current_chunk_name),true)
 if !ds_map_exists(chunkery_ammo_max,current_chunk_name)

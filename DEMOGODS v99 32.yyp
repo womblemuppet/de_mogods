@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "15e4bb5c-0f9a-432d-895f-994a7910ed91",
+            "Value": {
+                "id": "08cea323-c411-4524-8422-58701ddf212d",
+                "resourcePath": "scripts\\create_chunk_type_allowed_props\\create_chunk_type_allowed_props.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "16052d81-d424-4567-9303-96e4e2b71b09",
             "Value": {
                 "id": "e8c4b5cb-6d8c-4df8-96b2-7fd1d1e732dc",
@@ -6567,6 +6575,14 @@
             }
         },
         {
+            "Key": "adddd860-e161-4f00-94c8-b2e2f8b6b89a",
+            "Value": {
+                "id": "ba86f0fd-9905-492e-b23b-095259146f19",
+                "resourcePath": "objects\\chunk_type_allowed_props\\chunk_type_allowed_props.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "adf0c3c4-51a9-44e4-9bf1-ba6fc07d3ad0",
             "Value": {
                 "id": "06773009-1ac5-4b7e-b3ef-d769291285fb",
@@ -9957,6 +9973,7 @@
         "00aa205e-b08d-409a-ba41-ff0b247512fc",
         "204d26b8-16fc-4288-929b-1c949c4f5198",
         "536bc997-c975-4647-9a40-f5898fadca6f",
+        "15e4bb5c-0f9a-432d-895f-994a7910ed91",
         "d575b925-b2b2-4c20-bbdb-857ed3477c5d",
         "f2d62067-5cec-4220-9b74-0da12d7ea971",
         "0c52ca6b-34c8-443f-9f33-18916703fc30",

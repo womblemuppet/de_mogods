@@ -29,8 +29,9 @@ ds_map_add(lightingalphamap,"cave",0.2)
 ds_map_add(lightingcolourmap,"forest",c_black)
 ds_map_add(lightingalphamap,"forest",0.075)
 
-lightingtravelledmarks=ds_list_create()
+lightingtravelledmarks=ds_list_create() //[finaledit] in use?
 lightingtravelledbiome=ds_list_create()
+
 mountainscrolllevel=biome_length*3+CREATIONDELAY-1000
 cavelevel=biome_length*3+CREATIONDELAY+200
 mountainlevel=biome_length*2+CREATIONDELAY-4400

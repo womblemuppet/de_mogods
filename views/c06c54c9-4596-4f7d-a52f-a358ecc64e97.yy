@@ -14,7 +14,8 @@
         "7ee04df9-a663-4ae1-a86b-82a7a2b6fde7",
         "56382178-9bb2-485e-8ae4-e979607280b7",
         "09ac4b8a-3292-4dd3-a637-46356531b56f",
-        "d7df3f2b-1111-406f-b0af-7b1985227dc9"
+        "d7df3f2b-1111-406f-b0af-7b1985227dc9",
+        "adddd860-e161-4f00-94c8-b2e2f8b6b89a"
     ],
     "filterType": "GMObject",
     "folderName": "scenery and visuals",
