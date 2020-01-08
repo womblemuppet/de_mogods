@@ -7,10 +7,7 @@ a=instance_create_depth(0,0,0,prop_properties)
 
 //determine prop_type (name of prop which links to its properties)
 var prop_list;
-//if terraintype=="startingflat"
-	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE) 
-//else
-//	prop_list=choose(PROPS_SMALL,PROPS_MEDIUM,PROPS_LARGE)
+prop_list=argument2
 ds_list_shuffle(prop_list)
 prop_type=prop_list[| 0]
 

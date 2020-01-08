@@ -1,14 +1,15 @@
 var p_sprite,p_sprite_die;
 
 
-var yy,block_column_number;
+var yy,block_column_number,prop_list;
 yy=argument0
 block_column_number=argument1
+prop_list=argument2
 
 
 
 var new_prop_properties;
-new_prop_properties=decide_prop_properties(biome)
+new_prop_properties=decide_prop_properties(biome,prop_list)
 
 
 var p_sprite,p_sprite_die,p_name,p_isFlag,p_cutTerrain,p_NOconnectors;

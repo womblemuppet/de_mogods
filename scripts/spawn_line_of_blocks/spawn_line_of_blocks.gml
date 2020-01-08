@@ -61,16 +61,25 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 	//				image_index=choose(4) break;
 	//	}
 	//}
-        
+
 
 	////spawn props
 	if makeok && space_for_spawn_exists(block_column_number)
 	{
-		if random(1)>0.75
+		var current_props_instance;
+		current_props_instance=chunkery_allowed_props_instance[? current_chunk_name]
+		var prop_list_count;
+		prop_list_count=current_props_instance.number_of_prop_lists
+		
+		for (var i = 0; i < prop_list_count; i++)
 		{
-			show_debug_message("spawned prop")
-			spawn_prop(y_position,block_column_number)
+			if random(1)>current_props_instance.prop_spawn_chance[i*2]
+			{
+				show_debug_message("spawned prop")
+				spawn_prop(y_position,block_column_number,current_props_instance.prop_list[1+i*2])
+			}
 		}
+
 	}
 	
           

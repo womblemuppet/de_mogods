@@ -18,4 +18,6 @@ for (var i = 0; i < argument_count/2;i+=2)
 	a.prop_list[i]=argument[i+1]
 }
 
+a.number_of_prop_lists=argument_count/2
+
 return a

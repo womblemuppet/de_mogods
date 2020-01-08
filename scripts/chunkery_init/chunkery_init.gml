@@ -2,13 +2,14 @@
 //Data for a 'chunk', which has a current_chunk_name (shape), ammo, prop list and terrain type 
 
 current_chunk_name="startingflat"    ///the current type of chunk
-chunkery_chunk_shape=ds_map_create()
+chunkery_chunk_shape=ds_map_create() ///these maps have the chunk_name as the key and hold various properties about the chunk type
 chunkery_ammo_min=ds_map_create()
 chunkery_ammo_max=ds_map_create()
 chunkery_sprite_list=ds_map_create()
-chunkery_id_of_prop_list=ds_map_create() 
+chunkery_allowed_props_instance=ds_map_create() 
 
 
+prop_lists_init()
 
 
 map_of_chunk_style_pools=ds_map_create()   ///each key links to a list with the pool of chunk styles
@@ -22,76 +23,76 @@ ds_list_add(list_of_chunk_styles_summit,"platgrassy","rectanglebumpygrassy","lpl
 
 
 var chunk_type_allowed_props_startingflat;
-chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.9)
+chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.9,TREES,0.2,DESTROYED_STATUES)
 
 var chunk_type_allowed_props_grassy;
-chunk_type_allowed_props_grassy=create_chunk_type_allowed_props()
+chunk_type_allowed_props_grassy=create_chunk_type_allowed_props(0.1,TREES,0.9,DESTROYED_STATUES)
 
 var chunk_type_allowed_props_temple;
-chunk_type_allowed_props_temple=create_chunk_type_allowed_props()
+chunk_type_allowed_props_temple=create_chunk_type_allowed_props(0.6,TORCHES,0.2,WHOLE_STATUES)
 
 ////startingflat
 ds_map_add(chunkery_chunk_shape,"startingflat","solidline")
 ds_map_add(chunkery_sprite_list,"startingflat",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"startingflat",7)
 ds_map_add(chunkery_ammo_max,"startingflat",7)
-ds_map_add(chunkery_id_of_prop_list,"startingflat",chunk_type_allowed_props_startingflat)
+ds_map_add(chunkery_allowed_props_instance,"startingflat",chunk_type_allowed_props_startingflat)
 
 ////platgrassy
 ds_map_add(chunkery_chunk_shape,"platgrassy","singleplatformbumpy")
 ds_map_add(chunkery_sprite_list,"platgrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"platgrassy",6)
 ds_map_add(chunkery_ammo_max,"platgrassy",10)
-ds_map_add(chunkery_id_of_prop_list,"platgrassy",chunk_type_allowed_props_grassy)
+ds_map_add(chunkery_allowed_props_instance,"platgrassy",chunk_type_allowed_props_grassy)
 
 ////lplatformbumpygrassy
 ds_map_add(chunkery_chunk_shape,"lplatformbumpygrassy","lplatformbumpy")
 ds_map_add(chunkery_sprite_list,"lplatformbumpygrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"lplatformbumpygrassy",6)
 ds_map_add(chunkery_ammo_max,"lplatformbumpygrassy",8)
-ds_map_add(chunkery_id_of_prop_list,"lplatformbumpygrassy",chunk_type_allowed_props_grassy)
+ds_map_add(chunkery_allowed_props_instance,"lplatformbumpygrassy",chunk_type_allowed_props_grassy)
 
 ////lplatformtemple
 ds_map_add(chunkery_chunk_shape,"lplatformtemple","lplatform")
 ds_map_add(chunkery_sprite_list,"lplatformtemple",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"lplatformtemple",6)
 ds_map_add(chunkery_ammo_max,"lplatformtemple",8)
-ds_map_add(chunkery_id_of_prop_list,"lplatformtemple",chunk_type_allowed_props_temple)
+ds_map_add(chunkery_allowed_props_instance,"lplatformtemple",chunk_type_allowed_props_temple)
 
 ////doublewavesgrassy
 ds_map_add(chunkery_chunk_shape,"doublewavesgrassy","doublewaves")
 ds_map_add(chunkery_sprite_list,"doublewavesgrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"doublewavesgrassy",5)
 ds_map_add(chunkery_ammo_max,"doublewavesgrassy",7)
-ds_map_add(chunkery_id_of_prop_list,"doublewavesgrassy",chunk_type_allowed_props_grassy)
+ds_map_add(chunkery_allowed_props_instance,"doublewavesgrassy",chunk_type_allowed_props_grassy)
 
 ////rectanglebumpygrassy
 ds_map_add(chunkery_chunk_shape,"rectanglebumpygrassy","rectanglebumpy")
 ds_map_add(chunkery_sprite_list,"rectanglebumpygrassy",BLOCK_SPRITE_SUMMIT_FULL)
 ds_map_add(chunkery_ammo_min,"rectanglebumpygrassy",5)
 ds_map_add(chunkery_ammo_max,"rectanglebumpygrassy",7)
-ds_map_add(chunkery_id_of_prop_list,"rectanglebumpygrassy",chunk_type_allowed_props_grassy)
+ds_map_add(chunkery_allowed_props_instance,"rectanglebumpygrassy",chunk_type_allowed_props_grassy)
 
 //sidestepstemple
 ds_map_add(chunkery_chunk_shape,"sidestepstemple","sidesteps")
 ds_map_add(chunkery_sprite_list,"sidestepstemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"sidestepstemple",5)
 ds_map_add(chunkery_ammo_max,"sidestepstemple",14)
-ds_map_add(chunkery_id_of_prop_list,"sidestepstemple",chunk_type_allowed_props_temple)
+ds_map_add(chunkery_allowed_props_instance,"sidestepstemple",chunk_type_allowed_props_temple)
 
 //chamberspillartemple
 ds_map_add(chunkery_chunk_shape,"chamberspillartemple","chamberspillar")
 ds_map_add(chunkery_sprite_list,"chamberspillartemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"chamberspillartemple",4)
 ds_map_add(chunkery_ammo_max,"chamberspillartemple",12)
-ds_map_add(chunkery_id_of_prop_list,"chamberspillartemple",chunk_type_allowed_props_temple)
+ds_map_add(chunkery_allowed_props_instance,"chamberspillartemple",chunk_type_allowed_props_temple)
 
 //secretboxtemple
 ds_map_add(chunkery_chunk_shape,"secretboxtemple","secretbox")
 ds_map_add(chunkery_sprite_list,"secretboxtemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"secretboxtemple",9)
 ds_map_add(chunkery_ammo_max,"secretboxtemple",11)
-ds_map_add(chunkery_id_of_prop_list,"secretboxtemple",chunk_type_allowed_props_temple)
+ds_map_add(chunkery_allowed_props_instance,"secretboxtemple",chunk_type_allowed_props_temple)
 ////////////////////////////////////////////////////////////////////////////////////////// SAND
 
 
@@ -104,35 +105,35 @@ ds_map_add(chunkery_chunk_shape,"sandyrectangle","rectangle")
 ds_map_add(chunkery_sprite_list,"sandyrectangle",BLOCK_SPRITE_SAND_FULL)
 ds_map_add(chunkery_ammo_min,"sandyrectangle",3)
 ds_map_add(chunkery_ammo_max,"sandyrectangle",5)
-ds_map_add(chunkery_id_of_prop_list,"sandyrectangle",0)
+ds_map_add(chunkery_allowed_props_instance,"sandyrectangle",0)
 
 ////sandywaves
 ds_map_add(chunkery_chunk_shape,"sandywaves","waves")
 ds_map_add(chunkery_sprite_list,"sandywaves",BLOCK_SPRITE_SAND_FULL)
 ds_map_add(chunkery_ammo_min,"sandywaves",7)
 ds_map_add(chunkery_ammo_max,"sandywaves",14)
-ds_map_add(chunkery_id_of_prop_list,"sandywaves",0)
+ds_map_add(chunkery_allowed_props_instance,"sandywaves",0)
 
 ////sandylplatformbumpy
 ds_map_add(chunkery_chunk_shape,"sandylplatformbumpy","lplatformbumpy")
 ds_map_add(chunkery_sprite_list,"sandylplatformbumpy",BLOCK_SPRITE_SAND_FULL)
 ds_map_add(chunkery_ammo_min,"sandylplatformbumpy",9)
 ds_map_add(chunkery_ammo_max,"sandylplatformbumpy",10)
-ds_map_add(chunkery_id_of_prop_list,"sandylplatformbumpy",0)
+ds_map_add(chunkery_allowed_props_instance,"sandylplatformbumpy",0)
 
 ////sandypits
 ds_map_add(chunkery_chunk_shape,"sandypits","pits")
 ds_map_add(chunkery_sprite_list,"sandypits",BLOCK_SPRITE_SAND_FULL)
 ds_map_add(chunkery_ammo_min,"sandypits",3)
 ds_map_add(chunkery_ammo_max,"sandypits",7)
-ds_map_add(chunkery_id_of_prop_list,"sandypits",0)
+ds_map_add(chunkery_allowed_props_instance,"sandypits",0)
 
 //sandydots
 ds_map_add(chunkery_chunk_shape,"sandydots","dots")
 ds_map_add(chunkery_sprite_list,"sandydots",BLOCK_SPRITE_SAND_FULL)
 ds_map_add(chunkery_ammo_min,"sandydots",2)
 ds_map_add(chunkery_ammo_max,"sandydots",4)
-ds_map_add(chunkery_id_of_prop_list,"sandydots",0)
+ds_map_add(chunkery_allowed_props_instance,"sandydots",0)
 
 
 ////////////////////////////////////////////////////////////////////////////////////////// FOREST
@@ -147,7 +148,7 @@ ds_map_add(chunkery_chunk_shape,"forestpits","pits")
 ds_map_add(chunkery_sprite_list,"forestpits",BLOCK_SPRITE_FOREST_FULL)
 ds_map_add(chunkery_ammo_min,"forestpits",4)
 ds_map_add(chunkery_ammo_max,"forestpits",4)
-ds_map_add(chunkery_id_of_prop_list,"forestpits",0)
+ds_map_add(chunkery_allowed_props_instance,"forestpits",0)
 
 ////////////////////////////////////////////////////////////////////////////////////////// CAVE
 
@@ -161,7 +162,7 @@ ds_map_add(chunkery_chunk_shape,"caveblobs","blobs")
 ds_map_add(chunkery_sprite_list,"caveblobs",BLOCK_SPRITE_CAVE_FULL)
 ds_map_add(chunkery_ammo_min,"caveblobs",14)
 ds_map_add(chunkery_ammo_max,"caveblobs",14)
-ds_map_add(chunkery_id_of_prop_list,"caveblobs",0)
+ds_map_add(chunkery_allowed_props_instance,"caveblobs",0)
 
 
 
@@ -172,5 +173,5 @@ ds_map_add(chunkery_chunk_shape,"","")
 ds_map_add(chunkery_sprite_list,"","")
 ds_map_add(chunkery_ammo_min,"","")
 ds_map_add(chunkery_ammo_max,"","")
-ds_map_add(chunkery_id_of_prop_list,"","")
+ds_map_add(chunkery_allowed_props_instance,"","")
 */
