@@ -73,7 +73,7 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 		
 		for (var i = 0; i < prop_list_count; i++)
 		{
-			if random(1)>current_props_instance.prop_spawn_chance[i]
+			if random(1)>=(1-current_props_instance.prop_spawn_chance[i])
 			{
 				show_debug_message("spawned prop")
 				spawn_prop(y_position,block_column_number,current_props_instance.prop_list[i])
