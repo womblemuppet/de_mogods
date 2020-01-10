@@ -45,6 +45,20 @@ switch prop_type
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
 	break;
+	case "tree_3":
+	a.p_sprite=tree_3
+	a.p_sprite_die=tree_3_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "tree_4":
+	a.p_sprite=tree_4
+	a.p_sprite_die=tree_4_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
 	case "tiki_torch_1":
 	a.p_sprite=tiki_torch_1
 	a.p_sprite_die=tiki_torch_1_die
@@ -55,6 +69,13 @@ switch prop_type
 	case "tiki_torch_2":
 	a.p_sprite=tiki_torch_2
 	a.p_sprite_die=tiki_torch_2_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "tiki_torch_3":
+	a.p_sprite=tiki_torch_3
+	a.p_sprite_die=tiki_torch_3_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
