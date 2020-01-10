@@ -7,7 +7,7 @@ a=instance_create_depth(0,0,0,prop_properties)
 
 //determine prop_type (name of prop which links to its properties)
 var prop_list;
-prop_list=argument2
+prop_list=argument1
 ds_list_shuffle(prop_list)
 prop_type=prop_list[| 0]
 

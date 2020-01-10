@@ -12,10 +12,10 @@ if argument_count mod 2 != 0
 
 
 
-for (var i = 0; i < argument_count/2;i+=2)
+for (var i = 0; i < argument_count/2;i++)
 {
-	a.prop_spawn_chance[i]=argument[i]
-	a.prop_list[i]=argument[i+1]
+	a.prop_spawn_chance[i]=argument[2*i]
+	a.prop_list[i]=argument[2*i+1]
 }
 
 a.number_of_prop_lists=argument_count/2
