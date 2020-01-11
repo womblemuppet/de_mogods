@@ -26,16 +26,16 @@ var chunk_type_allowed_props_startingflat;
 chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.25,TREES,0.1,DESTROYED_STATUES,0.25,SHRUBS)
 
 var chunk_type_allowed_props_grassy;
-chunk_type_allowed_props_grassy=create_chunk_type_allowed_props(0.1,TREES,0.05,DESTROYED_STATUES,0.15,SHRUBS)
+chunk_type_allowed_props_grassy=create_chunk_type_allowed_props(0.3,TREES,0.05,DESTROYED_STATUES,0.2,SHRUBS)
 
 var chunk_type_allowed_props_temple;
 chunk_type_allowed_props_temple=create_chunk_type_allowed_props(0.2,TORCHES,0.1,WHOLE_STATUES)
 
 var chunk_type_allowed_props_jungle;
-chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.4,TREES,0.3,SHRUBS)
+chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.6,TREES,0.5,SHRUBS)
 
 var chunk_type_allowed_props_sandy;
-chunk_type_allowed_props_sandy=create_chunk_type_allowed_props(0.7,SHRUBS)
+chunk_type_allowed_props_sandy=create_chunk_type_allowed_props(0.7,SHRUBS,0.3,PALM_TREES)
 
 var chunk_type_allowed_props_cave;
 chunk_type_allowed_props_cave=create_chunk_type_allowed_props(0.5,TORCHES)

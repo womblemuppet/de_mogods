@@ -101,6 +101,27 @@ switch prop_type
 	a.p_cutTerrain=false
 	a.p_NOconnectors=3
 	break;
+	case "ptree_1":
+	a.p_sprite=ptree_1
+	a.p_sprite_die=ptree_1
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1	
+	break;
+	case "ptree_2":
+	a.p_sprite=ptree_2
+	a.p_sprite_die=ptree_2
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "ptree_3":
+	a.p_sprite=ptree_3
+	a.p_sprite_die=ptree_3
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1	
+	break;
 	default:
 	show_error("undef pname",true)
 }

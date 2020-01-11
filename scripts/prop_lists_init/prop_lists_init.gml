@@ -10,5 +10,7 @@ WHOLE_STATUES=ds_list_create()
 ds_list_add(WHOLE_STATUES,"statue_1")
 STRUCTURES=ds_list_create()
 ds_list_add(STRUCTURES,"building_01")
+PALM_TREES=ds_list_create()
+ds_list_add(PALM_TREES,"ptree_1","ptree_2","ptree_3")
 
 //[finaledit] not being destroyed

@@ -11,7 +11,8 @@
         "ff0b0c15-ba23-4a27-91a8-e0ec1d73043c",
         "a1584a3d-2552-481e-b7fa-4cd64ee1248f",
         "4c9d50f4-bb69-4729-b87c-81a48ec08cae",
-        "d0f236fd-3b08-44fd-8be5-088d259685f9"
+        "d0f236fd-3b08-44fd-8be5-088d259685f9",
+        "24f4c782-391a-4fdc-b9af-d15d4190032a"
     ],
     "filterType": "GMSprite",
     "folderName": "props",
