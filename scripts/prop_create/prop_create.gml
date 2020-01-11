@@ -18,7 +18,7 @@ a.NOconnectors=argument7
 with a
 {
 	connectors[0]=noone
-	x+=irandom(aizen.bw)
+	x+=10+irandom(aizen.bw-10)
 	
 	switch NOconnectors
 	{
