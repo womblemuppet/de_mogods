@@ -94,6 +94,7 @@ else if hspd<0
 if triggered   /// >:O
 {
 	life-=1
+	
 	if life<1
 	{
 		var b,hitboxspr;
@@ -121,7 +122,9 @@ if triggered   /// >:O
 			b.image_xscale=bigexplosion_xscale
 		}
 
+		create_terrain_cutter(mine_terrain_cutter_spr,"hit",0,0)
 
+		
 		instance_destroy()
 	}
 }

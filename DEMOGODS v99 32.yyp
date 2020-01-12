@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "000ef60e-faa8-465f-ae35-ca0fd60b4777",
+            "Value": {
+                "id": "e8727daf-002b-4707-b41b-c906307d8dfc",
+                "resourcePath": "sprites\\mine_terrain_cutter_spr\\mine_terrain_cutter_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "00102148-fec2-4dfa-bc49-de64e2a4f873",
             "Value": {
                 "id": "88e9757d-ba41-4958-9886-e25b43c56bce",
