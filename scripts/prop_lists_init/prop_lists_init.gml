@@ -14,3 +14,9 @@ PALM_TREES=ds_list_create()
 ds_list_add(PALM_TREES,"ptree_1","ptree_2","ptree_3")
 
 //[finaledit] not being destroyed
+
+whole_statues_cooldown=0
+WHOLE_STATUES_COOLDOWN_AMOUNT=4 //blocks
+
+destroyed_statues_cooldown=0
+DESTROYED_STATUES_COOLDOWN_AMOUNT=4

@@ -70,15 +70,41 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 		current_props_instance=chunkery_allowed_props_instance[? current_chunk_name]
 		var prop_list_count;
 		prop_list_count=current_props_instance.number_of_prop_lists
-		
+
+		var spawnprop_ok;
 		for (var i = 0; i < prop_list_count; i++)
 		{
-			if random(1)>=(1-current_props_instance.prop_spawn_chance[i])
+			spawnprop_ok=true
+			
+			//check cooldown if current prop_list has cooldown system
+			if current_props_instance.prop_list[i]==WHOLE_STATUES && whole_statues_cooldown>0
+				spawnprop_ok=false
+			if current_props_instance.prop_list[i]==DESTROYED_STATUES && destroyed_statues_cooldown>0
+				spawnprop_ok=false			
+			
+			//roll probability of spawning prop
+			if random(1)<(1-current_props_instance.prop_spawn_chance[i])
+				spawnprop_ok=false
+
+			if spawnprop_ok
 			{
-				show_debug_message("spawned prop")
 				spawn_prop(y_position,block_column_number,current_props_instance.prop_list[i])
+				
+				//set cooldown of prop_lists with cooldowns
+				if current_props_instance.prop_list[i]=WHOLE_STATUES
+					whole_statues_cooldown=WHOLE_STATUES_COOLDOWN_AMOUNT
+					
+				if current_props_instance.prop_list[i]=DESTROYED_STATUES
+					destroyed_statues_cooldown=DESTROYED_STATUES_COOLDOWN_AMOUNT
 			}
+			
+			//deincrement cooldown timers
+			if whole_statues_cooldown>0
+				whole_statues_cooldown--
+			if destroyed_statues_cooldown>0
+				destroyed_statues_cooldown--
 		}
+
 
 	}
 	
