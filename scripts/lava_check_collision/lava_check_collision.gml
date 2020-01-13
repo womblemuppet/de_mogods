@@ -8,7 +8,7 @@ for (var i = 0; i < instance_number(player);i++)
 {
 	with instance_find(player,i)
 	{
-		if y>lava_level.y-50 && y>=lowesty
+		if y>lava_level.y-90 && y>=lowesty
 		{
 			if y>lowesty || (y==lowesty && choose(0,1)==1)
 			{
