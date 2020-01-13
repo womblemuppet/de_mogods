@@ -108,7 +108,7 @@ if triggered   /// >:O
 			hitboxspr=mine_groundpunch_combo_shockwave_hitbox
 			show_debug_message("right: "+string(right))
 			b=attack_create_hitbox(60,1,false,true,"mineexplosion_big",hitboxspr,0.2,99,15,7,1)
-			b.creator=noone
+			b.creator=player_who_placed_mine
 			b.combo_hit_pseudo_creator=player_who_placed_mine
 			b.image_xscale=bigexplosion_xscale
 		}
