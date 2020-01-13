@@ -1,5 +1,5 @@
 SHRUBS=ds_list_create()
-ds_list_add(SHRUBS,"rock_1","shrub_1")
+ds_list_add(SHRUBS,"rock_1","rock_2","shrub_1","shrub_2","shrub_3","shrub_4")
 TREES=ds_list_create()
 ds_list_add(TREES,"tree_1","tree_2","tree_3","tree_4")
 TORCHES=ds_list_create()
@@ -12,6 +12,8 @@ STRUCTURES=ds_list_create()
 ds_list_add(STRUCTURES,"building_01")
 PALM_TREES=ds_list_create()
 ds_list_add(PALM_TREES,"ptree_1","ptree_2","ptree_3")
+BRICKCLUMPS=ds_list_create()
+ds_list_add(BRICKCLUMPS,"brickclumps_1","brickclumps_2")
 
 //[finaledit] not being destroyed
 

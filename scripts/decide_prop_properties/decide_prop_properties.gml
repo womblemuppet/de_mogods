@@ -24,9 +24,37 @@ switch prop_type
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
 	break;
+	case "rock_2":
+	a.p_sprite=rock_1
+	a.p_sprite_die=rock_1
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
 	case "shrub_1":
 	a.p_sprite=shrub_1
 	a.p_sprite_die=shrub_1
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "shrub_2":
+	a.p_sprite=shrub_2
+	a.p_sprite_die=shrub_2
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "shrub_3":
+	a.p_sprite=shrub_3
+	a.p_sprite_die=shrub_3
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "shrub_4":
+	a.p_sprite=shrub_4
+	a.p_sprite_die=shrub_4
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
@@ -118,6 +146,20 @@ switch prop_type
 	case "ptree_3":
 	a.p_sprite=ptree_3
 	a.p_sprite_die=ptree_3
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1	
+	break;
+	case "brickclumps_1":
+	a.p_sprite=brickclumps_1
+	a.p_sprite_die=brickclumps_1
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1	
+	break;
+	case "brickclumps_2":
+	a.p_sprite=brickclumps_2
+	a.p_sprite_die=brickclumps_2
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1	

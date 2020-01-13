@@ -1031,6 +1031,14 @@
             }
         },
         {
+            "Key": "172b5f20-478c-4419-86c5-4800ac0234f8",
+            "Value": {
+                "id": "b35ff9fb-745a-4ce9-917f-a550909853d1",
+                "resourcePath": "sprites\\rock_2\\rock_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17366ead-6abf-48e2-95b6-cc0a51813cce",
             "Value": {
                 "id": "3d9d5279-1422-473f-b8dd-a3a7d12f67bb",
@@ -1164,6 +1172,14 @@
                 "id": "60d57451-1d9b-4e14-b3b4-2cbb3267ffe4",
                 "resourcePath": "sprites\\tiki_torch_1\\tiki_torch_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1b2de2ea-ccac-4170-b522-1a3b5739d039",
+            "Value": {
+                "id": "ff8ac21d-d4d6-4807-a2b1-5b129b9dac87",
+                "resourcePath": "views\\1b2de2ea-ccac-4170-b522-1a3b5739d039.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1644,6 +1660,14 @@
                 "id": "7bb1c77f-76cf-4930-aef9-04b505a6cc65",
                 "resourcePath": "objects\\zapindicator\\zapindicator.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2a0081a7-38e9-4308-9000-7043f132c2cc",
+            "Value": {
+                "id": "27c69551-254d-4304-aab6-506ddb066492",
+                "resourcePath": "views\\2a0081a7-38e9-4308-9000-7043f132c2cc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2983,6 +3007,14 @@
             }
         },
         {
+            "Key": "50796750-40dd-4464-b7c1-c21e43618fc5",
+            "Value": {
+                "id": "1888e8cd-9e5e-4072-8c02-00659b297dbb",
+                "resourcePath": "sprites\\shrub_2\\shrub_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "508502cc-ee7f-44c0-bc42-458bb0649225",
             "Value": {
                 "id": "ccc21269-8567-4a7f-b6fe-d79efe5f9846",
@@ -3252,6 +3284,14 @@
                 "id": "b1166229-32a9-4c7f-ad16-9009c2cdea73",
                 "resourcePath": "fonts\\font_debug\\font_debug.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "55ee2ee5-fb79-4490-8bf7-166e633699a6",
+            "Value": {
+                "id": "1ade15f5-d526-44f0-932d-f0fe918a2134",
+                "resourcePath": "sprites\\shrub_4\\shrub_4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3556,6 +3596,14 @@
                 "id": "8f485f2c-ef52-49b4-b94d-edf4c14215a2",
                 "resourcePath": "objects\\ef_orbpickup\\ef_orbpickup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5cf4950d-be52-45b3-b716-a18556f3a7c9",
+            "Value": {
+                "id": "b86e9fae-224a-4d48-80a1-8f6452b4a501",
+                "resourcePath": "sprites\\brickclumps_1\\brickclumps_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5267,6 +5315,14 @@
             "Value": {
                 "id": "84cee449-d6e8-4d54-8058-7f1e092c4323",
                 "resourcePath": "sprites\\Bait_3H_use_teleport\\Bait_3H_use_teleport.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "865a078e-fa34-4a46-985c-0222c84c66f9",
+            "Value": {
+                "id": "19b2d620-1107-4bbe-bebb-c83e686cd1ab",
+                "resourcePath": "sprites\\brickclumps_2\\brickclumps_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8780,6 +8836,14 @@
                 "id": "23be7d20-8b67-4ed1-9410-cd73f9399ca5",
                 "resourcePath": "objects\\ef_chain\\ef_chain.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "de9a7c0f-c2a0-437d-9e93-9925db9ba69d",
+            "Value": {
+                "id": "f4467445-64f9-491f-93f6-050ad0705230",
+                "resourcePath": "sprites\\shrub_3\\shrub_3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
