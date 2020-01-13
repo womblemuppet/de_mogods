@@ -115,10 +115,10 @@ holding_a_crab=false
 crab_being_held=-1   ///id of throwable critter  being held
 cripple_debuff_counter=0   ///debuff stopping dashes and jumping
 impact_debuff_counter=0   ///debuff making you destroy terrain when hit
-chained_debuff_counter=0    ///debuff when etting hit by bait chaining attack
+chained_debuff_counter=0    ///debuff when getting hit by bait chaining attack
 chained_debuff_x_pos=0     ///x pos of chain
 chained_debuff_y_pos=0     ///y pos of chain
-chain_effect_id_to_delete=noone   ///id of chain effect instance
+chain_id_to_delete=noone   ///id of chain effect instance
 
 light_heavy_held_counter=0
 ritual_lockdown=0 //1 = in animation
@@ -248,7 +248,7 @@ uniques_slinger_superblast_has_made_hitbox=false
 
 //BAIT CHAIN
 BAITCHAIN_CHAIN_TIME=150
-BAITCHAIN_CHAIN_RANGE=75
+BAITCHAIN_CHAIN_RANGE=175
 uniques_baitchain_last_chained=noone  //shoulda been list of players
 uniques_baitchain_last_chained_timer=0
 uniques_baitchain_update_pos_counter=0

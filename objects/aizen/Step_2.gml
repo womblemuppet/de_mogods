@@ -19,7 +19,8 @@ player_baseline_prev=player_baseline
 
 
 if lowest_player_y>=SCROLL_THRESHOLD 
-{	//////////////////////////////////////// CAMERA SCROLL
+{
+	///scroll camera
 	var scrollspeed;
 	scrollspeed=5
 	
@@ -39,6 +40,11 @@ if lowest_player_y>=SCROLL_THRESHOLD
 		{
 			if !place_meeting(x,y+scrollspeed,block)
 				y+=scrollspeed
+		}
+		if chained_debuff_counter>0
+		{
+			chained_debuff_y_pos-=scrollspeed
+			chain_id_to_delete.y-=scrollspeed
 		}
 	}
 	with teleport

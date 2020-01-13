@@ -98,11 +98,11 @@ switch incoming_attack_name
 		//delete old chain effect
 		if chained_debuff_counter>0
 		{
-			if  chain_effect_id_to_delete!=noone && instance_exists(chain_effect_id_to_delete)
+			if  chain_id_to_delete!=noone && instance_exists(chain_id_to_delete)
 			{
-				with chain_effect_id_to_delete
+				with chain_id_to_delete
 					instance_destroy()
-				chain_effect_id_to_delete=noone
+				chain_id_to_delete=noone
 			}
 		}
 		

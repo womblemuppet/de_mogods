@@ -2,7 +2,7 @@
     "id": "de74963f-c140-4a3b-b980-dc5afe72b62f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ef_chain",
+    "name": "baitchain",
     "eventList": [
         {
             "id": "fb6f6437-79a9-4580-8e8b-3b74af6491e0",

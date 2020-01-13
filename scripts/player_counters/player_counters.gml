@@ -181,11 +181,29 @@ if uniques_parachute_minimum_time_counter>0
 if chained_debuff_counter>0
 {
 	chained_debuff_counter-=1
+	
+	if !position_meeting(chain_id_to_delete.x,chain_id_to_delete.y+4,block)
+	{
+		with chain_id_to_delete
+			y+=4;
+			
+		chained_debuff_y_pos+=4
+			
+		if !position_meeting(chain_id_to_delete.x,chain_id_to_delete.y+10,block)
+		{
+			with chain_id_to_delete
+				y+=10;
+				
+			chained_debuff_y_pos+=10
+		}	
+	}
+
+	
 	if chained_debuff_counter==0
 	{
-		with chain_effect_id_to_delete
+		with chain_id_to_delete
 			instance_destroy()
-		chain_effect_id_to_delete=noone
+		chain_id_to_delete=noone
 		hspd=0
 		vspd=0
 		effect_create_above(ef_firework,chained_debuff_x_pos,chained_debuff_y_pos,1,c_lime)
@@ -206,10 +224,10 @@ if uniques_baitchain_update_pos_counter>0
 	//{
 		chained_debuff_x_pos=x
 		chained_debuff_y_pos=y	
-		if instance_exists(chain_effect_id_to_delete)
+		if instance_exists(chain_id_to_delete)
 		{
-			chain_effect_id_to_delete.x=x
-			chain_effect_id_to_delete.y=y
+			chain_id_to_delete.x=x
+			chain_id_to_delete.y=y
 		}
 	//}
 }

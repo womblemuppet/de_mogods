@@ -14,7 +14,7 @@ if uniques_teleport==1                                                          
 					uniques_supergrab_teletrap_victim.chained_debuff_y_pos=uniques_my_teleport_id.y
 					
 					//destroy old chain effect
-					with uniques_supergrab_teletrap_victim.chain_effect_id_to_delete
+					with uniques_supergrab_teletrap_victim.chain_id_to_delete
 						instance_destroy()
 
 					//create new chain effect
@@ -22,8 +22,8 @@ if uniques_teleport==1                                                          
 						attack_bait_create_chain_effect()
 
 					//set new chain effect position to teletrap position
-					uniques_supergrab_teletrap_victim.chain_effect_id_to_delete.x=uniques_my_teleport_id.x
-					uniques_supergrab_teletrap_victim.chain_effect_id_to_delete.y=uniques_my_teleport_id.y
+					uniques_supergrab_teletrap_victim.chain_id_to_delete.x=uniques_my_teleport_id.x
+					uniques_supergrab_teletrap_victim.chain_id_to_delete.y=uniques_my_teleport_id.y
 
 				}
 				

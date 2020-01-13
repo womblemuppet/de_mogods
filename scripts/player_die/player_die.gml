@@ -40,7 +40,7 @@ if kouchou.map=="multiplayer"
 		with winsplash
 			instance_destroy()
 		var a;
-		a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+		a=instance_create_depth(kouchou.room_x_halfway,kouchou.room_y_halfway,-15,winsplash)
 		a.image_index=4   
 		if kouchou.drinkmode==true
 			a.image_index=7
@@ -49,7 +49,7 @@ if kouchou.map=="multiplayer"
 	{
 		aizen.alarm[9]=5   ///round_draw_potential alarm (hikiwake)
 		var a;
-		a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+		a=instance_create_depth(kouchou.room_x_halfway,kouchou.room_y_halfway,-15,winsplash)
         
 		var him;   ///find the ID of the player still alive   ///very gender-inclusive..
 		with player
@@ -69,7 +69,7 @@ if kouchou.map=="multiplayer"
 else if kouchou.map=="stormtrial" && stormtrial_control.timer<1
 {
         var a;
-        a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+        a=instance_create_depth(kouchou.room_x_halfway,kouchou.room_y_halfway,-15,winsplash)
         a.image_index=6
         with corpse
             instance_destroy()
@@ -77,13 +77,16 @@ else if kouchou.map=="stormtrial" && stormtrial_control.timer<1
 else      ////noone wins
 {
         var a;
-        a=instance_create(kouchou.room_x_halfway,kouchou.room_y_halfway,winsplash)
+        a=instance_create_depth(kouchou.room_x_halfway,kouchou.room_y_halfway,-15,winsplash)
         a.image_index=5
 }
 
 
-
-
+if chain_id_to_delete==noone
+{
+	with chain_id_to_delete
+		instance_destroy()
+}
 
 
 
