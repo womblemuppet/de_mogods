@@ -115,9 +115,37 @@ switch prop_type
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1
 	break;
+	case "statue_2":
+	a.p_sprite=statue_2
+	a.p_sprite_die=statue_2_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "statue_3":
+	a.p_sprite=statue_3
+	a.p_sprite_die=statue_3_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
 	case "dedstatue_1":
 	a.p_sprite=dedstatue_1
 	a.p_sprite_die=dedstatue_1_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "dedstatue_2":
+	a.p_sprite=dedstatue_2
+	a.p_sprite_die=dedstatue_2_die
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
+	case "dedstatue_3":
+	a.p_sprite=dedstatue_2
+	a.p_sprite_die=dedstatue_2_die
 	a.p_isFlag=false
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1

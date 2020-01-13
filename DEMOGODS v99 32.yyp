@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "0359ceee-c667-4825-84a7-01bad0f5e502",
+            "Value": {
+                "id": "af0b7cde-df27-4cae-b31d-8ae343298231",
+                "resourcePath": "sprites\\dedstatue_1\\dedstatue_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0365ff9c-8bce-4c4f-b0c7-d6b1e8ef3cf0",
             "Value": {
                 "id": "14682c14-e903-4cb3-b676-199701d27b8e",
@@ -327,6 +335,14 @@
             }
         },
         {
+            "Key": "06d27c0a-0bed-4703-b689-d8339c7516bc",
+            "Value": {
+                "id": "077e95ae-8fc4-4660-b188-e82f357e7050",
+                "resourcePath": "sprites\\dedstatue_3\\dedstatue_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06fabbab-091a-4d3d-965e-082e756ab724",
             "Value": {
                 "id": "96c1e584-3198-41ca-b587-57cabbbd580c",
@@ -451,14 +467,6 @@
             "Value": {
                 "id": "4a2df1a2-28ad-484c-a9e8-2fe0daa76656",
                 "resourcePath": "sprites\\Vet_3H_air\\Vet_3H_air.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "09a45b87-ec8e-46c0-9005-9d1471bf1a41",
-            "Value": {
-                "id": "b8f2e0bd-fc67-4200-8426-5263e0699191",
-                "resourcePath": "sprites\\dedstatue_1_die\\dedstatue_1_die.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2263,6 +2271,14 @@
             }
         },
         {
+            "Key": "3f540af4-1bab-43b5-a481-b476a5b683bd",
+            "Value": {
+                "id": "01c16dc2-34af-4e30-a3e9-9a862a067d2d",
+                "resourcePath": "sprites\\dedstatue_2_die\\dedstatue_2_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f7557a6-d7df-4b70-921b-35b586300035",
             "Value": {
                 "id": "73fdf84b-a150-4ebe-9628-c14c74973fa9",
@@ -2395,6 +2411,14 @@
             "Value": {
                 "id": "aab16608-ed60-4520-8b6c-e7e2f86b3719",
                 "resourcePath": "sprites\\lightning_extra_orb\\lightning_extra_orb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "42f17174-7643-4d7f-b4e8-d1d5003a319a",
+            "Value": {
+                "id": "98de4f3b-6315-428b-94c8-354af34e9d23",
+                "resourcePath": "sprites\\statue_2_die\\statue_2_die.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4215,6 +4239,14 @@
             }
         },
         {
+            "Key": "6acef049-7ce8-43c8-bbc9-c293f8102715",
+            "Value": {
+                "id": "27accee7-b2f2-4990-b71b-519b841e3e02",
+                "resourcePath": "sprites\\dedstatue_3_die\\dedstatue_3_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6ae00bfb-b2a6-4774-9ccd-fac858e6e9b3",
             "Value": {
                 "id": "49bc66f3-4fae-43fe-87e9-fee371dcb4a8",
@@ -4439,18 +4471,18 @@
             }
         },
         {
-            "Key": "725c1ef1-4b08-457b-8046-1d7d7d5c5320",
-            "Value": {
-                "id": "d29694a9-c263-4cf7-a4fe-d37eb12e7e25",
-                "resourcePath": "sprites\\dedstatue_1\\dedstatue_1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "728c9259-c7fb-4933-ade3-38c50ca5b911",
             "Value": {
                 "id": "441730d4-2af3-497e-951f-00ea00064055",
                 "resourcePath": "sprites\\goat_walk_sprite\\goat_walk_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "72b71945-9096-4ecf-a452-f5fa6966f6e3",
+            "Value": {
+                "id": "2d2f9df8-f1b0-4886-a0aa-3a27a16ce7de",
+                "resourcePath": "sprites\\statue_3\\statue_3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5575,6 +5607,14 @@
             }
         },
         {
+            "Key": "8cba9e10-9d2e-481e-bd62-01aecb605e6c",
+            "Value": {
+                "id": "4733e425-ded6-4c6a-93d1-1b891a369086",
+                "resourcePath": "sprites\\dedstatue_2\\dedstatue_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cf28be0-09f4-4c92-8ec0-4196f37c754d",
             "Value": {
                 "id": "e221db3b-7c7b-4ae7-b55c-c0fd7be6d6ac",
@@ -5595,6 +5635,14 @@
             "Value": {
                 "id": "dec4534c-f2d6-409e-bbcf-935bffb83082",
                 "resourcePath": "sprites\\clingyfireballspr\\clingyfireballspr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8dddc963-60d7-4c73-ac31-7c17e9d43a0f",
+            "Value": {
+                "id": "43676d33-9d42-4614-8210-7f4d0a00e86a",
+                "resourcePath": "sprites\\dedstatue_1_die\\dedstatue_1_die.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8087,6 +8135,14 @@
             }
         },
         {
+            "Key": "cc8b99b0-482e-40e9-b29e-dfd5f9bbabfc",
+            "Value": {
+                "id": "690793f5-9f44-47bf-ae55-740ff322eb34",
+                "resourcePath": "sprites\\statue_2\\statue_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc97aca4-c295-441e-8287-899f286ddcee",
             "Value": {
                 "id": "ae51b6b3-8aaf-4d23-8b2d-9e6f0f845c0c",
@@ -9987,6 +10043,14 @@
             "Value": {
                 "id": "7fd14ffc-83fc-4092-abd2-94596e2d1fd8",
                 "resourcePath": "sprites\\ptree_1\\ptree_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc9ed641-78b7-47da-bfda-a453932ac04d",
+            "Value": {
+                "id": "733265e8-9603-4125-aa35-8f6235665eec",
+                "resourcePath": "sprites\\statue_3_die\\statue_3_die.yy",
                 "resourceType": "GMSprite"
             }
         },
