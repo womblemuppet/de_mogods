@@ -18,7 +18,7 @@ ds_list_add(BRICKCLUMPS,"brickclumps_1","brickclumps_2")
 //[finaledit] not being destroyed
 
 whole_statues_cooldown=0
-WHOLE_STATUES_COOLDOWN_AMOUNT=4 //blocks
+WHOLE_STATUES_COOLDOWN_AMOUNT=40 //blocks
 
 destroyed_statues_cooldown=0
-DESTROYED_STATUES_COOLDOWN_AMOUNT=4
+DESTROYED_STATUES_COOLDOWN_AMOUNT=40

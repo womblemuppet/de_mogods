@@ -46,6 +46,12 @@ switch incoming_attack_name
 	
 	break;
 	case "fireball":
+	with other.hit_collector  //with fireball instance (hit collector of fireball hitbox)
+	instance_destroy()
+	
+	//continuing case!!!!
+	
+	
 	case "fireball explosion":
 	player_get_gp_stunned(30)
 	break;
