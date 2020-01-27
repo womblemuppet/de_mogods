@@ -1631,14 +1631,6 @@
             }
         },
         {
-            "Key": "2975943a-fd10-4c2a-954b-a0add5fb6cd0",
-            "Value": {
-                "id": "7050e2f9-0db0-4e03-a266-23ac1abf324b",
-                "resourcePath": "sprites\\gp_instruments_hitbox\\gp_instruments_hitbox.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "29a87a06-4b37-4120-9591-3bafceb2ebc4",
             "Value": {
                 "id": "5c5004dd-b639-493f-aeac-3a577db9b485",
@@ -2483,6 +2475,14 @@
             "Value": {
                 "id": "cc395659-fc91-4993-89ce-3d714edf9883",
                 "resourcePath": "sprites\\block_turret_active\\block_turret_active.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4465c5a7-bf72-4f1b-bfec-d5b3aab0b5b2",
+            "Value": {
+                "id": "8345e767-e918-4242-99a3-88aa9ec3e986",
+                "resourcePath": "sprites\\groundpound_stagger_waves_hitbox\\groundpound_stagger_waves_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3692,6 +3692,14 @@
                 "id": "46464eec-6af4-44ac-b7b1-a4bba5d15454",
                 "resourcePath": "fonts\\font_cpr\\font_cpr.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "5e228a34-9c28-4546-8c2b-c40db289147b",
+            "Value": {
+                "id": "27d476db-ae0b-4bb3-8f01-e9a58fd4014d",
+                "resourcePath": "sprites\\groundpound_stagger_waves\\groundpound_stagger_waves.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
