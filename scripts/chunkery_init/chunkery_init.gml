@@ -11,16 +11,7 @@ chunkery_allowed_props_instance=ds_map_create()
 
 prop_lists_init()
 
-
-map_of_chunk_style_pools=ds_map_create()   ///each key links to a list with the pool of chunk styles
-
-////////////////////////////////////////////////////////////////////////////////////////// SUMMIT
-
-list_of_chunk_styles_summit=ds_list_create()
-ds_map_add(map_of_chunk_style_pools,"summit",list_of_chunk_styles_summit)
-ds_list_add(list_of_chunk_styles_summit,"platgrassy","rectanglebumpygrassy","lplatformbumpygrassy","lplatformtemple","secretboxtemple","doublewavesgrassy","secretboxtemple","sidestepstemple","chamberspillartemple")
-
-
+//prop lists for each chunk type
 
 var chunk_type_allowed_props_startingflat;
 chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.25,TREES,0.2,DESTROYED_STATUES,0.25,SHRUBS,0.2,BRICKCLUMPS)
@@ -32,13 +23,24 @@ var chunk_type_allowed_props_temple;
 chunk_type_allowed_props_temple=create_chunk_type_allowed_props(0.2,TORCHES,0.5,WHOLE_STATUES)
 
 var chunk_type_allowed_props_jungle;
-chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.6,TREES,0.5,SHRUBS)
+chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.6,TREES,0.5,SHRUBS,0.5,VINES)
 
 var chunk_type_allowed_props_sandy;
 chunk_type_allowed_props_sandy=create_chunk_type_allowed_props(0.7,SHRUBS,0.3,PALM_TREES)
 
 var chunk_type_allowed_props_cave;
 chunk_type_allowed_props_cave=create_chunk_type_allowed_props(0.5,TORCHES)
+
+
+map_of_chunk_style_pools=ds_map_create()   ///each key links to a list with the pool of chunk styles
+
+////////////////////////////////////////////////////////////////////////////////////////// SUMMIT
+
+list_of_chunk_styles_summit=ds_list_create()
+ds_map_add(map_of_chunk_style_pools,"summit",list_of_chunk_styles_summit)
+ds_list_add(list_of_chunk_styles_summit,"platgrassy","rectanglebumpygrassy","lplatformbumpygrassy","lplatformtemple","secretboxtemple","doublewavesgrassy","secretboxtemple","sidestepstemple","chamberspillartemple")
+
+
 
 ////startingflat
 ds_map_add(chunkery_chunk_shape,"startingflat","solidline")
@@ -102,8 +104,10 @@ ds_map_add(chunkery_sprite_list,"secretboxtemple",BLOCK_SPRITE_TEMPLE_FULL)
 ds_map_add(chunkery_ammo_min,"secretboxtemple",9)
 ds_map_add(chunkery_ammo_max,"secretboxtemple",11)
 ds_map_add(chunkery_allowed_props_instance,"secretboxtemple",chunk_type_allowed_props_temple)
-////////////////////////////////////////////////////////////////////////////////////////// SAND
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////// SAND
 
 list_of_chunk_styles_sand=ds_list_create()
 ds_map_add(map_of_chunk_style_pools,"sand",list_of_chunk_styles_sand)

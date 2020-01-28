@@ -277,7 +277,7 @@ if groundcheck!=noone && (dash_rocket_jump==3 || dash_rocket_jump==0) /// downwa
 		attack_clear_groundpound_current_hitbox_object()
 		
 		//groundpound stagger waves
-		attack_create_hitbox(10,0,false,true,"groundpound stagger waves",groundpound_stagger_waves_hitbox,0.2,99,4,0,0)
+		attack_create_hitbox(20,0,false,true,"groundpound stagger waves",groundpound_stagger_waves_hitbox,0.2,99,4,0,0)
 		effect_aniend(groundpound_stagger_waves,0.2,-2)
 		
 	}

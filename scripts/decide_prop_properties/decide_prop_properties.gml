@@ -192,6 +192,13 @@ switch prop_type
 	a.p_cutTerrain=false
 	a.p_NOconnectors=1	
 	break;
+	case "vine_1":
+	a.p_sprite=vine_1
+	a.p_sprite_die=vine_1
+	a.p_isFlag=false
+	a.p_cutTerrain=false
+	a.p_NOconnectors=1
+	break;
 	default:
 	show_error("undef pname",true)
 }

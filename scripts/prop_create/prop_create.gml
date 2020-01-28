@@ -4,7 +4,7 @@
 
 
 var a;
-a=instance_create_depth(argument0,argument1,1,prop)
+a=instance_create_depth(argument0,argument1,-1,prop)
 a.sprite_index=argument2
 a.death_sprite=argument3
 a.name=argument4

@@ -14,6 +14,8 @@ PALM_TREES=ds_list_create()
 ds_list_add(PALM_TREES,"ptree_1","ptree_2","ptree_3")
 BRICKCLUMPS=ds_list_create()
 ds_list_add(BRICKCLUMPS,"brickclumps_1","brickclumps_2")
+VINES=ds_list_create()
+ds_list_add(VINES,"vine_1")
 
 //[finaledit] not being destroyed
 

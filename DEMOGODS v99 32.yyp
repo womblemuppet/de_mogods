@@ -1479,14 +1479,6 @@
             }
         },
         {
-            "Key": "23e74d16-22e3-4eca-935c-b3f72523b732",
-            "Value": {
-                "id": "11ae1ec1-5493-4760-a877-bf524f6ce0d5",
-                "resourcePath": "objects\\ef_vine\\ef_vine.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "23fc2846-ee89-43b4-a8e0-52880627dd1d",
             "Value": {
                 "id": "6b1e5eef-dcc6-4a52-a606-cd2c4af34eb2",
@@ -5031,6 +5023,14 @@
             }
         },
         {
+            "Key": "7fa74668-a49c-4c25-8a28-e92b85be0ef9",
+            "Value": {
+                "id": "2ba19d00-ae1f-4ac7-84b5-5c531b70687a",
+                "resourcePath": "views\\7fa74668-a49c-4c25-8a28-e92b85be0ef9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7fd55fd7-69b1-41d7-9061-bcfdb7a6ac56",
             "Value": {
                 "id": "c5504d51-1536-45a1-b082-8039910ccd44",
@@ -6108,6 +6108,14 @@
                 "id": "6709d19a-1eca-4469-b0fc-f1c26a7a54a5",
                 "resourcePath": "sprites\\Bait_3H_spin\\Bait_3H_spin.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9895aaa6-3238-4bfc-9e14-ed6aeedcff87",
+            "Value": {
+                "id": "505b5150-9485-4805-a66f-b17a223d7dce",
+                "resourcePath": "views\\9895aaa6-3238-4bfc-9e14-ed6aeedcff87.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -8314,7 +8322,7 @@
             "Key": "cf9b6d3d-06a3-4e14-83e8-6ed13f6480ca",
             "Value": {
                 "id": "555378b8-a23c-4395-bd19-e453567495a7",
-                "resourcePath": "sprites\\vine_01\\vine_01.yy",
+                "resourcePath": "sprites\\vine_1\\vine_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8651,6 +8659,14 @@
             "Value": {
                 "id": "47cabccc-952e-4958-8153-a6606353f851",
                 "resourcePath": "sprites\\number_of_games_cup_1_spr\\number_of_games_cup_1_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d75adae6-0c6c-4774-a10c-f152645bfb72",
+            "Value": {
+                "id": "9a235e54-88fb-4a34-939e-7fbe4cb526a3",
+                "resourcePath": "sprites\\vine_2\\vine_2.yy",
                 "resourceType": "GMSprite"
             }
         },

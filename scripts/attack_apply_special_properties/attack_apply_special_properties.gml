@@ -46,8 +46,14 @@ switch incoming_attack_name
 	
 	break;
 	case "fireball":
+	
+	var pp;
+	pp=P  //local to transfer P below	
 	with other.hit_collector  //with fireball instance (hit collector of fireball hitbox)
-	instance_destroy()
+	{
+		hit[pp]=true //needs to be set early as explosion hitbox below clones hit array
+		instance_destroy()
+	}
 	
 	//continuing case!!!!
 	
