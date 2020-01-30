@@ -23,7 +23,7 @@ var chunk_type_allowed_props_temple;
 chunk_type_allowed_props_temple=create_chunk_type_allowed_props(0.2,TORCHES,0.5,WHOLE_STATUES)
 
 var chunk_type_allowed_props_jungle;
-chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.6,TREES,0.5,SHRUBS,0.5,VINES)
+chunk_type_allowed_props_jungle=create_chunk_type_allowed_props(0.6,VINEYTREES,0.5,VINEYSHRUBS,0.5,VINES)
 
 var chunk_type_allowed_props_sandy;
 chunk_type_allowed_props_sandy=create_chunk_type_allowed_props(0.7,SHRUBS,0.3,PALM_TREES)

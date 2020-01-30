@@ -15,7 +15,11 @@ ds_list_add(PALM_TREES,"ptree_1","ptree_2","ptree_3")
 BRICKCLUMPS=ds_list_create()
 ds_list_add(BRICKCLUMPS,"brickclumps_1","brickclumps_2")
 VINES=ds_list_create()
-ds_list_add(VINES,"vine_1")
+ds_list_add(VINES,"vine_1","vine_2","vine_3")
+VINEYSHRUBS=ds_list_create()
+ds_list_add(VINEYSHRUBS,"vineyshrub_1","vineyshrub_2")
+VINEYTREES=ds_list_create()
+ds_list_add(VINEYTREES,"vineytree_1","vineytree_2","vineytree_3","vineytree_4")
 
 //[finaledit] not being destroyed
 

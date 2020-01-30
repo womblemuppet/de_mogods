@@ -1199,6 +1199,14 @@
             }
         },
         {
+            "Key": "1bc44a93-676d-4656-b1a9-35ae2d952c44",
+            "Value": {
+                "id": "8d2687e6-1111-43c5-934d-240be7b90f17",
+                "resourcePath": "sprites\\vineytree_4\\vineytree_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c8105cf-2773-4691-8a2f-bdbc1167d143",
             "Value": {
                 "id": "d10b2833-963f-4d1f-b210-72fb39b79780",
@@ -2695,6 +2703,14 @@
             }
         },
         {
+            "Key": "493a231e-4f47-4eee-a39d-3626dff3d84f",
+            "Value": {
+                "id": "95bc5235-7faf-4455-aa8a-09000d645d4d",
+                "resourcePath": "sprites\\vineyshrub_1\\vineyshrub_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "493eae12-4bb1-469f-b53c-575992b7e288",
             "Value": {
                 "id": "a8a77e2c-7327-4791-860b-44555b185fbb",
@@ -3863,6 +3879,14 @@
             }
         },
         {
+            "Key": "61856c41-8384-44ea-848d-c13e44eace85",
+            "Value": {
+                "id": "d8f3a4c7-a91c-469c-9168-35bdf03d1c8a",
+                "resourcePath": "sprites\\vineytree_1\\vineytree_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "619c7335-ab36-4f6f-942c-45bebf3f448d",
             "Value": {
                 "id": "96baacb8-677a-4398-9f32-e973b2b938ed",
@@ -4123,6 +4147,14 @@
             "Value": {
                 "id": "579286e0-7116-4881-9f49-f79025de6207",
                 "resourcePath": "sprites\\pineapple_fall\\pineapple_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6818857c-22f2-4c80-827e-dbfc8cafd652",
+            "Value": {
+                "id": "94a98dc9-2819-412d-86b8-cb3d62aab114",
+                "resourcePath": "sprites\\vine_3\\vine_3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6655,6 +6687,14 @@
             }
         },
         {
+            "Key": "a6c8a555-d6cc-4c65-8d25-43da1afb234d",
+            "Value": {
+                "id": "3afb7425-da84-4479-9c04-4fb488281613",
+                "resourcePath": "views\\a6c8a555-d6cc-4c65-8d25-43da1afb234d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a76e0eac-9b21-48ef-af54-76e34cca2b1d",
             "Value": {
                 "id": "e8182b0d-aef0-4d8d-a5e2-0aee21f964eb",
@@ -7119,6 +7159,14 @@
             }
         },
         {
+            "Key": "b39036d3-0243-419b-a174-d2419c5bed5f",
+            "Value": {
+                "id": "df06017f-0bdf-41d6-8312-6735de02494a",
+                "resourcePath": "sprites\\vineytree_3\\vineytree_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b3eafec4-dd73-4ae0-a159-07a71ceba749",
             "Value": {
                 "id": "364739b3-0eb8-42ae-9b15-04eae38a70ef",
@@ -7131,6 +7179,14 @@
             "Value": {
                 "id": "10a19d38-506c-4499-95be-56446c2740a1",
                 "resourcePath": "sprites\\mine_sprite_priming\\mine_sprite_priming.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b47a0369-fe14-4c4b-b07b-d9c9e4f263aa",
+            "Value": {
+                "id": "49bdb708-e815-4f44-b5e1-e154431dbbce",
+                "resourcePath": "sprites\\vineytree_2\\vineytree_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8679,6 +8735,14 @@
             }
         },
         {
+            "Key": "d7f82b41-f749-460a-910e-fac7f3fa8018",
+            "Value": {
+                "id": "bc383ab0-133a-4221-a05a-41e6c4a13c9a",
+                "resourcePath": "views\\d7f82b41-f749-460a-910e-fac7f3fa8018.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d82a9bd3-306f-4488-8853-433ee5f44b97",
             "Value": {
                 "id": "2af1c0d8-2617-43f3-9161-8562876c121c",
@@ -9235,6 +9299,14 @@
             "Value": {
                 "id": "b1aa3170-28eb-481d-a7e7-c30cc750a8ef",
                 "resourcePath": "sprites\\gunny7\\gunny7.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e5ce7263-679c-433b-bfab-6b714ef079ec",
+            "Value": {
+                "id": "111ff212-3e0b-4efd-aff3-5bd2cf47adf0",
+                "resourcePath": "sprites\\vineyshrub_2\\vineyshrub_2.yy",
                 "resourceType": "GMSprite"
             }
         },
