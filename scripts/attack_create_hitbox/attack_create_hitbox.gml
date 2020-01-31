@@ -14,17 +14,11 @@ a.reset_attacker_hh=argument2
 a.reset_opponent=argument3
 a.attack_name=argument4
 
-if right
+if !right
 {
-	a.image_xscale=scale
-}
-else
-{
-	a.image_xscale=-scale
+	a.image_xscale=-1
 	a.direction=180
 }
-
-a.image_yscale=scale
 
 
 a.sprite_index=argument5

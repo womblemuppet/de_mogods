@@ -145,7 +145,6 @@ if uniques_spinner_attack_lockdown==2 && image_index>12                         
 		a.creator=me
 		a.target=me
 		a.right=right
-		a.scale=sign(scale)
 		a.hkb=HKB
 		a.vkb=VKB
 		

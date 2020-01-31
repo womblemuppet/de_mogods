@@ -16,15 +16,11 @@ a.image_speed=argument6
 a.stops_dasher_on_contact=argument7
 a.cuts_terrain=argument8
 
-if right
-a.image_xscale=scale
-else
+if !right
 {
-	a.image_xscale=-scale
+	a.image_xscale=-1
 	a.direction=180
 }
-
-a.image_yscale=scale
 
 
 a.dir=a.direction   ///for block_take_damage script
