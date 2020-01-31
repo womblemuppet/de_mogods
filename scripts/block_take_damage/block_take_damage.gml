@@ -1,3 +1,7 @@
+//block_take_damage (block method)
+// creates destruction effects and then destroys instance
+
+
 switch other.type
 {
 	case "hit":

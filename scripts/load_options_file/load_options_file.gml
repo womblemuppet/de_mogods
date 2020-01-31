@@ -54,12 +54,6 @@ if file_exists("options.txt")
 	
 	setmenu_block_height=real(string_copy(readgrab,string_pos("=",readgrab)+1,2))
 	setmenu_block_height=75  // real(setmenu_block_height)	
-	
-	file_text_readln(OPT)
-	readgrab=file_text_read_string(OPT)
-	
-	setmenu_player_scale=real(string_copy(readgrab,string_pos("=",readgrab)+1,3))
-	setmenu_player_scale=real(setmenu_player_scale)	
 
 	file_text_close(OPT)
 }
@@ -85,8 +79,6 @@ else ///////////////////////////////////////////////////////////////////////////
 	file_text_write_string(OPT,"block_width=75")  
 	file_text_writeln(OPT)
 	file_text_write_string(OPT,"block_height=75")  
-	file_text_writeln(OPT)
-	file_text_write_string(OPT,"player_scale=2")  
 	file_text_close(OPT)    
     
 	setmenu_fullscreen=true
@@ -97,7 +89,6 @@ else ///////////////////////////////////////////////////////////////////////////
 	
 	setmenu_block_width=75
 	setmenu_block_height=75
-	setmenu_player_scale=2
 }
 
 window_set_fullscreen(setmenu_fullscreen)

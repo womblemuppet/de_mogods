@@ -47,7 +47,7 @@ if !player_is_staggered() && player_not_locked_down()
 //checks if player is allowed to change direction
 if player_allow_direction_switch()
 {
-	image_xscale=sgn*scale
+	image_xscale=sgn
 	if argument0=="left"
 		right=false
 	else

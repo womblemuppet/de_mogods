@@ -49,9 +49,6 @@ with kouchou
 	    file_text_writeln(OPT)
 	    file_text_write_string(OPT,"block_height=")   
 	    file_text_write_string(OPT,setmenu_block_height)
-	    file_text_writeln(OPT)
-	    file_text_write_string(OPT,"setmenu_player_scale=") 
-	    file_text_write_string(OPT,setmenu_player_scale)
 
 	    file_text_close(OPT)   
 	    show_debug_message("options saved")

@@ -108,17 +108,13 @@ if room==gameroom
 			P=ii
 			if P % 2==1
 				image_blend=c_orange
-			
+
 			character=aizen.tempcharstrings[P]
 			palette=kouchou.palette[P]
-			
+
 			H=kouchou.starting_hp
 			H+=kouchou.playerhandicap[P]
 			player_update_hh_indicator()
-			
-			scale=kouchou.setmenu_player_scale
-			image_xscale=scale
-			image_yscale=scale
 			
 			if x<kouchou.room_x_halfway/2
 			{
