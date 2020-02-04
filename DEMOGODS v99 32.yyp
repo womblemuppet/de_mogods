@@ -2511,14 +2511,6 @@
             }
         },
         {
-            "Key": "44aef128-4dd4-449f-9d35-c7cd8dc0ba56",
-            "Value": {
-                "id": "10054130-ca4c-433a-a82f-b85c6048860c",
-                "resourcePath": "sprites\\Bait_3H_supergrab_hitbox_old\\Bait_3H_supergrab_hitbox_old.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "44fb3854-d979-4525-a099-5d2b16cf6f8a",
             "Value": {
                 "id": "3a2950e4-14d2-4ff2-a0d2-ca3bda39ba32",
