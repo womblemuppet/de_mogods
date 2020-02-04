@@ -50,7 +50,7 @@ if place_meeting(x+hspd,y,block) //if (argument0=="left" && place_meeting(x+hspd
 		if impact_debuff_counter>0
 		{
 			impact_debuff_counter=0
-			create_terrain_cutter(eightysqcircle,"hit",-2,7)     ///if changing this also change for rightward direction
+			create_terrain_cutter(onesixtyradius_circle,"hit",-2,7)     ///if changing this also change for rightward direction
 		}
 	}
 	if uniques_whirlwind_active==true

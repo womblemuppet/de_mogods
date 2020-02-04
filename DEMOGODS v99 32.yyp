@@ -3903,14 +3903,6 @@
             }
         },
         {
-            "Key": "61d7f3e0-d513-47f8-bf6c-83e6e9858ec2",
-            "Value": {
-                "id": "fef06a3b-4969-4897-983c-38a70fee9eb5",
-                "resourcePath": "sprites\\mask40b25\\mask40b25.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "61e9ddca-b904-405b-b7c9-c55db331c523",
             "Value": {
                 "id": "cb0c9f7e-391d-4eac-bd9f-8b3f13872031",
@@ -8191,14 +8183,6 @@
             }
         },
         {
-            "Key": "cc63383d-bb40-4693-86b3-5e88d2ff0870",
-            "Value": {
-                "id": "26e9a6a3-5b16-4cfe-a3a3-c36f53bb450d",
-                "resourcePath": "sprites\\mask20b20\\mask20b20.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "cc81601c-0d08-4a8e-bb8f-38a39c9fe33c",
             "Value": {
                 "id": "14b76c87-5728-4c70-8d64-88218f31d70f",
@@ -9570,7 +9554,7 @@
             "Key": "ec9c12de-abb3-4f1a-884c-14037984c4cd",
             "Value": {
                 "id": "28c810c6-9ea1-4257-8414-2db784ea7da5",
-                "resourcePath": "sprites\\eightysqcircle\\eightysqcircle.yy",
+                "resourcePath": "sprites\\onesixtyradius_circle\\onesixtyradius_circle.yy",
                 "resourceType": "GMSprite"
             }
         },
