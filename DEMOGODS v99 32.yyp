@@ -9047,6 +9047,14 @@
             }
         },
         {
+            "Key": "e13f8b5b-cab0-4bfa-bb7f-673a95427bf0",
+            "Value": {
+                "id": "90a0b7ca-4483-40ee-8f93-5a4f7a35112f",
+                "resourcePath": "scripts\\player_hit_by_projectile_update_hit_array\\player_hit_by_projectile_update_hit_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e14d523a-7fb6-4809-a729-c23392b20cda",
             "Value": {
                 "id": "7fcc8cb1-030e-47be-a04c-88ec1f3018a1",
@@ -10384,6 +10392,7 @@
         "fd7e5b5a-8f5c-4141-8ccb-e6b95b4de5ed",
         "f08e31e3-df23-4b22-b3d8-78beb3da40c5",
         "9fc06978-be37-4984-8eaf-30c41126cc17",
+        "e13f8b5b-cab0-4bfa-bb7f-673a95427bf0",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",

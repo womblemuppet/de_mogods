@@ -47,16 +47,8 @@ switch incoming_attack_name
 	break;
 	case "fireball":
 	
-	var pp;
-	pp=P  //local to transfer P below	
-	with other.hit_collector  //with fireball instance (hit collector of fireball hitbox)
-	{
-		hit[pp]=true //needs to be set early as explosion hitbox below clones hit array
-		instance_destroy()
-	}
-	
+	player_hit_by_projectile_update_hit_array()
 	//continuing case!!!!
-	
 	
 	case "fireball explosion":
 	player_get_gp_stunned(30)
@@ -136,9 +128,6 @@ switch incoming_attack_name
 	case "forwardpunch":
 		impact_debuff_counter=40
 	break;
-	case "sunblast":
-		impact_debuff_counter=40
-	break;
 	case "whirlwind" :
 	{
 		if attacker!=noone
@@ -169,6 +158,7 @@ switch incoming_attack_name
 	break;
 	case "horizontal block volley":
 	player_get_gp_stunned(other.stunamount)
+	player_hit_by_projectile_update_hit_array()
 	break;
 	case "crabjectile":
 	
@@ -184,8 +174,9 @@ switch incoming_attack_name
 	//stun player
 	player_get_gp_stunned(other.stunamount)
 
-	if instance_exists(other.projectileId)
-		with other.projectileId
+	//destroy crabjectile instance
+	if instance_exists(other.hit_collector)
+		with other.hit_collector
 			instance_destroy()
 	break;
 }

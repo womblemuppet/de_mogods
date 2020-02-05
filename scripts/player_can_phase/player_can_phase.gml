@@ -1,6 +1,6 @@
 /*
   player_can_phase
-  will cancel sunblast/airbolt lockdowns if called so be careful when checking
+  will cancel sunbolt lockdown if called so be careful when checking
 */
 
 if player_may_attack()
