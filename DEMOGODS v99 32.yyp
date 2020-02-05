@@ -359,14 +359,6 @@
             }
         },
         {
-            "Key": "0730a7c3-d5f9-47e0-ac50-e8e3730bdb83",
-            "Value": {
-                "id": "5defd004-0cbf-4dcb-9a21-ca07f3c7928f",
-                "resourcePath": "sprites\\sunblast_sprite\\sunblast_sprite.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "073fed5c-66ab-4084-af0f-3141691e5275",
             "Value": {
                 "id": "0906a352-8c5f-4098-a1d2-70b512b44577",
@@ -3108,14 +3100,6 @@
                 "id": "436c546b-7c4c-4bbe-8aa7-542f8446db0b",
                 "resourcePath": "sprites\\Vet_3H_jump\\Vet_3H_jump.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "512ad28d-cff6-46a9-ac09-e127c19a21e6",
-            "Value": {
-                "id": "aafe4dc3-cd88-464a-affe-317b1bc8b2f4",
-                "resourcePath": "objects\\sunblast\\sunblast.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -8871,14 +8855,6 @@
             }
         },
         {
-            "Key": "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
-            "Value": {
-                "id": "c504bef0-b870-4e88-836f-32fb7ff27971",
-                "resourcePath": "scripts\\projectile_create_hitbox_sunblast\\projectile_create_hitbox_sunblast.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "dbf2e1dc-7535-4dea-97b6-0c8bd01fd392",
             "Value": {
                 "id": "233b84e0-b28f-4185-b89f-c4e453d9b8e9",
@@ -10379,7 +10355,6 @@
         "c9a1262c-afc5-4e31-bc0e-e6e88186c299",
         "c8ca083e-7800-4b8a-a288-fe6e6ac15113",
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
-        "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
         "ebb11d95-e670-427c-a18c-11edb9140a1e",
         "49978b79-c1a7-44cc-856c-008758a8f089",
         "9fc06978-be37-4984-8eaf-30c41126cc17",

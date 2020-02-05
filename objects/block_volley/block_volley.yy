@@ -5,16 +5,6 @@
     "name": "block_volley",
     "eventList": [
         {
-            "id": "eac79a9b-2efa-47c4-a876-995b437d4964",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "f822f9d5-15ac-4356-a62a-cbe6ce7ef2e3"
-        },
-        {
             "id": "59c4d74e-eb8a-424e-939e-6025007a286f",
             "modelName": "GMEvent",
             "mvc": "1.0",
