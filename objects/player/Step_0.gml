@@ -1340,7 +1340,6 @@ if uniques_vet_digging==2
 		a=instance_create_depth(x,y,-1,drillmine)
 		a.creator=self.id
 		a.right=right
-		a.scale=1
 		mines_ammo-=1
 	}
 	

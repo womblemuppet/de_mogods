@@ -29,11 +29,7 @@ with a
 
 
 ///big explosion terrain cutter
-with create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
-{
-	image_xscale=1 //[finaledit] not needed when scale removed
-	image_yscale=1
-}
+create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
 
 
 /////two horizontal moving terrain cutters

@@ -32,7 +32,6 @@ else if uniques_fpunch_lockdown==2
 				a.image_xscale=-1
 				a.direction=180
 			}
-			a.scale=1
 			a.speed=8
 			
 			uniques_fpunch_fireball=false
@@ -239,7 +238,6 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 		a=instance_create_depth(x,y,0,slinger_airbolt)
 		a.creator=self.id
 		a.right=right
-		a.scale=scale
 		if !right
 			a.image_xscale=-1
 		a.hspeed=12*a.image_xscale
