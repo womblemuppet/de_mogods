@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "0472058a-d21a-489f-87b3-2bc08420d9b4",
+            "Value": {
+                "id": "f873da11-f5f8-4a68-a6bb-0c21c121a1d6",
+                "resourcePath": "sprites\\horizontal_block_volley_mask\\horizontal_block_volley_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0482d304-29de-4392-a0cf-2ba66531bfd8",
             "Value": {
                 "id": "c5674c0a-ed74-417e-9a11-1d0c26249ef5",
@@ -2727,6 +2735,14 @@
             }
         },
         {
+            "Key": "49978b79-c1a7-44cc-856c-008758a8f089",
+            "Value": {
+                "id": "2a9c88e2-e215-40be-8915-d08777fe6a5f",
+                "resourcePath": "scripts\\projectile_create_hitbox_block_volley\\projectile_create_hitbox_block_volley.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49a5fd1f-eea7-42e5-ade1-948ae8ec00d9",
             "Value": {
                 "id": "aa4a2f4f-d757-4a17-ab38-f5bae47e2cc7",
@@ -3892,14 +3908,6 @@
                 "id": "96baacb8-677a-4398-9f32-e973b2b938ed",
                 "resourcePath": "scripts\\HUD_reset_super_bar\\HUD_reset_super_bar.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "61c20237-6ffa-4908-be61-45ac15daab41",
-            "Value": {
-                "id": "5e435861-bf5e-4677-9519-bba299eec147",
-                "resourcePath": "sprites\\horizontal_block_volley_mask\\horizontal_block_volley_mask.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -6364,6 +6372,14 @@
                 "id": "3b312067-bbc5-4280-b441-fdc3a8c0ed51",
                 "resourcePath": "views\\9f876c11-9924-43a3-9f61-604a01714208.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9fc06978-be37-4984-8eaf-30c41126cc17",
+            "Value": {
+                "id": "6686b497-ac8a-46fd-9e68-c5268baaf540",
+                "resourcePath": "scripts\\attack_create_projectile\\attack_create_projectile.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -9927,6 +9943,14 @@
             }
         },
         {
+            "Key": "f822f9d5-15ac-4356-a62a-cbe6ce7ef2e3",
+            "Value": {
+                "id": "c0b93d36-da97-4c0e-ac62-beea2eaea036",
+                "resourcePath": "objects\\block_volley\\block_volley.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f8da6822-2706-4aef-8b6b-8a089ae3facf",
             "Value": {
                 "id": "f4669a39-2ea1-406e-b88f-dc5c759c4038",
@@ -10357,6 +10381,8 @@
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
         "dbb1587b-be69-4d74-bdb3-08ed26ebae44",
         "ebb11d95-e670-427c-a18c-11edb9140a1e",
+        "49978b79-c1a7-44cc-856c-008758a8f089",
+        "9fc06978-be37-4984-8eaf-30c41126cc17",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",
         "626b51d6-d2d2-46aa-a1d0-1586d6cd3b47",

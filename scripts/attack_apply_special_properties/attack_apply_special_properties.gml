@@ -168,11 +168,7 @@ switch incoming_attack_name
 		}
 	break;
 	case "horizontal block volley":
-		var a;
-		a=effect_aniend(horizontal_block_volley_spr,0.2,-5)
-		a.image_xscale=other.image_xscale
-		player_get_gp_stunned(other.stunamount)
-		show_debug_message("hit by horizontal block volley")
+	player_get_gp_stunned(other.stunamount)
 	break;
 }
 

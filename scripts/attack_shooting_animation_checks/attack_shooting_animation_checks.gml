@@ -21,19 +21,7 @@ else if uniques_fpunch_lockdown==2
 		
 		if uniques_fpunch_fireball==true
 		{
-			var a;
-			a=instance_create_depth(x,y+25,-2,fireball)
-			a.hitbox_properties_script=projectile_create_hitbox_fireball
-			a.sprite_index=fireball_spr
-			a.right=right
-			a.creator=self.id
-			if !right
-			{
-				a.image_xscale=-1
-				a.direction=180
-			}
-			a.speed=8
-			
+			attack_create_projectile(fireball,projectile_create_hitbox_fireball,8)
 			uniques_fpunch_fireball=false
 		}
 
