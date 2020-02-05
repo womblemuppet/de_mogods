@@ -7839,14 +7839,6 @@
             }
         },
         {
-            "Key": "c3d07955-e108-4010-a910-5ddc6858ee30",
-            "Value": {
-                "id": "2325e669-ae80-4d05-a2cb-fad16aa0b0ec",
-                "resourcePath": "sprites\\ooga_ultimate_shockwave_cutter\\ooga_ultimate_shockwave_cutter.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c4c0e43b-19e8-4a6a-8ff0-9b91d1d219a7",
             "Value": {
                 "id": "2f07d264-aaa5-47b1-8457-e4d6fe4e7e69",

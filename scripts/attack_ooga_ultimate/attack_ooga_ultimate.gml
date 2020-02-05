@@ -32,18 +32,3 @@ with a
 create_terrain_cutter(ooga_ultimate_groundpound_hitbox,"hit",90,7)
 
 
-/////two horizontal moving terrain cutters
-//var a;
-//for (var i = 0; i <180 ;i+=aizen.bw) 
-//{
-//	a = create_terrain_cutter(ooga_ultimate_shockwave_cutter,"disintegrated",i,5)
-//	a.direction=i
-//	a.speed=6
-//	a.image_angle=i
-//	a.alarm[0]=15
-	
-//	a=effect_aniend(ooga_ultimate_shockwave_cutter,0.2,-2)
-//	a.direction=i
-//	a.speed=6
-//	a.image_angle=i
-//}
