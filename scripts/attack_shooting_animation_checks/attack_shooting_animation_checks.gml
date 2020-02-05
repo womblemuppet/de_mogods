@@ -222,14 +222,8 @@ if image_index>3 && uniques_airbolt_lockdown==1                             ////
 {
 	if uniques_airbolt_has_made_hitbox==false
 	{
-		var a;
-		a=instance_create_depth(x,y,0,slinger_airbolt)
-		a.creator=self.id
-		a.right=right
-		if !right
-			a.image_xscale=-1
-		a.hspeed=12*a.image_xscale
-		a.vspeed=9
+		with attack_create_projectile(slinger_airbolt,projectile_create_hitbox_sunbolt,10)
+			vspeed=9
 		
 		float_counter=UNIQUES_AIRBOLT_FLOAT_COUNTER_AMOUNT
 		vspd=min(vspd,-1)   //if falling, stop fall

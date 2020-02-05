@@ -9695,6 +9695,14 @@
             }
         },
         {
+            "Key": "f08e31e3-df23-4b22-b3d8-78beb3da40c5",
+            "Value": {
+                "id": "a7b30182-f488-4b41-b0ef-800ba84702bd",
+                "resourcePath": "scripts\\projectile_create_hitbox_sunbolt\\projectile_create_hitbox_sunbolt.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0a5d0d2-2c0f-43c9-ae14-0a27672ddb9a",
             "Value": {
                 "id": "27093ad9-ded4-4a13-9ba3-e0c5b3b3fe0e",
@@ -10357,6 +10365,7 @@
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
         "ebb11d95-e670-427c-a18c-11edb9140a1e",
         "49978b79-c1a7-44cc-856c-008758a8f089",
+        "f08e31e3-df23-4b22-b3d8-78beb3da40c5",
         "9fc06978-be37-4984-8eaf-30c41126cc17",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
         "65fe5953-d4c7-47a0-b0c4-08d945cb86de",

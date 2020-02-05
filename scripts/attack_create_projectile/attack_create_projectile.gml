@@ -1,7 +1,7 @@
-var class,hitbox_properties_script,new_speed;
+var class,hitbox_properties_script,new_hspeed;
 class=argument0
 hitbox_properties_script=argument1
-new_speed=argument2
+new_hspeed=argument2
 
 
 var a;
@@ -14,6 +14,6 @@ if !right
 	a.image_xscale=-1
 	a.direction=180
 }
-a.speed=new_speed
+a.speed=new_hspeed
 
 return a
