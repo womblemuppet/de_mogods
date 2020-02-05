@@ -13,7 +13,8 @@
         "ab460b3f-d880-474c-8b93-e0c40ab5b911",
         "ca13a4d0-de32-4c7d-9e0c-b1ab5b68c456",
         "8841058b-e851-4eed-91d0-81a70a2f6f13",
-        "0472058a-d21a-489f-87b3-2bc08420d9b4"
+        "0472058a-d21a-489f-87b3-2bc08420d9b4",
+        "fd16bd6a-d72e-478c-97ea-646e9c057a14"
     ],
     "filterType": "GMSprite",
     "folderName": "generic masks",

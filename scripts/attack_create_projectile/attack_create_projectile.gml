@@ -16,4 +16,10 @@ if !right
 }
 a.speed=new_hspeed
 
+///show debug mask if enabled
+if aizen.debug_show_hitboxes
+	a.sprite_index=a.mask_index
+
+	
+
 return a

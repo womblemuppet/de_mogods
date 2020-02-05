@@ -65,9 +65,9 @@
             "m_owner": "30e8fe4f-9be3-4e87-b814-dfbce92b96c3"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "fd16bd6a-d72e-478c-97ea-646e9c057a14",
     "overriddenProperties": null,
-    "parentObjectId": "966ed534-8c1b-4ebc-9154-f84c654a8f83",
+    "parentObjectId": "86217071-223f-40a7-bacf-9c666e796507",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

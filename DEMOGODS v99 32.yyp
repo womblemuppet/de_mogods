@@ -10143,6 +10143,22 @@
             }
         },
         {
+            "Key": "fd16bd6a-d72e-478c-97ea-646e9c057a14",
+            "Value": {
+                "id": "b382a9e3-2c2a-4386-b3a1-56112052cc5f",
+                "resourcePath": "sprites\\crabjectile_mask\\crabjectile_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd7e5b5a-8f5c-4141-8ccb-e6b95b4de5ed",
+            "Value": {
+                "id": "ad538ef7-97a2-4efc-b93a-19bd7140deef",
+                "resourcePath": "scripts\\projectile_create_hitbox_crabjectile\\projectile_create_hitbox_crabjectile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd8cee29-cd1a-4f2e-89a9-e1ece477b708",
             "Value": {
                 "id": "1fb92315-15e2-4bbe-8f83-6d35accee2ba",
@@ -10365,6 +10381,7 @@
         "925fbba9-7668-4946-878f-c3c7c3bfe016",
         "ebb11d95-e670-427c-a18c-11edb9140a1e",
         "49978b79-c1a7-44cc-856c-008758a8f089",
+        "fd7e5b5a-8f5c-4141-8ccb-e6b95b4de5ed",
         "f08e31e3-df23-4b22-b3d8-78beb3da40c5",
         "9fc06978-be37-4984-8eaf-30c41126cc17",
         "f8eabead-afb1-47a6-a237-62d2cd3e0aaa",
