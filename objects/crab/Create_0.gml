@@ -1,4 +1,4 @@
-owner=-1
+owner=noone
 vspd=0
 right=true
 spd=2

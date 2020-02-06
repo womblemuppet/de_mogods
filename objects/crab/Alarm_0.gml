@@ -1,5 +1,8 @@
 alarm[0]=STEPTIME
 
+if owner!=noone
+	exit
+
 ///toggle action being stopping or moving
 breaking=!breaking
 

@@ -11,6 +11,7 @@ switch argument0
     thrown_sprite=crab_thrown_sprite
     hit_sprite=crab_hit_sprite
     turn_sprite=crab_turn_sprite
+    holding_sprite=crab_holding_sprite
     break;
 
     case "goat":
@@ -19,6 +20,7 @@ switch argument0
     thrown_sprite=goat_thrown_sprite
     hit_sprite=goat_hit_sprite
     turn_sprite=goat_turn_sprite
+    holding_sprite=goat_holding_sprite
     break;
     
     default:

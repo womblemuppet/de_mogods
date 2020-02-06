@@ -1,5 +1,5 @@
 /////apply gravity
-if owner==-1 
+if owner==noone
 {
 		if y<aizen.player_baseline+aizen.CREATIONDELAY-aizen.bh
 			grav(8)

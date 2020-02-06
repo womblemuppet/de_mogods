@@ -511,33 +511,16 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 			effect_create_above(ef_firework,x,y-50,1,c_gray)
 			var b;
 			b=instance_nearest(x,y,crab)
-			if b.owner==-1
+			if b.owner==noone
 			{ ////tame crab
 				b.owner=self.id
 				holding_a_crab=true
 				crab_being_held=b
+				b.sprite_index=b.holding_sprite
 			}
 		}
 	}
-	
-	//if !exception && uniques_vet_chain_counter>0    //////vet LA => LA  forwardpunch chain
-	//{                 ///////////   kept for chain reference if ever needed
-	//	exception=true
-	//	uniques_forwardpunch_has_made_hitbox=false
-	//	uniques_forwardpunch_lockdown=1
-	//	uniques_forwardpunch_feet_counter=0
-	//	uniques_vet_chain_counter=-1
-		
-	//	image_speed=FRAME_SPEED_NORMAL
-	//	sprite_index=sprites[? "uniques_forwardpunch"]
-	//	if super_mode_available
-	//		sprite_index=sprites[? "uniques_forwardpunch_u"]
-	//	image_index=0
-	//}
-    
 
-    
-    
 	if !exception && canpush
 	{   
 		var spawn_normal_uc_hitbox,uc_hitbox_shape,la_attack_name,extrahkb;

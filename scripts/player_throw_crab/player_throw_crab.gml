@@ -1,4 +1,4 @@
-if crab_being_held!=-1 && crab_being_held!=noone && crab_being_held!=undefined //error paranoia.
+if crab_being_held!=noone && crab_being_held!=undefined //error paranoia.
 {
 	if instance_exists(crab_being_held)
 	{
@@ -11,6 +11,6 @@ if crab_being_held!=-1 && crab_being_held!=noone && crab_being_held!=undefined /
 	          instance_destroy()
                 
 	     holding_a_crab=false
-	     crab_being_held=-1
+	     crab_being_held=noone
 	}
 }

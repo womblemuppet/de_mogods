@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "1f75fda0-e356-4a48-9456-e9cf66de2515",
+            "Value": {
+                "id": "f36673cf-6a48-4877-abcf-42026b39fcbb",
+                "resourcePath": "sprites\\crab_holding_sprite\\crab_holding_sprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fa8caa1-99ad-409a-8167-a875835ab15c",
             "Value": {
                 "id": "62a2bdd0-e5b9-4398-b46b-42f74ee4ad82",
@@ -5827,6 +5835,14 @@
             "Value": {
                 "id": "51570fe9-b620-4435-bf28-220108e46e7a",
                 "resourcePath": "sprites\\lightning_extra_orb_spawn\\lightning_extra_orb_spawn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "912a25d6-eb80-4699-a81f-79059127972d",
+            "Value": {
+                "id": "8e9e8c1b-b28e-40c7-9405-05b1edfea6a0",
+                "resourcePath": "sprites\\goat_holding_sprite\\goat_holding_sprite.yy",
                 "resourceType": "GMSprite"
             }
         },
