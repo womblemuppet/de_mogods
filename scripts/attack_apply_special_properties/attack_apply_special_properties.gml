@@ -161,15 +161,7 @@ switch incoming_attack_name
 	player_hit_by_projectile_update_hit_array()
 	break;
 	case "crabjectile":
-	
-	//create effect from crabjectile corpse_sprite
-	var a;
-	a=instance_create_depth(x,y,-2,ef_follower)
-	a.image_speed=0.1
-	a.targ=self.id
-	a.sprite_index=other.corpse_sprite
-	a.offsetx=0
-	a.offsety=0
+
 	
 	//stun player
 	player_get_gp_stunned(other.stunamount)
