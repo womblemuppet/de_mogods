@@ -101,6 +101,11 @@ switch txt
 		with aizen
 			start_shitcall()
 	break;
+	
+	case "crab":
+		with instance_create_depth(player.x,player.y-100,-3,crab)
+			critter_throwable_setup("goat")
+	break;
 
 	default:
 		console_log("unknown command")
