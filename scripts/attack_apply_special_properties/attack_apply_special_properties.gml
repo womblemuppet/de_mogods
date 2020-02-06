@@ -177,7 +177,10 @@ switch incoming_attack_name
 	//destroy crabjectile instance
 	if instance_exists(other.hit_collector)
 		with other.hit_collector
+		{
+			create_corpse=true
 			instance_destroy()
+		}
 	break;
 }
 
