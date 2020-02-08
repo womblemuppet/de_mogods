@@ -12,6 +12,10 @@ arg_reset_attackers_hh=argument2
 arg_reset_opp=argument3
 super_amount=argument4
 
+
+//drop crab if holding one
+player_drop_crab()
+
 last_hit_knocked_down=false
 
 audio_play_sound(bam,5,false)

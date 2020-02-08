@@ -40,7 +40,7 @@ CANNOT_ROLL_COUNTER_AMOUNT=48
 ROLL_ISTEPS=60
 ROLL_HSPEED=12
 roll_lockdown=0        ///0 = not rolling 1 = rolling
-last_hit_knocked_down=false
+last_hit_knocked_down=false  //for use in player_whacked when getting knocked down
 
 ground_pound_freeze_counter=0
 ground_pound_freeze_time=13              ///amount of time to hover in air before going down for GP. uga's decide_moves makes this value lower (and has seperate delay mech)

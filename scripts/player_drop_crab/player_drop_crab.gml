@@ -11,6 +11,8 @@ if crab_being_held!=noone
 			breaking=true
 			alarm[0]=STEPTIME
 		}
+		
+		//make crab face same direction as player and make crab look the right way
 		crab_being_held.right=right
 		if right
 			crab_being_held.image_xscale=1
