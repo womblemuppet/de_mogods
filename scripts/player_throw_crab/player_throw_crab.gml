@@ -6,9 +6,9 @@ if crab_being_held!=noone && crab_being_held!=undefined //error paranoia.
 		throw_crab_lockdown=1
 		image_index=0
 		sprite_index=sprites[? "yeet"]
-		cars2=0
 		image_speed=FRAME_SPEED_NORMAL
 
+		crab_being_thrown_corpse_sprite_on_interrupt=crab_being_held.hit_sprite
 		crab_being_thrown_thrown_sprite=crab_being_held.thrown_sprite
 		crab_being_thrown_hit_sprite=crab_being_held.hit_sprite
 			

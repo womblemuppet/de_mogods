@@ -140,7 +140,7 @@ throw_crab_lockdown=0    ///0 = nothing 1 = windup 2 = fired, in recovery
 throw_crab_has_made_crab=false
 crab_being_thrown_thrown_sprite=undefined
 crab_being_thrown_hit_sprite=undefined
-
+crab_being_thrown_corpse_sprite_on_interrupt=undefined
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

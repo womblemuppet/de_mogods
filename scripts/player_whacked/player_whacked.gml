@@ -16,6 +16,19 @@ super_amount=argument4
 //drop crab if holding one
 player_drop_crab()
 
+//create crab corpse if hit during throw animation
+if crab_being_thrown_corpse_sprite_on_interrupt!=undefined
+{
+	var a;
+	a=instance_create_depth(x,y,-3,corpse)
+	a.sprite_index=crab_being_thrown_corpse_sprite_on_interrupt
+	a.vspeed=-5
+	a.hspeed=choose(speed/2,-speed/2)
+	a.gravity=0.5
+
+	crab_being_thrown_corpse_sprite_on_interrupt=undefined
+}
+
 last_hit_knocked_down=false
 
 audio_play_sound(bam,5,false)
