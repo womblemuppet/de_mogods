@@ -285,3 +285,21 @@ if uniques_supergrab_lockdown==1 && image_index>0
 if uniques_supergrab_pull_counter>0
 	uniques_supergrab_pull_counter-=1
 
+if throw_crab_lockdown==1 && image_index>2
+{
+	if throw_crab_has_made_crab==false
+	{
+		//make crab projectile
+		var a;
+		a=attack_create_projectile(crabjectile,projectile_create_hitbox_crabjectile,9)
+		a.sprite_index=crab_being_thrown_thrown_sprite
+		a.corpse_sprite=crab_being_thrown_hit_sprite //also passed down to the hitbox made in projectile script
+		
+		//reset crab_being_thrown variables
+		crab_being_thrown_thrown_sprite=undefined
+		crab_being_thrown_hit_sprite=undefined
+	}
+	
+	throw_crab_has_made_crab=true
+	throw_crab_lockdown=2
+}

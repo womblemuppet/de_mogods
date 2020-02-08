@@ -9375,6 +9375,14 @@
             }
         },
         {
+            "Key": "e743bd49-fdb0-4722-a9e5-a0fa1df5f6e2",
+            "Value": {
+                "id": "28dbac7b-5428-4c7d-99c9-dd1375ff995e",
+                "resourcePath": "sprites\\Ooga_4H_yeet\\Ooga_4H_yeet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e771c2d0-cdd1-4069-896e-1026e8dd1c2a",
             "Value": {
                 "id": "9df38da2-db1f-4cfd-b86a-277bd0809767",

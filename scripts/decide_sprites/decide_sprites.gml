@@ -70,6 +70,8 @@ switch character
 				sprites[? "roll"]=Ooga_4H_roll
 				sprites[? "knockdown_air"]=Ooga_4H_knockdown_air
 				sprites[? "climb"]=Ooga_4H_climb
+				sprites[? "yeet"]=Ooga_4H_yeet
+				sprites[? "yeet_u"]=Ooga_4H_yeet  ///super version (to be changed)
 			}
 		}
 /*        else if palette==1

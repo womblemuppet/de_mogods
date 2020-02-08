@@ -45,6 +45,14 @@ else if sprite_index==sprites[? "rocketjump_charge"] || sprite_index==sprites[? 
 		attack_rocket_jump()
 	}
 }
+else if sprite_index==sprites[? "yeet"]
+{
+	if throw_crab_lockdown==2
+	{
+		throw_crab_lockdown=0
+		player_set_idle()
+	}
+}
 else if sprite_index==sprites[? "super_activate"]  ///super activate
 {
 	sprite_index=sprites[? "run_u"]    ///super running
@@ -77,8 +85,7 @@ else if sprite_index==sprites[? "recoiling_air_flip"]   ///recoiling air flip
 else if sprite_index==sprites[? "uniques_place_mine"]   ///vet place mine
 {
 	player_set_idle()
-	var a;
-	a=attack_vet_create_mine()
+	attack_vet_create_mine()
 	mines_ammo-=1
 }
 else if sprite_index==sprites[? "uniques_throw_targetted_mine"] || sprite_index==sprites[? "uniques_throw_targetted_mine_u"]  ///vet place mine

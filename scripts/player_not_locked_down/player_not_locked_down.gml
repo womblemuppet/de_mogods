@@ -27,5 +27,6 @@ if !player_is_stunned()
 && is_proned==false
 && before_prone_falling_lockdown==0
 && groundpound_whiff_lockdown==0
+&& throw_crab_lockdown==0
 	return true
 return false

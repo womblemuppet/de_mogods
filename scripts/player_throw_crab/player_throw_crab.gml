@@ -2,15 +2,20 @@ if crab_being_held!=noone && crab_being_held!=undefined //error paranoia.
 {
 	if instance_exists(crab_being_held)
 	{
-		var a;
-		a=attack_create_projectile(crabjectile,projectile_create_hitbox_crabjectile,9)
-		a.sprite_index=crab_being_held.thrown_sprite
-		a.corpse_sprite=crab_being_held.hit_sprite  //also passed down to the hitbox made in projectile script
+		throw_crab_has_made_crab=false
+		throw_crab_lockdown=1
+		image_index=0
+		sprite_index=sprites[? "yeet"]
+		cars2=0
+		image_speed=FRAME_SPEED_NORMAL
 
+		crab_being_thrown_thrown_sprite=crab_being_held.thrown_sprite
+		crab_being_thrown_hit_sprite=crab_being_held.hit_sprite
+			
 	     with crab_being_held
 	          instance_destroy()
                 
 	     holding_a_crab=false
-	     crab_being_held=noone
+	     crab_being_held=noone	
 	}
 }

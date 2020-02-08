@@ -32,6 +32,7 @@ is_proned=false
 roll_lockdown=0
 ritual_lockdown=0
 before_prone_falling_lockdown=false
+throw_crab_lockdown=0
 
 if uniques_phase_counter>0
 	attack_slinger_phase_cancelled()

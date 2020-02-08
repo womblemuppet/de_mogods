@@ -57,7 +57,7 @@ with a
 		show_error("unhandled NOconnectors pcreate",true)
 	}
 
-	if cutTerrain
+	if cutTerrain  //[finaledit] rewrite without while loop?
 	{
 		var fuse;
 		fuse=0
