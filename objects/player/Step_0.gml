@@ -507,8 +507,6 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 	{
 		if distance_to_object(instance_nearest(x,y,crab))<30
 		{
-			exception=true
-
 			var b;
 			b=instance_nearest(x,y,crab)
 			if b.owner==noone
@@ -517,6 +515,9 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 				holding_a_crab=true
 				crab_being_held=b
 				b.sprite_index=b.holding_sprite
+				
+				//set exception so LA is cancelled
+				exception=true
 			}
 		}
 	}
