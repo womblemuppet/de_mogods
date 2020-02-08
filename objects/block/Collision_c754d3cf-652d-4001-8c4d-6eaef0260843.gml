@@ -8,9 +8,9 @@ if other.cuts_terrain
 {
 	block_take_damage()
 
-	if other.attack_name="dash"
+	if num==10 || num==13 || num==15  ///block variants with no blocks on either flank
 	{
-		if instance_exists(other.creator)
+		if other.attack_name=="dash" && instance_exists(other.creator)
 		{
 			with other.creator
 			{

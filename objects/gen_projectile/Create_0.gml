@@ -7,3 +7,4 @@ for (var i = 0; i < kouchou.MAX_PLAYER_COUNT; i++)
 alarm[0]=1
 alarm[1]=25 //death timer
 can_collide_with_terrain=false
+image_speed=0.2
