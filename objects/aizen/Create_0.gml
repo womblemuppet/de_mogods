@@ -99,4 +99,7 @@ IMGSPEED_SPARKY   //double of important
 
 terrain_block_sprite_lists_init()
 
+with chunk_type_allowed_props
+	instance_destroy()
+	
 chunkery_init()

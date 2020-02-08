@@ -508,7 +508,7 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 		if distance_to_object(instance_nearest(x,y,crab))<30
 		{
 			exception=true
-			effect_create_above(ef_firework,x,y-50,1,c_gray)
+
 			var b;
 			b=instance_nearest(x,y,crab)
 			if b.owner==noone
