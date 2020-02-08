@@ -20,6 +20,7 @@ if crab_being_held!=noone
 			crab_being_held.image_xscale=-1
 		
 		//reset player variables relating to crab
+		crab_being_thrown_corpse_sprite_on_interrupt=undefined
 		holding_a_crab=false
 		crab_being_held=noone
 	}

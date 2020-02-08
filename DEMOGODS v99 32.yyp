@@ -1927,6 +1927,14 @@
             }
         },
         {
+            "Key": "3335e90f-b2e8-4b99-817e-24f12d6e7571",
+            "Value": {
+                "id": "927b6e42-a5ae-4d2c-99d6-e975bcbce454",
+                "resourcePath": "sprites\\Bait_3H_yeet\\Bait_3H_yeet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "338ebfcc-bef9-40c5-aeea-294bedd326af",
             "Value": {
                 "id": "39e93f33-a31d-44d3-bddf-c5a8ed53919a",
@@ -3695,6 +3703,14 @@
             }
         },
         {
+            "Key": "5de0ca65-be4f-48d1-9ba6-ebb1b860ca0d",
+            "Value": {
+                "id": "2e8fdce1-fd63-4f75-b1a5-9ad8321d638a",
+                "resourcePath": "sprites\\Vet_3H_yeet\\Vet_3H_yeet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e18a68d-8769-494f-b35b-703427e4d778",
             "Value": {
                 "id": "4b8dddc9-9a48-4753-a1f1-a2c1bca737a8",
@@ -3900,6 +3916,14 @@
                 "id": "96baacb8-677a-4398-9f32-e973b2b938ed",
                 "resourcePath": "scripts\\HUD_reset_super_bar\\HUD_reset_super_bar.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "619ea899-51d5-4def-9872-03cb97140663",
+            "Value": {
+                "id": "d7e867e7-0b43-4a09-9429-596050bad235",
+                "resourcePath": "sprites\\Slinger_3H_yeet\\Slinger_3H_yeet.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

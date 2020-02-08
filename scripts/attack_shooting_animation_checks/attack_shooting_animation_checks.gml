@@ -296,6 +296,7 @@ if throw_crab_lockdown==1 && image_index>2
 		a.corpse_sprite=crab_being_thrown_hit_sprite //also passed down to the hitbox made in projectile script
 		
 		//reset crab_being_thrown variables
+		crab_being_thrown_corpse_sprite_on_interrupt=undefined
 		crab_being_thrown_thrown_sprite=undefined
 		crab_being_thrown_hit_sprite=undefined
 	}

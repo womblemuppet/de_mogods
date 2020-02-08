@@ -146,6 +146,8 @@ switch character
 			sprites[? "roll"]=Vet_3H_roll
 			sprites[? "knockdown_air"]=Vet_3H_knockdown_air
 			sprites[? "climb"]=Ooga_4H_climb
+			sprites[? "yeet"]=Vet_3H_yeet
+			sprites[? "yeet_u"]=Vet_3H_yeet  ///super version (to be changed)
 		}
 	}break;
     
@@ -209,6 +211,8 @@ switch character
 			sprites[? "roll"]=Slinger_3H_roll
 			sprites[? "knockdown_air"]=Slinger_3H_knockdown_air
 			sprites[? "climb"]=Ooga_4H_climb
+			sprites[? "yeet"]=Slinger_3H_yeet
+			sprites[? "yeet_u"]=Slinger_3H_yeet  ///super version (to be changed)
 		}
 	} break;
 	
@@ -274,6 +278,8 @@ switch character
 		sprites[? "roll"]=Bait_3H_roll
 		sprites[? "knockdown_air"]=Bait_3H_knockdown_air
 		sprites[? "climb"]=Ooga_4H_climb
+		sprites[? "yeet"]=Bait_3H_yeet
+		sprites[? "yeet_u"]=Bait_3H_yeet  ///super version (to be changed)
 	} break;
     
 	default:
