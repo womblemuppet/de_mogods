@@ -17,7 +17,7 @@
         "a1229d93-4d18-4945-812d-1d9d3305a5c9"
     ],
     "filterType": "GMSprite",
-    "folderName": "todelete",
+    "folderName": "old\/todelete",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
