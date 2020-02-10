@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "01493609-5337-4d28-954a-f6ec60052fa3",
+            "Value": {
+                "id": "b3e147ff-e999-4990-984f-2cda0996f859",
+                "resourcePath": "sprites\\Slinger_U_run_phase_holding\\Slinger_U_run_phase_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "014ea7d0-b12d-48bf-9260-0d40c9c8eab3",
             "Value": {
                 "id": "7dfc12c6-8828-44ee-b564-ec484c5ac97f",
@@ -762,7 +770,7 @@
             "Key": "0fb138d8-4077-4d14-9ea7-4f373de96c6c",
             "Value": {
                 "id": "777cd16b-9ba2-49ce-98f9-7ffd603772f1",
-                "resourcePath": "sprites\\Bait_3H_idle_super_mode\\Bait_3H_idle_super_mode.yy",
+                "resourcePath": "sprites\\Bait_U_idle\\Bait_U_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -852,6 +860,14 @@
                 "id": "d5592d67-14d1-412c-802a-4f23202c3b17",
                 "resourcePath": "scripts\\screenflash\\screenflash.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "130d46dc-bb7a-44af-9abd-28cd892a3eb9",
+            "Value": {
+                "id": "c3aa1c61-9de8-4d87-a6f7-3128da3af934",
+                "resourcePath": "sprites\\Vet_3H_idle_holding\\Vet_3H_idle_holding.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1839,6 +1855,14 @@
             }
         },
         {
+            "Key": "31113e4e-32fc-4fb6-bbc8-e43209ca80e0",
+            "Value": {
+                "id": "04668357-b273-498b-81a2-a5646d2bec13",
+                "resourcePath": "sprites\\Bait_3H_idle_holding\\Bait_3H_idle_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3146b74e-7189-414c-9dec-0c169a719402",
             "Value": {
                 "id": "7a88f8e7-bf72-46dd-82aa-9b04c8a994cd",
@@ -2119,6 +2143,14 @@
             }
         },
         {
+            "Key": "39b073e6-91b0-46a4-82d5-1c604f04d922",
+            "Value": {
+                "id": "61a5d3d2-be7a-44db-94e5-eda69530704a",
+                "resourcePath": "sprites\\Slinger_3H_idle_holding\\Slinger_3H_idle_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "39e48584-e1c0-4baa-b4a5-0c0e63f93e57",
             "Value": {
                 "id": "94a7c292-8f5d-4738-be8e-21dae18d1cb7",
@@ -2274,7 +2306,7 @@
             "Key": "3e585090-93a5-4aa3-bec2-53fc1f6e338b",
             "Value": {
                 "id": "8a394eeb-68e2-4f74-9b0a-d92bf7910a8c",
-                "resourcePath": "sprites\\Vet_3H_idle_E\\Vet_3H_idle_E.yy",
+                "resourcePath": "sprites\\Vet_3H_idle\\Vet_3H_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5367,6 +5399,14 @@
             }
         },
         {
+            "Key": "83ec2251-a47b-44d8-b95d-7987cbabff0a",
+            "Value": {
+                "id": "d1636587-e078-4c53-95b0-afb91ea53c86",
+                "resourcePath": "sprites\\Bait_U_idle_holding\\Bait_U_idle_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8415047d-d623-45a2-99c8-8fca5997058d",
             "Value": {
                 "id": "12d9f646-5292-40aa-9686-1a36b15a5f4c",
@@ -7127,14 +7167,6 @@
             }
         },
         {
-            "Key": "b00a5a3b-7aaf-4039-9041-112df59dd213",
-            "Value": {
-                "id": "e57633e7-4004-446f-83c9-136b35ee049d",
-                "resourcePath": "sprites\\Vet_3H_idle\\Vet_3H_idle.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b0f5620d-608c-4fbc-9891-ba3eec8e581b",
             "Value": {
                 "id": "82e3944c-e8f0-4339-b2ed-22088bd6cc6d",
@@ -7443,6 +7475,14 @@
             "Value": {
                 "id": "8b08bf89-59a8-46b9-bcc6-021e890247b5",
                 "resourcePath": "sprites\\Vet_3H_knockdown_air\\Vet_3H_knockdown_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b8806162-d240-4832-90a6-e1b850821ddc",
+            "Value": {
+                "id": "20494a7e-7f84-4ec9-ae27-a869fcb0eae0",
+                "resourcePath": "sprites\\Ooga_U_idle_holding\\Ooga_U_idle_holding.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -7983,6 +8023,14 @@
             }
         },
         {
+            "Key": "c5856026-2f4b-4ffb-a76c-04e2678dc625",
+            "Value": {
+                "id": "3504e2cf-a945-4e48-91f4-66a9931de2d8",
+                "resourcePath": "sprites\\Slinger_U_idle_phase_holding\\Slinger_U_idle_phase_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c5dfa04f-f7f4-4f7b-ad78-f2fb6f6b72d0",
             "Value": {
                 "id": "8f8335e7-09c3-4e02-b23a-ec662943b84b",
@@ -8130,7 +8178,7 @@
             "Key": "c9bd76e3-bc2e-4711-906a-899831932ec4",
             "Value": {
                 "id": "bc66524f-6d59-4fd4-86c7-5fe1c1750c5c",
-                "resourcePath": "sprites\\Slinger_3H_run_holding_phase\\Slinger_3H_run_holding_phase.yy",
+                "resourcePath": "sprites\\Slinger_3H_run_phase_holding\\Slinger_3H_run_phase_holding.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -8148,6 +8196,14 @@
                 "id": "f2b85254-44e7-47ce-8e15-ee42a37d04af",
                 "resourcePath": "objects\\meteor\\meteor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca8a87a3-dbfb-401b-91c9-fe63d3d11574",
+            "Value": {
+                "id": "8e6898c3-563f-44e8-af04-61bbbef2151d",
+                "resourcePath": "sprites\\Ooga_4H_idle_holding\\Ooga_4H_idle_holding.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8559,6 +8615,14 @@
             }
         },
         {
+            "Key": "d21a1169-50e0-44d8-be95-deb791f2c024",
+            "Value": {
+                "id": "843a7d83-0863-43bc-9c1a-8fa03899a1a6",
+                "resourcePath": "sprites\\Slinger_U_run_holding\\Slinger_U_run_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d258df0e-13bb-4c7f-ba1d-b1acbe28aefe",
             "Value": {
                 "id": "c66cdaa8-7b5b-4377-9769-d539e5a0c0dd",
@@ -8739,6 +8803,14 @@
             "Value": {
                 "id": "bd1c8246-61b6-4143-af8b-6af2cc29a17d",
                 "resourcePath": "sprites\\ooga_ultimate_groundpound_hitbox\\ooga_ultimate_groundpound_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6975b70-497f-499f-ac09-53034d82ad5a",
+            "Value": {
+                "id": "6ad4685b-2b3a-43e0-8f62-133204ecb66a",
+                "resourcePath": "sprites\\Slinger_3H_idle_phase_holding\\Slinger_3H_idle_phase_holding.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -9695,6 +9767,14 @@
             }
         },
         {
+            "Key": "ed912b30-e331-49bf-b60f-13d9ff92966d",
+            "Value": {
+                "id": "9cbb39c9-4c9d-4b9b-af3a-bcb367c5b1f6",
+                "resourcePath": "sprites\\Slinger_U_idle_holding\\Slinger_U_idle_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee3c10ce-f0b3-4c8c-a662-d707fe00ec98",
             "Value": {
                 "id": "bccd5c85-86ab-4748-a267-7b839838e958",
@@ -10211,6 +10291,14 @@
             "Value": {
                 "id": "6d7029ff-4fd1-42cc-be44-88183599d5e6",
                 "resourcePath": "sprites\\OogaR_4H_air\\OogaR_4H_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb73ff55-4992-4ac6-b880-477a3255bfa7",
+            "Value": {
+                "id": "b8f68e9d-8435-4548-8487-59d4be0c0b34",
+                "resourcePath": "sprites\\Ooga_U_run_holding\\Ooga_U_run_holding.yy",
                 "resourceType": "GMSprite"
             }
         },

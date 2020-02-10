@@ -49,6 +49,7 @@ switch character
 				sprites[? "dash"]=Ooga_4H_charge
 				sprites[? "death_fall"]=Uga_death_by_fall
 				sprites[? "idle"]=Ooga_4H_idle
+				sprites[? "idle_holding"]=Ooga_4H_idle_holding
 				sprites[? "run"]=Ooga_4H_run
 				sprites[? "run_holding"]=Ooga_4H_run_holding
 				sprites[? "jump"]=Ooga_4H_jump
@@ -64,6 +65,7 @@ switch character
 				sprites[? "run_u"]=Ooga_U_run
 				sprites[? "run_holding_u"]=Ooga_4H_run_holding ///super version (to be changed)
 				sprites[? "idle_u"]=Ooga_U_idle
+				sprites[? "idle_u_holding"]=Ooga_U_idle_holding
 				sprites[? "jump_u"]=Ooga_U_jump
 				sprites[? "air_u"]=Ooga_U_air
 				sprites[? "fall_u"]=Ooga_U_fall
@@ -123,7 +125,8 @@ switch character
 			sprites[? "dash_u"]=Vet_3H_charge    ////super version (to be changed) 
 			sprites[? "dash"]=Vet_3H_charge
 			sprites[? "death_fall"]=Vet_death_by_fall
-			sprites[? "idle"]=Vet_3H_idle_E
+			sprites[? "idle"]=Vet_3H_idle
+			sprites[? "idle_holding"]=Vet_3H_idle_holding
 			sprites[? "run"]=Vet_3H_run
 			sprites[? "run_holding"]=Vet_3H_run_holding
 			sprites[? "jump"]=Vet_3H_jump
@@ -138,7 +141,8 @@ switch character
 			sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 			sprites[? "run_u"]=Vet_3H_run    //super version
 			sprites[? "run_holding_u"]=Vet_3H_run_holding
-			sprites[? "idle_u"]=Vet_3H_idle_E //super version
+			sprites[? "idle_u"]=Vet_3H_idle //super version
+			sprites[? "idle_u_holding"]=Vet_3H_idle_holding //super version
 			sprites[? "jump_u"]=Vet_3H_jump  //super version
 			sprites[? "air_u"]=Vet_3H_air  //super version
 			sprites[? "fall_u"]=Vet_3H_fall  //super version
@@ -188,6 +192,7 @@ switch character
 			sprites[? "dash"]=Slinger_3H_charge
 			sprites[? "death_fall"]=Slinger_death_by_fall
 			sprites[? "idle"]=Slinger_3H_idle
+			sprites[? "idle_holding"]=Slinger_3H_idle_phase_holding
 			sprites[? "run"]=Slinger_3H_run
 			sprites[? "run_holding"]=Slinger_3H_run_holding
 			sprites[? "jump"]=Slinger_3H_jump
@@ -202,7 +207,8 @@ switch character
 			sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 			sprites[? "run_u"]=Slinger_3H_run  ///super version (to be changed)
 			sprites[? "run_holding_u"]=Slinger_3H_run_holding
-			sprites[? "idle_u"]=Slinger_3H_idle  ///super version (to be changed)
+			sprites[? "idle_u"]=Slinger_U_idle
+			sprites[? "idle_u"]=Slinger_U_idle_holding
 			sprites[? "jump_u"]=Slinger_3H_jump  ///super version (to be changed)
 			sprites[? "air_u"]=Slinger_3H_air  ///super version (to be changed)
 			sprites[? "fall_u"]=Slinger_3H_fall      ///super version (to be changed)
@@ -260,6 +266,7 @@ switch character
 		sprites[? "dash"]=Bait_3H_dash
 		sprites[? "death_fall"]=Bait_death_by_fall
 		sprites[? "idle"]=Bait_3H_idle
+		sprites[? "idle_holding"]=Bait_3H_idle_holding
 		sprites[? "run"]=Bait_3H_run
 		sprites[? "run_holding"]=Bait_3H_run_holding
 		sprites[? "jump"]=Bait_3H_jump
@@ -274,7 +281,8 @@ switch character
 		sprites[? "gpland_whiff_u"]=Ooga_4H_gp_landing_whiff
 		sprites[? "run_u"]=Bait_3H_run_super_mode  //super version
 		sprites[? "run_holding_u"]=Bait_3H_run_holding ///super version (to be changed)
-		sprites[? "idle_u"]=Bait_3H_idle_super_mode  //super version
+		sprites[? "idle_u"]=Bait_U_idle  //super version
+		sprites[? "idle_u_holding"]=Bait_U_idle_holding  //super version
 		sprites[? "jump_u"]=Bait_3H_jump  //super version
 		sprites[? "air_u"]=Bait_3H_air  //super version
 		sprites[? "fall_u"]=Bait_3H_fall      //super version          
