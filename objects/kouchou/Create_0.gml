@@ -24,7 +24,7 @@ starbucks baristas in nishinasuno lol
 
 ****************************************************/
 
-starbucksmode=false   //[finaledit]
+starbucksmode=true   //[finaledit]
 
 
 rw=1350           ///playable game area

@@ -1,6 +1,6 @@
 /*
   player_set_horizontal_movement
-  changes player direction and sets/increases hspd
+  changes player direction and sets/increases hspd, sets running sprite if not locked down
 */
 
 var sgn;
@@ -44,7 +44,7 @@ if !player_is_staggered() && player_not_locked_down()
 	}
 } 
 	
-//checks if player is allowed to change direction
+//changes direction if player is allowed to change direction
 if player_allow_direction_switch()
 {
 	image_xscale=sgn
@@ -68,11 +68,19 @@ if player_not_locked_down()
 		}
 	};
         
-	if pass
+	if pass  //allowed to change sprite
 	{
-		sprite_index=sprites[? "run"]   
+		sprite_index=sprites[? "run"]
 		if super_mode_available
 			sprite_index=sprites[? "run_u"]
+		
+		if holding_a_crab
+		{
+			sprite_index=sprites[? "run_holding"]
+			if super_mode_available
+				sprite_index=sprites[? "run_holding_u"]
+		}
+		
 		image_speed=FRAME_SPEED_SLOW
 	}
 }

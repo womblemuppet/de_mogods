@@ -95,6 +95,7 @@ CLIMB_ROLL_3_BLOCKS_VSPD=-16
 
 flinch_sprite_counter=0    ///time left where idle sprite becomes flinching animation
 
+//[finaledit] old system for LA's still used, might cause weird interactions
 canpush=true   //// cooldown for uppercut (archaic...)
 push_other_attacks_timer=0 ///counter for below (archaic)
 PUSH_OTHER_ATTACKS_TIME=12 ////other attacks allowed after this time after an uppercut (archaic)
@@ -108,10 +109,10 @@ staggered=0 //disallows attacking and running
 stunned_groundpound=0   //player is considered locked down, preventing attacks, movement (incl. jump) 
 immune_counter=0 ///inability to take further damage while flickering
 hothands=0
-hhspr=mask_index
+hhspr=mask_index  ///hothands indicator sprite index
 hothandimageindex=0      ///hothands indicator image index
 HOTHANDIMAGENUMBER=10 //update when changing hothands counter sprite
-holding_a_crab=false
+holding_a_crab=false   
 crab_being_held=noone   ///id of throwable critter  being held
 cripple_debuff_counter=0   ///debuff stopping dashes and jumping
 impact_debuff_counter=0   ///debuff making you destroy terrain when hit

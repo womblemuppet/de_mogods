@@ -12,6 +12,10 @@ else if sprite_index==sprites[? "run"] || sprite_index==sprites[? "run_u"]   ///
 {
 	image_index=running_startup_frames
 }
+else if sprite_index==sprites[? "run_holding"] || sprite_index==sprites[? "run_holding_u"]   ///loop running animations
+{
+	image_index=running_startup_frames
+}
 else if sprite_index==sprites[? "landing"]   ///landing
 {
 	player_set_idle()
