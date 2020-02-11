@@ -4,7 +4,7 @@ ys=mouse_y
 xe=mouse_x+random(500)+100
 ye=ys-200+random(400)
 
-PIECE_LENGTH=28
+STRAIGHT_PIECE_LENGTH=28
 
 
 //create flagpoles (resetting x after the random variation is added in prop_create)
@@ -16,20 +16,19 @@ right_flag=prop_create(xe,ye,pflag_red_start,pflag_red_start,"flag_start",true,f
 	right_flag.x=xe
 
 
-
+var angle=point_direction(xs,ys,xe,ye)
+var PIECE_LENGTH=lengthdir_x(STRAIGHT_PIECE_LENGTH,angle)
 var NO_pieces=(xe-xs)/PIECE_LENGTH - 1
 var yincrement=(ye-ys)/NO_pieces
 
 
 //spawn pieces from pole to pole
-var xx,yy,xprev,yprev;
+var xx,yy;
 xx=xs
 yy=ys
 for (var i = 0; i < NO_pieces; i++) 
 {
 	prop_flag_piece_create(xx,yy,xx+PIECE_LENGTH,yy+yincrement,left_flag,right_flag)
-	xprev=xx
-	yprev=yy
 	xx+=PIECE_LENGTH
 	yy+=yincrement
 }

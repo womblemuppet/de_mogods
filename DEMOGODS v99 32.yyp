@@ -3759,6 +3759,14 @@
             }
         },
         {
+            "Key": "5e16bc46-4d96-4238-a09b-d7514c7f7f74",
+            "Value": {
+                "id": "58de3d18-59b3-45f8-a1fd-72042de6f113",
+                "resourcePath": "sprites\\Ooga_U_idle_holding\\Ooga_U_idle_holding.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e18a68d-8769-494f-b35b-703427e4d778",
             "Value": {
                 "id": "4b8dddc9-9a48-4753-a1f1-a2c1bca737a8",
@@ -7479,14 +7487,6 @@
             }
         },
         {
-            "Key": "b8806162-d240-4832-90a6-e1b850821ddc",
-            "Value": {
-                "id": "20494a7e-7f84-4ec9-ae27-a869fcb0eae0",
-                "resourcePath": "sprites\\Ooga_U_idle_holding\\Ooga_U_idle_holding.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b8932d3e-4abe-4891-b57b-4b3665f8e8a8",
             "Value": {
                 "id": "d71b1381-5c77-4fb7-949b-d38604d6f1f1",
@@ -8420,6 +8420,14 @@
                 "id": "0b58e4c0-5172-4830-8705-7ddee423e739",
                 "resourcePath": "views\\cda16cfa-ee3f-42cd-87d8-4d8fc0aa8cfa.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cdd8bb30-ad8d-4fc3-9968-3ca12f3faaec",
+            "Value": {
+                "id": "325ec527-eb54-44eb-8dbb-8118a11c37d0",
+                "resourcePath": "sprites\\Ooga_U_run_holding\\Ooga_U_run_holding.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -10291,14 +10299,6 @@
             "Value": {
                 "id": "6d7029ff-4fd1-42cc-be44-88183599d5e6",
                 "resourcePath": "sprites\\OogaR_4H_air\\OogaR_4H_air.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fb73ff55-4992-4ac6-b880-477a3255bfa7",
-            "Value": {
-                "id": "b8f68e9d-8435-4548-8487-59d4be0c0b34",
-                "resourcePath": "sprites\\Ooga_U_run_holding\\Ooga_U_run_holding.yy",
                 "resourceType": "GMSprite"
             }
         },
