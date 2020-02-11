@@ -15,7 +15,6 @@ prop_type=prop_list[| 0]
 //determine prop properties
 a.p_name=prop_type
 
-a.p_isFlag=false
 a.p_cutTerrain=false
 a.p_NOconnectors=1
 switch prop_type

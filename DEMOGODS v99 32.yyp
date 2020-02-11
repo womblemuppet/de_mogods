@@ -7463,6 +7463,14 @@
             }
         },
         {
+            "Key": "b7ff9eec-3519-4db7-8ab3-28d3f3f5afe7",
+            "Value": {
+                "id": "61a6e45a-b5e5-444e-a3ce-0b54baef341c",
+                "resourcePath": "objects\\prop_flag\\prop_flag.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b80409b3-36c1-49e0-a32b-06130e7cd076",
             "Value": {
                 "id": "f517a3f6-5ef3-4c04-8708-8606312ba39a",
@@ -8292,6 +8300,14 @@
                 "id": "f78949f5-b247-4545-a938-b3c91570300c",
                 "resourcePath": "scripts\\cc_reset_combo_counter\\cc_reset_combo_counter.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cba8bded-30d5-40d6-ae77-df81e864ce6f",
+            "Value": {
+                "id": "d0875787-a4d6-424f-b012-b187ecc0d36a",
+                "resourcePath": "sprites\\pflag_blue\\pflag_blue.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

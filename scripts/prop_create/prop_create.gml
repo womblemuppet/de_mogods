@@ -1,5 +1,5 @@
 /***************************************************
-  prop_create(x,y,sprite,death sprite,name,isFlag,cutTerrain,NOconnectors)
+  prop_create(x,y,sprite,death sprite,name,cutTerrain,NOconnectors)
 ****************************************************/
 
 
@@ -8,12 +8,11 @@ a=instance_create_depth(argument0,argument1,-1,prop)
 a.sprite_index=argument2
 a.death_sprite=argument3
 a.name=argument4
-a.isFlag=argument5
 
 var cutTerrain;
-cutTerrain=argument6
+cutTerrain=argument5
 
-a.NOconnectors=argument7
+a.NOconnectors=argument6
 
 with a
 {
