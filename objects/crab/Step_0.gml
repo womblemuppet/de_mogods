@@ -18,16 +18,7 @@ else ///attach to owner
 	{
 		var xoffset,yoffset;
 		xoffset=0
-		yoffset=-15
-		
-		//if owner is idle, offset hold position
-		if owner.sprite_index==owner.sprites[? "idle"] || owner.sprite_index==owner.sprites[? "idle_u"]
-		{
-			xoffset=20
-			if !owner.right
-				xoffset=-20
-			yoffset=35
-		}
+		yoffset=-11
 		
 		x=owner.x+xoffset
 		y=owner.y+yoffset

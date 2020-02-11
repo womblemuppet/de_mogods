@@ -23,5 +23,16 @@ if crab_being_held!=noone
 		crab_being_thrown_corpse_sprite_on_interrupt=undefined
 		holding_a_crab=false
 		crab_being_held=noone
+		
+		//swap sprite to not-holding version
+		if sprite_index==sprites[? "idle_holding"]
+			sprite_index=sprites[? "idle"]
+		if sprite_index==sprites[? "run_holding"]
+			sprite_index=sprites[? "run"]
+		if sprite_index==sprites[? "idle_holding_u"]
+			sprite_index=sprites[? "idle_u"]
+		if sprite_index==sprites[? "run_holding_u"]
+			sprite_index=sprites[? "run_u"]		
+		
 	}
 }   

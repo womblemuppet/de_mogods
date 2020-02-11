@@ -7,7 +7,7 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 99,
-    "bbox_left": 14,
+    "bbox_left": 15,
     "bbox_right": 89,
     "bbox_top": 4,
     "bboxmode": 0,
@@ -77,94 +77,6 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "7625554f-7efb-4f64-8c1d-adaefc23855d",
-                    "LayerId": "ceb0f5e4-f8b6-4da4-9425-22c3dfe6fcf8"
-                }
-            ]
-        },
-        {
-            "id": "2d8d8f2b-c607-4338-af30-54d9a14331cf",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "31113e4e-32fc-4fb6-bbc8-e43209ca80e0",
-            "compositeImage": {
-                "id": "8b612fe4-6aaa-4a3c-b1e2-6d636c87c71e",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2d8d8f2b-c607-4338-af30-54d9a14331cf",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "c1577fa9-3275-4b5c-a7ca-548268ee4419",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2d8d8f2b-c607-4338-af30-54d9a14331cf",
-                    "LayerId": "ceb0f5e4-f8b6-4da4-9425-22c3dfe6fcf8"
-                }
-            ]
-        },
-        {
-            "id": "40669a46-f1e1-4c4b-b1b2-a7272e6900d3",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "31113e4e-32fc-4fb6-bbc8-e43209ca80e0",
-            "compositeImage": {
-                "id": "fc50765f-5f26-4a02-9780-604ed329a41d",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "40669a46-f1e1-4c4b-b1b2-a7272e6900d3",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "23ac877a-5620-4904-9ad9-1b229280b61d",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "40669a46-f1e1-4c4b-b1b2-a7272e6900d3",
-                    "LayerId": "ceb0f5e4-f8b6-4da4-9425-22c3dfe6fcf8"
-                }
-            ]
-        },
-        {
-            "id": "aaa690b0-3be9-4005-8f68-a7a98644c456",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "31113e4e-32fc-4fb6-bbc8-e43209ca80e0",
-            "compositeImage": {
-                "id": "f62c922f-805a-4d3a-8432-57e327952bae",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "aaa690b0-3be9-4005-8f68-a7a98644c456",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "c7385793-6f5c-48ee-9971-21da654a8bbc",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "aaa690b0-3be9-4005-8f68-a7a98644c456",
-                    "LayerId": "ceb0f5e4-f8b6-4da4-9425-22c3dfe6fcf8"
-                }
-            ]
-        },
-        {
-            "id": "2a45188e-7cdb-4cc0-a299-e0292c910261",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "31113e4e-32fc-4fb6-bbc8-e43209ca80e0",
-            "compositeImage": {
-                "id": "ff6952d3-1cde-4907-a5e6-915efcc9c51c",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "2a45188e-7cdb-4cc0-a299-e0292c910261",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "227daf6b-6fd4-4623-89d1-bff212f7821a",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "2a45188e-7cdb-4cc0-a299-e0292c910261",
                     "LayerId": "ceb0f5e4-f8b6-4da4-9425-22c3dfe6fcf8"
                 }
             ]

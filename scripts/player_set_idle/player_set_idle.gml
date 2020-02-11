@@ -27,4 +27,11 @@ else                             /// ON GROUND
 	sprite_index=sprites[? "idle"]
 	if super_mode_available
 		sprite_index=sprites[? "idle_u"]
+		
+	if holding_a_crab
+	{
+		sprite_index=sprites[? "idle_holding"]
+		if super_mode_available
+			sprite_index=sprites[? "idle_holding_u"]
+	}
 }

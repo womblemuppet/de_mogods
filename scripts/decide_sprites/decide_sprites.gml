@@ -192,7 +192,7 @@ switch character
 			sprites[? "dash"]=Slinger_3H_charge
 			sprites[? "death_fall"]=Slinger_death_by_fall
 			sprites[? "idle"]=Slinger_3H_idle
-			sprites[? "idle_holding"]=Slinger_3H_idle_phase_holding
+			sprites[? "idle_holding"]=Slinger_3H_idle_holding
 			sprites[? "run"]=Slinger_3H_run
 			sprites[? "run_holding"]=Slinger_3H_run_holding
 			sprites[? "jump"]=Slinger_3H_jump

@@ -366,6 +366,13 @@ if !button_scrape[? leftbutton] && !button_scrape[? rightbutton] && groundcheck!
 			sprite_index=sprites[? "idle"]
 			if super_mode_available
 				sprite_index=sprites[? "idle_u"]
+				
+			if holding_a_crab
+			{
+				sprite_index=sprites[? "idle_holding"]
+				if super_mode_available
+					sprite_index=sprites[? "idle_holding_u"]
+			}
 		}
 		image_speed=FRAME_SPEED_NORMAL
 	}
@@ -515,6 +522,18 @@ if button_scrape_pushed[? lightbutton]  && groundcheck!=noone && player_may_atta
 				holding_a_crab=true
 				crab_being_held=b
 				b.sprite_index=b.holding_sprite
+				
+				//swap sprite to holding version
+				if sprite_index==sprites[? "idle"]
+					sprite_index=sprites[? "idle_holding"]
+				if sprite_index==sprites[? "run"]
+					sprite_index=sprites[? "run_holding"]
+				if sprite_index==sprites[? "idle_u"]
+					sprite_index=sprites[? "idle_holding_u"]
+				if sprite_index==sprites[? "run_u"]
+					sprite_index=sprites[? "run_holding_u"]
+				
+				
 				
 				//set exception so LA is cancelled
 				exception=true
