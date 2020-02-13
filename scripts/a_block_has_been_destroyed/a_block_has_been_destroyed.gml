@@ -39,7 +39,7 @@ with prop
 	}
 }
 
-with prop_flag
+with prop_flag_left_pole
 {
 	if !instance_exists(flag_end_point)
 		instance_destroy()

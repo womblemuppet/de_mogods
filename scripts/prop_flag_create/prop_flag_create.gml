@@ -18,7 +18,7 @@ right_flag=prop_create(xe,ye,pflag_red_start,pflag_red_start,"flag_start",false,
 
 left_flag.flag_end_point=right_flag
 with left_flag
-	instance_change(prop_flag,true)
+	instance_change(prop_flag_left_pole,true)
 
 
 
