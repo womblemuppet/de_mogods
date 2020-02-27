@@ -14,14 +14,16 @@ if room==multiplayermenu
 	///////////  choose number of rounds  //////////////////////////////////////////
 	if selecting_number_of_games==true
 	{
-		
+		///create smoke effects
 		if rch_smoke_timer>0
 			rch_smoke_timer--
-		else  ///create smoke
+		else
 		{
 			number_of_rounds_create_smoke()
 			rch_smoke_timer=RCH_SMOKE_TIMER_MAX
 		}
+		
+		
 		if menu_any_player_up_button_check()
 		{
 			number_of_games_index++
@@ -41,7 +43,7 @@ if room==multiplayermenu
 			number_of_games_cup_id.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
 		}
 		else if menu_any_player_start_button_check()
-		{  ///go to character select
+		{    ///go to character select
 			selecting_number_of_games=false
 			
 			//disperse smoke
@@ -69,10 +71,7 @@ if room==multiplayermenu
 			create_menupart_generic(character_select_background_spr,0,0,0,5,undefined)
 
 			for (var i = 0; i < number_of_characters;i++)
-			{
 				create_small_portrait(small_portrait_x[i],small_portrait_y[i],character_smallportraits_array[i])
-				//create_menupart_generic(nameplate_def,0,small_portrait_x[i],small_portrait_y[i],-70,undefined)
-			}
 
 			var char_number,a,xx,yy;
 			char_number=0
@@ -94,8 +93,7 @@ if room==multiplayermenu
 				///create slab
 				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[playerId],0,menu_player_slab_x[playerId],menu_player_slab_y[playerId],-70,undefined)
 			}
-
-
+			
 		}
 		exit
 	}
@@ -234,7 +232,7 @@ else if room==menu
 		switch main_menu_select
 		{
 			case "singleplayer":
-			room=preoverworld           break;
+			room=preoverworld			break;
 			case "competitive_mode":
 			competitive_mode=true   
 			map="multiplayer"
@@ -259,7 +257,8 @@ else if room==menu
 			case "exit":
 				game_end()			break;
 			default:
-				show_error("unknown main_menu_select destination",true) break;
+				show_error("unknown main_menu_select destination",true) 
+									break;
 		}
 	}
 }
@@ -268,9 +267,7 @@ else if room==loremenu
 	if menu_any_player_start_button_check()
 	{
 		if lorebackselect==true
-		{
 			room=menu
-		}
 	}
 }
 else if room==settings 
@@ -279,17 +276,18 @@ else if room==settings
 	{
 		if setmenu_codetxt=="drinkmode"
 			drinkmode=true
+			
+		
 		keyboard_string=""   
 		effect_create_above(ef_firework,room_width/2,room_height/2,2,c_blue) 
 	}
 	else if keyboard_check(vk_anykey)
 	{
-		if setmenu_select==4
-		{
-			setmenu_codetxt=keyboard_string        
-		}
+		if setmenu_select==4  //use and display keyboard string if over 'enter code' setting
+			setmenu_codetxt=keyboard_string
 		else
 		{
+			//reset keyboard string
 			setmenu_codetxt=""
 			keyboard_string=""
 		}
@@ -297,7 +295,9 @@ else if room==settings
 }
 else if room==gameroom
 {
-	/////////ANALOGUE STICK EVENT TRACKER
+	/////////ANALOGUE STICKS TRACKER
+	/// sets stick_pressed values for each player to simulate pressed (1), held (2) and released (3) analogue events.
+
 	for(i =0 ; i < players_in;i++) //[finaledit] may cause problem using players_in
 	{
 		if ds_map_find_value(kouchou.keybinding_map_array[i],"gamepad")
@@ -315,7 +315,6 @@ else if room==gameroom
 				stick_pressed_l[i]=0
 			if stick_pressed_d[i]==3
 				stick_pressed_d[i]=0
-		
 
 			if h_axis>deadzone[i]
 			{
@@ -335,6 +334,7 @@ else if room==gameroom
 				else
 					stick_pressed_l[i]=2
 			}
+			
 			if h_axis<=deadzone[i] && h_axis>=-deadzone[i]
 			{
 				if stick_pressed_l[i]==1 || stick_pressed_l[i]==2
@@ -343,7 +343,6 @@ else if room==gameroom
 					stick_pressed_r[i]=3
 
 			}			
-			
 			
 		
 			if v_axis>deadzone[i]
@@ -364,6 +363,7 @@ else if room==gameroom
 				else
 					stick_pressed_u[i]=2
 			}
+			
 			if v_axis<=deadzone[i] && v_axis>=-deadzone[i]
 			{
 				if stick_pressed_u[i]==1 || stick_pressed_u[i]==2
@@ -371,8 +371,6 @@ else if room==gameroom
 				if stick_pressed_d[i]==1 || stick_pressed_d[i]==2
 					stick_pressed_d[i]=3
 			}
-			
 		}
-		
 	}
 }

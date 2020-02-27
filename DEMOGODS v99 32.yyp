@@ -1239,6 +1239,14 @@
             }
         },
         {
+            "Key": "1cb78339-f4fc-49e6-ba2b-92ca59555b30",
+            "Value": {
+                "id": "2a6d9dc8-ebef-44c5-a776-fd7e443c33b6",
+                "resourcePath": "sprites\\nameplate_vet\\nameplate_vet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cff3442-1b5b-4ae2-af3f-e5dbeaeb8ea7",
             "Value": {
                 "id": "d2cceb2f-1fbe-470b-86f0-8ecb832268af",
@@ -1746,7 +1754,7 @@
             "Key": "2de79738-c74f-4caa-8d0e-34ac85e6ebe2",
             "Value": {
                 "id": "c372bf16-aa10-4232-b8ab-6f11085c3e76",
-                "resourcePath": "sprites\\character_select_options_box_spr\\character_select_options_box_spr.yy",
+                "resourcePath": "sprites\\character_select_options_box_blue_spr\\character_select_options_box_blue_spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3935,6 +3943,14 @@
             }
         },
         {
+            "Key": "60b8c502-6fbf-4b89-92f6-f8936c1a4597",
+            "Value": {
+                "id": "164d3239-4cdf-43f9-90ab-677ab6d7b4f4",
+                "resourcePath": "sprites\\character_select_options_box_red_spr\\character_select_options_box_red_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60c0e1a6-1ce9-4379-8c30-5b6a4797f6a9",
             "Value": {
                 "id": "0debb867-aff3-4ad9-996b-9c7a9619d19b",
@@ -5018,7 +5034,7 @@
             "Key": "7ba9f376-fc3a-45d1-8557-4b9845be8342",
             "Value": {
                 "id": "cbc8c81a-0a5f-4dee-ba7f-d04e13f4f875",
-                "resourcePath": "sprites\\nameplate_def\\nameplate_def.yy",
+                "resourcePath": "sprites\\nameplate_uga\\nameplate_uga.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5082,7 +5098,7 @@
             "Key": "7cef58c7-6aa4-4b0e-bd6d-7b38571b9d7d",
             "Value": {
                 "id": "9b5bb191-0c16-44c5-b4ac-92c6e9af7603",
-                "resourcePath": "sprites\\character_select_options_box_die\\character_select_options_box_die.yy",
+                "resourcePath": "sprites\\character_select_options_box_blue_die\\character_select_options_box_blue_die.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6443,6 +6459,14 @@
             "Value": {
                 "id": "21016ee1-282c-472e-9079-ab852d47225f",
                 "resourcePath": "sprites\\cave13\\cave13.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d2f9269-7ed4-4fa3-b1dc-fd9c6a9e7905",
+            "Value": {
+                "id": "666f3328-2457-4c8c-9e60-38758a20f468",
+                "resourcePath": "sprites\\character_select_options_box_red_die\\character_select_options_box_red_die.yy",
                 "resourceType": "GMSprite"
             }
         },

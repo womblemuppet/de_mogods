@@ -89,8 +89,8 @@ else
 	menu_player_slab_y[0]=100
 	menu_player_slab_y[1]=100
 	
-	menu_player_options_box_x[0]=menu_player_slab_x[0]
-	menu_player_options_box_x[1]=menu_player_slab_x[1]
+	menu_player_options_box_x[0]=menu_player_slab_x[0]-100
+	menu_player_options_box_x[1]=menu_player_slab_x[1]-100
 	menu_player_options_box_y[0]=menu_player_slab_y[0]+270
 	menu_player_options_box_y[1]=menu_player_slab_y[1]+270
 }
@@ -105,8 +105,8 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	
 	menu_player_join_prompt_middle_x[i]=menu_player_join_prompt_x[i]+327
 	
-	menu_player_character_title_x[i]=menu_player_options_box_x[i]
-	menu_player_character_title_y[i]=menu_player_options_box_y[i]+500
+	menu_player_character_title_x[i]=menu_player_options_box_x[i]+100
+	menu_player_character_title_y[i]=menu_player_options_box_y[i]+270
 };
 
 

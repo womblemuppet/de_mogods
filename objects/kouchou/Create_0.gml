@@ -93,7 +93,7 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 
 DEADZONE_AMOUNT=0.3
 deadzone[MAX_PLAYER_COUNT-1]=DEADZONE_AMOUNT  //[finaledit] why -1?
-stick_pressed_r[MAX_PLAYER_COUNT-1]=0
+stick_pressed_r[MAX_PLAYER_COUNT-1]=0  ///1 = pressed 2 = holding 3 = released
 stick_pressed_u[MAX_PLAYER_COUNT-1]=0
 stick_pressed_l[MAX_PLAYER_COUNT-1]=0
 stick_pressed_d[MAX_PLAYER_COUNT-1]=0
@@ -202,7 +202,7 @@ selectbox_sprites[2]=character_selectboxP3
 CHARACTER_SELECT_SLAB_SPRITES[0]=character_select_stone_slab_p1
 CHARACTER_SELECT_SLAB_SPRITES[1]=character_select_stone_slab_p2
 
-character_names[0]="UGA"
+character_names[0]="CHIEFTAIN"
 character_names[1]="VETERAN"
 character_names[2]="SLINGER"
 character_names[3]="BAIT"
