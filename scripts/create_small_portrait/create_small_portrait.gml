@@ -1,4 +1,4 @@
-var xx,yy,normal_sprite;
+var xx,yy;
 xx=argument0
 yy=argument1
 NORMAL_SPRITE=argument2

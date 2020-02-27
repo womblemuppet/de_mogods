@@ -71,6 +71,7 @@ if room==multiplayermenu
 			for (var i = 0; i < number_of_characters;i++)
 			{
 				create_small_portrait(small_portrait_x[i],small_portrait_y[i],character_smallportraits_array[i])
+				//create_menupart_generic(nameplate_def,0,small_portrait_x[i],small_portrait_y[i],-70,undefined)
 			}
 
 			var char_number,a,xx,yy;
@@ -174,48 +175,28 @@ if room==multiplayermenu
 	if number_of_keyboards_in_use>0 && !keyboard_added_this_step
 	{
 		if keyboard_check_pressed(kb1_left_button)
-		{
 			character_select_button_left(kb1_player_slot)
-		}
-		if keyboard_check_pressed(kb1_right_button)
-		{
+		else if keyboard_check_pressed(kb1_right_button)
 			character_select_button_right(kb1_player_slot)
-		}
-		if keyboard_check_pressed(kb1_up_button)
-		{
+		else if keyboard_check_pressed(kb1_up_button)
 			character_select_button_up(kb1_player_slot)
-		}
-		if keyboard_check_pressed(kb1_down_button)
-		{
+		else if keyboard_check_pressed(kb1_down_button)
 			character_select_button_down(kb1_player_slot)
-		}
-		if keyboard_check_pressed(kb1_start_button)
-		{
+		else if keyboard_check_pressed(kb1_start_button)
 			character_select_button_start(kb1_player_slot)		
-		}
 	}
 	if number_of_keyboards_in_use>1  && !keyboard_added_this_step
 	{
 		if keyboard_check_pressed(kb2_left_button)
-		{
 			character_select_button_left(kb2_player_slot)
-		}
-		if keyboard_check_pressed(kb2_right_button)
-		{
+		else if keyboard_check_pressed(kb2_right_button)
 			character_select_button_right(kb2_player_slot)
-		}
-		if keyboard_check_pressed(kb2_up_button)
-		{
+		else if keyboard_check_pressed(kb2_up_button)
 			character_select_button_up(kb2_player_slot)
-		}
-		if keyboard_check_pressed(kb2_down_button)
-		{
+		else if keyboard_check_pressed(kb2_down_button)
 			character_select_button_down(kb2_player_slot)
-		}
-		if keyboard_check_pressed(kb2_start_button)
-		{
+		else if keyboard_check_pressed(kb2_start_button)
 			character_select_button_start(kb2_player_slot)		
-		}
 	}
 	
 	//////select screen controllers	
@@ -227,25 +208,15 @@ if room==multiplayermenu
 			if controller_player_slot[i]>-1 && gamepad_is_connected(i) 
 			{
 				if gamepad_button_check_pressed(i,gp_padl)
-				{
 					character_select_button_left(controller_player_slot[i])
-				}
-				if gamepad_button_check_pressed(i,gp_padr)
-				{
+				else if gamepad_button_check_pressed(i,gp_padr)
 					character_select_button_right(controller_player_slot[i])
-				}
-				if gamepad_button_check_pressed(i,gp_padu)
-				{
+				else if gamepad_button_check_pressed(i,gp_padu)
 					character_select_button_up(controller_player_slot[i])
-				}
-				if gamepad_button_check_pressed(i,gp_padd)
-				{
+				else if gamepad_button_check_pressed(i,gp_padd)
 					character_select_button_down(controller_player_slot[i])
-				}
-				if gamepad_button_check_pressed(i,gp_start)
-				{
+				else if gamepad_button_check_pressed(i,gp_start)
 					character_select_button_start(controller_player_slot[i])		
-				}
 			}
 		}
 	}
@@ -270,9 +241,9 @@ else if room==menu
 			MAX_PLAYER_COUNT=2
 			
 			kouchou_set_select_menu_positions()
-
-                
-			room=multiplayermenu    break;
+			
+			room=multiplayermenu		break;
+			
 			case "party_mode":
 			competitive_mode=false
 			map="multiplayer"
@@ -280,13 +251,13 @@ else if room==menu
                 
 			kouchou_set_select_menu_positions()
                 
-			room=multiplayermenu    break;
+			room=multiplayermenu		break;
 			case "lore":
-				room=loremenu           break;
+				room=loremenu			break;
 			case "settings":
-				room=settings           break;
+				room=settings			break;
 			case "exit":
-				game_end()              break;
+				game_end()			break;
 			default:
 				show_error("unknown main_menu_select destination",true) break;
 		}

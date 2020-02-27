@@ -1,3 +1,7 @@
+/*
+  create_menupart_generic(sprite,image speed,x,y,depth,step script)
+*/
+
 var a;
 a=instance_create_depth(argument2,argument3,argument4,menu_component_generic)
 a.sprite_index=argument0

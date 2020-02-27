@@ -21,6 +21,10 @@ with a
 	
 	switch NOconnectors
 	{
+		case 0:
+		show_debug_message("0 connector prop created")
+		break;
+		
 		case 1:
 			connectors[0]=instance_position(x,y+5,block)
 			if connectors[0]==noone

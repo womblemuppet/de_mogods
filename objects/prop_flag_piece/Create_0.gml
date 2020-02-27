@@ -1,4 +1,0 @@
-hover_dir="up"
-HOVER_SPEED=0.01
-HOVER_MAX_DIST=1
-y-=HOVER_MAX_DIST+random(HOVER_MAX_DIST)
