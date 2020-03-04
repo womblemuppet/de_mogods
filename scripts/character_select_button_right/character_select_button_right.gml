@@ -37,16 +37,18 @@ if ready[playerId]==0
 }
 if ready[playerId]==1
 {
-    if readymenuselect[playerId]==1
-    {
-        playerhandicap[playerId]+=1
-        if playerhandicap[playerId]==3
-            playerhandicap[playerId]=0
-    }
-    else if readymenuselect[playerId]==2
-    {
-        if palette[playerId]<3
-            palette[playerId]+=1
-    }
+	if readymenuselect[playerId]==1   //handicap
+	{
+	     playerhandicap[playerId]+=1
+	     if playerhandicap[playerId]==3
+	          playerhandicap[playerId]=0
+		  
+		character_select_options_box_id[playerId].handicap_icon=convert_handicap_amount_to_icon_spr(playerhandicap[playerId])
+	}
+	else if readymenuselect[playerId]==2   //pallete
+	{
+	     if palette[playerId]<3
+	          palette[playerId]+=1
+	}
 }    
 

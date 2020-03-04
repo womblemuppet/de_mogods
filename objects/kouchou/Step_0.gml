@@ -136,13 +136,15 @@ if room==multiplayermenu
 				
 				//change full keyboard setup to 1/2 version
 				///safer to just search for it than to save variable that could be changed?[finaledit]
+				///currently obsolete, full keyboard setup is not in use
 				for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 				{
 					if control_setup[i]=="kb_full"
 					{
 						control_setup[i]="kb_left"
 					}
-				};  
+				};
+				
 				player_join_update_controller_variables()
 			}
 		}

@@ -4,6 +4,7 @@ playerId=argument0
 var a;
 a=instance_create_depth(menu_player_options_box_x[playerId],menu_player_options_box_y[playerId],-100,character_select_options_box)
 a.playerId=playerId
+a.select=0
 
 switch playerId
 {

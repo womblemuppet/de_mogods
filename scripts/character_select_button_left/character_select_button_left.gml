@@ -37,15 +37,18 @@ if ready[playerId]==0
 }
 if ready[playerId]==1
 {
-	if readymenuselect[playerId]==1
+	if readymenuselect[playerId]==1  //handicap
 	{
 		playerhandicap[playerId]-=1
 		if playerhandicap[playerId]==-1
 			playerhandicap[playerId]=2
+	
+		character_select_options_box_id[playerId].handicap_icon=convert_handicap_amount_to_icon_spr(playerhandicap[playerId])
 	}
-	else if readymenuselect[playerId]==2
+	else if readymenuselect[playerId]==2  //palette
 	{
 	     if palette[playerId]>0
 	          palette[playerId]-=1
 	}
+
 }

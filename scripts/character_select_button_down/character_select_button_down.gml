@@ -1,26 +1,31 @@
-if ready[argument0]==0
+var playerId;
+playerId=argument0
+
+if ready[playerId]==0
 {
 /*
-    switch selected_character_id[argument0]
+    switch selected_character_id[playerId]
     {
         case 0:
-        selected_character_id[argument0]=3 break;
+        selected_character_id[playerId]=3 break;
         case 1:
-        selected_character_id[argument0]=4 break;
+        selected_character_id[playerId]=4 break;
         case 2:
-        selected_character_id[argument0]=5 break;
+        selected_character_id[playerId]=5 break;
         case 3:
-        selected_character_id[argument0]=0 break;
+        selected_character_id[playerId]=0 break;
         case 4:
-        selected_character_id[argument0]=1 break;
+        selected_character_id[playerId]=1 break;
         case 5:
-        selected_character_id[argument0]=2 break;            
+        selected_character_id[playerId]=2 break;            
     }*/
 }
-if ready[argument0]==1
+if ready[playerId]==1
 {
-    if readymenuselect[argument0]==0
-        readymenuselect[argument0]=1
-    else if readymenuselect[argument0]==1
-        readymenuselect[argument0]=2
+    if readymenuselect[playerId]==0
+        readymenuselect[playerId]=1
+    else if readymenuselect[playerId]==1
+        readymenuselect[playerId]=2
+	   
+	character_select_options_box_id[playerId].select=readymenuselect[playerId]
 }
