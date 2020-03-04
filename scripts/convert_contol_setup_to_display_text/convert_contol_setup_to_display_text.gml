@@ -7,10 +7,10 @@ switch setup
 		return "Keyboard full"
 	break;
 	case "kb_left":
-		return "Keyboard narrow left"
+		return "Keyboard WASD"
 	break;
 	case "kb_right":
-		return "Keyboard narrow right"
+		return "Keyboard IJKL"
 	break;
 	case "controller_default":
 		return "Controller"

@@ -115,7 +115,7 @@ if room==multiplayermenu
 				{
 					keyboard_added_this_step=true
 					ready[next_open_slot]=0
-					control_setup[next_open_slot]="kb_full"
+					control_setup[next_open_slot]="kb_left"
 					player_join_update_controller_variables()
 				}
 			}
