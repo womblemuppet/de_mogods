@@ -174,6 +174,15 @@ character_portraits_array[3]=character_portraits_bait
 character_portraits_array[4]=character_portraits_spiderguy
 character_portraits_array[5]=character_portraits_jermy
 
+
+character_portraits_components[0]=undefined
+for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
+{
+	character_portraits_components[i]=undefined
+};
+
+
+
 character_smallportraits_array[0]=character_smallportraits_uga
 character_smallportraits_array[1]=character_smallportraits_vet
 character_smallportraits_array[2]=character_smallportraits_slinger

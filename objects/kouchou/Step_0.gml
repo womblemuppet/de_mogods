@@ -115,7 +115,12 @@ if room==multiplayermenu
 			create_player_entered_components(next_open_slot)
 			
 			with component_keyboard_icon_p1
+			{
+				var a;
+				a=effect_aniend(sprite_index,2,-50)
+				a.hspeed=-3				
 				instance_destroy()
+			}
 				
 			if game_start_countdown<1
 			{
@@ -142,8 +147,14 @@ if room==multiplayermenu
 				control_setup[next_open_slot]="kb_right"
 				create_player_entered_components(next_open_slot)
 				
+			
 				with component_keyboard_icon_p2
+				{
+					var a;
+					a=effect_aniend(sprite_index,2,-50)
+					a.hspeed=3				
 					instance_destroy()
+				}
 				
 				//change full keyboard setup to 1/2 version
 				///safer to just search for it than to save variable that could be changed?[finaledit]
