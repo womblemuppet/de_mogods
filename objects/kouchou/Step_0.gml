@@ -1,3 +1,73 @@
+if menu_any_player_backward_button_check()
+{
+	if room==menu
+	{
+	    if main_menu_select=="exit"
+	        game_end()
+	    else
+	    {
+		    	with ds_map_find_value(main_menu_option_components,main_menu_select)
+				main_menu_option_components_get_unselected()
+			main_menu_select_number=MAIN_MENU_SELECT_NUMBER_MAX
+			main_menu_select=main_menu_select_options[main_menu_select_number]
+			with ds_map_find_value(main_menu_option_components,main_menu_select)
+				main_menu_option_components_get_selected()
+	    }
+	}
+	else if room==multiplayermenu
+	{
+	    room=menu
+	}
+	else if room==settings
+	{
+	    var OPT;
+	    OPT=file_text_open_write("options.txt")
+	    if OPT==-1
+	        show_error("options file can not be created",true)
+	    file_text_write_string(OPT,"fullscreen=")    
+	    file_text_write_string(OPT,setmenu_fullscreen)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"scale_screen=")    
+	    file_text_write_string(OPT,setmenu_scale_screen)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"eff_volume=")
+	    file_text_write_string(OPT,setmenu_eff_volume)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"bgm_volume=")
+	    file_text_write_string(OPT,setmenu_bgm_volume)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"show_fps=")   
+	    if setmenu_show_fps==false
+	        file_text_write_string(OPT,"0")
+	    else
+	        file_text_write_string(OPT,"1")    
+	   
+	    file_text_write_string(OPT,setmenu_eff_volume)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"block_width=")
+	    file_text_write_string(OPT,setmenu_block_width)
+	    file_text_writeln(OPT)
+	    file_text_write_string(OPT,"block_height=")   
+	    file_text_write_string(OPT,setmenu_block_height)
+
+	    file_text_close(OPT)   
+	    show_debug_message("options saved")
+    
+	    window_set_fullscreen(setmenu_fullscreen)
+	    room=menu
+    
+	}
+	else if room==loremenu
+	{
+	    if lorebackselect==true
+	        room=menu
+	    else
+	        lorebackselect=true
+	}
+}
+
+
+
 if room==multiplayermenu
 {
 	/////start game countdown
@@ -43,7 +113,7 @@ if room==multiplayermenu
 			number_of_games=possible_number_of_games_array[number_of_games_index]
 			number_of_games_cup_id.sprite_index=NUMBER_OF_GAMES_CUP_SPRITES[number_of_games_index]
 		}
-		else if menu_any_player_start_button_check()
+		else if menu_any_player_forward_button_check()
 		{    ///go to character select
 			selecting_number_of_games=false
 			
@@ -110,7 +180,7 @@ if room==multiplayermenu
     
 	if number_of_keyboards_in_use==0
 	{  
-		if  (keyboard_check_pressed(kb1_start_button) || keyboard_check_pressed(kb2_start_button) )   //////// keyboard start button (first kb player)
+		if  (keyboard_check_pressed(kb1_forward_button) || keyboard_check_pressed(kb2_forward_button) )   //////// keyboard start button (first kb player)
 		{
 			set_next_open_slot()
 			create_player_entered_components(next_open_slot)
@@ -138,7 +208,7 @@ if room==multiplayermenu
 	
 	if number_of_keyboards_in_use==1
 	{  
-		if keyboard_check_pressed(kb2_start_button) && keyboard_added_this_step==false
+		if keyboard_check_pressed(kb2_forward_button) && keyboard_added_this_step==false
 		{
 			if players_in<MAX_PLAYER_COUNT                                             /// keyboard entry player 2
 			{
@@ -214,7 +284,7 @@ if room==multiplayermenu
 			character_select_button_up(kb1_player_slot)
 		else if keyboard_check_pressed(kb1_down_button)
 			character_select_button_down(kb1_player_slot)
-		else if keyboard_check_pressed(kb1_start_button)
+		else if keyboard_check_pressed(kb1_forward_button)
 			character_select_button_start(kb1_player_slot)		
 	}
 	if number_of_keyboards_in_use>1  && !keyboard_added_this_step
@@ -227,7 +297,7 @@ if room==multiplayermenu
 			character_select_button_up(kb2_player_slot)
 		else if keyboard_check_pressed(kb2_down_button)
 			character_select_button_down(kb2_player_slot)
-		else if keyboard_check_pressed(kb2_start_button)
+		else if keyboard_check_pressed(kb2_forward_button)
 			character_select_button_start(kb2_player_slot)		
 	}
 	
@@ -261,7 +331,7 @@ else if room==menu
 		menu_crab_subspr=0
 
 
-	if menu_any_player_start_button_check()
+	if menu_any_player_forward_button_check()
 	{
 		switch main_menu_select
 		{
@@ -298,7 +368,7 @@ else if room==menu
 }
 else if room==loremenu
 {
-	if menu_any_player_start_button_check()
+	if menu_any_player_backward_button_check()
 	{
 		if lorebackselect==true
 			room=menu
@@ -306,7 +376,7 @@ else if room==loremenu
 }
 else if room==settings 
 {
-	if keyboard_check(kb1_start_button)
+	if keyboard_check(kb1_forward_button)
 	{
 		if setmenu_codetxt=="drinkmode"
 			drinkmode=true

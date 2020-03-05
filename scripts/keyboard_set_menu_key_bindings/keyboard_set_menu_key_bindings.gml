@@ -1,9 +1,11 @@
-kb1_start_button=vk_space
+kb1_forward_button=ord("C")
+kb1_backward_button=ord("V")
 kb1_left_button=ord("A")
 kb1_right_button=ord("D")
 kb1_up_button=ord("W")
 kb1_down_button=ord("S")
-kb2_start_button=vk_enter
+kb2_forward_button=$BF
+kb2_backward_button=vk_shift
 kb2_left_button=ord("J")
 kb2_right_button=ord("L")
 kb2_up_button=ord("I")
