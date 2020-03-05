@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "0b36201b-bd0f-4d28-b193-462e472d3d89",
+            "Value": {
+                "id": "aa2bd019-ed41-4551-a1d2-98e5061fac8c",
+                "resourcePath": "sprites\\pflag_red_die\\pflag_red_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0b4d821f-dee5-4433-993b-5f9fb45c3a68",
             "Value": {
                 "id": "fd13483c-75a4-439f-8356-ba24a92e0957",
@@ -9683,6 +9691,14 @@
             "Value": {
                 "id": "e8d71f95-df39-4557-b55b-dcfaaa5e135f",
                 "resourcePath": "sprites\\Slinger_3H_run\\Slinger_3H_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e8eac6e3-34f4-4a41-9f63-d12a3868302a",
+            "Value": {
+                "id": "3e28a2cd-4ba4-415c-8a82-3ace055412c1",
+                "resourcePath": "sprites\\pflag_blue_die\\pflag_blue_die.yy",
                 "resourceType": "GMSprite"
             }
         },

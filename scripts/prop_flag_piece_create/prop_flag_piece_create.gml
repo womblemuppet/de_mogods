@@ -33,12 +33,12 @@ with a
 	if colour=="red"
 	{
 		normal_sprite=pflag_red
-		death_sprite=pflag_red
+		death_sprite=pflag_red_die
 	}
 	else if colour=="blue"
 	{
 		normal_sprite=pflag_blue
-		death_sprite=pflag_blue
+		death_sprite=pflag_blue_die
 	}
 	else
 		show_error("pflag_piece undefined sprite",true)
