@@ -1,8 +1,8 @@
 var xs,ys,xe,ye;
-xs=mouse_x
-ys=mouse_y
-xe=mouse_x+random(500)+100
-ye=ys-200+random(400)
+xs=argument0
+ys=argument1
+xe=argument2
+ye=argument3
 
 STRAIGHT_PIECE_LENGTH=28
 STRAIGHT_PIECE_HEIGHT=28
@@ -20,7 +20,14 @@ left_flag.flag_end_point=right_flag
 with left_flag
 	instance_change(prop_flag_left_pole,true)
 
+var offsetX,raiseY;
+offsetX=20
+raiseY=30
 
+left_flag.x+=offsetX
+right_flag.x+=offsetX
+left_flag.y-=30
+right_flag.y-=30
 
 var angle=point_direction(xs,ys,xe,ye)
 var PIECE_LENGTH=lengthdir_x(STRAIGHT_PIECE_LENGTH,angle)
@@ -46,10 +53,10 @@ for (var i = 0; i < NO_pieces; i++)
 		lastColour="red"
 	
 	//create flag and increment position
-	with prop_flag_piece_create(xx,yy,xx+PIECE_LENGTH,yy+PIECE_HEIGHT,left_flag,right_flag,lastColour)
+	with prop_flag_piece_create(xx+offsetX,yy-raiseY,xx+PIECE_LENGTH+offsetX,yy+PIECE_HEIGHT-raiseY,left_flag,right_flag,lastColour)
 	{
 		instance_change(prop_flag_piece,false)  ///convert prop instance into more specific prop_flag_piece
-		alarm[0]=1
+		alarm[0]=1  //set sprite to correct sprite (must be done to get around instance change)
 	}
 
 	xx+=PIECE_LENGTH

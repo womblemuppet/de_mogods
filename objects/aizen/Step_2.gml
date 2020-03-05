@@ -93,10 +93,10 @@ if lowest_player_y>=SCROLL_THRESHOLD
 else
 	timeSinceLastScrolled++
 
-bedrockcounter+=player_baseline_difference        ///add to bedrockcounter, ticker for creating new blocks
+scrolled_amount+=player_baseline_difference        ///add to scrolled_amount, ticker for creating new blocks
 total_baseline_movement+=player_baseline_difference
 //if player_baseline_difference!=0
-	//show_debug_message("baseline difference is:"+string(player_baseline_difference)+", bedrockcounter is now:"+string(bedrockcounter)+" baseline is now:"+string(player_baseline))
+	//show_debug_message("baseline difference is:"+string(player_baseline_difference)+", scrolled_amount is now:"+string(scrolled_amount)+" baseline is now:"+string(player_baseline))
 	
 surface_redraw_counter+=player_baseline_difference
 if surface_redraw_counter>SURFACE_REDRAW_INTERVAL
@@ -168,4 +168,4 @@ for (var i=0; i<kouchou.players_in; i+=1)   ////[finaledit] using players_in mig
 
 
 
-terrain_generate(player_baseline+CREATIONDELAY-bedrockcounter)
+terrain_generate(player_baseline+CREATIONDELAY-scrolled_amount)

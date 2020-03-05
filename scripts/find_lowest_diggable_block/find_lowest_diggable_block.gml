@@ -1,6 +1,6 @@
 /***************************************************
   find_lowest_diggable_block()
-  populates temp_volc_spawn_possibles_list , then returns a random block from that list
+  populates temp_volc_spawn_blocks_with_space_above_list , then returns a random block from that list
   if no argument is passed, finds lowest block in the centre
 ****************************************************/
 var middle_x_val,yy,b;

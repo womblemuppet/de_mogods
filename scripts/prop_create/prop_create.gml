@@ -28,7 +28,7 @@ with a
 		case 1:
 			connectors[0]=instance_position(x,y+5,block)
 			if connectors[0]==noone
-				show_debug_message("no connector for prop "+name)		
+				show_debug_message("no connector for prop "+name)
 		break;
 		case 2:
 			var xoffset;

@@ -20,11 +20,16 @@ VINEYSHRUBS=ds_list_create()
 ds_list_add(VINEYSHRUBS,"vineyshrub_1","vineyshrub_2")
 VINEYTREES=ds_list_create()
 ds_list_add(VINEYTREES,"vineytree_1","vineytree_2","vineytree_3","vineytree_4")
+FLAGS=ds_list_create()
+ds_list_add(FLAGS,"flag")
 
 //[finaledit] not being destroyed
 
 whole_statues_cooldown=0
-WHOLE_STATUES_COOLDOWN_AMOUNT=40 //blocks
+WHOLE_STATUES_COOLDOWN_AMOUNT=40 //units is 'blocks'
 
 destroyed_statues_cooldown=0
 DESTROYED_STATUES_COOLDOWN_AMOUNT=40
+
+flags_cooldown=0
+FLAGS_COOLDOWN_AMOUNT=100

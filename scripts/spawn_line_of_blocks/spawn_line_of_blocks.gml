@@ -39,8 +39,9 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 				show_error("unhandled typeofblock case",true)
 		}
 	}
-		
-	terrain_buffer_layer_newest[block_column_number]=a
+
+	//insert created block id into block history
+	block_history_newest[block_column_number]=a
 
 	//spawn fossils (disabled)
 	//if random(1)>0.995
@@ -75,12 +76,16 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 		for (var i = 0; i < prop_list_count; i++)
 		{
 			spawnprop_ok=true
-			
+
 			//check cooldown if current prop_list has cooldown system
 			if current_props_instance.prop_list[i]==WHOLE_STATUES && whole_statues_cooldown>0
 				spawnprop_ok=false
 			if current_props_instance.prop_list[i]==DESTROYED_STATUES && destroyed_statues_cooldown>0
 				spawnprop_ok=false			
+			if current_props_instance.prop_list[i]==FLAGS && flags_cooldown>0
+				spawnprop_ok=false							
+				
+				
 			
 			//roll probability of spawning prop
 			if random(1)<(1-current_props_instance.prop_spawn_chance[i])
@@ -96,13 +101,18 @@ for (var block_column_number=0; block_column_number<numberofblocks_horizontal; b
 					
 				if current_props_instance.prop_list[i]=DESTROYED_STATUES
 					destroyed_statues_cooldown=DESTROYED_STATUES_COOLDOWN_AMOUNT
+					
+				if current_props_instance.prop_list[i]=FLAGS
+					flags_cooldown=FLAGS_COOLDOWN_AMOUNT
 			}
-			
+
 			//deincrement cooldown timers
 			if whole_statues_cooldown>0
 				whole_statues_cooldown--
 			if destroyed_statues_cooldown>0
 				destroyed_statues_cooldown--
+			if flags_cooldown>0
+				flags_cooldown--
 		}
 
 

@@ -1,5 +1,3 @@
-prop_flag_create()
-
 //increase_rage(16)
 
 //start_shitcall()

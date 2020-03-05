@@ -3,14 +3,14 @@
 ///[finaledit] some of these might be obsolete, go thru
 
 
-terrain_buffer_layer_newest=[]
-terrain_buffer_layer2=[]
-terrain_buffer_layer3=[]
+block_history_newest=[]
+block_history_layer_2=[]
+block_history_layer_3=[]
 for (i = 0; i < (kouchou.rw/bw); i++)
 {
-	terrain_buffer_layer_newest[i]=-2
-	terrain_buffer_layer2[i]=-2
-	terrain_buffer_layer3[i]=-2
+	block_history_newest[i]=-2
+	block_history_layer_2[i]=-2
+	block_history_layer_3[i]=-2
 }
 
 

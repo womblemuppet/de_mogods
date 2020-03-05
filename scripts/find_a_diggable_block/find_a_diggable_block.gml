@@ -1,10 +1,10 @@
 /***************************************************
   find_a_diggable_block()
-  populates temp_volc_spawn_possibles_list , then returns a random block from that list
+  populates temp_volc_spawn_blocks_with_space_above_list , then returns a random block from that list
 ****************************************************/
 
 ds_grid_clear(aizen.temp_block_grid,0)
-ds_list_clear(aizen.temp_volc_spawn_possibles_list)
+ds_list_clear(aizen.temp_volc_spawn_blocks_with_space_above_list)
 
 
 var yy,fail;
@@ -61,7 +61,7 @@ while fail==false
 
 
 
-///then find first row with no gaps, adding each block checked to possibles list
+///then find first row with no gaps, adding each block checked to blocks_with_space_above list
 var b;
 b=0 ///stores return of ds_grid_get (either 0, stored id value, or -1 for big block areas)
 while yy<maxy
@@ -70,7 +70,7 @@ while yy<maxy
     for (xx=0; xx<maxx; xx+=1)
     {
         b=ds_grid_get(aizen.temp_block_grid,xx,yy)
-        if b==0    ///if checked position has nothing, this whole line is diggable to (so add all non-0's to possibles list         =>)
+        if b==0    ///if checked position has nothing, this whole line is diggable to (so add all non-0's to blocks_with_space_above list         =>)
         {
             //show_message("xx="+string(xx)+" yy="+string(yy)+" is free, moving on to next row")
             fail=false
@@ -79,33 +79,33 @@ while yy<maxy
         {
             //show_message("xx="+string(xx)+" yy="+string(yy)+" is occupied")
             if b!=-1
-                ds_list_add(temp_volc_spawn_possibles_list,b)   /// if checked position isn't nothing nor a big block area, add to possibles list
+                ds_list_add(temp_volc_spawn_blocks_with_space_above_list,b)   /// if checked position isn't nothing nor a big block area, add to blocks_with_space_above list
         }
             
     };
     if fail //if no gaps in this row, end search and return a random full block from the list
     {
-        for (var i=0; i<ds_list_size(aizen.temp_volc_spawn_possibles_list); i+=1)
+        for (var i=0; i<ds_list_size(aizen.temp_volc_spawn_blocks_with_space_above_list); i+=1)
         {
-			//if aizen.temp_volc_spawn_possibles_list[| i].part!=0
-                ds_list_delete(aizen.temp_volc_spawn_possibles_list,i)
+			//if aizen.temp_volc_spawn_blocks_with_space_above_list[| i].part!=0
+                ds_list_delete(aizen.temp_volc_spawn_blocks_with_space_above_list,i)
         };
         
-        ds_list_shuffle(aizen.temp_volc_spawn_possibles_list)
+        ds_list_shuffle(aizen.temp_volc_spawn_blocks_with_space_above_list)
         
-        if ds_list_size(aizen.temp_volc_spawn_possibles_list)<1
+        if ds_list_size(aizen.temp_volc_spawn_blocks_with_space_above_list)<1
             return -3   ///error no full blocks
-        return aizen.temp_volc_spawn_possibles_list[| 0]       ////returns a random block from possibles list
+        return aizen.temp_volc_spawn_blocks_with_space_above_list[| 0]       ////returns a random block from blocks_with_space_above list
     }
     yy++    ///if there is a gap in this row, go to the next row down
 }
 
 
- ////if up to the bottom line of blocks is diggable, try one more time to return a random block from possibles list 
-if ds_list_size(aizen.temp_volc_spawn_possibles_list)>0
+ ////if up to the bottom line of blocks is diggable, try one more time to return a random block from blocks_with_space_above list 
+if ds_list_size(aizen.temp_volc_spawn_blocks_with_space_above_list)>0
 {
-    ds_list_shuffle(aizen.temp_volc_spawn_possibles_list)
-    return aizen.temp_volc_spawn_possibles_list[| 0]      
+    ds_list_shuffle(aizen.temp_volc_spawn_blocks_with_space_above_list)
+    return aizen.temp_volc_spawn_blocks_with_space_above_list[| 0]      
 }
 else
     return -2   ////error no blocks at all

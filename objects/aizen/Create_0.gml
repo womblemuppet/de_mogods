@@ -26,11 +26,11 @@ debug_show_hitboxes=false
 debug=false
 
 temp_block_grid=ds_grid_create(ceil(kouchou.rw/20),ceil(kouchou.rh/20))   ////grid for finding lowest point volcs can spawn from, filled in with 1's where blocks are.
-temp_volc_spawn_possibles_list=ds_list_create()
+temp_volc_spawn_blocks_with_space_above_list=ds_list_create()
 
 round_draw_potential=true   ///whether 2 players dying at the same time can cause a draw. set to false on a timer after a player dies.
 healthcap=5   ///max health value
-bedrockcounter=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
+scrolled_amount=0   ///counts up to block height, then terrain generation script is called. INITIALIZED BEFOREHAND IN ROOM START
 biome="summit"  
 biome_length=1440  //1260
 biome_length_accumulative=0   

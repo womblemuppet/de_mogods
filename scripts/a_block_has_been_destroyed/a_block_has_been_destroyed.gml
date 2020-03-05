@@ -48,22 +48,19 @@ with prop_flag_left_pole
 		instance_destroy()
 	
 	//copied code from generic prop check above!
-	if NOconnectors!=0  //only props with 0 connectors should be flag pieces which have their own code below
+	var existing_connectors;
+	existing_connectors=0
+	
+	for (var i = 0; i < NOconnectors; i++)
 	{
-		var existing_connectors;
-		existing_connectors=0
+		if connectors[i]!=undefined && instance_exists(connectors[i])
+			existing_connectors++
+	}
 	
-		for (var i = 0; i < NOconnectors; i++)
-		{
-			if connectors[i]!=undefined && instance_exists(connectors[i])
-				existing_connectors++
-		}
-	
-		if existing_connectors<1
-		{
-			show_debug_message("prop "+name+"destroyed,no connectors")
-			instance_destroy()
-		}
+	if existing_connectors<1
+	{
+		show_debug_message("prop "+name+"destroyed,no connectors")
+		instance_destroy()
 	}
 }
 with prop_flag_piece //[finaledit] this is backwards, pole should have list of pieces not vv
