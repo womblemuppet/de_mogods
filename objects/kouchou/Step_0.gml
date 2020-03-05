@@ -180,7 +180,7 @@ if room==multiplayermenu
     
 	if number_of_keyboards_in_use==0
 	{  
-		if  (keyboard_check_pressed(kb1_forward_button) || keyboard_check_pressed(kb2_forward_button) )   //////// keyboard start button (first kb player)
+		if  (keyboard_check_pressed(kb1_forward_button) || keyboard_check_pressed(kb2_forward_button) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) )   //////// keyboard start button (first kb player)
 		{
 			set_next_open_slot()
 			create_player_entered_components(next_open_slot)
@@ -208,7 +208,7 @@ if room==multiplayermenu
 	
 	if number_of_keyboards_in_use==1
 	{  
-		if keyboard_check_pressed(kb2_forward_button) && keyboard_added_this_step==false
+		if (keyboard_check_pressed(kb2_forward_button) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) && keyboard_added_this_step==false
 		{
 			if players_in<MAX_PLAYER_COUNT                                             /// keyboard entry player 2
 			{

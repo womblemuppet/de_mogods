@@ -47,7 +47,10 @@ for (var i = 0; i < NO_pieces; i++)
 	
 	//create flag and increment position
 	with prop_flag_piece_create(xx,yy,xx+PIECE_LENGTH,yy+PIECE_HEIGHT,left_flag,right_flag,lastColour)
+	{
 		instance_change(prop_flag_piece,false)  ///convert prop instance into more specific prop_flag_piece
+		alarm[0]=1
+	}
 
 	xx+=PIECE_LENGTH
 	yy+=PIECE_HEIGHT

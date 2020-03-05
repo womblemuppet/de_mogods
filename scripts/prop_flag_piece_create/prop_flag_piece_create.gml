@@ -29,15 +29,15 @@ with a
 	HOVER_MAX_DIST=1
 	y-=HOVER_MAX_DIST+random(HOVER_MAX_DIST)
 	
-	//choose colour
+	//choose colour. sprite index is set to normal sprite in alarm0 after 1 step (annoying problem with instance change function)
 	if colour=="red"
 	{
-		sprite_index=pflag_red
+		normal_sprite=pflag_red
 		death_sprite=pflag_red
 	}
 	else if colour=="blue"
 	{
-		sprite_index=pflag_blue
+		normal_sprite=pflag_blue
 		death_sprite=pflag_blue
 	}
 	else

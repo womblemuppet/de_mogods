@@ -1,4 +1,4 @@
-if keyboard_check_pressed(kb1_up_button) || keyboard_check_pressed(kb2_up_button)
+if keyboard_check_pressed(kb1_up_button) || keyboard_check_pressed(kb2_up_button)  || keyboard_check_pressed(ord("W"))
 	return true
 
 for (var i=0; i<12; i+=1)

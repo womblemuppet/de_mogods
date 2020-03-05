@@ -1,5 +1,5 @@
-kb1_forward_button=ord("C")
-kb1_backward_button=ord("V")
+kb1_forward_button=ord("V")
+kb1_backward_button=ord("B")
 kb1_left_button=ord("A")
 kb1_right_button=ord("D")
 kb1_up_button=ord("W")

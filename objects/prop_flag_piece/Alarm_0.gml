@@ -1,0 +1,1 @@
+sprite_index=normal_sprite
