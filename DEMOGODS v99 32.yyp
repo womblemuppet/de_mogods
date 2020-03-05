@@ -6311,6 +6311,14 @@
             }
         },
         {
+            "Key": "9862d63b-3d66-4d43-b7f0-185a5074df6c",
+            "Value": {
+                "id": "ed6a4c34-6f1b-4ca5-b06d-69a6f38b0f92",
+                "resourcePath": "sprites\\controllericon1\\controllericon1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9895aaa6-3238-4bfc-9e14-ed6aeedcff87",
             "Value": {
                 "id": "505b5150-9485-4805-a66f-b17a223d7dce",

@@ -53,7 +53,7 @@ else if room==init
 			ds_map_add(keybinding_map_array[i],"heavybutton",vk_shift)
 			ds_map_add(keybinding_map_array[i],"startbutton",vk_enter)
 			ds_map_add(keybinding_map_array[i],"superbutton",ord("O")) break;          
-            
+
 			case "controller_default":
 			ds_map_add(keybinding_map_array[i],"gamepad",true)
 			ds_map_add(keybinding_map_array[i],"padnumber",aizen.temporary_player_controller_pad_numbers[i])

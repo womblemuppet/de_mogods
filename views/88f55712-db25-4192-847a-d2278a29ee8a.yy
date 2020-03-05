@@ -24,7 +24,8 @@
         "d2d0aaca-9846-42fd-a26d-1cdde2ce4e4d",
         "6ba0d7f0-3748-4716-8881-0ddfb3ee4ded",
         "18234997-8c62-4e2e-baf4-e4f9b43dffb7",
-        "aa3c2140-f95c-416e-a4b9-e4a0aa4f14c1"
+        "aa3c2140-f95c-416e-a4b9-e4a0aa4f14c1",
+        "9862d63b-3d66-4d43-b7f0-185a5074df6c"
     ],
     "filterType": "GMSprite",
     "folderName": "character_select",

@@ -6,6 +6,7 @@ if room==multiplayermenu
 		game_start_countdown-=1
 		if game_start_countdown==0
 		{
+			//go to initialisation room (spawning Aizen and finalising key bindings for each player in)
 			room=init
 		}
 	}
@@ -187,6 +188,15 @@ if room==multiplayermenu
 			controller_player_slot[i]=next_open_slot
 			ready[next_open_slot]=0
 			create_player_entered_components(next_open_slot)
+			
+			var a;
+			a=effect_aniend(controllericon1,2,-50)
+			a.x=kouchou.menu_controller_x
+			a.y=kouchou.menu_controller_y
+			a.hspeed=3				
+
+			
+			
 			control_setup[next_open_slot]="controller_default"
 			player_join_update_controller_variables()
 
