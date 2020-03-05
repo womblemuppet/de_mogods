@@ -9,12 +9,12 @@ a.select=0
 switch playerId
 {
 	case 0:
-	a.normal_sprite=character_select_options_box_blue_spr
-	a.die_sprite=character_select_options_box_blue_die 
-	break;
-	case 1:
 	a.normal_sprite=character_select_options_box_red_spr
 	a.die_sprite=character_select_options_box_red_die 
+	break;
+	case 1:
+	a.normal_sprite=character_select_options_box_blue_spr
+	a.die_sprite=character_select_options_box_blue_die 
 	break;
 }
 

@@ -2,8 +2,8 @@
   sets positions of the various components in character select
 ****************************************************/
 
-midx=room_width/2-1200/2   ///until background fully covers screen, this is where to draw the old 1200,1000 background from [finaledit]
-midy=room_height/2-1000/2
+midx=room_width/2
+midy=room_height/2
 
 charpor_w=600
 charpor_h=500
@@ -28,7 +28,7 @@ if !competitive_mode
 		charpormid_y[i]=charpor_y[i]+charpor_h/2
 	};
 }
-else
+else  //competitive 1v1 mode
 {   
 	charpor_x[0]=0
 	charpor_y[0]=room_height-750
@@ -109,7 +109,9 @@ for (var i=0; i<MAX_PLAYER_COUNT; i+=1)
 	menu_player_character_title_y[i]=menu_player_options_box_y[i]+270
 };
 
-
+//set controller/keyboard icon positions
+menu_controller_x=midx
+menu_controller_y=midy+225
 
 
 

@@ -106,6 +106,7 @@ else if room==multiplayermenu
 		number_of_games_background=create_menupart_generic(number_of_games_background_spr,0,0,0,5,undefined)
 		number_of_games_cup_glow_id=instance_create_depth(number_of_games_cup_id.x,number_of_games_cup_id.y,-3,number_of_games_cup_glow)
 		
+		//make starting smoke
 		for (var i = 0; i < 6;i++)
 		{
 			repeat(5)
@@ -116,6 +117,6 @@ else if room==multiplayermenu
 		}
 
 	}
-	else
-		selecting_number_of_games=false
+	//else
+		//selecting_number_of_games=false
 }

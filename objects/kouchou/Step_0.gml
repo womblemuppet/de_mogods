@@ -94,6 +94,10 @@ if room==multiplayermenu
 				create_menupart_generic(CHARACTER_SELECT_SLAB_SPRITES[playerId],0,menu_player_slab_x[playerId],menu_player_slab_y[playerId],-70,undefined)
 			}
 			
+			//create keyboard icons
+			component_keyboard_icon_p1=create_menupart_generic(keyboard_icon1,0.2,menu_controller_x,menu_controller_y,-150,undefined)
+			component_keyboard_icon_p2=create_menupart_generic(keyboard_icon2,0.2,menu_controller_x,menu_controller_y+25,-150,undefined)
+			
 		}
 		exit
 	}
@@ -109,6 +113,10 @@ if room==multiplayermenu
 		{
 			set_next_open_slot()
 			create_player_entered_components(next_open_slot)
+			
+			with component_keyboard_icon_p1
+				instance_destroy()
+				
 			if game_start_countdown<1
 			{
 				if players_in<MAX_PLAYER_COUNT  /// keyboard entry player 1
@@ -126,13 +134,16 @@ if room==multiplayermenu
 	{  
 		if keyboard_check_pressed(kb2_start_button) && keyboard_added_this_step==false
 		{
-			if players_in<MAX_PLAYER_COUNT                                                                                           /// keyboard entry player 2
+			if players_in<MAX_PLAYER_COUNT                                             /// keyboard entry player 2
 			{
 				keyboard_added_this_step=true
 				set_next_open_slot()
 				ready[next_open_slot]=0
 				control_setup[next_open_slot]="kb_right"
 				create_player_entered_components(next_open_slot)
+				
+				with component_keyboard_icon_p2
+					instance_destroy()
 				
 				//change full keyboard setup to 1/2 version
 				///safer to just search for it than to save variable that could be changed?[finaledit]

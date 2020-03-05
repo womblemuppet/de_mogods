@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "18234997-8c62-4e2e-baf4-e4f9b43dffb7",
+            "Value": {
+                "id": "b97e13e4-677b-46e7-853a-cc7224305d4a",
+                "resourcePath": "sprites\\keyboard_icon1\\keyboard_icon1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1829997c-8cc7-474d-9fa6-a7bb83795cf6",
             "Value": {
                 "id": "40c6573a-6354-4684-af14-91485cf42e7e",
@@ -7003,6 +7011,14 @@
             "Value": {
                 "id": "36ad913f-40f2-40cf-b293-ce9be633904c",
                 "resourcePath": "sprites\\spr_baitchain_floaty\\spr_baitchain_floaty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aa3c2140-f95c-416e-a4b9-e4a0aa4f14c1",
+            "Value": {
+                "id": "040f87f8-5592-46d4-bd9b-95063d6e6f99",
+                "resourcePath": "sprites\\keyboard_icon2\\keyboard_icon2.yy",
                 "resourceType": "GMSprite"
             }
         },
