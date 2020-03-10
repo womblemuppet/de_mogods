@@ -14,7 +14,7 @@ prop_lists_init()
 //prop lists for each chunk type
 
 var chunk_type_allowed_props_startingflat;
-chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.25,TREES,0.2,DESTROYED_STATUES,0.25,SHRUBS,0.2,BRICKCLUMPS,0.2,FLAGS)
+chunk_type_allowed_props_startingflat=create_chunk_type_allowed_props(0.25,TREES,0.2,DESTROYED_STATUES,0.25,SHRUBS,0.2,BRICKCLUMPS)
 
 var chunk_type_allowed_props_grassy;
 chunk_type_allowed_props_grassy=create_chunk_type_allowed_props(0.3,TREES,0.2,DESTROYED_STATUES,0.2,SHRUBS,0.2,BRICKCLUMPS,0.2,FLAGS)
